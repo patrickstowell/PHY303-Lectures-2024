@@ -1,0 +1,14 @@
+[
+    {
+        "front": "SEMF",
+        "back": "    $M(A,Z) = aA + bZ + cZ^{2}$    "
+    },
+    {
+        "front": "What is a form factor",
+        "back": "Fourier transform of the nuclear charge distribution."
+    },
+    {
+        "front": "Form Factor Equation",
+        "back": "$F(q) = \int_{-\infty}^{\infty}$"
+    }
+]

@@ -1,0 +1,65 @@
+format: jb-book
+root: phy303-homepage
+options:
+  numbered: True
+parts:
+- caption: Theory
+  numbered: True
+  chapters:
+    - file: phy303-unit1-introduction-and-structure
+      title: Introduction
+    - file: phy303-unit2-liquiddropmodels
+      title: Liquid Drop
+    - file: phy303-unit3-shellmodel-and-spin
+      title: Shell Model
+    - file: phy303-unit4-parity-moments
+      title: Nuclear Spin Moments
+    - file: phy303-unit5-collective-excited
+      title: Collective Excited States
+    - file: phy303-unit6-radioactive-decays
+      title: Radioactive Decay
+- caption: Application
+  numbered: True
+  chapters:
+    - file: phy303-unit7-reactions
+      title: Reactions
+    - file: phy303-unit8-compoundreactions
+      title: Compound Reactions
+    - file: phy303-unit9-neutronphysics
+      title: Neutron Physics
+    - file: phy303-unit10-fissionandfusion
+      title: Nuclear Power
+    - file: phy303-unit11-medicalapplications
+      title: Nuclear Medicine
+- caption: Visualization
+  numbered: False
+  chapters:
+    - file: iaea-chart-of-nuclides.ipynb
+      title: Chart of Nuclides
+    - file: iaea-chart-of-binding.ipynb
+      title: Chart of Binding Energy
+    - file: iaea-chart-of-isotones.ipynb
+      title: Isotone Curves
+    - file: iaea-chart-of-isotopes.ipynb
+      title: Isotope Curves
+    - file: legendre-polynomials.ipynb
+      title: Legendre Polynomials
+    - file: nucleus-shape.ipynb
+      title: Nucleus Shape
+- caption: Revision Tools
+  numbered: False
+  chapters:
+    - file: unit1-terms.md
+  #  - file: phy303-unit1-flashcards
+    - file: unit2-terms.md
+    - file: unit3-terms.md
+    - file: unit4-terms.md
+    - file: unit5-terms.md
+    - file: unit6-terms.md
+    # - file: unit7-terms.md
+    # - file: unit8-terms.md
+    # - file: unit9-terms.md
+    # - file: unit10-terms.md
+    # - file: unit11-terms.md
+
+
