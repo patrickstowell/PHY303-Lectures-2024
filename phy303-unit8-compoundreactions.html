@@ -1,0 +1,664 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>8. Compound/Photon reactions &#8212; PHY303 Nuclear Physics 1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit8-compoundreactions';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="9. Neutron Physics" href="phy303-unit9-neutronphysics.html" />
+    <link rel="prev" title="7. Nuclear Reactions" href="phy303-unit7-reactions.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="phy303-homepage.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">PHY303 Nuclear Physics 1</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit10-fissionandfusion.html">10. Nuclear Power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit11-medicalapplications.html">11. Nuclear Medicine</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucleus-shape.html">Nucleus Shape</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Revision Tools</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit5-terms.html">Unit 5 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit6-terms.html">Unit 6 : Equations &amp; Terms</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fphy303-unit8-compoundreactions.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/phy303-unit8-compoundreactions.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Compound/Photon reactions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-compound-nucleus-reactions">8.1. Characteristics of compound-nucleus reactions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resonances">8.2. Resonances</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-direct-and-compound-nucleus-reactions">8.3. Summary: direct and compound-nucleus reactions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photon-sources">8.3.1. Photon sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photon-absorption-by-a-nucleus">8.3.2. Photon absorption by a nucleus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-resonance-fluorescence">8.3.3. Nuclear resonance fluorescence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-giant-dipole-resonance">8.3.4. The giant dipole resonance</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photonuclear-reactions-in-astrophysics">8.4. Photonuclear reactions in astrophysics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">8.5. Summary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="compound-photon-reactions">
+<h1><span class="section-number">8. </span>Compound/Photon reactions<a class="headerlink" href="#compound-photon-reactions" title="Permalink to this heading">#</a></h1>
+<p>In compound-nucleus reactions, the projectile and target merge to form a single object, which subsequently decays. The kinetic energy of the projectile is all transferred to the compound nucleus (though it isn’t all available for conversion to mass, because momentum must still be conserved).</p>
+<section id="characteristics-of-compound-nucleus-reactions">
+<h2><span class="section-number">8.1. </span>Characteristics of compound-nucleus reactions<a class="headerlink" href="#characteristics-of-compound-nucleus-reactions" title="Permalink to this heading">#</a></h2>
+<p>Because the compound nucleus has a finite lifetime, compound-nucleus reactions have a longer timescale than direct reactions, typically <span class="math notranslate nohighlight">\(10^{-18} – 10^{-16}\)</span> s, i.e. at least 10000 times longer than the direct reaction timescale.</p>
+<p>It is worth noting here that this timescale has in fact been measured: it is not just a theoretical prediction. One measurement method is the crystal blocking effect in <span class="math notranslate nohighlight">\((p,p’)\)</span> reactions: if the target is a single crystal, its atoms are aligned in the lattice and can block scattered protons in particular directions, so the angular distribution has narrow dips corresponding to this. If a compound-nucleus reaction takes place, the transfer of momentum makes the struck nucleus move away from its lattice point, reducing the blocking effect. The longer the compound-nucleus lifetime, the further out of alignment it is when it decays, so the change in the amount of blocking and the angles at which it occurs can be used to deduce the lifetime.</p>
+<p>Because the reaction takes place in two stages, the angular distribution of the products (measured in the centre of mass frame, to remove the effect of momentum conservation) is not correlated with the direction of the incoming projectile, in contrast to the forward-peaked angular distribution of direct reactions. The independence of the production and decay of the compound nucleus was first proposed by Niels Bohr, and is often called the Bohr independence hypothesis.</p>
+<p><img alt="Alt text" src="_images/image-59.png" /></p>
+<p>The independence hypothesis essentially says that the reaction <span class="math notranslate nohighlight">\(a + A → C* → B + b\)</span> factorises into two halves: <span class="math notranslate nohighlight">\(a + A → C*\)</span> and <span class="math notranslate nohighlight">\(C* → B + b\)</span>. Its cross section is therefore given by</p>
+<div class="math notranslate nohighlight" id="equation-cross-section-compound">
+<span class="eqno">(8.1)<a class="headerlink" href="#equation-cross-section-compound" title="Permalink to this equation">#</a></span>\[\begin{equation}
+ \sigma_{(a,b)}B = \sigma_{a+A→C*} \times BR(C* → B + b), 
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(BR(C* → B + b)\)</span> represents the branching ratio of the excited nucleus <span class="math notranslate nohighlight">\(C*\)</span> into the final state <span class="math notranslate nohighlight">\(B + b\)</span>. This can be tested by comparing the results of different projectile/target combinations which should produce the same compound nucleus. Results of such tests generally confirm the broad expectations of the independence hypothesis, albeit with some differences in detail (see for example figure 5).</p>
+</section>
+<section id="resonances">
+<h2><span class="section-number">8.2. </span>Resonances<a class="headerlink" href="#resonances" title="Permalink to this heading">#</a></h2>
+<p>The probability of a compound-nucleus reaction is greatly enhanced if the centre-of-mass energy of the projectile-plus-target system coincides with an excited state of the compound nucleus. This produces a spike in the cross section known as a resonance (see figure 6).</p>
+<p><img alt="Alt text" src="_images/image-60.png" /></p>
+<p>In a compound-nucleus reaction <span class="math notranslate nohighlight">\(A(a, b)B\)</span>, the shape of the resonance corresponding to an excited state with energy <span class="math notranslate nohighlight">\(E_R\)</span> and spin <span class="math notranslate nohighlight">\(J\)</span> is given by the Breit-Wigner distribution</p>
+<div class="math notranslate nohighlight" id="equation-breit-wigner">
+<span class="eqno">(8.2)<a class="headerlink" href="#equation-breit-wigner" title="Permalink to this equation">#</a></span>\[\begin{equation}
+ \sigma_{BW}(E) = \frac{\pi}{(k)^2} \frac{(2J + 1)}{(2I_a + 1)(2I_A + 1)} \frac{\Gamma_a(E)\Gamma_b(E)}{(E - E_R)^2 + \Gamma(E)^2/4}, 
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\( \lambda = \frac{h}{p} \)</span> is the de Broglie wavelength of the projectile and <span class="math notranslate nohighlight">\( \Gamma(E) \)</span> is the width of the resonance, which is determined by the Heisenberg uncertainty principle, <span class="math notranslate nohighlight">\( \Gamma = \frac{h}{\tau} \)</span> where <span class="math notranslate nohighlight">\( \tau \)</span> is the lifetime of the state.</p>
+<p><span class="math notranslate nohighlight">\( \Gamma_a \)</span> and <span class="math notranslate nohighlight">\( \Gamma_b \)</span> are called partial widths, and are essentially the branching ratio of the compound nucleus into that particular state,</p>
+<div class="math notranslate nohighlight" id="equation-branching-ratio">
+<span class="eqno">(8.3)<a class="headerlink" href="#equation-branching-ratio" title="Permalink to this equation">#</a></span>\[\begin{equation} BR(C* \rightarrow b + B) = \frac{\Gamma_b}{\Gamma}.
+\end{equation}\]</div>
+<p>The shape of the Breit-Wigner distribution is determined mainly by <span class="math notranslate nohighlight">\( (E - E_R)^2 + \Gamma(E)^2/4 \)</span>, and is shown in figure 7. The width <span class="math notranslate nohighlight">\( \Gamma \)</span> is the full width of the distribution at half the maximum height (you can verify this from the equation, assuming that all the other factors are roughly constant). Using the uncertainty principle and the typical timescale of compound-nucleus reactions, you can see that <span class="math notranslate nohighlight">\( \Gamma \)</span> should be around <span class="math notranslate nohighlight">\(10~\textnormal{eV} – 1~\textnormal{keV}\)</span>.</p>
+<p>The shapes of the resonances in figure 6 do not look like figure 7: they have a pronounced asymmetry, with a dip in the cross section before the resonant rise. This is caused by interference between the resonance and non-resonant elastic scattering off the nuclear potential. This can be verified by comparing the <span class="math notranslate nohighlight">\((n,\gamma)\)</span> reaction, where there is no interference, with the total cross section, as shown in figure 8: the resonance shapes in <span class="math notranslate nohighlight">\((n,\gamma)\)</span> are much more symmetrical.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that the log scales of figures 6 and 8 exaggerate both the width and the asymmetry of the resonances - on linear scales they appear as sharp spikes.</p>
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/image-61.png"><img alt="_images/image-61.png" src="_images/image-61.png" style="width: 242.39999999999998px; height: 174.0px;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/image-62.png"><img alt="_images/image-62.png" src="_images/image-62.png" style="width: 842.0px; height: 492.0px;" /></a>
+</figure>
+<p>As can be seen from the form of the Breit-Wigner, the height of the resonance peak is proportional to <span class="math notranslate nohighlight">\(2J + 1\)</span>, and can therefore be used to deduce the spin of the excited state.</p>
+</section>
+<section id="summary-direct-and-compound-nucleus-reactions">
+<h2><span class="section-number">8.3. </span>Summary: direct and compound-nucleus reactions<a class="headerlink" href="#summary-direct-and-compound-nucleus-reactions" title="Permalink to this heading">#</a></h2>
+<p>To summarise:</p>
+<ol class="arabic simple">
+<li><p>Direct reactions are fast <span class="math notranslate nohighlight">\((\sim10^{-22}~\textnormal{s})\)</span> reactions in which the projectile interacts with a small number of nucleons near the surface of the target nucleus. They are characterised by a forward peaked angular distribution of the ejectile(s) and are more likely with high-energy projectiles (<span class="math notranslate nohighlight">\(&gt;10~\textnormal{MeV}\)</span> or so). The important observables in direct reactions are the ejectile angular distribution (for optical model calculations) and energy spectrum at fixed angle (to map excited states of the daughter nucleus).</p></li>
+<li><p>Compound-nucleus reactions are slower (<span class="math notranslate nohighlight">\(~10^{-18} - 10^{-16} s\)</span>) reactions in which the projectile merges with the target nucleus. They are characterised by a fairly isotropic ejectile angular distribution and are more likely with low-energy projectiles. The decay mode of the compound nucleus is expected to be independent of the way it was formed. The important observable for compound-nucleus reactions is the cross section as a function of projectile energy, which should exhibit narrow resonances corresponding to excited states of the compound nucleus.</p></li>
+<li><p>Photonuclear reactions
+The nuclear reactions considered above all assume nuclear projectiles (typically small objects such as protons, neutrons, deuterons and alpha particles, but heavier ions are also used). It is, however, also possible to use photons as probes of nuclear structure.</p></li>
+</ol>
+<p>The problem with using photons is that they are much more likely to interact with the electrons in the target, or with the electric field of the nucleus, than with the nucleus itself. By far the dominant contributions to the cross section for photon absorption in solid targets are the photoelectric effect (i.e. liberation of electrons) below 1 MeV photon energy and pair-production in the electric field of the nucleus above 1 MeV. However, high-intensity sources of MeV-energy photons are available (see below), so photonuclear reactions can be studied and do have some practical applications.</p>
+<section id="photon-sources">
+<h3><span class="section-number">8.3.1. </span>Photon sources<a class="headerlink" href="#photon-sources" title="Permalink to this heading">#</a></h3>
+<p>Very high-energy photons are produced using electron beams. There are two main methods, shown schematically in figure 9.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/image-63.png"><img alt="_images/image-63.png" src="_images/image-63.png" style="width: 621.0px; height: 465.3px;" /></a>
+</figure>
+<p>These methods are complementary rather than competitive: bremsstrahlung beams have a wide energy range and can therefore be used to study the energy dependence of the reaction (especially in “tagged” beams where the momentum of the scattered electron is measured by inserting a strong magnetic field immediately after the radiator), while laser backscattered beams can be tuned to a particular energy to investigate a specific excited state.</p>
+</section>
+<section id="photon-absorption-by-a-nucleus">
+<h3><span class="section-number">8.3.2. </span>Photon absorption by a nucleus<a class="headerlink" href="#photon-absorption-by-a-nucleus" title="Permalink to this heading">#</a></h3>
+<p>As with compound-nucleus reactions, photon absorption will be much more probable if the centre-of-mass energy matches an excited state of the nucleus (in this case, since the photon does not change the numbers of protons and neutrons, an excited state of the target nucleus). Excited states that can be reached by electric dipole transitions, <span class="math notranslate nohighlight">\( \Delta l = \pm 1 \)</span>, are preferred because the photon has spin 1. The photon carries momentum <span class="math notranslate nohighlight">\( p = E_\gamma / c \)</span>, and this momentum must be transferred to the target, so the target kinetic energy (assuming <span class="math notranslate nohighlight">\( E_\gamma \ll M_nc^2 \)</span>) is <span class="math notranslate nohighlight">\( E_{rec} = p^2 /2M_n = E^2_\gamma /2M_nc^2 \)</span>. This energy is not available to excite the nucleus, so the excitation energy is <span class="math notranslate nohighlight">\( E_\gamma - E_{rec} \)</span>.</p>
+<p>For a typical mid-table nucleus with a mass of <span class="math notranslate nohighlight">\(50 \textnormal{GeV/c}² ~(≈ 54 u)\)</span> and a <span class="math notranslate nohighlight">\(5~\textnormal{MeV}\)</span> photon, the recoil kinetic energy is <span class="math notranslate nohighlight">\(0.25~\textnormal{keV}\)</span>. This is less than the width of most resonances, so in general the de-excitation photon will not be able to re-excite another nucleus to the same excited state.</p>
+<p>The final state of a photonuclear reaction depends on whether the photon energy is above or below the separation energy, i.e. the energy required to remove a proton or a neutron from the target nucleus (typically this is of order 8 MeV) as shown in figure 10. If the photon energy is below the separation energy, the result of the interaction will be an excited state of the target, which will de-excite by emitting one or more photons (depending on whether it returns directly to the ground state or cascades down through intermediate states): this is known as nuclear resonance fluorescence. If the photon energy is above the separation energy, it can knock out one or more nucleons, a process known as photodisintegration (Zilges et al. call it photodissociation, which is probably a better name, but less commonly used).</p>
+</section>
+<section id="nuclear-resonance-fluorescence">
+<h3><span class="section-number">8.3.3. </span>Nuclear resonance fluorescence<a class="headerlink" href="#nuclear-resonance-fluorescence" title="Permalink to this heading">#</a></h3>
+<p>Nuclear resonance fluorescence is a useful technique for studying excited states of nuclei. Because the incoming photon beam and be polarised, and the polarisation of the outgoing photons can be measured, the spin and parity assignments of excited states can be investigated using the angular distribution of the scattered photons. Zilges et al. (Prog. Nucl. Part. Phys. 122 (2022) 103903) list the properties that can be explored by photonuclear reactions as:</p>
+<ul class="simple">
+<li><p>γ-ray transition energies <span class="math notranslate nohighlight">\(E_\gamma\)</span></p></li>
+<li><p>level energies <span class="math notranslate nohighlight">\(E_x\)</span> and placements of γ-ray transitions in the nuclear level scheme</p></li>
+<li><p>multipolarities <span class="math notranslate nohighlight">\(l\)</span>L of γ-ray transitions (i.e. dipole, quadrupole etc.)</p></li>
+<li><p>spin quantum numbers <span class="math notranslate nohighlight">\(J\)</span> of nuclear levels</p></li>
+<li><p>parity quantum numbers <span class="math notranslate nohighlight">\(\pi\)</span> of nuclear levels</p></li>
+<li><p>γ-decay branching ratios <span class="math notranslate nohighlight">\(\Gamma_f/\Gamma_i\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(K\)</span>-quantum numbers of nuclear levels</p></li>
+<li><p>multipole-mixing ratios <span class="math notranslate nohighlight">\(\delta\)</span> of γ-ray transitions</p></li>
+<li><p>integrated photonuclear resonance cross sections <span class="math notranslate nohighlight">\(\sigma(\theta)\)</span></p></li>
+<li><p>partial decay widths <span class="math notranslate nohighlight">\(\Gamma_{f, mL}\)</span></p></li>
+<li><p>total level widths <span class="math notranslate nohighlight">\(\Gamma\)</span></p></li>
+<li><p>level lifetimes <span class="math notranslate nohighlight">\(\tau\)</span></p></li>
+<li><p>reduced excitation strengths <span class="math notranslate nohighlight">\(B(ML; g.s. → J^\pi)\)</span></p></li>
+<li><p>decay transition strengths <span class="math notranslate nohighlight">\(B(IL; J^\pi → J'^\pi)\)</span>.</p></li>
+</ul>
+<p>In addition to this, nuclear resonance fluorescence can be used for non-destructive assaying of materials, because the energies of the emitted γ-rays are characteristic of the particular element. MeV-energy γ-rays are quite penetrating, so this technique has the potential to be used for checking the contents of sealed containers. Suggested applications include scanning for special nuclear materials (by looking for the signatures of uranium and plutonium isotopes) and drugs (by looking at the ratios of C, N and O).</p>
+</section>
+<section id="the-giant-dipole-resonance">
+<h3><span class="section-number">8.3.4. </span>The giant dipole resonance<a class="headerlink" href="#the-giant-dipole-resonance" title="Permalink to this heading">#</a></h3>
+<p>The most obvious feature seen in photonuclear reactions above the nucleon separation energy is the giant dipole resonance, which is a broad peak in the cross section at photon energies of ~25 MeV in light nuclei, decreasing to ~13 MeV for heavy nuclei. For mass numbers above 50 or so, the peak energy is reasonably well described by the Migdal model, in which the proton and neutron populations are interpenetrating liquids; this gives <span class="math notranslate nohighlight">\(E_m = 75A^{-1/3}\)</span> for the energy of the resonance maximum.</p>
+<p>In the liquid-drop model, the giant dipole resonance can be seen as a collective excitation in which the whole population of protons in the nucleus oscillates with respect to the whole population of neutrons. More detailed calculations involve summing up contributions from dipoles formed by a nucleon excited from a filled shell and the “hole” it leaves behind (similar to the concept of electrons and holes in semiconductors).</p>
+<p>An interesting feature of the giant dipole resonance is that if the nucleus is not spherical, the resonance will increase in width and eventually become double-humped, as can be seen for different isotopes of samarium in figure 11. This is understandable in the collective excitation model: if the nucleus has two different characteristic radii, the excitation will have two different resonant frequencies.</p>
+<p>(In figure 11, the quadrupole deformation parameter δ is defined as <span class="math notranslate nohighlight">\( (b-a)/(R) \)</span>, where the nucleus is assumed to be a spheroid with two axes of length a and one of length b (thus δ is positive for a prolate (rugby-ball) spheroid and negative for an oblate (flattened) one). The mean radius (R) is taken to be <span class="math notranslate nohighlight">\(1.2A^{1/3}\)</span> fm. There are other definitions of quadrupole deformation in the literature—the key point here is that the samarium nucleus becomes steadily less spherical for larger A.)</p>
+<p>The giant dipole resonance proved quite difficult to describe theoretically, and doing so drove the development of advanced techniques in nuclear theory. Analogues of the giant dipole resonance have since been studied in other systems, such as atoms, metallic clusters (small bound clusters of metal atoms with a conduction band of nearly-free electrons) and fullerenes, and the theoretical descriptions of these systems make use of the techniques developed in nuclear physics. The giant dipole resonance has therefore been a very fruitful phenomenon in terms of advancing theoretical physics.</p>
+</section>
+</section>
+<section id="photonuclear-reactions-in-astrophysics">
+<h2><span class="section-number">8.4. </span>Photonuclear reactions in astrophysics<a class="headerlink" href="#photonuclear-reactions-in-astrophysics" title="Permalink to this heading">#</a></h2>
+<p>It is worth briefly mentioning that photonuclear reactions play an important role in astrophysics. Interactions between photons and charged particles in general (both nuclei and electrons) contribute to the pattern of density fluctuations that we see in the anisotropies of the cosmic microwave background and the large-scale distribution of galaxies. Photodisintegration of iron nuclei is a key stage in the collapse of an evolved massive star that gives rise to a core-collapse supernova (and seeds the universe with many different elements, including oxygen. Photonuclear reactions are also probably involved in the production of rare proton-rich isotopes such as <span class="math notranslate nohighlight">\(^{106}Cd\)</span>, which cannot be made by the usual stellar/supernova nucleosynthesis pathways that rely on adding neutrons.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/image-123.png"><img alt="_images/image-123.png" src="_images/image-123.png" style="width: 480.0px; height: 406.8px;" /></a>
+</figure>
+</section>
+<section id="summary">
+<h2><span class="section-number">8.5. </span>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<p>To summarise, nuclear reactions are critical to the understanding of nuclear structure, and also have many practical applications, some of which we will study in the next unit. Most nuclear reactions involve comparatively massive projectiles (protons or heavier) at MeV energies, and can therefore be treated as non-relativistic, although the relativistic techniques you developed in the particle physics course will, of course, also work, and should be used whenever you are in any doubt. The key feature of any reaction is its Q value, <span class="math notranslate nohighlight">\(Q=m_{i}-m_{f}\)</span> where <span class="math notranslate nohighlight">\(m_{i}\)</span> is the total initial mass and <span class="math notranslate nohighlight">\(m_{f}\)</span> the total final mass. If <span class="math notranslate nohighlight">\(𝑄 &lt; 0\)</span> the reaction will have a threshold projectile energy below which it will not occur, be- cause the additional mass must be converted from kinetic energy. If <span class="math notranslate nohighlight">\(𝑄 &gt; 0\)</span> the reaction will release energy, in the form of “extra” kinetic energy in the final state; however, this does not necessarily mean that it has no threshold, because in the case of charged projectiles there will in general be a Coulomb potential barrier to overcome.</p>
+<p>We have seen that nuclear reactions can proceed either directly, with the projectile interacting with a small number of nucleons on the surface of the target nucleus, or by the formation of an intermediate compound nucleus. Direct reactions are fast, transfer only a small amount of momentum and energy to the target, and produce forward-peaked ejectiles. The observables of interest are the energy and angular distribution of the ejectile, which can be used to probe the size, shape and excited states of the target and/or daughter nucleus. Compound-nucleus reactions, in contrast, are much slower, and involve the merger of the projectile with the target and the distribution of the projectile kinetic energy among all the nucleons in the system. The decay of the compound nucleus is assumed to be independent of it formation mechanism, and produces ejectiles with a roughly isotropic angular distribution. The principal observable of interest is the cross section, which will display resonances corresponding to excited states of the compound nucleus. The underlying form of the resonance is the Breit-Wigner distribution, whose shape depends primarily on the width of the resonance (governed by its lifetime, through the uncertainty principle) and the spins of the resonance, projectile and target. The pure Breit-Wigner shape may be modified by interference with a non-resonant contribution to the process.</p>
+<p>Finally, we considered photonuclear reactions, i.e. reactions that result from the absorption of a pho- ton by the target nucleus. This results in excitation of the target, which may de-excite by emitting one or more photons (nuclear resonance fluorescence) or, for higher-energy photons, by emitting one or more nucleons (photodisintegration). Nuclear resonance fluorescence is very useful in mapping excited states, and also has potential applications in non-destructive assay of materials. Above the nucle- on separation energy, a major feature is the giant dipole resonance at energies ranging from ~25 MeV to ~13 MeV depending on the mass of the target. The giant dipole resonance can be understood as a collective oscillation of the proton content of the nucleus with respect to the neutron component; achieving a more detailed understanding using the shell model has driven significant advances in theoretical techniques. Photonuclear reactions are also of importance in astrophysical contexts, from the early universe to supernovae.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/image-64.png"><img alt="_images/image-64.png" src="_images/image-64.png" style="width: 329.6px; height: 480.0px;" /></a>
+</figure>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="phy303-unit7-reactions.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Nuclear Reactions</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="phy303-unit9-neutronphysics.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Neutron Physics</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-compound-nucleus-reactions">8.1. Characteristics of compound-nucleus reactions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resonances">8.2. Resonances</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-direct-and-compound-nucleus-reactions">8.3. Summary: direct and compound-nucleus reactions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photon-sources">8.3.1. Photon sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photon-absorption-by-a-nucleus">8.3.2. Photon absorption by a nucleus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-resonance-fluorescence">8.3.3. Nuclear resonance fluorescence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-giant-dipole-resonance">8.3.4. The giant dipole resonance</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photonuclear-reactions-in-astrophysics">8.4. Photonuclear reactions in astrophysics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">8.5. Summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

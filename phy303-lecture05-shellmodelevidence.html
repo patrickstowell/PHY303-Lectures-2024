@@ -1,0 +1,645 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Lecture 5 : Shell Model Evidence &#8212; PHY303 Nuclear Physics 1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-lecture05-shellmodelevidence';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="phy303-homepage.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">PHY303 Nuclear Physics 1</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit10-fissionandfusion.html">10. Nuclear Power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit11-medicalapplications.html">11. Nuclear Medicine</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucleus-shape.html">Nucleus Shape</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Revision Tools</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit5-terms.html">Unit 5 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit6-terms.html">Unit 6 : Equations &amp; Terms</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fphy303-lecture05-shellmodelevidence.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/phy303-lecture05-shellmodelevidence.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Lecture 5 : Shell Model Evidence</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-shell-model-concept">5.2 Nuclear Shell Model Concept</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#magic-numbers">5.2.1 Magic Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#odd-even-parabolas">5.2.2 Odd-Even Parabolas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-relative-abundance-of-nuclei-in-nature">5.2.3 The Relative Abundance of Nuclei in Nature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-neutron-binding-energy">5.2.4 The Neutron Binding Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-capture-energy">5.2.5 Neutron Capture Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-quadrupole-moments">5.2.6 Electric Quadrupole Moments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-excitation-energy">5.2.7 Nuclear Excitation Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-existince-of-double-magic-nuclei">5.2.8 The existince of double magic nuclei</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decay-chains-end-with-magic-number-nuclei">5.2.9 Decay Chains End with Magic Number Nuclei</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-model-challenge">5.3 Shell Model Challenge</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="lecture-5-shell-model-evidence">
+<h1>Lecture 5 : Shell Model Evidence<a class="headerlink" href="#lecture-5-shell-model-evidence" title="Permalink to this heading">#</a></h1>
+<p>We’ve seen how study of the binding energy curve for nuclei and basic features like the chart of stability has led to an empirical formula for the binding energy and the mass of nuclei through the semi empirical mass formular.</p>
+<p>However notice how this derivation was only possible by merging two different concepts for nuclei. Firstly, regarding the nucleus as a single drop of Nuclear Material which acts as a Collective Body.  Secondly a concept that starts at to look at the quantum beehaviour of individual nucleonts and that they somehow lie in specific (and restricted) Energy LEvels.</p>
+<p>So we have two sorts of model, a Collective Body Model, and an Individual particle Model coming together. They Assymetry Term and Pairing Term in the SEMF can only be explained assuming this second concept.</p>
+<p>The SEMF or Binding Energy Equation gives a good  fit to the overall shape of the Binding Energy Curve and starts to give us the basis of a model for nuclei and how they behave. However, it has some failings. When we delve further into nuclei we find that this basis on which the SEMF is built is still not enough to explain many of the properties observed.</p>
+<p><strong>SEMF Advantages</strong></p>
+<ol class="arabic simple">
+<li><p>It makes good predictions of the masses and binding energies of most nuclei and explains the basic shape of the Binding Energy (BE) Curve</p></li>
+<li><p>It allows predictions of the energy releasae in nuclear decay (or energy input needed to make a reaction occur)</p></li>
+<li><p>It tells us why, for instance, fission can occur in nature.</p></li>
+</ol>
+<p><strong>SEMF Disadvantages</strong></p>
+<ol class="arabic simple">
+<li><p>It does not explain why there are spikes in the BE curve at certain nuclei.</p></li>
+<li><p>It does not explain their shape (why some are not spherical).</p></li>
+<li><p>It doesn’t provide information on Nuclei properties like Nuclear Spin, Parity, Magnetic Moment.</p></li>
+</ol>
+<p>## 5.1 Shell Model Concept</p>
+<p>We find evidence not only that we need to account for the preference for pairing and balance between neutrons and protons, but also that specific numerical N &amp; Z combibnations have very different properties.</p>
+<p>This crystallises in observation of Magic Number Nuclei, nuclei with Z or N=2, 8, 20, 28, 50, 82, 126… that have particularly stable properties, and mark a transition point for nucleei such that thoose with Z or N below a given Magic Number have very different behaviour to thooose above.</p>
+<p>This leads to the idea that nucleons in nuclei somehow lie in Concentric Shells, analogous (but very different) to the way electrons lie in shells in atoms and similarly that a “filled” outer shell produces a more stable configuration.</p>
+<section id="nuclear-shell-model-concept">
+<h2>5.2 Nuclear Shell Model Concept<a class="headerlink" href="#nuclear-shell-model-concept" title="Permalink to this heading">#</a></h2>
+<p>This shell model idea is of course tied up with introoducing Quantum Mechanics to ouor nucleus. The basis of QM here as seen before, is that we introduce a Nuclear Potential Well. It is the QM treatment of this Well that will determine (1) the energy levels (shells) that nucleons are allowed to occupy, and (2) how many nucleons can occupy each level.</p>
+<p>As an example the simplest model for the Nuclear Well might be that associated with a Harmonic Oscillator, resulting in equally spaced energy levels, More on this later.</p>
+<p>TODO : IMage of nuclear model.</p>
+<p>But first notice how off the idea is. The nucleons are somehow orbiting in a potential of their own making. Can this reaelly work? The nucleons are tightly bound in the nucleus with a radius much smaller than the case for electron orbitals. Why don’t they collide if they are orbiting in shells?</p>
+<p>This looks like big step to take away from our SEMF so first let’s start by looking at what real evidence we have for a shell-like structure anyway. In fact we can list 8 things starting with a few charts we have already covered.</p>
+<p>## 5.2 Shell Model Evidence</p>
+<section id="magic-numbers">
+<h3>5.2.1 Magic Numbers<a class="headerlink" href="#magic-numbers" title="Permalink to this heading">#</a></h3>
+<p>The SEMF does a good joob oon the basic shape, but a closer look reveals certain nuclei have much higher, or lower B/A than predicted These are most obvious at low A where peaks appear in multiples of 4 nucleons (e.g. 12C, 18O). In general also nuclei with Magic Number N and/or Z have a higher B/A indicating they are more tightly bound.</p>
+</section>
+<section id="odd-even-parabolas">
+<h3>5.2.2 Odd-Even Parabolas<a class="headerlink" href="#odd-even-parabolas" title="Permalink to this heading">#</a></h3>
+<p>A closer look at the chart of Nuclides showos that even nuclei with N&amp;Z away from the major numbers are more likely to be unstable. If we plot nuclei that lie on a line of a constant A, for example A=121 we find that odd and even A nuclei sit on two seperate parabola. Whilst our delta term in the SEMF can account for some of this it cannot account for the difference across all nucleir.</p>
+<p>Image of odd-even nuclei for the delta term.</p>
+<p>Based on this we can make a prediction of which isotope of the given A is most stable against Nuclear Decay. From a parabola fit to the data shown of the form</p>
+<div class="math notranslate nohighlight">
+\[
+M(A,Z) = aA + bZ + cZ^{2}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> are free parameters that are nuclei dependent. We can determine the minima by finding the case where
+$<span class="math notranslate nohighlight">\(
+\frac{dM(A,Z)}{dZ} \rightarrow 0\\
+\)</span>$</p>
+<p>Whatever the nearest integer value of Z is at the minimum will be the isotope we are after. Notice hw the curves are symmetric about the minimum. This leads to the concept of <strong>Mirror Nuclei</strong>. This refers to a pair of nuclei that have the same <span class="math notranslate nohighlight">\(A\)</span> but where the <span class="math notranslate nohighlight">\(N\)</span> and <span class="math notranslate nohighlight">\(Z\)</span> values are ereversed. An example is nitrogen-15 (7 protons and 8 neutrons) and oxygen-15 (8 protons and 7 neutrons).</p>
+<p>The nuclear properties of a given Mirror Nuclei pair like this are similar. The chemical propereties of the associated neutral atoms (dicated by the electrons determinede by the number of protons only) will be very different of course.</p>
+</section>
+<section id="the-relative-abundance-of-nuclei-in-nature">
+<h3>5.2.3 The Relative Abundance of Nuclei in Nature<a class="headerlink" href="#the-relative-abundance-of-nuclei-in-nature" title="Permalink to this heading">#</a></h3>
+<p>A very important piece of evience for the Shell Model comes from a plot of the Relative Abundance of nuclei in nature vs A. Again we see peaeks of high abundance for nuclei with Magic Number values of N, Z, or both.</p>
+<p>There are a larger number of isotopes, isotoones at particular values of Z, N.</p>
+<p>The Magic Numbers</p>
+<p>2, 8, (14), 20, 28, 50, 82, 126</p>
+<p>Reelative abundance efor different even-even nuclides, plotted as a function of A.</p>
+</section>
+<section id="the-neutron-binding-energy">
+<h3>5.2.4 The Neutron Binding Energy<a class="headerlink" href="#the-neutron-binding-energy" title="Permalink to this heading">#</a></h3>
+<p>Apart from the basic binding energy curve, we can look at for instance, the energy required to remove a single neutrn from the nucleus vs the neutrn number. The plot shows by hw much this differs from the SEMF preediction in MeV.</p>
+<p>We see disconintuities up to 2MeV at the Magic Numbers (Shall Closuree) - it is harder to rmove a neutron from a closed shell.</p>
+<p>This dependence of the energy to remove the outer neutron is strong evidence for a shall structure. A neutron just aboove a closed shelll looks to be less tighty bound, reminisicent of the alkali metals in the chemical shell structure.</p>
+<p>TODO : Add image of binding energy</p>
+</section>
+<section id="neutron-capture-energy">
+<h3>5.2.5 Neutron Capture Energy<a class="headerlink" href="#neutron-capture-energy" title="Permalink to this heading">#</a></h3>
+<p>Kind of oopposite too the Neutron Binding Energy plot just shown is to look at the Neutron Capture Cross-section oof nuclei vs N. This measures how likly a given nuceus is to absorb an eextra neutron fired at it as shown here.e</p>
+<p>Again we see peaks and troughs. The lowest values are at the Magic Numbers corresponding to filled shells in our modele - it is harder to add a neutron when the outer shell is full.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note how the cross section is highest for nuclei well away from the Magic Numbers. An example is Cd, which is used widely as a Neutron Sheild in nuclear experiments.</p>
+</div>
+<p>TODO : Add image of capture energy</p>
+</section>
+<section id="electric-quadrupole-moments">
+<h3>5.2.6 Electric Quadrupole Moments<a class="headerlink" href="#electric-quadrupole-moments" title="Permalink to this heading">#</a></h3>
+<p>As nuclei are charged then if this charge is not spherically distributed we might expect to measure a non-zero Electric Quadrupole Moment (we cover EQM later). For a shell model those nuclei with closed shells should be spherically symmetric and have no EQM. For nuclei that do not have a closed shell we indeed see large EQM.</p>
+<p>In the ploot below the EQM have been normalized to the size and charge of each nucleus and these so called Reduced Quadrupole Moments are plototeeed agains the number of protnos or neutrons - depending upon which is odd. Some EQM are very large, suggesting shapes which are strongly non-spherical.</p>
+<p>TODO : Add Image of reduced quadrupole moment.</p>
+</section>
+<section id="nuclear-excitation-energy">
+<h3>5.2.7 Nuclear Excitation Energy<a class="headerlink" href="#nuclear-excitation-energy" title="Permalink to this heading">#</a></h3>
+<p>The relative stability of closed shell nuclei is also indiciated by measuring the energy required tto take a nucleus from the Ground State to its First Excited State.</p>
+<p>Here is an example plot for the excitationo energies for the even-A isotopes of lead. The requried energy is dramatically larger for the isotope with a Magic Number of neutrons. This is strong evidence for a shell model of the nucleus.</p>
+<p>The isotope leead-208 is particularly unique in beind Doubly Magic Z=82 and N=126. This is a Double Closed Shell Nucleus and it takeese more than 2MeV to raise it to the first excited state.</p>
+<p>TODO : Add Image of quadrupole moment.</p>
+</section>
+<section id="the-existince-of-double-magic-nuclei">
+<h3>5.2.8 The existince of double magic nuclei<a class="headerlink" href="#the-existince-of-double-magic-nuclei" title="Permalink to this heading">#</a></h3>
+<p>So nuclei which have both neutron number and proton number equal to one of the Magic Numbers can be called Doubl eMagic, and are found to be particularly stable.</p>
+<p>An example is calcium. It has exceptionally stable Doubly Magic Nuclei - two of them. Compared to the binding energy calcualted from the SEMF, they both have much moore than the expected binding eneregy.</p>
+<p>These isotopes have Z=20 and N = 20 and 28, all three being magic numbers.</p>
+<p>TODOO : Add CALCIUM IMAGE</p>
+</section>
+<section id="decay-chains-end-with-magic-number-nuclei">
+<h3>5.2.9 Decay Chains End with Magic Number Nuclei<a class="headerlink" href="#decay-chains-end-with-magic-number-nuclei" title="Permalink to this heading">#</a></h3>
+<p>Finally, there are several decay chain sequences in nature, particularly that starting U-235. Stable isotpoes come at the end of all these principle radiaoctive series, and all end pooints have a magic number of protons or neutrons.</p>
+<p>Here is the example Dcay Chain of U-238 which ends in Pb-206 (which has a magic number of proton 82)</p>
+<p>Note how from the start to finish of this chain results in emission of a total of 8 alpha particles.</p>
+<p>There is a similar Decay Chain starting with Thorium.</p>
+<p>TODO : Add decay chain image.</p>
+</section>
+<section id="shell-model-challenge">
+<h3>5.3 Shell Model Challenge<a class="headerlink" href="#shell-model-challenge" title="Permalink to this heading">#</a></h3>
+<p>All these observatioons strongly point to a shell Like arrangement of nucleons in the nucleus, whereby we envisage Energy Levels in which the nucleonos sit, sepereatede by gaps corresponding to the Magic Numbers for both Z and N given by : 2,8,14,20,28,50,82,128.</p>
+<p>TODO: Add Shell Model Pictture</p>
+<p>Our shell model will need to explain these characteristic numbers using QM to produce the quantised energy levels (shells), filling them with the correct number of states (nucleons) to reprduce the Magic Numbers.</p>
+<p>So oour basic aim is to explain the Magic Numbers, i.e. all the Nuclear Energy LEvels, and then hopefully make new predictions that can be testde.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-shell-model-concept">5.2 Nuclear Shell Model Concept</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#magic-numbers">5.2.1 Magic Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#odd-even-parabolas">5.2.2 Odd-Even Parabolas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-relative-abundance-of-nuclei-in-nature">5.2.3 The Relative Abundance of Nuclei in Nature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-neutron-binding-energy">5.2.4 The Neutron Binding Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-capture-energy">5.2.5 Neutron Capture Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-quadrupole-moments">5.2.6 Electric Quadrupole Moments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-excitation-energy">5.2.7 Nuclear Excitation Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-existince-of-double-magic-nuclei">5.2.8 The existince of double magic nuclei</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decay-chains-end-with-magic-number-nuclei">5.2.9 Decay Chains End with Magic Number Nuclei</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-model-challenge">5.3 Shell Model Challenge</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

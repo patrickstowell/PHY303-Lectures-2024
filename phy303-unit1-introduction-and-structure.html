@@ -1,0 +1,1055 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>1. Introduction &#8212; PHY303 Nuclear Physics 1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit1-introduction-and-structure';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. Liquid Drop Model" href="phy303-unit2-liquiddropmodels.html" />
+    <link rel="prev" title="Course Info." href="phy303-homepage.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="phy303-homepage.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">PHY303 Nuclear Physics 1</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit10-fissionandfusion.html">10. Nuclear Power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit11-medicalapplications.html">11. Nuclear Medicine</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucleus-shape.html">Nucleus Shape</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Revision Tools</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit5-terms.html">Unit 5 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit6-terms.html">Unit 6 : Equations &amp; Terms</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fphy303-unit1-introduction-and-structure.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/phy303-unit1-introduction-and-structure.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-isotopes">1.1. Nuclear Isotopes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radium-radon-and-the-u-238-chain">1.2. Radium, Radon, and the U-238 Chain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radiation-hazards">1.3. Radiation Hazards</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-properties-of-nuclei">1.4. Basic Properties of Nuclei</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-decay">1.5. Nuclear Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-calculations">1.6. Mass Calculations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probing-the-nucleus">1.7. Probing the Nucleus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-nuclear-size">1.8. Measuring Nuclear Size</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partial-and-differential-cross-sections">1.9. Partial and Differential Cross Sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rutherford-and-mott-scattering">1.10. Rutherford and Mott Scattering</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="introduction">
+<h1><span class="section-number">1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
+<p>The modern field of nuclear physics really began with the first detection of radioactivity by Becquerel, who observed that photographic plates fogged up in proximity to uranium ore. Eventually this was determined to be due to spontaneous decay of nuclei in the ore. Rutherford went on and categorized emissions of radioactive substances, working to understand the properties of alpha, beta, and gamma ray particles.</p>
+<p>One of the major figures in nuclear physics after this was Marie Curie. She and husband Pierre were the first to isolate and characterize radium. Marie Curie’s ground breaking work led to the Nobel Prize in 1903. Her research was conducted in a time when the dangers of radiation were less well known, and Marie Curie’s lab equipment and notebooks are still highly radioactive to this day.</p>
+<div class="info admonition">
+<p class="admonition-title">Quote</p>
+<p>“I am one of those who think like Nobel, that humanity will draw more good than evil from new discoveries.” - Marie Curie</p>
+</div>
+<p>In this course we will learn about the fascinating field of nuclear physics, covering the structure of individual nuclei, predicting the properties of different radioactive decays, and both the practical applications and dangers of nuclear radiation.</p>
+<section id="nuclear-isotopes">
+<h2><span class="section-number">1.1. </span>Nuclear Isotopes<a class="headerlink" href="#nuclear-isotopes" title="Permalink to this heading">#</a></h2>
+<p>To begin let’s go over some fundamental nonmeclature. <strong>Isotopes</strong> are nuclei of a given element with a specific number of nucleons. They are commonly referred to by their atomic mass number, <span class="math notranslate nohighlight">\(A\)</span>, atomic number <span class="math notranslate nohighlight">\(Z\)</span>, and elemental symbol, <span class="math notranslate nohighlight">\(\bf S\)</span>. For example:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\bf ^{238}_{92}U~\)</span>is an isotope of uranium with <span class="math notranslate nohighlight">\(A=238\)</span> nucleons
+(<span class="math notranslate nohighlight">\(Z=92\)</span> protons and <span class="math notranslate nohighlight">\(N=146\)</span> neutrons),
+<br></p></li>
+<li><p><span class="math notranslate nohighlight">\(\bf ^{56}_{26}Fe~\)</span> is an isotope of iron with <span class="math notranslate nohighlight">\(A=56\)</span> nucleons
+(<span class="math notranslate nohighlight">\(Z=26\)</span> protons and <span class="math notranslate nohighlight">\(N=30\)</span> neutrons).
+<br></p></li>
+</ul>
+<p>Since the elemental symbol is determined by the number of protons typically we ignore the bottom number to save writing it every time. For example for uranium the following five terms are all valid</p>
+<div class="math notranslate nohighlight">
+\[
+\textnormal{U238}~=~{\bf _{92}^{238}U}~=~{\bf ^{238}U}~=~\textnormal{U-238}~=~\textnormal{Uranium-238}.
+\]</div>
+<p>Similarly we don’t need to specify the number of neutrons, <span class="math notranslate nohighlight">\(N\)</span>, explicitly each time as this can be determined from <span class="math notranslate nohighlight">\(A=Z+N\)</span>. Throughout this course the short hand form of <span class="math notranslate nohighlight">\(^{A}{\bf S}\)</span> or <span class="math notranslate nohighlight">\(\textnormal{S-A}\)</span> will be used to refer to nuclei so you should familiarize yourself with it.</p>
+<p style="page-break-after:always;"></p>
+<p><p>
+</section>
+<section id="radium-radon-and-the-u-238-chain">
+<h2><span class="section-number">1.2. </span>Radium, Radon, and the U-238 Chain<a class="headerlink" href="#radium-radon-and-the-u-238-chain" title="Permalink to this heading">#</a></h2>
+<p>Radioactive decay of nuclei can transmute one isotope into another with the emission of some form of radiation. The most common forms of radioactive decay for nuclei are spontaneous alpha emission, or beta-decay where a neutron decays into a proton releasing an electron. As shown in the <a class="reference internal" href="#transitiondiagram"><span class="std std-numref">Fig. 1.1</span></a> below we can represent one nucleus decaying into another by considering where each nucleus lies on a chart of <span class="math notranslate nohighlight">\(N\)</span> versus <span class="math notranslate nohighlight">\(Z\)</span>. The most common forms of decay, alpha and beta decay, have their own characteristic steps through this <span class="math notranslate nohighlight">\(Z-N\)</span> space.</p>
+<figure class="align-default" id="transitiondiagram">
+<a class="reference internal image-reference" href="_images/image-66.png"><img alt="Transitions of N and Z for alpha and beta decays between nuclei" src="_images/image-66.png" style="width: 75%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.1 </span><span class="caption-text">Example how to interpret a decay chain transition diagram. Nuclei are plotted as a function of <span class="math notranslate nohighlight">\(N\)</span> and <span class="math notranslate nohighlight">\(Z\)</span>. Different types of nuclear decays move around the chart in a characteristic way like chess pieces on a board.</span><a class="headerlink" href="#transitiondiagram" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The daughter nuclei from a radioactive decay are not necessarily always stable. When one nuclei decays into another nuclei which may at some later time also decay, these are called <strong>Decay Chains</strong>. Radium, <span class="math notranslate nohighlight">\(^{226}{\bf Ra}\)</span>, is one radioactive isotope in a very important chain of isotopes that starts with <span class="math notranslate nohighlight">\(^{238}{\bf U}\)</span> and ends with <span class="math notranslate nohighlight">\(^{206}{\bf Pb}\)</span>. As you can see in <a class="reference internal" href="#udecaychain"><span class="std std-numref">Fig. 1.2</span></a> below the decay chain can span 20 different nuclei if left long enough before finally ending at lead <span class="math notranslate nohighlight">\((^{206}{\bf Pb})\)</span> which is a stable end product that does not decay.</p>
+<figure class="align-default" id="udecaychain">
+<a class="reference internal image-reference" href="https://www.mdpi.com/toxics/toxics-02-00050/article_deploy/html/images/toxics-02-00050-g002.png"><img alt="Decay chain transition diagram for the U-238 chain" src="https://www.mdpi.com/toxics/toxics-02-00050/article_deploy/html/images/toxics-02-00050-g002.png" style="width: 75%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.2 </span><span class="caption-text">Decay chain diagram for the U-238 chain. The approximate half-lives for each element are shown underneath them.</span><a class="headerlink" href="#udecaychain" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The decay rate of radioactive nuclei ire dependent on the isotope and as shown in <a class="reference internal" href="#udecaychain"><span class="std std-numref">Fig. 1.2</span></a> above they can vary significantly. Decay half-lives between gigayears down to seconds are observed in the <span class="math notranslate nohighlight">\(^{238}{\bf U}\)</span> chain. Radon occurs in the middle of the <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span> chain and  has serious health implications. It is an alpha emitter so when outside our bodies it can’t cause much harm. As shown in <a class="reference internal" href="#radon-gas"><span class="std std-numref">Fig. 1.3</span></a> since it is commonly a gas, it can enter the lungs and cause damage to cells. With a half life of 3 days it is a particular problem in underground locations as it can manifest from rocks and hang around in the air for several days before it is inhaled. Radon is actually the major source of natural background radiation that can be harmful to us.</p>
+<figure class="align-default" id="radon-gas">
+<a class="reference internal image-reference" href="https://www.epa.ie/media/epa-2020/environment-amp-you/radon/6.-Radon---lungs.jpg"><img alt="Radon gas damage to the lungs" src="https://www.epa.ie/media/epa-2020/environment-amp-you/radon/6.-Radon---lungs.jpg" style="width: 40%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.3 </span><span class="caption-text">Radon gas typically emits alpha particles. Outside the body these cannot do much damage as they are not penetrating. However when inhaled alpha particles can cause major damage to cells in the lungs.</span><a class="headerlink" href="#radon-gas" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="radiation-hazards">
+<h2><span class="section-number">1.3. </span>Radiation Hazards<a class="headerlink" href="#radiation-hazards" title="Permalink to this heading">#</a></h2>
+<p>Radiation in general is quantified in various units. For experimental physics the source activity in <strong>Becquerels</strong> is often considered. For health the most important is the <strong>Gray and Sievert</strong>.</p>
+<ul class="simple">
+<li><p>A Becquerel is a measure of source activity. It corresponds to the number of radioactive decays per second (so is correlated with the number of high energy particles leaving the source).</p></li>
+<li><p>A Gray is <span class="math notranslate nohighlight">\(1~\textnormal{J/kg}\)</span> of deposited energy. This depends on the source and it’s activity, but also the stand-off distance to the source itself as radiation intensity falls off based on the inverse square law.</p></li>
+<li><p>The Sievert is a Gray multiplied by a dimensionless quantity <span class="math notranslate nohighlight">\(Q\)</span> with value depending in the type of particle. <span class="math notranslate nohighlight">\(Q\)</span> represents the different levels of damage that different particles can do to human cells. An alpha has a high <span class="math notranslate nohighlight">\(Q\)</span> Value because it does more damage to tissue than say electrons of the same energy.</p></li>
+</ul>
+<p>Whilst a measurement in Becquerel’s tells us how active a source is, the most important measure throughout applied nuclear physics is the Sievert. <strong>A dose of one Sievert is lethal</strong>. The allowed dose for workers in the UK is 20 millisieverts per year.</p>
+<p>Here is a summary of various units used throughout the nuclear physics field:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tables</p></th>
+<th class="head"><p>Source Activity</p></th>
+<th class="head"><p>Absorbed Dose</p></th>
+<th class="head"><p>Effective Dose</p></th>
+<th class="head"><p>Intensity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Old unit</p></td>
+<td><p>Curie</p></td>
+<td><p>Rad</p></td>
+<td><p>Rem</p></td>
+<td><p>Roentgen</p></td>
+</tr>
+<tr class="row-odd"><td><p>SI unit</p></td>
+<td><p>Becquerel</p></td>
+<td><p>Gray</p></td>
+<td><p>Sievert</p></td>
+<td><p>…</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You’ll notice that there is no current SI unit for intensity anymore. This is because measurement of intensity of a source at some standoff distance is somewhat arbitrary. Roentgen’s are sometimes still used for this but commonly the effective dose at some distance is the quantity of interest. In radiation detector development commonly “<span class="math notranslate nohighlight">\(y\)</span> Becquerels at distance <span class="math notranslate nohighlight">\(x\)</span>” or “<span class="math notranslate nohighlight">\(y\)</span> mCuries at distance <span class="math notranslate nohighlight">\(x\)</span>” is used to define a reference source intensity at a given position.</p>
+</div>
+</section>
+<section id="basic-properties-of-nuclei">
+<h2><span class="section-number">1.4. </span>Basic Properties of Nuclei<a class="headerlink" href="#basic-properties-of-nuclei" title="Permalink to this heading">#</a></h2>
+<p>Now our challenge over the course of this module is to understand the structure of individual nuclei and the impact this has on observables such as different types of radioactive decays.</p>
+<p>To do this we need to review what properties of nuclei and their behavior we can directly observe. We’ll start with some basic nomenclature and properties of Nuclei. As we mentioned before nuclei can be described in terms of:</p>
+<ul class="simple">
+<li><p>Number of protons (atomic number): <span class="math notranslate nohighlight">\(Z\)</span></p></li>
+<li><p>Number of neutrons : <span class="math notranslate nohighlight">\(N\)</span></p></li>
+<li><p>Number of nucleons (atomic weight) : <span class="math notranslate nohighlight">\(A=Z+N\)</span></p></li>
+</ul>
+<p>Nuclei can also be grouped according to their <span class="math notranslate nohighlight">\(Z\)</span>, <span class="math notranslate nohighlight">\(N\)</span>, and <span class="math notranslate nohighlight">\(A\)</span> values:</p>
+<ul class="simple">
+<li><p>Nuclides with the <strong>same <span class="math notranslate nohighlight">\(Z\)</span></strong> are <strong>Isotopes</strong></p></li>
+<li><p>Nuclides with the <strong>same <span class="math notranslate nohighlight">\(A\)</span></strong> are <strong>Isobars</strong></p></li>
+<li><p>Nuclides with the <strong>same <span class="math notranslate nohighlight">\(N\)</span></strong> are <strong>Isotones</strong></p></li>
+</ul>
+<p>The known elements cover essentially everything from Hydrogen, H-1 to Oganesson-294. <code class="docutils literal notranslate"><span class="pre">{numref}</span></code>chart-of-nuclideslarge` is a chart showing different known nuclei. Around 3000 different nuclei have so far been confirmed, each specified by the proton number <span class="math notranslate nohighlight">\((Z)\)</span> and neutron number <span class="math notranslate nohighlight">\((N)\)</span>. This nuclide plot is one of the most important plots in nuclear physics.</p>
+<figure class="align-default" id="chart-of-nuclideslarge">
+<a class="reference internal image-reference" href="_images/image-136.png"><img alt="IAEA Chart of Nuclides" src="_images/image-136.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.4 </span><span class="caption-text">Chart of all known nuclides. All observed nuclei are given a square based on their <span class="math notranslate nohighlight">\(N\)</span> and <span class="math notranslate nohighlight">\(Z\)</span> value. As we move away from the black line in both directions the nuclei become more and more unstable. At higher <span class="math notranslate nohighlight">\(Z\)</span> values we need more neutrons to counteract electrostatic repulsion and make the nucleus stable.</span><a class="headerlink" href="#chart-of-nuclideslarge" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The most stable elements run along what is called the <strong>“Line of Stability”</strong> when plotted as a function of <span class="math notranslate nohighlight">\(Z\)</span> and <span class="math notranslate nohighlight">\(A\)</span>. Nuclei that deviate from this line decay rapidly to more stable nuclei, converting excess neutrons to protons if below the line (beta+ decay or Electron Capture) or converting excess protons to neutrons if above the line (beta- decay). The light elements have a strong tendency for <span class="math notranslate nohighlight">\(N\)</span>=<span class="math notranslate nohighlight">\(Z\)</span> whilst for heavier elements the relationship follows something closer to <span class="math notranslate nohighlight">\(N=1.5\times Z\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember : Unstable nuclei want to head towards more stable states - <strong>towards</strong> the line of stability.</p>
+</div>
+<p>The international atomic energy agency (IAEA) has gone to great lengths to catalogue information on nuclear physics and radioactive decays. They provide a full library of the properties of each known nuclei in this plot. A link to the IAEA’s interactive nuclei viewer can be found <a class="reference external" href="https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html">HERE</a>.</p>
+</section>
+<section id="nuclear-decay">
+<h2><span class="section-number">1.5. </span>Nuclear Decay<a class="headerlink" href="#nuclear-decay" title="Permalink to this heading">#</a></h2>
+<p>As we mentioned earlier, nuclei sometimes decay in chains until a more stable state is reached. The N and Z values for these stable states usually lie somewhere along the Line of Stability. Whilst we’ve discussed the dominant decays in the U-238 chain, there are actually six types of nuclear decay we need to remember.</p>
+<ol class="arabic simple">
+<li><p><strong>Alpha Decay</strong> - Spontaneous emission of an <span class="math notranslate nohighlight">\(\alpha\)</span> particle,
+<span class="math notranslate nohighlight">\(\Delta Z=-2, \Delta N=-2\)</span></p></li>
+<li><p><strong>Beta Decay</strong> - Spontaneous decay of a neutron into a proton and an electron,
+<span class="math notranslate nohighlight">\(\Delta Z=+1, \Delta N=-1\)</span></p></li>
+<li><p><strong>Neutron Emission</strong> - Spontaneous ejection of a neutron from the nucleus,
+<span class="math notranslate nohighlight">\(\Delta Z=0, \Delta N=-1\)</span></p></li>
+<li><p><strong>Proton Emission</strong> - Spontaneous ejection of a proton from the nucleus,
+<span class="math notranslate nohighlight">\(\Delta Z=-1, \Delta N=0\)</span></p></li>
+<li><p><strong>Positron Emission</strong> - A proton emits a positron and turns into a neutron ,
+<span class="math notranslate nohighlight">\(\Delta Z=-1, \Delta N=+1\)</span></p></li>
+<li><p><strong>Electron Capture</strong> - A proton captures an orbiting electron, turning into a neutron and emitting a neutrino.
+<span class="math notranslate nohighlight">\(\Delta Z=-1, \Delta N=0\)</span></p></li>
+</ol>
+<p>The possible steps for these on our <em>chess board of decays</em> are shown in <a class="reference internal" href="#decay-step-all"><span class="std std-numref">Fig. 1.5</span></a>.</p>
+<figure class="align-default" id="decay-step-all">
+<a class="reference internal image-reference" href="_images/FiguresSlides.002.png"><img alt="Possible decay steps in a chart of nuclides" src="_images/FiguresSlides.002.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.5 </span><span class="caption-text">Possible decay steps in a chart of nuclides. Different decay channels correspond to different steps through the grid. The most common decays are still Alpha and Beta decay.</span><a class="headerlink" href="#decay-step-all" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="mass-calculations">
+<h2><span class="section-number">1.6. </span>Mass Calculations<a class="headerlink" href="#mass-calculations" title="Permalink to this heading">#</a></h2>
+<p>Differences in mass between different nuclei plays a major role in their relative stabilities. Obviously every nucleus carries mass, but this turns out to be more complicated than you might think and we cannot simply add up the masses of the nucleons inside to get the total of the bound state.</p>
+<p>Once collections of nucleons are together inside a nucleus they generally want to stay together (at least for the most stable nuclei!). It takes additional energy to pull a nucleus apart - this is called the Binding Energy, and it is why we cannot simply add the mass of the nucleons together when determining the nuclear mass.</p>
+<p>It is also important to understand if we are considering <strong>Nuclear Mass</strong> or <strong>Atomic Mass</strong>. A nucleus is the part of an atom that is made only of protons and neutrons (nucleons). If electrons are included, then we have an atom (neutral or ionized depending on the number of electrons). The mass of an atom is dominated by the nucleons so in many cases in nuclear physics it is a reasonable assumption to assume the atomic mass is the same as the nuclear mass. However, this is not always true, for instance in some beta decay calculations, we need to account for this as we will see later. Remember that in nuclear physics we tend to deal with energies (masses) in the MeV range. Whereas for electrons in orbitals (Atomic Physics) we consider eV and keV scales.</p>
+<p>To make our lives easier when carrying around a lot of <span class="math notranslate nohighlight">\(\textnormal{MeV}\)</span> terms in nuclear physics it is helpful to define a standard mass close to the nucleon mass. This is the <strong>Unified Mass Constant (<span class="math notranslate nohighlight">\(u\)</span>)</strong>. Nuclear masses are typically expressed in terms of unified mass constant (<span class="math notranslate nohighlight">\(u\)</span>). The mass of a C-12 atom is defined to be exactly <span class="math notranslate nohighlight">\(12u,\)</span> so that</p>
+<div class="math notranslate nohighlight" id="equation-atomicmassunit">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-atomicmassunit" title="Permalink to this equation">#</a></span>\[\begin{equation}
+u = 1.66056\times 10^{-27}~\textnormal{kg} = 931.5 \textnormal{MeV/c}^2.
+\end{equation}\]</div>
+<p>This results in the proton, neutron, and electron masses being defined as:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(m_p\)</span> = <span class="math notranslate nohighlight">\(1.672\times 10^{-27}~\textnormal{kg}\)</span> = <span class="math notranslate nohighlight">\(1.007276~u\)</span> = <span class="math notranslate nohighlight">\(938.28~\textnormal{MeV/c}^2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(m_n\)</span> = <span class="math notranslate nohighlight">\(1.675\times 10^{-27}~\textnormal{kg}\)</span> = <span class="math notranslate nohighlight">\(1.008665~u\)</span> = <span class="math notranslate nohighlight">\(939.57~\textnormal{MeV/c}^2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(m_e\)</span> = <span class="math notranslate nohighlight">\(9.109\times 10^{-31}~\textnormal{kg}\)</span> = <span class="math notranslate nohighlight">\(0.000549~u\)</span> = <span class="math notranslate nohighlight">\(0.511~\textnormal{MeV/c}^2\)</span></p>
+<p> <br> </p>
+</li>
+</ul>
+<p>You’ll see already from these definitions that the mass of a free proton or a neutron is more than <span class="math notranslate nohighlight">\(u\)</span> itself by between 0.7-0.8%. This is quite important as we defined <span class="math notranslate nohighlight">\(u\)</span> based on the mass of C-12 divided by it’s number of nucleons. This means a carbon atom is also approximately 0.8% lighter than the sum of its constituents. We find that this is true for all nuclei. <strong>The mass of a given nucleus is always less than the sum of the masses of the individual nucleons inside</strong>. This is because the forces that hold nuclei together contribute additional negative energy,</p>
+<div class="math notranslate nohighlight" id="equation-nuclearmass">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-nuclearmass" title="Permalink to this equation">#</a></span>\[\begin{equation}
+M(A,Z) &lt; Zm_{p} + Nm_{n}.
+\end{equation}\]</div>
+<p>This nuclear mass deficit can be calculated as the difference between the nuclear mass, and the sum of individual nucleons.</p>
+<div class="math notranslate nohighlight" id="equation-nuclearmassdeficit">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-nuclearmassdeficit" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\Delta M(A,Z) = M(A,Z) - ZM_{p} + NM_{n}.
+\end{equation}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that in the equation above we haven’t included the electron masses. This contributes several percent for low mass nuclei so in some cases can’t be neglected. The important point to determine if electron masses should be included is in whether the mass of just the nucleus <span class="math notranslate nohighlight">\(M(A,Z)\)</span> is given, or the mass of the neutral atom is given <span class="math notranslate nohighlight">\(M_{atom}\)</span>.</p>
+</div>
+<p>The deficit shown in Eq. <a class="reference internal" href="unit1-terms.html#equation-nuclearmassdeficit">(2)</a> is related to the binding energy, <span class="math notranslate nohighlight">\(B\)</span> of nuclei, corresponding to the total energy required to split the nucleus apart into free nucleons</p>
+<div class="math notranslate nohighlight" id="equation-bindingenergyeq">
+<span class="eqno">(1.4)<a class="headerlink" href="#equation-bindingenergyeq" title="Permalink to this equation">#</a></span>\[\begin{equation}
+-\Delta M(A,Z) = B
+\end{equation}\]</div>
+<p>Typically the binding energy is referred to as a positive value, but when considering its role in calculating the overall mass of the nucleus the change in mass is actually negative as shown in Eq. <a class="reference internal" href="unit1-terms.html#equation-bindingenergyeq">(3)</a>. As we discussed in the last lecture, stable nuclei have the highest binding energies - it takes more to pull them apart.</p>
+<p>Since the neutrons and protons have different masses and properties, we expect that the binding energy for neutrons or protons to be very slightly different. These individual binding energies are commonly referred to as <strong>Separation energies</strong>. For example, the neutron separation energy for a Carbon-12 atom is calculated by taking the difference in binding energies between Carbon-12, and Carbon-11 (one less neutron). Similarly the proton separation energy for C-12 is calculated from the difference between C-12 and N-12.</p>
+<p>Below in <a class="reference internal" href="#binding-energy"><span class="std std-numref">Fig. 1.6</span></a> is the second most important plot in nuclear physics. It is a plot of the Average Binding Energy per total number of nucleons (<span class="math notranslate nohighlight">\(A=Z+N\)</span>) for all nuclei.</p>
+<figure class="align-default" id="binding-energy">
+<a class="reference internal image-reference" href="_images/image-75.png"><img alt="Plot of binding energy versus number of nucleons in the nucleus" src="_images/image-75.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.6 </span><span class="caption-text">Plot of average binding energy per nucleon versus number of nucleons in the nucleus. A peak is observed at Fe-56, above which the binding energy reduces as larger nuclei become less tightly bound.</span><a class="headerlink" href="#binding-energy" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>There are some very important features here already that we should consider:</p>
+<ol class="arabic simple">
+<li><p>For heavy nuclei the binding energy is stable at around <span class="math notranslate nohighlight">\(8~\textnormal{MeV/nucleon}\)</span>.</p></li>
+<li><p>The maximum binding energy is at <span class="math notranslate nohighlight">\(A=56\)</span> which is Iron. <span class="math notranslate nohighlight">\(\textnormal{Fe-56}\)</span> is one of the most stable well-bound nuclei.</p></li>
+<li><p>Local peaks are visible when <span class="math notranslate nohighlight">\(A=4N\)</span>, e.g. <span class="math notranslate nohighlight">\(\textnormal{He-4}\)</span>. These features play important roles in how we build nuclear models as we will see later in the course.</p></li>
+</ol>
+<p>You may have seen this plot already in second year nuclear physics, and may even understand the implications of these features, but in this course we are going to delve a bit deeper into actually where these features and look at how we construct models that can accurately describe this plot, and explain each of the decay phenomena we have discussed in this lecture in more detail.</p>
+</section>
+<section id="probing-the-nucleus">
+<h2><span class="section-number">1.7. </span>Probing the Nucleus<a class="headerlink" href="#probing-the-nucleus" title="Permalink to this heading">#</a></h2>
+<p>Nuclei as opposed to atoms, have a net charge, from the sum of the proton charges. Neutrons can be considered essentially neutral, as the name suggests. However, in fact we know both neutrons and protons have an internal structure. Neutrons are composed of 3 quarks, (up, down, down for neutrons) that all have charge. The sum of the charges is zero but the structure does mean that charge-like phenomena exist for neutrons arising from their internal charge distribution. For example the neutron has a non-zero magnetic moment.</p>
+<p>The fact that nucleons consist of quarks is actually the reason nuclei form in the first place. The nuclear force that binds nuclei together is in itself <strong>not a fundamental force</strong>. Instead the nuclear force is mediated by virtual pions (particle made of a quark and anti-quark) being exchanged between nucleons as a result of strong interactions. The nuclear force can therefore be thought of almost as a leakage of the strong force which reaches a very small range outside of each nucleon.</p>
+<p>Of course nuclei also have finite size, but it’s impressively small when compared to the size of the electron orbitals in an atom, and the scale of the nuclei itself is typically only one to two orders of magnitude greater than nucleons themselves. A comparison of relative scale differences in the relative sizes for some nuclei shown in <a class="reference internal" href="#nuclear-size"><span class="std std-numref">Fig. 1.7</span></a>.</p>
+<figure class="align-default" id="nuclear-size">
+<a class="reference internal image-reference" href="_images/FiguresSlides.003.png"><img alt="Nucleus Size" src="_images/FiguresSlides.003.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.7 </span><span class="caption-text">Atomic versus Nuclear versus Proton size comparisons</span><a class="headerlink" href="#nuclear-size" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Example scales of Aluminium</strong></p>
+<ul class="simple">
+<li><p>Atomic Radius of Aluminium = <span class="math notranslate nohighlight">\(1.3 \times 10^{-10}~\textnormal{m}\)</span></p></li>
+<li><p>Nuclear Radius of Aluminium = <span class="math notranslate nohighlight">\(3.6 \times 10^{-15}~\textnormal{m}\)</span></p></li>
+</ul>
+<p>Given that Nuclei have mass and charge then there is obviously going to be a density of mass and charge in nuclei, with some distribution. We’ll consider this in more detail later. For now we can ask what is the average mass and charge density of the nuclear material. To estimate this simply assume that nuclei are made of nucleons (protons and neutrons) that are something like <strong>Hard Spheres</strong> of radius <span class="math notranslate nohighlight">\(r_{0}\)</span>. The density is then estimated assuming each nucleon is packed together but doesn’t overlap. This allows the mass density to be approximately the same as a single nucleon density as</p>
+<div class="math notranslate nohighlight" id="equation-massdensity">
+<span class="eqno">(1.5)<a class="headerlink" href="#equation-massdensity" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\rho_{m} = \frac{M}{V} = \frac{3m_{n}}{4\pi r^{3}_{0}}
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(m_{n}\)</span> is mass of neutron. For charge a similar approach can be taken but we have to include the fact that neutrons are negative, and it is only every proton that contributes a single charge <span class="math notranslate nohighlight">\(e\)</span> to the total charge <span class="math notranslate nohighlight">\(Q\)</span> of the nucleus.</p>
+<div class="math notranslate nohighlight" id="equation-chargedensity">
+<span class="eqno">(1.6)<a class="headerlink" href="#equation-chargedensity" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{equation}
+\rho_{c} = \frac{Q}{V} = \frac{3Ze}{4\pi r^{3}_{0} A}\\
+\end{equation}\end{split}\]</div>
+</section>
+<section id="measuring-nuclear-size">
+<h2><span class="section-number">1.8. </span>Measuring Nuclear Size<a class="headerlink" href="#measuring-nuclear-size" title="Permalink to this heading">#</a></h2>
+<p>To get a better idea of the actual size, charge, and matter distribution, physicists use <strong>Scattering Experiments</strong>. The typical approach is to fire beams of particles at a fixed target and see what has happened to the particles on the other side.</p>
+<p>Typical experiments are : (i) electron scattering, (ii) alpha particle scattering, (iii) proton scattering, and (iv) neutron scattering and absorption.</p>
+<p>For best results the <em>de Broglie Wavelength</em> of the probing nuclei must be a smaller than the nucleus, some typical beam energy values for nuclear probe experiments:</p>
+<ul class="simple">
+<li><p>alphas <span class="math notranslate nohighlight">\(&gt;\)</span> 2 MeV</p></li>
+<li><p>protons <span class="math notranslate nohighlight">\(&gt;\)</span> 8 MeV</p></li>
+<li><p>electrons <span class="math notranslate nohighlight">\(&gt;\)</span> 120MeV</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember the de Broglie Wavelength is the wavelength of the probing beam of particles which can be calculated from the momentum via <span class="math notranslate nohighlight">\(\lambda = h/p\)</span>.</p>
+</div>
+<p>A vital concept in such experiments is the notion of <strong>Interaction Cross Sections</strong>. The Cross Section <span class="math notranslate nohighlight">\(\sigma\)</span>, quantifies the probability of a collision (or reaction) occurring between a beam particle and a target particle. It is based on the probability an interaction occurs using the notion of a <strong>Cross Sectional Area</strong> for the nucleus.
+It can be defined as an area around the centre of one of the particles within which the centre of second must fall if they are to collide as illustrated in <a class="reference internal" href="#particle-radius"><span class="std std-ref">Fig. 8</span></a>.</p>
+<figure class="align-default" id="particle-radius">
+<a class="reference internal image-reference" href="_images/FiguresSlides.004.png"><img alt="Picture of two spheres aligned such that they will intersect if within one R of each other, where R is the radius." src="_images/FiguresSlides.004.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.8 </span><span class="caption-text">Cross-section calculation based on assuming interacting bodies are hard spheres. If the center of the particle on the left is within <span class="math notranslate nohighlight">\(2R\)</span> of the the one on the right then the particles will interact with one another.</span><a class="headerlink" href="#particle-radius" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Normally we can assume the particles are simple Hard Spheres such that if they all have radius R then the cross-sectional area is just,</p>
+<div class="math notranslate nohighlight" id="equation-crosssectionarea">
+<span class="eqno">(1.7)<a class="headerlink" href="#equation-crosssectionarea" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\sigma = \pi (2R)^{2}
+\end{equation}\]</div>
+<p>Due to the small sizes of nuclei, <span class="math notranslate nohighlight">\(\sigma\)</span>, is often expressed in units of Fermi squared <span class="math notranslate nohighlight">\((10^{-30}m^{2})\)</span> or barns <span class="math notranslate nohighlight">\((10^{-28}m^{2}\)</span>) or even pico-barns<span class="math notranslate nohighlight">\(~(10^{-40}m^{2})\)</span>. In reality, as we will see, nuclei are not hard-edged and so cross-sections cannot be defined so geometrically, but it is a reasonable approximation for now.</p>
+<p>If we consider a material (a “Target”) with <span class="math notranslate nohighlight">\(n\)</span> particles per unit volume, then we can use the total cross-section, <span class="math notranslate nohighlight">\(\sigma\)</span>, to find the Mean Free Path for an interaction by a given particle fired at that material. For a Thin Target (or Foil) this is given by</p>
+<div class="math notranslate nohighlight" id="equation-crosssectionarea2">
+<span class="eqno">(1.8)<a class="headerlink" href="#equation-crosssectionarea2" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\lambda = \frac{1}{n\sigma}.
+\end{equation}\]</div>
+<p>The mean free path or cross-section can be used to determine the reduction in beam particles for a given target. Consider we have a beam of <span class="math notranslate nohighlight">\(N_0 ~\textnormal{particles/s}\)</span>  impinging on a target so that a flux <span class="math notranslate nohighlight">\(N\)</span> emerges.</p>
+<p><strong>For thick targets</strong> of thickness <span class="math notranslate nohighlight">\(x\)</span> then</p>
+<div class="math notranslate nohighlight" id="equation-nthick">
+<span class="eqno">(1.9)<a class="headerlink" href="#equation-nthick" title="Permalink to this equation">#</a></span>\[\begin{equation}
+N = N_0 e^{-x/\lambda}
+\end{equation}\]</div>
+<p>and the number of collisions in distance x is</p>
+<div class="math notranslate nohighlight" id="equation-cthick">
+<span class="eqno">(1.10)<a class="headerlink" href="#equation-cthick" title="Permalink to this equation">#</a></span>\[\begin{equation}
+C=N_0-N=N_0(1-e^{-x/\lambda}).
+\end{equation}\]</div>
+<p><strong>For thin targets (<span class="math notranslate nohighlight">\(x &lt;&lt; \lambda\)</span>)</strong> instead the exponential term in the can be reduced to</p>
+<div class="math notranslate nohighlight" id="equation-nthin">
+<span class="eqno">(1.11)<a class="headerlink" href="#equation-nthin" title="Permalink to this equation">#</a></span>\[\begin{equation}
+N=N_0\left(1+\frac{x}{\lambda}\right)
+\end{equation}\]</div>
+<p>meaning the number of collisions becomes</p>
+<div class="math notranslate nohighlight" id="equation-cthin">
+<span class="eqno">(1.12)<a class="headerlink" href="#equation-cthin" title="Permalink to this equation">#</a></span>\[\begin{equation}
+C=\frac{xN_0}{\lambda} = N_{0}n\sigma x.
+\end{equation}\]</div>
+<p>We can see from Eq. <a class="reference internal" href="unit1-terms.html#equation-nthick">(8)</a> that given accurate prior knowledge of our starting beam flux and the thickness of our target, we can determine the cross-section of the total particles inside simply by measuring the change in intensity of our beam.</p>
+</section>
+<section id="partial-and-differential-cross-sections">
+<h2><span class="section-number">1.9. </span>Partial and Differential Cross Sections<a class="headerlink" href="#partial-and-differential-cross-sections" title="Permalink to this heading">#</a></h2>
+<p>So far the Cross Section we have considered has really been the Total Cross Section, <span class="math notranslate nohighlight">\(\sigma_{T}\)</span>, referring  to the sum of all possible interactions involving the beam and target particles. In practice, there may be different types of interaction, or <strong>Interaction Channels</strong>, that happen each with their own seperate probability. The sum of all the cross-sections for each possible channel gives the total cross-section for the target. We introduce the term <strong>Partial Cross Section</strong> to distinguish these from the total cross-section, for instance <span class="math notranslate nohighlight">\(\sigma_{e}\)</span>.</p>
+<p>In the previous sums we have also not said anything about where a given scattered particle goes, i.e. the angle through which it is scattered. It could be that all scattering angles are equally likely. This would be Isotropic Scattering. In practice however some angles end up being more likely than others due to various kinematic constraints depending on the interaction. To account for this we use the <strong>Differential Cross-Section</strong> <span class="math notranslate nohighlight">\(
+\frac{d\sigma}{d\Omega}
+\)</span></p>
+<p>Consider a finite element of solid angle <span class="math notranslate nohighlight">\(\Delta \Omega\)</span> at angle <span class="math notranslate nohighlight">\(\theta\)</span> as shown in <a class="reference internal" href="#scatteringcone"><span class="std std-numref">Fig. 1.9</span></a>. There is a part of <span class="math notranslate nohighlight">\(\sigma_e\)</span> called <span class="math notranslate nohighlight">\(\Delta \sigma_{e}\)</span> which corresponds to a probability of scattering into that cone. The Differential Cross Section for elastic scattering at angle <span class="math notranslate nohighlight">\(\theta\)</span> is thus</p>
+<div class="math notranslate nohighlight" id="equation-cross">
+<span class="eqno">(1.13)<a class="headerlink" href="#equation-cross" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\frac{d\sigma_{e}}{d\Omega} = (lim \Delta\Omega \rightarrow 0) \frac{\Delta \sigma_{e}}{\Delta \Omega}
+\end{equation}\]</div>
+<p>If we integrate <span class="math notranslate nohighlight">\(d\sigma/d\Omega\)</span> over all possible scattering angles then we get back to the total cross section for that particular channel.</p>
+<figure class="align-default" id="scatteringcone">
+<a class="reference internal image-reference" href="_images/FiguresSlides.005.png"><img alt="Beam Direction" src="_images/FiguresSlides.005.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.9 </span><span class="caption-text">Scattering angle cone used to define <span class="math notranslate nohighlight">\(\Delta \Omega\)</span> in beam scattering experiments.</span><a class="headerlink" href="#scatteringcone" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Here we have considered a differential cross-section in terms of a solid angle, but in practice this can be given in terms of any kinematic variables derived from the interaction. For example the differential cross-section for electron scattering calculated in terms of the beam energy may be expressed as <span class="math notranslate nohighlight">\(d\sigma/dE\)</span>, and a double differential cross-section in terms of beam energy and scattering angle may be expressed as <span class="math notranslate nohighlight">\(d^{2}\sigma/(dEd\theta)\)</span>.</p>
+</section>
+<section id="rutherford-and-mott-scattering">
+<h2><span class="section-number">1.10. </span>Rutherford and Mott Scattering<a class="headerlink" href="#rutherford-and-mott-scattering" title="Permalink to this heading">#</a></h2>
+<p>The first nuclear scattering experiments, famously started by Rutherford, were performed using alpha particles. These experiments used a collimated polonium sample to create a beam of alpha particles which could be directed at a thin gold foil. A fluorescent screen was used to determine the scattering angle of the particles after the interaction. The cross-section measured in these interactions can then be used to determine the nuclear radius. Below is a sketch of Rutherfords original experiment using a gold thin foil as a target.</p>
+<figure class="align-default" id="rutherfordexperimentt">
+<a class="reference internal image-reference" href="_images/image-76.png"><img alt="Beam Direction" src="_images/image-76.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.10 </span><span class="caption-text">Hyperbolic Trajectory of scattering in Rutherford scattering assuming charged deflection of the beam particles.</span><a class="headerlink" href="#rutherfordexperimentt" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Two important conclusions were drawn from the early scattering experiments:</p>
+<ul class="simple">
+<li><p>Nuclear have very small size, about <span class="math notranslate nohighlight">\(10^{-14}~\textnormal{m}\)</span></p></li>
+<li><p>Nuclear Radii, <span class="math notranslate nohighlight">\(R\)</span>, are seen to increase with the total number of nucleons, <span class="math notranslate nohighlight">\(A\)</span>, such that <span class="math notranslate nohighlight">\(R\approx r_{0} A^{1/3}\)</span>, where <span class="math notranslate nohighlight">\(r_{0}\)</span> is the nucleon radius. This suggests that nucleons are <strong>Incompressible</strong>.</p></li>
+</ul>
+<p>Rutherford and others went further after these ground breaking experiments, to deduce an equation for the angle by which alpha particles scatter, known as the <strong>Differential Cross Section for Rutherford Scattering</strong> based on assuming that alphas follow a hyperbolic trajectory as they scatter of a static point-like charge target.</p>
+<figure class="align-default" id="hyperbolic">
+<a class="reference internal image-reference" href="_images/FiguresSlides.006.png"><img alt="Beam Direction" src="_images/FiguresSlides.006.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.11 </span><span class="caption-text">Hyperbolic Trajectory of scattering in Rutherford scattering assuming charged deflection of the beam particles.</span><a class="headerlink" href="#hyperbolic" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="math notranslate nohighlight" id="equation-rutherford">
+<span class="eqno">(1.14)<a class="headerlink" href="#equation-rutherford" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{equation}
+\frac{d\sigma}{d\Omega_{R}} = \frac{z^{2}Z^{2}\alpha^{2}\hbar^{2}c^{2}}{4E^{2}} \frac{1}{sin^{4}(\theta/2)} \\
+\end{equation}\end{split}\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(z\)</span> is the charge of the projectile.</p></li>
+<li><p><span class="math notranslate nohighlight">\(Z\)</span> is the charge of the scatterer.</p></li>
+<li><p><span class="math notranslate nohighlight">\(E\)</span> is kinetic energy of the particle</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta\)</span> is the scattering angle</p></li>
+<li><p><span class="math notranslate nohighlight">\(\alpha\)</span> is the <strong>fine structure constant</strong></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The fine structure constant defines the strength of electromagnetic interactions.
+<span class="math notranslate nohighlight">\(
+\alpha = \frac{e^{2}}{\hbar c 4\pi \epsilon_0}
+\)</span></p>
+</div>
+<p>{numref}`rutherfordform predicts a form the cross section vs scattering as shown opposite.</p>
+<figure class="align-default" id="rutherfordform">
+<a class="reference internal image-reference" href="_images/rutherford_form.png"><img alt="Rutherford Form" src="_images/rutherford_form.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.12 </span><span class="caption-text">Rutherford Cross-section Form for three different nuclei.</span><a class="headerlink" href="#rutherfordform" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Unfortunately the Rutherford prediction has been found to give a poor fit to real data. The main reason being the assumption that alphas are point-like objects. An improvement, introduced by Mott, is to use electrons, that are indeed point-like and can also better probe the nucleus, if of sufficient energy. This requires taking account of the relativistic effects of high energy electrons, their Magnetic Moment and also the resulting Nuclear Recoil.</p>
+<p>The result is a modification to the equation above, thus:</p>
+<div class="math notranslate nohighlight" id="equation-mott">
+<span class="eqno">(1.15)<a class="headerlink" href="#equation-mott" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\frac{d\sigma}{d\Omega_{M}} = \frac{d\sigma}{d\Omega_{R}} \times [1-\beta^{2} sin^{2} (\theta/2)]
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\beta\)</span> encompasses these corrections for relativistic electrons.</p>
+<p>Hofstadter set up electron scattering experiments on nuclei to investigate the Mott scattering prediction, illustrated in <a class="reference internal" href="#hofstadter"><span class="std std-numref">Fig. 1.13</span></a> below. These experiments used electrons of 500 MeV to probe down to length scales of <span class="math notranslate nohighlight">\(2.5~\textnormal{fm}\)</span>.</p>
+<figure class="align-default" id="hofstadter">
+<a class="reference internal image-reference" href="_images/FiguresSlides.008.png"><img alt="Hofstadter Experimental Setup" src="_images/FiguresSlides.008.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.13 </span><span class="caption-text">Diagram of the Hofstadter Experiment.</span><a class="headerlink" href="#hofstadter" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Hofstadter’s experiments provided a strong constraint on the scattering cross-section of nuclei over a broad range of angles. Unfortunately however they showed that that the data still deviates even from the Mott prediction and more is needed to fully describe the nucleus.</p>
+<p>This deviation is now interpreted as telling us about the charge/matter distribution in the nucleus. That not only is the nucleus not point-like as assumed in the Mott formula but it has a particular density profile and shape which can be further explicitly probed by electron scattering experiments.</p>
+<div class="note admonition">
+<p class="admonition-title">Example Question</p>
+<p class="rubric">Example 1.1 : Carbon Mass Calculation</p>
+<p><strong>Given the mass of a carbon-12 atom is <span class="math notranslate nohighlight">\(12u\)</span>, estimate the binding energy of the carbon nucleus.</strong></p>
+<p>First we start with the mass of the proton, neutron, and electrons in the atomic mass units. Since the mass if that of a carbon-12 atom, we include the electrons in our calculation.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+m_{p} = 1.00728 u \\
+m_{n} = 1.00866 u \\
+m_{e} = 0.00055 u \\
+\end{split}\]</div>
+<p>Now we can write the binding energy as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B = M_{C12} - 6m_{n} - 6m_{p} - 6m_{e} \\
+Bc^{2} = 0.09894 u = 0.09894 \times 931.5~\textnormal{MeV/u} = 92.16~\textnormal{MeV}
+\end{split}\]</div>
+<p>If we want to get this per nucleon we just need to divide by the total nucleons in a carbon 12 nucleus.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B/A = 92.16~\textnormal{MeV} / 12 = 7.42~\textnormal{MeV/nucleon}\\
+\end{split}\]</div>
+<p><strong>Additional Clarification (04/2024)</strong> : A key thing to remember is that the electron mass does contribute if we are working in <strong>atomic</strong> mass values, whilst if we have been given a <strong>nuclear</strong> mass value it does not. For heavy mass nuclei including the electrons  has a smaller effect as the number of protons relative to neutrons drop.</p>
+<p>Given that the mass of an electron is around <span class="math notranslate nohighlight">\(0.511~\textnormal{MeV/c}^{2}\)</span> we can expect shifts in the total binding energy on the order of several MeV depending on the nuclei.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Example Question</p>
+<p class="rubric">Example 1.2 : Nucleon Momentum Estimate</p>
+<p>Use the Heisenberg Uncertainty principle to estimate the momentum of nucleons inside the nucleus given that the nuclear radius is on the order of <span class="math notranslate nohighlight">\(5~\textnormal{fm}\)</span>.</p>
+<p>The Heisenberg principle states that</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta x \Delta p \geq \frac{\hbar}{2}
+\]</div>
+<p>in the case of a solid sphere we can emasure the nucleoonos position with an uncertainty similar to the nuclear radius, hence</p>
+<div class="math notranslate nohighlight">
+\[
+c\Delta p \approx \frac{\hbar c}{2\Delta x}
+\]</div>
+<p>as usual multiplying both terms by <span class="math notranslate nohighlight">\(c\)</span> to make use of the simple to remember quantity of <span class="math notranslate nohighlight">\(\hbar c \approx 200~\textnormal{MeV}~\textnormal{fm}\)</span>. This implies that the momenta of the nucleons will be of the order of</p>
+<div class="math notranslate nohighlight">
+\[
+pc \approx \frac{200~\textnormal{MeV}~\textnormal{fm}}{2 \times 5~\textnormal{fm}} = 20~\textnormal{MeV}.
+\]</div>
+<p>This 20 MeV momentum is considerable, however it is much smaller than the nucleons mass, which means that albeit fast, they will not be in the relativistic regime. Therefore the moomentum can be written as</p>
+<div class="math notranslate nohighlight">
+\[
+p = m v
+\]</div>
+<p>and the ratio <span class="math notranslate nohighlight">\(pc/E\)</span> can be expressed as</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{pc}{E} = \frac{mvc}{mc^{2}} = \frac{v}{c} = \beta
+\]</div>
+<p>which gives <span class="math notranslate nohighlight">\(\beta \approx 0.02\)</span>. Despite the fact that we consider the nucleus as a solid sphere of protons and neutrons tightly packed together, the quantum mechanical reality is quite different as the nucleons move quite quickly around the allowed space.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Example Question</p>
+<p class="rubric">Example 1.3 : Shielding Cross-section Estimate</p>
+<p><strong>Consider a 1-TBq source of Cs-137 that produces an effective dose of 1.073 Sv/hr at a distance of 30cm (<em>Delecroix Handbook 2002</em>). The decay chain of Cs-137 produces a clear gamma ray peak at 662 keV. Assuming a cross-section of 662keV gamma rays on lead nuclei of <span class="math notranslate nohighlight">\(\sigma=4.3 \times 10^{-23} cm^{2}\)</span> determine the lead shielding thickness required to reduce the dose rate to 1mSv/hr.</strong></p>
+<p>To calculte the thickness of lead first we need to know the attenuation rate of our gamma rays in the lead shielding. We can estimate this based on the cross-section and the density of lead itself, <span class="math notranslate nohighlight">\(\rho\)</span>.</p>
+<p>Given the density, <span class="math notranslate nohighlight">\(\rho=11.36 \textnormal{g/cm}^{3}\)</span>, and the mass of a lead atom to be <span class="math notranslate nohighlight">\(m_{Pb} = 207.293u\)</span> we can estimate <span class="math notranslate nohighlight">\(n\)</span> as</p>
+<div class="math notranslate nohighlight">
+\[
+n = \frac{11.36 \textnormal{g/cm}^{3}}{207.293u \times 1.66056\times 10^{-24} \textnormal{g/u} } = 3.3 \times 10 ^{23} \textnormal{cm}^{-3}
+\]</div>
+<p>This leads to a mean free path of</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda = \frac{1}{n\sigma} = 0.704 \textnormal{cm}^{-1}
+\]</div>
+<p>If we consider the intensity of our source passing through the lead shielding we get</p>
+<div class="math notranslate nohighlight">
+\[
+N = N_{0}~e^{-x/\lambda}
+\]</div>
+<p>Taking the natural log this gives</p>
+<div class="math notranslate nohighlight">
+\[
+x = -\lambda ~\textnormal{ln}\left( \frac{N}{N_{0}}\right)
+\]</div>
+<p>Now if we consider our known attenuation and drop required we get</p>
+<div class="math notranslate nohighlight">
+\[
+x = -0.704 ~\textnormal{ln} \left( \frac{1~\textnormal{Smv/hr}}{1.073~\textnormal{Sv/hr}}\right) = 4.91~\textnormal{cm}
+\]</div>
+<p>Note that this is an estimate based on just the 662keV peak, and neglects the <span class="math notranslate nohighlight">\(r^{2}\)</span> fall-off for point radioactive sources, but it highlights how the cross-section has an effect on the result. If the cross-section’s for gamma radiation were higher, we would expect much thicker shielding requirements.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Example Question</p>
+<p class="rubric">Example 1.4 : Closest Approach Estimate</p>
+<p><strong>Considering Polonium-210 as an alpha emitter in Rutherford’s gold foil experiment, estimate the minimum theoretical limit to which alpha scattering may be able place a limit on the size of the nucleus.</strong></p>
+<p>To consider the limit of the alpha scattering experiments we need to determine their distance of closest possible approach under the hyperbolic trajectory assumption.</p>
+<p>Consider the case when an alpha particle is directed head-on towards the nucleus, so that when it reaches the distance of closest approach it turns around and travels back in the direction it came. At this turning point all of the alpha’s kinetic energy has been transformed into electric potential energy.</p>
+<p>The potential some distance, <span class="math notranslate nohighlight">\(r\)</span>, away is given by</p>
+<div class="math notranslate nohighlight">
+\[
+E_{Q} = \frac{1}{4\pi\epsilon_{0}} \frac{(2e)\cdot(Ze)}{r}
+\]</div>
+<p>where 2e is the charge of the alpha, and Ze is the charge of the gold nucleus.</p>
+<p>At the distance of closest approach, <span class="math notranslate nohighlight">\(d\)</span>, this potential is equal to the starting kinetic energy of the alpha,</p>
+<div class="math notranslate nohighlight">
+\[
+K_{\alpha} =  \frac{1}{4\pi\epsilon_{0}} \frac{(2e)\cdot(Ze)}{d}.
+\]</div>
+<p>This means the distance is simply</p>
+<div class="math notranslate nohighlight">
+\[
+d =  \frac{1}{4\pi\epsilon_{0}} \frac{(2e)\cdot(Ze)}{K_{\alpha}}.
+\]</div>
+<p>Now to determine the energy of the alphe we need to consider the mass deficit of the decay that took place to produce it.</p>
+<div class="math notranslate nohighlight">
+\[
+\textnormal{Po}_{210} \rightarrow \textnormal{Pb}_{206} + \alpha.
+\]</div>
+<p>The mass contributions from each of these are taken from the NIST material database as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M(\textnormal{Pb}_{210}) = 209.9828u \\
+M(\textnormal{Pb}_{206}) = 205.9794u \\
+M(\alpha) = 4.0026u \\
+\end{split}\]</div>
+<p><strong>Additional Clarification (04/2024)</strong> :
+Note that here for the alpha mass contribution we have used the mass of a <strong>Helium atom</strong> as this encapsulates that the 2 extra electrons have to go somewhere.</p>
+<p>This means the mass deficit energy, <span class="math notranslate nohighlight">\(Q\)</span>, is given by</p>
+<div class="math notranslate nohighlight">
+\[
+Qc^{2} = (209.9828u - 205.9794u - 4.0026u)c^{2} = 0.0058u ~c^{2}
+\]</div>
+<p>This energy will be split between the alpha and daughter nuclei, however if we assume that all the energy goes into the kinetic energy of the alpha given it has much smaller mass this gives the maximum kinetic energy of the alpha in standard units as</p>
+<div class="math notranslate nohighlight">
+\[
+K_\alpha = 5.40~\textnormal{MeV} = 8.65175 \times 10^{-13} J
+\]</div>
+<p>Subbing this maximum back into our equation for the distance gives</p>
+<div class="math notranslate nohighlight">
+\[
+d = 4.905 \times 10^{-14}~\textnormal{m}
+\]</div>
+<p>So our alpha particles only manage to get within <span class="math notranslate nohighlight">\(49 \textnormal{fm}\)</span> from the nucleus and that is if they hit the gold nucleus head on. If we consider that typical <span class="math notranslate nohighlight">\(\alpha\)</span> particle energies are between <span class="math notranslate nohighlight">\(0-11 \textnormal{MeV}\)</span> this gives a minimum distance of closest approach of around <span class="math notranslate nohighlight">\(25~\textnormal{fm}\)</span> still much bigger than the size of the gold nucleus (<span class="math notranslate nohighlight">\(6.6~\textnormal{fm}\)</span>).</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="phy303-homepage.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Course Info.</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="phy303-unit2-liquiddropmodels.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Liquid Drop Model</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-isotopes">1.1. Nuclear Isotopes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radium-radon-and-the-u-238-chain">1.2. Radium, Radon, and the U-238 Chain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radiation-hazards">1.3. Radiation Hazards</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-properties-of-nuclei">1.4. Basic Properties of Nuclei</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-decay">1.5. Nuclear Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-calculations">1.6. Mass Calculations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probing-the-nucleus">1.7. Probing the Nucleus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-nuclear-size">1.8. Measuring Nuclear Size</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partial-and-differential-cross-sections">1.9. Partial and Differential Cross Sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rutherford-and-mott-scattering">1.10. Rutherford and Mott Scattering</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,649 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Collection Modeles &#8212; PHY303 Nuclear Physics 1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-lecture10-collectivemodels';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="phy303-homepage.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">PHY303 Nuclear Physics 1</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit10-fissionandfusion.html">10. Nuclear Power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit11-medicalapplications.html">11. Nuclear Medicine</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucleus-shape.html">Nucleus Shape</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Revision Tools</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit5-terms.html">Unit 5 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit6-terms.html">Unit 6 : Equations &amp; Terms</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fphy303-lecture10-collectivemodels.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/phy303-lecture10-collectivemodels.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Collection Modeles</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Collection Modeles</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rotational-states">Rotational States</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="collection-modeles">
+<h1>Collection Modeles<a class="headerlink" href="#collection-modeles" title="Permalink to this heading">#</a></h1>
+<p>Thee way forward is tto use a combination of concepts oftern referred to as COollective models.</p>
+<p>The idea of a collective model is to merge concepts where the behaviour of individual nucleons is used, as in the Shell Model, with aspects where the behaviur of thee nucleus as a coherent single entity is susesde.</p>
+<p>In a sensee the Semi Empirical Mass Forumla iss already a collcetive ttype model as sit involvesse combing eleemeents thatatke account of individual nucleons, such as thte Pairing Term, with elements that aree about the Bulk Nucleus ass a whole, such as the volume Term.</p>
+<p>So we can considere a duality int hee model. A collcetive body aspect in which no account is taken of individual nucleonic state or behaviour, and an individual particlee aspect, where invdividual nucleons take on diescrete energy levls and states.</p>
+<p>The most intersting area where a collctive treeatment is needed is with large nuclei,likee U=235. Such nuclei display exotic behaviour that can be modleld as Vibration and Rotations of the BUlk Nucleaer Material acting together.</p>
+<p>Failures in the shell model’s ability to predict bulk deformations of somo nucli leads us to the idea of a Collective Modl.</p>
+<p>the conceeptt here is tto invoke an xteension of the Liquid Drop and Shell Models to include the physics associateed with dfeormation of nuclei away from th basic spherical shape to more complex shapes as illustrated below:</p>
+<p>Insert image of nuclear shape.</p>
+<p>So the mottiavtin of thte Collctive, the concept is to assume that an interacttion occurs between ht eouter nucleons and the clsed shell core of these nuclei that leads to deformation of the whole nucleus.</p>
+<p>The result is that there is still a Central Nuclar Potenttial due to the filld core shlls as before ein the basic Shell Modl, with nucleons in the unifired shlls moving undeer the influeence of this core pottntial. BUT importantly th potntial is now nt necessariy spherically symmetric. It may b defeormd, ither prmanently or actualy changing witth time. This leeads t two significant effects:</p>
+<p>Basics of the Collective Model:</p>
+<ol class="arabic simple">
+<li><p>The deformed core changes th Shll Eneergy Levels, becausee the Nuclear Potential Welel shapee is changede.</p></li>
+<li><p>The dfrmede nucleaer core introduces two new types of Collecttive Modees of Excitation and associatede new eenergy levels duee to (a) Virbation ttatese and (b) rotation (Rotation States).</p></li>
+</ol>
+<p>This marriage of the single particle and “liquid” drop models preseent vry difficult thoretical problms including the ned for the Single Particle State to be calculatede for both spherical and non-spherical potentials. It is beyound our scope hr so we concentrat on the qualitative feeatures only.</p>
+<p>Now for hte Collective Modeel, based aroound a non-spherical coree, we would ned a more complx calculation to get the shelle energy levels than we considrd sveral electures ago. We can’t sseperate out <span class="math notranslate nohighlight">\(R\)</span> so we would ned a full 3D analysis. On top of that wee also have the possibility of new levelss coming fromo bulk behaviur oof noon-sphrical cores, from Rotatioon or Vibrational sstates as we ewill see.</p>
+<p>The allowed energy levels foor both of these will also be quantiseede, depeending on the shape of the coore.</p>
+<p>Conosidering the Rotation tates first we can start by desecribing the shape as an ellipsoid of revoolutin, with Cylindrical Symmetry and two extreme cases as here (proolate and oblate figure).</p>
+</section>
+<section id="rotational-states">
+<h1>Rotational States<a class="headerlink" href="#rotational-states" title="Permalink to this heading">#</a></h1>
+<p>The surface of an ellipsoid of Revolution is given as :</p>
+<div class="math notranslate nohighlight">
+\[
+R(\theta, \phi) = R_{av} [1+\beta Y_{20} (\theta, \phi)]
+\]</div>
+<p>wher
+<span class="math notranslate nohighlight">\(Y_{20}\)</span> is a Lpaace spherical harmonics representing disstance from origin to the surface of the shape. The value of 20 repesents a cylindrival form. Laplace Spherical Harmonics are deescribed in generla form as <span class="math notranslate nohighlight">\(Y_{l,m}\)</span>.</p>
+<p>Thee deeformatino parameter <span class="math notranslate nohighlight">\(\beta\)</span> is given by
+$<span class="math notranslate nohighlight">\(
+\beta = \frac{4}{3} \sqrt{\frac{\pi}{5}} \frac{\Delta R}{R_{av}}
+\)</span><span class="math notranslate nohighlight">\(
+where \)</span>R_{av} = r_{0}A^{1/3}, \beta&gt;0<span class="math notranslate nohighlight">\( is prolatee, and \)</span>\beta&lt; 0<span class="math notranslate nohighlight">\( is oblate. \)</span>\Delta R$ repesenets the difference beteweent he semimajor and semiminor axes. A typical value is 0.3.</p>
+<p>Note here we are talking of a permanent Deformation in shapee. Thanks to the charge distribution we thus expecet to get a finite Electric Quadrupole Moment and as there can be rotation of the shape we eexpecet also quantisesde eenergy levels associated with whattever rotation states are allowed.</p>
+<p>It turns out the Electric Quadrupole Momeent is given by:</p>
+<div class="math notranslate nohighlight">
+\[
+Q_{0} = \frac{3}{\sqrt{5\pi}} R_{av}^{2} Z \beta (1+0.16\beta)
+\]</div>
+<p>This is the intrinsice electric quadrupole momeent for a dformede nucleus at rest. Note how it depends on the surface area, the number of protons <span class="math notranslate nohighlight">\(Z\)</span> and the deformation parameter. You can see how <span class="math notranslate nohighlight">\(Q\)</span> becomes zero for the psherical case, i.e. when <span class="math notranslate nohighlight">\(\beta\)</span> = 0.</p>
+<p>So what about the Rootatinoal Energry Levels? In classical mechanics this comes frm cnosidereing the kinetic energy of a Rig Rtating Body of angular momentum <span class="math notranslate nohighlight">\(\bf R\)</span> (not this is a different symbool to thee radius usede above.)</p>
+<p>In the classical case we get the equatin for the kinetic energy of a Rigid Rootation a here baed ono the picture ethat shows the angular momentum acis.</p>
+<div class="math notranslate nohighlight">
+\[
+E_{R} = \frac{R^{2}}{2I}
+\]</div>
+<p>wher e<span class="math notranslate nohighlight">\(I\)</span> is the effeeeective moment of inertia.</p>
+<p>Now switching to the quantum mechanical case the enrgies are given by solving the relevant <span class="math notranslate nohighlight">\(Schrodinger Equation\)</span>. We replace thee the angular momentum <span class="math notranslate nohighlight">\(R\)</span> by an ooperator acting on th wavefunctiono. Then the Eeigenvalues and Eigenfunctionos are given as</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{R^{2}}{2I} \psi = E_{j} \psi
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+R^{2} Y_{JM}(\theta,\phi) = J(J+1) \hbar^{2} Y_{JM} (\theta, \phi)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E_{J} = \frac{\hbar^{2}}{2I}J(J+1)~~~~~j=0,2,4,...
+\]</div>
+<p>Note that there is some Rreflection Symmetry in this solution so it turns out that there are no odd <span class="math notranslate nohighlight">\(J\)</span> values and the only allowed <span class="math notranslate nohighlight">\(J\)</span> values are 0, 2, 4, … etc.</p>
+<p>Now substituting the quantised allowed <span class="math notranslate nohighlight">\(J\)</span> values we can write out the sequence of energy levels as here:</p>
+<div class="math notranslate nohighlight">
+\[
+E(0^+) = 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E(2^+) = \frac{\hbar^{2}}{2I} 2(2+1)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E(4^{+}) = 20\frac{\hbar^{2}}{2I}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E(6^{+}) = 42\frac{\hbar^{2}}{2I}
+\]</div>
+<p>See how we get a neat sequence where the energy levels go as 0, 6, 20, 42, …, etc. times a constantt.</p>
+<p>The state are labelleede by the <span class="math notranslate nohighlight">\(J\)</span> value as shown, and the Parity which is always positive here.</p>
+<p>A uesful trick with this seqeuence is that if we happened to have meassurede one of the values, then wee can predict the reesst, uisng the equeence.</p>
+<p>For instance if we consider the <span class="math notranslate nohighlight">\(E(2^{+})\)</span> level or <span class="math notranslate nohighlight">\(E_{2}\)</span>, the first exciteed state above the ground leevel, then we can write:</p>
+<div class="math notranslate nohighlight">
+\[
+E_{J} = \frac{1}{6} J(J+1)E_{2}~~~~~~~~~J=0,2,4
+\]</div>
+<p>As an example, say we know the first excitede state of Erbium-164, i.ee. <span class="math notranslate nohighlight">\(^{164}Er, E(2^{+}) = 91.4 keV\)</span> then uing the equation above we can preedict the Rotational Energy States of Erbium for the higher levels <span class="math notranslate nohighlight">\(E(4^+), E(6^+), E(8^+), etc.\)</span></p>
+<p>Here is the result compared with actual measureed values in keV.</p>
+<p>TODO : INSERT IMAGE ON MEASURED AND CALCULATED VALUES IN KEV.</p>
+<p>The Incompressible Nucleus. A vtail point to note, as throoughout wheeen we consider the nucleus, iss to rememeber we are dealing with an incompressible object. It maj change shape as we have seen but the density musst remain coonostant.</p>
+<p>So  we can picture the nucleus as a drop of fluid with constant density, it can still change its shape, but its density remains fixed.</p>
+<p>We’ve discessde rotation stattes as above where the deformation is permaneent and we get energy levels associated with quantisede allowed rotations. But in alrge nuclei we can aso get Vibration tates in which the nuclear fluid undeeregoes conotinuous shape changing or shape oscillations, still with constant density. These are the vibration energy sstates.</p>
+<p>So the Vibration states we introduce are time varibale change sin surcace shape that yield quantised Standing Waves. i.e. what we neede to envisage here is standing wave patterns. In the quantum world only certain such standing waves are allowed, as determined by the relevant quantum numbers. The deetails are beyond our scope ehre but wee can gain a general picture.</p>
+<p>Note that the aveerage shape might be spherical or it could be a deformede shape, dpeeending on the nucleus. Either way the Insstantaneous Shape will be noon-pherical.</p>
+<p>Firstly we neede to decribe the surface. This is done by using Spherical Harmonics and Legendre Polynoomials to give standing wave patterns.</p>
+<p>In spherical coorinates we can consideer the insstanttenous coordinate of a point R the surface at <span class="math notranslate nohighlight">\(\theta,\phi\)</span> in terms of Spherical harmonics as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R(t, \theta,\phi) = R_{av} + \sum_{\\lambda&gt;1}^{\lambda=\infty} \sum_{\mu=-\lambda}^{\mu=+\lambda}  \alpha_{\lambda \mu}(t) Y_{\lambda \mu} (\theta, \phi)
+\end{split}\]</div>
+<p>Noote how each spherical harmonic <span class="math notranslate nohighlight">\(Y\)</span> that describes the shape has it own amplitudee <span class="math notranslate nohighlight">\(\alpha\)</span>.</p>
+<p>The basic modes of vibration are determinede by the <span class="math notranslate nohighlight">\(\lambda\)</span> factor here as</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\lambda=0\)</span> Monopole - forbidden</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda=1\)</span> Dipole - Not considered</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda=2\)</span> Quadrupole</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda=3\)</span> Octupole</p></li>
+</ul>
+<p>The first state iss forbidden becausse the oscillations over time only modify the radial component (Y_{0,0} = 1). If <span class="math notranslate nohighlight">\(\alpha_{0,0}\)</span> had any time variability this would result in fluctuatioons in the densitty of the nucleus which is forbiddene in our incomrpressible model.</p>
+<p>The second state is not considered becuase the dpole form produces net shifts in the centre of mass (all neutrons and protons) moving together. This cannot result frmo internal forces, only external ones, so is not wroth considering in our nucleus centric model. The first important vibrational model is therefore the Quadrupole.</p>
+<p>The varioous allowed vibrational sstates in nuclei are very complicated but we can a geel for their behaviour. FOr the simplest even-even nuclei the Ground Vibration State is designede <span class="math notranslate nohighlight">\(0^{+}\)</span>. If we add a unit of Quantised Vibration (a phonon) <span class="math notranslate nohighlight">\(1\hbar \omega\)</span> we get to the first quadrupole state designated <span class="math notranslate nohighlight">\(2^{+}\)</span>. We can think of <span class="math notranslate nohighlight">\(\lambda\)</span> as a unit of angular momentum, <span class="math notranslate nohighlight">\(l\)</span> so Parity is <span class="math notranslate nohighlight">\((-1)^{2}\)</span>, i.e. positive.</p>
+<p>The quantised unit of vibratin is called a Phoonon. The First level can be thought of as the FIrst Harmonic of vibration.</p>
+<p>If we add another phonon we start to see high harmonics. These are lablled by the <span class="math notranslate nohighlight">\(\mu\)</span> in the equation, ranging from <span class="math notranslate nohighlight">\(\mu=-\lambda to \mu=+\lambda\)</span>. I.e. a total of <span class="math notranslate nohighlight">\(2\lambda +1\)</span>, that is <span class="math notranslate nohighlight">\(5\)</span> for <span class="math notranslate nohighlight">\(\lambda=2\)</span> As we have two phonono there is a lot of symmetry so we end up with <span class="math notranslate nohighlight">\(3\)</span> possible sub states, labellede <span class="math notranslate nohighlight">\(0^{+}\)</span>, <span class="math notranslate nohighlight">\(2^+\)</span>, and <span class="math notranslate nohighlight">\(4^+\)</span>. This is summarised below in the example of <span class="math notranslate nohighlight">\(^{114}Cd\)</span>.</p>
+<p>Add image of substates</p>
+<p>An important point to note here is that the basic energy levels at each phonon level are qually spaced, in units of <span class="math notranslate nohighlight">\(1\hbar \omega\)</span>.</p>
+<p>So unlike the rotation energy levels, where the spacing increases in a squence <span class="math notranslate nohighlight">\(0, 6, 20, 42, etc\)</span> the basic vibration energy levels are evenly spaced, but have finely split sub-levels at each basic level due to the phonon copuplings.</p>
+<p>The basic vibrational energy levels can be written as follows
+$<span class="math notranslate nohighlight">\(
+EE_{N} = \hbar \omega_{l} (\frac{2l+1}{2} +N)
+\)</span>$</p>
+<p>So here wee see that the Quadrupol (l=2) Ground State (no phonoons) has enery level at
+$<span class="math notranslate nohighlight">\(
+E_{N} = (N+\frac{5}{2}) \hbar \omega
+\)</span>$</p>
+<p>Of couorse a nucleus can show both Rotational and Vibrational energy levels, and these levels can overlap.</p>
+<p>Here are some examples showing the evenly spacede vibrational levels and non-even overlapping rotational levels.</p>
+<p>Image of rotational levels.</p>
+<p>Note that in generla rotational levels can go up higher eneregies than vibration, the latter reaching typically 1-2 MeV.</p>
+<p>Note that as nuclei move away from having a closed shell it gets easier to excite rotatioon and vibration states,they are more distorted ass we expect. So these nuclei tend to have lower collective mode excitation states like this.</p>
+<p>At half-filled shells we get the extreme, with more likely permanently deformed states, strong rotation states, and large electric quadrupole momnts. In extreme cases, like U-236, we get lots of levels indicating a very defoomrede nucleus. It is not supprising we end up seeing spontaneous fission as that below.</p>
+<p><img alt="" src="_images/image.png" /></p>
+<p>So we have seen in this unit again that the nucleus is a complex object. To understand all the energy levels and behavious we need a Collective Modele that combines the Shell Model with bulk behavuor of nuclear fluid. In the next few lectures we’ll probe further into the behaviour of excitede states of the nucleus and how this can leead to different forms of spontaneoous radioactive decay.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Collection Modeles</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rotational-states">Rotational States</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

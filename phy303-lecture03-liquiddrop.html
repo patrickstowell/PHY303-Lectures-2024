@@ -1,0 +1,713 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Lecture 3 : Liquid Drop Model &#8212; PHY303 Nuclear Physics 1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-lecture03-liquiddrop';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="phy303-homepage.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">PHY303 Nuclear Physics 1</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit10-fissionandfusion.html">10. Nuclear Power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit11-medicalapplications.html">11. Nuclear Medicine</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucleus-shape.html">Nucleus Shape</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Revision Tools</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit5-terms.html">Unit 5 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit6-terms.html">Unit 6 : Equations &amp; Terms</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fphy303-lecture03-liquiddrop.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/phy303-lecture03-liquiddrop.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Lecture 3 : Liquid Drop Model</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-saxon-woods-distribution">3.1 The Saxon-Woods Distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-liquid-drop-model">3.2 The Liquid Drop Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-volume-energy-term">3.2.1 The Volume Energy Term</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-surface-tension-energy-term">3.2.2 The Surface Tension Energy Term</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-coulomb-potential-energy-term">3.2.2 The Coulomb Potential Energy Term</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="lecture-3-liquid-drop-model">
+<h1>Lecture 3 : Liquid Drop Model<a class="headerlink" href="#lecture-3-liquid-drop-model" title="Permalink to this heading">#</a></h1>
+<p>So what might the charge and mass distribution be like in Nuclei and how is the Hosftadter experiment interpreted to tell us about it?</p>
+<p>We know from Rutherford that nucleons in nuclei are likely incompressible. So based on this the smallest model would be a so called Top-Hat Distribution. That is, constant uniform density, falling to zero at the “edge” of the nucleus.</p>
+<p>However, experimental data suggest that nuclei have a more “fuzzy” form at the edges. To get the fit correct we need to introduce a so called Form-Factor, <span class="math notranslate nohighlight">\(F\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+\left(\frac{d\sigma}{d\Omega}\right)_{\textnormal{distributed}}  = |F({\bf q}^{2})|^{2}\times \left(\frac{d\sigma}{d\Omega}\right)_{\textnormal{point-like}},
+\]</div>
+<p>where <span class="math notranslate nohighlight">\({\bf q}\)</span> is the four-momentum transfer of the interaction, calculated from the incoming electron momentum, <span class="math notranslate nohighlight">\({\bf p}_{1}\)</span>, and outgoing electron momentum, <span class="math notranslate nohighlight">\({\bf p}_{2}\)</span>, as <span class="math notranslate nohighlight">\({\bf q} = {\bf p}_{1}-{\bf p}_{2}\)</span>.</p>
+<p>A Form Factor, <span class="math notranslate nohighlight">\(F\)</span>, provides additional information on how the distributed structure of the nucleus modifies the interaction probability. Form factors are essentially the Fourier Transform of the density distribution, therefore more detailed measurements of the cross-section allow us to probe this distribution itself.</p>
+<p>Electron scattering data at the time showed lots of bumps.</p>
+<section id="the-saxon-woods-distribution">
+<h2>3.1 The Saxon-Woods Distribution<a class="headerlink" href="#the-saxon-woods-distribution" title="Permalink to this heading">#</a></h2>
+<p>Details of the Form Factor here are beyond our scope now but the upshot is that a better model for the density distribution is given by the so called Saxon-Woods form.</p>
+<p>This modifies the simple Top-Hat by introducing a smooth edge parameterised in terms of the radius, <span class="math notranslate nohighlight">\(r\)</span>, as follows:</p>
+<div class="math notranslate nohighlight">
+\[
+\rho(r) = \frac{\rho_0}{1+{exp}[\frac{r-a}{d}]}
+\]</div>
+<ul class="simple">
+<li><p>Here <span class="math notranslate nohighlight">\(a\)</span> is the “edge” of the nucleus and <span class="math notranslate nohighlight">\(d\)</span> is the so-called Skin or Surface Thickness.</p></li>
+<li><p>The same form applies for both the charge and density distribution.</p></li>
+</ul>
+<p>The plot below shows the charge density vs distance r from the centre of the nucleus.</p>
+<p><strong>Typical Values For the charge density distribution</strong></p>
+<div class="math notranslate nohighlight">
+\[
+\rho_{\textnormal{charge}}^{0} = \frac{\rho^0_{\textnormal{charge}}}{1+\textnormal{exp}[\frac{r-a}{d}]}
+\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(a = 1.07 A^{1/3} ~\textnormal{fm}~~\textnormal{\it (radius)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(d = 0.54~\textnormal{fm}~\textnormal{\it (skin thickness)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\rho^{0} = 0.06-0.08~e~\textnormal{fm}^{-3}~\textnormal{\it (average charge density)}\)</span></p></li>
+<li><p>Note: We expect <span class="math notranslate nohighlight">\(\rho^{0}\)</span> to be lower for heavier nuclei.</p></li>
+</ul>
+<p><strong>Typical Values For the charge density distribution</strong></p>
+<div class="math notranslate nohighlight">
+\[
+\rho_{\textnormal{mass}}(r) = \frac{\rho^0_{\textnormal{mass}}}{1+\textnormal{exp}[\frac{r-a}{d}]}
+\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(a = 1.2 A^{1/3} ~\textnormal{fm}~~\textnormal{\it (radius)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(d = 0.75~\textnormal{fm}~\textnormal{\it (skin thickness)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\rho^{0} = 0.17~e~\textnormal{fm}^{-3}~\textnormal{\it (average charge density)}\)</span></p></li>
+</ul>
+<p>Key take-aways:</p>
+<ul class="simple">
+<li><p>Modifications are needed between mass distributions and charge distributions due to zero-charge neutrons.</p></li>
+<li><p>The parameter values are quite similar in both cases.</p></li>
+<li><p>The charge radius and mass radius both scale as <span class="math notranslate nohighlight">\(A^{1/3}\)</span>.</p></li>
+<li><p>The central denisties are constant, independent of how many nucleons there are in the nucleus.</p></li>
+</ul>
+</section>
+<section id="the-liquid-drop-model">
+<h2>3.2 The Liquid Drop Model<a class="headerlink" href="#the-liquid-drop-model" title="Permalink to this heading">#</a></h2>
+<p>All the above early studies and information on the nucleus start to lead us towards some basic models to explain the behaviour of nuclei. The most basic is the Liquid Drop Model (LDM), based on a description of the nucleus as a drop of “Nuclear Fluid” analogoous to a water droplet.</p>
+<p>The LDM arises from the following main observations:</p>
+<ul class="simple">
+<li><p>Nuclei are spherical (in general) with Central Density having a fixed value independet of radius. i.e. no matter how many nuclens you pile in to make your nucleus bigger, the density remains the same, the nuclear fluid is Incrompressible (like a water drop).</p></li>
+<li><p>This matches well the observation that the radius (size) of the nucleus goes as <span class="math notranslate nohighlight">\(R \sim A^{1/3}\)</span> and tells us that the force binding the nucleons together is short tange - rather like the intramolecular force in liquids.</p></li>
+<li><p>The Binding Energy Curve suggests that whatever size of a nucleus, a nucleon situated inside has roughly the same binding energy as all other nucleons. It takes roughly the same energy to free it no matter how many other nucleons are present.</p></li>
+</ul>
+<p>These four arguments allow us to build a simple model of the nucleus that satisfies all constraints - The Liquid Drop Model. The assumptions of the model are:</p>
+<ol class="arabic simple">
+<li><p>The forces between nucleons are; <strong>Repulsive</strong> at very short seperations, <strong>Attractive</strong> at seperations similar to particle size, and <strong>Negligible</strong> at larger distances. The collective attraction of nuclei is what keeps them bound together contributing a negative <strong>Volume Energy</strong>.</p></li>
+<li><p>The centre of the nucleus is an <strong>Incrompressible Nuclear Fluid</strong> with constant density which is independent of radius, and having a positive <strong>Surface Tension Energy</strong>. Assuming the fluid is non-rotating, in absence of other forces, the shape adjusts to minimise the surface tension energy resulting in a spherical shape.</p></li>
+<li><p>If the drop carries Electric Charge then this is uniformly distributed throughout the drop. This combined with the Repulsive Foorce leads to an additional positive <strong>Coulomb Potential Energy</strong> in the nucleus.</p></li>
+</ol>
+<p>Putting this together mathematically in the Liquid Drop Moodel (LDM) leads to an equation for the binding energy for the nucleus as</p>
+<div class="math notranslate nohighlight">
+\[
+B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z^{2}A^{-1/3}
+\]</div>
+<p>In line with our description you we have three terms:
+$<span class="math notranslate nohighlight">\(
+\textnormal{Volume Energy Term :}~~~a_{V}A
+\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[
+\textnormal{Surface Tension Energy Term :}~~~a_{s}A^{2/3}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\textnormal{Coulomb Potential Energy Term :}~~~a_{c}Z^{2}A^{-1/3}
+\]</div>
+<p>Note dividing B(A,Z) by the total nucleons A, gives us a prediction for the binding energy per nucleon plot we discussed in Lecture 1.</p>
+<p>By convention we talk about the binding energy as a positive value (e.g. 52MeV for Carbon-12) when in fact it’s a negative value when considering all nucleons in the nucleus - <strong>energy needs to be added</strong> to the system for us to liberate a nucleon. Our <strong>negative</strong> volume potential energy term above therefore corresponds to a positive term in the binding energy estimate in the LDM equation.</p>
+<p>To understand in a bit more detail the components f the SEMF lets go through them one by one seeing how they improve our fit to real data. We’ll take the data frmo the IAEA database (here), and select only the most abundant nuclei with the highest binding energy for each possible value of <span class="math notranslate nohighlight">\(A\)</span>. This is how the figures you’ve already seen for binding energy are actually made.</p>
+<figure class="align-default" id="semf1">
+<a class="reference internal image-reference" href="_images/semf_goodness_dataonly.png"><img alt="Rutherford Form" src="_images/semf_goodness_dataonly.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">SESMF</span><a class="headerlink" href="#semf1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="the-volume-energy-term">
+<h3>3.2.1 The Volume Energy Term<a class="headerlink" href="#the-volume-energy-term" title="Permalink to this heading">#</a></h3>
+<p>This is the main term, its positive, associated with the short range forces between nucleeons pulling them teogether, its the same for all nucleons (a constant),hence the total for a nucleus is just propertional to the number of nuceons A.</p>
+<div class="math notranslate nohighlight">
+\[
+B_{E} \propto A = +a_{V}A ~~~~~~~~ 
+\]</div>
+<p>The <span class="math notranslate nohighlight">\(a_{V}\)</span> term sets the scale of the energies we are dealing with in nuclear physics. It is typically given as <span class="math notranslate nohighlight">\(a_{V} = 15.56~\textnormal{MeV}\)</span>.</p>
+<p>Once the other terms are included (subtracting from this Volume term) we find that a good typical value for the Binding Energy per Nucleon is about <span class="math notranslate nohighlight">\(8~\textnormal{MeV/nucleon}\)</span>. We therefore expect the other terms to reduce the binding energy by around <span class="math notranslate nohighlight">\(7-8~\textnormal{MeV}\)</span>.</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/semf_goodness_uptovol.png"><img alt="Rutherford Form" src="_images/semf_goodness_uptovol.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">SESMF</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-surface-tension-energy-term">
+<h3>3.2.2 The Surface Tension Energy Term<a class="headerlink" href="#the-surface-tension-energy-term" title="Permalink to this heading">#</a></h3>
+<p>This is a correction to the Volume Term, subtracting fromit, to allow for the assumptiono that the Outer Nucleons near the surface will be less tightly bound. These nucleons make the nucleus weaker, so feel less of the Short Range Attractive Forces between nucleoons compared to those nucleons well inside the nucleus. It’s like a Surface Tension Term. It’s no surprise then that it is a proportional to the surface area which is proportional to <span class="math notranslate nohighlight">\(A^{2/3}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+B_{E} = -a_{s} A^{2/3} ~~~~ a_{s} = 17.23 MeV.
+\]</div>
+<p>See here the effect of the surface term. It has the greatest effect on small nuclei, because they have a greater fraction of their nucleons near the surface compared to inside.</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="_images/semf_goodness_uptosurf.png"><img alt="Rutherford Form" src="_images/semf_goodness_uptosurf.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">SESMF</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-coulomb-potential-energy-term">
+<h3>3.2.2 The Coulomb Potential Energy Term<a class="headerlink" href="#the-coulomb-potential-energy-term" title="Permalink to this heading">#</a></h3>
+<p>This second correction to the Volume Term comes because nuclei contain positively charged protons that repel each other. This Electrosttatic Repulsion also weakens the nucleus, hence a negative term, reducing the overall binding strength.</p>
+<p>By assuming the protons are distributed evenly in the spherical nucleus we can deduce the equation by considering the repulsion of a shell of protons of thickness <span class="math notranslate nohighlight">\(dr\)</span> due to those inside the shell, and integrating over the entire nucleus size.</p>
+<p>Recall first that the electric potential energy of a charge <span class="math notranslate nohighlight">\(q_{1}\)</span> in the potential of <span class="math notranslate nohighlight">\(q_{2}\)</span> distance <span class="math notranslate nohighlight">\(r\)</span> away is:</p>
+<div class="math notranslate nohighlight">
+\[
+E(r) = \frac{1}{4\pi\epsilon_{0}} \frac{q_{1}q_{2}}{r}
+\]</div>
+<p>The Charge Density (it is uniform remeber) is given by :</p>
+<div class="math notranslate nohighlight">
+\[
+\rho_{C} = \frac{Q}{V} \approx \frac{3Ze}{4\pi r^{3}_{0}A}
+\]</div>
+<p>Based on this we see that the Electrostatic Energy in the shell <span class="math notranslate nohighlight">\(dr\)</span>, we call <span class="math notranslate nohighlight">\(dE_{e}\)</span>, is given by:</p>
+<div class="math notranslate nohighlight">
+\[
+dE_{e} = {4\pi r^{2} dr \rho_c} \times \frac{4\pi r^{3} \rho_{C}}{3} \times \frac{1}{4 \pi \epsilon_{0} r}
+\]</div>
+<p>which reduces to
+$<span class="math notranslate nohighlight">\(
+dE_{e} = \frac{4\pi^{4}\rho_{c}^{2}}{3\epsilon_{0}} dr
+\)</span>$</p>
+<p>Intregating this out to the maximum radius of the nucleus, <span class="math notranslate nohighlight">\(r=0\rightarrow R\)</span>, gives the total Electrostatic Energy:
+$<span class="math notranslate nohighlight">\(
+E_{e} = \int_{0}^{R} \frac{4}{3} \frac{\pi r^{4}}{\epsilon_0}\rho_{c}^{2}dr = \frac{4}{3} \frac{\pi R^{5}}{5\epsilon_{0}}\rho_{c}^{2}
+\)</span>$</p>
+<p>If we substitute in the charge density given earlier we get</p>
+<div class="math notranslate nohighlight">
+\[
+E_{e} = \frac{4}{3} \frac{\pi R^{5}}{5\epsilon_{0}} \frac{Z^{2}e^{2}}{(4/3)^{2} \pi^{2} R^{6}} =
+\frac{3}{5} \frac{Z^{2}e^{2}}{4\pi \epsilon_{0}R}
+\]</div>
+<p>If we remember that the nuclear size is given by <span class="math notranslate nohighlight">\(R=r_{0}A^{1/3}\)</span> where <span class="math notranslate nohighlight">\(r_{0}\)</span> is the Nucleon Effective Radius and we gather the constants out we get
+$<span class="math notranslate nohighlight">\(
+a_{c} = \frac{3}{5} \times \frac{e^{2}}{4\pi \epsilon_{0} r_{0}} \approx 0.7~\textnormal{MeV}
+\)</span><span class="math notranslate nohighlight">\(
+and
+\)</span><span class="math notranslate nohighlight">\(
+B_{E} = -a_{C} \frac{Z^{2}}{A^{1/3}}
+\)</span>$</p>
+<p>This is close to our contribution we showed in the equations above, however the analysis includes a slight approximation. As charge is quantized the integration over <span class="math notranslate nohighlight">\(r\)</span> should really only start once a single charge has been enclosed. If this is accunted for the <strong>Total Electrostatic Energy</strong> is actually given by
+$<span class="math notranslate nohighlight">\(
+B_{E} = -a_{C} \frac{Z(Z-1)}{A^{1/3}}
+\)</span>$</p>
+<p>The effect this has on our distributin is shown below. We can see that the cooulomb term adds some noise to oour prediction as it now depends on <span class="math notranslate nohighlight">\(Z\)</span> and at higher <span class="math notranslate nohighlight">\(A\)</span> the most stable value of <span class="math notranslate nohighlight">\(Z\)</span> can vary slightly from nuclei to nuclei.</p>
+</section>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<p>Now that we have our final electroostatic term you’ll see we have a model which is much closer to the data for higher atomic mass nuclei.</p>
+<div class="math notranslate nohighlight">
+\[
+B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z^{2}A^{-1/3}
+\]</div>
+<p>Insert final image of full model comparison.</p>
+<p>This change in shape due to the Columb Term is of fundamental importance in Nuclear Physics and has profound implications further on in this course.</p>
+<p>We see that the effect of the Coulomb Term is to bend the B/A curve down at higher A yielding a peak in the B/A curve. One implication concerns the existince of Nuclear Fission in nature.</p>
+<ul class="simple">
+<li><p>The gradient of the B/A curve tells us whether energy is released as we move along it. For light nuclei below iron, if nucleons are <strong>added</strong> to the system for example through fusion, then energy is realeased.</p></li>
+<li><p>In contrast however at higher atomic numbers, for example U-235, then energy is only released if nucleons are <strong>removed</strong> from the nucleus, for example if the nucleus is split up through nuclear fission.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-saxon-woods-distribution">3.1 The Saxon-Woods Distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-liquid-drop-model">3.2 The Liquid Drop Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-volume-energy-term">3.2.1 The Volume Energy Term</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-surface-tension-energy-term">3.2.2 The Surface Tension Energy Term</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-coulomb-potential-energy-term">3.2.2 The Coulomb Potential Energy Term</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
