@@ -1,11 +1,15 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: PHY303 Nuclear Physics 1
-author: Patrick Stowell, Susan Cartwright
+title: PHY303 Nuclear Physics
+author: Patrick Stowell, Liz Kneale, Susan Cartwright
 copyright: "2024"
-#logo: logo.png
+logo: logo.png
+only_build_toc_files: true
 
+toc:
+  collapsible: true
+  depth: 2  # or another number to control how deep the TOC can go
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 #execute:
@@ -13,6 +17,7 @@ copyright: "2024"
 
 execute:
   execute_notebooks: force
+  remove_code_source: false
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -28,6 +33,8 @@ sphinx:
   extra_extensions:
     - sphinx_proof
   config:
+    language: en
+    html_extra_path: ['figures']
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     suppress_warnings: ["mystnb.unknown_mime_type"]
     html_js_files:
@@ -53,5 +60,11 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  use_issues_button: true
-  use_repository_button: true
+  use_issues_button: false
+  use_repository_button: false
+  home_page_in_navbar: true
+  use_edit_page_button: false
+  extra_navbar: "" # Will be displayed underneath the left navbar. This setting overrides the default 'powered by Jupyter Book'
+  # comments:
+  #   utterances:
+  #     repo: "patrickstowell/PHY303-Lectures-2024"

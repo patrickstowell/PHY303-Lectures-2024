@@ -6,60 +6,134 @@ parts:
 - caption: Theory
   numbered: True
   chapters:
-    - file: phy303-unit1-introduction-and-structure
+    - file: unit1/phy303-unit1-introduction-and-structure
       title: Introduction
-    - file: phy303-unit2-liquiddropmodels
+    - file: unit2/phy303-unit2-liquiddropmodels
       title: Liquid Drop
-    - file: phy303-unit3-shellmodel-and-spin
+    - file: unit3/phy303-unit3-shellmodel-and-spin
       title: Shell Model
-    - file: phy303-unit4-parity-moments
+    - file: unit4/phy303-unit4-parity-moments
       title: Nuclear Spin Moments
-    - file: phy303-unit5-collective-excited
+    - file: unit5/phy303-unit5-collective-excited
       title: Collective Excited States
-    - file: phy303-unit6-radioactive-decays
+    - file: unit6/phy303-unit6-radioactive-decays
       title: Radioactive Decay
 - caption: Application
   numbered: True
   chapters:
-    - file: phy303-unit7-reactions
+    - file: unit7/phy303-unit7-reactions
       title: Reactions
-    - file: phy303-unit8-compoundreactions
+    - file: unit8/phy303-unit8-compoundreactions
       title: Compound Reactions
-    - file: phy303-unit9-neutronphysics
+    - file: unit9/phy303-unit9-neutronphysics
       title: Neutron Physics
-    - file: phy303-unit10-fissionandfusion
-      title: Nuclear Power
-    - file: phy303-unit11-medicalapplications
+    - file: unit10/phy303-unit10-medicalapplications
       title: Nuclear Medicine
-- caption: Visualization
+    - file: unit11/phy303-unit11-fissionandfusion
+      title: Nuclear Power
+- caption: Review Material
   numbered: False
   chapters:
-    - file: iaea-chart-of-nuclides.ipynb
+    - file: unit1/phy303-unit1-review.md
+      sections: 
+      - file: unit1/phy303-unit1-problems.md
+      - file: unit1/phy303-unit1-additionalproblems.md
+      - file: unit1/phy303-unit1-terms.md
+      - file: unit1/phy303-unit1-flashcards.ipynb
+      - file: unit1/phy303-unit1-random-quiz.ipynb
+      - file: unit1/phy303-unit1-full-quiz.ipynb
+    - file: unit2/phy303-unit2-review.md
+      sections: 
+      - file: unit2/phy303-unit2-problems.md
+      - file: unit2/phy303-unit2-additionalproblems.md
+      - file: unit2/phy303-unit2-terms.md
+      - file: unit2/phy303-unit2-flashcards.ipynb
+      - file: unit2/phy303-unit2-random-quiz.ipynb
+      - file: unit2/phy303-unit2-full-quiz.ipynb
+    - file: unit3/phy303-unit3-review.md
+      sections: 
+      - file: unit3/phy303-unit3-problems.md
+      - file: unit3/phy303-unit3-additionalproblems.md
+      - file: unit3/phy303-unit3-terms.md
+      - file: unit3/phy303-unit3-flashcards.ipynb
+      - file: unit3/phy303-unit3-random-quiz.ipynb
+      - file: unit3/phy303-unit3-full-quiz.ipynb
+    - file: unit4/phy303-unit4-review.md
+      sections: 
+      - file: unit4/phy303-unit4-problems.md
+      - file: unit4/phy303-unit4-additionalproblems.md
+      - file: unit4/phy303-unit4-terms.md
+      - file: unit4/phy303-unit4-flashcards.ipynb
+      - file: unit4/phy303-unit4-random-quiz.ipynb
+      - file: unit4/phy303-unit4-full-quiz.ipynb
+    - file: unit5/phy303-unit5-review.md
+      sections: 
+      - file: unit5/phy303-unit5-problems.md
+      - file: unit5/phy303-unit5-additionalproblems.md
+      - file: unit5/phy303-unit5-terms.md
+      - file: unit5/phy303-unit5-flashcards.ipynb
+      - file: unit5/phy303-unit5-random-quiz.ipynb
+      - file: unit5/phy303-unit5-full-quiz.ipynb
+    - file: unit6/phy303-unit6-review.md
+      sections: 
+      - file: unit6/phy303-unit6-problems.md
+      - file: unit6/phy303-unit6-additionalproblems.md
+      - file: unit6/phy303-unit6-terms.md
+      - file: unit6/phy303-unit6-flashcards.ipynb
+      - file: unit6/phy303-unit6-random-quiz.ipynb
+      - file: unit6/phy303-unit6-full-quiz.ipynb
+    - file: unit7/phy303-unit7-review.md
+      sections: 
+      - file: unit7/phy303-unit7-problems.md
+      - file: unit7/phy303-unit7-additionalproblems.md
+      - file: unit7/phy303-unit7-terms.md
+      - file: unit7/phy303-unit7-flashcards.ipynb
+      - file: unit7/phy303-unit7-random-quiz.ipynb
+      - file: unit7/phy303-unit7-full-quiz.ipynb
+    - file: unit8/phy303-unit8-review.md
+      sections: 
+      - file: unit8/phy303-unit8-problems.md
+      - file: unit8/phy303-unit8-additionalproblems.md
+      - file: unit8/phy303-unit8-terms.md
+      - file: unit8/phy303-unit8-flashcards.ipynb
+      - file: unit8/phy303-unit8-random-quiz.ipynb
+      - file: unit8/phy303-unit8-full-quiz.ipynb
+    - file: unit9/phy303-unit9-review.md
+      sections: 
+      - file: unit9/phy303-unit9-problems.md
+      - file: unit9/phy303-unit9-additionalproblems.md
+      - file: unit9/phy303-unit9-terms.md
+      - file: unit9/phy303-unit9-flashcards.ipynb
+      - file: unit9/phy303-unit9-random-quiz.ipynb
+      - file: unit9/phy303-unit9-full-quiz.ipynb
+    - file: unit10/phy303-unit10-review.md
+      sections: 
+      - file: unit10/phy303-unit10-problems.md
+      - file: unit10/phy303-unit10-additionalproblems.md
+      - file: unit10/phy303-unit10-terms.md
+      - file: unit10/phy303-unit10-flashcards.ipynb
+      - file: unit10/phy303-unit10-random-quiz.ipynb
+      - file: unit10/phy303-unit10-full-quiz.ipynb
+    - file: unit11/phy303-unit11-review.md
+      sections: 
+      - file: unit11/phy303-unit11-problems.md
+      - file: unit11/phy303-unit11-additionalproblems.md
+      - file: unit11/phy303-unit11-terms.md
+      - file: unit11/phy303-unit11-flashcards.ipynb
+      - file: unit11/phy303-unit11-random-quiz.ipynb
+      - file: unit11/phy303-unit11-full-quiz.ipynb
+- caption: Interactive Visualizations
+  numbered: False
+  chapters:
+    - file: visualisations/iaea-chart-of-nuclides.ipynb
       title: Chart of Nuclides
-    - file: iaea-chart-of-binding.ipynb
+    - file: visualisations/iaea-chart-of-binding.ipynb
       title: Chart of Binding Energy
-    - file: iaea-chart-of-isotones.ipynb
+    - file: visualisations/iaea-chart-of-isotones.ipynb
       title: Isotone Curves
-    - file: iaea-chart-of-isotopes.ipynb
+    - file: visualisations/iaea-chart-of-isotopes.ipynb
       title: Isotope Curves
-    - file: legendre-polynomials.ipynb
+    - file: visualisations/legendre-polynomials.ipynb
       title: Legendre Polynomials
-    - file: nucleus-shape.ipynb
+    - file: visualisations/nucleus-shape.ipynb
       title: Nucleus Shape
-- caption: Revision Tools
-  numbered: False
-  chapters:
-    - file: unit1-terms.md
-  #  - file: phy303-unit1-flashcards
-    - file: unit2-terms.md
-    - file: unit3-terms.md
-    - file: unit4-terms.md
-    - file: unit5-terms.md
-    - file: unit6-terms.md
-    # - file: unit7-terms.md
-    # - file: unit8-terms.md
-    # - file: unit9-terms.md
-    # - file: unit10-terms.md
-    # - file: unit11-terms.md
-
-

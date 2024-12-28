@@ -1,0 +1,910 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>3. Shell Model &#8212; PHY303 Nuclear Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unit3/phy303-unit3-shellmodel-and-spin';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. Nuclear Spin &amp; Moments" href="../unit4/phy303-unit4-parity-moments.html" />
+    <link rel="prev" title="2. Liquid Drop Model" href="../unit2/phy303-unit2-liquiddropmodels.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../phy303-homepage.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="PHY303 Nuclear Physics - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY303 Nuclear Physics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unit1/phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit4/phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit5/phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit6/phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unit7/phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit8/phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit9/phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit10/phy303-unit10-medicalapplications.html">10. Nuclear Medicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit11/phy303-unit11-fissionandfusion.html">11. Nuclear Power</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Review Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit1/phy303-unit1-review.html">Unit 1 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-problems.html">Unit 1 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-additionalproblems.html">Unit 1 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-flashcards.html">Unit 1 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-random-quiz.html">Unit 1 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-full-quiz.html">Unit 1 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit2/phy303-unit2-review.html">Unit 2 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-additionalproblems.html">Unit 2 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit3-problems.html">Unit 3 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit3-additionalproblems.html">Unit 3 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit3-flashcards.html">Unit 3 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit3-random-quiz.html">Unit 3 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit3-full-quiz.html">Unit 3 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit4/phy303-unit4-review.html">Unit 4 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-problems.html">Unit 4 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-additionalproblems.html">Unit 4 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-flashcards.html">Unit 4 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-random-quiz.html">Unit 4 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-full-quiz.html">Unit 4 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit5/phy303-unit5-review.html">Unit 5 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-problems.html">Unit 5 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-additionalproblems.html">Unit 5 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-terms.html">Unit 5 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-flashcards.html">Unit 5 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-random-quiz.html">Unit 5 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-full-quiz.html">Unit 5 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit6/phy303-unit6-review.html">Unit 6 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-problems.html">Unit 6 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-additionalproblems.html">Unit 6 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-terms.html">Unit 6 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-flashcards.html">Unit 6 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-random-quiz.html">Unit 6 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-full-quiz.html">Unit 6 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit7/phy303-unit7-review.html">Unit 7 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-problems.html">Unit 7 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-additionalproblems.html">Unit 7 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-terms.html">Unit 7 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-flashcards.html">Unit 7 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-random-quiz.html">Unit 7 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-full-quiz.html">Unit 7 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit8/phy303-unit8-review.html">Unit 8 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-problems.html">Unit 8 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-additionalproblems.html">Unit 8 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-terms.html">Unit 8 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-flashcards.html">Unit 8 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-random-quiz.html">Unit 8 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-full-quiz.html">Unit 8 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit9/phy303-unit9-review.html">Unit 9 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-problems.html">Unit 9 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-additionalproblems.html">Unit 9 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-terms.html">Unit 9 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-flashcards.html">Unit 9 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-random-quiz.html">Unit 9 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-full-quiz.html">Unit 9 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit10/phy303-unit10-review.html">Unit 10 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-problems.html">Unit 10 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-additionalproblems.html">Unit 10 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-terms.html">Unit 10 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-flashcards.html">Unit 10 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-random-quiz.html">Unit 10 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-full-quiz.html">Unit 10 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit11/phy303-unit11-review.html">Unit 11 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-problems.html">Unit 11 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-additionalproblems.html">Unit 11 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-terms.html">Unit 11 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-flashcards.html">Unit 11 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-random-quiz.html">Unit 11 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/unit3/phy303-unit3-shellmodel-and-spin.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Shell Model</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">3.1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evidence-for-shells">3.2. Evidence for Shells</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binding-energy-shape">3.2.1. Binding Energy Shape</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#odd-even-parabolas">3.2.2. Odd-Even Parabolas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-relative-abundance-of-nuclei-in-nature">3.2.3. The Relative Abundance of Nuclei in Nature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-neutron-binding-energy">3.2.4. The Neutron Binding Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-capture-energy">3.2.5. Neutron Capture Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-quadrupole-moments">3.2.6. Electric Quadrupole Moments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-excitation-energy">3.2.7. Nuclear Excitation Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-existence-of-double-magic-nuclei">3.2.8. The existence of double magic nuclei</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decay-chains-end-with-magic-number-nuclei">3.2.9. Decay Chains End with Magic Number Nuclei</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-model-challenge">3.3. Shell Model Challenge</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-model-quantum-mechanics">3.4. Shell Model Quantum Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-potential-example">3.4.1. Simple Potential Example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nucleon-and-level-notation">3.5. Nucleon and Level Notation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#first-model-predictions">3.6. First Model Predictions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spin-orbit-corrections">3.7. Spin Orbit Corrections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modified-shell-model">3.8. Modified Shell Model</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="shell-model">
+<h1><span class="section-number">3. </span>Shell Model<a class="headerlink" href="#shell-model" title="Link to this heading">#</a></h1>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Quick Links</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="phy303-unit3-problems.html#unit3-problems"><span class="std std-ref">Unit 3 : Worked Problems</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit3-additionalproblems.html#unit3-additionalproblems"><span class="std std-ref">Unit 3 : Additional Problems</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit3-terms.html#unit3-terms"><span class="std std-ref">Unit 3 : Equations &amp; Terms</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit3-flashcards.html#unit3-flashcards"><span class="std std-ref">Unit 3 : Flash Cards</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit3-random-quiz.html#unit3-randomquiz"><span class="std std-ref">Unit 3 : Random Quiz</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit3-full-quiz.html#unit3-fullquiz"><span class="std std-ref">Unit 3 : Full Quiz</span></a></p></li>
+<li><p>From the <a class="reference external" href="https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441">Reading List</a></p>
+<ul>
+<li><p>TBC</p></li>
+<li><p>TBC</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="introduction">
+<h2><span class="section-number">3.1. </span>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>We’ve seen how study of the binding energy curve for nuclei and basic features like the chart of stability has led to an empirical formula for the binding energy and the mass of nuclei through the semi empirical mass formula.</p>
+<p>However notice how this derivation was only possible by merging two different concepts for nuclei. Firstly, regarding the nucleus as a single drop of Nuclear Material which acts as a Collective Body.  Secondly a concept that starts at to look at the quantum behavior of individual nucleons and that they somehow lie in specific (and restricted) Energy Levels. So we have two sorts of model, a Collective Body Model, and an Individual particle Model coming together. They Asymmetry Term and Pairing Term in the SEMF can only be explained assuming this second concept.</p>
+<p>We find evidence not only that we need to account for the preference for pairing and balance between neutrons and protons, but also that specific numerical N and Z combinations have very different properties. This results in the observation of Magic Number Nuclei,</p>
+<div class="math notranslate nohighlight" id="equation-shellmodelnuclei">
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-shellmodelnuclei" title="Link to this equation">#</a></span>\[\begin{equation}
+\bf \textnormal{Magic Nuclei -}~ Z~\textnormal{or}~N=2, 8, 20, 28, 50, 82, 126...
+\end{equation}\]</div>
+<p>These nuclei have particularly stable properties, and mark a transition point for nuclei such that those with <span class="math notranslate nohighlight">\(Z\)</span> or <span class="math notranslate nohighlight">\(N\)</span> below a given Magic Number have very different behavior to those above. This leads to the idea that nucleons in nuclei somehow lie in <strong>Concentric Shells</strong>, analogous (but very different) to the way electrons lie in shells in atoms and similarly that a “filled” outer shell produces a more stable configuration</p>
+<p>This shell model idea is of course tied up with introducing Quantum Mechanics to our nucleus. The basis of QM here as seen before, is that we introduce a nuclear potential well. It is the QM treatment of this Well that will determine (1) the energy levels (shells) that nucleons are allowed to occupy, and (2) how many nucleons can occupy each level.</p>
+<p>As an example the simplest model for the Nuclear Well might be that associated with a Harmonic Oscillator, resulting in equally spaced energy levels throughout the well as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">harmonics</span></code>.</p>
+<figure class="align-default" id="harmonics">
+<a class="reference internal image-reference" href="unit3/image-19.png"><img alt="Harmonic oscillator diagram" src="unit3/image-19.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1 </span><span class="caption-text">Reminder of harmonic oscillator definition. A potential well results in only discrete energy levels being allowed to be occupied with equal spacing between energy levels.</span><a class="headerlink" href="#harmonics" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>But first notice how off the idea is. In atomic physics the well that binds the electrons is the positively charged nucleus. But in this case, the nucleons are somehow orbiting in a potential of their own making. Can this really work? The nucleons are tightly bound in the nucleus with a radius much smaller than the case for electron orbitals. Why don’t they collide if they are orbiting in shells?</p>
+<p>This looks like big step to take away from our SEMF so first let’s start by looking at what real evidence we have for a shell-like structure anyway. In fact we can list a range of observations starting with a few charts we have already covered.</p>
+</section>
+<section id="evidence-for-shells">
+<h2><span class="section-number">3.2. </span>Evidence for Shells<a class="headerlink" href="#evidence-for-shells" title="Link to this heading">#</a></h2>
+<section id="binding-energy-shape">
+<h3><span class="section-number">3.2.1. </span>Binding Energy Shape<a class="headerlink" href="#binding-energy-shape" title="Link to this heading">#</a></h3>
+<p>The SEMF does a good job on the basic shape, but a closer look reveals certain nuclei have much higher, or lower B/A than predicted even after our asymmetry and pairing terms are included. These are most obvious at low A where peaks appear in multiples of four nucleons (e.g. 12C, 18O).</p>
+<p>In general we see nuclei with Magic Number N and/or Z have a higher B/A indicating they are more tightly bound.</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="unit3/figures/semf_goodness_withpairing_ratio.png"><img alt="SEMF Model comparison to data as a ratio" src="unit3/figures/semf_goodness_withpairing_ratio.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Ratio of the predictions of the liquid drop model against observations as a function of atomic mass number. We see large deviations at low <span class="math notranslate nohighlight">\(A\)</span> with an almost saw tooth pattern appears at higher <span class="math notranslate nohighlight">\(A\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="odd-even-parabolas">
+<h3><span class="section-number">3.2.2. </span>Odd-Even Parabolas<a class="headerlink" href="#odd-even-parabolas" title="Link to this heading">#</a></h3>
+<p>A closer look at the chart of Nuclides shows that nuclei with N and Z away from the major numbers are more likely to be unstable. If we plot nuclei that lie on a line of a constant A, for example A=121 we find that odd and even A nuclei sit on two seperate parabola. Whilst our delta term in the SEMF can account for some of this it cannot account for the difference across all nuclei.</p>
+<p><img alt="Alt text" src="unit3/image-21.png" /></p>
+<p>Based on this we can make a prediction of which isotope of the given A is most stable against Nuclear Decay. From a parabola fit to the data shown of the form</p>
+<div class="math notranslate nohighlight" id="equation-bindingenergyparabola">
+<span class="eqno">(3.2)<a class="headerlink" href="#equation-bindingenergyparabola" title="Link to this equation">#</a></span>\[\begin{equation}
+M(A,Z) = aA + bZ + cZ^{2}
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> are free parameters that are nuclei dependent. We can determine the minima by finding the case where</p>
+<div class="math notranslate nohighlight" id="equation-bindingenergyparaboladif">
+<span class="eqno">(3.4)<a class="headerlink" href="#equation-bindingenergyparaboladif" title="Link to this equation">#</a></span>\[\begin{split}\begin{equation}
+\frac{dM(A,Z)}{dZ} \rightarrow 0\\
+\end{equation}\end{split}\]</div>
+<p>Whatever the nearest integer value of Z is at the minimum will be the isotope we are after. Notice how the curves are symmetric about the minimum. This leads to the concept of <strong>Mirror Nuclei</strong>. This refers to a pair of nuclei that have the same <span class="math notranslate nohighlight">\(A\)</span> but where the <span class="math notranslate nohighlight">\(N\)</span> and <span class="math notranslate nohighlight">\(Z\)</span> values are reversed. An example is nitrogen-15 (7 protons and 8 neutrons) and oxygen-15 (8 protons and 7 neutrons).</p>
+<p>The nuclear properties of a given Mirror Nuclei pair like this are similar. The chemical properties of the associated neutral atoms (dictated by the electrons determined by the number of protons only) will be very different of course.</p>
+</section>
+<section id="the-relative-abundance-of-nuclei-in-nature">
+<h3><span class="section-number">3.2.3. </span>The Relative Abundance of Nuclei in Nature<a class="headerlink" href="#the-relative-abundance-of-nuclei-in-nature" title="Link to this heading">#</a></h3>
+<p>Another strong piece of evidence for the Shell Model comes from a plot of the Relative Abundance of nuclei in nature vs A. Again we see peaks of high abundance for nuclei with Magic Number values of N, Z, or both. There are a larger number of isotopes and isotones at particular values of Z, N.</p>
+<p><strong>The Magic Numbers</strong></p>
+<div class="math notranslate nohighlight">
+\[
+\bf 2, 8, (14), 20, 28, 50, 82, 126
+\]</div>
+<p><img alt="Alt text" src="unit3/image-78.png" /></p>
+</section>
+<section id="the-neutron-binding-energy">
+<h3><span class="section-number">3.2.4. </span>The Neutron Binding Energy<a class="headerlink" href="#the-neutron-binding-energy" title="Link to this heading">#</a></h3>
+<p>Apart from the basic binding energy curve, we can look at for instance, the energy required to remove a single neutron from the nucleus vs the neutron number. The plot below shows by how much this differs from the SEMF prediction in MeV. What we see are  discontinuities up to 2 MeV at the Magic Numbers. This dependence of the energy to remove the outer neutron is strong evidence for a shell structure. A neutron just above a closed shell looks to be less tightly bound, reminiscent of the alkali metals in the chemical shell structure. This behavior is  believed to be due to <strong>Shell Closures</strong> - it is harder to remove a neutron from a closed shell.</p>
+<p><img alt="Alt text" src="unit3/image-79.png" /></p>
+</section>
+<section id="neutron-capture-energy">
+<h3><span class="section-number">3.2.5. </span>Neutron Capture Energy<a class="headerlink" href="#neutron-capture-energy" title="Link to this heading">#</a></h3>
+<p>Opposite to the Neutron Binding Energy plot just shown is the Neutron Capture Cross-section of nuclei vs Neutron Number. This measures how likely a given nucleus is to absorb an extra neutron fired at it. Again we see peaks and troughs in the distribution. The lowest values of these are at the Magic Numbers corresponding to filled shells in our model - it is harder to add a neutron when the outer shell is already full.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note how the cross section is highest for nuclei well away from the Magic Numbers. An example is Cd, which is used widely as a Neutron Sheild in nuclear experiments.</p>
+</div>
+<p><img alt="Alt text" src="unit3/image-94.png" /></p>
+</section>
+<section id="electric-quadrupole-moments">
+<h3><span class="section-number">3.2.6. </span>Electric Quadrupole Moments<a class="headerlink" href="#electric-quadrupole-moments" title="Link to this heading">#</a></h3>
+<p>As nuclei are charged then if this charge is not spherically distributed we might expect to measure a non-zero Electric Quadrupole Moment (we cover EQM later). For a shell model those nuclei with closed shells should be spherically symmetric and have no EQM. For nuclei that do not have a closed shell we indeed see large EQMs.</p>
+<p>In the plot below the EQM have been normalized to the size and charge of each nucleus and these so called Reduced Quadrupole Moments are plotted against the number of protons or neutrons - depending upon which is odd. Some EQM are very large, suggesting shapes which are strongly non-spherical.</p>
+<p><img alt="Alt text" src="unit3/image-81.png" /></p>
+</section>
+<section id="nuclear-excitation-energy">
+<h3><span class="section-number">3.2.7. </span>Nuclear Excitation Energy<a class="headerlink" href="#nuclear-excitation-energy" title="Link to this heading">#</a></h3>
+<p>The relative stability of closed shell nuclei is also indicated by measuring the energy required to take a nucleus from the Ground State to its First Excited State.</p>
+<p>Here is an example plot for the excitation energies for the even-A isotopes of lead. The required energy is dramatically larger for the isotope with a Magic Number of neutrons. This is strong evidence for a shell model of the nucleus.</p>
+<p>The isotope Pb-208 is particularly unique in being Doubly Magic Z=82 and N=126. This is a Double Closed Shell Nucleus and it takes more than 2 MeV to raise it to the first excited state.</p>
+<p><img alt="Alt text" src="unit3/image-82.png" /></p>
+</section>
+<section id="the-existence-of-double-magic-nuclei">
+<h3><span class="section-number">3.2.8. </span>The existence of double magic nuclei<a class="headerlink" href="#the-existence-of-double-magic-nuclei" title="Link to this heading">#</a></h3>
+<p>So nuclei which have both neutron number and proton number equal to one of the Magic Numbers can be called Double Magic, and are found to be particularly stable.</p>
+<p>An example is calcium. It has exceptionally stable Doubly Magic Nuclei - two of them. Compared to the binding energy calculated from the SEMF, they both have much more than the expected binding energy.</p>
+<p>These isotopes have Z=20 and N = 20 and 28, all three being magic numbers.</p>
+<p><img alt="Alt text" src="unit3/image-95.png" /></p>
+</section>
+<section id="decay-chains-end-with-magic-number-nuclei">
+<h3><span class="section-number">3.2.9. </span>Decay Chains End with Magic Number Nuclei<a class="headerlink" href="#decay-chains-end-with-magic-number-nuclei" title="Link to this heading">#</a></h3>
+<p>Finally, there are several decay chain sequences in nature, particularly that starting U-235. Stable isotopes come at the end of all these principle radioactive series, and all end points have a magic number of protons or neutrons.</p>
+</section>
+</section>
+<section id="shell-model-challenge">
+<h2><span class="section-number">3.3. </span>Shell Model Challenge<a class="headerlink" href="#shell-model-challenge" title="Link to this heading">#</a></h2>
+<p>All these observations strongly point to a shell like arrangement of nucleons in the nucleus, whereby we envisage Energy Levels in which the nucleons sit, separated by gaps corresponding to the Magic Numbers for both <span class="math notranslate nohighlight">\(Z\)</span> and <span class="math notranslate nohighlight">\(N\)</span> given by:</p>
+<div class="math notranslate nohighlight">
+\[
+\bf
+2,8,(14),20,28,50,82,128.
+\]</div>
+<p><img alt="Alt text" src="unit3/image-90.png" /></p>
+<p>Our shell model will need to explain these characteristic numbers using QM to produce the quantized energy levels (shells), filling them with the correct number of states (nucleons) to reproduce the Magic Numbers. So our basic aim is to explain the Magic Numbers, i.e. all the Nuclear Energy Levels, and then hopefully make new predictions that can be tested.</p>
+<p>So there is strong evidence for shell structure in Nuclei. This is compatible with a QM description with Nucleons occupying Energy Levels determined by a Central Nuclear Potential Well. We will discuss the form of this potential and the Nuclear Force between nucleons that determines its nature later.</p>
+<p>To determine the energy levels in the shell model we need to solve the full time-independent 3D Schrödinger Equation for particle mass <span class="math notranslate nohighlight">\(m\)</span> and wave-function <span class="math notranslate nohighlight">\(\psi\)</span> which has the form:</p>
+<div class="math notranslate nohighlight" id="equation-bindingenergyparaboladif">
+<span class="eqno">(3.4)<a class="headerlink" href="#equation-bindingenergyparaboladif" title="Link to this equation">#</a></span>\[\begin{equation}
+\frac{-\hbar^{2}}{2m} \nabla^{2} \psi(r,\theta,\phi) + V(r,\theta,\phi) \psi(r,\theta,\phi) = E \psi(r,\theta,\phi)
+\end{equation}\]</div>
+<p>For a given nucleon, the forces acting on it by all the other nucleons in the nucleus can be presented to first approximation by an average potential <span class="math notranslate nohighlight">\(V(r)\)</span> which only depends on distance from the core. We call this the <strong>Shell Theory Potential</strong>.</p>
+<p>The origin of this potential <span class="math notranslate nohighlight">\(V(r)\)</span> is in the force that holds individual nucleons together, the Nuclear Force or N-N potential. So it is reasonable to assume that the form and depth of <span class="math notranslate nohighlight">\(V(r)\)</span> should reflect the overall density distribution of the nucleons in the nucleus.</p>
+<p>Right now we take the mass distribution given previously from the Saxon Woods</p>
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
+<span class="eqno">(3.5)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Link to this equation">#</a></span>\[\begin{equation}
+\rho(r) = \frac{\rho(0)}{1+\textnormal{exp}(\frac{r-b}{a})}
+\end{equation}\]</div>
+<p>and invert it to get the potential <span class="math notranslate nohighlight">\(V(r)\)</span>. It is this function that goes into the Schrödinger equation to get the Energy Levels.</p>
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms2">
+<span class="eqno">(3.6)<a class="headerlink" href="#equation-simpledropcombined-extraterms2" title="Link to this equation">#</a></span>\[\begin{equation}
+V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
+\end{equation}\]</div>
+<p><img alt="Alt text" src="unit3/image-31.png" /></p>
+<p>The basis of this nuclear potential shape, for instance its spatial radius, is the force between nucleons, the Nuclear Force, that keeps nucleons bound together. This gives us our <strong>Average Potential</strong> with radius of the nucleus (<span class="math notranslate nohighlight">\(A^{1/3}\)</span>), much bigger than the range of the Nuclear Force (about 1.4 or so).  Anyway for now we will just start to describe the QM result, the Shell Model in more detail, and how this helps explain many of the observed properties of Nuclei.</p>
+<p>In the shell model now since we are assuming spherical symmetry in our potential and the nucleus, we can simplify the spherical coordinates, splitting <span class="math notranslate nohighlight">\(\psi(r,\theta,\phi) = \Psi(r)\Theta(\theta)\Phi(\phi)\)</span>.</p>
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms3">
+<span class="eqno">(3.7)<a class="headerlink" href="#equation-simpledropcombined-extraterms3" title="Link to this equation">#</a></span>\[\begin{equation}
+\frac{-\hbar^{2}}{2m} \frac{d^{2}\Psi(r)}{dr^{2}} + V(r) \Psi(r) = E \Psi(r)
+\end{equation}\]</div>
+<p>We will avoid fully deriving this for now as the focus on this course is the implications that a full QM approach has on the behavior of our nucleons.</p>
+<p>A major point is to realise that although nuclei are composed of nucleons they largely act as an isolated single entity. In particular they have a well defined Total Angular Momentum called Nuclear Spin, <span class="math notranslate nohighlight">\(I\)</span>. Nucleons themselves also have Angular Momentum (<span class="math notranslate nohighlight">\(l\)</span>) and Intrinsic Spin (<span class="math notranslate nohighlight">\(s\)</span>). The vital point in our QM shell model is that the <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> of all the nucleons together determines the Total Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span> of a nucleus.</p>
+<p>The result of treating the nucleus in this way we will see is the ability to now predict</p>
+<ul class="simple">
+<li><p>Nuclear Magic Numbers</p></li>
+<li><p>Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span></p></li>
+<li><p>Nuclear Parity <span class="math notranslate nohighlight">\(\pi\)</span></p></li>
+</ul>
+<p>And quite good, but not prefect, predictions of</p>
+<ul class="simple">
+<li><p>Nuclear Magnetic Moments</p></li>
+<li><p>Nuclear Electric Quadrupole Moments</p></li>
+<li><p>Excited States</p></li>
+</ul>
+<p>The key to this is to work out the Shell Energy Levels and then determine how many nucleons are allowed to occupy each level as determined by QM and the Exclusion Principle.</p>
+</section>
+<section id="shell-model-quantum-mechanics">
+<h2><span class="section-number">3.4. </span>Shell Model Quantum Mechanics<a class="headerlink" href="#shell-model-quantum-mechanics" title="Link to this heading">#</a></h2>
+<p>We start by considering the QM behavior of an individual nucleon (p or n) in the Central Potential Well of the nucleus. When we invoke QM, by applying the Schrödinger equation to solve the three dimensional system we end up with an Angular Momentum Quantum Number, <span class="math notranslate nohighlight">\(l\)</span>, that tells us about the spatial behavior of wave function of each nucleon and defines the energy levels oof the nucleons as a result. In our simple central potential model all nucleons with the same <span class="math notranslate nohighlight">\(l\)</span> have the same energy but we will see that it is a new quantum number <span class="math notranslate nohighlight">\(j\)</span> that defines the actual number of states at a specific energy.</p>
+<p>The magnitude of <span class="math notranslate nohighlight">\(l\)</span> is given by</p>
+<div class="math notranslate nohighlight" id="equation-shellmdoelam">
+<span class="eqno">(3.8)<a class="headerlink" href="#equation-shellmdoelam" title="Link to this equation">#</a></span>\[\begin{equation}
+\langle l^{2} \rangle  = \hbar^{2}l(l+1)
+\end{equation}\]</div>
+<p>The angular motion is a constant of the motion and the uncertainty principle gives us certain allowed “substates” of <span class="math notranslate nohighlight">\(l\)</span> which we will label <span class="math notranslate nohighlight">\(m_{z}\)</span>.</p>
+<div class="math notranslate nohighlight" id="equation-shellmodelamproj">
+<span class="eqno">(3.9)<a class="headerlink" href="#equation-shellmodelamproj" title="Link to this equation">#</a></span>\[\begin{equation}
+\langle l_{z} \rangle = \hbar m_{z} ~~~~\textnormal{where}~~~~ m_z=0,\pm1,\pm2,...,\pm l
+\end{equation}\]</div>
+<p>Nucleons <strong>also</strong> have an Intrinsic Angular Momentum called Spin <span class="math notranslate nohighlight">\(s\)</span> such that</p>
+<div class="math notranslate nohighlight" id="equation-shellmodelspin">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-shellmodelspin" title="Link to this equation">#</a></span>\[\begin{equation}
+\langle s^{2} \rangle = \hbar^{2} s(s+1)
+\end{equation}\]</div>
+<p>We find that similar to the angular momentum case this also has certain allowed spin substates, however these can only correspond to spin-up, or spin-down.</p>
+<div class="math notranslate nohighlight" id="equation-shellmodelproj">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-shellmodelproj" title="Link to this equation">#</a></span>\[\begin{equation}
+\langle s_z\rangle  = \hbar m_{s} ~~~~\textnormal{where}~~~~ m_{s} = \pm \frac{1}{2}.
+\end{equation}\]</div>
+<p>The two quantum numbers <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> can vector couple to give a new quantum number <span class="math notranslate nohighlight">\(j\)</span>, known as the Total Angular Momentum Quantum Number for the nucleon. In nuclear systems it is the <span class="math notranslate nohighlight">\(j\)</span> that is regarded as the “good” quantum number. The vector addition in this case is simply obtained from the possible combinations of <span class="math notranslate nohighlight">\(m_{z}\)</span> and <span class="math notranslate nohighlight">\(m_{s}\)</span> given what we know about possible values for <span class="math notranslate nohighlight">\(l,s,j\)</span>. In the figure below we can see the calculation of the quantum number <span class="math notranslate nohighlight">\(j\)</span> represented as a combination of different arrows for <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span>. If <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> are parallel (both positive) then we get higher values of <span class="math notranslate nohighlight">\(j\)</span> than if they are anti-parallel.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember a good quantum number is a quantity that remains constant and is conserved during a particular physical process or set of operations.</p>
+</div>
+<p>We have seen that <span class="math notranslate nohighlight">\(m_{z}\)</span> is always integer and <span class="math notranslate nohighlight">\(m_{s}\)</span> is always half-integer +1/2 or -1/2. The same is true for the <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> quantum numbers. When we vector couple <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> together to make <span class="math notranslate nohighlight">\(j\)</span> we simply add the possibilities, so this means <span class="math notranslate nohighlight">\(j\)</span> is also always going to be half-integer. Since the spin can only be aligned parallel or anti-parallel to the the angular momentum we expect allowed values of <span class="math notranslate nohighlight">\(j\)</span> to only be <span class="math notranslate nohighlight">\(j\pm\frac{1}{2}\)</span>. For example for <span class="math notranslate nohighlight">\(l=2\)</span> states the allowed values of <span class="math notranslate nohighlight">\(j\)</span> are <span class="math notranslate nohighlight">\(j=\frac{5}{2}\)</span> and <span class="math notranslate nohighlight">\(j=\frac{3}{2}\)</span>.</p>
+<p>A summary of what we expect for each number is below.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(l\)</span> - from orbital angular momentum number <em>[Integer]</em></p></li>
+<li><p><span class="math notranslate nohighlight">\(s\)</span> - from orbital angular momentum number <em>[Half-Integer]</em></p></li>
+<li><p><span class="math notranslate nohighlight">\(j\)</span> - from orbital angular momentum number and spin <em>[Half-Integer]</em></p></li>
+</ul>
+<section id="simple-potential-example">
+<h3><span class="section-number">3.4.1. </span>Simple Potential Example<a class="headerlink" href="#simple-potential-example" title="Link to this heading">#</a></h3>
+<p>Let’s consider a simple case below by calculating the number of states in the <span class="math notranslate nohighlight">\(l=0\)</span> and <span class="math notranslate nohighlight">\(l=1\)</span> case to see if it makes sense based on the Magic Number shell information we are aware off.</p>
+<p>In the case of the ground shell we just have <span class="math notranslate nohighlight">\(l=0\)</span>, this means <span class="math notranslate nohighlight">\(m_{z}\)</span> can only be <span class="math notranslate nohighlight">\(0\)</span>, and <span class="math notranslate nohighlight">\(m_{s}\)</span> can only be <span class="math notranslate nohighlight">\(\pm \frac{1}{2}\)</span>. The result is we have two allowed states for the <span class="math notranslate nohighlight">\(j=\frac{1}{2}\)</span> case as shown in <a class="reference internal" href="#shellfillinga"><span class="std std-numref">Fig. 3.3</span></a></p>
+<figure class="align-default" id="shellfillinga">
+<a class="reference internal image-reference" href="unit3/image-88.png"><img alt="Rutherford Form" src="unit3/image-88.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Diagram shell filling in a simple spherical model for the lowest energy shell.</span><a class="headerlink" href="#shellfillinga" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Now as we increase the possible <span class="math notranslate nohighlight">\(l\)</span> state it is the <span class="math notranslate nohighlight">\(j\)</span> value for a specific shell that is going to tell us how to fill up the Shell Energy Levels.  For instance, in the new example shown below we choose level <span class="math notranslate nohighlight">\(l=1\)</span> as shown in <a class="reference internal" href="#shellfillingb"><span class="std std-numref">Fig. 3.4</span></a> we find we are allowed total <span class="math notranslate nohighlight">\(j\)</span> values = <span class="math notranslate nohighlight">\(\pm\frac{1}{2}\)</span> and <span class="math notranslate nohighlight">\(\pm\frac{3}{2}\)</span>. This is because in our new shell we have the two similar <span class="math notranslate nohighlight">\(m_{z}=0\)</span> cases as before (states 5 and 6), but also four new ones, corresponding to the case where <span class="math notranslate nohighlight">\(m_{z}=1\)</span>.</p>
+<figure class="align-default" id="shellfillingb">
+<a class="reference internal image-reference" href="unit3/image-89.png"><img alt="Rutherford Form" src="unit3/image-89.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.4 </span><span class="caption-text">Diagram shell filling in a simple spherical model for the lowest energy shell.</span><a class="headerlink" href="#shellfillingb" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Each nucleon must have its own allowed state of <span class="math notranslate nohighlight">\(m_z\)</span> and <span class="math notranslate nohighlight">\(m_s\)</span> when considering possible values of <span class="math notranslate nohighlight">\(j\)</span>. As shown in the figure  this results in six possible states <span class="math notranslate nohighlight">\(3/2, 1/2, -1/2, -3/2\)</span> for <span class="math notranslate nohighlight">\(j=3/2\)</span>, and <span class="math notranslate nohighlight">\(1/2, -1/2\)</span> for <span class="math notranslate nohighlight">\(j=1/2\)</span>. The cases where the angular momentum is parallel or anti-parallel are sometimes referred to as <em>stretched</em> and <em>jacknife</em> states respectively.</p>
+<p>Similarly if we repeated the same process for <span class="math notranslate nohighlight">\(l=2\)</span>, we would have possible <span class="math notranslate nohighlight">\(j\)</span> values of <span class="math notranslate nohighlight">\(\frac{5}{2},~\frac{3}{2},~\frac{1}{2}\)</span> implying a total of 10 nucleon states allowed. The sequence for our simple model can be expressed as</p>
+<div class="math notranslate nohighlight">
+\[
+n_{\textnormal{states}} = 2(2l+1)
+\]</div>
+<p>It is importtant to remember when calculating these state that protons and neutrons are counted seperately here. So for intance the <span class="math notranslate nohighlight">\(l=2\)</span> level can have up to 10 protons <strong>AND</strong> 10 neutrons inside the shell.</p>
+</section>
+</section>
+<section id="nucleon-and-level-notation">
+<h2><span class="section-number">3.5. </span>Nucleon and Level Notation<a class="headerlink" href="#nucleon-and-level-notation" title="Link to this heading">#</a></h2>
+<p>Based on this a notation for labelling levels has been developed in Nuclear Physics as in <a class="reference internal" href="#nucleonnotation"><span class="std std-numref">Fig. 3.5</span></a>. This is annoyingly similar looking to that used for electrons in atomic orbits but is actually very different so be careful not to mix them up.</p>
+<figure class="align-default" id="nucleonnotation">
+<a class="reference internal image-reference" href="unit3/figures/FiguresSlides.013.png"><img alt="Rutherford Form" src="unit3/figures/FiguresSlides.013.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.5 </span><span class="caption-text">Nuclear notation guide.</span><a class="headerlink" href="#nucleonnotation" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Note that we just state here a further label <span class="math notranslate nohighlight">\(n\)</span> for the basic energy level which comes from assuming a quantum well binding the nucleons together. Full derivation of this is outside our scope here, so for now we just recognize that higher values of <span class="math notranslate nohighlight">\(n\)</span> correspond to higher energies. However we can now easily label each of our shell states based just on known values of <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(l\)</span>, and <span class="math notranslate nohighlight">\(j\)</span>. For example for <span class="math notranslate nohighlight">\(n=2\)</span>, <span class="math notranslate nohighlight">\(l=1\)</span> we have <span class="math notranslate nohighlight">\(2\textnormal{p}_{3/2}\)</span> (4 nucleon states) and <span class="math notranslate nohighlight">\(2\textnormal{p}_{1/2}\)</span> (2 nucleon states).</p>
+</section>
+<section id="first-model-predictions">
+<h2><span class="section-number">3.6. </span>First Model Predictions<a class="headerlink" href="#first-model-predictions" title="Link to this heading">#</a></h2>
+<p>We can now attempt a first prediction with this model, i.e. can we account for the Magic Numbers? We expect for the <span class="math notranslate nohighlight">\(n=1\)</span> state we would start to fill our shells up based on:</p>
+<ul class="simple">
+<li><p>For <span class="math notranslate nohighlight">\(l=0\)</span> we expect <span class="math notranslate nohighlight">\(2(2\times 0 + 1)=2\)</span> states.</p></li>
+<li><p>For <span class="math notranslate nohighlight">\(l=1\)</span> we expect <span class="math notranslate nohighlight">\(2(2\times 1 + 1)=6\)</span> states.</p></li>
+<li><p>For <span class="math notranslate nohighlight">\(l=1\)</span> we expect <span class="math notranslate nohighlight">\(2(2\times 3 + 1)=10\)</span> states.</p></li>
+</ul>
+<p>We expect to fill up our shells in terms of increasing energy. So based on this very simple model we would expect the first shell to close after 2 nucleons, and the second after 8. It gets a little bit more complex after that as the energy gaps of the principal quantum states <span class="math notranslate nohighlight">\(n\)</span> start to overlap with the angular momentum splittings.</p>
+<figure class="align-default" id="firstpredmdel">
+<a class="reference internal image-reference" href="unit3/image-92.png"><img alt="Rutherford Form" src="unit3/image-92.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.6 </span><span class="caption-text">Shell closure result for a simple spherical shell model.</span><a class="headerlink" href="#firstpredmdel" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We find as our shell closures:</p>
+<div class="math notranslate nohighlight">
+\[
+\bf
+2, 8, 20, 40, 58, 92, 112...!!
+\]</div>
+<p>Although we get the first few Magic Numbers correct <span class="math notranslate nohighlight">\((2, 8,\)</span> and <span class="math notranslate nohighlight">\(20)\)</span>, the higher levels are completely wrong. The next two shells suggested by nature are actually at <span class="math notranslate nohighlight">\(28\)</span> and <span class="math notranslate nohighlight">\(50\)</span>. Trying modifications to the shape of our potential well can help a bit but not enough to make new shells so low, instead an extra term is needed in our model.</p>
+</section>
+<section id="spin-orbit-corrections">
+<h2><span class="section-number">3.7. </span>Spin Orbit Corrections<a class="headerlink" href="#spin-orbit-corrections" title="Link to this heading">#</a></h2>
+<p>The answer turns out to be a so-called <strong>Spin orbit Coupling</strong> term. The propoosal of this critical extra term in the Nuclear Potential was made in 1949 by Maria Goeppert Mayer and Johannes Jense, recognised by award of the Nobel Prize in 1963 - together with Eugene Wigner.</p>
+<p>The basis is to introduce a further contribution to the internuclear force and hence the potential <span class="math notranslate nohighlight">\(V(r)\)</span> that depends on the orientation of the spin <span class="math notranslate nohighlight">\(s\)</span> and angular momentum <span class="math notranslate nohighlight">\(l\)</span>. This extra factor causes a re-ording of the energy levels</p>
+<div class="math notranslate nohighlight">
+\[
+V=V(r)l\cdot s.
+\]</div>
+<p>Recall how the Nuclear Potential Well shape (we said it comes from the Saxon Woods distribution of matter above) determines the energy levels. The Spin Orbit Correction changes this shape. The potential is deeper (nucleons are more strongly attracted) if the <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> are aligned parallel, and less deep (nucleons repulsed more) if they are aligned anti-parallel.</p>
+<p>If the nucleon is deep inside the nucleus then it also encounters many other nucleons with <strong>Spin-Up</strong> as <strong>Spin-Down</strong> and so the effect will average out, but it does not average everywhere, particularly close to the edges of the nucleus. The effect of this is to break the degeneracy in the assignment of nucleon energy levels by introducing new energy levels depending on the <span class="math notranslate nohighlight">\(j\)</span> value.</p>
+<p>For instance, consider the <span class="math notranslate nohighlight">\(l=1\)</span> level. Previously this had 6 nucleons, <span class="math notranslate nohighlight">\(3/2, 1/2, -1/2, -3/2\)</span> (for the <span class="math notranslate nohighlight">\(j=3/2\)</span>) and 1<span class="math notranslate nohighlight">\(/2, -1/2\)</span> (for the <span class="math notranslate nohighlight">\(j=1/2\)</span>) all in the same level. Now the <span class="math notranslate nohighlight">\(j=3/2\)</span> nucleons (parallel <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span>) get their own new, lower, energy level. The <span class="math notranslate nohighlight">\(j=1/2\)</span> nucleons (anti-parallel <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span>) get their own new, higher, energy level.</p>
+<p>So the former degeneracy in which we had to consider all these 6 nucleons in one level is broken, and the previous single energy level becomes two, at different levels.</p>
+<figure class="align-default" id="shellsplittingtwo">
+<a class="reference internal image-reference" href="unit3/image-93.png"><img alt="Spin orbit corrections" src="unit3/image-93.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.7 </span><span class="caption-text">Diagram of shell state splitting when spin-orbit coupling is included.</span><a class="headerlink" href="#shellsplittingtwo" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>This effect applies for all the <span class="math notranslate nohighlight">\(l\)</span> levels, they all get split into two levels, except for <span class="math notranslate nohighlight">\(l\)</span>=0 (the <span class="math notranslate nohighlight">\(\textnormal{s}\)</span> sharp) one because that only has one <span class="math notranslate nohighlight">\(j\)</span> assignment, <span class="math notranslate nohighlight">\(j=1/2\)</span> <span class="math notranslate nohighlight">\((\)</span>with values <span class="math notranslate nohighlight">\(1/2, -1/2\)</span><span class="math notranslate nohighlight">\()\)</span>.</p>
+</section>
+<section id="modified-shell-model">
+<h2><span class="section-number">3.8. </span>Modified Shell Model<a class="headerlink" href="#modified-shell-model" title="Link to this heading">#</a></h2>
+<p>The effect of the Energy Levels splitting is dramatic. As shown below it changes the position of the gaps, and can also make neighboring <span class="math notranslate nohighlight">\(j\)</span> states jump over one another. To calculate this what we need to do is work our way successively up the shells, first figuring out how many energy states there are given <span class="math notranslate nohighlight">\(j\)</span>, and then figuring out which correspond to parallel anti-parallel combinations. See how this gives the necessary extra splitting in the figure below. The number of states for each <span class="math notranslate nohighlight">\(l\)</span> remains, we just break the degeneracy, creating more levels. We see a different clustering of levels, and different major “gaps” corresponding to our magic numbers. Notice for instance how the <span class="math notranslate nohighlight">\(1\textnormal{g}\)</span> level splits. All the <span class="math notranslate nohighlight">\(1g_{9/2}\)</span> nucleons get moved down and the <span class="math notranslate nohighlight">\(1\textnormal{g}_{7/2}\)</span> ones go up, creating a new gap when the total of 50 nucleons is reached.</p>
+<p><img alt="Alt text" src="unit3/image-34.png" /></p>
+<p>Importantly this one small change to the model now gives us the right Magic Number sequence:</p>
+<div class="math notranslate nohighlight">
+\[
+\bf
+2, 8, (14), 20, 28, 50, 82, 126.
+\]</div>
+<p>You’ll notice that in some of my examples I’ve mentioned 14 as a possible shell. This is because the energy gap for the <span class="math notranslate nohighlight">\(1d_{5/2}\)</span> state means it appears to give the impressions of shell closures in some datasets, but it is not as strong as some of the main magic numbers.</p>
+<p>The ability to describe the Magic numbers is a great success of the shell model.
+We now have a way to explain how protons and nucleons structure themselves inside our nucleus. In the next unit we’ll discuss how this can be used to estimate some other observed properties of the nucleus, such as parity and the magnetic moment.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./unit3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../unit2/phy303-unit2-liquiddropmodels.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Liquid Drop Model</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../unit4/phy303-unit4-parity-moments.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Nuclear Spin &amp; Moments</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">3.1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evidence-for-shells">3.2. Evidence for Shells</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binding-energy-shape">3.2.1. Binding Energy Shape</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#odd-even-parabolas">3.2.2. Odd-Even Parabolas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-relative-abundance-of-nuclei-in-nature">3.2.3. The Relative Abundance of Nuclei in Nature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-neutron-binding-energy">3.2.4. The Neutron Binding Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-capture-energy">3.2.5. Neutron Capture Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-quadrupole-moments">3.2.6. Electric Quadrupole Moments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-excitation-energy">3.2.7. Nuclear Excitation Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-existence-of-double-magic-nuclei">3.2.8. The existence of double magic nuclei</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decay-chains-end-with-magic-number-nuclei">3.2.9. Decay Chains End with Magic Number Nuclei</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-model-challenge">3.3. Shell Model Challenge</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-model-quantum-mechanics">3.4. Shell Model Quantum Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-potential-example">3.4.1. Simple Potential Example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nucleon-and-level-notation">3.5. Nucleon and Level Notation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#first-model-predictions">3.6. First Model Predictions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spin-orbit-corrections">3.7. Spin Orbit Corrections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modified-shell-model">3.8. Modified Shell Model</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Liz Kneale, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

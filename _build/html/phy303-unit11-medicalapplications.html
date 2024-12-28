@@ -1,0 +1,779 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>11. Nuclear Medicine &#8212; PHY303 Nuclear Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit11-medicalapplications';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Unit 1 : Review Material" href="unit1/phy303-unit1-review.html" />
+    <link rel="prev" title="10. Nuclear Power" href="phy303-unit10-fissionandfusion.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="phy303-homepage.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="PHY303 Nuclear Physics - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY303 Nuclear Physics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit1/phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit10-fissionandfusion.html">10. Nuclear Power</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Nuclear Medicine</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Review Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="unit1/phy303-unit1-review.html">Unit 1 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-problems.html">Unit 1 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-flashcards.html">Unit 1 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-random-quiz.html">Unit 1 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-full-quiz.html">Unit 1 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="unit2/phy303-unit2-review.html">Unit 1 Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit2/phy303-unit2-quiz.html">Unit 2 : Formative Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="unit3/phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit3/phy303-unit3-problems.html">Unit 3 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit3/phy303-unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit3/phy303-unit3-flashcards.html">Unit 3 : Flash Cards</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucleus-shape.html">Nucleus Shape</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/phy303-unit11-medicalapplications.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Nuclear Medicine</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radiation-in-the-body">11.1. Radiation in the body</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#units">11.1.1. Units</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legal-limits">11.1.2. Legal limits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-of-this-unit">11.1.3. Content of this unit</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#medical-radioisotopes">11.2. Medical radioisotopes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">11.2.1. Requirements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#production-of-medical-radioisotopes">11.2.2. Production of medical radioisotopes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reactors">11.2.2.1. Reactors</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#accelerators">11.2.2.2. Accelerators</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#generators">11.2.2.3. Generators</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-common-medical-radioisotopes">11.3. Some common medical radioisotopes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diagnostic-isotopes">11.3.1. Diagnostic isotopes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#emitters-for-scintigraphy-and-spect">11.3.1.1. γ emitters for scintigraphy and SPECT</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#emitters-for-pet">11.3.1.2. β<span class="math notranslate nohighlight">\(^{+}\)</span> emitters for PET</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#therapeutic-isotopes">11.3.2. Therapeutic isotopes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#brachytherapy-isotopes">11.3.2.1. Brachytherapy isotopes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#radionuclide-therapy-isotopes">11.3.2.2. Radionuclide therapy isotopes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagnostic-nuclear-medicine-imaging">11.4. Diagnostic nuclear medicine: imaging</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imaging-instrumentation">11.4.1. Imaging instrumentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scintigraphy">11.4.2. Scintigraphy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spect">11.4.3. SPECT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pet">11.4.4. PET</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">11.4.5. Summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#therapeutic-nuclear-medicine">11.5. Therapeutic nuclear medicine</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brachytherapy">11.5.1. Brachytherapy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radionuclide-therapy-rnt">11.5.2. Radionuclide therapy (RNT)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">11.6. Summary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="nuclear-medicine">
+<h1><span class="section-number">11. </span>Nuclear Medicine<a class="headerlink" href="#nuclear-medicine" title="Link to this heading">#</a></h1>
+<section id="radiation-in-the-body">
+<h2><span class="section-number">11.1. </span>Radiation in the body<a class="headerlink" href="#radiation-in-the-body" title="Link to this heading">#</a></h2>
+<p>This part of the course is about the application of radioactivity to medicine, both for imaging (<strong>diagnostic nuclear medicine</strong>) and for treatment (<strong>therapeutic nuclear medicine</strong>).  Radioactivity is also a natural feature of the environment: uranium, thorium and potassium-40 are present in many minerals, and cosmogenic carbon-14 is a natural feature of the atmosphere (albeit somewhat augmented since 1945 by carbon-14 from nuclear bomb tests).  However, there is no doubt that ionising radiation in excess is not good for you, so we should start by reviewing the measurement of radiation exposure (known as <strong>dosimetry</strong>).</p>
+<section id="units">
+<h3><span class="section-number">11.1.1. </span>Units<a class="headerlink" href="#units" title="Link to this heading">#</a></h3>
+<p>The basic SI unit of absorbed dose is the <strong>gray</strong> (Gy); 1 Gy = 1 J kg<span class="math notranslate nohighlight">\(^{−1}\)</span>.  However, different types of radiation do different amounts of damage, so for biological applications this is multiplied by a <strong>quality factor</strong> which depends on the type of radiation (see Table 1).  The quality factor is determined by the energy deposited per unit distance travelled; fairly obviously, more damage will be done if the energy deposit is more concentrated.  The product of the dose and the quality factor is known as the <strong>dose equivalent</strong> and is measured in <strong>sieverts</strong> (Sv).  The quality factor is dimensionless, so the sievert is also equivalent to J kg<span class="math notranslate nohighlight">\(^{−1}\)</span>.</p>
+<p>The average radiation exposure of a member of the public (i.e. not a radiation worker) in the UK is 2.7 mSv/yr, mostly from background radiation but also including medical exposure such as dental X-rays.  It is noticeably higher if you live on granite (adds about 0.3 mSv/yr) or do a lot of flying (adds 5 μSv/hr, because of higher cosmic-ray flux; negligible for leisure travellers, but significant for aircrew).</p>
+</section>
+<section id="legal-limits">
+<h3><span class="section-number">11.1.2. </span>Legal limits<a class="headerlink" href="#legal-limits" title="Link to this heading">#</a></h3>
+<p>The legal limits in the UK are set by the Ionising Radiations Regulations 2017, and can be summarised as follows:</p>
+<ul class="simple">
+<li><p>Member of public: 1 mSv/yr;</p></li>
+<li><p>Radiation worker under 18: 6 mSv/yr;</p></li>
+<li><p>Radiation worker over 18: 20 mSv/yr;</p></li>
+<li><p>If pregnant: 1 mSv to foetus over duration of pregnancy (after employer notified).</p></li>
+</ul>
+<p>In addition to this, there are specific limits on particular organs (eye, skin, etc.).</p>
+</section>
+<section id="content-of-this-unit">
+<h3><span class="section-number">11.1.3. </span>Content of this unit<a class="headerlink" href="#content-of-this-unit" title="Link to this heading">#</a></h3>
+<p>Ionising radiation includes X-rays, and X-rays are certainly the most common form of “radiation” encountered in a medical context.  However, medical X-rays are generated using accelerated electrons, and therefore don’t qualify as “nuclear”.</p>
+<p>MRI scanners definitely make use of nuclear properties (the phenomenon is known as “nuclear magnetic resonance”, but when it was utilised for medical imaging the ‘nuclear’ was omitted in case it frightened the patients!).  The principle of MRI is that the strong magnetic field in the scanner aligns the proton spins; this alignment is then perturbed by a radio-frequency pulse, which causes the spin to precess around the magnetic field, and this precession is then detected by a receiving coil.  Medical MRI scanners are tuned to excite hydrogen, and therefore map hydrogen-rich material (mostly water and fat).  However, the interesting aspects of MRI are the magnet and the RF system, neither of which is dependent on the nuclear physics, so we won’t discuss MRI any further.</p>
+<p>The rest of this unit is therefore devoted to the use of artificial radioisotopes in medicine, both for imaging and for treatment, primarily of cancer.  This is itself a very large topic, and we will only be able to give a summary here.  People interested in the clinical details may wish to consult the book <em>Nuclear Medicine</em> by WD Leslie, available as an ebook from the University Library.</p>
+</section>
+</section>
+<section id="medical-radioisotopes">
+<h2><span class="section-number">11.2. </span>Medical radioisotopes<a class="headerlink" href="#medical-radioisotopes" title="Link to this heading">#</a></h2>
+<section id="requirements">
+<h3><span class="section-number">11.2.1. </span>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h3>
+<p>To be suitable for use in diagnostic imaging, a medical radioisotope needs to be:</p>
+<ul class="simple">
+<li><p>a β<span class="math notranslate nohighlight">\(^{+}\)</span> or γ emitter, since only γ rays are likely to exit the body so that they can be detected by the imaging device (in the case of β<span class="math notranslate nohighlight">\(^{+}\)</span> emitters, the γ rays are produced when the positron annihilates with an electron, which it will do very close to its point of production);</p></li>
+<li><p>capable of being incorporated into a biologically relevant <strong>tracer molecule</strong> which will be taken up by the imaging target (for example, the thyroid takes up iodine, so to image the thyroid one would incorporate a suitable isotope of iodine into a biologically accessible molecule;</p></li>
+<li><p>not toxic (either itself or its decay product);
+fairly short-lived (hours to days), so that it is quickly cleared from the patient;</p></li>
+<li><p>active enough to produce a detectable signal (this is normally implied by the short life).</p></li>
+</ul>
+<p>The requirements for therapeutic radioisotopes depend on whether the source is <strong>sealed</strong> (i.e. contained within some bead, wire, capsule, etc.) or <strong>unsealed</strong> (i.e. released into the body as a biologically active molecule).  Unsealed sources have similar requirements to diagnostic sources, except that they will usually be β emitters, since in this case we want them to deposit their energy close to the decay point instead of exiting the body to be detected externally.  Sealed sources have less stringent requirements, since they are mechanically inserted at the desired location (so they don’t have to be incorporated into biologically active molecules) and removed when the appropriate dose has been reached (so toxicity is less of an issue).</p>
+</section>
+<section id="production-of-medical-radioisotopes">
+<h3><span class="section-number">11.2.2. </span>Production of medical radioisotopes<a class="headerlink" href="#production-of-medical-radioisotopes" title="Link to this heading">#</a></h3>
+<p>Naturally occurring radioactive isotopes are unlikely to satisfy the above requirements, so we need to be able to manufacture appropriate isotopes.  There are two principal methods: reactors and accelerators.</p>
+<section id="reactors">
+<h4><span class="section-number">11.2.2.1. </span>Reactors<a class="headerlink" href="#reactors" title="Link to this heading">#</a></h4>
+<p>Radioisotopes can be produced by exposing an appropriate target material in a research reactor.  The target will be bombarded mostly with thermal neutrons. This tends to produce neutron-rich isotopes.  In some cases, the isotope itself or its parent is a fission product and is produced by exposing a uranium target; in other cases, a suitable parent isotope is irradiated.  Targets usually have to be isotopically enriched to produce a sufficiently high yield and avoid additional unwanted isotopes.</p>
+<p>The number of research reactors producing medical radioisotopes is quite small, so reactor-produced isotopes tend to have longer half-lives (just because they have to retain useful activity after they have been transported from the reactor to the hospital).</p>
+</section>
+<section id="accelerators">
+<h4><span class="section-number">11.2.2.2. </span>Accelerators<a class="headerlink" href="#accelerators" title="Link to this heading">#</a></h4>
+<p>The best choice of accelerator for radioisotope production is a <strong>proton cyclotron</strong>.  Cyclotrons produce low-energy beams, appropriate for radionuclide production since you probably want a compound-nucleus reaction rather than direct scattering.</p>
+<p>The basic layout of a cyclotron is shown in Figure 1.  The protons are injected in the centre, spiral outwards as they are accelerated by an alternating electric field timed so that the protons see an accelerating voltage whenever they cross the gap between the two D-shaped electrodes, and are finally directed on to the target material.  Cyclotrons are fairly compact devices, and there are somewhere of the order of 1300 medical cyclotrons around the world (there is one in Dinnington, just outside Sheffield).  This is useful, because some of the isotopes produced in cyclotrons, especially those used for PET scanners, have very short half-lives, so the production site needs to be close to the hospital.</p>
+<p>Cyclotrons generally produce the more proton-rich medical isotopes, but cyclotron production routes are being developed as alternatives for traditionally reactor-produced nuclides, because of the large number of cyclotrons compared to the relatively small number of research reactors.</p>
+</section>
+<section id="generators">
+<h4><span class="section-number">11.2.2.3. </span>Generators<a class="headerlink" href="#generators" title="Link to this heading">#</a></h4>
+<p>Sometimes the isotope of interest is not produced directly, but is the result of the β decay of a radioactive parent.  If the lifetime of the parent is much longer than that of the daughter, a generator system can be used to produce the daughter on-site.  By far the most important such isotope is <span class="math notranslate nohighlight">\(^{99m}\)</span>Tc, a metastable state of technetium produced by the decay of <span class="math notranslate nohighlight">\(^{99}\)</span>Mo.  Molybdenum-99 is a fission product with a half-life of 66 hours; <span class="math notranslate nohighlight">\(^{99m}\)</span>Tc, on the other hand, has a half-life of only 6 hours.</p>
+<p>A generator is essentially a shielded vial, initially containing the parent isotope.  A solvent is injected to wash out (<em>elute</em>) the daughter.  This process can be repeated several times, with decreasing yield each time as the parent decays.  A schematic diagram of a generator is shown in figure 2.</p>
+<p><img alt="Alt text" src="_images/image-69.png" /></p>
+<p>Generator systems allow short-lived radionuclides to be used at hospitals which are some distance from the nearest production facility.  Unfortunately they are only feasible in the particular case where a short-lived medical isotope is produced by the decay of a longer-lived precursor, which of course is not generally true.  However, <span class="math notranslate nohighlight">\(^{99m}\)</span>Tc is the single most widely used medical isotope, so it is worth mentioning generator systems for that reason.</p>
+</section>
+</section>
+</section>
+<section id="some-common-medical-radioisotopes">
+<h2><span class="section-number">11.3. </span>Some common medical radioisotopes<a class="headerlink" href="#some-common-medical-radioisotopes" title="Link to this heading">#</a></h2>
+<p>This is an abridged list—the number of radioisotopes with medical applications is extremely large.  For more information, see the <em>World Nuclear Association website</em>.</p>
+<section id="diagnostic-isotopes">
+<h3><span class="section-number">11.3.1. </span>Diagnostic isotopes<a class="headerlink" href="#diagnostic-isotopes" title="Link to this heading">#</a></h3>
+<p>The ideal diagnostic isotope would produce γ rays (for scintigraphy and SPECT) or positrons (for PET) and nothing else.  Therefore, electron-capture isotopes are preferred as γ emitters (no electron emission).  Both EC isotopes and positron emitters are proton-rich, so production is mostly by cyclotrons (the exception is <span class="math notranslate nohighlight">\(^{99m}\)</span>Tc, which is produced by β decay of a fission product and itself decays by isomeric transition; the ground state, <span class="math notranslate nohighlight">\(^{99}\)</span>Tc, is a β<span class="math notranslate nohighlight">\(^{−}\)</span> emitter but has a very long half-life, so very low activity at imaging doses).</p>
+<section id="emitters-for-scintigraphy-and-spect">
+<h4><span class="section-number">11.3.1.1. </span>γ emitters for scintigraphy and SPECT<a class="headerlink" href="#emitters-for-scintigraphy-and-spect" title="Link to this heading">#</a></h4>
+<ul>
+<li><p><strong><span class="math notranslate nohighlight">\(^{99m}\)</span>Tc</strong> (half-life 6.0 hours; produced at point of use from <span class="math notranslate nohighlight">\(^{99}\)</span>Mo (66 hr), which is a fission product manufactured by irradiating enriched uranium in a reactor; decays by isomeric transition to the ground state <span class="math notranslate nohighlight">\(^{99}\)</span>Tc (half-life 211100 years) with emission of 143 keV γ-ray).	<em>This is by far the most widely used medical radioisotope.  The short half-life minimises patient exposure, and the versatile chemistry of technetium means that it can be incorporated into a wide range of tracer molecules.  A few sample uses are listed below (for more see the NIH National Library of Medicine webpage)</em>:</p>
+<ul class="simple">
+<li><p><strong>sodium pertechnetate</strong>: imaging of brain, thyroid, salivary gland, bladder, nasolacrimal drainage;</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(^{99m}\)</span>Tc</strong> methylene diphosponate: bone imaging;</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(^{99m}\)</span>Tc</strong> sestamibi (<span class="math notranslate nohighlight">\(^{99m}\)</span>Tc-methoxy isobutyl isonitrile): myocardial perfusion (blood flow in heart muscle), parathyroid, breast;</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(^{99m}\)</span>Tc</strong> exametazine: cerebral blood flow.</p></li>
+</ul>
+<vspace>
+<p><span class="math notranslate nohighlight">\(^{99m}\)</span>Tc is so widely used that there are concerns about supply, given that research reactors are few in number and many are now rather old (95% of the supply of <span class="math notranslate nohighlight">\(^{99}\)</span>Mo comes from seven reactors, one of which is new—the average age of the others is 53 years).  Other production routes, e.g. <span class="math notranslate nohighlight">\(^{100}\textnormal{Mo(γ,n)}^{99}\)</span>Mo using an electron linac to generate a high-intensity photon beam, are being investigated.
+<br></p>
+</li>
+<li><p><strong><span class="math notranslate nohighlight">\(^{123}\)</span>I</strong> (half-life 13.2 hours; produced by <span class="math notranslate nohighlight">\(^{124}\)</span>Xe(p,pn)<span class="math notranslate nohighlight">\(^{123}\)</span>Xe → <span class="math notranslate nohighlight">\(^{123}\)</span>I or <span class="math notranslate nohighlight">\(^{124}\)</span>Xe(p,2n)<span class="math notranslate nohighlight">\(^{123}\)</span>Cs  → <span class="math notranslate nohighlight">\(^{123}\)</span>Xe → <span class="math notranslate nohighlight">\(^{123}\)</span>I in cyclotron; decays by electron capture with emission of 159 keV γ).	
+This is used for diagnostic imaging of the thyroid, in the form of NaI.  It has replaced the reactor-generated <span class="math notranslate nohighlight">\(^{131}\)</span>I for this purpose since it produces a much more intense γ flux but much lower radiation dose to the thyroid tissue.  For exactly this reason, <span class="math notranslate nohighlight">\(^{131}\)</span>I and not <span class="math notranslate nohighlight">\(^{123}\)</span>I is used for the treatment of thyroid disease (hyperthyroidism and thyroid cancer).	A different tracer compound, meta-iodobenzylguanidine (MIBG), is used for imaging (with <span class="math notranslate nohighlight">\(^{123}\)</span>I) or treating (with <span class="math notranslate nohighlight">\(^{131}\)</span>I) some endocrine tumours.
+<br></p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(^{201}\)</span>Tl</strong> <em>(half-life 73 hours; produced by <span class="math notranslate nohighlight">\(^{203}\)</span>Tl(p,3n)<span class="math notranslate nohighlight">\(^{201}\)</span>Pb → <span class="math notranslate nohighlight">\(^{201}\)</span>Tl in cyclotron; decays by electron capture, emitting mainly X-rays of energy 67–82 keV from de-excitation of <span class="math notranslate nohighlight">\(^{201}\)</span>Hg, with 12% γ-ray photons of energies 135 and 167 keV)</em>
+Used in the form of <span class="math notranslate nohighlight">\(^{201}\)</span>TlCl, usually for heart imaging, though it is also useful in distinguishing benign and malignant bone lesions and for post-treatment scans of brain tumours.  It is taken up by the body as a potassium analogue.  For many applications, it has now been replaced by <span class="math notranslate nohighlight">\(^{99m}\)</span>Tc, because the shorter half-life of <span class="math notranslate nohighlight">\(^{99m}\)</span>Tc, and the superior γ-ray spectrum, results in a lower radiation dose to the patient.</p></li>
+</ul>
+</section>
+<section id="emitters-for-pet">
+<h4><span class="section-number">11.3.1.2. </span>β<span class="math notranslate nohighlight">\(^{+}\)</span> emitters for PET<a class="headerlink" href="#emitters-for-pet" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong><span class="math notranslate nohighlight">\(^{18}\)</span>F</strong> <em>(half-life 110 min; produced in cyclotron by <span class="math notranslate nohighlight">\(^{18}\)</span>O(p,n)<span class="math notranslate nohighlight">\(^{18}\)</span>F; decays by positron emission  with a branching ratio of 97%, the other 3% being electron capture)</em>.	
+This is the most important PET isotope.  The main tracer compound is fluorodeoxyglucose, which the body treats as if it were glucose, so it is taken up by rapidly metabolising cells—including cancer cells.  Na<span class="math notranslate nohighlight">\(^{18}\)</span>F is used for bone imaging.  More recently, florbetaben (an aromatic compound with composition <span class="math notranslate nohighlight">\(C_{21}H_{26}~^{18}FNO_{3}\)</span>) has been approved for imaging amyloid plaques—diagnostic of Alzheimer’s disease—in the brain.
+<br></p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(^{11}\)</span>C</strong> <em>(half-life 24 min; <span class="math notranslate nohighlight">\(^{14}\)</span>N(p,α)<span class="math notranslate nohighlight">\(^{11}\)</span>C in cyclotron; decays by positron emission with branching ratio 911.8%)</em>.	
+Carbon is of course the basis of organic chemistry, so <span class="math notranslate nohighlight">\(^{11}\)</span>C can be incorporated into essentially any organic compound—the limiting factor is the short half-life, which means that the desired compound has to be easy to synthesise quickly.  Common <span class="math notranslate nohighlight">\(^{11}\)</span>C-labelled tracers include <span class="math notranslate nohighlight">\(^{11}\)</span>C-flumazenil for studies of epilepsy, <span class="math notranslate nohighlight">\(^{11}\)</span>C-raclopride for Parkinson’s disease, <span class="math notranslate nohighlight">\(^{11}\)</span>C-methionine (an amino acid) for a range of cancer diagnoses and <span class="math notranslate nohighlight">\(^{11}\)</span>C-choline, a precursor to the neurotransmitter acetylcholine, used for diagnosis of brain, lung, oesophagus, colorectal and prostate cancers.
+<br></p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(^{68}\)</span>Ga</strong> <em>(half-life 68 min; produced on-site from <span class="math notranslate nohighlight">\(^{68}\)</span>Ge (271 days), which is itself produced in a variety of ways, including <span class="math notranslate nohighlight">\(^{69}\)</span>Ga(p,2n)<span class="math notranslate nohighlight">\(^{68}\)</span>Ge and <span class="math notranslate nohighlight">\(^{66}\)</span>Zn(α,2n)<span class="math notranslate nohighlight">\(^{68}\)</span>Ge)</em>.	
+The only PET isotope that can be used in hospitals located a long way from a cyclotron.  The main uses are for diagnosis of prostate cancer using labelled PSMA (prostate specific membrane antigen) as the tracer, and for neuroendocrine tumours using various compounds that mimic the hormone somatostatin.  Particularly useful because it has very similar biochemistry to the therapeutic radioisotope <span class="math notranslate nohighlight">\(^{177}\)</span>Lu, so one can image with <span class="math notranslate nohighlight">\(^{68}\)</span>Ga and treat with <span class="math notranslate nohighlight">\(^{177}\)</span>Lu, confident that the same tissue is targeted in both cases.</p></li>
+</ul>
+</section>
+</section>
+<section id="therapeutic-isotopes">
+<h3><span class="section-number">11.3.2. </span>Therapeutic isotopes<a class="headerlink" href="#therapeutic-isotopes" title="Link to this heading">#</a></h3>
+<p>The requirements for therapeutic use are almost opposite to diagnosis: this time the aim is to deposit the energy produced by the decay as locally as possible.  They also tend to have longer half-lives, since we want to irradiate the surrounding tissue (in contrast to imaging where the aim is to minimise the radiation dose to the patient).  Most therapeutic isotopes are β<span class="math notranslate nohighlight">\(^{−}\)</span> emitters, though in some cases the therapeutic agents are X-rays or low-energy γ-rays.  β<span class="math notranslate nohighlight">\(^{−}\)</span> emitters are neutron-rich, so most of these isotopes are produced in reactors.
+Therapeutic isotopes can be mechanically inserted (brachytherapy) or introduced as biologically active molecules (radionuclide therapy).</p>
+<section id="brachytherapy-isotopes">
+<h4><span class="section-number">11.3.2.1. </span>Brachytherapy isotopes<a class="headerlink" href="#brachytherapy-isotopes" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(^{192}\)</span>Ir (half-life 73.8 days; produced by <span class="math notranslate nohighlight">\(^{191}\)</span>Ir(n,γ)<span class="math notranslate nohighlight">\(^{192}\)</span>Ir in reactor; decays by β<span class="math notranslate nohighlight">\(^{−}\)</span> to <span class="math notranslate nohighlight">\(^{192}\)</span>Pt (95.6%; remaining 4.4% by electron capture to 192Os) plus a wide range of de-excitation γ-rays from 0.136 to 1.06 MeV).	Used to treat head and neck cancers, prostate and cervical cancer.</p></li>
+<li><p><span class="math notranslate nohighlight">\(^{125}\)</span>I (half-life 511.4 days; produced by <span class="math notranslate nohighlight">\(^{124}\)</span>Xe(n,γ)<span class="math notranslate nohighlight">\(^{125}\)</span>Xe → <span class="math notranslate nohighlight">\(^{125}\)</span>I in reactor; decays by electron capture to <span class="math notranslate nohighlight">\(^{125}\)</span>Te with emission of soft γ rays (up to 35 keV) and internal-conversion electrons (also 35 keV)).	Wide range of applications in cancer therapy; particularly useful because the very low energy of the γ-rays and IC electrons minimises the dose to tissue surrounding the targeted tumour.</p></li>
+<li><p><span class="math notranslate nohighlight">\(^{90}\)</span>Y (half-life 64 hours; produced by decay of fission product <span class="math notranslate nohighlight">\(^{90}\)</span>Sr or by (n,γ) on <span class="math notranslate nohighlight">\(^{89}\)</span>Y; decays by β<span class="math notranslate nohighlight">\(^{−}\)</span> to <span class="math notranslate nohighlight">\(^{90}\)</span>Zr).	Used in the form of microspheres to treat liver cancer; can also be used to treat synovitis (inflammation of the synovial membrane in a joint) because it damps down the inflammation.</p></li>
+</ul>
+</section>
+<section id="radionuclide-therapy-isotopes">
+<h4><span class="section-number">11.3.2.2. </span>Radionuclide therapy isotopes<a class="headerlink" href="#radionuclide-therapy-isotopes" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(^{89}\)</span>Sr (half-life 50.5 days; produced by (n,γ) on <span class="math notranslate nohighlight">\(^{88}\)</span>Sr; decays by β<span class="math notranslate nohighlight">\(^{−}\)</span> to <span class="math notranslate nohighlight">\(^{89}\)</span>Y).	Used for relief of pain caused by bone tumours (does also reduce tumour size).  Taken up by bone because it is a calcium analogue.  <span class="math notranslate nohighlight">\(^{153}\)</span>Sm is also used for this purpose.</p></li>
+<li><p><span class="math notranslate nohighlight">\(^{188}\)</span>Re (half-life 17 hours; produced on-site from <span class="math notranslate nohighlight">\(^{188}\)</span>W, which is produced by double neutron capture on <span class="math notranslate nohighlight">\(^{186}\)</span>W; decays by β<span class="math notranslate nohighlight">\(^{−}\)</span> to <span class="math notranslate nohighlight">\(^{188}\)</span>Os, with 15% 155 keV γ emission, useful for imaging)	Another isotope useful for pain relief in bone cancer; can also be used for brachytherapy of liver tumours similarly to <span class="math notranslate nohighlight">\(^{90}\)</span>Y.</p></li>
+<li><p><span class="math notranslate nohighlight">\(^{177}\)</span>Lu (half-life 6.7 days; produced by <span class="math notranslate nohighlight">\(^{176}\)</span>Lu(n,γ)<span class="math notranslate nohighlight">\(^{177}\)</span>Lu or <span class="math notranslate nohighlight">\(^{176}\)</span>Yb(n,γ)<span class="math notranslate nohighlight">\(^{177}\)</span>Yb → <span class="math notranslate nohighlight">\(^{177}\)</span>Lu; decays by β<span class="math notranslate nohighlight">\(^{−}\)</span> to <span class="math notranslate nohighlight">\(^{177}\)</span>Hf, with significant emission of 208 and 113 keV γ rays suitable for imaging).	Used in the form of a somatostatin analogue for neuroendocrine tumours; also recently approved for prostate cancer treatment using <span class="math notranslate nohighlight">\(^{177}\)</span>Lu-PSMA.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="diagnostic-nuclear-medicine-imaging">
+<h2><span class="section-number">11.4. </span>Diagnostic nuclear medicine: imaging<a class="headerlink" href="#diagnostic-nuclear-medicine-imaging" title="Link to this heading">#</a></h2>
+<section id="imaging-instrumentation">
+<h3><span class="section-number">11.4.1. </span>Imaging instrumentation<a class="headerlink" href="#imaging-instrumentation" title="Link to this heading">#</a></h3>
+<p>In order to use radioisotopes for imaging, we have to be able to detect the γ rays that they emit.  The instrument that does this is known, unsurprisingly, as a <strong>gamma camera</strong>.</p>
+<p>A typical gamma camera uses scintillator to convert the γ-ray photons into visible light, which is then read out by photomultiplier tubes.  The usual choice of scintillator is NaI(Tl), which has good photon yield, is readily available and is well understood.  To provide spatial resolution, a collimator (essentially a lead sheet pierced with an array of small holes) is placed in front of the scintillator so that only normally incident photons are detected.  This does not completely solve the problem, because scintillation light is itself emitted isotropically, so light from one location will be picked up by a number of PMTs; however, the amount of light detected will decrease with distance from the source, so the position can be determined by finding the peak of the light distribution.  The amount of light is proportional to the energy of the incident γ ray.</p>
+<p>This is not an ideal system.  The collimator absorbs most of the photons, and the scintillator has to be relatively thin (thus reducing its efficiency) to optimise spatial resolution, which is still poor compared to CT or MRI.  Many modern scanners, especially PET scanners, have coordinated gamma cameras and CT scanners, so that the higher spatial resolution of the CT scan can be correlated with the greater selectivity of the radioisotope imaging.  This is harder to do with MRI, because MRI requires high magnetic fields and PMTs do not work in magnetic fields; partly for this reason, work is being done on replacing the traditional PMT array with solid-state detectors such as avalanche photodiodes.  Recently some SPECT scanners have replaced the scintillator-plus-PMT combination with solid-state cadmium-zinc-telluride (CZT) detectors.</p>
+</section>
+<section id="scintigraphy">
+<h3><span class="section-number">11.4.2. </span>Scintigraphy<a class="headerlink" href="#scintigraphy" title="Link to this heading">#</a></h3>
+<p>Scintigraphy is the simplest form of radionuclide imaging: a single camera scans the patient, providing a two-dimensional projection of the γ emission, analogous to a standard X-ray image.  The patient is injected with or consumes (depending on application) the radioisotope-labelled compound, waits for the time required to allow the compound to be taken up by the relevant tissues, and is then scanned.  Applications include bone scans, studies of the digestive system (for digestive transit time and for diagnosing bleeding, lung scintigraphy (using a gaseous tracer), and evaluation of thyroid function (using <span class="math notranslate nohighlight">\(^{123}\)</span>I; in this case the key question is not where the tracer is absorbed but <em>how much</em> is absorbed).  An example of a bone scan using <span class="math notranslate nohighlight">\(^{99m}\)</span>Tc-methylene-diphosphonate as tracer is shown in figure 3.</p>
+<p>The main disadvantage of scintigraphy is the lack of spatial resolution: the combination of inherently poor resolution of gamma cameras (typically of order 1 cm) with the 2D projection means that it may be hard to locate small tumours with adequate precision.<br />
+<img alt="Alt text" src="_images/image-70.png" /></p>
+</section>
+<section id="spect">
+<h3><span class="section-number">11.4.3. </span>SPECT<a class="headerlink" href="#spect" title="Link to this heading">#</a></h3>
+<p>SPECT (Single Photon Emission Computed Tomography) is to scintigraphy as CT scans are to X-rays: instead of one camera scanning the body in a fixed orientation, two cameras are mounted on a circular gantry and rotated, producing a large number of images from different angles which are then analysed by computer to produce a 3D image.  Many modern scanners combine SPECT with a conventional CT scan, which makes it much easier to visualise and locate anatomically any regions that show up on the SPECT scan.</p>
+<p>The ideal radioisotopes for use with SPECT emit monoenergetic γ rays with energies between 100 and 200 keV. <span class="math notranslate nohighlight">\(^{99m}\)</span>Tc and <span class="math notranslate nohighlight">\(^{123}\)</span>I are well suited to this technique, and many other isotopes can also be used.  An example of a SPECT/CT image is shown in figure 4.</p>
+<p>SPECT/CT scanners are obviously more expensive than pure SPECT scanners, but provide a better patient experience (only one scan instead of two) and better localisation of disease (important to optimise treatment, especially surgery.  The CT scan also improves the SPECT resolution by improving the attenuation correction for the γ ray intensity.  Although PET scans offer intrinsically higher resolution than SPECT alone, the improvements offered by SPECT/CT narrow the gap, which is particularly valuable in cases where there is no suitable PET radioisotope available (e.g. iodine).</p>
+<p><img alt="Alt text" src="_images/image-71.png" /></p>
+</section>
+<section id="pet">
+<h3><span class="section-number">11.4.4. </span>PET<a class="headerlink" href="#pet" title="Link to this heading">#</a></h3>
+<p>Positron emission tomography (PET), as the name indicates, uses positron emitters rather than γ emitters as the γ ray source.  The positron will rapidly (i.e. very close to its point of production) annihilate with an electron to produce two nearly back-to-back 511 keV photons, which escape and are detected.</p>
+<p>Because the aim is to detect both photons in coincidence, a rotating camera of the type used in SPECT (or CT) imaging is not suitable.  Instead, PET scanners have a fixed ring of scintillator to maximise acceptance for multiple photons.  NaI(Tl) is not well suited to 511 keV photons, and PET scanners use more exotic scintillators: the most common are bismuth germanate (BGO), cerium-doped lutetium oxyorthosilicate (LSO:Ce) and cerium-doped lutetium yttrium oxyorthosilicate (LYSO:Ce).  The latter two are newer than BGO, and are preferred because they have higher photon yield and faster response, which decreases background from random coincidences of unrelated photons.  In a typical PET scanner, each scintillator block is actually made from a large number of optically isolated small crystals, which improves spatial resolution: PET scanners typically have a resolution of a few mm, significantly better than SPECT.  Each pair of photons defines a line of response, on which the point of emission should lie; these lines of response are then combined by dedicated software to produce the final image.  As with SPECT, PET/CT combined scanners improve image quality by making use of the CT scan to correct for attenuation of γ rays and make it easier to localise the regions of interest: modern PET scanners all incorporate CT (as far as I can see).</p>
+<p>The main limitation of PET scanners is that the range of isotopes available is much more limited than for SPECT, and most of them have short half-lives, which means that the hospital needs to be located close to an appropriate production facility (usually a cyclotron).  The most commonly used PET isotope is <span class="math notranslate nohighlight">\(^{18}\)</span>F, which has a half-life of 110 minutes; the most common tracer molecule is <span class="math notranslate nohighlight">\(^{18}\)</span>F-FDG (fluorodeoxyglucose), which biological systems take up as glucose, but a wide range of <span class="math notranslate nohighlight">\(^{18}\)</span>F-labelled biomolecules can be used for particular purposes (e.g. fluorodopa, an <span class="math notranslate nohighlight">\(^{18}\)</span>F-labelled version of the Parkinson’s drug L-DOPA, which is used for diagnosis of Parkinson’s), and the simple salt Na<span class="math notranslate nohighlight">\(^{18}\)</span>F can be used for bone imaging.</p>
+<p>An exception to the short half-life problem is <span class="math notranslate nohighlight">\(^{68}\)</span>Ga, because it is produced in a generator system from relatively long-lived <span class="math notranslate nohighlight">\(^{68}\)</span>Ge.  <span class="math notranslate nohighlight">\(^{68}\)</span>Ga is widely used for imaging neuroendocrine tumours: the tracer compounds are various somatostatin analogues (DOTANOC, DOTATOC, DOTATATE).  As noted above, a useful feature is that the same tracers can incorporate the therapeutic isotopes <span class="math notranslate nohighlight">\(^{177}\)</span>Lu and 90Y in the same way as <span class="math notranslate nohighlight">\(^{68}\)</span>Ga, so these form what is called a theranostic (therapeutic-diagnostic) pair.  Other <span class="math notranslate nohighlight">\(^{68}\)</span>Ga-labelled tracer molecules have been developed in recent years, with applications including evaluation of blood flow in the heart muscle, assessment of liver and kidney function, and prostate cancer imaging.  The main issue with <span class="math notranslate nohighlight">\(^{68}\)</span>Ga is that the generators do not produce much <span class="math notranslate nohighlight">\(^{68}\)</span>Ga per elution, which limits patient throughput (you only get enough material to scan two or three patients).  It is possible to produce <span class="math notranslate nohighlight">\(^{68}\)</span>Ga directly in a cyclotron via <span class="math notranslate nohighlight">\(^{68}\)</span>Zn(p,n)<span class="math notranslate nohighlight">\(^{68}\)</span>Ga, which has a much better yield than the generator, but negates the advantage of not having to be next door to a cyclotron.</p>
+</section>
+<section id="summary">
+<h3><span class="section-number">11.4.5. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
+<p>Radionuclide imaging is very useful for diagnosing any condition which will cause increased or decreased take-up of a biologically active molecule that can be labelled with an appropriate isotope.  There is a wide choice of isotopes, especially for scintigraphy or SPECT, and an even wider choice of molecules to attach them to.  The single most important diagnostic isotope is <span class="math notranslate nohighlight">\(^{99m}\)</span>Tc, with a huge range of tracer molecules available, but other isotopes may be preferable to <span class="math notranslate nohighlight">\(^{99m}\)</span>Tc for specific applications.</p>
+<p>Positron emission tomography (PET) has higher resolution than SPECT, but is more expensive and has a more limited range of appropriate isotopes.  The most commonly used PET isotope, <span class="math notranslate nohighlight">\(^{18}\)</span>F, has a half-life of 110 minutes, which means that a hospital wishing to use it needs to be within about 2 hours travel time from a medical cyclotron that produces it.  <span class="math notranslate nohighlight">\(^{18}\)</span>F is most commonly used with the tracer FDG (fluorodeoxyglucose), which is a glucose analogue that picks out cells that are actively metabolising glucose (tumour cells will tend to fall into this category).</p>
+<p><img alt="Alt text" src="_images/image-72.png" /></p>
+<p>Both SPECT and PET are now commonly combined with CT to improve localisation of suspect regions and assist with correcting for γ-ray attenuation.  This is especially useful when surgery is foreseen, since better localisation may translate to less invasive surgery.</p>
+</section>
+</section>
+<section id="therapeutic-nuclear-medicine">
+<h2><span class="section-number">11.5. </span>Therapeutic nuclear medicine<a class="headerlink" href="#therapeutic-nuclear-medicine" title="Link to this heading">#</a></h2>
+<p>Usually, our aim in handling radioactive material is to minimise the damage the radioactivity does to living organisms.  However, the aim of therapeutic nuclear medicine is actually to kill cells—but only the right cells.  This can be achieved in two ways: by mechanically placing the radioactive source where you want it to be (brachytherapy) or by incorporating it into a biologically active molecule that will be taken up by the appropriate tissue (radionuclide therapy).</p>
+<section id="brachytherapy">
+<h3><span class="section-number">11.5.1. </span>Brachytherapy<a class="headerlink" href="#brachytherapy" title="Link to this heading">#</a></h3>
+<p>In brachytherapy, the radioactive source is in the form of a capsule, wire, bead or microspheres and is placed within (interstitial brachytherapy) or in contact with (contact brachytherapy) the diseased tissue.  This is usually done by inserting a catheter that leads to the desired site, and then having an afterloader machine deliver the source through the catheter.  The advantage of this system over direct placement by a surgeon is that the surgeon is not exposed to the radiation.</p>
+<p>Brachytherapy can be delivered at high dose rate (&gt;12 Gy/hr), medium dose rate (2–12 Gy/hr) or low dose rate (&lt;2 Gy/hr).  In most cases, the radioisotope is left in place for a certain amount of time (minutes for high dose rate, up to 24 hours for low dose rate) and then removed.  However, for some cancers, especially prostate, low dose rate sources may be permanently implanted—this will deliver a gradually declining dose rate for a time that depends on the half-life of the source.</p>
+<p>Many localised cancers can be treated with brachytherapy.  The key requirement for successful treatment is that the targeted tumour has not spread beyond the local area (though it can have spread to the regions immediately surrounding the organ in which it originated—this is an advantage over surgery).  The most common applications are cervical, prostate, breast and skin cancers, but many other localised cancers (including brain, head and neck, respiratory and digestive tracts and reproductive system) can also be targeted.  Brachytherapy is also sometimes used to treat chronic inflammation of the synovial membrane in some joints (especially knees, but also hip, shoulder, elbow, wrist, ankle and even hands and feet), such as is found in rheumatoid arthritis: the aim is carefully controlled destruction of the diseased membrane without affecting the rest of the joint.</p>
+</section>
+<section id="radionuclide-therapy-rnt">
+<h3><span class="section-number">11.5.2. </span>Radionuclide therapy (RNT)<a class="headerlink" href="#radionuclide-therapy-rnt" title="Link to this heading">#</a></h3>
+<p>In contrast to brachytherapy, radionuclide therapy works in the same way as imaging: the radioactive isotope is incorporated into a biologically active molecule that is preferentially taken up by the tumour (and, ideally, not by anything else).  The ideal molecule for this purpose would bind exclusively to the diseased cells and deliver a large but short-range dose of radiation, thus killing the target cells and nothing else.  The great merit of radionuclide therapy is that it can potentially find and kill small metastatic tumours that have not been detected yet, because they have the same cell type as the primary and will take up the same chemicals (for example, a metastatic prostate tumour in the lung is still a prostate tumour and will still bind to PSMA).</p>
+<p>As with brachytherapy, most RNT isotopes are β emitters.  However, in recent years there has been a lot of interest in the potential of α emitters, as α particles have the desirable property of being very destructive over a very short range.  In 2013, the American FDA approved the α emitter <span class="math notranslate nohighlight">\(^{223}\)</span>RaCl<span class="math notranslate nohighlight">\(_{2}\)</span> as a treatment for bone metastases of prostate cancer, which has led to a great deal of interest in this isotope as a potential treatment for other bone cancers (see figure 6).</p>
+<p>The classic example of RNT is the use of <span class="math notranslate nohighlight">\(^{131}\)</span>I, a β emitter, to treat thyroid diseases.  Iodine and the thyroid are an ideal combination for RNT because no other organ in the body has anywhere near as great an affinity for iodine as the thyroid—therefore you can be confident that the radiation will be delivered to the right place.  <span class="math notranslate nohighlight">\(^{131}\)</span>I-MIBG, an analogue of the neurotransmitter noradrenaline, can be used to treat some neuroendocrine tumours.  Neuroendocrine tumours that have somatostatin receptors can also be treated using <span class="math notranslate nohighlight">\(^{177}\)</span>Lu or <span class="math notranslate nohighlight">\(^{90}\)</span>Y incorporated into somatostatin analogues based on DOTA (dodecane tetraacetic acid).</p>
+<p>A newer strategy for RNT which shows a lot of promise involves the use of monoclonal antibodies.  Monoclonal antibodies have become very important in cancer therapy in recent years, usually by developing an antibody which binds to something that is overexpressed in cancer cells.  The standard mode of operation is that the antibody binds to the relevant receptor and either disrupts the cell’s function by doing so or activates the rest of the immune system to attack the tumour.  If such a tumour-specific antibody can be loaded with a suitable radioisotope, this would provide another mode of action.  Various isotopes, especially <span class="math notranslate nohighlight">\(^{131}\)</span>I and <span class="math notranslate nohighlight">\(^{90}\)</span>Y, have been used successfully in this way.</p>
+<p>A recent review of RNT (Sgouros et al., Nature Reviews Drug Discovery 19 (2020) 589) concluded that it was “a safe and effective targeted approach to treating many types of cancer”, but underutilised because of “the perceived complexity of the treatment.”  The authors felt that this area needs to be recognised as a distinct subspecialty of medicine or medical physics, so that hospitals could call on trained specialists who would not be intimidated by the multidisciplinary nature of nuclear medicine.</p>
+<p><img alt="Alt text" src="_images/image-73.png" /></p>
+</section>
+</section>
+<section id="id1">
+<h2><span class="section-number">11.6. </span>Summary<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>Nuclear medicine is a valuable diagnostic and therapeutic tool, especially for dealing with cancer.  A wide range of radioisotopes are available to suit different applications.</p>
+<p>Diagnostic nuclear medicine relies on detecting γ rays, which may be produced directly or via the annihilation of an emitted positron.  The latter has better spatial resolution and is more quantitative, but is more expensive and has a much more restricted choice of radioisotopes, and hence of tracer molecules.  PET isotopes also have the disadvantage of short half-lives, which means that only hospitals located within a fairly short (one or two hours’ travel) distance of a medical cyclotron can make effective use of a PET scanner.</p>
+<p>Gamma rays are usually detected using scintillating crystals, with NaI(Tl) being used for scintigraphy and SPECT and more exotic scintillators such as BGO, LSO and LYSO in PET scanners because of the higher energies of photons from positron annihilation.  Some SPECT scanners now use solid-state detectors instead of scintillator, a trend which will surely accelerate.  Most SPECT and PET scanners are now combined with CT scanners, producing co-registered γ-ray and X-ray images: this makes it easier to locate tumours accurately—very important if the imaging is being done to prepare for surgery—and improving the γ-ray images because the X-ray image can be used to improve the correction that has to be made for γ-ray attenuation within the body.</p>
+<p>Therapeutic use of radioactivity involves carefully controlled destruction of diseased cells.  This can be achieved by mechanically locating the radioisotope in or adjacent to the tumour (brachytherapy) or by incorporating the radioisotope into a biologically active molecule that binds to the tumour cells (radionuclide therapy).  The advantage of the former technique is that one can be sure that the radioactivity is present only in the vicinity of the tumour, and that high doses can be delivered by temporarily inserting a high-activity source which is removed after an appropriate time.  The advantage of radionuclide therapy is that it can be used to attack metastatic disease, even in cases where the sites to which the disease has spread may not all have been located.</p>
+<p>Therapeutic radioisotopes need to be able to destroy cells within a limited range, so that when they are inserted into or chemically bind to a tumour they destroy tumour cells and not the surrounding healthy tissue.  Most such isotopes are β<span class="math notranslate nohighlight">\(^{−}\)</span> emitters made in reactors, although α particles have the required properties (they have a short range and are very destructive within that range), and there is increasing interest in some α emitters, especially <span class="math notranslate nohighlight">\(^{223}\)</span>Ra, as agents for radionuclide therapy.</p>
+<p>Some β<span class="math notranslate nohighlight">\(^{−}\)</span> emitters also produce de-excitation γ rays suitable for imaging, so their take-up can be monitored by scintigraphy or SPECT; in other cases, an imaging isotope and a therapeutic isotope have similar chemistry and can be used as a so-called theranostic pair, in which the same molecule is labelled with one isotope for imaging and the other for therapy, with confidence that the therapeutic isotope will be delivered to the same sites as the imaging isotope.  Examples of such pairs include <span class="math notranslate nohighlight">\(^{123}\)</span>I (imaging) and <span class="math notranslate nohighlight">\(^{131}\)</span>I (therapy), and <span class="math notranslate nohighlight">\(^{68}\)</span>Ga (imaging) and <span class="math notranslate nohighlight">\(^{90}\)</span>Y or <span class="math notranslate nohighlight">\(^{177}\)</span>Lu (therapy).</p>
+<p>Overall, despite some difficulties of logistics and supply, nuclear medicine is a successful and practical application of nuclear physics.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="phy303-unit10-fissionandfusion.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Nuclear Power</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="unit1/phy303-unit1-review.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Unit 1 : Review Material</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radiation-in-the-body">11.1. Radiation in the body</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#units">11.1.1. Units</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legal-limits">11.1.2. Legal limits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-of-this-unit">11.1.3. Content of this unit</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#medical-radioisotopes">11.2. Medical radioisotopes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">11.2.1. Requirements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#production-of-medical-radioisotopes">11.2.2. Production of medical radioisotopes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reactors">11.2.2.1. Reactors</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#accelerators">11.2.2.2. Accelerators</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#generators">11.2.2.3. Generators</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-common-medical-radioisotopes">11.3. Some common medical radioisotopes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diagnostic-isotopes">11.3.1. Diagnostic isotopes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#emitters-for-scintigraphy-and-spect">11.3.1.1. γ emitters for scintigraphy and SPECT</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#emitters-for-pet">11.3.1.2. β<span class="math notranslate nohighlight">\(^{+}\)</span> emitters for PET</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#therapeutic-isotopes">11.3.2. Therapeutic isotopes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#brachytherapy-isotopes">11.3.2.1. Brachytherapy isotopes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#radionuclide-therapy-isotopes">11.3.2.2. Radionuclide therapy isotopes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagnostic-nuclear-medicine-imaging">11.4. Diagnostic nuclear medicine: imaging</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imaging-instrumentation">11.4.1. Imaging instrumentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scintigraphy">11.4.2. Scintigraphy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spect">11.4.3. SPECT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pet">11.4.4. PET</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">11.4.5. Summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#therapeutic-nuclear-medicine">11.5. Therapeutic nuclear medicine</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brachytherapy">11.5.1. Brachytherapy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radionuclide-therapy-rnt">11.5.2. Radionuclide therapy (RNT)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">11.6. Summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Liz Kneale, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

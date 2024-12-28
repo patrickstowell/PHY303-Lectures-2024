@@ -1,0 +1,23 @@
+[
+    {
+        "question": "Has this unit quiz/flashcards been setup?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "No",
+                "correct": true,
+                "feedback": "This will be done before the course starts."
+            },
+            {
+                "answer": "Yes",
+                "correct": false,
+                "feedback": "Incorrect. This will be done before the course starts."
+            },
+            {
+                "answer": "Never",
+                "correct": false,
+                "feedback": "Incorrect. This will be done before the course starts."
+            }
+        ]
+    }
+]

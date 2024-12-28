@@ -1,0 +1,718 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>5. Collective Models &#8212; PHY303 Nuclear Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit5-collective-excited';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="6. Radioactive Decays" href="phy303-unit6-radioactive-decays.html" />
+    <link rel="prev" title="4. Nuclear Properties" href="phy303-unit4-parity-moments.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="phy303-homepage.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="PHY303 Nuclear Physics - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY303 Nuclear Physics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit1/phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit10-fissionandfusion.html">10. Nuclear Power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit11-medicalapplications.html">11. Nuclear Medicine</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Review Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="unit1/phy303-unit1-review.html">Unit 1 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-problems.html">Unit 1 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-flashcards.html">Unit 1 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-random-quiz.html">Unit 1 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-full-quiz.html">Unit 1 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="unit2/phy303-unit2-review.html">Unit 1 Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit2/phy303-unit2-quiz.html">Unit 2 : Formative Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="unit3/phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit3/phy303-unit3-problems.html">Unit 3 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit3/phy303-unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit3/phy303-unit3-flashcards.html">Unit 3 : Flash Cards</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucleus-shape.html">Nucleus Shape</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/phy303-unit5-collective-excited.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Collective Models</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">5.1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotational-states">5.2. Rotational States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vibrational-states">5.3. Vibrational States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gamma-decay">5.4. Gamma Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-cobalt-60-decay">5.5. Example: Cobalt-60 Decay</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="collective-models">
+<h1><span class="section-number">5. </span>Collective Models<a class="headerlink" href="#collective-models" title="Link to this heading">#</a></h1>
+<section id="introduction">
+<h2><span class="section-number">5.1. </span>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>We saw in the previous unit that while the simple spherical shell model is capable of describing basic properties of nuclei like magic numbers, it fails to capture all features observed in the chart of all nuclei.</p>
+<p>The way to deal with this is to use a combination of concepts often referred to as Collective Models. The idea of a collective model is to merge concepts where the behavior of individual nucleons is used, as in the Shell Model, with aspects where the behavior of the nucleus as a coherent single entity is considered.</p>
+<p>In a sense, the Semi-Empirical Mass Formula is already a collective type model as it involves combining elements that take account of individual nucleons, such as the Pairing Term, with elements that are about the Bulk Nucleus as a whole, such as the Volume Term. A collective body aspect in which no account is taken of individual nucleonic state or behavior, and an individual particle aspect, where individual nucleons take on discrete energy levels and states. The most interesting area where a collective treatment is needed is with large nuclei, like U-235. Such nuclei show deformities in their shape and exhibit exotic behavior that can be modeled as either vibrations and rotations of the bulk nuclear material acting together.</p>
+<p>The motivation of the Collective Model is to assume that an interaction occurs between the outer nucleons and the closed-shell core of these nuclei, leading to deformation of the whole nucleus. The result is that there is still a central nuclear potential due to the filled core shells as before in the basic Shell Model, with nucleons in the outer shells moving under the influence of this core potential. But importantly, the potential is now not necessarily spherically symmetric. It may be deformed, either permanently or actually changing with time. The concept here is to invoke an extension of the Liquid Drop and Shell Models to include the physics associated with deformation of nuclei away from the basic spherical shape to more complex shapes, as illustrated below:</p>
+<figure class="align-default" id="collectivediagram">
+<a class="reference internal image-reference" href="_images/image-45.png"><img alt="Spin orbit corrections" src="_images/image-45.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.1 </span><span class="caption-text">Diagrams of possible nuclear shapes based on different poles. Further visualizations for the spherical, prolate, oblate, and hexadecapole are given in the visualizers section.</span><a class="headerlink" href="#collectivediagram" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The combination of the single-particle and liquid drop models presents very difficult theoretical problems, including the need for the Single Particle State to be calculated for both spherical and non-spherical potentials. That is beyond our scope here, so we concentrate on the qualitative features.</p>
+<p>Allowing a nuclear core to be deformed in our model changes the possible Shell Energy Levels, because the Nuclear Potential Well shape is changed for deformed nuclei. This introduces two new types of Collective Modes of Excitation and with them associated energy levels due to (a) Vibration states and (b) rotation (Rotational States). We expect that the allowed energy levels for both of these modes will also be quantized in some way, depending on the shape of the nucleus.</p>
+</section>
+<section id="rotational-states">
+<h2><span class="section-number">5.2. </span>Rotational States<a class="headerlink" href="#rotational-states" title="Link to this heading">#</a></h2>
+<p>Let’s consider the rotational states first. We can start by describing the shape as a revolution around some central point, with Cylindrical Symmetry, and two extreme cases as shown below, following the prolate and oblate structures we saw previously when considering the electric quadrupole moment of nuclei.</p>
+<p>If we modify our model to remove the requirement that nuclei are spherical, what we find in the full derivation of the Schrödinger’s Equation is that wave functions based on nuclei occupying physical spaces based on Laplace spherical harmonics are also valid solutions. Since a linear combination of any two equations that satisfy Schrödinger’s Equation are also valid solutions, we could consider particle wave functions that are arbitrary combinations of spherical harmonics. However, what we actually find is that when considering the possible discrete energy levels of the nucleus, different harmonics correspond to different states. Laplace Spherical Harmonics are described in general form as <span class="math notranslate nohighlight">\(Y_{l,m}\)</span> and are shown in their base form in the image below. You’ll see that <span class="math notranslate nohighlight">\(Y_{0}^{0}\)</span> corresponds to our simple case of a plain sphere.</p>
+<figure class="align-default" id="laplaceshapes">
+<a class="reference internal image-reference" href="_images/image-46.png"><img alt="Spin orbit corrections" src="_images/image-46.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.2 </span><span class="caption-text">Diagram of possible spherical harmonics that contribute to underlying nuclear structure. Further visualizations are given in the contents panel.</span><a class="headerlink" href="#laplaceshapes" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>To better understand the relation between spherical harmonics lets consider the simplest possibe case for a deformed nucleus. Imagine we have for the sake of argument a blob of our hypothetical nuclear material, and we deform it (<em>squash it down</em>) so that it has an oblate structure like in the previous unit. This change in shape can be represented in our waveform by considering a state which is a combination of our spherical form <span class="math notranslate nohighlight">\(Y_{00}\)</span>, and the first quadrupole spherical harmonic corresponding to <span class="math notranslate nohighlight">\(Y_{20}\)</span> as in the picture below.</p>
+<figure class="align-default" id="oblateexample">
+<a class="reference internal image-reference" href="_images/image-48.png"><img alt="Spin orbit corrections" src="_images/image-48.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.3 </span><span class="caption-text">Example of how variations in <span class="math notranslate nohighlight">\(\beta\)</span> change the shape of the nucleus.</span><a class="headerlink" href="#oblateexample" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We express this algebraically by saying that the surface of our nucleus has a radius at a given angle in spherical co-ordinates as</p>
+<div class="math notranslate nohighlight">
+\[
+R(\theta, \phi) = R_{av} [Y_{00}+\beta Y_{20} (\theta, \phi)]
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(Y_{20}\)</span> is a Laplace spherical harmonic representing the distance from origin to the surface of the shape, <span class="math notranslate nohighlight">\(R_{av}\)</span> is the average nuclear radius, and <span class="math notranslate nohighlight">\(\beta\)</span> is a deformation parameter. As shown in the picture below we expect that as we increase <span class="math notranslate nohighlight">\(\beta\)</span> the shape of our nucleus slowly transitions between <span class="math notranslate nohighlight">\(Y_{00}\)</span> and <span class="math notranslate nohighlight">\(Y_{20}\)</span> states. In reality our deformed nuclei may be somewhere in between.</p>
+<p>Note also that <span class="math notranslate nohighlight">\(Y_{00}\)</span> is just our spherical shape and has a constant value of <span class="math notranslate nohighlight">\(Y_{00}=1\)</span> so we’ve dropped the angular dependence there in the equation.  The important thing to notice is that if <span class="math notranslate nohighlight">\(\beta\)</span> is equal to zero, then we have only the <span class="math notranslate nohighlight">\(Y_{00}\)</span>, and we arrive at a spherical nuclear shape as in the figure. Exactly what we want in the no deformation case!</p>
+<p>If <span class="math notranslate nohighlight">\(\beta\)</span> is non-zero however we get slight modifications of our nuclear shape as a result. The deformation parameter <span class="math notranslate nohighlight">\(\beta\)</span> can be expressed in terms of the actual nuclear radius as</p>
+<div class="math notranslate nohighlight">
+\[
+\beta = \frac{4}{3} \sqrt{\frac{\pi}{5}} \frac{\Delta R}{R_{av}}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(R_{av} = r_{0}A^{1/3}\)</span>. In our simple case <span class="math notranslate nohighlight">\(\beta&gt;0\)</span> corresponds to a prolate nucleus as we’ve stretched out the top, and <span class="math notranslate nohighlight">\(\beta&lt; 0\)</span> corresponds to oblate as we’ve expanded the sides. <span class="math notranslate nohighlight">\(\Delta R\)</span> here represents the difference between the semi-major and semi-minor axes (long and short sides) of the nucleus itself when it is deformed. A typical value for <span class="math notranslate nohighlight">\(\Delta R\)</span> is around 0.3 fm.</p>
+<p>Note here we are talking of a permanent deformation in shape. Thanks to the charge distribution we thus expert to get a finite Electric Quadrupole Moment. In addition now however we also see possible rotation states as along certain axes (perpendicular to the axis we squashed our nucleus) the shape is not rotationally symmetric. Based on the nuclear shapes shown above you can imagine being able to rotate the nucleus rotating along two axes, either around the page, or out of the page.</p>
+<p>It turns out the <strong>intrinsic</strong> Electric Quadrupole Moment of a deformed nucleus is directly related to the deformation of the nucleus itself. It  is given by:</p>
+<div class="math notranslate nohighlight">
+\[
+Q_{0} = \frac{3}{\sqrt{5\pi}} R_{av}^{2} Z \beta (1+0.16\beta)
+\]</div>
+<p>This is the intrinsic electric quadrupole moment for a deformed nucleus at rest. Note how it depends on a surface area <span class="math notranslate nohighlight">\(R_{av}^{2}\)</span>, the number of protons <span class="math notranslate nohighlight">\(Z\)</span> and the deformation parameter. You can see how <span class="math notranslate nohighlight">\(Q_{0}\)</span> becomes zero for the spherical case, i.e. when <span class="math notranslate nohighlight">\(\beta\)</span> = 0.</p>
+<p>So, what about the Rotational Energy Levels? In classical mechanics, this comes from considering the kinetic energy of a rigid rotating body with angular momentum <span class="math notranslate nohighlight">\(\hat{L}\)</span>.</p>
+<p>In the classical case, we get the equation for the kinetic energy of a Rigid Rotation <span class="math notranslate nohighlight">\(L_{c}\)</span> given its rotational kinetic energy and effective moment of inertia <span class="math notranslate nohighlight">\(I_{c}\)</span> as.</p>
+<div class="math notranslate nohighlight">
+\[
+E_{R} = \frac{L_{c}^{2}}{2I_{c}}
+\]</div>
+<p>Now, switching to the quantum mechanical case, the energies are given by solving the relevant Schrödinger Equation. We replace the angular momentum <span class="math notranslate nohighlight">\(L\)</span> with an operator acting on the wave function. Then the Eigenvalues and Eigenfunctions are given as follows:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\hat{L}^{2}}{2I} \psi = E_{J} \psi
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\hat{L}^{2} Y_{JM}(\theta,\phi) = J(J+1) \hbar^{2} Y_{JM} (\theta, \phi)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E_{J} = \frac{\hbar^{2}}{2I}J(J+1)~~~~~J=0,2,4,\ldots
+\]</div>
+<p>Note that there is some Reflection Symmetry in this solution, so it turns out that there are no odd <span class="math notranslate nohighlight">\(J\)</span> values and the only allowed <span class="math notranslate nohighlight">\(J\)</span> values are 0, 2, 4, etc.</p>
+<p>Now substituting the quantized allowed <span class="math notranslate nohighlight">\(J\)</span> values, we can write out the sequence of energy levels as follows:</p>
+<div class="math notranslate nohighlight">
+\[
+E(0^+) = 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E(2^+) = \frac{\hbar^{2}}{2I} 2(2+1)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E(4^{+}) = 20\frac{\hbar^{2}}{2I}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E(6^{+}) = 42\frac{\hbar^{2}}{2I}
+\]</div>
+<p>See how we get a neat sequence where the energy levels go as 0, 6, 20, 42, etc., times a constant value based on the nuclear spin. The states are labeled by the <span class="math notranslate nohighlight">\(J\)</span> value as shown, and the Parity, which is always positive here.</p>
+<p>A useful trick with this sequence is that if we happened to have measured one of the values, then we can predict the rest, using the sequence. For instance, if we consider the <span class="math notranslate nohighlight">\(E(2^{+})\)</span> level or <span class="math notranslate nohighlight">\(E_{2}\)</span>, the first excited state above the ground level, then we can write:</p>
+<div class="math notranslate nohighlight">
+\[
+E_{J} = \frac{1}{6} J(J+1)E_{2}~~~~~~~~~J=0,2,4,\ldots
+\]</div>
+<p>As an example, say we know the first excited state of Erbium-164, i.e., <span class="math notranslate nohighlight">\(^{164}Er, E(2^{+}) = 91.4 keV\)</span>, then using the equation above, we can predict the Rotational Energy States of Erbium for the higher levels <span class="math notranslate nohighlight">\(E(4^+), E(6^+), E(8^+)\)</span>, etc.</p>
+</section>
+<section id="vibrational-states">
+<h2><span class="section-number">5.3. </span>Vibrational States<a class="headerlink" href="#vibrational-states" title="Link to this heading">#</a></h2>
+<p>We’ve discussed rotation states as mentioned above, where the deformation is permanent, and we get energy levels associated with quantized allowed rotations. But in large nuclei, we can also get vibration states in which the nuclear fluid undergoes continuous shape changing or shape oscillations while maintaining constant density. These are the vibration energy states.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Incompressible Nucleus: A vital point, as throughout when we consider the nucleus, is to remember we are dealing with an incompressible object. It may change shape as we have seen, but the density <em>must</em> remain constant.</p>
+</div>
+<p>The Vibration states we introduce are time-variable changes in surface shape that yield quantized standing waves. That is, what we need to envisage here is standing wave patterns. In the quantum world, only certain such standing waves are allowed, as determined by the relevant quantum numbers. The details are beyond our scope here, but we can gain a general picture.</p>
+<p>Note that the average shape might be spherical, or it could be a deformed shape, depending on the nucleus. Either way, the instantaneous shape will be non-spherical.</p>
+<p>Firstly, we need to describe the surface. This is done again using Spherical Harmonics and Legendre Polynomials but instead now we consider time-varying  standing wave patterns based on the harmonics. In spherical coordinates, we can consider the instantaneous coordinate of a point on the surface at θ, φ as a linear combination of many possible harmonics as before</p>
+<div class="math notranslate nohighlight">
+\[
+R(t, \theta,\phi) = R_{av} + \sum_{\lambda&gt;1}^{\lambda=\infty} \sum_{\mu=-\lambda}^{\mu=+\lambda}  \alpha_{\lambda \mu}(t) Y_{\lambda \mu} (\theta, \phi)
+\]</div>
+<p>Note how this time we include all possible spherical harmonics <span class="math notranslate nohighlight">\(Y_{\lambda\mu}\)</span> that may contribute, and each possible shape has its own amplitude <span class="math notranslate nohighlight">\(\alpha_{\lambda \mu}\)</span> and is time varying.</p>
+<p>The basic modes of vibration are determined by the <span class="math notranslate nohighlight">\(\lambda\)</span> factor here as:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\lambda=0\)</span> Monopole - forbidden</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda=1\)</span> Dipole - Not considered</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda=2\)</span> Quadrupole</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda=3\)</span> Octupole</p></li>
+</ul>
+<p>The first state is forbidden because the oscillations over time only modify the radial component (<span class="math notranslate nohighlight">\(Y_{00} = 1\)</span>). If <span class="math notranslate nohighlight">\(\alpha_{00}\)</span> had any time variability, this would result in fluctuations in the density of the nucleus, which is forbidden in our incompressible model.</p>
+<p>The second state is not considered because the dipole form produces net shifts in the center of mass (all neutrons and protons moving up and down together). This cannot result from internal forces, only external ones, so it is not worth considering in our nucleus-centric model.</p>
+<p>The first important vibrational model is therefore the Quadrupole.
+The various allowed vibrational states in nuclei are very complicated, but we can get a feel for their behavior. For the simplest even-even nuclei, the Ground Vibration State is designated <span class="math notranslate nohighlight">\(0^{+}\)</span>. If we add a unit of Quantized Vibration (a phonon) <span class="math notranslate nohighlight">\(1\hbar \omega\)</span>, we get to the first quadrupole state designated <span class="math notranslate nohighlight">\(2^{+}\)</span>.</p>
+<p>The quantized unit of vibration is called a Phonon. The first level can be thought of as the First Harmonic of vibration. We can think of <span class="math notranslate nohighlight">\(\lambda\)</span> as a unit of angular momentum, <span class="math notranslate nohighlight">\(l\)</span>, so the parity of this state <span class="math notranslate nohighlight">\((-1)^{2}\)</span>, i.e., positive. If we add another phonon, we start to see higher harmonics. These are labeled by the <span class="math notranslate nohighlight">\(\mu\)</span> in the equation, ranging from <span class="math notranslate nohighlight">\(\mu=-\lambda\)</span> to <span class="math notranslate nohighlight">\(\mu=+\lambda\)</span>, i.e., a total of <span class="math notranslate nohighlight">\(2\lambda +1\)</span>, that is <span class="math notranslate nohighlight">\(5\)</span> for <span class="math notranslate nohighlight">\(\lambda=2\)</span>. As we have two phonons, there is a lot of symmetry, so we end up with <span class="math notranslate nohighlight">\(3\)</span> possible substates, labeled <span class="math notranslate nohighlight">\(0^{+}\)</span>, <span class="math notranslate nohighlight">\(2^+\)</span>, and <span class="math notranslate nohighlight">\(4^+\)</span>. This is summarized below in the example of <span class="math notranslate nohighlight">\(^{114}Cd\)</span>.</p>
+<p>Notice that for higher states, since only even values of <span class="math notranslate nohighlight">\(J\)</span> are allowed, we end up with all the higher states of our even-even nuclei also having positive parity.</p>
+<p>An important point to note here is that the basic energy levels at each phonon level are equally spaced, in units of <span class="math notranslate nohighlight">\(1\hbar \omega\)</span>. So, unlike the rotation energy levels, where the spacing increases in a sequence <span class="math notranslate nohighlight">\(0, 6, 20, 42, ...\)</span>, the basic vibration energy levels are evenly spaced, with each level having finely split sub-levels at each basic level due to the phonon couplings.</p>
+<p>The basic vibrational energy levels can be written as follows</p>
+<div class="math notranslate nohighlight">
+\[
+E_{N} = \hbar \omega_{l} \left(\frac{2l+1}{2} +N \right)
+\]</div>
+<p>Here <span class="math notranslate nohighlight">\(N\)</span> is the number of oscillator quanta, and <span class="math notranslate nohighlight">\(l\)</span> is the quantized oscillator state (0-monopole, 1-dipole, etc). So here we see that the Quadrupole (<span class="math notranslate nohighlight">\(l=2\)</span>) Ground State (no phonons) has an energy level at</p>
+<div class="math notranslate nohighlight">
+\[
+E_{N} = \left(\frac{5}{2}\right) \hbar \omega
+\]</div>
+<p>Of course, a nucleus can show both Rotational and Vibrational energy levels, and these levels can overlap. Note that in general, rotational levels can go up to higher energies than vibration, the latter reaching typically 1-2 MeV.</p>
+<p>Note that as nuclei move away from having a closed shell, it gets easier to excite rotation and vibration states; they are more distorted as we expect. So these nuclei tend to have lower collective mode excitation states like this.</p>
+<p>At half-filled shells, we get the extreme, with more likely permanently deformed states, strong rotation states, and large electric quadrupole moments. In extreme cases, like U-236, we get lots of levels indicating a very deformed nucleus. It is not surprising we end up seeing spontaneous fission as that below.</p>
+<p>So we have seen in this unit again that the nucleus is a complex object. To understand all the energy levels and behaviors, we need a Collective Model that combines the Shell Model with the bulk behavior of nuclear fluid.</p>
+</section>
+<section id="gamma-decay">
+<h2><span class="section-number">5.4. </span>Gamma Decay<a class="headerlink" href="#gamma-decay" title="Link to this heading">#</a></h2>
+<p>Up until now in our examples we’ve considered the case where protons and neutrons fill up our shells sequentially. The shell model however also predicts excitations when protons or neutrons are pushed up to a higher energy levels. Remember the nucleus wants to naturally go to the state of lowest energy, so these higher energy states will eventually decay down to the lower state again and emit gamma radiation.</p>
+<p>The energy of the emitted gamma radiation is dependent on the energy splittings between the levels that the nucleon has moved between, in exactly the same way as electron orbital transitions. The difference in our case is the more complex spacing of the shells, and the fact that we have two seperate shell structures, one for neutrons and one for protons.</p>
+<p>Let’s explore how the shell model helps explain gamma radiation and the conditions for gamma-ray decay:</p>
+<ol class="arabic simple">
+<li><p><strong>Excitations in the Shell Model:</strong>
+Up until now, we have considered scenarios where protons and neutrons fill up nuclear energy shells sequentially. However, the shell model predicts that excitation can occur when a nucleon is pushed to a higher energy level. These higher energy states are not stable, as the nucleus naturally tends to reach its lowest energy state.</p></li>
+<li><p><strong>Gamma Radiation Emission:</strong>
+When a nucleon in a higher energy state decays to a lower energy state, it emits gamma radiation. Gamma radiation consists of high-energy photons. The energy of the emitted gamma radiation depends on the energy difference between the levels that the nucleon has moved between, much like electron orbital transitions in atomic physics.</p></li>
+<li><p><strong>Complex Shell Spacing:</strong>
+Unlike electrons in atoms, nucleons in nuclei experience a more complex spacing of energy shells. Additionally, there are two separate shell structures, one for neutrons and one for protons, due to their different properties. This complexity leads to a variety of possible energy transitions in nuclear systems.</p></li>
+</ol>
+<p>There are some considerations we need to make when trying to assess whether a gamma ray decay actually takes place.</p>
+<p><strong>Angular Momentum and Radiation Types:</strong>
+When the nucleon undergoes an energy transition, it emits a photon (gamma ray) to return to the ground state. The photon carries a total angular momentum, including its own spin. The minimum value of angular momentum (<span class="math notranslate nohighlight">\(\vec{L}\)</span>) for gamma radiation is 1 therefore the transition also needs to induce a change in angular momentum of the nucleus of at least 1.</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(\vec{J_i}\)</span> (initial spin vector) is equal to <span class="math notranslate nohighlight">\(\vec{J_f}\)</span> (final spin vector), the transition is forbidden. This means that gamma-ray transitions typically involve changes in angular momentum. Lower values of <span class="math notranslate nohighlight">\(L\)</span> make the transition more probable, with <span class="math notranslate nohighlight">\(L=1\)</span> transitions being the most common.</p></li>
+<li><p>Depending on the value of L, different types of radiation are possible:</p>
+<ul>
+<li><p>L=1 corresponds to dipole radiation.</p></li>
+<li><p>L=2 corresponds to quadrupole radiation.</p></li>
+<li><p>L=3 corresponds to octupole radiation, and so on.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Parity Conservation:</strong>
+In gamma-ray transitions, parity is conserved. Electric multipole radiation has parity <span class="math notranslate nohighlight">\((-1)^l\)</span>, while magnetic multipole radiation has parity <span class="math notranslate nohighlight">\((-1)^{(L+1)}\)</span>. Any transition has to make sure that parity is also conserved between the states, this means we if we know the parity of the starting and final nucleon state we can estimate the form of the radiation.</p>
+<p><img alt="Alt text" src="_images/image-51.png" /></p>
+<p>Above are some possible transitions based on values of <span class="math notranslate nohighlight">\(J_{f}\)</span> and <span class="math notranslate nohighlight">\(J_{i}\)</span> and whether these are likely to be due to electromagnetic or magnetic multipole radiations. The most likely transitions are described below.</p>
+<ul class="simple">
+<li><p><strong>Electric Dipole (E1) Transitions:</strong> These transitions involve <span class="math notranslate nohighlight">\(ΔL = 1\)</span> and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^1\)</span> = -1 (parity-changing). Electric dipole transitions are more common than other multipole transitions and have relatively higher probabilities.</p></li>
+<li><p><strong>Magnetic Dipole (M1) Transitions:</strong> These transitions involve <span class="math notranslate nohighlight">\(ΔL = 1\)</span> and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^{1+1}\)</span> = 1 (parity-preserving). Magnetic dipole transitions are less common than E1 transitions but still occur in certain nuclear decays.</p></li>
+<li><p><strong>Quadrupole (E2) Transitions:</strong> Quadrupole transitions involve <span class="math notranslate nohighlight">\(ΔL = 2\)</span> and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^2\)</span> = 1 (parity-preserving). Quadrupole transitions are less probable than E1 and M1 transitions and are associated with higher-order nuclear excitations.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Here the <span class="math notranslate nohighlight">\(J\)</span> terms correspond to the vector components of the nuclear spin. When we say that the an equal <span class="math notranslate nohighlight">\(\vec{J}_{i}\)</span> and <span class="math notranslate nohighlight">\(\vec{J}_{f}\)</span> state mean that the transition can not take place we mean it in terms of the vector components since <span class="math notranslate nohighlight">\(\vec{J}_{i} = \vec{J}_{f} + \vec{L}\)</span>.</p>
+<p>We can however have cases where the overall nuclear spin <span class="math notranslate nohighlight">\(I\)</span> is identical before and afterwards, in this case we expect the allow magnitude of <span class="math notranslate nohighlight">\(\vec{L}\)</span> to be</p>
+<div class="math notranslate nohighlight">
+\[
+| I_{f} - I_{i} | \leq L \leq|I_{f} + I_{i}|
+\]</div>
+<p>Note that this is now the projected magnitude of <span class="math notranslate nohighlight">\(L\)</span>, and follows similar vector rules to those we have seen before.</p>
+</div>
+</section>
+<section id="example-cobalt-60-decay">
+<h2><span class="section-number">5.5. </span>Example: Cobalt-60 Decay<a class="headerlink" href="#example-cobalt-60-decay" title="Link to this heading">#</a></h2>
+<p>As an example for gamma ray decay lets consider Co-60. This is a very common radio-isotope used in nuclear labs to calibrate detector response as placing it in a gamma spectrometer results in two two very clear gamma ray peaks at 1.1732 MeV and 1.3325 MeV next to one another that can be used to assess detector resolution. Co-60 itself however is primarily a <span class="math notranslate nohighlight">\(\beta\)</span> emitter as we see in the figure below. What happens during a radioactive decay of Co-60 is that 99% of the time it converts into an excited state of Nickel which subsequently emits gamma radiation.</p>
+<p><img alt="Alt text" src="_images/image-100.png" /></p>
+<p>Cobalt-60 (Co-60) undergoes beta decay, resulting in the formation of Nickel-60 (Ni-60). During this decay, several electromagnetic transitions can occur, and we will focus on the relevant details:</p>
+<ol class="arabic">
+<li><p><strong>Beta Decay of Co-60 to Ni-60:</strong>
+Co-60 decays primarily through beta-minus (β-) decay. In this process, a neutron in the Co-60 nucleus is transformed into a proton, emitting an electron (beta-minus particle) and an antineutrino. This transformation leads to the formation of Ni-60:</p>
+<p>Co-60 (Z=27, N=33) → Ni-60 (Z=28, N=32) + β- + ν̅ᵢ</p>
+<p>The decay process itself does not directly involve electromagnetic transitions. However, the resulting Ni-60 nucleus may exist in an excited state, and subsequent gamma-ray transitions can occur as Ni-60 de-excites to its ground state.</p>
+</li>
+<li><p><strong>Gamma-Ray Transitions in Ni-60:</strong>
+When Ni-60 is formed it is in an excited state, it undergoes de-excitation to reach its ground state. These gamma-ray transitions involve changes in angular momentum (L) and parity (π) of the nucleus as we see it jump betwen the <span class="math notranslate nohighlight">\(4^+\)</span>, <span class="math notranslate nohighlight">\(2^+\)</span>, and <span class="math notranslate nohighlight">\(0^{+}\)</span> states. Because <span class="math notranslate nohighlight">\(L=4\)</span> transitions have a lower probability, the nucleus also tends to avoid jumping straight from the <span class="math notranslate nohighlight">\(4+\)</span> state to <span class="math notranslate nohighlight">\(0+\)</span>, and instead emits to gamma rays as it moves down the energy levels. The short decay times of these two states results in two gamma rays being emitted in a very short time period corresponding to the two energy differences between these levels and showing up as two co-incident peaks in gamma ray detectors.
+<br></p>
+<p>Note that because of the larger energy jump the <span class="math notranslate nohighlight">\(4+\)</span> state is far more likely to decay into the lower <span class="math notranslate nohighlight">\(2+\)</span> state than the higher one resulting in 1.1732 MeV being one of the dominant gamma rays emitted. Both of these emissions are E2 transitions.</p>
+</li>
+</ol>
+<p>In the next few lectures, we’ll probe further into the behavior of excited states of the nucleus and how this can lead to different forms of spontaneous radioactive decay. Before we do that however lets understand what else our simple shell model can say about one form of radiation,</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="phy303-unit4-parity-moments.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Nuclear Properties</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="phy303-unit6-radioactive-decays.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Radioactive Decays</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">5.1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotational-states">5.2. Rotational States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vibrational-states">5.3. Vibrational States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gamma-decay">5.4. Gamma Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-cobalt-60-decay">5.5. Example: Cobalt-60 Decay</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Liz Kneale, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

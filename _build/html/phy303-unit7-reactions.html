@@ -1,0 +1,894 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>7. Nuclear Reactions &#8212; PHY303 Nuclear Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit7-reactions';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="8. Compound/Photon reactions" href="phy303-unit8-compoundreactions.html" />
+    <link rel="prev" title="6. Radioactive Decays" href="phy303-unit6-radioactive-decays.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="phy303-homepage.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="PHY303 Nuclear Physics - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY303 Nuclear Physics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit1/phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit10-fissionandfusion.html">10. Nuclear Power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit11-medicalapplications.html">11. Nuclear Medicine</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Review Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="unit1/phy303-unit1-review.html">Unit 1 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-problems.html">Unit 1 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-flashcards.html">Unit 1 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-random-quiz.html">Unit 1 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-full-quiz.html">Unit 1 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="unit2/phy303-unit2-review.html">Unit 1 Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit2/phy303-unit2-quiz.html">Unit 2 : Formative Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="unit3/phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit3/phy303-unit3-problems.html">Unit 3 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit3/phy303-unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit3/phy303-unit3-flashcards.html">Unit 3 : Flash Cards</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucleus-shape.html">Nucleus Shape</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/phy303-unit7-reactions.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Nuclear Reactions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reaction-kinematics">7.1. Reaction Kinematics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">7.1.1. Notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rutherford-scattering">7.1.2. Rutherford scattering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kinematics">7.1.3. Kinematics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-q-value">7.1.3.1. The Q value</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">7.1.3.2. Reaction kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">7.1.3.3. Example 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">7.1.3.4. Example 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">7.1.3.5. Example 3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reaction-kinematics-summary">7.1.3.6. Reaction Kinematics Summary</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-reaction">7.1.4. Types of Reaction</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-reactions">7.2. Direct Reactions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-direct-reactions">7.2.1. Characteristics of direct reactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-direct-reaction">7.2.2. Types of direct reaction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-direct-reactions">7.2.3. Applications of direct reactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-scattering-and-the-optical-model">7.2.4. Elastic scattering and the optical model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-reactions-and-excited-states">7.2.5. Direct reactions and excited states</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="nuclear-reactions">
+<h1><span class="section-number">7. </span>Nuclear Reactions<a class="headerlink" href="#nuclear-reactions" title="Link to this heading">#</a></h1>
+<section id="reaction-kinematics">
+<h2><span class="section-number">7.1. </span>Reaction Kinematics<a class="headerlink" href="#reaction-kinematics" title="Link to this heading">#</a></h2>
+<p>So far we have concentrated on the properties of individual nuclei. However, in order to determine those properties, we must make use of nuclear reactions. Indeed, in order to have nuclei to study, and to exist to study them in the first place, we must have nuclear reactions: nuclear reactions build up the elements in stars, and the results of nuclear reactions tell us about nuclear structure.</p>
+<section id="notation">
+<h3><span class="section-number">7.1.1. </span>Notation<a class="headerlink" href="#notation" title="Link to this heading">#</a></h3>
+<p>Particle physicists (and chemists) describe reactions by notation such as <span class="math notranslate nohighlight">\(A + a \rightarrow B + b\)</span>. Nuclear physicists tend to use the more compact notation <span class="math notranslate nohighlight">\(A(a,b)B\)</span>, where <span class="math notranslate nohighlight">\(A\)</span> is the target nucleus, struck by projectile a, which produces daughter nucleus <span class="math notranslate nohighlight">\(B\)</span> and ejectile <span class="math notranslate nohighlight">\(b\)</span>. It is usual for <span class="math notranslate nohighlight">\(A\)</span> to be more massive than a, but it isn’t obligatory; there do exist facilities, such as GSI in Darmstadt, Germany, which produce beams of heavy ions, and when these are used it is possible for the projectile to be lighter than the target. The defining feature for the notation is that <span class="math notranslate nohighlight">\(a\)</span> is moving and <span class="math notranslate nohighlight">\(A\)</span> is stationary. In contrast, the products <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(b\)</span> will generally all be moving, owing to momentum transfer, so in this case <span class="math notranslate nohighlight">\(B\)</span> will typically be defined as the heaviest product (it’s also the one that is not measured: a typical nuclear experiment will measure the energy and angle of the ejectile(s) <span class="math notranslate nohighlight">\(b\)</span>).</p>
+<p>It is possible for <span class="math notranslate nohighlight">\(b\)</span> to consist of more than one particle: for example, among the possible reactions listed in the JANIS nuclear database for neutrons striking an iron-56 target are <span class="math notranslate nohighlight">\((n,2n)\)</span>, <span class="math notranslate nohighlight">\((n,np)\)</span> and <span class="math notranslate nohighlight">\((n,2n+p)\)</span>. The ‘+’ sign may be omitted, e.g. <span class="math notranslate nohighlight">\(^{27}\textnormal{Al}(p,3pn)^{22}\textnormal{Na}\)</span>.</p>
+<p>There exist reactions for which this notation does not work well, such as fission (if a thermal neutron collides with a nucleus of 235U, the most likely outcome is that the nucleus will undergo fission, but the exact fission products can’t be predicted). There are conventions to handle these: for example, fission induced by a neutron would be described as <span class="math notranslate nohighlight">\((n,\textnormal{fission})\)</span> or <span class="math notranslate nohighlight">\((n,f)\)</span>, and spallation reactions, where a fairly energetic projectile, usually a proton, strikes a heavy target and causes it to emit a large but not well-defined number of nucleons, can be described as <span class="math notranslate nohighlight">\((p,\textnormal{spall})\)</span>. Both of these reaction types are interesting, fission for obvious reasons and spallation because it is used to produce neutrons for a wide range of research applications (and, in astrophysics, because it is responsible for the production of the light elements beryllium and boron).</p>
+</section>
+<section id="rutherford-scattering">
+<h3><span class="section-number">7.1.2. </span>Rutherford scattering<a class="headerlink" href="#rutherford-scattering" title="Link to this heading">#</a></h3>
+<p>Historically, the first use of nuclear reactions was the discovery of the atomic nucleus by Ernest Rutherford’s research group at Manchester University. They used the elastic scattering of alpha particles off metals.</p>
+<p>At the time, the prevailing model of the atom was the “plum pudding”, in which the mass and positive charge of the atom are distributed over the whole atomic volume, with an appropriate number of electrons embedded in it. With such evenly distributed charge, alpha particles should simply pass through with only very minor deflection, but in fact some particles were deflected at large angles. Rutherford realised that this could be explained if the charge were actually concentrated in a small volume, and derived an expression for the resulting angular distribution.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/image-57.png"><img alt="_images/image-57.png" src="_images/image-57.png" style="width: 792.0px; height: 306.0px;" /></a>
+</figure>
+<p>Consider an alpha particle incident on a nucleus with an impact parameter <span class="math notranslate nohighlight">\(b\)</span>. The particle is seen to be scattered through an angle <span class="math notranslate nohighlight">\(θ\)</span> compared to its original direction. Because the scattering is elastic, the initial and final momenta of the particle have the same magnitude <span class="math notranslate nohighlight">\(\mu\)</span>: only the direction changes. The final momentum is <span class="math notranslate nohighlight">\(\mu(\cos θ, \sin θ) \)</span>, and the change in momentum <span class="math notranslate nohighlight">\( Δ\vec{p} \)</span> is <span class="math notranslate nohighlight">\(\mu(\cos θ - 1, \sin θ) \)</span> (since only two vectors are involved, this interaction all takes place in a single plane, so we can neglect the z component except at the very end).</p>
+<p>The magnitude of <span class="math notranslate nohighlight">\( Δ\vec{p} \)</span> is</p>
+<div class="math notranslate nohighlight" id="equation-rutherford-change-in-mom">
+<span class="eqno">(7.1)<a class="headerlink" href="#equation-rutherford-change-in-mom" title="Link to this equation">#</a></span>\[\begin{equation}
+Δp = \mu\sqrt{2(1 - \cos θ)} = 2\mu \sin(θ/2) 
+\end{equation}\]</div>
+<p>The direction of <span class="math notranslate nohighlight">\( Δ\vec{p} \)</span> is, by symmetry, along the line from the nucleus to the point of closest approach, labeled <span class="math notranslate nohighlight">\( r_0 \)</span> in figure 1. The Coulomb force in that direction when the particle is at a distance <span class="math notranslate nohighlight">\(r\)</span> from the nucleus is</p>
+<div class="math notranslate nohighlight" id="equation-rutherford-coulomb-force">
+<span class="eqno">(7.2)<a class="headerlink" href="#equation-rutherford-coulomb-force" title="Link to this equation">#</a></span>\[\begin{equation}
+F = \frac{Zze^2}{4πε_0 r^2} \cos α 
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(Ze\)</span> is the charge on the nucleus, <span class="math notranslate nohighlight">\(ze\)</span> is the charge on the projectile, and the angle <span class="math notranslate nohighlight">\(α\)</span> is defined in figure 1.</p>
+<p>Therefore, we have</p>
+<div class="math notranslate nohighlight" id="equation-rutherford-change-in-mom2">
+<span class="eqno">(7.3)<a class="headerlink" href="#equation-rutherford-change-in-mom2" title="Link to this equation">#</a></span>\[\begin{equation}
+Δp = \int F dt = \frac{Zze^2}{4πε_0} \int_{-\infty}^{+\infty} \frac{\cos α}{r^2} dt 
+\end{equation}\]</div>
+<p>To do the integral we need to find the relationships between the variables <span class="math notranslate nohighlight">\(α\)</span>, <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(t\)</span>. To do this, we use the fact that the Coulomb force is a central force (i.e. it is directed along the line joining the two charges), and therefore does not change the angular momentum. The initial angular momentum of the particle is <span class="math notranslate nohighlight">\( \mu b \)</span>.</p>
+<p>At any given time, we can write the instantaneous velocity of the particle as</p>
+<div class="math notranslate nohighlight" id="equation-rutherford-velocity">
+<span class="eqno">(7.4)<a class="headerlink" href="#equation-rutherford-velocity" title="Link to this equation">#</a></span>\[\begin{equation}
+\vec{v} = \frac{dr}{dt} \hat{r} + r \frac{dα}{dt} \hat{α} 
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\( \hat{r} \)</span> and <span class="math notranslate nohighlight">\( \hat{α} \)</span> are unit vectors in the radial and tangential directions. The angular momentum is then</p>
+<div class="math notranslate nohighlight" id="equation-rutherford-angular-momentum">
+<span class="eqno">(7.5)<a class="headerlink" href="#equation-rutherford-angular-momentum" title="Link to this equation">#</a></span>\[\begin{equation}
+|m(\vec{v} \times \vec{r})| = mr^2 \frac{dα}{dt} 
+\end{equation}\]</div>
+<p>since the component parallel to <span class="math notranslate nohighlight">\( \vec{r} \)</span> drops out in the vector product. This must be equal to <span class="math notranslate nohighlight">\(\mu b\)</span>, so we have</p>
+<div class="math notranslate nohighlight" id="equation-rutherford-parrallel-equation">
+<span class="eqno">(7.6)<a class="headerlink" href="#equation-rutherford-parrallel-equation" title="Link to this equation">#</a></span>\[\begin{equation}
+r^2 \frac{d\alpha}{dt} = ub \rightarrow \frac{d\alpha}{dt} = \frac{ub}{r^2} 
+\end{equation}\]</div>
+<p>We can substitute this into the integral to get</p>
+<div class="math notranslate nohighlight" id="equation-rutherford-full-deltapp">
+<span class="eqno">(7.7)<a class="headerlink" href="#equation-rutherford-full-deltapp" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
+\Delta p &amp;= \frac{2\mu \sin(\frac{\theta}{2})}{\frac{Zze^2}{4\pi\epsilon_0 ub}} \int_{-(\pi-\theta)/2}^{(\pi-\theta)/2} \cos \alpha \, d\alpha \\
+&amp;= \frac{Zze^2}{4\pi\epsilon_0 ub} \left[2\sin\left(\frac{\pi}{2} - \frac{\theta}{2}\right)\right] = \frac{Zze^2}{2\pi\epsilon_0 ub} \cos\left(\frac{\theta}{2}\right). 
+\end{align}\end{split}\]</div>
+<p>(For the limits, you can see from figure 1 that the total range of the angle <span class="math notranslate nohighlight">\(α\)</span> is <span class="math notranslate nohighlight">\(\pi − \theta\)</span>, and it is negative
+to the left of <span class="math notranslate nohighlight">\(𝑟_{0}\)</span> and positive to the right; therefore it runs from <span class="math notranslate nohighlight">\(−(\pi − \theta)/2\)</span> to <span class="math notranslate nohighlight">\(+(\pi − \theta)/2.\)</span>)</p>
+<p>Solving this for b gives us</p>
+<div class="math notranslate nohighlight" id="equation-rutherford-bsolution">
+<span class="eqno">(7.8)<a class="headerlink" href="#equation-rutherford-bsolution" title="Link to this equation">#</a></span>\[\begin{equation}
+b = \frac{Zze^2}{4\pi\epsilon_0\mu^2} \cot\left(\frac{\theta}{2}\right). 
+\end{equation}\]</div>
+<p>Now, if we have a uniform parallel beam of alpha particles with a flux per unit area <span class="math notranslate nohighlight">\(Φ\)</span>, the flux with impact parameter between <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(b + \textnormal{d}b\)</span> is <span class="math notranslate nohighlight">\(dΦ = 2\pi~b~\textnormal{d}b~Φ\)</span>. Differentiating the expression for <span class="math notranslate nohighlight">\(b\)</span> gives us</p>
+<div class="math notranslate nohighlight" id="equation-rutherford-bsolution2">
+<span class="eqno">(7.9)<a class="headerlink" href="#equation-rutherford-bsolution2" title="Link to this equation">#</a></span>\[\begin{equation}
+db = \frac{Zze^2}{4\pi\epsilon_0\mu^2} \left( -\frac{1}{2} \sin^2\frac{\theta}{2} - \frac{1}{2} \cos^2\frac{\theta}{2} \right) \frac{\textnormal{d}\theta}{\sin^2\frac{\theta}{2}} = \frac{Zze^2}{4\pi\epsilon_0\mu^2} \frac{-\textnormal{d}\theta}{2\sin^2(\theta/2)} 
+\end{equation}\]</div>
+<p>We now need to recognise that we are dealing with a three-dimensional experiment. The element of solid angle is <span class="math notranslate nohighlight">\(\textnormal{d}Ω = \sinθ \textnormal{d}θ\textnormal{d}φ\)</span>. For a ring between <span class="math notranslate nohighlight">\(θ\)</span> and <span class="math notranslate nohighlight">\(θ + \textnormal{d}θ\)</span>, we can integrate over φ to get <span class="math notranslate nohighlight">\(\textnormal{d}Ω = 2π\sinθ \textnormal{d}θ = 4π\sin(θ/2)\cos(θ/2)\textnormal{d}θ\)</span>. This gives us</p>
+<div class="math notranslate nohighlight" id="equation-rutherford-df">
+<span class="eqno">(7.10)<a class="headerlink" href="#equation-rutherford-df" title="Link to this equation">#</a></span>\[\begin{equation}
+\textnormal{d}f = \left( \frac{Zze^2}{4\pi\epsilon_0} \right)^2 \left( \frac{1}{2K_\alpha} \right)^2 \frac{dΩ}{\sin^4(\theta/2)4\pi} 
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\textnormal{d}f\)</span> is the fraction of incoming alpha particles scattered over the angle between <span class="math notranslate nohighlight">\(θ\)</span> and <span class="math notranslate nohighlight">\(θ + \textnormal{d}θ\)</span> and <span class="math notranslate nohighlight">\( K_\alpha = \frac{1}{2}\mu^2 \)</span> is the kinetic energy of the incoming alpha particles.</p>
+<p>This assumes a single nucleus. Obviously this is not the case: the number of nuclei per unit area is <span class="math notranslate nohighlight">\(𝑛𝑥\)</span> where <span class="math notranslate nohighlight">\(𝑛\)</span> is the number density of the material and <span class="math notranslate nohighlight">\(𝑥\)</span> is the thickness of the foil.
+From this derivation we expect that the number of alpha particles scattered through an angle <span class="math notranslate nohighlight">\(θ\)</span> will be proportional to:</p>
+<ol class="arabic simple">
+<li><p>the square of the atomic number of the target material;</p></li>
+<li><p>the inverse fourth power of <span class="math notranslate nohighlight">\(\sin(\theta/2)\)</span>;</p></li>
+<li><p>the thickness of the foil (provided that the foil is thin—when it gets too thick all the alpha
+particles will simply stop within the foil);</p></li>
+<li><p>the inverse square of the alpha particle kinetic energy.</p></li>
+</ol>
+<p>Rutherford’s group (specifically, Hans Geiger and Ernest Marsden) conducted a series of experiments in 1913 that verified these predictions. This demonstrated that the atom contained an essentially pointlike nucleus.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is worth noting that you would obtain the same result if it were the negative charge of the atom that were concentrated in a small volume, i.e. if the electrons all clumped together in the midst of the distributed positive charge. Rutherford concluded that the nucleus was positively charged as a result of experiments using gas targets. This was consistent with the fact that the alpha particle was itself positively charged, and had earlier been identified by Rutherford with a fully ionised helium atom.</p>
+</div>
+</section>
+<section id="kinematics">
+<h3><span class="section-number">7.1.3. </span>Kinematics<a class="headerlink" href="#kinematics" title="Link to this heading">#</a></h3>
+<section id="the-q-value">
+<h4><span class="section-number">7.1.3.1. </span>The Q value<a class="headerlink" href="#the-q-value" title="Link to this heading">#</a></h4>
+<p>Nuclear reactions are governed by <span class="math notranslate nohighlight">\(E=mc^{2}\)</span>. The Q-value of a reaction is the difference in mass between the initial and final states, expressed as an energy (usually in MeV): for example, the Q-value of the reaction <span class="math notranslate nohighlight">\(^{16}\textnormal{O}(p,α)^{13}\textnormal{N}\)</span> can be calculated as follows (all numbers from Krane):</p>
+<ol class="arabic simple">
+<li><p>The nuclear mass of <span class="math notranslate nohighlight">\(^{16}\textnormal{O}\)</span> is</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+15.994915u ~\textnormal{(atomic mass of $^{16}\textnormal{O}$)} -  8×0.00054858u = 15.990526 u.
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>The mass of a proton is <span class="math notranslate nohighlight">\(1.00727647 u\)</span></p></li>
+<li><p>The nuclear mass of <span class="math notranslate nohighlight">\(^{13}\textnormal{N}\)</span> is</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+    13.005739u − 7×0.00054858u = 13.001899 u.
+\]</div>
+<ol class="arabic">
+<li><p>The mass of an α particle is <span class="math notranslate nohighlight">\(4.00150618 u\)</span>.</p></li>
+<li><p>Therefore the Q value is</p>
+<div class="math notranslate nohighlight">
+\[
+   16.997802u – 17.003405u = −0.005603 u = −5.219 \textnormal{MeV}.
+   \]</div>
+</li>
+</ol>
+<p>A negative Q-value implies that the reaction will not proceed spontaneously, but will require the initial proton to contribute at least <span class="math notranslate nohighlight">\(5.219\textnormal{MeV}\)</span> of kinetic energy (actually, slightly more than this, because we need to allow for conservation of momentum). The minimum projectile kinetic energy required to make the reaction happen is called the threshold energy.</p>
+<p>A positive Q-value means that the reaction will generate energy. However, this does not necessarily mean that the reaction has zero threshold in practice. Consider the reaction <span class="math notranslate nohighlight">\(^{13}\textnormal{C}(α,n)^{16}\textnormal{O}\)</span>. This has Q-value <span class="math notranslate nohighlight">\(2.216~\textnormal{MeV}\)</span> (you should check this!). However, a zero-energy <span class="math notranslate nohighlight">\(α\)</span>-particle will not initiate the reaction, because Coulomb repulsion will ensure that it does not get close enough to the carbon nucleus to react with it. This imposes an effective threshold energy: it’s difficult to calculate exactly what it is, because quantum tunnelling ensures that the reaction will take place (with a reduced cross section) at energies lower than a classical calculation would suggest. This is what makes power generation by nuclear fusion so difficult: the relevant reactions do of course have positive Q (if they didn’t, they would not generate any energy!), but the kinetic energy required to overcome the Coulomb barrier means that the initial material has to be raised to an extremely high temperature for the fusion cross section to be high enough for useful energy output.</p>
+<p>Reactions that have positive Q-values and an electrically neutral projectile (i.e. a neutron) will take place at arbitrarily low values of the neutron kinetic energy. In fact, it can be shown (see Krane section 12.4) that at low energies the neutron interaction cross section is proportional to <span class="math notranslate nohighlight">\(1/v\)</span>, where <span class="math notranslate nohighlight">\(v\)</span> is the speed of the neutron (or, equivalently, to <span class="math notranslate nohighlight">\(1/\sqrt{K_n}\)</span>, where <span class="math notranslate nohighlight">\(K_n = \frac{1}{2}m_nv^2\)</span> is the neutron kinetic energy).</p>
+<p>This is why most designs of fission reactors moderate the neutrons produced in uranium fission, i.e. cause them to scatter repeatedly until they reach thermal equilibrium, corresponding to kinetic energies of around 0.025 eV—the cross section for subsequent capture by another <span class="math notranslate nohighlight">\(^{235}U\)</span> nucleus is about 500 times higher at this energy than it is at the <span class="math notranslate nohighlight">\(O(1~\textnormal{MeV})\)</span> energies at which they were originally emitted.</p>
+<p>Elastic scattering, where the final state particles are the same as the initial state, obviously has <span class="math notranslate nohighlight">\(Q = 0\)</span> and zero threshold even for charged particles, since the projectile does not need to make contact with the target (see the derivation for Rutherford scattering above).</p>
+</section>
+<section id="id1">
+<h4><span class="section-number">7.1.3.2. </span>Reaction kinematics<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p>The projectile energies associated with nuclear reactions are typically a few MeV. At these energies protons, neutrons etc. are non-relativistic: the speed of a <span class="math notranslate nohighlight">\(10~\textnormal{MeV}\)</span> proton is about 14% of the speed of light. Therefore, unless we are dealing with electrons or photons, the kinematics of nuclear reactions can be handled using ordinary classical mechanics, and so we didn’t cover it in the lectures. However, being able to do kinematic calculations is an important part of nuclear physics, so we will go through a few examples (taken from Krane).</p>
+<p><strong>Scattering at angle θ</strong>
+Typically, we take some reaction <span class="math notranslate nohighlight">\(A(a,b)B\)</span> and measure the energy of the ejectile b at some angle <span class="math notranslate nohighlight">\(θ\)</span>; we do not observe the daughter nucleus <span class="math notranslate nohighlight">\(B\)</span>. Assuming that the target nucleus <span class="math notranslate nohighlight">\(A\)</span> is stationary, the kinematics of this are as follows:</p>
+<ul class="simple">
+<li><p>Conservation of momentum gives <span class="math notranslate nohighlight">\( p^2_B = p^2_a + p^2_b - 2p_ap_b \cos θ \)</span> (I’m not going to prove this, because it’s in one of the problems, but you should be able to work it out by looking at figure 2 below and considering what happens when the angle of the triangle is not 90°).</p></li>
+</ul>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/image-58.png"><img alt="_images/image-58.png" src="_images/image-58.png" style="width: 220.0px; height: 272.0px;" /></a>
+</figure>
+<ul class="simple">
+<li><p>Conservation of energy gives <span class="math notranslate nohighlight">\( K_a + Q = K_B + K_b \)</span> (<span class="math notranslate nohighlight">\(Q\)</span> represents the energy consumed or released as a result of the total mass of the final state being, in general, different from the total mass of the initial state. If <span class="math notranslate nohighlight">\( Q &gt; 0 \)</span>, the released energy will add to the kinetic energies of the final-state particles; if <span class="math notranslate nohighlight">\( Q &lt; 0 \)</span>, some of the initial kinetic energy is converted to mass.)</p></li>
+<li><p>We assume non-relativistic velocities, so for any particle <span class="math notranslate nohighlight">\( K = \frac{p^2}{2m} \)</span>.</p></li>
+</ul>
+<p>We want to eliminate <span class="math notranslate nohighlight">\(K_B\)</span>, because we do not measure it. From energy conservation we find that</p>
+<div class="math notranslate nohighlight" id="equation-scattering-ke">
+<span class="eqno">(7.11)<a class="headerlink" href="#equation-scattering-ke" title="Link to this equation">#</a></span>\[\begin{equation}
+K_B = K_a - K_b + Q.
+\end{equation} \]</div>
+<p>From momentum conservation</p>
+<div class="math notranslate nohighlight" id="equation-scattering-kb">
+<span class="eqno">(7.12)<a class="headerlink" href="#equation-scattering-kb" title="Link to this equation">#</a></span>\[\begin{equation}
+K_B = \frac{p_B^2}{2m_B} = \frac{1}{2m_B} (2m_aK_a + 2m_bK_b - 4 cos \theta \sqrt{m_aK_am_bK_b}). 
+\end{equation} \]</div>
+<p>Equating these expressions gives</p>
+<div class="math notranslate nohighlight" id="equation-scattering-kb-equating">
+<span class="eqno">(7.13)<a class="headerlink" href="#equation-scattering-kb-equating" title="Link to this equation">#</a></span>\[\begin{equation}
+m_bK_a - m_bK_b + m_bQ = m_aK_a + m_bK_b - 2 \cos \theta \sqrt{m_am_bK_aK_b} 
+\end{equation} \]</div>
+<p>Collecting terms,</p>
+<div class="math notranslate nohighlight" id="equation-scattering-collecting-terms">
+<span class="eqno">(7.14)<a class="headerlink" href="#equation-scattering-collecting-terms" title="Link to this equation">#</a></span>\[\begin{equation}
+(m_b + m_B)K_b - (2 \cos \theta \sqrt{m_am_bK_a})K_b^{1/2} - ((m_b - m_a)K_a + m_bQ) = 0 
+\end{equation} \]</div>
+<p>This is a quadratic in the unknown <span class="math notranslate nohighlight">\( K_b \)</span>. Applying the usual quadratic formula (and cancelling off a factor of 2),</p>
+<div class="math notranslate nohighlight" id="equation-scattering-kbcancellation">
+<span class="eqno">(7.15)<a class="headerlink" href="#equation-scattering-kbcancellation" title="Link to this equation">#</a></span>\[\begin{equation}
+K_b^{1/2} = \frac{\cos \theta \sqrt{m_am_bK_a} \pm [m_am_bK_a \cos^2 \theta + (m_b + m_B)((m_b - m_a)K_a + m_bQ)]^{1/2}}{m_b + m_B} 
+\end{equation} \]</div>
+<p>This looks hideous, but the key point is that everything on the right-hand side is known, so what it tells us is that a given angle <span class="math notranslate nohighlight">\( \theta \)</span> almost always corresponds to a specific ejectile kinetic energy <span class="math notranslate nohighlight">\( K_b \)</span>, or — perhaps more usefully — that a given combination of <span class="math notranslate nohighlight">\( K_b \)</span> and <span class="math notranslate nohighlight">\( \theta \)</span> corresponds to a specific value of <span class="math notranslate nohighlight">\( Q \)</span>. Therefore we can use scattering processes to explore the excited states of the nucleus B, even though we do not observe <span class="math notranslate nohighlight">\(B\)</span> itself.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If <span class="math notranslate nohighlight">\( Q &lt; 0 \)</span>, for small <span class="math notranslate nohighlight">\( K_a \)</span> it is possible for the value of <span class="math notranslate nohighlight">\( (m_b + m_B)((m_b - m_a)K_a + m_bQ) \)</span> to be less than zero. In this case there will be two possible values of <span class="math notranslate nohighlight">\( K_b^{1/2} \)</span> corresponding to the two signs of the square root. This is normally relevant only for energies close to threshold—see Krane, figures 11.2(a) and (b).</p>
+</div>
+</section>
+<section id="example-1">
+<h4><span class="section-number">7.1.3.3. </span>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h4>
+<p>In Coulomb scattering of 7.50 MeV protons by a target of <span class="math notranslate nohighlight">\( ^7\textnormal{Li}\)</span>, what is the energy of protons at <span class="math notranslate nohighlight">\(90°\)</span> (i) if the scattering is elastic, (ii) if the <span class="math notranslate nohighlight">\(^7\textnormal{Li} \)</span> is left in its first excited state, 0.477 MeV above the ground state?</p>
+<p><strong>Answer</strong>
+First look up and/or calculate the relevant masses.</p>
+<p>Atomic mass of <span class="math notranslate nohighlight">\( ^7Li \)</span> is 7.016003 u, so nuclear mass is</p>
+<div class="math notranslate nohighlight">
+\[ 
+M = 7.016003 - 3(0.00054858) = 7.014357 u. 
+\]</div>
+<p>Mass of proton = <span class="math notranslate nohighlight">\(1.00727647 u\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The initial proton has kinetic energy <span class="math notranslate nohighlight">\( K \)</span> and momentum <span class="math notranslate nohighlight">\( p \)</span>. Scattered proton has kinetic energy <span class="math notranslate nohighlight">\( K_p \)</span> and momentum <span class="math notranslate nohighlight">\( p_p \)</span>, and recoiling lithium nucleus has kinetic energy <span class="math notranslate nohighlight">\( K_L \)</span> and momentum <span class="math notranslate nohighlight">\( p_L \)</span>.</p>
+</div>
+<p>As the proton mass is ~938 MeV/c², a proton with a kinetic energy of 7.50 MeV is not relativistic, so we can write kinetic energy as <span class="math notranslate nohighlight">\( K = \frac{1}{2} mv^2 = \frac{p^2}{2m} \)</span> where <span class="math notranslate nohighlight">\( p \)</span> is the momentum.</p>
+<p><strong>Part (i)</strong> In an elastic collision both kinetic energy and momentum are conserved. We have <span class="math notranslate nohighlight">\( \vec{p} = \vec{p_p} + \vec{p_L} \)</span>. Drawing out the momentum sum (noting that this all takes place in the plane defined by the vectors <span class="math notranslate nohighlight">\( \vec{p_p} \)</span> and <span class="math notranslate nohighlight">\( \vec{p_L} \)</span>, so it’s a two-dimensional problem), we see (figure 2) that <span class="math notranslate nohighlight">\( p_L^2 = p^2 + p_p^2 \)</span>. Energy conservation gives <span class="math notranslate nohighlight">\( K_p = K - K_L \)</span>, which we can write as</p>
+<div class="math notranslate nohighlight">
+\[
+ \frac{p_p^2}{2m} = \frac{p^2}{2m} - \frac{p_L^2}{2M} 
+\]</div>
+<p>writing <span class="math notranslate nohighlight">\( m \)</span> for the proton mass and <span class="math notranslate nohighlight">\( M \)</span> for the lithium mass.</p>
+<p>Substituting in for <span class="math notranslate nohighlight">\( p_L^2 \)</span> and cancelling the factor of 2,</p>
+<div class="math notranslate nohighlight">
+\[
+ \frac{p_p^2}{m} = \frac{p^2}{m} - \frac{p^2}{M} - \frac{p_p^2}{M} 
+\]</div>
+<p>Therefore</p>
+<div class="math notranslate nohighlight">
+\[ 
+\frac{m^{-1} - M^{-1}}{m^{-1} + M^{-1}} p^2 = 0.748860p^2 
+\]</div>
+<p>and dividing through by <span class="math notranslate nohighlight">\( 2m \)</span> gives us <span class="math notranslate nohighlight">\( E_p = 0.74886E = 5.62~\textnormal{MeV} \)</span>.</p>
+<p><strong>Part (ii)</strong> In the second case, momentum is conserved as before, but the energy conservation equation is now</p>
+<div class="math notranslate nohighlight">
+\[ 
+K_p = K - K_L - \Delta E, 
+\]</div>
+<p>where <span class="math notranslate nohighlight">\( \Delta E = 0.477 \textnormal{MeV}\)</span> is the excitation energy.</p>
+<p>Therefore we have</p>
+<div class="math notranslate nohighlight">
+\[ 
+\frac{p_p^2}{2m} ( \frac{1}{m} + \frac{1}{M} ) = p^2 ( \frac{1}{m} - \frac{1}{M} ) - 2\Delta E 
+\]</div>
+<div class="math notranslate nohighlight">
+\[ 
+\Rightarrow \frac{p_p^2}{2m} = \frac{p^2}{2m} ( \frac{m^{-1} - M^{-1}}{m^{-1} + M^{-1}} ) - \frac{\Delta E}{1 + (m/M)} . 
+\]</div>
+<p>Putting in the numbers gives</p>
+<div class="math notranslate nohighlight">
+\[ 
+E_p = 0.74886E - \frac{\Delta E}{1.1436} = 5.20 MeV. 
+\]</div>
+<p>Notice that in an actual experiment, if we observe protons at 90° to the original direction, we will see a peak at <span class="math notranslate nohighlight">\( E_p = 5.62~\textnormal{MeV}\)</span> corresponding to elastic scattering, and a peak at <span class="math notranslate nohighlight">\(5.20~\textnormal{MeV}\)</span> corresponding to the first excited state (plus more peaks at lower energies corresponding to higher excited states). We could then work this equation backwards to extract <span class="math notranslate nohighlight">\( \Delta E \)</span> from the known <span class="math notranslate nohighlight">\( E_p \)</span>.</p>
+<p>Also note that we could have done this question using the general expression for <span class="math notranslate nohighlight">\( K_b^{1/2} \)</span> that we derived earlier. You should check that this gives you the same answers.</p>
+</section>
+<section id="example-2">
+<h4><span class="section-number">7.1.3.4. </span>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h4>
+<p>Calculate the Q value of the reaction <span class="math notranslate nohighlight">\( p + ^4\textnormal{He} \rightarrow ^1\textnormal{H} + ^3\textnormal{He} \)</span>. What is the threshold energy (i) for protons incident on helium and (ii) for <span class="math notranslate nohighlight">\( \alpha \)</span> particles incident on hydrogen?</p>
+<p><strong>Answer</strong>
+(Note that in this case we couldn’t use the bracket notation for the reaction, because we are asked to look at two different cases, <span class="math notranslate nohighlight">\( ^4\textnormal{He}(p,d)^3\textnormal{He} \)</span> and <span class="math notranslate nohighlight">\( ^1\textnormal{H}(\alpha,d)^3\textnormal{He} \)</span>.)</p>
+<p>The relevant masses are, from Krane:
+proton <span class="math notranslate nohighlight">\(1.00727647~u\)</span>, <span class="math notranslate nohighlight">\(α\)</span> particle <span class="math notranslate nohighlight">\(4.00150618~u\)</span>, deuteron <span class="math notranslate nohighlight">\(2.01355321~u\)</span>, <span class="math notranslate nohighlight">\(^3\textnormal{He}\)</span> nucleus <span class="math notranslate nohighlight">\(3.014932~u\)</span>.</p>
+<p>The Q value is therefore <span class="math notranslate nohighlight">\(-0.019702~u = -18.353 \textnormal{MeV}\)</span> (rounding everything to 6 decimal places in <span class="math notranslate nohighlight">\(u\)</span> so as to match the precision of the mass of <span class="math notranslate nohighlight">\(^3\textnormal{He}\)</span>: Krane only gives atomic masses to 6 decimal places).</p>
+<p>To calculate the threshold energies, we use the equation for <span class="math notranslate nohighlight">\( K_b^{1/2} \)</span> we derived above. This only describes a physically possible reaction if it has a real solution (obviously observed kinetic energies are not complex numbers), and it only has a real solution if the term inside the square root is non-negative. The limiting case is when the argument of the square root is exactly zero,</p>
+<div class="math notranslate nohighlight">
+\[ 
+m_a m_b K_a \cos^2 \theta + (m_b + m_B)((m_b - m_a)K_a + m_b Q) = 0. 
+\]</div>
+<p>Furthermore, for the absolute minimum possible value of <span class="math notranslate nohighlight">\( K_a \)</span> we must have <span class="math notranslate nohighlight">\( \theta = 0 \)</span>: we do not want to waste energy giving the products transverse momentum. Therefore <span class="math notranslate nohighlight">\( \cos \theta = 1 \)</span> and we have</p>
+<div class="math notranslate nohighlight">
+\[ 
+m_a m_b K_a + m_b m_B K_a - m_b^2 K_a - m_a m_b K_a - m_a m_b K_a = -m_b (m_b + m_B) Q. \]</div>
+<p>This simplifies to</p>
+<div class="math notranslate nohighlight">
+\[ (m_b + m_B - m_a) K_a = -(m_b + m_B) Q \]</div>
+<div class="math notranslate nohighlight">
+\[ 
+~~~~~~~~~~~~~~~~~~\Rightarrow K_a = -Q \frac{m_b + m_B}{m_b + m_B - m_a}.
+\]</div>
+<p>If <span class="math notranslate nohighlight">\( Q &gt; 0 \)</span>, this is never true (except in the case where <span class="math notranslate nohighlight">\( m_a &gt; m_b + m_B \)</span>, in which case our assumption of non-relativistic velocities is unlikely to be right). This is not surprising, because if <span class="math notranslate nohighlight">\( Q &gt; 0 \)</span> there should not be a kinematic threshold: the reaction releases energy. However, in the case we are dealing with, <span class="math notranslate nohighlight">\( Q &lt; 0 \)</span>, and we have:</p>
+<p>(i) <span class="math notranslate nohighlight">\( K_p = 18.353 \frac{5.028485}{5.028485 - 1.007276} = 22.950~\textnormal{MeV} \)</span></p>
+<p>(ii) <span class="math notranslate nohighlight">\( K_a = 18.353 \frac{5.028485}{5.028485 - 4.001506} = 89.863~\textnormal{MeV}\)</span>.</p>
+<p>The reason that the threshold for the alpha-induced reaction is so much higher is that <span class="math notranslate nohighlight">\( p = \sqrt{2mK} \)</span>: for a given energy, the alpha particle has a much higher momentum than the proton, and therefore more of the initial kinetic energy is required for momentum conservation and so is not available to convert into mass. However, the energy per nucleon is very similar for the two cases, <span class="math notranslate nohighlight">\(23.0~\textnormal{MeV}\)</span> for (i) and <span class="math notranslate nohighlight">\(22.5~\textnormal{MeV}\)</span> for (ii); for this reason, projectile energies are often specified as energy per nucleon, <span class="math notranslate nohighlight">\( K/A_p \)</span>, where <span class="math notranslate nohighlight">\( A_p \)</span> is the mass number of the projectile, rather than total energy.</p>
+<p>Notice that <span class="math notranslate nohighlight">\(23~\textnormal{MeV}\)</span> <span class="math notranslate nohighlight">\( \ll 938.3 MeV/c^2 \)</span> and <span class="math notranslate nohighlight">\(90~\textnormal{MeV}\)</span> <span class="math notranslate nohighlight">\( \ll 1876 MeV/c^2 \)</span>, so the assumption that everything is non-relativistic is reasonably safe (though not safe to 5 significant figures—we should really round our answers to <span class="math notranslate nohighlight">\(23.0\)</span> and <span class="math notranslate nohighlight">\(89.9~\textnormal{MeV}\)</span>). This should always be checked: if you end up with a kinetic energy which is not much less than the mass, you need to redo the kinematics using relativistic expressions, as you did in the particle physics course.</p>
+</section>
+<section id="example-3">
+<h4><span class="section-number">7.1.3.5. </span>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h4>
+<p>In the reaction <span class="math notranslate nohighlight">\( ^9Be(\alpha,n)^{12}C \)</span>, find the maximum and minimum neutron energies when the incident α energy is (i) 7.0 MeV and (ii) 1.0 MeV.</p>
+<p><strong>Answer</strong>
+The relevant masses are:</p>
+<p><span class="math notranslate nohighlight">\( ^9\textnormal{Be}: 9.012182 - 4(0.00054858) = 9.009988 u \)</span></p>
+<p><span class="math notranslate nohighlight">\(α: 4.001506 u\)</span></p>
+<p><span class="math notranslate nohighlight">\(n: 1.008665 u\)</span></p>
+<p><span class="math notranslate nohighlight">\( ^{12}\textnormal{C} \)</span>: <span class="math notranslate nohighlight">\(12u\)</span> (by definition) – <span class="math notranslate nohighlight">\(6(0.00054858) = 11.996709 u\)</span>.</p>
+<p>The <span class="math notranslate nohighlight">\(Q\)</span> value is <span class="math notranslate nohighlight">\(0.006120 u = 5.701\)</span> MeV.</p>
+<p>The maximum neutron energy will occur when <span class="math notranslate nohighlight">\(θ = 0\)</span> (the neutron is emitted in the same direction as the incident <span class="math notranslate nohighlight">\(α\)</span>), and the minimum neutron energy will be when <span class="math notranslate nohighlight">\(θ = π\)</span>.</p>
+<p>The simplest way to do this is to apply the equation for <span class="math notranslate nohighlight">\( K_{b}^{1/2} \)</span>. For <span class="math notranslate nohighlight">\(\cos\theta = 1\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[ K_{n,max}^{1/2} = \left[ \frac{m_a m_n K_a \pm (m_a m_n K_a + (m_n + m_c)((m_c - m_a)K_a + m_c Q))}{m_n + m_c} \right]^{1/2} 
+\]</div>
+<p>Notice that the argument of the square root is always larger than <span class="math notranslate nohighlight">\( m_a m_n K_a \)</span>, so only the positive sign is relevant (kinetic energies cannot be negative).</p>
+<p>For <span class="math notranslate nohighlight">\(\cos θ = –1\)</span> all that happens is that the first term changes sign, so we have</p>
+<div class="math notranslate nohighlight">
+\[ K_{n,min}^{1/2} = K_{n,max}^{1/2} - \frac{2 \sqrt{m_a m_n K_a}}{m_n + m_c} 
+\]</div>
+<p>Putting in the numbers gives:</p>
+<p>(i) <span class="math notranslate nohighlight">\( K_{n,max} = 12.4 MeV; K_{n,min} = 7.3~\textnormal{MeV}; \)</span></p>
+<p>(ii) <span class="math notranslate nohighlight">\( K_{n,max} = 6.7 MeV; K_{n,min} = 5.2~\textnormal{MeV}. \)</span></p>
+<p>(All answers rounded to the nearest $0.1~\textnormal{MeV}, to match input precision; arguably we should round 12.4 to 12, but as the first figure is a 1 it is not unreasonable to keep an extra figure here.)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is worth noting here that the units of the mass cancel out, so provided that all masses are expressed in the same units (don’t put some of them in u and others in MeV/c²…) you do not have to convert them to SI or MeV or anything else.</p>
+</div>
+</section>
+<section id="reaction-kinematics-summary">
+<h4><span class="section-number">7.1.3.6. </span>Reaction Kinematics Summary<a class="headerlink" href="#reaction-kinematics-summary" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>All the above examples assume a two-body final state, i.e. <span class="math notranslate nohighlight">\(b\)</span> is one particle. If this is the case, the reaction kinematics can be determined up to one angle, <span class="math notranslate nohighlight">\(θ\)</span>, that appears in the equations and one, <span class="math notranslate nohighlight">\(φ\)</span>, that is irrelevant (the final state can be rotated through any angle around the direction of the projectile a without affecting the kinematics). If <span class="math notranslate nohighlight">\(b\)</span> consists of more than one particle, the kinematics are no longer uniquely determined (cf. the electron energy distribution in beta decay); however, threshold energy and minimum and maximum energies can still be calculated.</p></li>
+<li><p>In the examples, I have used the standard nuclear physics approach of assuming that the speeds involved are non-relativistic. This is OK to about the <span class="math notranslate nohighlight">\(1%\)</span> level. It is, of course, also possible to do all these calculations using relativistic kinematics, as you did in the particle physics course last semester. Relativistic kinematics must be used if the projectile is an electron—MeV energies imply <span class="math notranslate nohighlight">\(v ≈ c\)</span> for an electron.</p></li>
+</ol>
+</section>
+</section>
+<section id="types-of-reaction">
+<h3><span class="section-number">7.1.4. </span>Types of Reaction<a class="headerlink" href="#types-of-reaction" title="Link to this heading">#</a></h3>
+<p>Besides Coulomb scattering, in which there is no real contact between the charged projectile and the target nucleus, there are two main types of nuclear reaction:</p>
+<ol class="arabic simple">
+<li><p>direct reactions, in which the projectile interacts with a small number (usually one) of nucleons on the surface of the target nucleus (a peripheral reaction);</p></li>
+<li><p>compound-nucleus reactions, in which the projectile combines with the target to form an excited compound nucleus, which then de-excites to produce the daughter nucleus and ejectile(s).</p></li>
+</ol>
+<p>These types of reaction are not mutually exclusive: for example, an elastic scattering reaction such as (p,p) [the notation (p,p) means that the proton is deflected, but does not lose any energy; in contrast, (p,p’) denotes an inelastic collision where the proton loses energy by exciting the target] could take place by Coulomb scattering (no contact between projectile and target), direct reaction (proton hits a nucleon on the surface of the target and is deflected) or compound-nucleus reaction (proton and target combine, but the resulting compound nucleus happens to de-excite by emitting a proton—this is not very likely, but could happen if the target were already quite proton-rich). In general, direct and compound-nucleus reactions can be distinguished by the angular distribution of the ejectile: in direct reactions, not much of the initial momentum is transferred to the target, and the ejectile(s) tend to travel in the same direction as the incoming projectile, i.e. the angular distribution is forward-peaked (even when transformed to the centre of mass frame). In contrast, the de-excitation of the compound nucleus is a separate process from its initial formation, and therefore the angular distribution of the decay products tends to be fairly isotropic.</p>
+</section>
+</section>
+<section id="direct-reactions">
+<h2><span class="section-number">7.2. </span>Direct Reactions<a class="headerlink" href="#direct-reactions" title="Link to this heading">#</a></h2>
+<section id="characteristics-of-direct-reactions">
+<h3><span class="section-number">7.2.1. </span>Characteristics of direct reactions<a class="headerlink" href="#characteristics-of-direct-reactions" title="Link to this heading">#</a></h3>
+<p>The fundamental characteristic of direct reactions is that they take place in the time it would take the projectile to traverse the nucleus. There are various ways of estimating this, but they all boil down to a simple calculation: the speed of a few-MeV nucleon is of order <span class="math notranslate nohighlight">\(0.1c\)</span>; the size of a typical target nucleus is a few femtometres; <span class="math notranslate nohighlight">\(10^{-15}/10^{7} = 10^{-22}\)</span>, so a direct reaction should take place on a timescale of order <span class="math notranslate nohighlight">\(10^{-22}~\textnormal{s}\)</span>. The logic of this is that if the reaction is over in the time it would have taken the projectile to cross the nucleus, there has not been time for a compound nucleus to form, so it can’t be a compound-nucleus reaction.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is an order-of-magnitude estimate: it doesn’t have to be precise. We will see later that the timescale for compound-nucleus reactions is much longer.</p>
+</div>
+<p>Direct reactions tend to involve relatively high-energy projectiles. The reason for this is that a low-energy projectile, such as a thermal neutron with an energy of <span class="math notranslate nohighlight">\(0.025~\textnormal{eV}\)</span>, has a de Broglie wavelength which is much larger than an individual nucleon: it will “see” the nucleus as an undifferentiated blob, so it is unlikely to interact with individual nucleons. In contrast, a <span class="math notranslate nohighlight">\(100~\textnormal{MeV}\)</span> nucleon would have a de Broglie wavelength of the same order as the diameter of a proton and would be much more likely to undergo a direct reaction.</p>
+<p>As noted earlier, the products of direct reactions are strongly forward-peaked, because not much of the incoming energy is transferred to the target nucleus.</p>
+</section>
+<section id="types-of-direct-reaction">
+<h3><span class="section-number">7.2.2. </span>Types of direct reaction<a class="headerlink" href="#types-of-direct-reaction" title="Link to this heading">#</a></h3>
+<p>Because direct reactions involve only a few nucleons near the surface of the target nucleus, the possible reactions are rather limited—for example, it would not be possible to induce fission by a direct reaction. The principal types are:</p>
+<ul class="simple">
+<li><p>elastic and inelastic scattering—the ejectile is identical to the projectile, with the same kinetic energy (elastic) or reduced kinetic energy (inelastic);</p></li>
+<li><p>charge exchange—as the name indicates, reactions in which charge is exchanged between projectile and target, most obviously <span class="math notranslate nohighlight">\((n,p)\)</span> and <span class="math notranslate nohighlight">\((p,n)\)</span>, but also <span class="math notranslate nohighlight">\(^3\textnormal{He},^3\textnormal{H}\)</span> or vice versa;</p></li>
+<li><p>transfer reactions—a nucleon (occasionally more than one) is transferred from projectile to target:</p></li>
+<li><p>stripping reaction—transfer is from projectile to target, e.g. <span class="math notranslate nohighlight">\((d,p)\)</span> or <span class="math notranslate nohighlight">\((d,n)\)</span>;</p></li>
+<li><p>pick-up reaction—transfer is from target to projectile, e.g. <span class="math notranslate nohighlight">\((p,d)\)</span>;
+knock-out reactions—a nucleon or light cluster (e.g. a particle) is knocked out of the target but not attached to the projectile, e.g. <span class="math notranslate nohighlight">\((n,2n)\)</span>.</p></li>
+</ul>
+<p>All of these can also take place via the compound-nucleus route. The direct reaction will dominate at high projectile energies and in the forward direction. Because direct reactions, despite the use of high-energy projectiles, only involve small energy transfers, they tend to populate low-level excited states, whereas compound-nucleus reactions typically involve higher levels of excitation (for a given projectile energy). Consequently, it is usually possible to disentangle the direct reaction contribution from the compound-nucleus route without too much ambiguity.</p>
+</section>
+<section id="applications-of-direct-reactions">
+<h3><span class="section-number">7.2.3. </span>Applications of direct reactions<a class="headerlink" href="#applications-of-direct-reactions" title="Link to this heading">#</a></h3>
+<p>A key feature of direct reactions is that they tend to be very simple, since only a few nucleons are involved. This makes them easy to analyse theoretically, so they are extremely useful in understanding nuclear structure.</p>
+<p>Since only a small fraction of the incident projectile energy is transferred in direct reactions, the cross section as a function of incident particle energy is smooth. The interesting observables are the energy and angular distributions of the ejected particle(s).</p>
+</section>
+<section id="elastic-scattering-and-the-optical-model">
+<h3><span class="section-number">7.2.4. </span>Elastic scattering and the optical model<a class="headerlink" href="#elastic-scattering-and-the-optical-model" title="Link to this heading">#</a></h3>
+<p>Elastic scattering of a projectile by a target nucleus is analogous to diffraction of light around an obstacle, and similar diffraction patterns are observed. These are described using the optical model, which essentially treats the projectile as moving in a potential generated by the nucleons in the nucleus. The nucleus is not opaque to projectiles, so the diffraction minima do not go down to zero (this is sometimes referred to as the “cloudy crystal ball model”).</p>
+<p>The potential used in the optical model takes into account the nuclear potential, the Coulomb potential (for charged projectiles), spin-orbit interactions, potentially non-spherical shapes, etc. It is in general complex: the imaginary part is there to account for projectiles that do not scatter elastically. The description of the data can be extremely good (see figure 3); it is usually better for simple projectiles such as protons and neutrons than for more complicated objects.</p>
+<p>Fitting optical model parameters gives nuclear physicists information about the size, shape and spin of the target nucleus, which means that direct nuclear reactions are an important probe of overall nuclear properties.</p>
+</section>
+<section id="direct-reactions-and-excited-states">
+<h3><span class="section-number">7.2.5. </span>Direct reactions and excited states<a class="headerlink" href="#direct-reactions-and-excited-states" title="Link to this heading">#</a></h3>
+<p>In compound-nucleus reactions, as we will see later, excited states of the compound nucleus can be observed as resonances in the cross section: it is more likely that the projectile will merge with the target nucleus if the total centre-of-mass energy corresponds to an excited state. This does not happen in direct reactions, because the projectile does not transfer all its energy to the target. However, as we saw earlier, if the final state contains only a single ejectile, the Q-value of the reaction can be deduced from the energy and angle of the ejectile, and hence excited states will cause peaks in the ejectile energy spectrum as measured at a specific scattering angle. The heights of the peaks can be used to deduce information about the spin of the state. The <span class="math notranslate nohighlight">\((d,p)\)</span> stripping reaction and its inverse, the <span class="math notranslate nohighlight">\((p,d)\)</span> pickup reaction, have historically been extremely important in such studies. Figure 4 shows results from a recent <span class="math notranslate nohighlight">\((d,p)\)</span> experiment on molybdenum and ruthenium isotopes.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/image-56.png"><img alt="_images/image-56.png" src="_images/image-56.png" style="width: 880.0px; height: 1280.0px;" /></a>
+</figure>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="phy303-unit6-radioactive-decays.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Radioactive Decays</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="phy303-unit8-compoundreactions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Compound/Photon reactions</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reaction-kinematics">7.1. Reaction Kinematics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">7.1.1. Notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rutherford-scattering">7.1.2. Rutherford scattering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kinematics">7.1.3. Kinematics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-q-value">7.1.3.1. The Q value</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">7.1.3.2. Reaction kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">7.1.3.3. Example 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">7.1.3.4. Example 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">7.1.3.5. Example 3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reaction-kinematics-summary">7.1.3.6. Reaction Kinematics Summary</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-reaction">7.1.4. Types of Reaction</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-reactions">7.2. Direct Reactions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-direct-reactions">7.2.1. Characteristics of direct reactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-direct-reaction">7.2.2. Types of direct reaction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-direct-reactions">7.2.3. Applications of direct reactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-scattering-and-the-optical-model">7.2.4. Elastic scattering and the optical model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-reactions-and-excited-states">7.2.5. Direct reactions and excited states</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Liz Kneale, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

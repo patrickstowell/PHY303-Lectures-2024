@@ -38,3 +38,27 @@ videos.
 The module is assessed by two components, homeworks and the end-of-semester examination. Two homeworks will be marked and returned, 
 with comments.  The total homework mark counts 15% towards the module. 
 The full timetable of the assessments is available in the Assessment tab
+
+
+# Feedback
+
+Comments, suggestions, or required clarifications on the course lectures or these notes are always welcome.
+
+The general module feedback form for those on the course can be found on the blackboard page [here](https://blackboardlink).
+
+In addition a quick form to raise comments or questions on the jupyter notes specifically can be found [here](https://googleforms).
+
+Alternatively, just send us an [email](mailto:p.stowell@sheffield.ac.uk) or pop by my office (E41, Hicks Building).
+
+
+
+### Timetable
+
+The 2024/25 version of this course is scheduled on Wednesdays at 10-11AM (Location TBC) and Thursdays at 4-5PM (Location TBC).
+An approximate timeline of the topics we will cover is as follows.
+
+-  Teaching Week 1 : 14/02/25 10:00-11:00 Introduction []
+-  Teaching Week 1 : 14/02/25 16:00-17:00 Introduction []
+
+
+
