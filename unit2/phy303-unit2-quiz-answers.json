@@ -1,23 +1,1205 @@
 [
     {
-        "question": "Has this unit quiz/flashcards been setup?",
+        "question": "What does the Hofstadter experiment tell us about the charge and mass distribution in nuclei?",
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "No",
+                "answer": "Nucleons in nuclei are likely incompressible.",
                 "correct": true,
-                "feedback": "This will be done before the course starts."
+                "feedback": "Correct. The Hofstadter experiment provides evidence that nucleons in nuclei are likely incompressible."
             },
             {
-                "answer": "Yes",
+                "answer": "Nuclei are composed entirely of electrons.",
                 "correct": false,
-                "feedback": "Incorrect. This will be done before the course starts."
+                "feedback": "Incorrect. Nuclei are composed of protons and neutrons, not electrons."
             },
             {
-                "answer": "Never",
+                "answer": "Nuclei do not have a defined structure.",
                 "correct": false,
-                "feedback": "Incorrect. This will be done before the course starts."
+                "feedback": "Incorrect. The Hofstadter experiment indicates that nuclei do have a defined structure."
+            },
+            {
+                "answer": "Nuclei are very compressible.",
+                "correct": false,
+                "feedback": "Incorrect. Nuclei are likely incompressible according to the Hofstadter experiment."
+            }
+        ]
+    },
+    {
+        "question": "What is a form factor  $ F(q) $  and how does it relate to the structure of the nucleus?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "A function that provides information on the structure of the nucleus",
+                "correct": true,
+                "feedback": "Correct. A form factor  $ F(q) $  provides additional information on how the distributed structure of the nucleus modifies the interaction probability."
+            },
+            {
+                "answer": "A measure of the speed of electrons in a nucleus",
+                "correct": false,
+                "feedback": "Incorrect. A form factor does not measure the speed of electrons in a nucleus."
+            },
+            {
+                "answer": "A constant value for all nuclei",
+                "correct": false,
+                "feedback": "Incorrect. A form factor varies depending on the structure of the nucleus."
+            },
+            {
+                "answer": "A function that measures the temperature of a nucleus",
+                "correct": false,
+                "feedback": "Incorrect. A form factor is not related to the temperature of a nucleus."
+            }
+        ]
+    },
+    {
+        "question": "How is the modified cross-section for a target with a distributed charge distribution written?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " $ d\\sigma = d\\sigma_{{point}} \\cdot |F(q)|^2 $ ",
+                "correct": true,
+                "feedback": "Correct. The modified cross-section for a target with a distributed charge distribution is  $ d\\sigma = d\\sigma_{{point}} \\cdot |F(q)|^2 $ ."
+            },
+            {
+                "answer": " $ d\\sigma = d\\sigma_{{point}} + F(q) $ ",
+                "correct": false,
+                "feedback": "Incorrect. The modified cross-section involves the product, not the sum, of  $ d\\sigma_{{point}} $  and  $ |F(q)|^2 $ ."
+            },
+            {
+                "answer": " $ d\\sigma = F(q) \\cdot d\\sigma_{{point}} $ ",
+                "correct": false,
+                "feedback": "Incorrect. The form factor  $ |F(q)|^2 $  is squared in the correct equation."
+            },
+            {
+                "answer": " $ d\\sigma = d\\sigma_{{point}} \\cdot q^2 $ ",
+                "correct": false,
+                "feedback": "Incorrect. The form factor  $ |F(q)|^2 $  should be used, not  $ q^2 $ ."
+            }
+        ]
+    },
+    {
+        "question": "How is the four-momentum transfer $ q $  of the interaction calculated?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " $ q = p_{in} - p_{out} $ ",
+                "correct": true,
+                "feedback": "Correct. The four-momentum transfer  $ q $  is calculated as  $ q = p_{in} - p_{out} $ ."
+            },
+            {
+                "answer": " $ q = p_{in} + p_{out} $ ",
+                "correct": false,
+                "feedback": "Incorrect. The four-momentum transfer is the difference, not the sum, of  $ p_{in} $  and  $ p_{out} $ ."
+            },
+            {
+                "answer": " $ q = p_{in} \\dot p_{out} $ ",
+                "correct": false,
+                "feedback": "Incorrect. The four-momentum transfer is not the product of  $ p_{in} $  and  $ p_{out} $ ."
+            },
+            {
+                "answer": " $ q = \\frac{p_{in}}{p_{out}} $ ",
+                "correct": false,
+                "feedback": "Incorrect. The four-momentum transfer is not the ratio of  $ p_{in} $  and  $ p_{out} $ ."
+            }
+        ]
+    },
+    {
+        "question": "What does the Fourier transform of the density distribution represent in terms of the form factor?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The form factor  $ F(q) $ ",
+                "correct": true,
+                "feedback": "Correct. The Fourier transform of the density distribution represents the form factor  $ F(q) $ ."
+            },
+            {
+                "answer": "The charge distribution  $ \\rho(r) $ ",
+                "correct": false,
+                "feedback": "Incorrect. The Fourier transform of the charge distribution  $ \\rho(r) $  gives the form factor  $ F(q) $ ."
+            },
+            {
+                "answer": "The position  $ r $ ",
+                "correct": false,
+                "feedback": "Incorrect. The position  $ r $  is not the result of the Fourier transform of the density distribution."
+            },
+            {
+                "answer": "The Mott prediction",
+                "correct": false,
+                "feedback": "Incorrect. The Mott prediction is not the result of the Fourier transform of the density distribution."
+            }
+        ]
+    },
+    {
+        "question": "What would the form factor be for a nucleus with a point charge at the center?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " $ F(q) = 1 $ ",
+                "correct": true,
+                "feedback": "Correct. The Fourier transform of a delta function is just 1, so the form factor  $ F(q) $  would be 1 for a nucleus with a point charge at the center."
+            },
+            {
+                "answer": " $ F(q) = q $ ",
+                "correct": false,
+                "feedback": "Incorrect. The form factor  $ F(q) $  for a point charge is not  $ q $ ."
+            },
+            {
+                "answer": " $ F(q) = \\rho(r) $ ",
+                "correct": false,
+                "feedback": "Incorrect. The form factor  $ F(q) $  for a point charge is not the charge distribution  $ \\rho(r) $ ."
+            },
+            {
+                "answer": " $ F(q) = \\delta(q) $ ",
+                "correct": false,
+                "feedback": "Incorrect. The Fourier transform of a delta function is  $ 1 $ , not  $ \\delta(q) $ ."
+            }
+        ]
+    },
+    {
+        "question": "What was found during early electron scattering experiments at higher values of  $ q $ ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Bumps or ridges in the measurements of the cross-section",
+                "correct": true,
+                "feedback": "Correct. At higher values of  $ q $ , bumps or ridges were observed in the measurements of the cross-section during early electron scattering experiments."
+            },
+            {
+                "answer": "A perfectly smooth cross-section",
+                "correct": false,
+                "feedback": "Incorrect. Bumps or ridges, not a perfectly smooth cross-section, were observed at higher values of  $ q $ ."
+            },
+            {
+                "answer": "No scattering at all",
+                "correct": false,
+                "feedback": "Incorrect. Scattering was observed, showing bumps or ridges in the cross-section."
+            },
+            {
+                "answer": "Constant uniform density",
+                "correct": false,
+                "feedback": "Incorrect. Constant uniform density would not show bumps or ridges in the cross-section."
+            }
+        ]
+    },
+    {
+        "question": "What is the simplest model proposed for the underlying distribution of charge in the nucleus?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Top-Hat Distribution",
+                "correct": true,
+                "feedback": "Correct. The simplest model proposed is the Top-Hat Distribution, which assumes constant uniform density falling to zero at the edge."
+            },
+            {
+                "answer": "Gaussian Distribution",
+                "correct": false,
+                "feedback": "Incorrect. The simplest model proposed is the Top-Hat Distribution, not the Gaussian Distribution."
+            },
+            {
+                "answer": "Lorentzian Distribution",
+                "correct": false,
+                "feedback": "Incorrect. The simplest model proposed is the Top-Hat Distribution, not the Lorentzian Distribution."
+            },
+            {
+                "answer": "Exponential Distribution",
+                "correct": false,
+                "feedback": "Incorrect. The simplest model proposed is the Top-Hat Distribution, not the Exponential Distribution."
+            }
+        ]
+    },
+    {
+        "question": "What observation was made during early electron scattering experiments at higher values of  $ q $ ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Bumps or ridges in the measurements of the cross-section",
+                "correct": true,
+                "feedback": "Correct. At higher values of  $ q $ , bumps or ridges were observed in the measurements of the cross-section."
+            },
+            {
+                "answer": "A smooth, featureless cross-section",
+                "correct": false,
+                "feedback": "Incorrect. Bumps or ridges were observed in the measurements of the cross-section, not a smooth, featureless cross-section."
+            },
+            {
+                "answer": "A sudden drop in the cross-section",
+                "correct": false,
+                "feedback": "Incorrect. The observation was bumps or ridges in the measurements of the cross-section, not a sudden drop."
+            },
+            {
+                "answer": "A sharp peak in the cross-section",
+                "correct": false,
+                "feedback": "Incorrect. The observation was bumps or ridges in the measurements of the cross-section, not a sharp peak."
+            }
+        ]
+    },
+    {
+        "question": "How do the structures observed in the cross-section measurements indicate the charge distribution in the nucleus?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "They indicate a top-hat distribution in the center with a more fuzzy form at the edges",
+                "correct": true,
+                "feedback": "Correct. The structures indicate a top-hat distribution in the center with a more fuzzy form at the edges."
+            },
+            {
+                "answer": "They indicate a smooth, uniform distribution throughout",
+                "correct": false,
+                "feedback": "Incorrect. The structures indicate a top-hat distribution in the center with a more fuzzy form at the edges, not a smooth, uniform distribution."
+            },
+            {
+                "answer": "They indicate a hollow center with denser edges",
+                "correct": false,
+                "feedback": "Incorrect. The structures indicate a top-hat distribution in the center with a more fuzzy form at the edges, not a hollow center with denser edges."
+            },
+            {
+                "answer": "They indicate random fluctuations in the distribution",
+                "correct": false,
+                "feedback": "Incorrect. The structures indicate a top-hat distribution in the center with a more fuzzy form at the edges, not random fluctuations."
+            }
+        ]
+    },
+    {
+        "question": "What form provides a better fit to the data than the simple top-hat distribution?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Saxon-Woods form",
+                "correct": true,
+                "feedback": "Correct. The Saxon-Woods form provides a better fit to the data than the simple top-hat distribution."
+            },
+            {
+                "answer": "Gaussian form",
+                "correct": false,
+                "feedback": "Incorrect. The Saxon-Woods form provides a better fit to the data, not the Gaussian form."
+            },
+            {
+                "answer": "Lorentzian form",
+                "correct": false,
+                "feedback": "Incorrect. The Saxon-Woods form provides a better fit to the data, not the Lorentzian form."
+            },
+            {
+                "answer": "Exponential form",
+                "correct": false,
+                "feedback": "Incorrect. The Saxon-Woods form provides a better fit to the data, not the Exponential form."
+            }
+        ]
+    },
+    {
+        "question": "How is the Saxon-Woods potential parameterized in terms of the radius  $  r  $ ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " $ \\rho(r) = \\frac{\\rho_0}{1 + \\exp\\left(\\frac{r - R}{a}\\right)} $ ",
+                "correct": true,
+                "feedback": "Correct. The Saxon-Woods potential is parameterized as  $ \\rho(r) = \\frac{\\rho_0}{1 + \\exp\\left(\\frac{r - R}{a}\\right)} $ ."
+            },
+            {
+                "answer": " $ \\rho(r) = \\frac{\\rho_0}{1 + \\left(\\frac{r - R}{a}\\right)} $ ",
+                "correct": false,
+                "feedback": "Incorrect. The correct parameterization is  $ \\rho(r) = \\frac{\\rho_0}{1 + \\exp\\left(\\frac{r - R}{a}\\right)} $ ."
+            },
+            {
+                "answer": " $ \\rho(r) = \\rho_0 \\exp\\left(\\frac{r - R}{a}\\right) $ ",
+                "correct": false,
+                "feedback": "Incorrect. The correct parameterization is  $ \\rho(r) = \\frac{\\rho_0}{1 + \\exp\\left(\\frac{r - R}{a}\\right)} $ ."
+            },
+            {
+                "answer": " $ \\rho(r) = \\rho_0 \\left(\\frac{r - R}{a}\\right) $ ",
+                "correct": false,
+                "feedback": "Incorrect. The correct parameterization is  $ \\rho(r) = \\frac{\\rho_0}{1 + \\exp\\left(\\frac{r - R}{a}\\right)} $ ."
+            }
+        ]
+    },
+    {
+        "question": "How does the charge density versus distance  $ r $  from the center of the nucleus change with increasing nucleus size?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The top-hat part of the charge density distribution gets slightly wider, but the skin thickness remains mostly constant",
+                "correct": true,
+                "feedback": "Correct. As the nucleus size increases, the top-hat part of the charge density distribution gets slightly wider, but the skin thickness remains mostly constant."
+            },
+            {
+                "answer": "The top-hat part of the charge density distribution remains the same, but the skin thickness increases",
+                "correct": false,
+                "feedback": "Incorrect. The top-hat part of the charge density distribution gets slightly wider, but the skin thickness remains mostly constant."
+            },
+            {
+                "answer": "Both the top-hat part and the skin thickness increase",
+                "correct": false,
+                "feedback": "Incorrect. Only the top-hat part of the charge density distribution gets slightly wider, while the skin thickness remains mostly constant."
+            },
+            {
+                "answer": "Both the top-hat part and the skin thickness remain the same",
+                "correct": false,
+                "feedback": "Incorrect. The top-hat part of the charge density distribution gets slightly wider, while the skin thickness remains mostly constant."
+            }
+        ]
+    },
+    {
+        "question": "What do the parameters  $ R $  and  $ a $  represent in the Saxon-Woods potential?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " $ R $  represents the edge of the nucleus, and  $ a $  represents the Skin or Surface Thickness",
+                "correct": true,
+                "feedback": "Correct. In the Saxon-Woods potential,  $ R $  represents the edge of the nucleus, and  $ a $  represents the Skin or Surface Thickness."
+            },
+            {
+                "answer": " $ R $  represents the Skin or Surface Thickness, and  $ a $  represents the edge of the nucleus",
+                "correct": false,
+                "feedback": "Incorrect.  $ R $  represents the edge of the nucleus, and  $ a $  represents the Skin or Surface Thickness."
+            },
+            {
+                "answer": " $ R $  represents the radius of the nucleus, and  $ a $  represents the depth of the potential",
+                "correct": false,
+                "feedback": "Incorrect.  $ R $  represents the edge of the nucleus, and  $ a $  represents the Skin or Surface Thickness."
+            },
+            {
+                "answer": " $ R $  represents the density of the nucleus, and  $ a $  represents the edge of the nucleus",
+                "correct": false,
+                "feedback": "Incorrect.  $ R $  represents the edge of the nucleus, and  $ a $  represents the Skin or Surface Thickness."
+            }
+        ]
+    },
+    {
+        "question": "What is the expression for the charge density distribution?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " $ \\rho_c(r) = \\frac{\\rho_{c0}}{1 + \\exp\\left(\\frac{r - R_c}{a_c}\\right)} $ ",
+                "correct": true,
+                "feedback": "Correct. The expression for the charge density distribution is  $ \\rho_c(r) = \\frac{\\rho_{c0}}{1 + \\exp\\left(\\frac{r - R_c}{a_c}\\right)} $ ."
+            },
+            {
+                "answer": " $ \\rho_c(r) = \\rho_{c0} \\exp\\left(\\frac{r - R_c}{a_c}\\right) $ ",
+                "correct": false,
+                "feedback": "Incorrect. The correct expression is  $ \\rho_c(r) = \\frac{\\rho_{c0}}{1 + \\exp\\left(\\frac{r - R_c}{a_c}\\right)} $ ."
+            },
+            {
+                "answer": " $ \\rho_c(r) = \\frac{\\rho_{c0}}{\\exp\\left(\\frac{r - R_c}{a_c}\\right)} $ ",
+                "correct": false,
+                "feedback": "Incorrect. The correct expression is  $ \\rho_c(r) = \\frac{\\rho_{c0}}{1 + \\exp\\left(\\frac{r - R_c}{a_c}\\right)} $ ."
+            },
+            {
+                "answer": " $ \\rho_c(r) = \\rho_{c0} \\left(\\frac{r - R_c}{a_c}\\right) $ ",
+                "correct": false,
+                "feedback": "Incorrect. The correct expression is  $ \\rho_c(r) = \\frac{\\rho_{c0}}{1 + \\exp\\left(\\frac{r - R_c}{a_c}\\right)} $ ."
+            }
+        ]
+    },
+    {
+        "question": "Why do we expect  $ \\rho_{c0} $  to be lower for heavy nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Because  $ R_c $  tends away from  $ r $ ",
+                "correct": true,
+                "feedback": "Correct. We expect  $ \\rho_{c0} $  to be lower for heavy nuclei as  $ R_c $  tends away from  $ r $ ."
+            },
+            {
+                "answer": "Because  $ R_c $  tends towards  $ r $ ",
+                "correct": false,
+                "feedback": "Incorrect.  $ \\rho_{c0} $  is lower for heavy nuclei as  $ R_c $  tends away from  $ r $ ."
+            },
+            {
+                "answer": "Because  $ R_c $  remains constant",
+                "correct": false,
+                "feedback": "Incorrect.  $ \\rho_{c0} $  is lower for heavy nuclei as  $ R_c $  tends away from  $ r $ , not because it remains constant."
+            },
+            {
+                "answer": "Because  $ \\rho_{c0} $  tends towards  $ r $ ",
+                "correct": false,
+                "feedback": "Incorrect.  $ \\rho_{c0} $  is lower for heavy nuclei as  $ R_c $  tends away from  $ r $ ."
+            }
+        ]
+    },
+    {
+        "question": "What is the expression for the mass density distribution?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " $ \\rho_m(r) = \\frac{\\rho_{m0}}{1 + \\exp\\left(\\frac{r - R_m}{a_m}\\right)} $ ",
+                "correct": true,
+                "feedback": "Correct. The expression for the mass density distribution is  $ \\rho_m(r) = \\frac{\\rho_{m0}}{1 + \\exp\\left(\\frac{r - R_m}{a_m}\\right)} $ ."
+            },
+            {
+                "answer": " $ \\rho_m(r) = \\rho_{m0} \\exp\\left(\\frac{r - R_m}{a_m}\\right) $ ",
+                "correct": false,
+                "feedback": "Incorrect. The correct expression is  $ \\rho_m(r) = \\frac{\\rho_{m0}}{1 + \\exp\\left(\\frac{r - R_m}{a_m}\\right)} $ ."
+            },
+            {
+                "answer": " $ \\rho_m(r) = \\frac{\\rho_{m0}}{\\exp\\left(\\frac{r - R_m}{a_m}\\right)} $ ",
+                "correct": false,
+                "feedback": "Incorrect. The correct expression is  $ \\rho_m(r) = \\frac{\\rho_{m0}}{1 + \\exp\\left(\\frac{r - R_m}{a_m}\\right)} $ ."
+            },
+            {
+                "answer": " $ \\rho_m(r) = \\rho_{m0} \\left(\\frac{r - R_m}{a_m}\\right) $ ",
+                "correct": false,
+                "feedback": "Incorrect. The correct expression is  $ \\rho_m(r) = \\frac{\\rho_{m0}}{1 + \\exp\\left(\\frac{r - R_m}{a_m}\\right)} $ ."
+            }
+        ]
+    },
+    {
+        "question": "What modification is needed between mass distributions and charge distributions?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Modification is needed due to neutrons having zero charge",
+                "correct": true,
+                "feedback": "Correct. Modifications are needed between mass distributions and charge distributions due to neutrons having zero charge."
+            },
+            {
+                "answer": "Modification is needed due to protons having zero charge",
+                "correct": false,
+                "feedback": "Incorrect. Modifications are needed due to neutrons, not protons, having zero charge."
+            },
+            {
+                "answer": "Modification is needed due to electrons having zero charge",
+                "correct": false,
+                "feedback": "Incorrect. Modifications are needed due to neutrons having zero charge, not electrons."
+            },
+            {
+                "answer": "No modification is needed",
+                "correct": false,
+                "feedback": "Incorrect. Modifications are needed due to neutrons having zero charge."
+            }
+        ]
+    },
+    {
+        "question": "How do the parameter values for charge and mass distributions compare?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The parameter values are quite similar in both cases",
+                "correct": true,
+                "feedback": "Correct. The parameter values for charge and mass distributions are quite similar in both cases."
+            },
+            {
+                "answer": "The parameter values are very different in both cases",
+                "correct": false,
+                "feedback": "Incorrect. The parameter values are quite similar in both cases."
+            },
+            {
+                "answer": "The parameter values are identical in both cases",
+                "correct": false,
+                "feedback": "Incorrect. While the parameter values are similar, they are not identical."
+            },
+            {
+                "answer": "The parameter values are unrelated in both cases",
+                "correct": false,
+                "feedback": "Incorrect. The parameter values are quite similar in both cases."
+            }
+        ]
+    },
+    {
+        "question": "How do the charge radius and mass radius scale?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Both scale as  $ A^{1/3} $ ",
+                "correct": true,
+                "feedback": "Correct. Both the charge radius and mass radius scale as  $ A^{1/3} $ ."
+            },
+            {
+                "answer": "Both scale as  $ A^{1/2} $ ",
+                "correct": false,
+                "feedback": "Incorrect. Both the charge radius and mass radius scale as  $ A^{1/3} $ , not  $ A^{1/2} $ ."
+            },
+            {
+                "answer": "Charge radius scales as  $ A^{1/3} $ , mass radius scales as  $ A^{1/2} $ ",
+                "correct": false,
+                "feedback": "Incorrect. Both the charge radius and mass radius scale as  $ A^{1/3} $ ."
+            },
+            {
+                "answer": "Charge radius scales as  $ A^{1/2} $ , mass radius scales as  $ A^{1/3} $ ",
+                "correct": false,
+                "feedback": "Incorrect. Both the charge radius and mass radius scale as  $ A^{1/3} $ ."
+            }
+        ]
+    },
+    {
+        "question": "What is observed about the central densities of nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The central densities are constant, independent of how many nucleons there are in the nucleus",
+                "correct": true,
+                "feedback": "Correct. The central densities are constant, independent of how many nucleons there are in the nucleus."
+            },
+            {
+                "answer": "The central densities vary significantly with the number of nucleons",
+                "correct": false,
+                "feedback": "Incorrect. The central densities are constant, independent of how many nucleons there are in the nucleus."
+            },
+            {
+                "answer": "The central densities increase with the number of nucleons",
+                "correct": false,
+                "feedback": "Incorrect. The central densities are constant, independent of how many nucleons there are in the nucleus."
+            },
+            {
+                "answer": "The central densities decrease with the number of nucleons",
+                "correct": false,
+                "feedback": "Incorrect. The central densities are constant, independent of how many nucleons there are in the nucleus."
+            }
+        ]
+    },
+    {
+        "question": "What did studies of electron scattering data generally find about the fit across many nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The studies generally found a good fit",
+                "correct": true,
+                "feedback": "Correct. Studies of electron scattering data generally found a good fit across many nuclei."
+            },
+            {
+                "answer": "The studies generally found a poor fit",
+                "correct": false,
+                "feedback": "Incorrect. Studies of electron scattering data generally found a good fit across many nuclei."
+            },
+            {
+                "answer": "The studies generally found no correlation",
+                "correct": false,
+                "feedback": "Incorrect. Studies of electron scattering data generally found a good fit across many nuclei."
+            },
+            {
+                "answer": "The studies generally found an inconsistent fit",
+                "correct": false,
+                "feedback": "Incorrect. Studies of electron scattering data generally found a good fit across many nuclei."
+            }
+        ]
+    },
+    {
+        "question": "What fundamental idea in nuclear physics is pointed at by the constancy of central densities?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The Incompressible Nucleus",
+                "correct": true,
+                "feedback": "Correct. The constancy of central densities points at the fundamental idea of the Incompressible Nucleus in nuclear physics."
+            },
+            {
+                "answer": "The Compressible Nucleus",
+                "correct": false,
+                "feedback": "Incorrect. The constancy of central densities points at the fundamental idea of the Incompressible Nucleus in nuclear physics."
+            },
+            {
+                "answer": "The Elastic Nucleus",
+                "correct": false,
+                "feedback": "Incorrect. The constancy of central densities points at the fundamental idea of the Incompressible Nucleus in nuclear physics."
+            },
+            {
+                "answer": "The Inelastic Nucleus",
+                "correct": false,
+                "feedback": "Incorrect. The constancy of central densities points at the fundamental idea of the Incompressible Nucleus in nuclear physics."
+            }
+        ]
+    },
+    {
+        "question": "What is the main feature of the Volume Energy Term in the Liquid Drop Model (LDM)?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It is a positive term proportional to the number of nucleons  $ A $  due to short-range attractive forces",
+                "correct": true,
+                "feedback": "Correct. The Volume Energy Term is positive, proportional to  $ A $ , and represents the short-range attractive forces between nucleons."
+            },
+            {
+                "answer": "It is a positive term proportional to the surface area of the nucleus",
+                "correct": false,
+                "feedback": "Incorrect. The Surface Tension Energy Term is proportional to the surface area, not the Volume Energy Term."
+            },
+            {
+                "answer": "It is a negative term accounting for electrostatic repulsion among protons",
+                "correct": false,
+                "feedback": "Incorrect. The Coulomb Potential Energy Term is negative (reduces total binding) and accounts for electrostatic repulsion, not the Volume Energy Term."
+            },
+            {
+                "answer": "It is a minor correction that depends on the neutron-to-proton ratio",
+                "correct": false,
+                "feedback": "Incorrect. The main Volume Energy Term is not a minor correction; it’s the leading term in the binding energy."
+            }
+        ]
+    },
+    {
+        "question": "Why is the Volume Energy Term referred to as \"setting the scale\" of energies in nuclear physics?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Because it represents the dominant contribution to the total binding energy of the nucleus",
+                "correct": true,
+                "feedback": "Correct. The Volume Energy Term provides the dominant portion of the binding energy, thus setting the basic energy scale in nuclear physics."
+            },
+            {
+                "answer": "Because it only applies to very small nuclei",
+                "correct": false,
+                "feedback": "Incorrect. The Volume Energy Term applies to all nuclei, providing the main contribution to their binding."
+            },
+            {
+                "answer": "Because it has the largest negative contribution of all terms",
+                "correct": false,
+                "feedback": "Incorrect. The Volume Energy Term is a positive contribution, not a negative one."
+            },
+            {
+                "answer": "Because it is typically negligible compared to the other energy terms",
+                "correct": false,
+                "feedback": "Incorrect. The Volume Energy Term is the largest, not negligible."
+            }
+        ]
+    },
+    {
+        "question": "How does adding the Surface Tension Energy Term modify the Volume Term?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It subtracts from the Volume Term, reducing the overall binding energy, especially for small nuclei",
+                "correct": true,
+                "feedback": "Correct. The Surface Tension Energy Term subtracts from the Volume Term, particularly affecting small nuclei which have a higher surface-to-volume ratio."
+            },
+            {
+                "answer": "It adds to the Volume Term, significantly increasing the overall binding energy for all nuclei",
+                "correct": false,
+                "feedback": "Incorrect. The Surface Tension Energy Term is negative relative to the Volume contribution, reducing total binding."
+            },
+            {
+                "answer": "It leaves the Volume Term unchanged and applies only to very large nuclei",
+                "correct": false,
+                "feedback": "Incorrect. The Surface Term specifically corrects the Volume Term for all nuclei with a surface."
+            },
+            {
+                "answer": "It replaces the Volume Term entirely for small nuclei",
+                "correct": false,
+                "feedback": "Incorrect. The Surface Term modifies (subtracts from) the Volume Term, rather than replacing it."
+            }
+        ]
+    },
+    {
+        "question": "Why is the Surface Tension Energy Term especially significant for small nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Because a larger fraction of nucleons are on or near the surface, reducing their binding",
+                "correct": true,
+                "feedback": "Correct. In small nuclei, a greater fraction of nucleons are at the surface, so the Surface Tension Energy Term becomes more significant."
+            },
+            {
+                "answer": "Because small nuclei have no volume energy component",
+                "correct": false,
+                "feedback": "Incorrect. Small nuclei do have a volume energy component, but their surface energy component is relatively larger."
+            },
+            {
+                "answer": "Because small nuclei have extremely high electric charge",
+                "correct": false,
+                "feedback": "Incorrect. The Coulomb term depends on proton number, not specifically on nucleus size alone for the surface effect."
+            },
+            {
+                "answer": "Because small nuclei have no neutrons",
+                "correct": false,
+                "feedback": "Incorrect. The presence or absence of neutrons is not the reason the surface term is more significant for small nuclei."
+            }
+        ]
+    },
+    {
+        "question": "What is the role of the Coulomb Potential Energy Term in the Liquid Drop Model?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It introduces a negative correction to binding energy due to electrostatic repulsion among protons",
+                "correct": true,
+                "feedback": "Correct. The Coulomb Potential Energy Term reduces the overall binding because protons repel each other."
+            },
+            {
+                "answer": "It introduces a positive correction to binding energy due to the short-range nuclear force",
+                "correct": false,
+                "feedback": "Incorrect. The positive, short-range nuclear force is represented primarily by the Volume Term. The Coulomb term is repulsive among protons."
+            },
+            {
+                "answer": "It introduces a negligible effect for all nuclei",
+                "correct": false,
+                "feedback": "Incorrect. The Coulomb term can be significant, especially for larger nuclei with many protons."
+            },
+            {
+                "answer": "It replaces the Surface Tension Energy for large nuclei",
+                "correct": false,
+                "feedback": "Incorrect. The Coulomb term does not replace the Surface Tension Energy; both terms act simultaneously."
+            }
+        ]
+    },
+    {
+        "question": "How does the Coulomb term affect the shape of the binding energy per nucleon (B/A) curve for heavier nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It bends the curve downward at higher  $ A $ , creating a peak in the B/A curve around iron",
+                "correct": true,
+                "feedback": "Correct. The Coulomb repulsion grows with  $ Z $ , lowering the binding energy for large nuclei and thus bending the curve downward at high  $ A $ ."
+            },
+            {
+                "answer": "It raises the curve upward, making heavier nuclei more stable",
+                "correct": false,
+                "feedback": "Incorrect. The Coulomb term is repulsive and lowers binding energy for heavier nuclei."
+            },
+            {
+                "answer": "It has no effect on the B/A curve",
+                "correct": false,
+                "feedback": "Incorrect. The Coulomb term clearly affects the curve, reducing binding energy at higher mass numbers."
+            },
+            {
+                "answer": "It creates a constant slope across all values of  $ A $ ",
+                "correct": false,
+                "feedback": "Incorrect. The Coulomb term progressively lowers binding energy, not in a constant or linear fashion."
+            }
+        ]
+    },
+    {
+        "question": "Why does the Coulomb term lead to the possibility of nuclear fission in heavier elements (e.g., U-235)?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Because at high atomic numbers, the repulsion among protons is large enough that splitting the nucleus can release energy",
+                "correct": true,
+                "feedback": "Correct. The Coulomb repulsion in large nuclei can be relieved by splitting into smaller fragments, releasing energy in the process."
+            },
+            {
+                "answer": "Because the nuclear force becomes attractive enough for large nuclei to fuse",
+                "correct": false,
+                "feedback": "Incorrect. Fusion occurs primarily in smaller nuclei; large nuclei can undergo fission because of strong Coulomb repulsion."
+            },
+            {
+                "answer": "Because neutrons cannot exist in heavy nuclei",
+                "correct": false,
+                "feedback": "Incorrect. Neutron presence is not the direct cause; the Coulomb term for protons is the key factor for fission at high  $ Z $ ."
+            },
+            {
+                "answer": "Because the surface tension energy is dominant for heavy nuclei",
+                "correct": false,
+                "feedback": "Incorrect. While surface tension is important, it’s the increasing Coulomb repulsion that strongly favors fission in heavier elements."
+            }
+        ]
+    },
+    {
+        "question": "What are the two additional terms beyond Volume, Surface, and Coulomb that improve the Liquid Drop Model's fit to data?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The Asymmetry and Pairing Terms",
+                "correct": true,
+                "feedback": "Correct. The Asymmetry Term accounts for neutron-proton imbalance, and the Pairing Term accounts for nucleons favoring even-even configurations."
+            },
+            {
+                "answer": "The Temperature and Pressure Terms",
+                "correct": false,
+                "feedback": "Incorrect. The Temperature and Pressure Terms are not part of the standard semi-empirical mass formula (Liquid Drop Model)."
+            },
+            {
+                "answer": "The Quantum and Relativistic Terms",
+                "correct": false,
+                "feedback": "Incorrect. Although quantum effects underlie the model, the standard LDM adds Asymmetry and Pairing Terms, not broad 'Quantum' or 'Relativistic' terms."
+            },
+            {
+                "answer": "The Incompressibility and Surface Density Terms",
+                "correct": false,
+                "feedback": "Incorrect. While incompressibility underlies the LDM concept, the actual extra terms are Asymmetry and Pairing."
+            }
+        ]
+    },
+    {
+        "question": "What does the Pairing Term account for?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It accounts for the additional stability when protons (or neutrons) occupy the same energy level in pairs",
+                "correct": true,
+                "feedback": "Correct. The Pairing Term reflects the energetic favorability when nucleons pair up in spin-up/spin-down states."
+            },
+            {
+                "answer": "It accounts for the repulsion among protons at short distances",
+                "correct": false,
+                "feedback": "Incorrect. Repulsion among protons is part of the Coulomb term, not the Pairing Term."
+            },
+            {
+                "answer": "It accounts for the surface tension at the nuclear boundary",
+                "correct": false,
+                "feedback": "Incorrect. Surface tension is its own separate term. Pairing is different, related to spin coupling."
+            },
+            {
+                "answer": "It accounts for quantum tunneling through the Coulomb barrier",
+                "correct": false,
+                "feedback": "Incorrect. Quantum tunneling is not captured by the Pairing Term specifically."
+            }
+        ]
+    },
+    {
+        "question": "Which nuclear configurations are associated with the highest stability according to the Pairing Term?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Even-Even nuclei (even numbers of protons and neutrons)",
+                "correct": true,
+                "feedback": "Correct. Even-Even nuclei have paired nucleons, giving them a larger binding energy contribution and higher stability."
+            },
+            {
+                "answer": "Odd-Odd nuclei (odd numbers of protons and neutrons)",
+                "correct": false,
+                "feedback": "Incorrect. Odd-Odd nuclei are generally less stable because they lack pairing in both proton and neutron states."
+            },
+            {
+                "answer": "Odd-Even nuclei (odd protons, even neutrons or vice versa)",
+                "correct": false,
+                "feedback": "Incorrect. These have intermediate stability, more stable than Odd-Odd but less than Even-Even."
+            },
+            {
+                "answer": "All configurations are equally stable if the mass number is large enough",
+                "correct": false,
+                "feedback": "Incorrect. Even-Even configurations remain more stable due to pairing effects."
+            }
+        ]
+    },
+    {
+        "question": "What is the Asymmetry Term in the Liquid Drop Model?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "A term that penalizes large differences between the number of neutrons  $ N $  and protons  $ Z $ ",
+                "correct": true,
+                "feedback": "Correct. The Asymmetry Term is negative when  $ N $  deviates significantly from  $ Z $ , reducing binding."
+            },
+            {
+                "answer": "A term that rewards large differences between the number of neutrons  $ N $  and protons  $ Z $ ",
+                "correct": false,
+                "feedback": "Incorrect. The Asymmetry Term is negative for large  $ |N-Z| $ , thus penalizing deviations."
+            },
+            {
+                "answer": "A term that corrects for partial filling of the nuclear shell model states",
+                "correct": false,
+                "feedback": "Incorrect. The Pairing Term partly addresses occupancy issues; the Asymmetry Term specifically penalizes  $ N \neq Z $ ."
+            },
+            {
+                "answer": "A term that accounts for Coulomb repulsion among protons",
+                "correct": false,
+                "feedback": "Incorrect. Coulomb repulsion is handled by the Coulomb Term, not the Asymmetry Term."
+            }
+        ]
+    },
+    {
+        "question": "Why is the Asymmetry Term zero when  $ N = Z $ ?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Because the term depends on  $ (N - Z)^2 $ , which is zero if  $ N = Z $ ",
+                "correct": true,
+                "feedback": "Correct. The Asymmetry Term typically has the form proportional to  $ (N - Z)^2 $ , so it's zero if  $ N = Z $ ."
+            },
+            {
+                "answer": "Because the surface tension energy is zero when  $ N = Z $ ",
+                "correct": false,
+                "feedback": "Incorrect. The surface tension term does not become zero for  $ N = Z $ ."
+            },
+            {
+                "answer": "Because the volume term cancels it out",
+                "correct": false,
+                "feedback": "Incorrect. The volume term and the asymmetry term address different aspects of the nucleus."
+            },
+            {
+                "answer": "Because  $ N = 0 $  or  $ Z = 0 $  in that case",
+                "correct": false,
+                "feedback": "Incorrect.  $ N = Z $  doesn't mean one is zero; it means they are equal."
+            }
+        ]
+    },
+    {
+        "question": "What is the overall effect of adding the Asymmetry and Pairing Terms to the Liquid Drop Model?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "They improve the accuracy of binding energy predictions across a wide range of nuclei",
+                "correct": true,
+                "feedback": "Correct. Including Asymmetry and Pairing Terms yields predictions that match experimental data more closely."
+            },
+            {
+                "answer": "They drastically reduce the predicted binding energies for all nuclei",
+                "correct": false,
+                "feedback": "Incorrect. While these terms can reduce or increase binding for certain nuclei, their net effect is to refine the fit, not drastically reduce it for all."
+            },
+            {
+                "answer": "They only affect very small nuclei, leaving large nuclei unchanged",
+                "correct": false,
+                "feedback": "Incorrect. Both terms apply to various mass ranges, improving accuracy across the nuclear chart."
+            },
+            {
+                "answer": "They eliminate the need for Volume, Surface, or Coulomb Terms",
+                "correct": false,
+                "feedback": "Incorrect. These new terms complement, rather than replace, the existing Volume, Surface, and Coulomb Terms."
+            }
+        ]
+    },
+    {
+        "question": "What is the final form of the Semi Empirical Mass Formula (SEMF) with all terms included?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " $ B(A,Z) = a_V A - a_S A^{2/3} - a_C \\frac{Z(Z-1)}{A^{1/3}} - a_A \\frac{(A - 2Z)^2}{A} \\pm a_P A^{-1/2} $ ",
+                "correct": true,
+                "feedback": "Correct. This expression includes Volume, Surface, Coulomb, Asymmetry, and Pairing terms."
+            },
+            {
+                "answer": " $ B(A,Z) = a_V A + a_S A^{2/3} + a_C \\frac{Z(Z-1)}{A^{1/3}} + a_A \\frac{(A - 2Z)^2}{A} \\pm a_P A^{-1/2} $ ",
+                "correct": false,
+                "feedback": "Incorrect. The Surface, Coulomb, and Asymmetry terms reduce the total binding, so they are subtracted, not added."
+            },
+            {
+                "answer": " $ B(A,Z) = a_V A - a_S A^{1/2} - a_C \\frac{Z^2}{A^{1/2}} - a_A \\frac{(A - 2Z)^3}{A} $ ",
+                "correct": false,
+                "feedback": "Incorrect. The exponents and structure differ from the standard SEMF. Also, the Pairing Term is missing."
+            },
+            {
+                "answer": " $ B(A,Z) = a_V - a_S - a_C - a_A - a_P $ ",
+                "correct": false,
+                "feedback": "Incorrect. The SEMF depends on powers of  $ A $  and  $ Z $ , not simply constants subtracted from each other."
+            }
+        ]
+    },
+    {
+        "question": "How is the binding energy per nucleon expressed in the SEMF for plotting?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " $ \\frac{B(A,Z)}{A} = a_V - a_S A^{-1/3} - a_C \\frac{Z(Z-1)}{A^{4/3}} - a_A \\frac{(A - 2Z)^2}{A^2} \\pm a_P A^{-3/2} $ ",
+                "correct": true,
+                "feedback": "Correct. Dividing the full SEMF by  $ A $  provides the binding energy per nucleon, used for plotting and comparisons."
+            },
+            {
+                "answer": " $ \\frac{B(A,Z)}{A} = a_V + a_S A^{1/3} + a_C Z^2 A^{-2/3} + a_A (A - 2Z)^2 + a_P $ ",
+                "correct": false,
+                "feedback": "Incorrect. The exponents and sign conventions here do not match the standard form for binding energy per nucleon."
+            },
+            {
+                "answer": " $ \\frac{B(A,Z)}{A} = a_V - a_S - a_C - a_A - a_P $ ",
+                "correct": false,
+                "feedback": "Incorrect. We must account for how each term scales with  $ A $  and/or  $ Z $  when dividing by  $ A $ ."
+            },
+            {
+                "answer": " $ \\frac{B(A,Z)}{A} = 0 $  for large  $ A $ ",
+                "correct": false,
+                "feedback": "Incorrect. The binding energy per nucleon does not go to zero for large  $ A $ ; it typically stabilizes around 8 MeV."
+            }
+        ]
+    },
+    {
+        "question": "How can the SEMF be used to estimate alpha decay energies?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "By computing mass deficits from the SEMF for parent and daughter nuclei, the energy released can be estimated",
+                "correct": true,
+                "feedback": "Correct. By calculating total rest energies from the SEMF, the mass difference determines the alpha decay energy."
+            },
+            {
+                "answer": "By setting the Coulomb term to zero and comparing neutron counts",
+                "correct": false,
+                "feedback": "Incorrect. The Coulomb term cannot be set to zero; alpha decay involves protons, and their repulsion matters."
+            },
+            {
+                "answer": "By ignoring the volume term in heavy nuclei and focusing on the surface term alone",
+                "correct": false,
+                "feedback": "Incorrect. All relevant terms must be considered; ignoring the volume term would not give an accurate energy estimate."
+            },
+            {
+                "answer": "By finding which nucleus has the largest  $ B/A $  and assuming alpha decay occurs",
+                "correct": false,
+                "feedback": "Incorrect. While  $ B/A $  is informative, alpha decay energies come from the difference in binding energies (mass deficits)."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following is an advantage of the SEMF?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It provides good predictions of nuclear masses and binding energies, and explains the general shape of the BE curve",
+                "correct": true,
+                "feedback": "Correct. The SEMF works well for overall mass and binding energy predictions and captures the broad shape of the binding energy curve."
+            },
+            {
+                "answer": "It perfectly explains why certain nuclei have exceptionally high binding energies",
+                "correct": false,
+                "feedback": "Incorrect. The SEMF does not fully explain local spikes or magic numbers in the binding energy curve."
+            },
+            {
+                "answer": "It accurately describes the spin and magnetic moments of all nuclei",
+                "correct": false,
+                "feedback": "Incorrect. The SEMF does not explain spin, parity, or magnetic moments; that's a drawback."
+            },
+            {
+                "answer": "It demonstrates that all nuclei are absolutely stable with no possibility of decay",
+                "correct": false,
+                "feedback": "Incorrect. Some nuclei do decay; the SEMF can help predict decay energies but not show absolute stability for all."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following is a disadvantage of the SEMF?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It does not explain local spikes in the BE curve or nuclear shapes like deformation",
+                "correct": true,
+                "feedback": "Correct. The SEMF cannot account for local irregularities (magic numbers) or non-spherical nuclear shapes."
+            },
+            {
+                "answer": "It cannot predict average trends in binding energy per nucleon",
+                "correct": false,
+                "feedback": "Incorrect. The SEMF does predict average trends accurately, which is one of its strengths."
+            },
+            {
+                "answer": "It treats nuclear forces as infinitely long-ranged",
+                "correct": false,
+                "feedback": "Incorrect. The LDM assumes short-range nuclear interactions; infinite range would not be consistent with the drop analogy."
+            },
+            {
+                "answer": "It requires no empirical constants",
+                "correct": false,
+                "feedback": "Incorrect. The SEMF is semi-empirical and does require fitted constants like  $ a_V, a_S, a_C, a_A, a_P $ ."
+            }
+        ]
+    },
+    {
+        "question": "How does the SEMF help explain nuclear fission in heavy nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It shows that the Coulomb repulsion can exceed the binding forces for large  $ Z $ , making splitting energetically favorable",
+                "correct": true,
+                "feedback": "Correct. The Coulomb term grows with  $ Z $ , which can reduce total binding energy sufficiently for fission to release energy."
+            },
+            {
+                "answer": "It shows that the surface tension dominates for large  $ A $ , allowing easy splitting",
+                "correct": false,
+                "feedback": "Incorrect. While surface tension is a factor, the primary issue for fission in large nuclei is the growing Coulomb repulsion."
+            },
+            {
+                "answer": "It demonstrates that there is no energy gain from breaking heavy nuclei into pieces",
+                "correct": false,
+                "feedback": "Incorrect. The SEMF indeed shows a net energy gain for splitting some heavy nuclei, the basis for fission."
+            },
+            {
+                "answer": "It proves that heavy nuclei are always stable",
+                "correct": false,
+                "feedback": "Incorrect. Heavy nuclei can undergo fission precisely because of the large Coulomb term."
+            }
+        ]
+    },
+    {
+        "question": "Which nuclear properties are **not** explained by the SEMF?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Spin, parity, and magnetic moments of individual nuclei",
+                "correct": true,
+                "feedback": "Correct. The SEMF cannot explain quantum properties like nuclear spin, parity, and magnetic moments."
+            },
+            {
+                "answer": "General trends in binding energy and mass",
+                "correct": false,
+                "feedback": "Incorrect. Explaining general trends in binding energy and mass is actually one of the SEMF’s main strengths."
+            },
+            {
+                "answer": "Why heavy nuclei can undergo fission",
+                "correct": false,
+                "feedback": "Incorrect. The SEMF does offer insight into fission by accounting for Coulomb repulsion in large nuclei."
+            },
+            {
+                "answer": "The approximate location of the most stable nuclei along  $ N \\approx Z $ ",
+                "correct": false,
+                "feedback": "Incorrect. The Asymmetry Term in the SEMF does explain why  $ N \\approx Z $  is favored for stability."
+            }
+        ]
+    },
+    {
+        "question": "What is the significance of the energy release in alpha decay estimated by the LDM?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It shows how the mass deficit between parent and daughter nuclei appears as kinetic energy of the emitted alpha particle",
+                "correct": true,
+                "feedback": "Correct. By computing mass differences with the SEMF, we see that the alpha particle carries away the energy from the mass deficit."
+            },
+            {
+                "answer": "It proves that the nucleus cannot decay spontaneously",
+                "correct": false,
+                "feedback": "Incorrect. Observing alpha decay shows that certain nuclei do indeed decay spontaneously, releasing kinetic energy."
+            },
+            {
+                "answer": "It predicts that all nuclei will emit alpha particles at the same energy level",
+                "correct": false,
+                "feedback": "Incorrect. Different nuclei have different mass deficits and thus different alpha decay energies."
+            },
+            {
+                "answer": "It suggests that beta decay is the only mode of decay for heavy nuclei",
+                "correct": false,
+                "feedback": "Incorrect. The LDM can also be used to analyze other decay modes; alpha decay is just one example."
+            }
+        ]
+    },
+    {
+        "question": "Why is the SEMF referred to as a 'semi-empirical' formula?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Because it is based on both theoretical considerations (liquid drop analogy) and fitted constants from experimental data",
+                "correct": true,
+                "feedback": "Correct. The SEMF uses theoretical insights but relies on empirical constants like  $ a_V, a_S, a_C, a_A, a_P $  for quantitative accuracy."
+            },
+            {
+                "answer": "Because it has no theoretical basis and is derived purely from experimental data",
+                "correct": false,
+                "feedback": "Incorrect. The LDM has a theoretical picture (liquid drop analogy) but requires empirical fitting."
+            },
+            {
+                "answer": "Because it is entirely theoretical and does not match experimental data",
+                "correct": false,
+                "feedback": "Incorrect. It is partially theoretical and partially empirical, and does match data fairly well."
+            },
+            {
+                "answer": "Because it only applies to half of the known nuclei",
+                "correct": false,
+                "feedback": "Incorrect. The SEMF is useful for a wide range of nuclei, though it doesn’t capture every detail."
+            }
+        ]
+    },
+    {
+        "question": "Which weaknesses of the SEMF does future study aim to address?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Explaining local spikes in the BE curve, non-spherical shapes, and nuclear quantum properties (spin, parity, magnetic moment)",
+                "correct": true,
+                "feedback": "Correct. Future models (e.g., Shell Model) aim to account for magic numbers, deformations, and quantum properties not explained by SEMF."
+            },
+            {
+                "answer": "Correcting the concept of short-range nuclear forces",
+                "correct": false,
+                "feedback": "Incorrect. Short-range nuclear forces are foundational to nuclear physics; the SEMF’s limitation lies more in quantum details."
+            },
+            {
+                "answer": "Removing the Coulomb term from consideration",
+                "correct": false,
+                "feedback": "Incorrect. The Coulomb term is essential to describing proton repulsion in nuclei."
+            },
+            {
+                "answer": "Disproving the existence of nuclear fission",
+                "correct": false,
+                "feedback": "Incorrect. Fission is an observed phenomenon that the SEMF helps to explain (though not with all details)."
             }
         ]
     }
 ]
+
+
+
+
+
+
+

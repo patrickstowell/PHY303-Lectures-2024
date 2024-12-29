@@ -9,8 +9,7 @@
 - {ref}`unit3:randomquiz`
 - {ref}`unit3:fullquiz`
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
-  - TBC
-  - TBC
+  - Shell model. [Martin] Chapter 7.3
 ```
 
 ### Introduction
@@ -35,7 +34,7 @@ This shell model idea is of course tied up with introducing Quantum Mechanics to
 As an example the simplest model for the Nuclear Well might be that associated with a Harmonic Oscillator, resulting in equally spaced energy levels throughout the well as shown in {numref}`harmonics`.
 
 :::{figure-md} harmonics
-<img src='image-19.png' width="70%" alt="Harmonic oscillator diagram">
+<img src='figure-unit3-quantumoscillator.png' width="70%" alt="Harmonic oscillator diagram">
 
 Reminder of harmonic oscillator definition. A potential well results in only discrete energy levels being allowed to be occupied with equal spacing between energy levels.
 :::
@@ -53,8 +52,8 @@ The SEMF does a good job on the basic shape, but a closer look reveals certain n
 
 In general we see nuclei with Magic Number N and/or Z have a higher B/A indicating they are more tightly bound.
 
-:::{figure-md} harmonics
-<img src='figures/semf_goodness_withpairing_ratio.png' width="70%" alt="SEMF Model comparison to data as a ratio">
+:::{figure-md} harmonicsoscdiagram
+<img src='figure-unit3-semf_goodness_withpairing_ratio.png' width="70%" alt="SEMF Model comparison to data as a ratio">
 
 Ratio of the predictions of the liquid drop model against observations as a function of atomic mass number. We see large deviations at low $A$ with an almost saw tooth pattern appears at higher $A$.
 :::
@@ -63,7 +62,11 @@ Ratio of the predictions of the liquid drop model against observations as a func
 ##### Odd-Even Parabolas
 A closer look at the chart of Nuclides shows that nuclei with N and Z away from the major numbers are more likely to be unstable. If we plot nuclei that lie on a line of a constant A, for example A=121 we find that odd and even A nuclei sit on two seperate parabola. Whilst our delta term in the SEMF can account for some of this it cannot account for the difference across all nuclei.
 
-![Alt text](image-21.png)
+:::{figure-md} bindingforisobars
+<img src='figure-unit3-isobar-binding.png' width="70%" alt="Binding curves for different isobars showing drop to point of stability">
+
+Binding Energy Curves for two fixed Atomic Mass range of nuclei. We reach a minima at a stable nuclei, but Odd-Even Nuclei show slightly different energies when moving between proton-Even or neutron-Even.
+:::
 
 Based on this we can make a prediction of which isotope of the given A is most stable against Nuclear Decay. From a parabola fit to the data shown of the form
 
@@ -98,13 +101,22 @@ $$
 \bf 2, 8, (14), 20, 28, 50, 82, 126
 $$
 
-![Alt text](image-78.png)
+
+:::{figure-md} abundanceevidence
+<img src='figure-unit3-abundancescanevi.png' width="70%" alt="Plot of abundance vs A showing spikes at magic nuclei">
+
+Relative Abundance of Nuclei vs A, shows peaks in the abundance close to magic nuclei which suggest potential shell closures making stable nuclei.
+:::
 
 ##### The Neutron Binding Energy
 
 Apart from the basic binding energy curve, we can look at for instance, the energy required to remove a single neutron from the nucleus vs the neutron number. The plot below shows by how much this differs from the SEMF prediction in MeV. What we see are  discontinuities up to 2 MeV at the Magic Numbers. This dependence of the energy to remove the outer neutron is strong evidence for a shell structure. A neutron just above a closed shell looks to be less tightly bound, reminiscent of the alkali metals in the chemical shell structure. This behavior is  believed to be due to **Shell Closures** - it is harder to remove a neutron from a closed shell.
 
-![Alt text](image-79.png)
+:::{figure-md} neutronsepvsenergy
+<img src='figure-unit3-neutronsepvsnevi.png' width="70%" alt="Neutron Sep. Energy vs Neutron Number showing shell closures">
+
+Neutron seperation energy vs Neutron Number. As we approach a shall closure the energy required to remove a neutron reaches a maximum.
+:::
 
 ##### Neutron Capture Energy
 
@@ -114,8 +126,12 @@ Opposite to the Neutron Binding Energy plot just shown is the Neutron Capture Cr
 ```{note}
 Note how the cross section is highest for nuclei well away from the Magic Numbers. An example is Cd, which is used widely as a Neutron Sheild in nuclear experiments.
 ```
-![Alt text](image-94.png)
 
+:::{figure-md} neutronxsecvsn
+<img src='figure-unit3-neutroncapturexsecevi.png' width="70%" alt="Neutron capture cross-section as a function of neutron number showing higher probability away from closures">
+
+Neutron capture cross-section (related to probability) as a function of N. As we move away from the shell closures the likelihood of a capture increases.
+:::
 
 ##### Electric Quadrupole Moments
 
@@ -124,9 +140,11 @@ As nuclei are charged then if this charge is not spherically distributed we migh
 In the plot below the EQM have been normalized to the size and charge of each nucleus and these so called Reduced Quadrupole Moments are plotted against the number of protons or neutrons - depending upon which is odd. Some EQM are very large, suggesting shapes which are strongly non-spherical.
 
 
+:::{figure-md} neutronxsecvsn
+<img src='figure-unit3-quadrupoleevi.png' width="70%" alt="Quadrupole Moment vs A showing that nuclei have zero moment (spherical) close to closures.">
 
-![Alt text](image-81.png)
-
+Reduced Quadrupole Moment vs A. A value of zero suggests a spherical nucleus.
+:::
 
 ##### Nuclear Excitation Energy
 
@@ -136,8 +154,13 @@ Here is an example plot for the excitation energies for the even-A isotopes of l
 
 The isotope Pb-208 is particularly unique in being Doubly Magic Z=82 and N=126. This is a Double Closed Shell Nucleus and it takes more than 2 MeV to raise it to the first excited state.
 
-![Alt text](image-82.png)
 
+
+:::{figure-md} nuclearexcitationevi
+<img src='image-82.png' width="70%" alt="Nuclear Excitation Energy for several nuclei">
+
+Nuclear Excitation Energy Diagram. As we reach a magic number, the energy required to excite the nucleus (move a nucleon in to a higher energy level) is significantly higher.
+:::
 
 ##### The existence of double magic nuclei
 So nuclei which have both neutron number and proton number equal to one of the Magic Numbers can be called Double Magic, and are found to be particularly stable.
@@ -146,7 +169,13 @@ An example is calcium. It has exceptionally stable Doubly Magic Nuclei - two of 
 
 These isotopes have Z=20 and N = 20 and 28, all three being magic numbers.
 
-![Alt text](image-95.png)
+
+:::{figure-md} doublemagicnuclei
+<img src='image-95.png' width="70%" alt="Double Magic Nuclei Diagram">
+
+Measured binding energy compared to the SEMF predictions. When the number of protons or neutrons reach a magic number we see an increase. When **both** are magic numbers, an even larger increase in binding energy is seen.
+:::
+
 
 
 ##### Decay Chains End with Magic Number Nuclei
@@ -164,7 +193,13 @@ $$
 \bf
 2,8,(14),20,28,50,82,128.
 $$
-![Alt text](image-90.png)
+
+:::{figure-md} shellrequirement
+<img src='image-90.png' width="70%" alt="Shell Model Spacing Requirement">
+
+Shell Model Spacing Requirement
+:::
+
 
 Our shell model will need to explain these characteristic numbers using QM to produce the quantized energy levels (shells), filling them with the correct number of states (nucleons) to reproduce the Magic Numbers. So our basic aim is to explain the Magic Numbers, i.e. all the Nuclear Energy Levels, and then hopefully make new predictions that can be tested.
 
@@ -343,7 +378,7 @@ Based on this a notation for labelling levels has been developed in Nuclear Phys
 
 
 :::{figure-md} nucleonnotation
-<img src='figures/FiguresSlides.013.png' width="60%" alt="Rutherford Form">
+<img src='figure-unit3-notation-explanation.png' width="60%" alt="Rutherford Form">
 
 Nuclear notation guide.
 :::

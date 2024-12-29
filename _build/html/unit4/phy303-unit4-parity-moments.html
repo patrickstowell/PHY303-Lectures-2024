@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -180,9 +181,6 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Nuclear Spin Moments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit5/phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit6/phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
-<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../unit7/phy303-unit7-reactions.html">7. Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit8/phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit9/phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
@@ -201,9 +199,13 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../unit2/phy303-unit2-review.html">Unit 2 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-problems.html">Unit 2 : Worked Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-additionalproblems.html">Unit 2 : Additional Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-random-quiz.html">Unit 2 : Random Quiz</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-full-quiz.html">Unit 2 : Full Quiz</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../unit3/phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -287,6 +289,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
 </ul>
 </details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/nucleus-shape.html">Nucleus Shape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/janis-viewer.html">JANIS Viewer</a></li>
 </ul>
 
     </div>
@@ -488,7 +500,7 @@
 <section id="nuclear-spin-example">
 <h3><span class="section-number">4.1.1. </span>Nuclear Spin Example<a class="headerlink" href="#nuclear-spin-example" title="Link to this heading">#</a></h3>
 <p>Here is an example for <span class="math notranslate nohighlight">\(^{15}_{8}\textnormal{O}\)</span>.</p>
-<p><img alt="Alt text" src="unit4/image-35.png" />
+<p><img alt="Alt text" src="../_images/image-35.png" />
 From the level diagram above, we predict that the nuclear spin of O-15 is <span class="math notranslate nohighlight">\(I=1/2\)</span> due to the unpaired neutron in the outer <span class="math notranslate nohighlight">\(1\textnormal{p}_{1/2}\)</span> level having a <span class="math notranslate nohighlight">\(j=1/2\)</span>. This is indeed what is measured in reality.</p>
 <p>Things get harder if instead we only have a partially filled outer shell but an odd number of nucleons. We can assign <span class="math notranslate nohighlight">\(I=j\)</span> of the unpaired nucleon again, but this does not work for all nuclei, and in some cases, we would need to try to sum up the entire shell structure to get a valid result.</p>
 <p>The main points here are that:</p>
@@ -501,7 +513,7 @@ From the level diagram above, we predict that the nuclear spin of O-15 is <span 
 <section id="nuclear-parity">
 <h3><span class="section-number">4.1.2. </span>Nuclear Parity<a class="headerlink" href="#nuclear-parity" title="Link to this heading">#</a></h3>
 <p>The next thing we can do with our shell model is predict the parity of the nucleus. Parity is a transformation whereby the sign of the coordinate system is changed, as below. The parity transformation changes a right-handed coordinate system into a left-handed coordinate system or vice-versa.</p>
-<p><img alt="Alt text" src="unit4/image-36.png" /></p>
+<p><img alt="Alt text" src="../_images/image-36.png" /></p>
 <p>As shown, the wave function of a nucleon in a stationary state can have either odd or even parity depending on what happens under the transformation. It’s convenient to think of a Parity Operator <span class="math notranslate nohighlight">\(P\)</span> with effect <span class="math notranslate nohighlight">\(P\Psi(r) = \Psi(-r)\)</span>. If <span class="math notranslate nohighlight">\(\Psi\)</span> has a unique parity, then <span class="math notranslate nohighlight">\(P\psi(r) = \pm \Psi(r)\)</span>, and parity <span class="math notranslate nohighlight">\(\pm1\)</span> are the eigenvalues of <span class="math notranslate nohighlight">\(P\)</span>. Parity is often denoted as <span class="math notranslate nohighlight">\(\pi\)</span>, so <span class="math notranslate nohighlight">\(\pi=\pm 1\)</span>.</p>
 <p>It is simple to find the parity of a nucleon; it’s just <span class="math notranslate nohighlight">\(\pi=(-1)^{l}\)</span> where <span class="math notranslate nohighlight">\(l\)</span> is the Orbital Angular Momentum. Again, remember from our notation the letter corresponds to the value of <span class="math notranslate nohighlight">\(l\)</span> (0-s, 1-p, 2-d, 3-f). Parity is a multiplicative quantity. The parity assignment of a nucleus, therefore, comes from the product of the parity of all the nucleons</p>
 <div class="math notranslate nohighlight" id="equation-paritycombination">
@@ -522,7 +534,7 @@ From the level diagram above, we predict that the nuclear spin of O-15 is <span 
 </ul>
 <p>This electrostatic repulsion energy between protons implies a decrease in the depth of the potential for protons, due to their interaction with all the other protons, as here:</p>
 <figure class="align-default" id="potentialdifferences">
-<a class="reference internal image-reference" href="unit4/image-96.png"><img alt="Spin orbit corrections" src="unit4/image-96.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-96.png"><img alt="Spin orbit corrections" src="../_images/image-96.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Diagram of differences in potential wells for protons and neutrons.</span><a class="headerlink" href="#potentialdifferences" title="Link to this image">#</a></p>
 </figcaption>
@@ -637,7 +649,7 @@ g_{s} = 5.85 ~~\textnormal{(proton)} ~~~~~~ g_{s} = -3.826 ~~\textnormal{(neutro
 <p>Unfortunately, as we can see in the figures below, in general, the calculated values lie within the appropriate maximum range of the Schmidt Lines set by the Odd nucleon but do not sit on the limits. The method can therefore be used to estimate the minimum and maximum magnetic moments for different nuclei but cannot necessarily predict their properties exactly. For instance, if instead, we take K-39, which has an odd proton in <span class="math notranslate nohighlight">\(d_{3/2}\)</span>. The calculation gives 0.09<span class="math notranslate nohighlight">\(\mu_N\)</span> compared to a measured value of 0.39<span class="math notranslate nohighlight">\(\mu_N\)</span>.</p>
 <p>The fact that the majority of nuclei lie between these two lines is indicative of a more complex mixing of states, for instance, such might be caused if the Shell model assumption that nuclei are in a spherically symmetric potential well is not always true.</p>
 <figure class="align-default" id="magmoments">
-<a class="reference internal image-reference" href="unit4/image-97.png"><img alt="Spin orbit corrections" src="unit4/image-97.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-97.png"><img alt="Spin orbit corrections" src="../_images/image-97.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Magnetic moments of even-Z odd-N nuclei in terms of Nuclear Magnetons. The lines are calculated and the points are experimental determinations.</span><a class="headerlink" href="#magmoments" title="Link to this image">#</a></p>
 </figcaption>
@@ -647,7 +659,7 @@ g_{s} = 5.85 ~~\textnormal{(proton)} ~~~~~~ g_{s} = -3.826 ~~\textnormal{(neutro
 <h3><span class="section-number">4.1.6. </span>Electric Quadrupole Moments<a class="headerlink" href="#electric-quadrupole-moments" title="Link to this heading">#</a></h3>
 <p>We now consider the static distribution of charge, rather than currents, in the nucleus. This leads us to the idea of the nuclear Electric Quadrupole Moment, a parameter which describes the shape of the nuclear charge distribution.</p>
 <p>If we consider the shape of nuclei in the shell model, the simplest case would be when the first shell is full, and we assume a spherical shape. Hence, we would expect a zero Electric Quadrupole Moment (EQM). If we, say, add one extra nucleon in the outer shell, then we would expect a non-spherical charge distribution to form and hence a finite EQM to appear. This is indeed the case, as seen in the plot here previously discussed. In the plot below we see how the EQM varies as a function nucleons and how some predictions of the EQM line up with observations.</p>
-<p><img alt="Alt text" src="unit4/image-43.png" /></p>
+<p><img alt="Alt text" src="../_images/image-43.png" /></p>
 <p>So how can we quantify this, firstly note that there are different types of electric moment. We could have an electric dipole moment, however as we only have positive charges of proton this does not exist in nuclei as there is no opposite charge in the nucleus that could sit on the other end of the dipole. This means only higher order types Quadrupole, Octupole, etc, are allowed. We can think of a quadrupole moment as the sum of two dipoles set antiparallel from one another.</p>
 <p>In the classic form we can describe the EQM for a quadrupole a:</p>
 <div class="math notranslate nohighlight" id="equation-quadrupoleestimate">
@@ -680,7 +692,7 @@ Q_{EQM} = - &lt; r^{2} &gt; \frac{2j-1}{2(j+1)}
 In this case charge is more concentrated on the <span class="math notranslate nohighlight">\(z\)</span> plane <span class="math notranslate nohighlight">\((z=r)\)</span> and <span class="math notranslate nohighlight">\(Q_{EQM}=+2&lt;r^{2}&gt;\)</span>.</p></li>
 </ol>
 <figure class="align-default" id="oddprotons">
-<a class="reference internal image-reference" href="unit4/image-98.png"><img alt="Spin orbit corrections" src="unit4/image-98.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-98.png"><img alt="Spin orbit corrections" src="../_images/image-98.png" style="width: 70%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Different shape states of nuclei with odd protons.</span><a class="headerlink" href="#oddprotons" title="Link to this image">#</a></p>
 </figcaption>
@@ -690,7 +702,7 @@ In this case charge is more concentrated on the <span class="math notranslate no
 <h4><span class="section-number">4.1.6.3. </span>Odd Neutrons<a class="headerlink" href="#odd-neutrons" title="Link to this heading">#</a></h4>
 <p>For neutrons, things start to get a bit stranger. Although the neutron is neutral, one might expect that an odd neutron in the outer shell outside the core would make no difference to <span class="math notranslate nohighlight">\(Q\)</span>. However, due to the nuclear force, the neutron will attract protons in the core and form a <em>ridge</em> or <em>tide</em> of nuclear material. In this case, we expect a small negative <span class="math notranslate nohighlight">\(Q\)</span>, similar to if we had an odd unpaired proton.</p>
 <figure class="align-default" id="oddneutrons">
-<a class="reference internal image-reference" href="unit4/image-99.png"><img alt="Spin orbit corrections" src="unit4/image-99.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-99.png"><img alt="Spin orbit corrections" src="../_images/image-99.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 4.4 </span><span class="caption-text">Different shape state of nuclei with odd neutrons.</span><a class="headerlink" href="#oddneutrons" title="Link to this image">#</a></p>
 </figcaption>

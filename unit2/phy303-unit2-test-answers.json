@@ -1,0 +1,184 @@
+[
+    {
+        "question": "What does the Hofstadter experiment tell us about the charge and mass distribution in nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Nucleons in nuclei are likely incompressible.",
+                "correct": true,
+                "feedback": "Correct. The Hofstadter experiment provides evidence that nucleons in nuclei are likely incompressible."
+            },
+            {
+                "answer": "Nuclei are composed entirely of electrons.",
+                "correct": false,
+                "feedback": "Incorrect. Nuclei are composed of protons and neutrons, not electrons."
+            },
+            {
+                "answer": "Nuclei do not have a defined structure.",
+                "correct": false,
+                "feedback": "Incorrect. The Hofstadter experiment indicates that nuclei do have a defined structure."
+            },
+            {
+                "answer": "Nuclei are very compressible.",
+                "correct": false,
+                "feedback": "Incorrect. Nuclei are likely incompressible according to the Hofstadter experiment."
+            }
+        ]
+    },
+    {
+        "question": "What is a form factor $F(q)$ and how does it relate to the structure of the nucleus?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "A function that provides information on the structure of the nucleus",
+                "correct": true,
+                "feedback": "Correct. A form factor $F(q)$ provides additional information on how the distributed structure of the nucleus modifies the interaction probability."
+            },
+            {
+                "answer": "A measure of the speed of electrons in a nucleus",
+                "correct": false,
+                "feedback": "Incorrect. A form factor does not measure the speed of electrons in a nucleus."
+            },
+            {
+                "answer": "A constant value for all nuclei",
+                "correct": false,
+                "feedback": "Incorrect. A form factor varies depending on the structure of the nucleus."
+            },
+            {
+                "answer": "A function that measures the temperature of a nucleus",
+                "correct": false,
+                "feedback": "Incorrect. A form factor is not related to the temperature of a nucleus."
+            }
+        ]
+    },
+    {
+        "question": "How is the modified cross-section for a target with a distributed charge distribution written?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "$d\\sigma = d\\sigma_{{point}} \\cdot |F(q)|^2$",
+                "correct": true,
+                "feedback": "Correct. The modified cross-section for a target with a distributed charge distribution is $d\\sigma = d\\sigma_{{point}} \\cdot |F(q)|^2$."
+            },
+            {
+                "answer": "$d\\sigma = d\\sigma_{{point}} + F(q)$",
+                "correct": false,
+                "feedback": "Incorrect. The modified cross-section involves the product, not the sum, of $d\\sigma_{{point}}$ and $|F(q)|^2$."
+            },
+            {
+                "answer": "$d\\sigma = F(q) \\cdot d\\sigma_{{point}}$",
+                "correct": false,
+                "feedback": "Incorrect. The form factor $|F(q)|^2$ is squared in the correct equation."
+            },
+            {
+                "answer": "$d\\sigma = d\\sigma_{{point}} \\cdot q^2$",
+                "correct": false,
+                "feedback": "Incorrect. The form factor $|F(q)|^2$ should be used, not $q^2$."
+            }
+        ]
+    },
+    {
+        "question": "How is the four-momentum transfer $q$ of the interaction calculated?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "$q = p_{{in}} - p_{{out}}$",
+                "correct": true,
+                "feedback": "Correct. The four-momentum transfer $q$ is calculated as $q = p_{{in}} - p_{{out}}$."
+            },
+            {
+                "answer": "$q = p_{{in}} + p_{{out}}$",
+                "correct": false,
+                "feedback": "Incorrect. The four-momentum transfer is the difference, not the sum, of $p_{{in}}$ and $p_{{out}}$."
+            },
+            {
+                "answer": "$q = p_{{in}} \\\\cdot p_{{out}}$",
+                "correct": false,
+                "feedback": "Incorrect. The four-momentum transfer is not the product of $p_{{in}}$ and $p_{{out}}$."
+            },
+            {
+                "answer": "$q = \\frac{p_{{in}}}{p_{{out}}}$",
+                "correct": false,
+                "feedback": "Incorrect. The four-momentum transfer is not the ratio of $p_{{in}}$ and $p_{{out}}$."
+            }
+        ]
+    },
+    {
+        "question": "What does the Fourier transform of the density distribution represent in terms of the form factor?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The form factor $F(q)$",
+                "correct": true,
+                "feedback": "Correct. The Fourier transform of the density distribution represents the form factor $F(q)$."
+            },
+            {
+                "answer": "The charge distribution $\\rho(r)$",
+                "correct": false,
+                "feedback": "Incorrect. The Fourier transform of the charge distribution $\\rho(r)$ gives the form factor $F(q)$."
+            },
+            {
+                "answer": "The position $r$",
+                "correct": false,
+                "feedback": "Incorrect. The position $r$ is not the result of the Fourier transform of the density distribution."
+            },
+            {
+                "answer": "The Mott prediction",
+                "correct": false,
+                "feedback": "Incorrect. The Mott prediction is not the result of the Fourier transform of the density distribution."
+            }
+        ]
+    },
+    {
+        "question": "What would the form factor be for a nucleus with a point charge at the center?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "$F(q) = 1$",
+                "correct": true,
+                "feedback": "Correct. The Fourier transform of a delta function is just 1, so the form factor $F(q)$ would be 1 for a nucleus with a point charge at the center."
+            },
+            {
+                "answer": "$F(q) = q$",
+                "correct": false,
+                "feedback": "Incorrect. The form factor $F(q)$ for a point charge is not $q$."
+            },
+            {
+                "answer": "$F(q) = \\rho(r)$",
+                "correct": false,
+                "feedback": "Incorrect. The form factor $F(q)$ for a point charge is not the charge distribution $\\rho(r)$."
+            },
+            {
+                "answer": "$F(q) = \\delta(q)$",
+                "correct": false,
+                "feedback": "Incorrect. The Fourier transform of a delta function is $1$, not $\\delta(q)$."
+            }
+        ]
+    },
+    {
+        "question": "What was found during early electron scattering experiments at higher values of $q$?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Bumps or ridges in the measurements of the cross-section",
+                "correct": true,
+                "feedback": "Correct. At higher values of $q$, bumps or ridges were observed in the measurements of the cross-section during early electron scattering experiments."
+            },
+            {
+                "answer": "A perfectly smooth cross-section",
+                "correct": false,
+                "feedback": "Incorrect. Bumps or ridges, not a perfectly smooth cross-section, were observed at higher values of $q$."
+            },
+            {
+                "answer": "No scattering at all",
+                "correct": false,
+                "feedback": "Incorrect. Scattering was observed, showing bumps or ridges in the cross-section."
+            },
+            {
+                "answer": "Constant uniform density",
+                "correct": false,
+                "feedback": "Incorrect. Constant uniform density would not show bumps or ridges in the cross-section."
+            }
+        ]
+    }
+]

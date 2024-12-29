@@ -1,7 +1,7 @@
 (unit1:terms)=
 # Unit 1 : Equations & Terms
 
-### Equations
+## Equations
 To aid with exam revision below is a list of all equations that you should learn for this unit in the course.
 
 **Atomic Mass Unit**

@@ -9,11 +9,11 @@
 - {ref}`unit1:randomquiz`
 - {ref}`unit1:fullquiz`
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
-  - **Martin Chapter 2.2**
-  - **Young and Freedman. Chapter 43.1**
+  - Units, nuclear scale, nomenclature and definition: Young and Freedman. Chapter 43.1
+  - Nuclear sizes and cross sections, Martin Chapter 2.2
 ```
 
-### Introduction
+## Introduction
 
 The modern field of nuclear physics really began with the first detection of radioactivity by Becquerel, who observed that photographic plates fogged up in proximity to uranium ore. Eventually this was determined to be due to spontaneous decay of nuclei in the ore. Rutherford went on and categorized emissions of radioactive substances, working to understand the properties of alpha, beta, and gamma ray particles. 
 
@@ -40,9 +40,9 @@ To begin let's go over some fundamental nonmeclature. **Isotopes** are nuclei of
 
 Since the elemental symbol is determined by the number of protons typically we ignore the bottom number to save writing it every time. For example for uranium the following five terms are all valid 
 
-$$
+\begin{equation}
 \textnormal{U238}~=~{\bf _{92}^{238}U}~=~{\bf ^{238}U}~=~\textnormal{U-238}~=~\textnormal{Uranium-238}.
-$$  
+\end{equation}
 
 Similarly we don't need to specify the number of neutrons, $N$, explicitly each time as this can be determined from $A=Z+N$. Throughout this course the short hand form of $^{A}{\bf S}$ or $\textnormal{S-A}$ will be used to refer to nuclei so you should familiarize yourself with it.
 
@@ -155,7 +155,7 @@ $\Delta Z=-2, \Delta N=-2$
    $\Delta Z=-1, \Delta N=0$
 
 
-The possible steps for these on our *chess board of decays* are shown in {numref}`decay-step-all`.
+The possible steps for these on our *chess board of decays* are shown in.
 
 :::{figure-md} decay-step-all
 <img src='figure-unit1-radiationtransitionsmovement.png' width="100%" alt="Possible decay steps in a chart of nuclides">
@@ -439,9 +439,12 @@ Hyperbolic Trajectory of scattering in Rutherford scattering assuming charged de
 
 ```{note}
 The fine structure constant defines the strength of electromagnetic interactions.
-$
+
+```{math}
+:label: atomicmassunit
+\begin{equation}
 \alpha = \frac{e^{2}}{\hbar c 4\pi \epsilon_0}
-$
+\end{equation}
 ```
 
 {numref}`rutherfordform predicts a form the cross section vs scattering as shown opposite.

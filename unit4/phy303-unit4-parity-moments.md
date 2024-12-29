@@ -13,7 +13,7 @@
   - TBC
 ```
 
-### Nuclear Properties
+## Nuclear Properties
 Now that we have our shell model, which describes our observed magic numbers, we can start making predictions for other nuclear properties such as the Nuclear Spin, $I$. This quantity comes from the principle of summing up all the individual Total Angular Momentum numbers $j$ of all the nucleons, doing this separately for neutrons and protons.
 
 However, we can simplify things hugely because the $j$ values are half-integer and in any filled shell, all the nucleons there will pair up as positive-negative pairs and so contribute nothing to the overall total. So, we really only need to worry about the nucleons in the outer shell. If this shell is full, then again the total contribution will be zero, and we have $I=0$. In fact, in general, if we have even N and even Z, then $I=0$ as all nucleons will form spin up-down combinations.
@@ -24,7 +24,7 @@ That is, if we fill up the levels with nucleons but have a leftover nucleon, alo
 
 Similarly, consider a case where all the levels are filled perfectly for one class of nucleons (say the protons) but for the other (say neutrons), we are just one nucleon short of filling the last level (like having a nucleon "hole" in that shell). In this case, the Nuclear Spin just takes on the level spin assignment appropriate to that missing nucleon.
 
-#### Nuclear Spin Example
+### Nuclear Spin Example
 
 Here is an example for $^{15}_{8}\textnormal{O}$.
 
@@ -38,7 +38,7 @@ The main points here are that:
 - Odd-even nuclei typically have half-integer spins which can range from 3/2, 5/2, 1/2. In simple cases, the spin of the missing nucleon can give $I$.
 - Odd-odd nuclei can achieve spin states much higher such as 1 or 3 but are more complex and typically require a full evaluation of the expectation values of the possible spin states.
 
-#### Nuclear Parity
+### Nuclear Parity
 
 The next thing we can do with our shell model is predict the parity of the nucleus. Parity is a transformation whereby the sign of the coordinate system is changed, as below. The parity transformation changes a right-handed coordinate system into a left-handed coordinate system or vice-versa.
 
@@ -61,7 +61,7 @@ When considering parity alongside the Nuclear Spin, the nomenclature is to write
 
 When trying to estimate parity, we can simplify things in the same way as we did for nuclear spin. If the nucleons all pair up, then we end up with even parity. If we are left with an unpaired nucleon, then the parity comes from the $l$ value appropriate to the level in which that nucleon sits. So, for instance, returning to our example of O-15 above, the unpaired nucleon sits in the p-level, $l=1$, so the parity of the nucleus is $(-1)^{l}=-1$. This means it has odd parity, and we would write both its spin and parity state as: $I^{\pi}=\frac{1}{2}^{-}$.
 
-####  Shell Challenges
+###  Shell Challenges
 
 So, the shell model gives us a pretty good description of nuclei based on QM principles. It provides a solid basis for understanding the Magic Numbers, Nuclear Spin, and Parity of Nuclei. However, it's worth noting a few remaining issues that can cause problems. This leads to several corrections usually being applied to the potential to better fit observed data.
 
@@ -82,7 +82,7 @@ Diagram of differences in potential wells for protons and neutrons.
 
 If all these final tweaks are taken into account, the shell model becomes a powerful complement to the LDM (Liquid Drop Model) and SEMF (Semi-Empirical Mass Formula) models, based on the idea that the total angular momentum of each single nucleon is the vector sum of its spin and orbital angular momentum.
 
-#### Shell Model Summary
+### Shell Model Summary
 
 Taking the Shell Model nucleons together leads to nuclear levels. Any level (specified by $n$, $l$, $j$) which is fully occupied (i.e., has 2j+1 occupants) contributes nothing to the total spin as the total angular momenta $j$ of the occupants sums to zero. (j+1) is an even number for all single particle levels, i.e., in a model where single particles orbit in the potential of all others. Thus, in nuclei where protons and neutrons separately fully occupy shells (even-even), nuclear spin should be zero, and it is.
 
@@ -104,7 +104,7 @@ Here is a table showing a few of the successful predictions.
 
 In the next section, we will go further to look at "Collective Models" that can go some way to solving these issues.
 
-#### Towards Collective Nuclear Models
+### Towards Collective Nuclear Models
 
 It is now worth exploring the Shell Model a bit more, to see how far we can push predictions with it, to see how and when things break down and how this forces us towards a Collective Model. A first property to examine is the Magnetic Moments of Nuclei.
 
@@ -228,7 +228,7 @@ Magnetic moments of even-Z odd-N nuclei in terms of Nuclear Magnetons. The lines
 
 
 
-#### Electric Quadrupole Moments
+### Electric Quadrupole Moments
 
 We now consider the static distribution of charge, rather than currents, in the nucleus. This leads us to the idea of the nuclear Electric Quadrupole Moment, a parameter which describes the shape of the nuclear charge distribution.
 
@@ -273,10 +273,10 @@ Q_{EQM} = - < r^{2} > \frac{2j-1}{2(j+1)}
 
 where $j$ is the Angular Momentum Quantum Number of the odd particle (equivalent to the Nuclear Spin) and $r$ the radius. 
 
-##### Even Nuclei
+#### Even Nuclei
 Based on the equations for EQM we expect that for Even-Even Nuclei $Q_{EQM}$ should be around zero.
 
-##### Odd Protons
+#### Odd Protons
 If we have unpaired protons then we have two possible cases:
 1. If we have a single odd proton in an outer shell in an orbit of given $j$, the maximum projection $m_j$ will put vector $j$ close to alignment with the $z$ axis. In this case the proton will be in orbit int the $x-y$ plane. This is equivalent to a so called *Oblate* charge distribution and $Q_{EQM}<0$. Note how in this case, with charge concentrated on the $z-y$ plane $(z=0)$ then $Q_{EQM} = -<r^{2}>$
 2. If the proton is missing from a closed shell (i.e. a kind of proton hole), then we get a *Prolate* charge distribution and $Q_{EQM}>0$.
@@ -289,7 +289,7 @@ Different shape states of nuclei with odd protons.
 :::
 
 
-##### Odd Neutrons
+#### Odd Neutrons
 
 For neutrons, things start to get a bit stranger. Although the neutron is neutral, one might expect that an odd neutron in the outer shell outside the core would make no difference to $Q$. However, due to the nuclear force, the neutron will attract protons in the core and form a *ridge* or *tide* of nuclear material. In this case, we expect a small negative $Q$, similar to if we had an odd unpaired proton.
 
@@ -314,7 +314,7 @@ But what if we have several nucleons in a partially filled outer shell? As with 
 
 where $Q_{sp}$ is the Single Particle Value as mentioned above, and $n$ is the number of nucleons in the partially filled shell. Here, $n$ can range from $1$ to $2j$. So, when $n=2j$, a shell that is only one nucleon from being filled, we get $Q_{EQM}=-Q_{sp}$.
 
-#### EQM Predictions
+### EQM Predictions
 Using the results above with $r=r_{0}A^{1/3}$ etc., we can calculate the $Q$ values for different nuclei and compare them with the measured values. Some results are shown in the table below. Generally, at least the correct sign is found, but often the real value is larger than expected.
 
 
@@ -345,7 +345,7 @@ Things work best when we consider nuclei close to the magic numbers in most case
 
 We see good agreeement for Double Magic Number nuclei plus or minus one proton but poor agreemenet when odd neutron's are considered in O-17 and terrible agreement with a big nucleus with a partly filled outer shell such as Lu-175. In general nuclei with atomic mass numbers in the range $150<A<190$ and $A>200$ have very large Quadrupole moments (the break here is due to a magic number). 
 
-#### Summary
+### Summary
 
 Before moving on, let's summarize the shell model conclusions. The shell model is a powerful, albeit incomplete, complement to the Liquid Drop Model (LDM) and the Semi-Empirical Mass Formula (SEMF) that can:
 

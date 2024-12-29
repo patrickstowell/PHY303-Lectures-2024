@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -173,16 +174,13 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../unit1/phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit3/phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit4/phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit5/phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit6/phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
-<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../unit7/phy303-unit7-reactions.html">7. Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit8/phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit9/phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
@@ -201,9 +199,13 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../unit2/phy303-unit2-review.html">Unit 2 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-problems.html">Unit 2 : Worked Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-additionalproblems.html">Unit 2 : Additional Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-random-quiz.html">Unit 2 : Random Quiz</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-full-quiz.html">Unit 2 : Full Quiz</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../unit3/phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -287,6 +289,16 @@
 <li class="toctree-l2"><a class="reference internal" href="phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
 </ul>
 </details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/nucleus-shape.html">Nucleus Shape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/janis-viewer.html">JANIS Viewer</a></li>
 </ul>
 
     </div>
@@ -518,7 +530,7 @@
 <h3><span class="section-number">11.1.1. </span>Basic energetics of nuclear power<a class="headerlink" href="#basic-energetics-of-nuclear-power" title="Link to this heading">#</a></h3>
 <p>If we plot the binding energy per nucleon against the mass number (Figure 10.1), we find a broad maximum around iron.  This implies that, in principle, it is energetically favourable for elements lighter than iron to fuse and for elements heavier than iron to split into smaller nuclei (by fission or, for nuclei not much heavier than iron, by <span class="math notranslate nohighlight">\(α\)</span> decay).  If the elements formed in thermodynamic equilibrium, we would expect the elements around iron to be most abundant, but in nature the temperatures needed for this only occur in the interior of supernova explosions (producing a pronounced “iron peak” in the elemental abundances, see right panel of Figure 10.1).</p>
 <figure class="align-default" id="spontfission">
-<a class="reference internal image-reference" href="unit11/image-74.png"><img alt="Graphs of spontaneous fission" src="unit11/image-74.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-74.png"><img alt="Graphs of spontaneous fission" src="../_images/image-74.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 11.1 </span><span class="caption-text">Left, binding energy per nucleon (MeV) against mass number A. (Data from Krane.) Right: solar system abundances, relative to hydrogen (set equal to 10<span class="math notranslate nohighlight">\(^{12}\)</span>).  The lines join elements with even Z (green) and odd Z (red).  The iron peak created by supernovae can be clearly seen.  (Data from Lodders, ApJ 591 (2003) 1220, table 2.*)</span><a class="headerlink" href="#spontfission" title="Link to this image">#</a></p>
 </figcaption>
@@ -540,10 +552,10 @@ and <span class="math notranslate nohighlight">\( E_s = a_s A^{2/3} \left(1 + \f
 <p>(the exact number depends on the coefficients you adopt for the semi-empirical mass formula: Martin’s coefficients give 49, Krane’s give 47).</p>
 <p>This condition is not met until well into the transuranic region, somewhere around <span class="math notranslate nohighlight">\(A = 300\)</span>.  However, it is an unduly pessimistic estimate, because it does not take into account quantum tunnelling: nuclei that have small fission barriers may be able to decay by spontaneous fission even though this does not look possible in the classical liquid drop model.  In addition, some heavy nuclei are not spherical in the ground state, and we should also consider the effects of nuclear structure as described by the shell model.  One effect of this is to make fission much more likely for even-even than for even-odd nuclei: for example, <span class="math notranslate nohighlight">\(^{256}_{100}\textnormal{Fm}\)</span> has a spontaneous fission half-life of 2.8 hours, whereas <span class="math notranslate nohighlight">\(^{257}_{100}\textnormal{Fm}\)</span> (which decays primarily by α emission) has a spontaneous fission half-life of 131 years.  This appears to be related to the effect of the spin of the unpaired neutron.  This feature is also seen in induced fission: neutron capture by <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span>, producing the even-even nucleus <span class="math notranslate nohighlight">\(^{236}\textnormal{U}\)</span>, is much more likely to induce fission than neutron capture by <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span>.</p>
 <p>The effects of quantum tunnelling, non-spherical nuclei and shell corrections can be seen in Figure 10.2.Spontaneous fission becomes a viable decay mode for <span class="math notranslate nohighlight">\( Z^2 / A \geq 0.75\left(Z^{2}/A\right)_{\text{crit}} \)</span> (though it should be noted that the dominant decay mode for nearly all these very heavy nuclei remains α-decay).</p>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="unit11/image-12.png"><img alt="Graphs of spontaneous fission" src="unit11/image-12.png" style="width: 100%;" /></a>
+<figure class="align-default" id="spontfission2">
+<a class="reference internal image-reference" href="../_images/image-12.png"><img alt="Graphs of spontaneous fission" src="../_images/image-12.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 11.2 </span><span class="caption-text">Spontaneous fission, plotted against fissility parameter  (which in this paper is taken as 50.883).  The left panel shows the height of the fission barrier, compared to the liquid drop model (LDM) prediction.  Note that above uranium it settles down to around 6 MeV.The right panel shows the spontaneous fission half-life.  “SF-isomers” are non-spherical excited states which have double-humped fission barriers, greatly increasing the tunnelling probability.  The superheavy elements 112, 114 and 116 are predicted to be more stable against fission because of a neutron magic number at N = 162. Figure from Oganessian and Utyonkov, Rep. Prog. Phys. 78 (2015) 036301.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.2 </span><span class="caption-text">Spontaneous fission, plotted against fissility parameter  (which in this paper is taken as 50.883).  The left panel shows the height of the fission barrier, compared to the liquid drop model (LDM) prediction.  Note that above uranium it settles down to around 6 MeV.The right panel shows the spontaneous fission half-life.  “SF-isomers” are non-spherical excited states which have double-humped fission barriers, greatly increasing the tunnelling probability.  The superheavy elements 112, 114 and 116 are predicted to be more stable against fission because of a neutron magic number at N = 162. Figure from Oganessian and Utyonkov, Rep. Prog. Phys. 78 (2015) 036301.</span><a class="headerlink" href="#spontfission2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -557,7 +569,7 @@ and <span class="math notranslate nohighlight">\( E_s = a_s A^{2/3} \left(1 + \f
 <h4><span class="section-number">11.2.1.3. </span>Characteristics of fission products<a class="headerlink" href="#characteristics-of-fission-products" title="Link to this heading">#</a></h4>
 <p>Fission generally produces two fission fragments, one with atomic mass around <span class="math notranslate nohighlight">\(A=139\)</span> and the other with whatever is left over (so the mass of the lighter fragment increases linearly with the mass of the fission parent), plus around 1–4 prompt neutrons.  The mean number of neutrons increases with the mass of the parent, as shown in figure 10.3.</p>
 <figure class="align-default" id="neutronyield">
-<a class="reference internal image-reference" href="unit11/image-13.png"><img alt="Graphs of spontaneous fission" src="unit11/image-13.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-13.png"><img alt="Graphs of spontaneous fission" src="../_images/image-13.png" style="width: 50%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 11.3 </span><span class="caption-text">neutron yield from fission.  Note that nuclear physicists call this quantity ν̅: very unhelpful from a particle physicist’s perspective, since reactors also emit antineutrinos!From Svirikhin et al, Eur. Phys. J. A 44 (2010) 393.</span><a class="headerlink" href="#neutronyield" title="Link to this image">#</a></p>
 </figcaption>
@@ -653,7 +665,7 @@ Natural uranium does not spontaneously initiate chain reactions (fortunately), s
 <section id="pressurised-water-reactor-pwr">
 <h4><span class="section-number">11.2.4.1. </span>Pressurised water reactor (PWR)<a class="headerlink" href="#pressurised-water-reactor-pwr" title="Link to this heading">#</a></h4>
 <figure class="align-default" id="pwr">
-<a class="reference internal image-reference" href="unit11/image-14.png"><img alt="Graphs of spontaneous fission" src="unit11/image-14.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-14.png"><img alt="Graphs of spontaneous fission" src="../_images/image-14.png" style="width: 50%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 11.4 </span><span class="caption-text">schematic diagram of a PWR, showing main components.  From https://world-nuclear.org.</span><a class="headerlink" href="#pwr" title="Link to this image">#</a></p>
 </figcaption>
@@ -666,7 +678,7 @@ PWRs require enriched fuel.  A typical large power-station reactor contains 80�
 <section id="boiling-water-reactor-bwr">
 <h4><span class="section-number">11.2.4.2. </span>Boiling water reactor (BWR)<a class="headerlink" href="#boiling-water-reactor-bwr" title="Link to this heading">#</a></h4>
 <figure class="align-default" id="bwr">
-<a class="reference internal image-reference" href="unit11/image-15.png"><img alt="Graphs of spontaneous fission" src="unit11/image-15.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-15.png"><img alt="Graphs of spontaneous fission" src="../_images/image-15.png" style="width: 50%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 11.5 </span><span class="caption-text">schematic diagram of a BWR, showing main components.  From https://world-nuclear.org.</span><a class="headerlink" href="#bwr" title="Link to this image">#</a></p>
 </figcaption>
@@ -678,7 +690,7 @@ PWRs require enriched fuel.  A typical large power-station reactor contains 80�
 <section id="pressurised-heavy-water-reactor-phwr">
 <h4><span class="section-number">11.2.4.3. </span>Pressurised heavy-water reactor (PHWR)<a class="headerlink" href="#pressurised-heavy-water-reactor-phwr" title="Link to this heading">#</a></h4>
 <figure class="align-default" id="phwr">
-<a class="reference internal image-reference" href="unit11/image-16.png"><img alt="Graphs of spontaneous fission" src="unit11/image-16.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-16.png"><img alt="Graphs of spontaneous fission" src="../_images/image-16.png" style="width: 50%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 11.6 </span><span class="caption-text">schematic diagram of a PHWR, showing main components.  From https://world-nuclear.org.</span><a class="headerlink" href="#phwr" title="Link to this image">#</a></p>
 </figcaption>
@@ -690,7 +702,7 @@ PWRs require enriched fuel.  A typical large power-station reactor contains 80�
 <section id="advanced-gas-cooled-reactor-agr">
 <h4><span class="section-number">11.2.4.4. </span>Advanced gas-cooled reactor (AGR)<a class="headerlink" href="#advanced-gas-cooled-reactor-agr" title="Link to this heading">#</a></h4>
 <figure class="align-default" id="agr">
-<a class="reference internal image-reference" href="unit11/image-17.png"><img alt="Graphs of spontaneous fission" src="unit11/image-17.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-17.png"><img alt="Graphs of spontaneous fission" src="../_images/image-17.png" style="width: 50%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 11.7 </span><span class="caption-text">schematic diagram of a AGR, showing main components.  From https://world-nuclear.org.</span><a class="headerlink" href="#agr" title="Link to this image">#</a></p>
 </figcaption>
@@ -713,7 +725,7 @@ PWRs require enriched fuel.  A typical large power-station reactor contains 80�
 <h3><span class="section-number">11.2.6. </span>A natural nuclear reactor (not examinable)<a class="headerlink" href="#a-natural-nuclear-reactor-not-examinable" title="Link to this heading">#</a></h3>
 <p>We have said that natural uranium cannot sustain a chain reaction, and most nuclear reactor designs require enriched uranium.  However, the half-life of <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> is much less than the half-life of 238U, so if we go back in time the concentration of <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> in natural uranium must get higher.  Natural uranium two or three billion years ago would have a composition similar to reactor-grade enriched uranium today.  So, could this have sustained a natural chain reaction?</p>
 <figure class="align-default" id="naturalfission">
-<a class="reference internal image-reference" href="unit11/image-18.png"><img alt="Graphs of spontaneous fission" src="unit11/image-18.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-18.png"><img alt="Graphs of spontaneous fission" src="../_images/image-18.png" style="width: 50%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 11.8 </span><span class="caption-text">geology of the Oklo uranium mine, showing the locations of the natural nuclear reactors.  ‘FA’, ‘FB’ are specific geological units.From Gauthier-Lafaye, Holliger and Blanc, Geochim. Cosmochim. Acta 60 (1996) 4831.</span><a class="headerlink" href="#naturalfission" title="Link to this image">#</a></p>
 </figcaption>
@@ -827,10 +839,10 @@ R_{12} = n_1 n_2 ⟨σv⟩.
 <p>This means that for a given temperature, the particles that fuse actually come from a fairly restricted energy range in the tail of the Maxwell-Boltzmann distribution.</p>
 <p>Calculating <span class="math notranslate nohighlight">\( \langle \sigma v \rangle \)</span> for the candidate fusion reactions listed in the previous section gives the results shown in figure 10.9. There is a clear winner: d-t fusion has the highest peak reactivity and turns on at the lowest temperature. The effect of the higher Coulomb barrier for the two aneutronic reactions is clearly seen: <span class="math notranslate nohighlight">\(\textnormal{p-}^{11}\textnormal{B}\)</span> fusion in particular requires temperatures about ten times higher than d-t fusion.</p>
 <p>The temperatures in figure 10.9 are shown in keV. The conversion uses <span class="math notranslate nohighlight">\( E = k_B T \)</span>, so <span class="math notranslate nohighlight">\(1\)</span> keV = <span class="math notranslate nohighlight">\(11.6\times 10^6\)</span> K (the temperature of the core of the Sun is therefore of order 1 keV). For a viable fusion reactor we will need to achieve temperatures of at least 10 keV; 20 or 30 keV would be better.</p>
-<figure class="align-default" id="id2">
+<figure class="align-default" id="naturalfission2">
 <a class="reference internal image-reference" href="unit11/image-150.png"><img alt="Graphs of spontaneous fission" src="unit11/image-150.png" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 11.9 </span><span class="caption-text">Reactivity for different candidate fusion reactions, as a function of temperature.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.9 </span><span class="caption-text">Reactivity for different candidate fusion reactions, as a function of temperature.</span><a class="headerlink" href="#naturalfission2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>

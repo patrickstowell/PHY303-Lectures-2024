@@ -1,6 +1,186 @@
 [
     {
-        "back": "No",
-        "front": "Has this unit quiz/flashcards been setup?"
+        "back": "Nucleons in nuclei are likely incompressible.",
+        "front": "What does the Hofstadter experiment tell us about the charge and mass distribution in nuclei?"
+    },
+    {
+        "back": "A function that provides information on the structure of the nucleus",
+        "front": "What is a form factor  $ F(q) $  and how does it relate to the structure of the nucleus?"
+    },
+    {
+        "back": " $ d\\sigma = d\\sigma_{{point}} \\cdot |F(q)|^2 $ ",
+        "front": "How is the modified cross-section for a target with a distributed charge distribution written?"
+    },
+    {
+        "back": " $ q = p_{in} - p_{out} $ ",
+        "front": "How is the four-momentum transfer $ q $  of the interaction calculated?"
+    },
+    {
+        "back": "The form factor  $ F(q) $ ",
+        "front": "What does the Fourier transform of the density distribution represent in terms of the form factor?"
+    },
+    {
+        "back": " $ F(q) = 1 $ ",
+        "front": "What would the form factor be for a nucleus with a point charge at the center?"
+    },
+    {
+        "back": "Bumps or ridges in the measurements of the cross-section",
+        "front": "What was found during early electron scattering experiments at higher values of  $ q $ ?"
+    },
+    {
+        "back": "Top-Hat Distribution",
+        "front": "What is the simplest model proposed for the underlying distribution of charge in the nucleus?"
+    },
+    {
+        "back": "Bumps or ridges in the measurements of the cross-section",
+        "front": "What observation was made during early electron scattering experiments at higher values of  $ q $ ?"
+    },
+    {
+        "back": "They indicate a top-hat distribution in the center with a more fuzzy form at the edges",
+        "front": "How do the structures observed in the cross-section measurements indicate the charge distribution in the nucleus?"
+    },
+    {
+        "back": "Saxon-Woods form",
+        "front": "What form provides a better fit to the data than the simple top-hat distribution?"
+    },
+    {
+        "back": " $ \\rho(r) = \\frac{\\rho_0}{1 + \\exp\\left(\\frac{r - R}{a}\\right)} $ ",
+        "front": "How is the Saxon-Woods potential parameterized in terms of the radius  $  r  $ ?"
+    },
+    {
+        "back": "The top-hat part of the charge density distribution gets slightly wider, but the skin thickness remains mostly constant",
+        "front": "How does the charge density versus distance  $ r $  from the center of the nucleus change with increasing nucleus size?"
+    },
+    {
+        "back": " $ R $  represents the edge of the nucleus, and  $ a $  represents the Skin or Surface Thickness",
+        "front": "What do the parameters  $ R $  and  $ a $  represent in the Saxon-Woods potential?"
+    },
+    {
+        "back": " $ \\rho_c(r) = \\frac{\\rho_{c0}}{1 + \\exp\\left(\\frac{r - R_c}{a_c}\\right)} $ ",
+        "front": "What is the expression for the charge density distribution?"
+    },
+    {
+        "back": "Because  $ R_c $  tends away from  $ r $ ",
+        "front": "Why do we expect  $ \\rho_{c0} $  to be lower for heavy nuclei?"
+    },
+    {
+        "back": " $ \\rho_m(r) = \\frac{\\rho_{m0}}{1 + \\exp\\left(\\frac{r - R_m}{a_m}\\right)} $ ",
+        "front": "What is the expression for the mass density distribution?"
+    },
+    {
+        "back": "Modification is needed due to neutrons having zero charge",
+        "front": "What modification is needed between mass distributions and charge distributions?"
+    },
+    {
+        "back": "The parameter values are quite similar in both cases",
+        "front": "How do the parameter values for charge and mass distributions compare?"
+    },
+    {
+        "back": "Both scale as  $ A^{1/3} $ ",
+        "front": "How do the charge radius and mass radius scale?"
+    },
+    {
+        "back": "The central densities are constant, independent of how many nucleons there are in the nucleus",
+        "front": "What is observed about the central densities of nuclei?"
+    },
+    {
+        "back": "The studies generally found a good fit",
+        "front": "What did studies of electron scattering data generally find about the fit across many nuclei?"
+    },
+    {
+        "back": "The Incompressible Nucleus",
+        "front": "What fundamental idea in nuclear physics is pointed at by the constancy of central densities?"
+    },
+    {
+        "back": "It is a positive term proportional to the number of nucleons  $ A $  due to short-range attractive forces",
+        "front": "What is the main feature of the Volume Energy Term in the Liquid Drop Model (LDM)?"
+    },
+    {
+        "back": "Because it represents the dominant contribution to the total binding energy of the nucleus",
+        "front": "Why is the Volume Energy Term referred to as \"setting the scale\" of energies in nuclear physics?"
+    },
+    {
+        "back": "It subtracts from the Volume Term, reducing the overall binding energy, especially for small nuclei",
+        "front": "How does adding the Surface Tension Energy Term modify the Volume Term?"
+    },
+    {
+        "back": "Because a larger fraction of nucleons are on or near the surface, reducing their binding",
+        "front": "Why is the Surface Tension Energy Term especially significant for small nuclei?"
+    },
+    {
+        "back": "It introduces a negative correction to binding energy due to electrostatic repulsion among protons",
+        "front": "What is the role of the Coulomb Potential Energy Term in the Liquid Drop Model?"
+    },
+    {
+        "back": "It bends the curve downward at higher  $ A $ , creating a peak in the B/A curve around iron",
+        "front": "How does the Coulomb term affect the shape of the binding energy per nucleon (B/A) curve for heavier nuclei?"
+    },
+    {
+        "back": "Because at high atomic numbers, the repulsion among protons is large enough that splitting the nucleus can release energy",
+        "front": "Why does the Coulomb term lead to the possibility of nuclear fission in heavier elements (e.g., U-235)?"
+    },
+    {
+        "back": "The Asymmetry and Pairing Terms",
+        "front": "What are the two additional terms beyond Volume, Surface, and Coulomb that improve the Liquid Drop Model's fit to data?"
+    },
+    {
+        "back": "It accounts for the additional stability when protons (or neutrons) occupy the same energy level in pairs",
+        "front": "What does the Pairing Term account for?"
+    },
+    {
+        "back": "Even-Even nuclei (even numbers of protons and neutrons)",
+        "front": "Which nuclear configurations are associated with the highest stability according to the Pairing Term?"
+    },
+    {
+        "back": "A term that penalizes large differences between the number of neutrons  $ N $  and protons  $ Z $ ",
+        "front": "What is the Asymmetry Term in the Liquid Drop Model?"
+    },
+    {
+        "back": "Because the term depends on  $ (N - Z)^2 $ , which is zero if  $ N = Z $ ",
+        "front": "Why is the Asymmetry Term zero when  $ N = Z $ ?"
+    },
+    {
+        "back": "They improve the accuracy of binding energy predictions across a wide range of nuclei",
+        "front": "What is the overall effect of adding the Asymmetry and Pairing Terms to the Liquid Drop Model?"
+    },
+    {
+        "back": " $ B(A,Z) = a_V A - a_S A^{2/3} - a_C \\frac{Z(Z-1)}{A^{1/3}} - a_A \\frac{(A - 2Z)^2}{A} \\pm a_P A^{-1/2} $ ",
+        "front": "What is the final form of the Semi Empirical Mass Formula (SEMF) with all terms included?"
+    },
+    {
+        "back": " $ \\frac{B(A,Z)}{A} = a_V - a_S A^{-1/3} - a_C \\frac{Z(Z-1)}{A^{4/3}} - a_A \\frac{(A - 2Z)^2}{A^2} \\pm a_P A^{-3/2} $ ",
+        "front": "How is the binding energy per nucleon expressed in the SEMF for plotting?"
+    },
+    {
+        "back": "By computing mass deficits from the SEMF for parent and daughter nuclei, the energy released can be estimated",
+        "front": "How can the SEMF be used to estimate alpha decay energies?"
+    },
+    {
+        "back": "It provides good predictions of nuclear masses and binding energies, and explains the general shape of the BE curve",
+        "front": "Which of the following is an advantage of the SEMF?"
+    },
+    {
+        "back": "It does not explain local spikes in the BE curve or nuclear shapes like deformation",
+        "front": "Which of the following is a disadvantage of the SEMF?"
+    },
+    {
+        "back": "It shows that the Coulomb repulsion can exceed the binding forces for large  $ Z $ , making splitting energetically favorable",
+        "front": "How does the SEMF help explain nuclear fission in heavy nuclei?"
+    },
+    {
+        "back": "Spin, parity, and magnetic moments of individual nuclei",
+        "front": "Which nuclear properties are **not** explained by the SEMF?"
+    },
+    {
+        "back": "It shows how the mass deficit between parent and daughter nuclei appears as kinetic energy of the emitted alpha particle",
+        "front": "What is the significance of the energy release in alpha decay estimated by the LDM?"
+    },
+    {
+        "back": "Because it is based on both theoretical considerations (liquid drop analogy) and fitted constants from experimental data",
+        "front": "Why is the SEMF referred to as a 'semi-empirical' formula?"
+    },
+    {
+        "back": "Explaining local spikes in the BE curve, non-spherical shapes, and nuclear quantum properties (spin, parity, magnetic moment)",
+        "front": "Which weaknesses of the SEMF does future study aim to address?"
     }
 ]

@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -180,9 +181,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../unit4/phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit5/phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit6/phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
-<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../unit7/phy303-unit7-reactions.html">7. Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit8/phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit9/phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
@@ -201,9 +199,13 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../unit2/phy303-unit2-review.html">Unit 2 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-problems.html">Unit 2 : Worked Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-additionalproblems.html">Unit 2 : Additional Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-random-quiz.html">Unit 2 : Random Quiz</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-full-quiz.html">Unit 2 : Full Quiz</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -287,6 +289,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
 </ul>
 </details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/nucleus-shape.html">Nucleus Shape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/janis-viewer.html">JANIS Viewer</a></li>
 </ul>
 
     </div>
@@ -478,8 +490,7 @@
 <li><p><a class="reference internal" href="phy303-unit3-full-quiz.html#unit3-fullquiz"><span class="std std-ref">Unit 3 : Full Quiz</span></a></p></li>
 <li><p>From the <a class="reference external" href="https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441">Reading List</a></p>
 <ul>
-<li><p>TBC</p></li>
-<li><p>TBC</p></li>
+<li><p>Shell model. [Martin] Chapter 7.3</p></li>
 </ul>
 </li>
 </ul>
@@ -495,9 +506,9 @@
 \end{equation}\]</div>
 <p>These nuclei have particularly stable properties, and mark a transition point for nuclei such that those with <span class="math notranslate nohighlight">\(Z\)</span> or <span class="math notranslate nohighlight">\(N\)</span> below a given Magic Number have very different behavior to those above. This leads to the idea that nucleons in nuclei somehow lie in <strong>Concentric Shells</strong>, analogous (but very different) to the way electrons lie in shells in atoms and similarly that a “filled” outer shell produces a more stable configuration</p>
 <p>This shell model idea is of course tied up with introducing Quantum Mechanics to our nucleus. The basis of QM here as seen before, is that we introduce a nuclear potential well. It is the QM treatment of this Well that will determine (1) the energy levels (shells) that nucleons are allowed to occupy, and (2) how many nucleons can occupy each level.</p>
-<p>As an example the simplest model for the Nuclear Well might be that associated with a Harmonic Oscillator, resulting in equally spaced energy levels throughout the well as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">harmonics</span></code>.</p>
+<p>As an example the simplest model for the Nuclear Well might be that associated with a Harmonic Oscillator, resulting in equally spaced energy levels throughout the well as shown in <a class="reference internal" href="#harmonics"><span class="std std-numref">Fig. 3.1</span></a>.</p>
 <figure class="align-default" id="harmonics">
-<a class="reference internal image-reference" href="unit3/image-19.png"><img alt="Harmonic oscillator diagram" src="unit3/image-19.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../_images/figure-unit3-quantumoscillator.png"><img alt="Harmonic oscillator diagram" src="../_images/figure-unit3-quantumoscillator.png" style="width: 70%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 3.1 </span><span class="caption-text">Reminder of harmonic oscillator definition. A potential well results in only discrete energy levels being allowed to be occupied with equal spacing between energy levels.</span><a class="headerlink" href="#harmonics" title="Link to this image">#</a></p>
 </figcaption>
@@ -511,17 +522,22 @@
 <h3><span class="section-number">3.2.1. </span>Binding Energy Shape<a class="headerlink" href="#binding-energy-shape" title="Link to this heading">#</a></h3>
 <p>The SEMF does a good job on the basic shape, but a closer look reveals certain nuclei have much higher, or lower B/A than predicted even after our asymmetry and pairing terms are included. These are most obvious at low A where peaks appear in multiples of four nucleons (e.g. 12C, 18O).</p>
 <p>In general we see nuclei with Magic Number N and/or Z have a higher B/A indicating they are more tightly bound.</p>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="unit3/figures/semf_goodness_withpairing_ratio.png"><img alt="SEMF Model comparison to data as a ratio" src="unit3/figures/semf_goodness_withpairing_ratio.png" style="width: 70%;" /></a>
+<figure class="align-default" id="harmonicsoscdiagram">
+<a class="reference internal image-reference" href="../_images/figure-unit3-semf_goodness_withpairing_ratio.png"><img alt="SEMF Model comparison to data as a ratio" src="../_images/figure-unit3-semf_goodness_withpairing_ratio.png" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Ratio of the predictions of the liquid drop model against observations as a function of atomic mass number. We see large deviations at low <span class="math notranslate nohighlight">\(A\)</span> with an almost saw tooth pattern appears at higher <span class="math notranslate nohighlight">\(A\)</span>.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Ratio of the predictions of the liquid drop model against observations as a function of atomic mass number. We see large deviations at low <span class="math notranslate nohighlight">\(A\)</span> with an almost saw tooth pattern appears at higher <span class="math notranslate nohighlight">\(A\)</span>.</span><a class="headerlink" href="#harmonicsoscdiagram" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="odd-even-parabolas">
 <h3><span class="section-number">3.2.2. </span>Odd-Even Parabolas<a class="headerlink" href="#odd-even-parabolas" title="Link to this heading">#</a></h3>
 <p>A closer look at the chart of Nuclides shows that nuclei with N and Z away from the major numbers are more likely to be unstable. If we plot nuclei that lie on a line of a constant A, for example A=121 we find that odd and even A nuclei sit on two seperate parabola. Whilst our delta term in the SEMF can account for some of this it cannot account for the difference across all nuclei.</p>
-<p><img alt="Alt text" src="unit3/image-21.png" /></p>
+<figure class="align-default" id="bindingforisobars">
+<a class="reference internal image-reference" href="../_images/figure-unit3-isobar-binding.png"><img alt="Binding curves for different isobars showing drop to point of stability" src="../_images/figure-unit3-isobar-binding.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Binding Energy Curves for two fixed Atomic Mass range of nuclei. We reach a minima at a stable nuclei, but Odd-Even Nuclei show slightly different energies when moving between proton-Even or neutron-Even.</span><a class="headerlink" href="#bindingforisobars" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Based on this we can make a prediction of which isotope of the given A is most stable against Nuclear Decay. From a parabola fit to the data shown of the form</p>
 <div class="math notranslate nohighlight" id="equation-bindingenergyparabola">
 <span class="eqno">(3.2)<a class="headerlink" href="#equation-bindingenergyparabola" title="Link to this equation">#</a></span>\[\begin{equation}
@@ -543,12 +559,22 @@ M(A,Z) = aA + bZ + cZ^{2}
 \[
 \bf 2, 8, (14), 20, 28, 50, 82, 126
 \]</div>
-<p><img alt="Alt text" src="unit3/image-78.png" /></p>
+<figure class="align-default" id="abundanceevidence">
+<a class="reference internal image-reference" href="../_images/figure-unit3-abundancescanevi.png"><img alt="Plot of abundance vs A showing spikes at magic nuclei" src="../_images/figure-unit3-abundancescanevi.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.4 </span><span class="caption-text">Relative Abundance of Nuclei vs A, shows peaks in the abundance close to magic nuclei which suggest potential shell closures making stable nuclei.</span><a class="headerlink" href="#abundanceevidence" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="the-neutron-binding-energy">
 <h3><span class="section-number">3.2.4. </span>The Neutron Binding Energy<a class="headerlink" href="#the-neutron-binding-energy" title="Link to this heading">#</a></h3>
 <p>Apart from the basic binding energy curve, we can look at for instance, the energy required to remove a single neutron from the nucleus vs the neutron number. The plot below shows by how much this differs from the SEMF prediction in MeV. What we see are  discontinuities up to 2 MeV at the Magic Numbers. This dependence of the energy to remove the outer neutron is strong evidence for a shell structure. A neutron just above a closed shell looks to be less tightly bound, reminiscent of the alkali metals in the chemical shell structure. This behavior is  believed to be due to <strong>Shell Closures</strong> - it is harder to remove a neutron from a closed shell.</p>
-<p><img alt="Alt text" src="unit3/image-79.png" /></p>
+<figure class="align-default" id="neutronsepvsenergy">
+<a class="reference internal image-reference" href="../_images/figure-unit3-neutronsepvsnevi.png"><img alt="Neutron Sep. Energy vs Neutron Number showing shell closures" src="../_images/figure-unit3-neutronsepvsnevi.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.5 </span><span class="caption-text">Neutron seperation energy vs Neutron Number. As we approach a shall closure the energy required to remove a neutron reaches a maximum.</span><a class="headerlink" href="#neutronsepvsenergy" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="neutron-capture-energy">
 <h3><span class="section-number">3.2.5. </span>Neutron Capture Energy<a class="headerlink" href="#neutron-capture-energy" title="Link to this heading">#</a></h3>
@@ -557,27 +583,47 @@ M(A,Z) = aA + bZ + cZ^{2}
 <p class="admonition-title">Note</p>
 <p>Note how the cross section is highest for nuclei well away from the Magic Numbers. An example is Cd, which is used widely as a Neutron Sheild in nuclear experiments.</p>
 </div>
-<p><img alt="Alt text" src="unit3/image-94.png" /></p>
+<figure class="align-default" id="neutronxsecvsn">
+<a class="reference internal image-reference" href="../_images/figure-unit3-neutroncapturexsecevi.png"><img alt="Neutron capture cross-section as a function of neutron number showing higher probability away from closures" src="../_images/figure-unit3-neutroncapturexsecevi.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.6 </span><span class="caption-text">Neutron capture cross-section (related to probability) as a function of N. As we move away from the shell closures the likelihood of a capture increases.</span><a class="headerlink" href="#neutronxsecvsn" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="electric-quadrupole-moments">
 <h3><span class="section-number">3.2.6. </span>Electric Quadrupole Moments<a class="headerlink" href="#electric-quadrupole-moments" title="Link to this heading">#</a></h3>
 <p>As nuclei are charged then if this charge is not spherically distributed we might expect to measure a non-zero Electric Quadrupole Moment (we cover EQM later). For a shell model those nuclei with closed shells should be spherically symmetric and have no EQM. For nuclei that do not have a closed shell we indeed see large EQMs.</p>
 <p>In the plot below the EQM have been normalized to the size and charge of each nucleus and these so called Reduced Quadrupole Moments are plotted against the number of protons or neutrons - depending upon which is odd. Some EQM are very large, suggesting shapes which are strongly non-spherical.</p>
-<p><img alt="Alt text" src="unit3/image-81.png" /></p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/figure-unit3-quadrupoleevi.png"><img alt="Quadrupole Moment vs A showing that nuclei have zero moment (spherical) close to closures." src="../_images/figure-unit3-quadrupoleevi.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.7 </span><span class="caption-text">Reduced Quadrupole Moment vs A. A value of zero suggests a spherical nucleus.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="nuclear-excitation-energy">
 <h3><span class="section-number">3.2.7. </span>Nuclear Excitation Energy<a class="headerlink" href="#nuclear-excitation-energy" title="Link to this heading">#</a></h3>
 <p>The relative stability of closed shell nuclei is also indicated by measuring the energy required to take a nucleus from the Ground State to its First Excited State.</p>
 <p>Here is an example plot for the excitation energies for the even-A isotopes of lead. The required energy is dramatically larger for the isotope with a Magic Number of neutrons. This is strong evidence for a shell model of the nucleus.</p>
 <p>The isotope Pb-208 is particularly unique in being Doubly Magic Z=82 and N=126. This is a Double Closed Shell Nucleus and it takes more than 2 MeV to raise it to the first excited state.</p>
-<p><img alt="Alt text" src="unit3/image-82.png" /></p>
+<figure class="align-default" id="nuclearexcitationevi">
+<a class="reference internal image-reference" href="../_images/image-82.png"><img alt="Nuclear Excitation Energy for several nuclei" src="../_images/image-82.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.8 </span><span class="caption-text">Nuclear Excitation Energy Diagram. As we reach a magic number, the energy required to excite the nucleus (move a nucleon in to a higher energy level) is significantly higher.</span><a class="headerlink" href="#nuclearexcitationevi" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="the-existence-of-double-magic-nuclei">
 <h3><span class="section-number">3.2.8. </span>The existence of double magic nuclei<a class="headerlink" href="#the-existence-of-double-magic-nuclei" title="Link to this heading">#</a></h3>
 <p>So nuclei which have both neutron number and proton number equal to one of the Magic Numbers can be called Double Magic, and are found to be particularly stable.</p>
 <p>An example is calcium. It has exceptionally stable Doubly Magic Nuclei - two of them. Compared to the binding energy calculated from the SEMF, they both have much more than the expected binding energy.</p>
 <p>These isotopes have Z=20 and N = 20 and 28, all three being magic numbers.</p>
-<p><img alt="Alt text" src="unit3/image-95.png" /></p>
+<figure class="align-default" id="doublemagicnuclei">
+<a class="reference internal image-reference" href="../_images/image-95.png"><img alt="Double Magic Nuclei Diagram" src="../_images/image-95.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.9 </span><span class="caption-text">Measured binding energy compared to the SEMF predictions. When the number of protons or neutrons reach a magic number we see an increase. When <strong>both</strong> are magic numbers, an even larger increase in binding energy is seen.</span><a class="headerlink" href="#doublemagicnuclei" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="decay-chains-end-with-magic-number-nuclei">
 <h3><span class="section-number">3.2.9. </span>Decay Chains End with Magic Number Nuclei<a class="headerlink" href="#decay-chains-end-with-magic-number-nuclei" title="Link to this heading">#</a></h3>
@@ -592,7 +638,12 @@ M(A,Z) = aA + bZ + cZ^{2}
 \bf
 2,8,(14),20,28,50,82,128.
 \]</div>
-<p><img alt="Alt text" src="unit3/image-90.png" /></p>
+<figure class="align-default" id="shellrequirement">
+<a class="reference internal image-reference" href="../_images/image-90.png"><img alt="Shell Model Spacing Requirement" src="../_images/image-90.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.10 </span><span class="caption-text">Shell Model Spacing Requirement</span><a class="headerlink" href="#shellrequirement" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Our shell model will need to explain these characteristic numbers using QM to produce the quantized energy levels (shells), filling them with the correct number of states (nucleons) to reproduce the Magic Numbers. So our basic aim is to explain the Magic Numbers, i.e. all the Nuclear Energy Levels, and then hopefully make new predictions that can be tested.</p>
 <p>So there is strong evidence for shell structure in Nuclei. This is compatible with a QM description with Nucleons occupying Energy Levels determined by a Central Nuclear Potential Well. We will discuss the form of this potential and the Nuclear Force between nucleons that determines its nature later.</p>
 <p>To determine the energy levels in the shell model we need to solve the full time-independent 3D Schrödinger Equation for particle mass <span class="math notranslate nohighlight">\(m\)</span> and wave-function <span class="math notranslate nohighlight">\(\psi\)</span> which has the form:</p>
@@ -612,7 +663,7 @@ M(A,Z) = aA + bZ + cZ^{2}
 <span class="eqno">(3.6)<a class="headerlink" href="#equation-simpledropcombined-extraterms2" title="Link to this equation">#</a></span>\[\begin{equation}
 V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
 \end{equation}\]</div>
-<p><img alt="Alt text" src="unit3/image-31.png" /></p>
+<p><img alt="Alt text" src="../_images/image-31.png" /></p>
 <p>The basis of this nuclear potential shape, for instance its spatial radius, is the force between nucleons, the Nuclear Force, that keeps nucleons bound together. This gives us our <strong>Average Potential</strong> with radius of the nucleus (<span class="math notranslate nohighlight">\(A^{1/3}\)</span>), much bigger than the range of the Nuclear Force (about 1.4 or so).  Anyway for now we will just start to describe the QM result, the Shell Model in more detail, and how this helps explain many of the observed properties of Nuclei.</p>
 <p>In the shell model now since we are assuming spherical symmetry in our potential and the nucleus, we can simplify the spherical coordinates, splitting <span class="math notranslate nohighlight">\(\psi(r,\theta,\phi) = \Psi(r)\Theta(\theta)\Phi(\phi)\)</span>.</p>
 <div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms3">
@@ -673,18 +724,18 @@ V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
 <section id="simple-potential-example">
 <h3><span class="section-number">3.4.1. </span>Simple Potential Example<a class="headerlink" href="#simple-potential-example" title="Link to this heading">#</a></h3>
 <p>Let’s consider a simple case below by calculating the number of states in the <span class="math notranslate nohighlight">\(l=0\)</span> and <span class="math notranslate nohighlight">\(l=1\)</span> case to see if it makes sense based on the Magic Number shell information we are aware off.</p>
-<p>In the case of the ground shell we just have <span class="math notranslate nohighlight">\(l=0\)</span>, this means <span class="math notranslate nohighlight">\(m_{z}\)</span> can only be <span class="math notranslate nohighlight">\(0\)</span>, and <span class="math notranslate nohighlight">\(m_{s}\)</span> can only be <span class="math notranslate nohighlight">\(\pm \frac{1}{2}\)</span>. The result is we have two allowed states for the <span class="math notranslate nohighlight">\(j=\frac{1}{2}\)</span> case as shown in <a class="reference internal" href="#shellfillinga"><span class="std std-numref">Fig. 3.3</span></a></p>
+<p>In the case of the ground shell we just have <span class="math notranslate nohighlight">\(l=0\)</span>, this means <span class="math notranslate nohighlight">\(m_{z}\)</span> can only be <span class="math notranslate nohighlight">\(0\)</span>, and <span class="math notranslate nohighlight">\(m_{s}\)</span> can only be <span class="math notranslate nohighlight">\(\pm \frac{1}{2}\)</span>. The result is we have two allowed states for the <span class="math notranslate nohighlight">\(j=\frac{1}{2}\)</span> case as shown in <a class="reference internal" href="#shellfillinga"><span class="std std-numref">Fig. 3.11</span></a></p>
 <figure class="align-default" id="shellfillinga">
-<a class="reference internal image-reference" href="unit3/image-88.png"><img alt="Rutherford Form" src="unit3/image-88.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-88.png"><img alt="Rutherford Form" src="../_images/image-88.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Diagram shell filling in a simple spherical model for the lowest energy shell.</span><a class="headerlink" href="#shellfillinga" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.11 </span><span class="caption-text">Diagram shell filling in a simple spherical model for the lowest energy shell.</span><a class="headerlink" href="#shellfillinga" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Now as we increase the possible <span class="math notranslate nohighlight">\(l\)</span> state it is the <span class="math notranslate nohighlight">\(j\)</span> value for a specific shell that is going to tell us how to fill up the Shell Energy Levels.  For instance, in the new example shown below we choose level <span class="math notranslate nohighlight">\(l=1\)</span> as shown in <a class="reference internal" href="#shellfillingb"><span class="std std-numref">Fig. 3.4</span></a> we find we are allowed total <span class="math notranslate nohighlight">\(j\)</span> values = <span class="math notranslate nohighlight">\(\pm\frac{1}{2}\)</span> and <span class="math notranslate nohighlight">\(\pm\frac{3}{2}\)</span>. This is because in our new shell we have the two similar <span class="math notranslate nohighlight">\(m_{z}=0\)</span> cases as before (states 5 and 6), but also four new ones, corresponding to the case where <span class="math notranslate nohighlight">\(m_{z}=1\)</span>.</p>
+<p>Now as we increase the possible <span class="math notranslate nohighlight">\(l\)</span> state it is the <span class="math notranslate nohighlight">\(j\)</span> value for a specific shell that is going to tell us how to fill up the Shell Energy Levels.  For instance, in the new example shown below we choose level <span class="math notranslate nohighlight">\(l=1\)</span> as shown in <a class="reference internal" href="#shellfillingb"><span class="std std-numref">Fig. 3.12</span></a> we find we are allowed total <span class="math notranslate nohighlight">\(j\)</span> values = <span class="math notranslate nohighlight">\(\pm\frac{1}{2}\)</span> and <span class="math notranslate nohighlight">\(\pm\frac{3}{2}\)</span>. This is because in our new shell we have the two similar <span class="math notranslate nohighlight">\(m_{z}=0\)</span> cases as before (states 5 and 6), but also four new ones, corresponding to the case where <span class="math notranslate nohighlight">\(m_{z}=1\)</span>.</p>
 <figure class="align-default" id="shellfillingb">
-<a class="reference internal image-reference" href="unit3/image-89.png"><img alt="Rutherford Form" src="unit3/image-89.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-89.png"><img alt="Rutherford Form" src="../_images/image-89.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.4 </span><span class="caption-text">Diagram shell filling in a simple spherical model for the lowest energy shell.</span><a class="headerlink" href="#shellfillingb" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.12 </span><span class="caption-text">Diagram shell filling in a simple spherical model for the lowest energy shell.</span><a class="headerlink" href="#shellfillingb" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Each nucleon must have its own allowed state of <span class="math notranslate nohighlight">\(m_z\)</span> and <span class="math notranslate nohighlight">\(m_s\)</span> when considering possible values of <span class="math notranslate nohighlight">\(j\)</span>. As shown in the figure  this results in six possible states <span class="math notranslate nohighlight">\(3/2, 1/2, -1/2, -3/2\)</span> for <span class="math notranslate nohighlight">\(j=3/2\)</span>, and <span class="math notranslate nohighlight">\(1/2, -1/2\)</span> for <span class="math notranslate nohighlight">\(j=1/2\)</span>. The cases where the angular momentum is parallel or anti-parallel are sometimes referred to as <em>stretched</em> and <em>jacknife</em> states respectively.</p>
@@ -698,11 +749,11 @@ n_{\textnormal{states}} = 2(2l+1)
 </section>
 <section id="nucleon-and-level-notation">
 <h2><span class="section-number">3.5. </span>Nucleon and Level Notation<a class="headerlink" href="#nucleon-and-level-notation" title="Link to this heading">#</a></h2>
-<p>Based on this a notation for labelling levels has been developed in Nuclear Physics as in <a class="reference internal" href="#nucleonnotation"><span class="std std-numref">Fig. 3.5</span></a>. This is annoyingly similar looking to that used for electrons in atomic orbits but is actually very different so be careful not to mix them up.</p>
+<p>Based on this a notation for labelling levels has been developed in Nuclear Physics as in <a class="reference internal" href="#nucleonnotation"><span class="std std-numref">Fig. 3.13</span></a>. This is annoyingly similar looking to that used for electrons in atomic orbits but is actually very different so be careful not to mix them up.</p>
 <figure class="align-default" id="nucleonnotation">
-<a class="reference internal image-reference" href="unit3/figures/FiguresSlides.013.png"><img alt="Rutherford Form" src="unit3/figures/FiguresSlides.013.png" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="../_images/figure-unit3-notation-explanation.png"><img alt="Rutherford Form" src="../_images/figure-unit3-notation-explanation.png" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.5 </span><span class="caption-text">Nuclear notation guide.</span><a class="headerlink" href="#nucleonnotation" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.13 </span><span class="caption-text">Nuclear notation guide.</span><a class="headerlink" href="#nucleonnotation" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Note that we just state here a further label <span class="math notranslate nohighlight">\(n\)</span> for the basic energy level which comes from assuming a quantum well binding the nucleons together. Full derivation of this is outside our scope here, so for now we just recognize that higher values of <span class="math notranslate nohighlight">\(n\)</span> correspond to higher energies. However we can now easily label each of our shell states based just on known values of <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(l\)</span>, and <span class="math notranslate nohighlight">\(j\)</span>. For example for <span class="math notranslate nohighlight">\(n=2\)</span>, <span class="math notranslate nohighlight">\(l=1\)</span> we have <span class="math notranslate nohighlight">\(2\textnormal{p}_{3/2}\)</span> (4 nucleon states) and <span class="math notranslate nohighlight">\(2\textnormal{p}_{1/2}\)</span> (2 nucleon states).</p>
@@ -717,9 +768,9 @@ n_{\textnormal{states}} = 2(2l+1)
 </ul>
 <p>We expect to fill up our shells in terms of increasing energy. So based on this very simple model we would expect the first shell to close after 2 nucleons, and the second after 8. It gets a little bit more complex after that as the energy gaps of the principal quantum states <span class="math notranslate nohighlight">\(n\)</span> start to overlap with the angular momentum splittings.</p>
 <figure class="align-default" id="firstpredmdel">
-<a class="reference internal image-reference" href="unit3/image-92.png"><img alt="Rutherford Form" src="unit3/image-92.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-92.png"><img alt="Rutherford Form" src="../_images/image-92.png" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.6 </span><span class="caption-text">Shell closure result for a simple spherical shell model.</span><a class="headerlink" href="#firstpredmdel" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.14 </span><span class="caption-text">Shell closure result for a simple spherical shell model.</span><a class="headerlink" href="#firstpredmdel" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We find as our shell closures:</p>
@@ -743,9 +794,9 @@ V=V(r)l\cdot s.
 <p>For instance, consider the <span class="math notranslate nohighlight">\(l=1\)</span> level. Previously this had 6 nucleons, <span class="math notranslate nohighlight">\(3/2, 1/2, -1/2, -3/2\)</span> (for the <span class="math notranslate nohighlight">\(j=3/2\)</span>) and 1<span class="math notranslate nohighlight">\(/2, -1/2\)</span> (for the <span class="math notranslate nohighlight">\(j=1/2\)</span>) all in the same level. Now the <span class="math notranslate nohighlight">\(j=3/2\)</span> nucleons (parallel <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span>) get their own new, lower, energy level. The <span class="math notranslate nohighlight">\(j=1/2\)</span> nucleons (anti-parallel <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span>) get their own new, higher, energy level.</p>
 <p>So the former degeneracy in which we had to consider all these 6 nucleons in one level is broken, and the previous single energy level becomes two, at different levels.</p>
 <figure class="align-default" id="shellsplittingtwo">
-<a class="reference internal image-reference" href="unit3/image-93.png"><img alt="Spin orbit corrections" src="unit3/image-93.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-93.png"><img alt="Spin orbit corrections" src="../_images/image-93.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.7 </span><span class="caption-text">Diagram of shell state splitting when spin-orbit coupling is included.</span><a class="headerlink" href="#shellsplittingtwo" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.15 </span><span class="caption-text">Diagram of shell state splitting when spin-orbit coupling is included.</span><a class="headerlink" href="#shellsplittingtwo" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This effect applies for all the <span class="math notranslate nohighlight">\(l\)</span> levels, they all get split into two levels, except for <span class="math notranslate nohighlight">\(l\)</span>=0 (the <span class="math notranslate nohighlight">\(\textnormal{s}\)</span> sharp) one because that only has one <span class="math notranslate nohighlight">\(j\)</span> assignment, <span class="math notranslate nohighlight">\(j=1/2\)</span> <span class="math notranslate nohighlight">\((\)</span>with values <span class="math notranslate nohighlight">\(1/2, -1/2\)</span><span class="math notranslate nohighlight">\()\)</span>.</p>
@@ -753,7 +804,7 @@ V=V(r)l\cdot s.
 <section id="modified-shell-model">
 <h2><span class="section-number">3.8. </span>Modified Shell Model<a class="headerlink" href="#modified-shell-model" title="Link to this heading">#</a></h2>
 <p>The effect of the Energy Levels splitting is dramatic. As shown below it changes the position of the gaps, and can also make neighboring <span class="math notranslate nohighlight">\(j\)</span> states jump over one another. To calculate this what we need to do is work our way successively up the shells, first figuring out how many energy states there are given <span class="math notranslate nohighlight">\(j\)</span>, and then figuring out which correspond to parallel anti-parallel combinations. See how this gives the necessary extra splitting in the figure below. The number of states for each <span class="math notranslate nohighlight">\(l\)</span> remains, we just break the degeneracy, creating more levels. We see a different clustering of levels, and different major “gaps” corresponding to our magic numbers. Notice for instance how the <span class="math notranslate nohighlight">\(1\textnormal{g}\)</span> level splits. All the <span class="math notranslate nohighlight">\(1g_{9/2}\)</span> nucleons get moved down and the <span class="math notranslate nohighlight">\(1\textnormal{g}_{7/2}\)</span> ones go up, creating a new gap when the total of 50 nucleons is reached.</p>
-<p><img alt="Alt text" src="unit3/image-34.png" /></p>
+<p><img alt="Alt text" src="../_images/image-34.png" /></p>
 <p>Importantly this one small change to the model now gives us the right Magic Number sequence:</p>
 <div class="math notranslate nohighlight">
 \[

@@ -2,7 +2,7 @@
 # Unit 1 : Worked Problems
 
 (unit1:problem:example1)=
-#### Example 1.1 : Carbon Mass Calculation
+## Example 1.1 : Carbon Mass Calculation
 Given the mass of a carbon-12 atom is $12u$, estimate the binding energy of the carbon nucleus.
 ```{admonition} Solution
 :class: note, dropdown
@@ -37,7 +37,7 @@ Given that the mass of an electron is around $0.511~\textnormal{MeV/c}^{2}$ we c
 ```
 
 (unit1:problem:example2)=
-#### Example 1.2 : Nucleon Momentum Estimate
+## Example 1.2 : Nucleon Momentum Estimate
 Use the Heisenberg Uncertainty principle to estimate the momentum of nucleons inside the nucleus given that the nuclear radius is on the order of $5~\textnormal{fm}$.
 
 ```{admonition} Solution
@@ -80,7 +80,7 @@ quite different as the nucleons move quite quickly around the allowed space.
 ```
 
 (unit1:problem:example3)=
-#### Example 1.3 : Shielding Cross-section Estimate
+## Example 1.3 : Shielding Cross-section Estimate
 Consider a 1-TBq source of Cs-137 that produces an effective dose of 1.073 Sv/hr at a distance of 30cm (*Delecroix Handbook 2002*). The decay chain of Cs-137 produces a clear 
 gamma ray peak at 662 keV. Assuming a cross-section of 662keV gamma rays on lead nuclei of $\sigma=4.3 \times 10^{-23} cm^{2}$ determine the lead shielding thickness required to 
 reduce the dose rate to 1mSv/hr.
@@ -128,7 +128,7 @@ on the result. If the cross-section's for gamma radiation were higher, we would 
 ```
 
 (unit1:problem:example4)=
-#### Example 1.4 : Closest Approach Estimate
+## Example 1.4 : Closest Approach Estimate
 Considering Polonium-210 as an alpha emitter in Rutherford's gold foil experiment, estimate the minimum theoretical limit to which alpha scattering may be able place a limit on 
 the size of the nucleus.
 

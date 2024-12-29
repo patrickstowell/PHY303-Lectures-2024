@@ -18,9 +18,6 @@ parts:
       title: Collective Excited States
     - file: unit6/phy303-unit6-radioactive-decays
       title: Radioactive Decay
-- caption: Application
-  numbered: True
-  chapters:
     - file: unit7/phy303-unit7-reactions
       title: Reactions
     - file: unit8/phy303-unit8-compoundreactions
@@ -125,15 +122,17 @@ parts:
 - caption: Interactive Visualizations
   numbered: False
   chapters:
-    - file: visualisations/iaea-chart-of-nuclides.ipynb
+    - file: visualisation/iaea-chart-of-nuclides.ipynb
       title: Chart of Nuclides
-    - file: visualisations/iaea-chart-of-binding.ipynb
+    - file: visualisation/iaea-chart-of-binding.ipynb
       title: Chart of Binding Energy
-    - file: visualisations/iaea-chart-of-isotones.ipynb
+    - file: visualisation/iaea-chart-of-isotones.ipynb
       title: Isotone Curves
-    - file: visualisations/iaea-chart-of-isotopes.ipynb
+    - file: visualisation/iaea-chart-of-isotopes.ipynb
       title: Isotope Curves
-    - file: visualisations/legendre-polynomials.ipynb
+    - file: visualisation/legendre-polynomials.ipynb
       title: Legendre Polynomials
-    - file: visualisations/nucleus-shape.ipynb
+    - file: visualisation/nucleus-shape.ipynb
       title: Nucleus Shape
+    - file: visualisation/janis-viewer.md
+      title: JANIS Viewer

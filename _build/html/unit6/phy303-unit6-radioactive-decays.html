@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -180,9 +181,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../unit4/phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit5/phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Radioactive Decay</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
-<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../unit7/phy303-unit7-reactions.html">7. Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit8/phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit9/phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
@@ -201,9 +199,13 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../unit2/phy303-unit2-review.html">Unit 2 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-problems.html">Unit 2 : Worked Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-additionalproblems.html">Unit 2 : Additional Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-random-quiz.html">Unit 2 : Random Quiz</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-full-quiz.html">Unit 2 : Full Quiz</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../unit3/phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -287,6 +289,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
 </ul>
 </details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/nucleus-shape.html">Nucleus Shape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/janis-viewer.html">JANIS Viewer</a></li>
 </ul>
 
     </div>
@@ -502,7 +514,7 @@ Q = M(A,Z)^{2}c^{2} - [M(A-X,Z-Y)c^{2} + M(X,Y)c^{2}] &gt; 0
 <p>In beta decay we typically see experimentally an emission of an Electron from the nucleus combined with a transmutation of a nucleus from one type into another with a lower neutron number. This is referred to as beta-minus decay and typically occurs in neutron rich nuclei which are trying to lower their energy by rebalancing their proton/neutron ratios.</p>
 <p>In the early years of Beta Decay studies the process observed was highly mysterious and showed very different a behavior to Alpha Decay which was being studied at a similar time. This is illustrated by the Cloud Chamber image shown below.</p>
 <figure class="align-default" id="neutrino-emission">
-<a class="reference internal image-reference" href="unit6/image-137.png"><img alt="Bubble Chamber example of Beta Decay" src="unit6/image-137.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-137.png"><img alt="Bubble Chamber example of Beta Decay" src="../_images/image-137.png" style="width: 70%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Bubble chamber photo of He-6 decay into Li-6, showing what appears to be non-conservation of momentum.</span><a class="headerlink" href="#neutrino-emission" title="Link to this image">#</a></p>
 </figcaption>
@@ -519,7 +531,7 @@ Q = M(A,Z)^{2}c^{2} - [M(A-X,Z-Y)c^{2} + M(X,Y)c^{2}] &gt; 0
 <li><p>The electron and neutrino are relativistic, unlike the alpha in alpha decay. This makes calculations of the energies and kinematics of the decay more complicated.</p></li>
 <li><p>The energy of the beta emitted by the nucleus in question is not the same in every decay. We get a continuum of energies put to a maximum. In contrast to alpha decay and gamma decays where we get one “Mono energetic” particle depending on the energy levels or <span class="math notranslate nohighlight">\(Q\)</span> value considered. The quark level interaction is given in the figure below. Typically the ‘Matrix Element’ is calculated based on the interacting particles considering the d quark in the initial state and u quark and electron and anti-neutrino in the final state.</p></li>
 </ol>
-<p><img alt="Alt text" src="unit6/image-142.png" /></p>
+<p><img alt="Alt text" src="../_images/image-142.png" /></p>
 <p>An example to illustrate this behavior is:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -626,7 +638,7 @@ N(p) = \frac{C}{c^{2}} p^{2} (Q-T_{e})^{2}
 <p><img alt="Alt text" src="unit6/image-141.png" /></p>
 <p>One way to understand allowed vs forbidden transitions is by producing what are called “Fermi-Kurie” plots. Based on the form shown above, if we plot the observed number of particles at a fixed momentum divided by <span class="math notranslate nohighlight">\(p^{2}\)</span> and an additional correction due to coulomb repulsion, what we find is a roughly linear fit to the data for many transitions. The point where this line crosses the x-axis determines the end point energy (maximum <span class="math notranslate nohighlight">\(T_{e}\)</span> of the transition). Linearity in this fit ends up only being true when our “allowed transition” assumption are valid. Any deviation from a straight line suggest a degree of “forbidden-ness” in the interaction. Importantly a Fermi-Kurie plot can be used to estimate the neutrino mass as the end point is expected to deviate from a straight line if the neutrino mass is non-zero as shown in the Figure below.</p>
 <figure class="align-default" id="fermi-kurie">
-<a class="reference internal image-reference" href="unit6/image-145.png"><img alt="End point of the Fermi-Kurie Plot" src="unit6/image-145.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../_images/image-145.png"><img alt="End point of the Fermi-Kurie Plot" src="../_images/image-145.png" style="width: 70%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 6.2 </span><span class="caption-text">End point of the Fermi-Kurie plot which plots beta particle kinetic energy vs a scaled estimate of the number of particles observed at that energy. Deviations away from a straight line suggest forbidden transitions. The end point <span class="math notranslate nohighlight">\(T_{0}\)</span> here corresponds to the maximum <span class="math notranslate nohighlight">\(Q\)</span> value for the decay.</span><a class="headerlink" href="#fermi-kurie" title="Link to this image">#</a></p>
 </figcaption>
@@ -732,9 +744,9 @@ Finally let’s consider the beta decay from <span class="math notranslate nohig
 <section id="double-beta-decay">
 <h2><span class="section-number">6.8. </span>Double Beta Decay<a class="headerlink" href="#double-beta-decay" title="Link to this heading">#</a></h2>
 <p>In rare cases we find that the <span class="math notranslate nohighlight">\(Q\)</span> value of a decay or the selection rules limit our typical <span class="math notranslate nohighlight">\(\beta\)</span> decay processes. For example in the case of 128-Te, we find that the next nuclei on the beta decay chain would be 128-I, which would give a negative <span class="math notranslate nohighlight">\(Q\)</span> value. However a direct transition to 128-Xe would give a positive <span class="math notranslate nohighlight">\(Q\)</span> value, and is enough to allow the production of two <span class="math notranslate nohighlight">\(\beta\)</span> particles at once. This process whilst extremely rare (order of <span class="math notranslate nohighlight">\(10^{24}\)</span> years) can occur naturally.</p>
-<p><img alt="Alt text" src="unit6/image-143.png" /></p>
+<p><img alt="Alt text" src="../_images/image-143.png" /></p>
 <p>A similar case also happens for the decay of 48-Ca, which we would expect to decay into 48-Sc. Whilst the <span class="math notranslate nohighlight">\(Q\)</span> can be positive in some cases, we find that all the possible transitions are high-order forbidden transitions and are extremely unlikely to occur. Instead it is far more likely that a double beta decay transition will occur (albeit with a very long half-life).</p>
-<p><img alt="Alt text" src="unit6/image-144.png" /></p>
+<p><img alt="Alt text" src="../_images/image-144.png" /></p>
 <p>Double beta decay is of particular importance in some high energy particle physics experiments as there is a long standing debate on whether neutrinos may in fact be their own anti-particles (Majorana neutrinos). Since they have no charge this is allowed in some models, and if so would allow a possible neutrino-less double beta decay transition to also take place in which the two neutrino’s emitted in double-beta decay annihilate with one another, resulting in both beta particles carrying the entire <span class="math notranslate nohighlight">\(Q\)</span> energy for the interaction. Observation of a clear excess in number of particles right at the end of the beta decay spectrum for such nuclei therefore would confirm the true nature of the neutrino.</p>
 </section>
 <section id="alpha-decay">
@@ -755,7 +767,7 @@ Finally let’s consider the beta decay from <span class="math notranslate nohig
 <li><p>Do alphas carry information on nuclear structure?</p></li>
 </ul>
 <p>One plot that begins to answer some of these questions is a comparison of the <span class="math notranslate nohighlight">\(Q\)</span> energy for different alpha-emitting particles separated by different radioactive decay series. This is called the Geiger-Nuttall relation, and it demonstrates that actually for many different series, there is a strong correlation between the radioactive half-life and the energy of the emitted alpha.</p>
-<p><img alt="Alt text" src="unit6/image-103.png" /></p>
+<p><img alt="Alt text" src="../_images/image-103.png" /></p>
 <p>Notice also how steep the relation is in the Geiger-Nuttall plot (it’s a log scale). An alpha emitter that produces 8 MeV alpha particles is likely to have a half-life over 22 orders of magnitude shorter than one which produces alphas of 4 MeV kinetic energy. The Geiger-Nuttall relation is a fit to the observed data of the form:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -773,11 +785,11 @@ Finally let’s consider the beta decay from <span class="math notranslate nohig
 <li><p>Inside the Nucleus: While inside the nucleus, the alpha particle is bound by the strong nuclear force, which is attractive and much stronger than the Coulomb force at short distances. This force keeps the nucleons (including those in the alpha particle) together.</p></li>
 <li><p>Escape Requirement: For the alpha particle to escape, it must have enough energy to overcome the maximum potential energy at the surface created by the Coulomb repulsion. Typically, the alpha particle’s kinetic energy (within the nucleus) is insufficient to overcome this barrier due to the energy binding it inside the nucleus.</p></li>
 </ul>
-<p><img alt="Alt text" src="unit6/image-130.png" /></p>
+<p><img alt="Alt text" src="../_images/image-130.png" /></p>
 <p>Of course, in a classical model, if the <strong>Potential Barrier</strong> is too high, the alpha never escapes. In Quantum Mechanics, we allow <strong>Tunneling</strong> with a small probability that the alpha can penetrate the barrier. Calculating the ratio of the wavefunctions inside and outside and squaring gives the probability. We can do a simple calculation of this by considering the diagram of the potential below. We assume the alpha is pre-formed in the nucleus, oscillates around, repeatedly hitting the edge inside the nucleus until at some point it escapes by <strong>Barrier Penetration</strong>. Once formed, the alpha particle finds itself in a potential well created by the nuclear forces. Outside this well, there’s a potential energy barrier formed by the Coulomb repulsion between the positively charged alpha particle and the rest of the nucleus. Classically, the alpha particle would need to have kinetic energy greater than this barrier to escape the nucleus. However, typically, the alpha particle’s kinetic energy is less than the height of this Coulomb barrier</p>
-<p><img alt="Alt text" src="unit6/image-131.png" /></p>
+<p><img alt="Alt text" src="../_images/image-131.png" /></p>
 <p>Notice how the Potential Barrier drops as <span class="math notranslate nohighlight">\(1/r\)</span>. Rather than try to solve this, we can make a simple approximation that the barrier has a fixed height <span class="math notranslate nohighlight">\(U_0\)</span> and fixed length <span class="math notranslate nohighlight">\(L\)</span>, and that the alpha has energy <span class="math notranslate nohighlight">\(E\)</span>, as illustrated below. Also, the potential seen by the alpha particle is spherically symmetric, and so the quantum mechanical problem can be approached by first separating the variables into just a radial component.</p>
-<p><img alt="Alt text" src="unit6/image-135.png" />
+<p><img alt="Alt text" src="../_images/image-135.png" />
 As a particle approaches the barrier, it is described by a Free Particle Wavefunction. When it reaches the barrier, it must satisfy the simplified Schrödinger Equation in the form:</p>
 <div class="math notranslate nohighlight" id="equation-seequation">
 <span class="eqno">(6.11)<a class="headerlink" href="#equation-seequation" title="Link to this equation">#</a></span>\[\begin{split}\begin{equation}
@@ -802,7 +814,7 @@ T_{1/2} = \ln(2)/\lambda = \ln(2)/\sqrt{X}
 <section id="alpha-212-po-example">
 <h2><span class="section-number">6.10. </span>Alpha 212-Po Example<a class="headerlink" href="#alpha-212-po-example" title="Link to this heading">#</a></h2>
 <p>The way to proceed is illustrated below, where we attempt to find the half-life of 212-Po, which emits an 8.78 MeV alpha.  First, we need to find the width of the barrier. For this, we need to know the Nuclear Separation <span class="math notranslate nohighlight">\(R\)</span>, i.e., the distance between the center of the nucleus and the center of the alpha. Be careful that at this point the nucleus we are talking about is not A=212, but A=208, because we have removed the alpha.</p>
-<p><img alt="Alt text" src="unit6/image-134.png" /></p>
+<p><img alt="Alt text" src="../_images/image-134.png" /></p>
 <p>This results in an estimate of the nuclear seperation as</p>
 <div class="math notranslate nohighlight" id="equation-radiuscomp">
 <span class="eqno">(6.15)<a class="headerlink" href="#equation-radiuscomp" title="Link to this equation">#</a></span>\[\begin{equation}
@@ -852,7 +864,7 @@ f=\frac{v}{2R}  \rightarrow 1.14 \times 10^{21} s^{-1}
 \end{equation}\]</div>
 <!-- ![Alt text](image-106.png) -->
 <p>The result is quite good. But note we could do better by modelling the potential as a series of decreasing barriers. As shown in the figure below we consider the decaying barrier as a combination of many fixed height barriers. The transmission probability through the entire set of barriers is simply obtained by multiplying all their individual transmission probabilities together.</p>
-<p><img alt="Alt text" src="unit6/image-132.png" /></p>
+<p><img alt="Alt text" src="../_images/image-132.png" /></p>
 <p>This can be written as:</p>
 <div class="math notranslate nohighlight" id="equation-combinedprob">
 <span class="eqno">(6.25)<a class="headerlink" href="#equation-combinedprob" title="Link to this equation">#</a></span>\[\begin{equation}
