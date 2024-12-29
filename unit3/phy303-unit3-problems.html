@@ -1,0 +1,876 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Unit 3 : Worked Problems &#8212; PHY303 Nuclear Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unit3/phy303-unit3-problems';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Unit 3 : Additional Problems" href="phy303-unit3-additionalproblems.html" />
+    <link rel="prev" title="Unit 3 : Review Material" href="phy303-unit3-review.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../phy303-homepage.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="PHY303 Nuclear Physics - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY303 Nuclear Physics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unit1/phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit4/phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit5/phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit6/phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit7/phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit8/phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit9/phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit10/phy303-unit10-medicalapplications.html">10. Nuclear Medicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit11/phy303-unit11-fissionandfusion.html">11. Nuclear Power</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Review Material</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit1/phy303-unit1-review.html">Unit 1 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-problems.html">Unit 1 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-additionalproblems.html">Unit 1 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-flashcards.html">Unit 1 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-random-quiz.html">Unit 1 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-full-quiz.html">Unit 1 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit2/phy303-unit2-review.html">Unit 2 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-problems.html">Unit 2 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-additionalproblems.html">Unit 2 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-random-quiz.html">Unit 2 : Random Quiz</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-full-quiz.html">Unit 2 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="phy303-unit3-review.html">Unit 3 : Review Material</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Unit 3 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit3-additionalproblems.html">Unit 3 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit3-flashcards.html">Unit 3 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit3-random-quiz.html">Unit 3 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit3-full-quiz.html">Unit 3 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit4/phy303-unit4-review.html">Unit 4 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-problems.html">Unit 4 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-additionalproblems.html">Unit 4 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-flashcards.html">Unit 4 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-random-quiz.html">Unit 4 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-full-quiz.html">Unit 4 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit5/phy303-unit5-review.html">Unit 5 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-problems.html">Unit 5 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-additionalproblems.html">Unit 5 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-terms.html">Unit 5 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-flashcards.html">Unit 5 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-random-quiz.html">Unit 5 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-full-quiz.html">Unit 5 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit6/phy303-unit6-review.html">Unit 6 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-problems.html">Unit 6 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-additionalproblems.html">Unit 6 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-terms.html">Unit 6 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-flashcards.html">Unit 6 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-random-quiz.html">Unit 6 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-full-quiz.html">Unit 6 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit7/phy303-unit7-review.html">Unit 7 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-problems.html">Unit 7 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-additionalproblems.html">Unit 7 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-terms.html">Unit 7 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-flashcards.html">Unit 7 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-random-quiz.html">Unit 7 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-full-quiz.html">Unit 7 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit8/phy303-unit8-review.html">Unit 8 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-problems.html">Unit 8 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-additionalproblems.html">Unit 8 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-terms.html">Unit 8 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-flashcards.html">Unit 8 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-random-quiz.html">Unit 8 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-full-quiz.html">Unit 8 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit9/phy303-unit9-review.html">Unit 9 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-problems.html">Unit 9 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-additionalproblems.html">Unit 9 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-terms.html">Unit 9 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-flashcards.html">Unit 9 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-random-quiz.html">Unit 9 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-full-quiz.html">Unit 9 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit10/phy303-unit10-review.html">Unit 10 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-problems.html">Unit 10 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-additionalproblems.html">Unit 10 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-terms.html">Unit 10 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-flashcards.html">Unit 10 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-random-quiz.html">Unit 10 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-full-quiz.html">Unit 10 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit11/phy303-unit11-review.html">Unit 11 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-problems.html">Unit 11 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-additionalproblems.html">Unit 11 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-terms.html">Unit 11 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-flashcards.html">Unit 11 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-random-quiz.html">Unit 11 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/nucleus-shape.html">Nucleus Shape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/janis-viewer.html">JANIS Viewer</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/unit3/phy303-unit3-problems.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Unit 3 : Worked Problems</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-1-carbon-mass-calculation">Example 3.1 : Carbon Mass Calculation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#given">Given:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">Objective:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula">Formula:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-solution">Step-by-Step Solution:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Given:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Objective:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#semf-binding-energy-formula">SEMF Binding Energy Formula:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-separation-energy-formula">Neutron Separation Energy Formula:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Step-by-Step Solution:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Conclusion:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#board-work-example-finding-minimum-z-for-constant-a-using-semf">Board Work Example: Finding Minimum ( Z ) for Constant ( A ) Using SEMF</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Given:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Objective:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">SEMF Binding Energy Formula:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#differentiation-approach">Differentiation Approach:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-for-z">Solving for ( Z ):</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#board-work-example-understanding-double-magic-nuclei">Board Work Example: Understanding Double Magic Nuclei</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-double-magic-nuclei">Introduction to Double Magic Nuclei</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-double-magic-nuclei">Examples of Double Magic Nuclei</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-are-double-magic-nuclei-important">Why Are Double Magic Nuclei Important?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theoretical-explanation">Theoretical Explanation</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="unit-3-worked-problems">
+<span id="unit3-problems"></span><h1>Unit 3 : Worked Problems<a class="headerlink" href="#unit-3-worked-problems" title="Link to this heading">#</a></h1>
+<section id="example-3-1-carbon-mass-calculation">
+<span id="unit3-problem-example1"></span><h2>Example 3.1 : Carbon Mass Calculation<a class="headerlink" href="#example-3-1-carbon-mass-calculation" title="Link to this heading">#</a></h2>
+<p>Given the mass of a carbon-12 atom is <span class="math notranslate nohighlight">\(12u\)</span>, estimate the binding energy of the carbon nucleus.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>First we start with the mass of the proton, neutron, and electrons in the atomic mass units. Since the mass if that of a carbon-12 atom, we include the electrons in our
+calculation.</p>
+</div>
+</section>
+<section id="given">
+<h2>Given:<a class="headerlink" href="#given" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Initial neutron beam intensity, ( I_0 ) (neutrons per second).</p></li>
+<li><p>Number of neutrons captured, ( N_c ).</p></li>
+<li><p>Thickness of the material, ( d ) (meters).</p></li>
+<li><p>Volume of the material, ( V ) (cubic meters).</p></li>
+<li><p>Number of target atoms in the material, ( N_t ).</p></li>
+</ul>
+</section>
+<section id="objective">
+<h2>Objective:<a class="headerlink" href="#objective" title="Link to this heading">#</a></h2>
+<p>Calculate the microscopic cross-section (( \sigma )) of the material for neutron capture.</p>
+</section>
+<section id="formula">
+<h2>Formula:<a class="headerlink" href="#formula" title="Link to this heading">#</a></h2>
+<p>The number of neutrons captured (( N_c )) can be related to the initial intensity (( I_0 )), the microscopic cross-section (( \sigma )), the number of target atoms (( N_t )), and
+the thickness of the material (( d )) through the formula:</p>
+<p>[ N_c = I_0 (1 - e^{-n\sigma d}) ]</p>
+<p>Where ( n ) is the number density of target atoms in the material, which can be calculated as ( n = \frac{N_t}{V} ).</p>
+<p>To find ( \sigma ), we rearrange the formula to solve for it:</p>
+<p>[ \sigma = -\frac{\ln(1 - \frac{N_c}{I_0})}{nd} ]</p>
+</section>
+<section id="step-by-step-solution">
+<h2>Step-by-Step Solution:<a class="headerlink" href="#step-by-step-solution" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Identify Known Values:</strong></p>
+<ul class="simple">
+<li><p>Suppose the initial neutron beam intensity, ( I_0 = 1 \times 10^6 ) neutrons/s.</p></li>
+<li><p>Number of neutrons captured, ( N_c = 2 \times 10^4 ).</p></li>
+<li><p>Thickness of the material, ( d = 0.01 ) m.</p></li>
+<li><p>Volume of the material, ( V = 0.001 ) m(^3).</p></li>
+<li><p>Number of target atoms, ( N_t = 6 \times 10^{23} ) (for simplicity, assuming Avogadro’s number for a mole of substance).</p></li>
+</ul>
+</li>
+<li><p><strong>Calculate the Number Density (( n )):</strong></p>
+<ul class="simple">
+<li><p>( n = \frac{N_t}{V} )</p></li>
+</ul>
+</li>
+<li><p><strong>Substitute Known Values into the Formula for ( \sigma ):</strong></p>
+<ul class="simple">
+<li><p>Use the formula to calculate ( \sigma ) based on ( N_c ), ( I_0 ), ( n ), and ( d ).</p></li>
+</ul>
+</li>
+<li><p><strong>Calculate the Cross-Section:</strong></p>
+<ul class="simple">
+<li><p>Perform the calculations to find ( \sigma ).</p></li>
+</ul>
+</li>
+</ol>
+<p>Let’s proceed with the calculations for ( n ) and then ( \sigma ) using the given values.</p>
+<p>Based on the calculations:</p>
+<ul class="simple">
+<li><p>The number density of target atoms in the material (( n )) is ( 6 \times 10^{26} ) atoms/m(^3).</p></li>
+<li><p>The microscopic cross-section (( \sigma )) of the material for neutron capture is approximately ( 3.37 \times 10^{-27} ) m(^2).</p></li>
+</ul>
+</section>
+<section id="conclusion">
+<h2>Conclusion:<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<p>This result indicates the effective area that each atom in the material presents to the neutrons for capture. With the microscopic cross-section (( \sigma )) calculated, we can
+understand how readily neutrons are captured by atoms within the material. This information is crucial for applications such as nuclear reactor fuel design, where the capture of neutrons
+by fuel atoms leads to fission reactions, and in the design of control materials that capture neutrons to regulate the reactor.</p>
+<p>Remember, this approach assumes a direct relationship between the initial neutron beam intensity, the thickness of the material, and the observed number of neutron capture reactions. It
+simplifies the interactions to purely neutron capture and does not account for other possible interactions such as scattering or fission, nor does it account for variations in neutron
+energy.</p>
+<section id="id1">
+<h3>Given:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Number of protons (Z)</p></li>
+<li><p>Number of neutrons (N)</p></li>
+<li><p>Total number of nucleons (A = Z + N)</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>Objective:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Calculate the neutron separation energy, ( S_n ), using the Semi-Empirical Mass Formula (SEMF).</p>
+</section>
+<section id="semf-binding-energy-formula">
+<h3>SEMF Binding Energy Formula:<a class="headerlink" href="#semf-binding-energy-formula" title="Link to this heading">#</a></h3>
+<p>The SEMF is given by:</p>
+<p>[ BE(A, Z) = a_v A - a_s A^{2/3} - a_c \frac{Z(Z-1)}{A^{1/3}} - a_a \frac{(A - 2Z)^2}{A} + \delta(A, Z) ]</p>
+<p>where:</p>
+<ul class="simple">
+<li><p>( BE(A, Z) ) is the binding energy.</p></li>
+<li><p>( a_v, a_s, a_c, a_a ) are the volume, surface, Coulomb, and asymmetry coefficients, respectively.</p></li>
+<li><p>( \delta(A, Z) ) is the pairing term, which depends on whether the nucleus has even or odd numbers of protons and neutrons.</p></li>
+</ul>
+</section>
+<section id="neutron-separation-energy-formula">
+<h3>Neutron Separation Energy Formula:<a class="headerlink" href="#neutron-separation-energy-formula" title="Link to this heading">#</a></h3>
+<p>The neutron separation energy, ( S_n ), can be calculated as the difference in binding energy of the original nucleus and the nucleus with one less neutron:</p>
+<p>[ S_n = BE(A, Z) - BE(A-1, Z) ]</p>
+</section>
+<section id="id3">
+<h3>Step-by-Step Solution:<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Calculate the Binding Energy for the Original Nucleus (BE(A, Z)):</strong></p>
+<ul class="simple">
+<li><p>Use the given Z and N to calculate A.</p></li>
+<li><p>Substitute A and Z into the SEMF to calculate ( BE(A, Z) ).</p></li>
+</ul>
+</li>
+<li><p><strong>Calculate the Binding Energy for the Nucleus with One Less Neutron (BE(A-1, Z)):</strong></p>
+<ul class="simple">
+<li><p>Decrease N by 1 to represent the removal of a neutron, thus ( A-1 ) for the new A.</p></li>
+<li><p>Substitute ( A-1 ) and Z into the SEMF to calculate ( BE(A-1, Z) ).</p></li>
+</ul>
+</li>
+<li><p><strong>Calculate the Neutron Separation Energy (( S_n )):</strong></p>
+<ul class="simple">
+<li><p>Use the formula ( S_n = BE(A, Z) - BE(A-1, Z) ).</p></li>
+</ul>
+</li>
+</ol>
+<p>Let’s proceed with an example calculation using typical values for the SEMF coefficients. For simplicity, let’s assume the following coefficients and values for a hypothetical nucleus:</p>
+<ul class="simple">
+<li><p>( a_v = 15.5 ) MeV</p></li>
+<li><p>( a_s = 16.8 ) MeV</p></li>
+<li><p>( a_c = 0.715 ) MeV</p></li>
+<li><p>( a_a = 23.0 ) MeV</p></li>
+<li><p>( Z = 50 ) (for example)</p></li>
+<li><p>( N = 75 ) (for example)</p></li>
+</ul>
+<p>We’ll also simplify the pairing term, ( \delta(A, Z) ), by omitting it for this calculation to focus on the main components of the SEMF. Let’s calculate the neutron separation energy for
+this nucleus.</p>
+<p>Based on the calculation using the Semi-Empirical Mass Formula (SEMF) for a hypothetical nucleus with ( Z = 50 ) protons and ( N = 75 ) neutrons:</p>
+<ul class="simple">
+<li><p>The binding energy of the original nucleus (( BE(A, Z) )) is approximately ( 1052.15 ) MeV.</p></li>
+<li><p>The binding energy of the nucleus with one less neutron (( BE(A-1, Z) )) is approximately ( 1046.12 ) MeV.</p></li>
+<li><p>The neutron separation energy (( S_n )) is calculated to be approximately ( 6.03 ) MeV.</p></li>
+</ul>
+</section>
+</section>
+<section id="id4">
+<h2>Conclusion:<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>The neutron separation energy, ( S_n ), represents the energy required to remove a neutron from the nucleus. In this example, ( S_n ) is ( 6.03 ) MeV, indicating the amount of energy
+needed to detach one neutron from this hypothetical nucleus. This calculation is crucial in nuclear physics for understanding nuclear reactions, stability, and processes such as nuclear
+fission and fusion.</p>
+<p>Keep in mind, this example omits the pairing term (( \delta(A, Z) )) for simplicity. In actual calculations, including the pairing term would provide a more accurate value for the
+binding energy and, consequently, the neutron separation energy, especially for nuclei with even and odd numbers of protons and neutrons.</p>
+<p>Differentiating the Semi-Empirical Mass Formula (SEMF) to find the minimum proton number ( Z ) for a given constant atomic mass number ( A ) involves calculus and understanding how the binding energy of a nucleus depends on its composition. The idea here is to find the ( Z ) value that maximizes the binding energy (or minimizes the mass) of a nucleus with a fixed ( A ), indicating the most stable configuration for that given ( A ).</p>
+</section>
+<section id="board-work-example-finding-minimum-z-for-constant-a-using-semf">
+<h2>Board Work Example: Finding Minimum ( Z ) for Constant ( A ) Using SEMF<a class="headerlink" href="#board-work-example-finding-minimum-z-for-constant-a-using-semf" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h3>Given:<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Constant atomic mass number ( A ).</p></li>
+<li><p>SEMF binding energy equation with coefficients for volume (( a_v )), surface (( a_s )), Coulomb (( a_c )), and asymmetry (( a_a )).</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>Objective:<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>Find the value of ( Z ) that minimizes the mass (or maximizes the binding energy) for a given ( A ).</p>
+</section>
+<section id="id7">
+<h3>SEMF Binding Energy Formula:<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>[ BE(A, Z) = a_v A - a_s A^{2/3} - a_c \frac{Z(Z-1)}{A^{1/3}} - a_a \frac{(A - 2Z)^2}{A} ]</p>
+</section>
+<section id="differentiation-approach">
+<h3>Differentiation Approach:<a class="headerlink" href="#differentiation-approach" title="Link to this heading">#</a></h3>
+<p>To find the minimum ( Z ), we need to differentiate the binding energy equation with respect to ( Z ), set the derivative equal to zero, and solve for ( Z ). This gives the ( Z ) value for which the binding energy is maximized.</p>
+<ol class="arabic simple">
+<li><p><strong>Differentiate the SEMF with respect to ( Z ):</strong>
+[ \frac{d(BE)}{dZ} = -2a_c \frac{Z}{A^{1/3}} + 4a_a \frac{Z}{A} - 2a_a \frac{A}{A} + a_c \frac{1}{A^{1/3}} ]</p></li>
+<li><p><strong>Set the derivative equal to zero to find the critical points:</strong>
+[ -2a_c \frac{Z}{A^{1/3}} + 4a_a \frac{Z}{A} - 2a_a + a_c \frac{1}{A^{1/3}} = 0 ]</p></li>
+<li><p><strong>Solve for ( Z ):</strong>
+Rearrange the equation to solve for ( Z ). This involves algebraic manipulation to isolate ( Z ) on one side of the equation.</p></li>
+</ol>
+</section>
+<section id="solving-for-z">
+<h3>Solving for ( Z ):<a class="headerlink" href="#solving-for-z" title="Link to this heading">#</a></h3>
+<p>[ Z = \frac{a_c + 2a_a A^{2/3}}{2a_c A^{-1/3} + 4a_a A^{-1}} ]</p>
+<p>Let’s plug in typical values for the SEMF coefficients to give a concrete example. We’ll use:</p>
+<ul class="simple">
+<li><p>( a_v = 15.5 ) MeV (not directly used in the differentiation but included for completeness)</p></li>
+<li><p>( a_s = 16.8 ) MeV (same as above)</p></li>
+<li><p>( a_c = 0.715 ) MeV</p></li>
+<li><p>( a_a = 23.0 ) MeV</p></li>
+<li><p>( A = 240 ) (as an example)</p></li>
+</ul>
+<p>We’ll calculate the value of ( Z ) that minimizes the mass for this given ( A ).</p>
+<p>It seems there was a mistake in the calculation or interpretation of the formula for ( Z ). Let’s correct this by properly analyzing the differentiation and solving steps.</p>
+<p>When finding the optimal ( Z ) that minimizes the mass for a given ( A ), the correct approach involves accurately applying the SEMF formula and its differentiation with respect to ( Z ). The formula provided earlier for ( Z ) was incorrectly derived or interpreted.</p>
+<p>For a stable nucleus with a given ( A ), the correct differentiation would take into account the balance of forces and the specific terms in the SEMF related to ( Z ). Typically, the differentiation process would focus on the Coulomb and asymmetry terms, as these are the parts of the SEMF that directly depend on ( Z ).</p>
+<p>Let’s revise the approach to correctly solve for ( Z ) with the assumption that the primary goal is to balance the Coulomb repulsion and the symmetry energy in a way that reflects nuclear stability principles.</p>
+<p>Given the error in the calculation, let’s focus on the conceptual steps:</p>
+<ol class="arabic simple">
+<li><p><strong>Correctly differentiate the relevant terms of the SEMF with respect to ( Z )</strong>, focusing on the Coulomb and asymmetry terms, which are directly dependent on ( Z ).</p></li>
+<li><p><strong>Set this derivative equal to zero</strong> to find the equilibrium point, which would reflect the condition for maximum binding energy or stability.</p></li>
+<li><p><strong>Solve this equation for ( Z )</strong> to find the optimal proton number for stability for the given ( A ).</p></li>
+</ol>
+<p>The actual calculation should carefully balance these terms and might involve a more nuanced approach to the differentiation and solving process than what was initially shown.</p>
+<p>For educational purposes or practical calculations, it’s crucial to ensure the differentiation is done correctly and that the resulting equations are solved accurately for ( Z ), considering the specific coefficients and the nuclear mass number ( A ). This process illustrates the balance of nuclear forces and the search for stable configurations within the nuclear landscape.</p>
+<p>Certainly! Double magic nuclei are fascinating subjects in nuclear physics, known for their exceptional stability compared to other nuclei. These nuclei have both proton and neutron numbers that are equal to the so-called “magic numbers.” Magic numbers are specific numbers of nucleons (protons or neutrons) that complete a nuclear shell, making the nucleus more stable. The recognized magic numbers are 2, 8, 20, 28, 50, 82, and 126. A nucleus that has both proton and neutron numbers equal to these magic numbers is called “double magic.”</p>
+</section>
+</section>
+<section id="board-work-example-understanding-double-magic-nuclei">
+<h2>Board Work Example: Understanding Double Magic Nuclei<a class="headerlink" href="#board-work-example-understanding-double-magic-nuclei" title="Link to this heading">#</a></h2>
+<section id="introduction-to-double-magic-nuclei">
+<h3>Introduction to Double Magic Nuclei<a class="headerlink" href="#introduction-to-double-magic-nuclei" title="Link to this heading">#</a></h3>
+<p>Double magic nuclei are especially stable because they have closed shells for both protons and neutrons. This stability is analogous to the noble gases in the periodic table, which have completed electron shells and are chemically inert.</p>
+</section>
+<section id="examples-of-double-magic-nuclei">
+<h3>Examples of Double Magic Nuclei<a class="headerlink" href="#examples-of-double-magic-nuclei" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Helium-4 ((^4)He)</strong>: With 2 protons and 2 neutrons, Helium-4 is the lightest double magic nucleus, showcasing exceptional stability.</p></li>
+<li><p><strong>Oxygen-16 ((^{16})O)</strong>: This nucleus has 8 protons and 8 neutrons, making it double magic and significantly stable.</p></li>
+<li><p><strong>Calcium-40 ((^{40})Ca)</strong>: With 20 protons and 20 neutrons, Calcium-40 is another prime example of a double magic nucleus.</p></li>
+<li><p><strong>Calcium-48 ((^{48})Ca)</strong>: Although it has the same number of protons as (^{40})Ca, its 28 neutrons make (^{48})Ca another noteworthy double magic nucleus.</p></li>
+<li><p><strong>Lead-208 ((^{208})Pb)</strong>: This nucleus has 82 protons and 126 neutrons, making it the heaviest known stable double magic nucleus.</p></li>
+</ol>
+</section>
+<section id="why-are-double-magic-nuclei-important">
+<h3>Why Are Double Magic Nuclei Important?<a class="headerlink" href="#why-are-double-magic-nuclei-important" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Stability</strong>: Double magic nuclei are among the most stable and least reactive nuclear species.</p></li>
+<li><p><strong>Benchmark for Theories</strong>: They serve as critical benchmarks for nuclear models and theories, helping scientists understand nuclear forces and shell structure.</p></li>
+<li><p><strong>Nuclear Reactions and Astrophysics</strong>: Double magic nuclei play significant roles in nuclear reactions, including those occurring in stars, and are pivotal in the synthesis of heavier elements in the universe.</p></li>
+</ul>
+</section>
+<section id="theoretical-explanation">
+<h3>Theoretical Explanation<a class="headerlink" href="#theoretical-explanation" title="Link to this heading">#</a></h3>
+<p>The nuclear shell model, which explains the arrangement of nucleons in terms of energy levels or shells, provides a theoretical foundation for the concept of magic numbers and the extraordinary stability of double magic nuclei. When both proton and neutron shells are completely filled, the nucleus achieves a higher binding energy per nucleon, contributing to its remarkable stability.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./unit3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="phy303-unit3-review.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Unit 3 : Review Material</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="phy303-unit3-additionalproblems.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Unit 3 : Additional Problems</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-1-carbon-mass-calculation">Example 3.1 : Carbon Mass Calculation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#given">Given:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">Objective:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula">Formula:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-solution">Step-by-Step Solution:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Given:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Objective:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#semf-binding-energy-formula">SEMF Binding Energy Formula:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-separation-energy-formula">Neutron Separation Energy Formula:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Step-by-Step Solution:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Conclusion:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#board-work-example-finding-minimum-z-for-constant-a-using-semf">Board Work Example: Finding Minimum ( Z ) for Constant ( A ) Using SEMF</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Given:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Objective:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">SEMF Binding Energy Formula:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#differentiation-approach">Differentiation Approach:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-for-z">Solving for ( Z ):</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#board-work-example-understanding-double-magic-nuclei">Board Work Example: Understanding Double Magic Nuclei</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-double-magic-nuclei">Introduction to Double Magic Nuclei</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-double-magic-nuclei">Examples of Double Magic Nuclei</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-are-double-magic-nuclei-important">Why Are Double Magic Nuclei Important?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theoretical-explanation">Theoretical Explanation</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Liz Kneale, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

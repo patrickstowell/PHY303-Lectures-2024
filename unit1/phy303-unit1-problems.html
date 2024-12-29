@@ -1,0 +1,752 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Unit 1 : Worked Problems &#8212; PHY303 Nuclear Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unit1/phy303-unit1-problems';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Unit 1 : Additional Problems" href="phy303-unit1-additionalproblems.html" />
+    <link rel="prev" title="Unit 1 : Review Material" href="phy303-unit1-review.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../phy303-homepage.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="PHY303 Nuclear Physics - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY303 Nuclear Physics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit3/phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit4/phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit5/phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit6/phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit7/phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit8/phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit9/phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit10/phy303-unit10-medicalapplications.html">10. Nuclear Medicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit11/phy303-unit11-fissionandfusion.html">11. Nuclear Power</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Review Material</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="phy303-unit1-review.html">Unit 1 : Review Material</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Unit 1 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit1-additionalproblems.html">Unit 1 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit1-flashcards.html">Unit 1 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit1-random-quiz.html">Unit 1 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit1-full-quiz.html">Unit 1 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit2/phy303-unit2-review.html">Unit 2 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-problems.html">Unit 2 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-additionalproblems.html">Unit 2 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-random-quiz.html">Unit 2 : Random Quiz</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-full-quiz.html">Unit 2 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit3/phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-problems.html">Unit 3 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-additionalproblems.html">Unit 3 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-flashcards.html">Unit 3 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-random-quiz.html">Unit 3 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-full-quiz.html">Unit 3 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit4/phy303-unit4-review.html">Unit 4 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-problems.html">Unit 4 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-additionalproblems.html">Unit 4 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-flashcards.html">Unit 4 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-random-quiz.html">Unit 4 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-full-quiz.html">Unit 4 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit5/phy303-unit5-review.html">Unit 5 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-problems.html">Unit 5 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-additionalproblems.html">Unit 5 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-terms.html">Unit 5 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-flashcards.html">Unit 5 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-random-quiz.html">Unit 5 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-full-quiz.html">Unit 5 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit6/phy303-unit6-review.html">Unit 6 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-problems.html">Unit 6 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-additionalproblems.html">Unit 6 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-terms.html">Unit 6 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-flashcards.html">Unit 6 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-random-quiz.html">Unit 6 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-full-quiz.html">Unit 6 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit7/phy303-unit7-review.html">Unit 7 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-problems.html">Unit 7 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-additionalproblems.html">Unit 7 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-terms.html">Unit 7 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-flashcards.html">Unit 7 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-random-quiz.html">Unit 7 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-full-quiz.html">Unit 7 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit8/phy303-unit8-review.html">Unit 8 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-problems.html">Unit 8 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-additionalproblems.html">Unit 8 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-terms.html">Unit 8 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-flashcards.html">Unit 8 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-random-quiz.html">Unit 8 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-full-quiz.html">Unit 8 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit9/phy303-unit9-review.html">Unit 9 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-problems.html">Unit 9 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-additionalproblems.html">Unit 9 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-terms.html">Unit 9 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-flashcards.html">Unit 9 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-random-quiz.html">Unit 9 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-full-quiz.html">Unit 9 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit10/phy303-unit10-review.html">Unit 10 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-problems.html">Unit 10 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-additionalproblems.html">Unit 10 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-terms.html">Unit 10 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-flashcards.html">Unit 10 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-random-quiz.html">Unit 10 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-full-quiz.html">Unit 10 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit11/phy303-unit11-review.html">Unit 11 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-problems.html">Unit 11 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-additionalproblems.html">Unit 11 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-terms.html">Unit 11 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-flashcards.html">Unit 11 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-random-quiz.html">Unit 11 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/nucleus-shape.html">Nucleus Shape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/janis-viewer.html">JANIS Viewer</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/unit1/phy303-unit1-problems.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Unit 1 : Worked Problems</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-1-carbon-mass-calculation">Example 1.1 : Carbon Mass Calculation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-2-nucleon-momentum-estimate">Example 1.2 : Nucleon Momentum Estimate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-3-shielding-cross-section-estimate">Example 1.3 : Shielding Cross-section Estimate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-4-closest-approach-estimate">Example 1.4 : Closest Approach Estimate</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="unit-1-worked-problems">
+<span id="unit1-problems"></span><h1>Unit 1 : Worked Problems<a class="headerlink" href="#unit-1-worked-problems" title="Link to this heading">#</a></h1>
+<section id="example-1-1-carbon-mass-calculation">
+<span id="unit1-problem-example1"></span><h2>Example 1.1 : Carbon Mass Calculation<a class="headerlink" href="#example-1-1-carbon-mass-calculation" title="Link to this heading">#</a></h2>
+<p>Given the mass of a carbon-12 atom is <span class="math notranslate nohighlight">\(12u\)</span>, estimate the binding energy of the carbon nucleus.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>First we start with the mass of the proton, neutron, and electrons in the atomic mass units. Since the mass if that of a carbon-12 atom, we include the electrons in our
+calculation.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+m_{p} = 1.00728 u \\
+m_{n} = 1.00866 u \\
+m_{e} = 0.00055 u \\
+\end{split}\]</div>
+<p>Now we can write the binding energy as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B = M_{C12} - 6m_{n} - 6m_{p} - 6m_{e} \\
+Bc^{2} = 0.09894 u = 0.09894 \times 931.5~\textnormal{MeV/u} = 92.16~\textnormal{MeV}
+\end{split}\]</div>
+<p>If we want to get this per nucleon we just need to divide by the total nucleons in a carbon 12 nucleus.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B/A = 92.16~\textnormal{MeV} / 12 = 7.42~\textnormal{MeV/nucleon}\\
+\end{split}\]</div>
+<p><strong>Additional Clarification (04/2024)</strong> : A key thing to remember is that the electron mass does contribute if we are working in <strong>atomic</strong> mass values, whilst if we have been given
+a <strong>nuclear</strong> mass value it does not. For heavy mass nuclei including the electrons  has a smaller effect as the number of protons relative to neutrons drop.</p>
+<p>Given that the mass of an electron is around <span class="math notranslate nohighlight">\(0.511~\textnormal{MeV/c}^{2}\)</span> we can expect shifts in the total binding energy on the order of several MeV depending on the nuclei.</p>
+</div>
+</section>
+<section id="example-1-2-nucleon-momentum-estimate">
+<span id="unit1-problem-example2"></span><h2>Example 1.2 : Nucleon Momentum Estimate<a class="headerlink" href="#example-1-2-nucleon-momentum-estimate" title="Link to this heading">#</a></h2>
+<p>Use the Heisenberg Uncertainty principle to estimate the momentum of nucleons inside the nucleus given that the nuclear radius is on the order of <span class="math notranslate nohighlight">\(5~\textnormal{fm}\)</span>.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>The Heisenberg principle states that</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta x \Delta p \geq \frac{\hbar}{2}
+\]</div>
+<p>in the case of a solid sphere we can emasure the nucleoonos position with an uncertainty similar to the nuclear radius, hence</p>
+<div class="math notranslate nohighlight">
+\[
+c\Delta p \approx \frac{\hbar c}{2\Delta x}
+\]</div>
+<p>as usual multiplying both terms by <span class="math notranslate nohighlight">\(c\)</span> to make use of the simple to remember quantity of <span class="math notranslate nohighlight">\(\hbar c \approx 200~\textnormal{MeV}~\textnormal{fm}\)</span>. This implies that the momenta of
+the nucleons will be of the order of</p>
+<div class="math notranslate nohighlight">
+\[
+pc \approx \frac{200~\textnormal{MeV}~\textnormal{fm}}{2 \times 5~\textnormal{fm}} = 20~\textnormal{MeV}.
+\]</div>
+<p>This 20 MeV momentum is considerable, however it is much smaller than the nucleons mass, which means that albeit fast, they will not be in the relativistic regime. Therefore the
+moomentum can be written as</p>
+<div class="math notranslate nohighlight">
+\[
+p = m v
+\]</div>
+<p>and the ratio <span class="math notranslate nohighlight">\(pc/E\)</span> can be expressed as</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{pc}{E} = \frac{mvc}{mc^{2}} = \frac{v}{c} = \beta
+\]</div>
+<p>which gives <span class="math notranslate nohighlight">\(\beta \approx 0.02\)</span>. Despite the fact that we consider the nucleus as a solid sphere of protons and neutrons tightly packed together, the quantum mechanical reality is
+quite different as the nucleons move quite quickly around the allowed space.</p>
+</div>
+</section>
+<section id="example-1-3-shielding-cross-section-estimate">
+<span id="unit1-problem-example3"></span><h2>Example 1.3 : Shielding Cross-section Estimate<a class="headerlink" href="#example-1-3-shielding-cross-section-estimate" title="Link to this heading">#</a></h2>
+<p>Consider a 1-TBq source of Cs-137 that produces an effective dose of 1.073 Sv/hr at a distance of 30cm (<em>Delecroix Handbook 2002</em>). The decay chain of Cs-137 produces a clear
+gamma ray peak at 662 keV. Assuming a cross-section of 662keV gamma rays on lead nuclei of <span class="math notranslate nohighlight">\(\sigma=4.3 \times 10^{-23} cm^{2}\)</span> determine the lead shielding thickness required to
+reduce the dose rate to 1mSv/hr.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>The Heisenberg principle states that</p>
+<p>To calculte the thickness of lead first we need to know the attenuation rate of our gamma rays in the lead shielding. We can estimate this based on the cross-section and the
+density of lead itself, <span class="math notranslate nohighlight">\(\rho\)</span>.</p>
+<p>Given the density, <span class="math notranslate nohighlight">\(\rho=11.36 \textnormal{g/cm}^{3}\)</span>, and the mass of a lead atom to be <span class="math notranslate nohighlight">\(m_{Pb} = 207.293u\)</span> we can estimate <span class="math notranslate nohighlight">\(n\)</span> as</p>
+<div class="math notranslate nohighlight">
+\[
+n = \frac{11.36 \textnormal{g/cm}^{3}}{207.293u \times 1.66056\times 10^{-24} \textnormal{g/u} } = 3.3 \times 10 ^{23} \textnormal{cm}^{-3}
+\]</div>
+<p>This leads to a mean free path of</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda = \frac{1}{n\sigma} = 0.704 \textnormal{cm}^{-1}
+\]</div>
+<p>If we consider the intensity of our source passing through the lead shielding we get</p>
+<div class="math notranslate nohighlight">
+\[
+N = N_{0}~e^{-x/\lambda}
+\]</div>
+<p>Taking the natural log this gives</p>
+<div class="math notranslate nohighlight">
+\[
+x = -\lambda ~\textnormal{ln}\left( \frac{N}{N_{0}}\right)
+\]</div>
+<p>Now if we consider our known attenuation and drop required we get</p>
+<div class="math notranslate nohighlight">
+\[
+x = -0.704 ~\textnormal{ln} \left( \frac{1~\textnormal{Smv/hr}}{1.073~\textnormal{Sv/hr}}\right) = 4.91~\textnormal{cm}
+\]</div>
+<p>Note that this is an estimate based on just the 662keV peak, and neglects the <span class="math notranslate nohighlight">\(r^{2}\)</span> fall-off for point radioactive sources, but it highlights how the cross-section has an effect
+on the result. If the cross-section’s for gamma radiation were higher, we would expect much thicker shielding requirements.</p>
+</div>
+</section>
+<section id="example-1-4-closest-approach-estimate">
+<span id="unit1-problem-example4"></span><h2>Example 1.4 : Closest Approach Estimate<a class="headerlink" href="#example-1-4-closest-approach-estimate" title="Link to this heading">#</a></h2>
+<p>Considering Polonium-210 as an alpha emitter in Rutherford’s gold foil experiment, estimate the minimum theoretical limit to which alpha scattering may be able place a limit on
+the size of the nucleus.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>To consider the limit of the alpha scattering experiments we need to determine their distance of closest possible approach under the hyperbolic trajectory assumption.</p>
+<p>Consider the case when an alpha particle is directed head-on towards the nucleus, so that when it reaches the distance of closest approach it turns around and travels back in the
+direction it came. At this turning point all of the alpha’s kinetic energy has been transformed into electric potential energy.</p>
+<p>The potential some distance, <span class="math notranslate nohighlight">\(r\)</span>, away is given by</p>
+<div class="math notranslate nohighlight">
+\[
+E_{Q} = \frac{1}{4\pi\epsilon_{0}} \frac{(2e)\cdot(Ze)}{r}
+\]</div>
+<p>where 2e is the charge of the alpha, and Ze is the charge of the gold nucleus.</p>
+<p>At the distance of closest approach, <span class="math notranslate nohighlight">\(d\)</span>, this potential is equal to the starting kinetic energy of the alpha,</p>
+<div class="math notranslate nohighlight">
+\[
+K_{\alpha} =  \frac{1}{4\pi\epsilon_{0}} \frac{(2e)\cdot(Ze)}{d}.
+\]</div>
+<p>This means the distance is simply</p>
+<div class="math notranslate nohighlight">
+\[
+d =  \frac{1}{4\pi\epsilon_{0}} \frac{(2e)\cdot(Ze)}{K_{\alpha}}.
+\]</div>
+<p>Now to determine the energy of the alphe we need to consider the mass deficit of the decay that took place to produce it.</p>
+<div class="math notranslate nohighlight">
+\[
+\textnormal{Po}_{210} \rightarrow \textnormal{Pb}_{206} + \alpha.
+\]</div>
+<p>The mass contributions from each of these are taken from the NIST material database as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M(\textnormal{Pb}_{210}) = 209.9828u \\
+M(\textnormal{Pb}_{206}) = 205.9794u \\
+M(\alpha) = 4.0026u \\
+\end{split}\]</div>
+<p>Note that here for the alpha mass contribution we have used the mass of a <strong>Helium atom</strong> as this encapsulates that the 2 extra electrons have to go somewhere.</p>
+<p>This means the mass deficit energy, <span class="math notranslate nohighlight">\(Q\)</span>, is given by</p>
+<div class="math notranslate nohighlight">
+\[
+Qc^{2} = (209.9828u - 205.9794u - 4.0026u)c^{2} = 0.0058u ~c^{2}
+\]</div>
+<p>This energy will be split between the alpha and daughter nuclei, however if we assume that all the energy goes into the kinetic energy of the alpha given it has much smaller mass
+this gives the maximum kinetic energy of the alpha in standard units as</p>
+<div class="math notranslate nohighlight">
+\[
+K_\alpha = 5.40~\textnormal{MeV} = 8.65175 \times 10^{-13} J
+\]</div>
+<p>Subbing this maximum back into our equation for the distance gives</p>
+<div class="math notranslate nohighlight">
+\[
+d = 4.905 \times 10^{-14}~\textnormal{m}
+\]</div>
+<p>So our alpha particles only manage to get within <span class="math notranslate nohighlight">\(49 \textnormal{fm}\)</span> from the nucleus and that is if they hit the gold nucleus head on. If we consider that typical <span class="math notranslate nohighlight">\(\alpha\)</span>
+particle energies are between <span class="math notranslate nohighlight">\(0-11 \textnormal{MeV}\)</span> this gives a minimum distance of closest approach of around <span class="math notranslate nohighlight">\(25~\textnormal{fm}\)</span> still much bigger than the size of the gold
+nucleus (<span class="math notranslate nohighlight">\(6.6~\textnormal{fm}\)</span>).</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./unit1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="phy303-unit1-review.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Unit 1 : Review Material</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="phy303-unit1-additionalproblems.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Unit 1 : Additional Problems</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-1-carbon-mass-calculation">Example 1.1 : Carbon Mass Calculation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-2-nucleon-momentum-estimate">Example 1.2 : Nucleon Momentum Estimate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-3-shielding-cross-section-estimate">Example 1.3 : Shielding Cross-section Estimate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-4-closest-approach-estimate">Example 1.4 : Closest Approach Estimate</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Liz Kneale, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,1111 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>11. Nuclear Power &#8212; PHY303 Nuclear Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unit11/phy303-unit11-fissionandfusion';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Unit 1 : Review Material" href="../unit1/phy303-unit1-review.html" />
+    <link rel="prev" title="10. Nuclear Medicine" href="../unit10/phy303-unit10-medicalapplications.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../phy303-homepage.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="PHY303 Nuclear Physics - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY303 Nuclear Physics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unit1/phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit3/phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit4/phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit5/phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit6/phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit7/phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit8/phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit9/phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit10/phy303-unit10-medicalapplications.html">10. Nuclear Medicine</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Nuclear Power</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Review Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit1/phy303-unit1-review.html">Unit 1 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-problems.html">Unit 1 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-additionalproblems.html">Unit 1 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-flashcards.html">Unit 1 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-random-quiz.html">Unit 1 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-full-quiz.html">Unit 1 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit2/phy303-unit2-review.html">Unit 2 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-problems.html">Unit 2 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-additionalproblems.html">Unit 2 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-random-quiz.html">Unit 2 : Random Quiz</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-full-quiz.html">Unit 2 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit3/phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-problems.html">Unit 3 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-additionalproblems.html">Unit 3 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-flashcards.html">Unit 3 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-random-quiz.html">Unit 3 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-full-quiz.html">Unit 3 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit4/phy303-unit4-review.html">Unit 4 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-problems.html">Unit 4 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-additionalproblems.html">Unit 4 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-flashcards.html">Unit 4 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-random-quiz.html">Unit 4 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-full-quiz.html">Unit 4 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit5/phy303-unit5-review.html">Unit 5 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-problems.html">Unit 5 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-additionalproblems.html">Unit 5 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-terms.html">Unit 5 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-flashcards.html">Unit 5 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-random-quiz.html">Unit 5 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-full-quiz.html">Unit 5 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit6/phy303-unit6-review.html">Unit 6 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-problems.html">Unit 6 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-additionalproblems.html">Unit 6 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-terms.html">Unit 6 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-flashcards.html">Unit 6 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-random-quiz.html">Unit 6 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-full-quiz.html">Unit 6 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit7/phy303-unit7-review.html">Unit 7 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-problems.html">Unit 7 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-additionalproblems.html">Unit 7 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-terms.html">Unit 7 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-flashcards.html">Unit 7 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-random-quiz.html">Unit 7 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-full-quiz.html">Unit 7 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit8/phy303-unit8-review.html">Unit 8 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-problems.html">Unit 8 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-additionalproblems.html">Unit 8 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-terms.html">Unit 8 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-flashcards.html">Unit 8 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-random-quiz.html">Unit 8 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-full-quiz.html">Unit 8 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit9/phy303-unit9-review.html">Unit 9 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-problems.html">Unit 9 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-additionalproblems.html">Unit 9 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-terms.html">Unit 9 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-flashcards.html">Unit 9 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-random-quiz.html">Unit 9 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-full-quiz.html">Unit 9 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit10/phy303-unit10-review.html">Unit 10 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-problems.html">Unit 10 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-additionalproblems.html">Unit 10 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-terms.html">Unit 10 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-flashcards.html">Unit 10 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-random-quiz.html">Unit 10 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-full-quiz.html">Unit 10 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="phy303-unit11-review.html">Unit 11 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit11-problems.html">Unit 11 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit11-additionalproblems.html">Unit 11 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit11-terms.html">Unit 11 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit11-flashcards.html">Unit 11 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit11-random-quiz.html">Unit 11 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/nucleus-shape.html">Nucleus Shape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/janis-viewer.html">JANIS Viewer</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/unit11/phy303-unit11-fissionandfusion.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Nuclear Power</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">11.1. Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-energetics-of-nuclear-power">11.1.1. Basic energetics of nuclear power</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fission">11.2. Fission</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-of-fission">11.2.1. Physics of fission</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spontaneous-fission">11.2.1.1. Spontaneous fission</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#induced-fission">11.2.1.2. Induced fission</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-fission-products">11.2.1.3. Characteristics of fission products</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#energetics-of-fission">11.2.1.4. Energetics of fission</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-reactions">11.2.2. Chain reactions</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#startup-sources">11.2.2.1. Startup sources</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subcritical-reactors">11.2.2.2. Subcritical reactors</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reactor-design">11.2.3. Reactor design</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-four-factor-formula">11.2.3.1. The four-factor formula</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reactor-design-strategies">11.2.3.2. Reactor design strategies</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-reactor-designs">11.2.4. Common reactor designs</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pressurised-water-reactor-pwr">11.2.4.1. Pressurised water reactor (PWR)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#boiling-water-reactor-bwr">11.2.4.2. Boiling water reactor (BWR)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pressurised-heavy-water-reactor-phwr">11.2.4.3. Pressurised heavy-water reactor (PHWR)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-gas-cooled-reactor-agr">11.2.4.4. Advanced gas-cooled reactor (AGR)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reactor-power-output">11.2.5. Reactor power output</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-natural-nuclear-reactor-not-examinable">11.2.6. A natural nuclear reactor (not examinable)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-fission">11.2.7. Summary (fission)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fusion">11.3. Fusion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energetics-of-fusion">11.3.1. Energetics of fusion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-coulomb-barrier">11.3.2. The Coulomb barrier</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fusion-reactions">11.3.3. Fusion reactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fusion-reaction-rates">11.3.4. Fusion reaction rates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deuterium-tritium-fusion">11.3.5. Deuterium-tritium fusion</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-challenges">11.3.5.1. The challenges</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lawson-criterion-and-fusion-strategies">11.3.6. The Lawson criterion and fusion strategies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetic-confinement-fusion-mcf">11.3.7. Magnetic confinement fusion (MCF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inertial-confinement-fusion-icf">11.3.8. Inertial confinement fusion (ICF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steps-towards-practical-fusion">11.3.9. Steps towards practical fusion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-fusion">11.3.10. Summary (fusion)</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="nuclear-power">
+<h1><span class="section-number">11. </span>Nuclear Power<a class="headerlink" href="#nuclear-power" title="Link to this heading">#</a></h1>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Quick Links</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="phy303-unit11-problems.html#unit11-problems"><span class="std std-ref">Unit 11 : Worked Problems</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit11-additionalproblems.html#unit11-additionalproblems"><span class="std std-ref">Unit 11 : Additional Problems</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit11-terms.html#unit11-terms"><span class="std std-ref">Unit 11 : Equations &amp; Terms</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit11-flashcards.html#unit11-flashcards"><span class="std std-ref">Unit 11 : Flash Cards</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit11-random-quiz.html#unit11-randomquiz"><span class="std std-ref">Unit 11 : Random Quiz</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit11-full-quiz.html#unit11-fullquiz"><span class="std std-ref">Unit 11 : Full Quiz</span></a></p></li>
+<li><p>From the <a class="reference external" href="https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441">Reading List</a></p>
+<ul>
+<li><p>TBC</p></li>
+<li><p>TBC</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="introduction">
+<h2><span class="section-number">11.1. </span>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<section id="basic-energetics-of-nuclear-power">
+<h3><span class="section-number">11.1.1. </span>Basic energetics of nuclear power<a class="headerlink" href="#basic-energetics-of-nuclear-power" title="Link to this heading">#</a></h3>
+<p>If we plot the binding energy per nucleon against the mass number (Figure 10.1), we find a broad maximum around iron.  This implies that, in principle, it is energetically favourable for elements lighter than iron to fuse and for elements heavier than iron to split into smaller nuclei (by fission or, for nuclei not much heavier than iron, by <span class="math notranslate nohighlight">\(α\)</span> decay).  If the elements formed in thermodynamic equilibrium, we would expect the elements around iron to be most abundant, but in nature the temperatures needed for this only occur in the interior of supernova explosions (producing a pronounced “iron peak” in the elemental abundances, see right panel of Figure 10.1).</p>
+<figure class="align-default" id="spontfission">
+<a class="reference internal image-reference" href="../_images/image-74.png"><img alt="Graphs of spontaneous fission" src="../_images/image-74.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.1 </span><span class="caption-text">Left, binding energy per nucleon (MeV) against mass number A. (Data from Krane.) Right: solar system abundances, relative to hydrogen (set equal to 10<span class="math notranslate nohighlight">\(^{12}\)</span>).  The lines join elements with even Z (green) and odd Z (red).  The iron peak created by supernovae can be clearly seen.  (Data from Lodders, ApJ 591 (2003) 1220, table 2.*)</span><a class="headerlink" href="#spontfission" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In fact, most of the elements up to bismuth <span class="math notranslate nohighlight">\((Z = 83)\)</span> have at least one stable isotope (the exceptions, which appear as missing points in the abundance plot, are technetium, <span class="math notranslate nohighlight">\(Z = 43\)</span>, and promethium, <span class="math notranslate nohighlight">\(Z = 61\)</span>).  The reason for this is the Coulomb barrier, which prevents light nuclei from getting close enough to fuse, and confines protons in heavy nuclei.  Nevertheless, it remains the case that energy would be released by fission of heavy nuclei or by fusion of light nuclei.  Stars are powered by nuclear fusion, although we have yet to surmount the technical challenges involved in achieving this on Earth (see the fusion section discussed later); on the other hand, we have solved the problems involved in generating energy by the fission of heavy nuclei.</p>
+</section>
+</section>
+<section id="fission">
+<h2><span class="section-number">11.2. </span>Fission<a class="headerlink" href="#fission" title="Link to this heading">#</a></h2>
+<section id="physics-of-fission">
+<h3><span class="section-number">11.2.1. </span>Physics of fission<a class="headerlink" href="#physics-of-fission" title="Link to this heading">#</a></h3>
+<section id="spontaneous-fission">
+<h4><span class="section-number">11.2.1.1. </span>Spontaneous fission<a class="headerlink" href="#spontaneous-fission" title="Link to this heading">#</a></h4>
+<p>In the liquid drop model, a nucleus will decay by spontaneous fission if it is unstable to small changes in its shape.  If we start with a spherical nucleus, a small elongation along one axis (pulling it into a rugby-ball shape, technically known as a prolate spheroid) will decrease the Coulomb term in the semi-empirical mass formula (the protons are a bit further apart) but increase the surface term (the surface area is increased).  If we assume that the nucleons remain closely packed together, so that the volume stays the same, a small shape change of this type corresponds to changing the long axis to <span class="math notranslate nohighlight">\(a=R(1+\epsilon)\)</span> while reducing the short axes to <span class="math notranslate nohighlight">\(b=R\sqrt{1+\epsilon}\)</span>, where <span class="math notranslate nohighlight">\(\epsilon \ll 1\)</span>.</p>
+<p>Martin nor Krane proves this, so I’m not going to either!) that in this case <span class="math notranslate nohighlight">\( E_c = a_c Z^2 A^{-1/3} \left(1 - \frac{1}{5} \epsilon^2\right) \)</span>
+and <span class="math notranslate nohighlight">\( E_s = a_s A^{2/3} \left(1 + \frac{2}{5} \epsilon^2\right) \)</span>, so <span class="math notranslate nohighlight">\( \Delta E = \frac{1}{5} \epsilon^2 \left(2a_s A^{2/3} - a_c Z^2 A^{-1/3}\right) \)</span>. The nucleus will be unstable to spontaneous fission if this releases energy, so the condition from spontaneous fission is</p>
+<div class="math notranslate nohighlight">
+\[ 2a_s A^{2/3}\leq a_{C} \frac{Z^2}{A^{1/3}} \quad \Rightarrow \quad \left(\frac{Z^2}{A}\right)_{\text{crit}} \geq \frac{2a_s}{a_c} \approx 49 \]</div>
+<p>(the exact number depends on the coefficients you adopt for the semi-empirical mass formula: Martin’s coefficients give 49, Krane’s give 47).</p>
+<p>This condition is not met until well into the transuranic region, somewhere around <span class="math notranslate nohighlight">\(A = 300\)</span>.  However, it is an unduly pessimistic estimate, because it does not take into account quantum tunnelling: nuclei that have small fission barriers may be able to decay by spontaneous fission even though this does not look possible in the classical liquid drop model.  In addition, some heavy nuclei are not spherical in the ground state, and we should also consider the effects of nuclear structure as described by the shell model.  One effect of this is to make fission much more likely for even-even than for even-odd nuclei: for example, <span class="math notranslate nohighlight">\(^{256}_{100}\textnormal{Fm}\)</span> has a spontaneous fission half-life of 2.8 hours, whereas <span class="math notranslate nohighlight">\(^{257}_{100}\textnormal{Fm}\)</span> (which decays primarily by α emission) has a spontaneous fission half-life of 131 years.  This appears to be related to the effect of the spin of the unpaired neutron.  This feature is also seen in induced fission: neutron capture by <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span>, producing the even-even nucleus <span class="math notranslate nohighlight">\(^{236}\textnormal{U}\)</span>, is much more likely to induce fission than neutron capture by <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span>.</p>
+<p>The effects of quantum tunnelling, non-spherical nuclei and shell corrections can be seen in Figure 10.2.Spontaneous fission becomes a viable decay mode for <span class="math notranslate nohighlight">\( Z^2 / A \geq 0.75\left(Z^{2}/A\right)_{\text{crit}} \)</span> (though it should be noted that the dominant decay mode for nearly all these very heavy nuclei remains α-decay).</p>
+<figure class="align-default" id="spontfission2">
+<a class="reference internal image-reference" href="../_images/image-12.png"><img alt="Graphs of spontaneous fission" src="../_images/image-12.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.2 </span><span class="caption-text">Spontaneous fission, plotted against fissility parameter  (which in this paper is taken as 50.883).  The left panel shows the height of the fission barrier, compared to the liquid drop model (LDM) prediction.  Note that above uranium it settles down to around 6 MeV.The right panel shows the spontaneous fission half-life.  “SF-isomers” are non-spherical excited states which have double-humped fission barriers, greatly increasing the tunnelling probability.  The superheavy elements 112, 114 and 116 are predicted to be more stable against fission because of a neutron magic number at N = 162. Figure from Oganessian and Utyonkov, Rep. Prog. Phys. 78 (2015) 036301.</span><a class="headerlink" href="#spontfission2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="induced-fission">
+<h4><span class="section-number">11.2.1.2. </span>Induced fission<a class="headerlink" href="#induced-fission" title="Link to this heading">#</a></h4>
+<p>Even with the corrections for shell model effects and quantum tunnelling, it remains true that only very heavy nuclei decay by spontaneous fission.  The heaviest naturally occurring isotope is <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span>, and its half-life to spontaneous fission is <span class="math notranslate nohighlight">\(8.4\times10^{15}\)</span> years <span class="math notranslate nohighlight">\((\)</span>or, to put it another way, its branching fraction for spontaneous fission is <span class="math notranslate nohighlight">\(5.4\times 10^{−5}~\%\)</span><span class="math notranslate nohighlight">\()\)</span>.  The only way to use fission to generate energy is to induce it by neutron capture.  If the result of neutron capture is an excited state above the fission barrier, which as we can see from Figure 10.2 can be taken as 6 MeV for all relevant isotopes, then we have a good chance of inducing fission.</p>
+<p>For example, the atomic mass of <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> is <span class="math notranslate nohighlight">\(235.043924~u\)</span>.  If we add a thermal neutron to this, we get <span class="math notranslate nohighlight">\(236.052589~u\)</span> (we can neglect the tiny kinetic energy of a thermal neutron).  The atomic mass of the ground state of <span class="math notranslate nohighlight">\(^{236}\textnormal{U}\)</span> is <span class="math notranslate nohighlight">\(236.045563~u\)</span>, so the level of excitation of the compound nucleus formed in the neutron capture is <span class="math notranslate nohighlight">\(0.007026~u = 6.54~\textnormal{MeV}\)</span>.  This is higher than the fission barrier, so this nucleus should decay by spontaneous fission.</p>
+<p>In contrast, if we add a thermal neutron to <span class="math notranslate nohighlight">\(^{23}\textnormal{U}\)</span>, the resulting <span class="math notranslate nohighlight">\(^{239}\textnormal{U}\)</span> has a mass only <span class="math notranslate nohighlight">\(4.8 \textnormal{MeV}\)</span> above the ground state mass.  Even without the known suppression of spontaneous fission in even-odd isotopes, this is well below the fission barrier, explaining why neutrons with energies <span class="math notranslate nohighlight">\(&gt;1~\textnormal{MeV}\)</span> are required to induce fission in <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span>.</p>
+</section>
+<section id="characteristics-of-fission-products">
+<h4><span class="section-number">11.2.1.3. </span>Characteristics of fission products<a class="headerlink" href="#characteristics-of-fission-products" title="Link to this heading">#</a></h4>
+<p>Fission generally produces two fission fragments, one with atomic mass around <span class="math notranslate nohighlight">\(A=139\)</span> and the other with whatever is left over (so the mass of the lighter fragment increases linearly with the mass of the fission parent), plus around 1–4 prompt neutrons.  The mean number of neutrons increases with the mass of the parent, as shown in figure 10.3.</p>
+<figure class="align-default" id="neutronyield">
+<a class="reference internal image-reference" href="../_images/image-13.png"><img alt="Graphs of spontaneous fission" src="../_images/image-13.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.3 </span><span class="caption-text">neutron yield from fission.  Note that nuclear physicists call this quantity ν̅: very unhelpful from a particle physicist’s perspective, since reactors also emit antineutrinos!From Svirikhin et al, Eur. Phys. J. A 44 (2010) 393.</span><a class="headerlink" href="#neutronyield" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The reason for the near-constancy of the mass of the heavy fragment is that it is associated with the proton magic number 50 and neutron magic number 82.  The fission process will naturally tend to produce fragments with magic numbers.  The leftover mass is not close to any magic numbers, so it is the heavy fragment whose mass is constrained.</p>
+<p>If a <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> nucleus fissions into fragments with masses 139 and 95 (allowing for the emission of two neutrons), and both fragments have the same neutron-to-proton ratio, the isotopes are <span class="math notranslate nohighlight">\(^{95}_{37}\textnormal{Rb}\)</span> and <span class="math notranslate nohighlight">\(^{139}_{55}\textnormal{Cs}\)</span>.  Neither of these is at all stable: the heaviest stable isotope of Rb is <span class="math notranslate nohighlight">\(^{87}_{37}\textnormal{Rb}\)</span>, and the only stable Cs isotope is <span class="math notranslate nohighlight">\(^{133}_{55}\textnormal{Cs}\)</span>.  Therefore the fission will be followed by a cascade of β decays, as the fission fragments convert their excess neutrons to protons.  In this particular case, the two decay chains are as follows:</p>
+<div class="math notranslate nohighlight">
+\[
+^{95}_{37} \textnormal{Rb} \rightarrow ~^{95}_{38}\textnormal{Sr}~ (91.3\%) \rightarrow ~^{95}_{39}\textnormal{Y}~ \rightarrow ~^{95}_{40}\textnormal{Zr}~ \rightarrow ~^{95}_{41}\textnormal{Nb}~ \rightarrow ~^{95}_{42}\textnormal{Mo}~  
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+^{95}_{37} \textnormal{Rb} \rightarrow n+~^{95}_{38}\textnormal{Sr}~ (8.7\%) \rightarrow ~^{94}_{39}\textnormal{Y}~ \rightarrow ~^{94}_{40}\textnormal{Zr}~ (\textnormal{stable})
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+^{139}_{55} \textnormal{Cs} \rightarrow ~^{139}_{56} \textnormal{Ba}~ \rightarrow ~^{139}_{57} \textnormal{La}~
+\]</div>
+<p>In each case, the β decay also produces an electron and an antineutrino: thus this particular fission would produce an average of 6.8 antineutrinos.  It would also produce an average of 0.087 delayed neutrons (delayed in this case by an average of 0.55 s, as the half-life of <span class="math notranslate nohighlight">\(^{95}_{37}\textnormal{Rb}\)</span> is 0.38 s).  All the isotopes of rubidium with mass numbers between 92 and 102 have decay modes that involve the emission of a neutron, as do isotopes of strontium with mass numbers between 98 and 102 and several relevant isotopes of krypton.  The consequence of this is that about 0.0162 delayed neutrons are emitted per fission of <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span>.  This has important implications for the control of fission reactors.</p>
+</section>
+<section id="energetics-of-fission">
+<h4><span class="section-number">11.2.1.4. </span>Energetics of fission<a class="headerlink" href="#energetics-of-fission" title="Link to this heading">#</a></h4>
+<p>The binding energy of <span class="math notranslate nohighlight">\(^{236}\textnormal{U}\)</span> is <span class="math notranslate nohighlight">\(7.587~\textnormal{MeV/nucleon}\)</span>.  The average binding energy of nuclides with masses in the range <span class="math notranslate nohighlight">\(A=87–103\)</span> is about <span class="math notranslate nohighlight">\(8.648~\textnormal{MeV/nucleon}\)</span>, and of those with masses <span class="math notranslate nohighlight">\(A=130–145\)</span> is <span class="math notranslate nohighlight">\(8.384~\textnormal{MeV/nucleon}\)</span>.  Again allowing for two prompt neutrons, and taking typical fragment masses of <span class="math notranslate nohighlight">\(95~u\)</span> and <span class="math notranslate nohighlight">\(139~u\)</span>, we deduce that the energy release is <span class="math notranslate nohighlight">\(95 \times 8.648) + (139 \times 8.384) - (236 \times 7.587) = 196.4~\textnormal{MeV}\)</span>.  This agrees well with the standard figure of <span class="math notranslate nohighlight">\(\sim 200~\textnormal{MeV/fission}\)</span>.  The breakdown of this 200 MeV is, on average:</p>
+<ul class="simple">
+<li><p>the two fission fragments have kinetic energies of about 98 and 66 MeV respectively;</p></li>
+<li><p>the average neutron energy is about 2 MeV, so about 5 MeV is carried away by the neutrons;</p></li>
+<li><p>about 8 MeV is emitted as prompt γ-rays;</p></li>
+<li><p>the remaining 23 MeV comes from β and γ decays of fission fragments, about half of which is lost as neutrino kinetic energy.</p></li>
+</ul>
+<p>Thus, most of the energy release comes in the form of the kinetic energy of the fission fragments.  This will quickly be redistributed among neighbouring atoms as the recoiling fragments collide with them, so the overall effect is to heat up the uranium.</p>
+</section>
+</section>
+<section id="chain-reactions">
+<h3><span class="section-number">11.2.2. </span>Chain reactions<a class="headerlink" href="#chain-reactions" title="Link to this heading">#</a></h3>
+<p>If at least one of the neutrons released by a <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> fission manages to induce fission in another <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> nucleus, we have a chain reaction.  There are three possible scenarios:</p>
+<ul class="simple">
+<li><p>If the number of neutrons inducing a further fission is &lt;1, the system is <strong>sub-critical</strong> and the fission process will not sustain itself.</p></li>
+<li><p>If the number is &gt;1, the fission rate will increase exponentially.  This is a <strong>super-critical</strong> system (otherwise known as a bomb…)</p></li>
+<li><p>For controlled energy release, i.e. power generation, we want the number to be exactly 1 <strong>(critical)</strong> for steady-state operation, but controllable (since we will need &gt;1 for starting up and &lt;1 for shutting down).</p></li>
+</ul>
+<p>This is where delayed neutrons are essential.  If all neutrons were prompt, the timescale for the exponential runaway of supercriticality would be so fast that effective control would be impossible.  The existence of the delayed neutron component means that a chain reaction that is exactly critical is actually slightly subcritical in prompt neutrons, which means that the timescale for supercriticality is set by the half-lives of the neutron-emitting fission fragments.  These vary considerably, from a fraction of a second to around a minute, but the average is around 1.7 s, which is long enough to allow effective control.</p>
+<p>(It is worth noting here that the delayed neutron yield of <span class="math notranslate nohighlight">\(^{239}\textnormal{Pu}\)</span>, which is produced in reactors by neutron capture on <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span> followed by β decays of <span class="math notranslate nohighlight">\(^{239}\textnormal{U}\)</span> and <span class="math notranslate nohighlight">\(^{239}\textnormal{Np}\)</span>, is much lower, at 0.0065 neutrons per fission.  This makes controlling a reactor that uses plutonium fuel more difficult than a reactor whose fuel is mostly <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span>.)</p>
+<section id="startup-sources">
+<h4><span class="section-number">11.2.2.1. </span>Startup sources<a class="headerlink" href="#startup-sources" title="Link to this heading">#</a></h4>
+<p>The need to keep the prompt neutron yield subcritical makes starting up a nuclear reactor slightly tricky.  It is normally done by inserting a <strong>startup source</strong> in the reactor core to initiate the chain reaction.  Any of the radioactive neutron sources discussed in the previous units will do: the usual choice is <span class="math notranslate nohighlight">\(^{252}\textnormal{Cf}\)</span>, because its neutrons have a very similar energy spectrum to those from uranium fission, so the reactor is designed for them, but an AmBe or PuBe source can be used instead.  The startup sources are usually deployed temporarily at the start of reactor operation, replacing a few of the fuel rods, and are withdrawn once the chain reaction is established.</p>
+</section>
+<section id="subcritical-reactors">
+<h4><span class="section-number">11.2.2.2. </span>Subcritical reactors<a class="headerlink" href="#subcritical-reactors" title="Link to this heading">#</a></h4>
+<p>Startup sources supply additional neutrons to an initially subcritical chain reaction.  Some reactor designs have been proposed that would <em>always</em> be subcritical, with the additional neutrons needed to maintain the chain reaction supplied, for example, by a spallation source.  The benefits of subcritical reactors are that they could use a wider range of fuel, especially long-lived nuclear waste (such as neptunium, americium and curium, which have isotopes with half-lives of thousands to millions of years) and thorium (which is more abundant on Earth than uranium), and that they allay many concerns about reactor safety, since they are inherently incapable of going supercritical (but, as we saw with Fukushima, a successfully shut-down reactor can still pose a safety hazard, because fission product decays will continue to heat the reactor core after the chain reaction has stopped).  The disadvantages are high cost and concerns about reliability (if the accelerator for the spallation source goes offline, the reactor will shut down).  Although subcritical reactors have some vociferous supporters, they have so far failed to win over the nuclear industry.</p>
+</section>
+</section>
+<section id="reactor-design">
+<h3><span class="section-number">11.2.3. </span>Reactor design<a class="headerlink" href="#reactor-design" title="Link to this heading">#</a></h3>
+<section id="the-four-factor-formula">
+<h4><span class="section-number">11.2.3.1. </span>The four-factor formula<a class="headerlink" href="#the-four-factor-formula" title="Link to this heading">#</a></h4>
+<p>The design goal of a nuclear reactor is to maintain a precisely critical, and therefore stable, fission chain reaction.  In order to do this, we must have exactly one neutron from each fission (including delayed neutrons) initiate another fission reaction.  There are four factors that determine this number:</p>
+<ul class="simple">
+<li><p><strong>η</strong> is the number of neutrons per fission that are available to be thermalized (i.e. are not absorbed in (n,γ) reactions on uranium);</p></li>
+<li><p><strong>ϵ</strong> is the enhancement factor accounting for fission of <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span> by fast neutrons;</p></li>
+<li><p><strong>p</strong> is the probability that the neutron avoids being captured by <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span> during thermalization, as it passes through the energy range where there are resonances in the cross section;</p></li>
+<li><p><strong>f</strong> is the fraction of thermal neutrons actually available for capture by <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> or <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span>, i.e. not captured by the moderator or some other component of the reactor.</p></li>
+</ul>
+<p>The combination of these, <em>k=ηϵpf</em>, is unsurprisingly known as the four-factor formula.
+Natural uranium does not spontaneously initiate chain reactions (fortunately), so we can conclude that under natural conditions <span class="math notranslate nohighlight">\(k&lt;1\)</span>.  The aim of reactor designers is therefore to enhance <span class="math notranslate nohighlight">\(𝑘\)</span> to achieve criticality, while maintaining control.</p>
+</section>
+<section id="reactor-design-strategies">
+<h4><span class="section-number">11.2.3.2. </span>Reactor design strategies<a class="headerlink" href="#reactor-design-strategies" title="Link to this heading">#</a></h4>
+<p>The cross section for neutron-induced fission on <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> is much higher for thermal neutrons than it is for the fast (~2 MeV) neutrons emitted during fission, so the first strategy for increasing 𝑘 is to moderate the neutrons.  This strategy is adopted by nearly all reactor designs.</p>
+<p>The number of neutrons initiating a new fission reaction, 𝑘, can then be increased in a variety of ways.</p>
+<ul class="simple">
+<li><p>Increase η (and p) by isotopically enriching the uranium fuel so that it contains more <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span>, thus increasing the probability that the neutron encounters a <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> nucleus rather than <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span>.  Most commercial reactor designs do this, enriching the fuel to 3.5–5% <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span>.</p></li>
+<li><p>Increase <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(f\)</span> by optimising the moderator.  If the neutrons thermalize quickly, this reduces the time they spend in the energy range corresponding to the <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span> resonance region (roughly 5 eV to 5 keV).  If the moderator has a low neutron capture cross section, the fraction of neutrons being captured by the moderator is decreased, leading to an increase in the fraction available for capture by <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span>.</p></li>
+</ul>
+<p>We saw above that the optimal moderator is deuterium, <span class="math notranslate nohighlight">\(^{2}\textnormal{H}\)</span>: this is nearly as efficient as ordinary hydrogen in thermalizing neutrons, but has a much lower neutron capture cross section.  Therefore, this strategy can be implemented by using deuterium, normally in the form of heavy water, <span class="math notranslate nohighlight">\(\textnormal{D}_{2}\textnormal{O}\)</span>, as the moderator.  This is done in the pressurised heavy water reactor design.</p>
+<p>Alternatively, we can choose not to moderate, and rely on inducing fission with fast neutrons.  This requires a higher level of initial enrichment, because the ratio between the fission cross section and the neutron capture cross section is much lower for fast neutrons than for thermal neutrons.  However, fast neutron captures on <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span> produce the fissile isotope <span class="math notranslate nohighlight">\(^{239}\textnormal{Pu}\)</span>, so a fast reactor can be designed to produce more fissile fuel than it consumes (such a reactor is known as a <strong>fast breeder reactor</strong>).</p>
+<p>Fast reactors are very efficient in terms of fuel usage, and produce less waste than the usual moderated designs.  However, they have proved expensive to build and operate.  One problem is that water cannot be used for cooling, because it is a moderator; the solution adopted is to let the reactor run very hot, around 500 °C, and cool with liquid metal.  This obviously means that the construction materials have to be able to withstand such temperatures, and as the metal most commonly used is sodium, coolant leaks can be hazardous.  It also makes startup much more complicated, as the reactor has to be heated up to a point where the metal coolant is liquid before the reactor can operate.</p>
+<p>Fast reactor designs, especially fast breeders, were intensively studied in the 1950s and 60s, when the supply of uranium was thought to be very limited.  However, commercial uranium supply increased significantly through the 1970s, and at the same time increased concerns over safety and radioactive waste caused a slowdown in the rate of reactor construction.  The combination of these effects meant that the perceived need for fast reactors was greatly reduced, and their economic competitiveness effectively disappeared.</p>
+</section>
+</section>
+<section id="common-reactor-designs">
+<h3><span class="section-number">11.2.4. </span>Common reactor designs<a class="headerlink" href="#common-reactor-designs" title="Link to this heading">#</a></h3>
+<p>A typical reactor design includes the following components:</p>
+<ul class="simple">
+<li><p><strong>fuel</strong>, generally pellets of uranium oxide (<span class="math notranslate nohighlight">\(\textnormal{UO}_{2}\)</span>) packed into tubes to form fuel rods;</p></li>
+<li><p><strong>moderator</strong> to thermalize the neutrons—depending on the design, this may be water, heavy water or graphite;</p></li>
+<li><p><strong>control rods</strong> made of a neutron absorber (typically cadmium, hafnium or boron) to reduce power output or shut down the reactor as required;</p></li>
+<li><p><strong>coolant</strong> to transfer the heat from the reactor core;</p></li>
+<li><p><strong>pressure vessel or pressure tubes</strong> containing the reactor core, moderator and coolant;</p></li>
+<li><p><strong>steam generator</strong> using the heat transferred by the coolant to produce steam, which powers the steam turbines that generate electricity;</p></li>
+<li><p><strong>containment vessel</strong> to isolate the reactor from its surroundings (protecting the reactor during normal operation, and the surroundings in case of malfunction).</p></li>
+</ul>
+<p>Not all designs have every one of these components—for example, a fast reactor does not have moderator, and a boiling water reactor does not have a steam generator—but they all have most of them.</p>
+<section id="pressurised-water-reactor-pwr">
+<h4><span class="section-number">11.2.4.1. </span>Pressurised water reactor (PWR)<a class="headerlink" href="#pressurised-water-reactor-pwr" title="Link to this heading">#</a></h4>
+<figure class="align-default" id="pwr">
+<a class="reference internal image-reference" href="../_images/image-14.png"><img alt="Graphs of spontaneous fission" src="../_images/image-14.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.4 </span><span class="caption-text">schematic diagram of a PWR, showing main components.  From https://world-nuclear.org.</span><a class="headerlink" href="#pwr" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>PWRs use ordinary water as both moderator and coolant.  Because the reactor core operates at temperatures of around 325 °C, well above the boiling point of water, the water must be maintained at very high pressure (around 150 bar) to keep it liquid (and therefore dense enough to be an effective moderator).  Therefore, there is a secondary cooling circuit, under less pressure, which generates steam to power the turbines that generate electricity.</p>
+<p>If the reactor overheats, the water in the primary cooling system will boil, reducing its efficiency as a moderator and therefore reducing the fission rate.  This negative feedback is a useful safety feature.
+PWRs require enriched fuel.  A typical large power-station reactor contains 80–100 tons of uranium.</p>
+<p>PWRs are the most common type of power-station reactor worldwide, and are also the type used to power nuclear submarines.  Their main disadvantage is that it is hard to vary power output to meet variable demand, a feature known as <strong>load-following</strong>.  PWRs are most economical when run at full capacity all the time, so they work best in a mixed economy with a range of different types of power plant (they can then handle the base load that doesn’t change, while other technologies get switched on and off to meet demand).</p>
+</section>
+<section id="boiling-water-reactor-bwr">
+<h4><span class="section-number">11.2.4.2. </span>Boiling water reactor (BWR)<a class="headerlink" href="#boiling-water-reactor-bwr" title="Link to this heading">#</a></h4>
+<figure class="align-default" id="bwr">
+<a class="reference internal image-reference" href="../_images/image-15.png"><img alt="Graphs of spontaneous fission" src="../_images/image-15.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.5 </span><span class="caption-text">schematic diagram of a BWR, showing main components.  From https://world-nuclear.org.</span><a class="headerlink" href="#bwr" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>BWRs are the second most common type of reactor worldwide.  As the name indicates, the main difference between BWRs and PWRs is that in BWRs the primary cooling water is allowed to boil.  (It is still at very high pressure, just not as high as in a PWR—about 75 bar as opposed to 150.)  The top of the core is surrounded by steam, rather than liquid water, and is thus less efficient, as the neutrons are less effectively moderated.</p>
+<p>In the BWR the steam from the top of the core goes directly to the turbines, and there is no secondary cooling circuit.  This makes the design simpler, as you can see by comparing figures 10.4 and 10.5, but the disadvantage is that the water that goes to the turbines is slightly radioactive from neutron activation, so the turbine hall is part of the reactor complex and has to be shielded and operated under appropriate radiation-protection protocols.  Fortunately, the radioactivity of the water is very short-lived, so access to the turbine hall is possible when the reactor is shut down, e.g. for refuelling.</p>
+<p>BWRs are better at load-following than PWRs, which makes them a good design for countries that rely heavily on nuclear power.  Like PWRs, they require enriched fuel.  They tend to be slightly larger than PWRs, with up to 140 tons of uranium.</p>
+</section>
+<section id="pressurised-heavy-water-reactor-phwr">
+<h4><span class="section-number">11.2.4.3. </span>Pressurised heavy-water reactor (PHWR)<a class="headerlink" href="#pressurised-heavy-water-reactor-phwr" title="Link to this heading">#</a></h4>
+<figure class="align-default" id="phwr">
+<a class="reference internal image-reference" href="../_images/image-16.png"><img alt="Graphs of spontaneous fission" src="../_images/image-16.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.6 </span><span class="caption-text">schematic diagram of a PHWR, showing main components.  From https://world-nuclear.org.</span><a class="headerlink" href="#phwr" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In principle, the design of a PWHR is exactly the same as a PWR, except for using heavy water instead of ordinary water in the primary cooling circuit.  The CANDU design in Figure 10.6 looks different from Figure 10.4 because it uses pressure tubes instead of a monolithic pressure vessel.  The advantage of this design is that the reactor can be refuelled on-load, without shutting down, by isolating one pressure tube from the cooling circuit.</p>
+<p>CANDU reactors use natural uranium, and can accept a variety of other fuels, including spent fuel from light-water reactors.  They run slightly less hot than a standard PWR, with the heavy water at a pressure of around 100 bar and a temperature of 290 °C.</p>
+<p>The features of the CANDU design are not so much deliberate choices as a consequence of the desire to build the reactors entirely in Canada.  In the 1960s Canada had no uranium enrichment capability, hence the choice of a design that could use natural uranium, and there were doubts that Canadian industry could build the large monolithic pressure vessel shown in Figure 10.4, hence the choice of pressure tubes.  Nevertheless the CANDU is a successful and flexible design that has been exported to several other countries, notably India.</p>
+</section>
+<section id="advanced-gas-cooled-reactor-agr">
+<h4><span class="section-number">11.2.4.4. </span>Advanced gas-cooled reactor (AGR)<a class="headerlink" href="#advanced-gas-cooled-reactor-agr" title="Link to this heading">#</a></h4>
+<figure class="align-default" id="agr">
+<a class="reference internal image-reference" href="../_images/image-17.png"><img alt="Graphs of spontaneous fission" src="../_images/image-17.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.7 </span><span class="caption-text">schematic diagram of a AGR, showing main components.  From https://world-nuclear.org.</span><a class="headerlink" href="#agr" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The AGR is an uncommon design worldwide, but it is a British design and is the dominant type in the UK, so worth including here.  As the name suggests, the distinguishing feature of the AGR is that the coolant is a gas, namely <span class="math notranslate nohighlight">\(\textnormal{CO}_{2}\)</span>, rather than a liquid.  Gas is fairly useless as a moderator owing to its low density, so in this design the coolant and the moderator are separate.  AGRs use graphite as a moderator: it is less efficient, but as a solid it is easier to use.</p>
+<p>Having a gaseous coolant means that AGRs run hotter than PWRs, at about 650 °C.  This produces higher-temperature steam, which increases the thermal efficiency of the turbines.  The name advanced gas-cooled reactor comes from the fact that the design evolved from the older British Magnox reactors, which used the same basic ingredients of <span class="math notranslate nohighlight">\(\textnormal{CO}_{2}\)</span> cooling and graphite moderator, but ran on natural uranium metal instead of enriched uranium oxide.  (AGRs require slightly enriched uranium because their higher operating temperature meant that the magnesium-clad fuel rods used in the Magnox design would not work, and the high-temperature design turns out to absorb more neutrons, decreasing f in the four-factor formula.)  The original 1950s Magnox design was specifically intended as a dual-purpose facility, both generating electricity and breeding plutonium for Britain’s nuclear weapons programme; the AGR design, however, was always intended purely for electricity generation.</p>
+</section>
+</section>
+<section id="reactor-power-output">
+<h3><span class="section-number">11.2.5. </span>Reactor power output<a class="headerlink" href="#reactor-power-output" title="Link to this heading">#</a></h3>
+<p>Since nuclear reactors do not generate electricity directly, but instead generate heat which is then used to generate energy via a steam turbine, there are different ways of specifying the power output of a reactor.</p>
+<ul class="simple">
+<li><p>The <strong>thermal</strong> power output, measured in MWt, is the amount of heat generated, and is determined from the properties (pressure, temperature, rate of flow) of the steam produced by the reactor.</p></li>
+<li><p>The <strong>gross electrical power</strong>, measured in MWe, is the electrical power produced by the turbines.</p></li>
+<li><p>The <strong>net electrical power</strong>, also measured in MWe, is the electrical power supplied to the grid.  This is less than the gross electrical power, because some of the electricity that is generated is used to power the plant itself (e.g. the coolant and steam generator pumps for the reactor).</p></li>
+</ul>
+<p>From the perspective of the consumer (or the electricity company), the appropriate power output is the net electrical power.  For the perspective of the reactor engineer (or neutrino physicist) the relevant power output is the thermal power.</p>
+</section>
+<section id="a-natural-nuclear-reactor-not-examinable">
+<h3><span class="section-number">11.2.6. </span>A natural nuclear reactor (not examinable)<a class="headerlink" href="#a-natural-nuclear-reactor-not-examinable" title="Link to this heading">#</a></h3>
+<p>We have said that natural uranium cannot sustain a chain reaction, and most nuclear reactor designs require enriched uranium.  However, the half-life of <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> is much less than the half-life of 238U, so if we go back in time the concentration of <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> in natural uranium must get higher.  Natural uranium two or three billion years ago would have a composition similar to reactor-grade enriched uranium today.  So, could this have sustained a natural chain reaction?</p>
+<figure class="align-default" id="naturalfission">
+<a class="reference internal image-reference" href="../_images/image-18.png"><img alt="Graphs of spontaneous fission" src="../_images/image-18.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.8 </span><span class="caption-text">geology of the Oklo uranium mine, showing the locations of the natural nuclear reactors.  ‘FA’, ‘FB’ are specific geological units.From Gauthier-Lafaye, Holliger and Blanc, Geochim. Cosmochim. Acta 60 (1996) 4831.</span><a class="headerlink" href="#naturalfission" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The answer to this turns out to be “yes”.  In 1972, a French uranium enrichment plant found that uranium samples from the Oklo mine in Gabon, Africa, contained significantly less <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> than the usual 0.72%.  This was of course immediately investigated, since “missing” fissile material is a very alarming occurrence, and it was found that the reason for the discrepancy was that at least 16 separate natural nuclear reactors had operated in this uranium seam around two billion years ago.  Because the region is geologically very stable, the resulting depletion of fissile <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> (and enhancement of the abundance of fission product nuclei) remained concentrated in the regions in which these self-sustaining chain reactions had happened.</p>
+<p>It appears that the reason for this phenomenon is that groundwater penetrated this seam of high-grade uranium ore, acting as a moderator and therefore allowing a chain reaction to occur.  The conditions in the ore were similar to those inside a modern boiling-water reactor.  It seems that each reactor operated in pulses about 30 minutes long, with the chain reaction dying off when it had generated enough heat to boil off the groundwater and then restarting when the heat died down and liquid water returned, the full cycle taking about three hours.  Each reactor probably generated in the region of 20 kWt when operating, and it is estimated that overall about 130 TWh (<span class="math notranslate nohighlight">\(4.7 \times 10^{17}~\textnormal{J}\)</span>) of heat was produced.</p>
+<p>The Oklo natural nuclear reactors are, so far, essentially unique (there is a 17<span class="math notranslate nohighlight">\(^{\textnormal{th}}\)</span> reactor at Bangombé, about 30 km away from Oklo).  This is because the conditions for initiating a natural self-sustaining chain reaction are quite demanding:</p>
+<ul class="simple">
+<li><p>The uranium ore must be high-grade, with a high concentration of uranium (the Oklo ore is up to 15% uranium).</p></li>
+<li><p>The deposit must be old enough that it dates back to the time when natural uranium was sufficiently rich in 235U (most high-grade uranium ore deposits are younger than Oklo).</p></li>
+<li><p>There must be a suitable moderator present (water in this case).</p></li>
+<li><p>The surrounding geology must not be too rich in “neutron poisons” (elements with high neutron capture cross sections, such as boron or cadmium).</p></li>
+</ul>
+<p>Although the vast majority of uranium deposits will not meet all these conditions, it is quite likely that other natural nuclear reactors have operated, but have not left detectable traces because geological processes have disrupted the local area (there are not too many regions in the world where undisturbed two-billion-year-old sedimentary formations can be found), or simply have not been discovered yet.</p>
+<p>Apart from their intrinsic interest, the Oklo natural reactors are an interesting testbed for the behaviour of nuclear waste: studies have been conducted to see how far the detectable fission products, especially the long-lived isotopes such as the actinides (the elements with atomic numbers 89 to 103), have travelled from their site of production.  (The encouraging answer seems to be, not very far at all.)</p>
+</section>
+<section id="summary-fission">
+<h3><span class="section-number">11.2.7. </span>Summary (fission)<a class="headerlink" href="#summary-fission" title="Link to this heading">#</a></h3>
+<p>In principle, any nucleus heavier than iron has a positive <span class="math notranslate nohighlight">\(Q\)</span>-value for decay, and elements significantly heavier than iron should be capable of fission.  However, the Coulomb barrier produced by the limited range of the strong force compared to the electromagnetic force means that many nuclei heavier than iron are perfectly stable: this <em>fission barrier</em> is too high to surmount and too think to tunnel through.  No naturally occurring isotope has any significant branching ratio to spontaneous fission.</p>
+<p>Using the liquid-drop model, we can calculate that spontaneous fission should happen if <span class="math notranslate nohighlight">\(Z^{2}/A \geq 49\)</span>.  This is an overly pessimistic estimate, because it is based on classical physics and does not take quantum tunnelling into account, and it is also subject to modifications based on the shell model (nuclei with closed shells of either protons or neutrons being more resistant to fission).  However, it is still true that only very heavy nuclei are likely to have a significant decay branching ratio to spontaneous fission.  It is noticeable that even-even nuclei are much more fission prone than even-odd nuclei.</p>
+<p>To harness fission for energy generation, we rely on <em>induced</em> fission: neutron capture on an even-odd heavy nucleus may create an excited state of an even-even nucleus with energy above the fission barrier.  An isotope which does this is referred to as being <em>fissile</em>.  The most important fissile isotopes are <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> and <span class="math notranslate nohighlight">\(^{239}\textnormal{Pu}\)</span>: <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> is naturally occurring and makes up 0.72% of natural uranium, while <span class="math notranslate nohighlight">\(^{239}\textnormal{Pu}\)</span> is produced by beta decays when a neutron is captured by <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span>.</p>
+<p>When a heavy nucleus fissions, it does so asymmetrically, with the heavy fragment consistently having an atomic mass around 139, while the lighter fragment gets whatever’s left (so, the heavier the fissioning nucleus, the heavier the light fragment).  This effect is caused by the neutron magic number 82, which occurs in stable isotopes with masses from 136 to 144.  The fission fragments are extremely neutron-rich, and will undergo several beta decays before reaching stability.</p>
+<p>A few neutrons (2.4 on average, for <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span>) are emitted during the fission process, i.e. within the <span class="math notranslate nohighlight">\(10^{−16}~\textnormal{s}\)</span> timescale of a compound-nucleus reaction.  These are prompt neutrons, and have an average energy of about <span class="math notranslate nohighlight">\(2~\textnormal{MeV}\)</span>.  In addition, some fission fragments may decay by neutron emission, producing delayed neutrons on a timescale of around half a second.  There are about <span class="math notranslate nohighlight">\(0.0162\)</span> delayed neutrons per fission of <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span>, on average.</p>
+<p>The fact that neutrons are emitted during fission opens up the possibility that the first fission may cause further fission reactions.  This is known as a <em>chain reaction</em>.  The key property of a chain reaction is how many neutrons from any one fission reaction go on to induce further fissions.  If this number is less than one, the reaction is <em>subcritical</em>, and will die out unless further neutrons are supplied from outside.  If the number is greater than one, the reaction is <em>supercritical</em>, and its rate will increase exponentially—this is the situation in a nuclear explosion.  To maintain a stable, controlled chain reaction, we need the number of neutrons per fission that induce a further fission to be (on average) exactly one: this is a critical chain reaction and will maintain a steady state indefinitely.</p>
+<p>Exact criticality is an unstable equilibrium: if the number of neutrons per fission inducing a secondary fission event deviates either side of one, the effect is to push the number still further from one.  Therefore it is essential to monitor and control the reaction rate to maintain precise criticality.  This is only possible because of the delayed neutrons: if all neutrons were prompt, the timescale for a supercritical runaway would be so short that reactors would be hopelessly unstable.  The extra half-second or so provided by the delayed neutrons is just enough to provide control and allow stable operation.</p>
+<p>The number of neutrons per fission that induce another fission is determined by the four-factor formula , where <span class="math notranslate nohighlight">\(η\)</span> is the number of neutrons per fission available to be thermalized (i.e. not promptly captured by a uranium nucleus), <span class="math notranslate nohighlight">\(ϵ\)</span> is an enhancement factor accounting for the fact that fast neutrons can induce fission in <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span>, <span class="math notranslate nohighlight">\(p\)</span> is the probability that the neutrons avoid being captured as they pass through the resonance region in the cross section of neutron capture on <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span>, and <span class="math notranslate nohighlight">\(f\)</span> is the fraction of thermal neutrons that are captured by <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> rather than anything else in the reactor.  In natural uranium,  and self-sustaining chain reactions do not occur (though this was not the case a few billion years ago).</p>
+<p>Commercial reactor designs employ one of two strategies: increase <span class="math notranslate nohighlight">\(η\)</span> (and to a certain extent <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(f\)</span>) by enriching the uranium so that a higher proportion of uranium nuclei are <span class="math notranslate nohighlight">\(^{235}\textnormal{U}\)</span> (PWR, BWR and AGR designs), or increase <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(f\)</span> by optimising the moderator (CANDU).  Both strategies work; both have advantages and disadvantages.  A somewhat different approach is to dispense with moderation altogether and induce fission with fast neutrons (a fast neutron reactor).  Fast neutron reactors have the potential to be much more efficient in their use of uranium (because they “breed” fissile <span class="math notranslate nohighlight">\(^{239}\textnormal{Pu}\)</span> by neutron capture on <span class="math notranslate nohighlight">\(^{238}\textnormal{U}\)</span>), but are expensive to build and run, and not currently commercially competitive.</p>
+<p>Nuclear reactor power output is quantified in three ways: the thermal power output, measured in MWt, which is the heat produced by the reactor, the gross electrical power, which is the electrical power output from the turbines, and the net electrical power, which is the electrical power supplied to the grid.  Electrical power is measured in MWe.</p>
+</section>
+</section>
+<section id="fusion">
+<h2><span class="section-number">11.3. </span>Fusion<a class="headerlink" href="#fusion" title="Link to this heading">#</a></h2>
+<section id="energetics-of-fusion">
+<h3><span class="section-number">11.3.1. </span>Energetics of fusion<a class="headerlink" href="#energetics-of-fusion" title="Link to this heading">#</a></h3>
+<p>Fusion is the combination of two nuclei into one. As can be seen from figure 10.1, it should release energy if the fusing nuclei are lighter than iron.</p>
+<p>Nuclear fusion is the power source of stars, nearly all of which generate energy by fusing hydrogen into helium^2. Fusion energy is an attractive prospect for us too, because it is clean—no CO2 and no long-lived radioactive waste—and highly efficient. While uranium fission releases 200 MeV per fission of one nucleus of <span class="math notranslate nohighlight">\(^{236}U\)</span>, corresponding to the conversion of 0.09% of the initial mass into energy, hydrogen fusion, <span class="math notranslate nohighlight">\(4p \rightarrow ^{4}He + 2e^+ + 2\nu_e\)</span>, releases 24.7 MeV, plus another 2.0 MeV when the two positrons annihilate with electrons—a net efficiency of 0.7%, or eight times better than uranium fission. However, fusion is far more challenging to achieve than fission, because it requires two positively charged nuclei to approach very close to one another, against their mutual Coulomb repulsion.</p>
+</section>
+<section id="the-coulomb-barrier">
+<h3><span class="section-number">11.3.2. </span>The Coulomb barrier<a class="headerlink" href="#the-coulomb-barrier" title="Link to this heading">#</a></h3>
+<p>The potential energy of two charges <span class="math notranslate nohighlight">\(Z_1e\)</span> and <span class="math notranslate nohighlight">\(Z_2e\)</span> separated by a distance r is <span class="math notranslate nohighlight">\(Z_1Z_2e^2/(4\pi\epsilon_0r)\)</span>. Therefore, the potential energy of two nuclei just touching one another is</p>
+<div class="math notranslate nohighlight">
+\[
+ \frac{Z_1Z_2e^2}{4\pi\epsilon_0(R_1 + R_2)} = 1.44 \frac{Z_1Z_2}{R_1 + R_2} \text{ MeV}, 
+\]</div>
+<p>where the nuclear radii <span class="math notranslate nohighlight">\(R_1\)</span> and <span class="math notranslate nohighlight">\(R_2\)</span> are measured in fm. Classically, in order to get the two nuclei to touch, we would need to supply enough initial kinetic energy to overcome this potential barrier, so for two protons of equal energy, the required kinetic energy would be 0.72/2.4 = 0.3 MeV. Equating this to <span class="math notranslate nohighlight">\( \frac{3}{2}k_BT \)</span> gives a temperature of <span class="math notranslate nohighlight">\(2.3x10^9~\textnormal{K}\)</span>, which is about 200 times the actual temperature of the core of the Sun. The reason that the Sun can fuse hydrogen despite this apparent mismatch is quantum tunnelling: the Schrödinger equation tells us that there is a small but nonzero probability that the protons will “tunnel” through the potential barrier, even though they do not appear to have enough energy to do so. This probability is very small in the Sun, about <span class="math notranslate nohighlight">\(10^{-9.6}\)</span>, but the Sun contains a very large number of protons!</p>
+</section>
+<section id="fusion-reactions">
+<h3><span class="section-number">11.3.3. </span>Fusion reactions<a class="headerlink" href="#fusion-reactions" title="Link to this heading">#</a></h3>
+<p>Another issue with proton-proton fusion is that there is no bound state of two protons: in order for the fusion to work, one proton has to transform into a neutron, <span class="math notranslate nohighlight">\( p + p \rightarrow d + e^+ + \nu_e \)</span>. This is a weak interaction, and therefore has a very small cross section, further increasing the improbability of pp fusion—again, it works in the Sun because of the immense number of protons present in the Sun’s core. Although we can increase the tunnelling probability by running a hypothetical fusion reactor at a higher temperature than the solar core, we cannot magically increase the cross section for pp fusion, so the inescapable conclusion is that this is not an appropriate reaction for fusion power.</p>
+<p>For viable fusion with the fuel masses we can hope to use in a terrestrial fusion reactor, we need reactions that can go by the strong interaction, requiring only rearrangement of nucleons rather than transformation of protons to neutrons or vice versa. We also need to restrict ourselves to the lightest elements, or more precisely to those with the lowest Z, because higher Z increases the height of the Coulomb barrier and therefore reduces the tunnelling probability. We are left with two main possibili- ties:</p>
+<ul class="simple">
+<li><p><strong>d-d fusion</strong>, <span class="math notranslate nohighlight">\( ^2H(d,n)^3\textnormal{He} \)</span> or <span class="math notranslate nohighlight">\( ^2H(d,p)^3H \)</span> (these two reactions are almost equally likely and have very similar Q values, 3.3 and 4.0 MeV respectively);</p></li>
+<li><p><strong>d-t fusion</strong>, <span class="math notranslate nohighlight">\( ^3H(d,n)^4\textnormal{He} \)</span>, with a Q value of 17.6 MeV.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the later stages of a star’s life, it will generate energy by fusing helium to carbon, and in the case of stars with mass greater than about 8-10 times that of the Sun, heavier elements right up to iron. But the vast majority of stars are low-mass K and M dwarfs, and none of these has yet left the main sequence—so nearly all stars are powered by hydrogen fusion.</p>
+</div>
+<p>As we will see later, the second of these is much the more promising: not only does it have a much higher <span class="math notranslate nohighlight">\(Q\)</span> value, it also requires lower temperatures and has a higher reaction rate. Its main drawback is that it requires tritium, which is radioactive with a half-life of 12.3 years (it β decays to <span class="math notranslate nohighlight">\( ^3\textnormal{He} \)</span>), and which therefore does not occur in nature and has to be manufactured. Deuterium, in contrast, comprises about 0.015% of natural hydrogen and can be extracted from seawater.</p>
+<p>It is worth noting that two deuterium nuclei cannot fuse to produce <span class="math notranslate nohighlight">\( ^4\textnormal{He} \)</span>, as one might expect: the Q value of 23.8 MeV is well above the nucleon separation energy for <span class="math notranslate nohighlight">\( ^4\textnormal{He} \)</span>, so a proton or neutron is emitted immediately and either tritium or <span class="math notranslate nohighlight">\( ^3\textnormal{He} \)</span> is produced instead.</p>
+<p>The other two reactions that are sometimes considered for terrestrial fusion are</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\( ^3\textnormal{He}(d,p)^4\textnormal{He} \)</span>, with a Q value of 18.3 MeV;</p></li>
+<li><p><span class="math notranslate nohighlight">\( ^{11}\textnormal{B}(p,2α)^4\textnormal{He} \)</span>, with Q = 8.7 MeV.</p></li>
+</ul>
+<p>These are favoured because they are both <strong>aneutronic fusion</strong>, with all the products being charged particles. In principle, aneutronic fusion has many advantages over d-d and d-t fusion: the products can be steered using magnetic fields, so there will be no ionising radiation or radioactive isotopes such as are produced by neutron capture, and the fast-moving charged particles can be used to generate energy directly, by induction, instead of indirectly by heating steam to power turbines, with significantly improved efficiency as a result.</p>
+<p>Unfortunately for the proponents of aneutronic fusion, both of these reactions involve nuclei with higher Z and therefore higher Coulomb barriers than d-d or d-t fusion. Given that ignition tempera- tures even for d-d and d-t fusion are at the limit of current technology, it is clear than aneutronic fusion is currently not a viable proposition.</p>
+</section>
+<section id="fusion-reaction-rates">
+<h3><span class="section-number">11.3.4. </span>Fusion reaction rates<a class="headerlink" href="#fusion-reaction-rates" title="Link to this heading">#</a></h3>
+<p>The general formula for the rate of events in any reaction is <span class="math notranslate nohighlight">\( R = n_1 \sigma \Phi \)</span>. Where <span class="math notranslate nohighlight">\( \Phi \)</span> is the incoming flux, <span class="math notranslate nohighlight">\( n_1 \)</span> is the number density of target particle and <span class="math notranslate nohighlight">\(\sigma\)</span> is the cross section. This assumes that the target particles are stationary. If the incoming particles are travelling with speed <span class="math notranslate nohighlight">\( v \)</span> and have number density <span class="math notranslate nohighlight">\( n_2 \)</span>, then the flux is <span class="math notranslate nohighlight">\( Φ = n_2v \)</span>, so overall we have <span class="math notranslate nohighlight">\( R_{12} = n_1n_2σv \)</span>.</p>
+<p>This would (and does) apply to the case where the incoming particles are in the form of a monoenergetic beam. However, in the case of fusion energy, we are raising the particle kinetic energy by heating them to a very high temperature, so the energies and speeds are given by the Maxwell-Boltzmann distribution. We therefore have to average over speed, and, since the cross section is a strong function of energy, also over cross section. We can therefore write the reaction rate as</p>
+<div class="math notranslate nohighlight">
+\[ 
+R_{12} = n_1 n_2 ⟨σv⟩. 
+\]</div>
+<p>The quantity <span class="math notranslate nohighlight">\( ⟨σv⟩ \)</span> is known as the reactivity. In the case of d-d fusion, particles 1 and 2 are indistin- guishable, so to avoid double counting we have to write <span class="math notranslate nohighlight">\(
+ R_{dd} = \frac{1}{2}n^2⟨σd_dv⟩.
+ \)</span></p>
+<p>The Maxwell-Boltzmann distribution gives</p>
+<div class="math notranslate nohighlight">
+\[
+ P(v)dv = \sqrt{\frac{2}{\pi}} \left( \frac{m}{k_B T} \right)^{3/2} \exp\left( -\frac{mv^2}{2k_B T} \right) v^2 dv, 
+ \]</div>
+<p>where <span class="math notranslate nohighlight">\( v \)</span> is the relative speed of the two nuclei and <span class="math notranslate nohighlight">\( m = (m_1 m_2)/(m_1 + m_2) \)</span> is the reduced mass.</p>
+<p>The cross section is given by</p>
+<div class="math notranslate nohighlight">
+\[
+ \sigma_{12}(E) = \frac{S(E)}{E} \exp\left( -\sqrt{\frac{E_G}{E}} \right), 
+ \]</div>
+<p>where <span class="math notranslate nohighlight">\( E_G = 2m e^2 (\pi \alpha Z_1 Z_2)^2 \)</span> is the Gamow energy and describes the probability of tunnelling through the Coulomb barrier (as in a decay). The factor <span class="math notranslate nohighlight">\( S(E) \)</span> depends on the particular nuclei involved, but its energy dependence is typically quite weak so we can treat it as a constant.</p>
+<p>We can convert <span class="math notranslate nohighlight">\( P(v)dv \)</span> from a function of speed to a function of energy by noting that for non-relativistic velocities <span class="math notranslate nohighlight">\( E = \frac{1}{2} mv^2 \)</span>, so <span class="math notranslate nohighlight">\( dE = mvdv \)</span>. Then</p>
+<div class="math notranslate nohighlight">
+\[
+ vP(v)dv = \frac{2\sqrt{2}}{\sqrt{\pi m}} \frac{E}{(k_B T)^{3/2}} \exp\left( -\frac{E}{k_B T} \right) dE. 
+ \]</div>
+<p>Hence our average</p>
+<div class="math notranslate nohighlight">
+\[
+ \langle \sigma v \rangle = \sqrt{\frac{8}{\sqrt{\pi m}}} \left(\frac{1}{k_B T}\right)^{3/2} \int_0^\infty S(E) \exp\left( -\frac{E}{k_B T} - \sqrt{\frac{E_G}{E}} \right) dE. 
+ \]</div>
+<p>Although the integral is over the whole energy range between 0 and ∞, <span class="math notranslate nohighlight">\( e^{-E/k_B T} \rightarrow 0\)</span> at large <span class="math notranslate nohighlight">\(E\)</span> (we run out of particles) and <span class="math notranslate nohighlight">\( e^{-E_G/E} \rightarrow 0\)</span> at small <span class="math notranslate nohighlight">\(E\)</span> (the barrier becomes too thick to tunnel through). Neglecting the slow variation of <span class="math notranslate nohighlight">\( S(E) \)</span> and differentiating the exponential, we find that there is a maximum where</p>
+<div class="math notranslate nohighlight">
+\[
+ -\frac{1}{k_B T} + \frac{E_G^{1/2}}{2E^{3/2}} = 0 
+ \]</div>
+<div class="math notranslate nohighlight">
+\[
+ \Rightarrow E = \left(\frac{1}{4} E_G (k_B T)^2\right)^{1/3}. 
+ \]</div>
+<p>This means that for a given temperature, the particles that fuse actually come from a fairly restricted energy range in the tail of the Maxwell-Boltzmann distribution.</p>
+<p>Calculating <span class="math notranslate nohighlight">\( \langle \sigma v \rangle \)</span> for the candidate fusion reactions listed in the previous section gives the results shown in figure 10.9. There is a clear winner: d-t fusion has the highest peak reactivity and turns on at the lowest temperature. The effect of the higher Coulomb barrier for the two aneutronic reactions is clearly seen: <span class="math notranslate nohighlight">\(\textnormal{p-}^{11}\textnormal{B}\)</span> fusion in particular requires temperatures about ten times higher than d-t fusion.</p>
+<p>The temperatures in figure 10.9 are shown in keV. The conversion uses <span class="math notranslate nohighlight">\( E = k_B T \)</span>, so <span class="math notranslate nohighlight">\(1\)</span> keV = <span class="math notranslate nohighlight">\(11.6\times 10^6\)</span> K (the temperature of the core of the Sun is therefore of order 1 keV). For a viable fusion reactor we will need to achieve temperatures of at least 10 keV; 20 or 30 keV would be better.</p>
+<figure class="align-default" id="naturalfission2">
+<a class="reference internal image-reference" href="unit11/image-150.png"><img alt="Graphs of spontaneous fission" src="unit11/image-150.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.9 </span><span class="caption-text">Reactivity for different candidate fusion reactions, as a function of temperature.</span><a class="headerlink" href="#naturalfission2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="deuterium-tritium-fusion">
+<h3><span class="section-number">11.3.5. </span>Deuterium-tritium fusion<a class="headerlink" href="#deuterium-tritium-fusion" title="Link to this heading">#</a></h3>
+<section id="the-challenges">
+<h4><span class="section-number">11.3.5.1. </span>The challenges<a class="headerlink" href="#the-challenges" title="Link to this heading">#</a></h4>
+<p>Anyone wishing to generate energy by d-t fusion has to overcome some obvious technical challenges:</p>
+<ul class="simple">
+<li><p>From figure 9, it is clear the temperatures of at least 120 MK, and ideally twice that, must be achieved to obtain a high enough reactivity. Such temperatures would obviously vaporise any structural material, so the deuterium-tritium plasma must be kept away from the walls of its container.</p></li>
+<li><p>Tritium is radioactive, so does not occur in nature, and the supply is very limited.</p></li>
+<li><p>Since a kinetic energy of ~20 keV is negligible, we can assume that when the two nuclei fuse they are approximately at rest relative to each other, and so the momenta of the products must be equal and opposite. In this non-relativistic regime we can write the kinetic energy as <span class="math notranslate nohighlight">\(p^2/2m\)</span>, so it follows that the kinetic energy of the products (a neutron and an <span class="math notranslate nohighlight">\(α\)</span> particle) is inversely proportional to their masses (about <span class="math notranslate nohighlight">\(1 u\)</span> and <span class="math notranslate nohighlight">\(4 u\)</span> respectively), which means that 80% of the energy produced is released as kinetic energy of the neutron. We must therefore extract this energy if the reactor is to be efficient.</p></li>
+</ul>
+</section>
+</section>
+<section id="the-lawson-criterion-and-fusion-strategies">
+<h3><span class="section-number">11.3.6. </span>The Lawson criterion and fusion strategies<a class="headerlink" href="#the-lawson-criterion-and-fusion-strategies" title="Link to this heading">#</a></h3>
+<p>An economically viable fusion reactor must obviously generate more energy than it consumes. We can quantify this by defining the <strong>Lawson criterion</strong>,</p>
+<div class="math notranslate nohighlight">
+\[
+L = \textnormal{energy output} / \textnormal{energy input}
+\]</div>
+<p>(there are actually several definitions of the Lawson criterion, but this is the simplest). The minimum energy we need to input is the energy required to heat the plasma to the required temperature: assuming that the plasma consists of equal amounts of deuterium and tritium, equipartition of energy gives us <span class="math notranslate nohighlight">\(E_{in} = 4 × \frac{3}{2} n_d k_B T~\)</span> (for each deuterium nucleus, there is a tritium nucleus and two electrons, so four particles in all), and the output energy is the Q value times the number of reactions, <span class="math notranslate nohighlight">\(E_{out} = n_d^2 ⟨σ_{dt}v⟩ Q t_c\)</span>, where <span class="math notranslate nohighlight">\(t_c\)</span> is the confinement time.</p>
+<p>Putting in numerical values gives, for a temperature of <span class="math notranslate nohighlight">\(20\)</span> keV, <span class="math notranslate nohighlight">\(n_d t_c = 7 × 10^{19}\)</span>m<span class="math notranslate nohighlight">\(^{-3}\)</span> s. Therefore we need a very high plasma density, a very long confinement time, or (ideally) both.</p>
+<p>Two strategies for achieving fusion power are currently being pursued:</p>
+<ul class="simple">
+<li><p>magnetic confinement, in which the plasma is confined by a magnetic field and circulates around a toroidal reactor: this technique aims for long confinement times;</p></li>
+<li><p>inertial confinement, in which a small pellet of fuel is heated (directly or indirectly) to extremely high temperatures by a battery of powerful lasers: this aims for very high density.</p></li>
+</ul>
+<p>Both techniques are close to achieving breakeven, i.e. <span class="math notranslate nohighlight">\(L = 1\)</span>, but both are far from commercialisation.</p>
+</section>
+<section id="magnetic-confinement-fusion-mcf">
+<h3><span class="section-number">11.3.7. </span>Magnetic confinement fusion (MCF)<a class="headerlink" href="#magnetic-confinement-fusion-mcf" title="Link to this heading">#</a></h3>
+<p>The principle of magnetic confinement fusion is that a complex magnetic field is used to keep the plasma away from the walls of the container. There are various magnetic geometries, but the most widely used and studied is the tokamak (a name derived from a Russian acronym, as this design was first developed in Russia). The aim of all magnetic confinement devices is to maintain the confinement of the plasma for an indefinitely long time, thereby increasing <span class="math notranslate nohighlight">\(t_{c}\)</span> to a very large value; the challenge is maintaining stability over long periods. Hot plasmas moving at high speeds are subject to a number of dynamic instabilities, and controlling these is the principal design challenge in tokamak research.</p>
+<p>The principle of the tokamak design is that the magnetic field is helical (similar to the stripes on a traditional barber’s pole). This is required to main- tain stable confinement in a toroidal geometry; if the field simply went round the toroid, the geometry dictates that it would be stronger on the inside of the torus than the outside (if you think of bending a coil into a closed loop, there are clearly more turns per metre on the inside of the loop than the outside), and this caused the confined particles to drift sideways and eventually hit the wall. A helical field is more symmetrical and therefore the confined plasma is more stable. Achieving this requires a complex geometry of field coils, as shown in figure 10.10.</p>
+<figure class="align-default" id="tokamak">
+<a class="reference internal image-reference" href="unit11/image-146.png"><img alt="Tokamak reactor diagram" src="unit11/image-146.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.10 </span><span class="caption-text">magnetic field configuration in a tokamak. Figure from Li et al., Abtr. App. Anal. 2014 940965.</span><a class="headerlink" href="#tokamak" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Numerous tokamaks are currently operating around the world. One of the most successful is the Joint European Torus, JET, located at Culham, Oxfordshire. Two next-generation designs, the International Thermonuclear Reactor (ITER), under construction in Cardarche, France, and the MIT-led SPARC in Massachusetts, aim to achieve 𝐿 ∼ 10 within the next decade or so. A South Korean project, K-DEMO, aims to achieve stable energy generation of around 500 MWe some time in the 2040s.</p>
+</section>
+<section id="inertial-confinement-fusion-icf">
+<h3><span class="section-number">11.3.8. </span>Inertial confinement fusion (ICF)<a class="headerlink" href="#inertial-confinement-fusion-icf" title="Link to this heading">#</a></h3>
+<p>Inertial confinement systems achieve fusion by compressing and heating a small pellet of fuel. The outer layers of the pellet explode outwards on heating, generating a shockwave which propagates inwards and initiates fusion in the core of the target.</p>
+<p>The heat is provided by a battery of powerful lasers. There are two basic strategies, direct drive, in which the lasers heat the fuel pellet directly, and indirect drive, in which the fuel pellet is contained inside a small metal cylinder (known as a hohlraum), which the lasers heat up to a level at which it emits intense X-rays, which heat the fuel pellet. The direct-drive method is much more efficient, but requires very tightly focused laser beams, because the fuel pellet has to be very small to limit the effects of instabilities in the produced plasma. The combination of high power and small diameter in the laser beam array is a serious technical challenge. Conversely, indirect-drive systems are much easier to build, because the laser beam size is defined by the size of the hohlraum rather than the fuel pellet, but are much less efficient because the X-ray emission of the hohlraum is not focused on the target, so a great deal of the input laser energy is wasted.</p>
+<p>The most advanced inertial confinement system is the National Ignition Facility (NIF) at the Lawrence Livermore National Laboratory in California. NIF is an indirect-drive system using 192 laser beams (from 48 lasers) which deposit about 2 MJ of energy on the hohlraum. A schematic of the NIF target region is shown in figure 10.11. NIF achieved breakeven in one shot in December 2022, when 2.05 MJ of energy deposited on the hohlraum produced 3.15 MJ of fusion energy. (However, note that actually charging the lasers to produce that 2.05 MJ required a lot more than 2.05 MJ of energy input, so this is breakeven only in a technical sense.)</p>
+<figure class="align-default" id="niftargetdiagram">
+<a class="reference internal image-reference" href="unit11/image-147.png"><img alt="NIF Target Diagram" src="unit11/image-147.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.11 </span><span class="caption-text">NIF hohlraum and target, from Zylstra et al., Nature 601 (2022) 542.</span><a class="headerlink" href="#niftargetdiagram" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="steps-towards-practical-fusion">
+<h3><span class="section-number">11.3.9. </span>Steps towards practical fusion<a class="headerlink" href="#steps-towards-practical-fusion" title="Link to this heading">#</a></h3>
+<p>The key to achieving consistent energy generation in fusion reactors is self-heating. The α particle produced in the fusion reaction carries 20% of the fusion energy and has a very short range in matter, so it will deposit its energy in the plasma, helping it to maintain its temperature. A plasma that main- tains its temperature through α-particle heating, without needing further external input, is said to have achieved ignition. Self-heating was demonstrated in the NIF breakeven shot.</p>
+<p>Practical fusion is proverbially “always 20 years in the future”, but figure 10.12 shows that in fact the perfor- mance of experimental fusion reactors has improved by orders of magnitude since work started in the 1950s. In this plot <span class="math notranslate nohighlight">\(T_{i}\)</span> is the ion temperature (averaged over the fuel pellet for ICF), <span class="math notranslate nohighlight">\(τ\)</span> is the pulse duration for ICF, and <span class="math notranslate nohighlight">\(τE\)</span> is the energy confinement time, i.e. the time it takes for energy equal to the plasma thermal energy (= the input energy) to leak away from the plasma (appropriate for long confinement times in MCF). The coloured curves represent the given values of what the authors call <span class="math notranslate nohighlight">\(Q_{sci}\)</span>, which is the same as what we have called <span class="math notranslate nohighlight">\(L\)</span>; the black curve is the hot-spot ignition threshold for ICF.</p>
+<figure class="align-default" id="fusiontarget">
+<a class="reference internal image-reference" href="unit11/image-148.png"><img alt="Diagram of Fusion Experiments" src="unit11/image-148.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.12 </span><span class="caption-text">Performance of experimental fusion reactors. The symbols represent the type of reactor: apart from “laser ICF”, most of these are different magnetic geometries for MCF. MagLIF is a hybrid approach using a combination of laser-driven compression and magnetic confinement. Figure from Wurzel and Hsu, Phys. Plas. 29 (2022) 062103.</span><a class="headerlink" href="#fusiontarget" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Key points that most of the experimental reactors have not considered, but which are essential to move from research to application, are how to extract the power and how to ensure a supply of tritium. Both of these are more easily addressed in MCF (I have no idea how one extracts the power from an ICF setup).</p>
+<p>Assuming that the kinetic energy carried by the α
+particle is used for self-heating, the power to be ex-
+tracted is the kinetic energy of the neutron. As the neutron is not charged, it will not be confined and so will hit the reactor wall. The plan in the tokamak approach is to coat the internal wall with a blanket of some light element, which will absorb the neutron energy and produce heat. This heat would then be used to drive a steam generator as in fission reactors.</p>
+<p>Furthermore, if the blanket were made of lithium, the neutron capture reactions <span class="math notranslate nohighlight">\(^{6}\)</span>Li(n,t)<span class="math notranslate nohighlight">\(^{4}\)</span>He and <span class="math notranslate nohighlight">\(^{7}\)</span>Li(n,nt)<span class="math notranslate nohighlight">\(^{4}\)</span>He could be used to “breed” tritium to power the reactor. This could in principle solve the tritium supply problem (though, as only one triton is produced per neutron capture, and only one neutron is produced per tritium fusion, the capture process would have to be very efficient).</p>
+<p>ITER plans to test both heat extraction (with an actively cooled blanket designed to extract up to 736 MW of thermal power) and tritium breeding (although the blanket will initially be made of beryllium, installation of test modules containing lithium is planned at a later stage).</p>
+<p>Practical fusion must also address the issue of radioactive waste, which has been a sticking point for fission reactors. Although in principle the fusion process does not generate radioactive products, some neutrons will inevitably be captured on materials other than the blanket, and in some cases this will lead to a radioactive isotope. This has been studied for the K-DEMO project, and the results are shown in figure 10.13. Although radioactive isotopes will be pro- duced, most have short half-lives, and fall below the Korean upper limit for “low-level waste” within at most 10 years after the reactor stops operating. This does not pre- sent a major technical challenge.</p>
+<figure class="align-default" id="fusionradioactivity">
+<a class="reference internal image-reference" href="unit11/image-149.png"><img alt="Plot of Fusion Radioactivity Components" src="unit11/image-149.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11.13 </span><span class="caption-text">Radioactivity of components of the K-DEMO fusion reactor, compared with legal limits for low-level waste. From Kim, Hong and Kim, Scientific Reports 12 (2022) 8276.</span><a class="headerlink" href="#fusionradioactivity" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="summary-fusion">
+<h3><span class="section-number">11.3.10. </span>Summary (fusion)<a class="headerlink" href="#summary-fusion" title="Link to this heading">#</a></h3>
+<p>Hydrogen fusion, the power source of stars, is in principle
+a highly efficient, clean energy source. However, fusion
+presents major technical challenges, primarily related to
+the extremely high temperatures needed to overcome the
+Coulomb repulsion of the two positively charged nuclei,
+and despite about 70 years of research a commercially viable fusion reactor has not yet been built.</p>
+<p>The key physical parameter for fusion reactions is the reactivity ⟨𝜎𝑣⟩. Calculations of this parameter for various candidate fusion reactions show that by far the most promising is d-t fusion, <span class="math notranslate nohighlight">\(^{3}\)</span>H(d,n)<span class="math notranslate nohighlight">\(^{4}\)</span>He, which has both the lowest turn-on temperature and the highest peak reactivity.</p>
+<p>The critical parameter for achieving breakeven in fusion (i.e. energy generated = energy input) is the product of the number density of the plasma and the time for which it is confined. The two strategies pursued to maximise this are magnetic confinement fusion, which aims to achieve long confinement times by trapping the hot plasma inside a carefully shaped magnetic field, and inertial confinement fusion, which aims to produce extremely high densities by compressing and heating a small fuel pellet using powerful lasers. Fusion ignition occurs when the fusion reaction rate gets to the point at which energy absorbed from the produced α particle (which has an initial energy of 3.5 MeV) is sufficient to maintain the plasma temperature without the need for further energy input.</p>
+<p>The flagship projects at the present time are JET in the UK and the Japanese JT-60SA (essentially a prototype for ITER). JT-60, the predecessor of JT-60SA, achieved conditions in d-d experiments that would have reached the breakeven point had the plasma been d-t (which the JT-60 laboratory does not have the ability to handle). These will be superseded by ITER in the next decade. The main ICF experiment is NIF in the USA, which has achieved breakeven (measured in terms of fusion power over laser power) in one shot in December 2022; this shot also provided evidence for α-particle heating of the plasma. None of these facilities has the capability to be a practical electricity generator; all are purely research facilities. However, the proposed Korean K-DEMO project, aiming to start construc- tion in 2037, is intended to be a small-scale but fully-functional power station, capable of producing 500 MWe.</p>
+<p>Tritium supply is a key issue in d-t fusion: it is currently produced in small quantities as a by-product of fission in CANDU heavy-water reactors, but they do not have the capacity to supply a full-fledged commercial fusion reactor (besides which, the aim of commercial fusion would be to replace fission!). A possible solution to this problem would be to “breed” tritium within the reactor, from 6Li(n,t)4He and/or 7Li(n,nt)4He. This idea will be tested at ITER.</p>
+<p>To sum up, it is still true that practical fusion is 20 years away—but, this time, maybe it really is! How- ever, in the more than half a century since this prediction was first made, great strides have been made in renewable energy sources, particularly wind and solar power. Even if practical fusion power can be achieved, will it be able to compete with other forms of clean energy generation?</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./unit11"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../unit10/phy303-unit10-medicalapplications.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Nuclear Medicine</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../unit1/phy303-unit1-review.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Unit 1 : Review Material</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">11.1. Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-energetics-of-nuclear-power">11.1.1. Basic energetics of nuclear power</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fission">11.2. Fission</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-of-fission">11.2.1. Physics of fission</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spontaneous-fission">11.2.1.1. Spontaneous fission</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#induced-fission">11.2.1.2. Induced fission</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-fission-products">11.2.1.3. Characteristics of fission products</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#energetics-of-fission">11.2.1.4. Energetics of fission</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-reactions">11.2.2. Chain reactions</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#startup-sources">11.2.2.1. Startup sources</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subcritical-reactors">11.2.2.2. Subcritical reactors</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reactor-design">11.2.3. Reactor design</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-four-factor-formula">11.2.3.1. The four-factor formula</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reactor-design-strategies">11.2.3.2. Reactor design strategies</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-reactor-designs">11.2.4. Common reactor designs</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pressurised-water-reactor-pwr">11.2.4.1. Pressurised water reactor (PWR)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#boiling-water-reactor-bwr">11.2.4.2. Boiling water reactor (BWR)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pressurised-heavy-water-reactor-phwr">11.2.4.3. Pressurised heavy-water reactor (PHWR)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-gas-cooled-reactor-agr">11.2.4.4. Advanced gas-cooled reactor (AGR)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reactor-power-output">11.2.5. Reactor power output</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-natural-nuclear-reactor-not-examinable">11.2.6. A natural nuclear reactor (not examinable)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-fission">11.2.7. Summary (fission)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fusion">11.3. Fusion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energetics-of-fusion">11.3.1. Energetics of fusion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-coulomb-barrier">11.3.2. The Coulomb barrier</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fusion-reactions">11.3.3. Fusion reactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fusion-reaction-rates">11.3.4. Fusion reaction rates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deuterium-tritium-fusion">11.3.5. Deuterium-tritium fusion</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-challenges">11.3.5.1. The challenges</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lawson-criterion-and-fusion-strategies">11.3.6. The Lawson criterion and fusion strategies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetic-confinement-fusion-mcf">11.3.7. Magnetic confinement fusion (MCF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inertial-confinement-fusion-icf">11.3.8. Inertial confinement fusion (ICF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steps-towards-practical-fusion">11.3.9. Steps towards practical fusion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-fusion">11.3.10. Summary (fusion)</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Liz Kneale, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

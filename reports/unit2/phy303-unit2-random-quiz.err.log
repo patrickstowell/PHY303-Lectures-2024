@@ -1,0 +1,417 @@
+Traceback (most recent call last):
+  File "/Users/stowell/.envs/phy303book/lib/python3.13/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+    ~~~~~~~~~^
+        nb,
+        ^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/stowell/.envs/phy303book/lib/python3.13/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/stowell/.envs/phy303book/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/stowell/.envs/phy303book/lib/python3.13/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+        cell, index, execution_count=self.code_cells_executed + 1
+    )
+  File "/Users/stowell/.envs/phy303book/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/stowell/.envs/phy303book/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import json
+from jupyterquiz import display_quiz
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+
+livechart = "https://nds.iaea.org/relnsd/v0/data?"
+import urllib.request
+def lc_pd_dataframe(url):
+    req = urllib.request.Request(url)
+    req.add_header('User-Agent', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0')
+    return pd.read_csv(urllib.request.urlopen(req))
+df = lc_pd_dataframe(livechart + "fields=ground_states&nuclides=all")
+df["a"]=df["z"] + df["n"]
+df["b_over_a"] = df["binding"]
+
+
+df["Atomic Number [A]"] = df["z"]  + df["a"]
+df["Proton Number [Z]"] = df["z"]
+df["Neutron Number [N]"] = df["n"]
+df["Binding Energy [MeV]"] = df["binding"] / 1000.0
+df["Symbol"] = df["symbol"] 
+df["Dominant Decay"] = df["decay_1"] 
+
+fig = px.scatter(df, x="Neutron Number [N]",y="Proton Number [Z]", color="Binding Energy [MeV]", hover_data=["Symbol","Neutron Number [N]","Proton Number [Z]","Binding Energy [MeV]", "Dominant Decay"])
+fig.show(renderer="iframe")
+
+def volume(A):
+    return 15.56 * A
+
+def surface(A):
+    return -17.23 * A**(2.0/3.0)
+
+def coulomb(A,Z):
+    return -0.72*Z*(Z-1) / A**(1.0/3.0)
+
+def assym(A,Z):
+    p_aa = 93.14
+    B_a=-p_aa*(Z-A/2)**2/A
+    return B_a
+
+def pair(A,Z):
+    p_ap=12.0
+    B_p=-p_ap/A**(1/2) 
+    N=A-Z
+    
+    CV = np.array(Z%2 + N%2)
+    B_p = np.array(B_p)
+    B_p[ CV == 1 ] = -B_p[ CV == 1 ]
+    B_p[ CV == 0 ] = 0
+
+    return B_p
+
+df["semf"] = (volume(df.a)+assym(df.a, df.z) + pair(df.a, df.z) + coulomb(df.a, Z=np.array(df.z)) + surface(df.a))/df.a/1E-3
+df["LDM Ratio"] = df["semf"] / df["binding"]
+
+df["radius"] = 1.21 * np.pow(df.a,1./3.)
+df["protonsep1"] = 0.0
+df["protonsep2"] = 0.0
+df["neutronsep1"] = 0.0
+df["neutronsep2"] = 0.0
+
+allqs = []
+
+
+for i in range(100):
+
+    iso = df.sample(1)
+    nuclei = iso["symbol"].values[0]
+    protons = iso["z"].values[0]
+    neutrons = iso["n"].values[0]
+
+    # SEMF Calculation
+    qss = {
+        "question": f"Determine the total binding energy in MeV for {nuclei} which has {protons} protons and {neutrons} neutrons.",
+        "type": "numeric",
+        "precision": 4,
+        "answers": []
+    }
+
+    value = iso.semf.values[0]
+
+    qss["answers"].append(
+        {
+            "type": "value",
+            "value": value,
+            "correct": True,
+            "feedback": "Correct!"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "range",
+            "range": [value*0.9, value*1.1],
+            "correct": True,
+            "feedback": "Correct within 10%!"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "range",
+            "range": [-1000000000000, 0],
+            "correct": False,
+            "feedback": "Binding energies are always expressed as positive in MeV"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "default",
+            "feedback": "Incorrect, check your constants and Np and Nn!"
+        }
+    )
+
+    allqs.append(qss)
+
+
+    # Nuclear Radius
+    qss = {
+        "question": f"Estimate the nuclear radius in fm for {nuclei} which has {protons} protons and {neutrons} neutrons.",
+        "type": "numeric",
+        "precision": 4,
+        "answers": []
+    }
+
+    value = iso.radius.values[0]
+
+    qss["answers"].append(
+        {
+            "type": "value",
+            "value": value,
+            "correct": True,
+            "feedback": "Correct!"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "range",
+            "range": [value*0.9, value*1.1],
+            "correct": True,
+            "feedback": "Correct within 10%!"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "range",
+            "range": [-1000000000000, 0],
+            "correct": False,
+            "feedback": "Nuclear radii are always positive."
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "default",
+            "feedback": "Incorrect, check your constants and Np and Nn!"
+        }
+    )
+
+    allqs.append(qss)
+
+    # SEMF 1n Calculation
+    qss = {
+        "question": f"Determine the single neutron seperation energy in MeV for {nuclei} which has {protons} protons and {neutrons} neutrons.",
+        "type": "numeric",
+        "precision": 4,
+        "answers": []
+    }
+
+    value = iso.neutronsep1.values[0]
+
+    qss["answers"].append(
+        {
+            "type": "value",
+            "value": value,
+            "correct": True,
+            "feedback": "Correct!"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "range",
+            "range": [value*0.9, value*1.1],
+            "correct": True,
+            "feedback": "Correct within 10%!"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "range",
+            "range": [-1000000000000, 0],
+            "correct": False,
+            "feedback": "Binding energies are always expressed as positive in MeV"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "default",
+            "feedback": "Incorrect, check your constants and Np and Nn! Are you getting the single neutron seperation?"
+        }
+    )
+
+    allqs.append(qss)
+
+    # SEMF 2n Calculation
+    qss = {
+        "question": f"Determine the double neutron seperation energy in MeV for {nuclei} which has {protons} protons and {neutrons} neutrons.",
+        "type": "numeric",
+        "precision": 4,
+        "answers": []
+    }
+
+    value = iso.neutronsep2.values[0]
+
+    qss["answers"].append(
+        {
+            "type": "value",
+            "value": value,
+            "correct": True,
+            "feedback": "Correct!"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "range",
+            "range": [value*0.9, value*1.1],
+            "correct": True,
+            "feedback": "Correct within 10%!"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "range",
+            "range": [-1000000000000, 0],
+            "correct": False,
+            "feedback": "Binding energies are always expressed as positive in MeV"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "default",
+            "feedback": "Incorrect, check your constants and Np and Nn! Are you getting the double neutron seperation?"
+        }
+    )
+
+    allqs.append(qss)
+
+    # SEMF 1p Calculation
+    qss = {
+        "question": f"Determine the single proton seperation energy in MeV for {nuclei} which has {protons} protons and {neutrons} neutrons.",
+        "type": "numeric",
+        "precision": 4,
+        "answers": []
+    }
+
+    value = iso.protonsep1.values[0]
+
+    qss["answers"].append(
+        {
+            "type": "value",
+            "value": value,
+            "correct": True,
+            "feedback": "Correct!"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "range",
+            "range": [value*0.9, value*1.1],
+            "correct": True,
+            "feedback": "Correct within 10%!"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "range",
+            "range": [-1000000000000, 0],
+            "correct": False,
+            "feedback": "Binding energies are always expressed as positive in MeV"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "default",
+            "feedback": "Incorrect, check your constants and Np and Nn! Are you getting the single proton seperation?"
+        }
+    )
+
+    allqs.append(qss)
+
+    # SEMF 2p Calculation
+    qss = {
+        "question": f"Determine the single proton seperation energy in MeV for {nuclei} which has {protons} protons and {neutrons} neutrons.",
+        "type": "numeric",
+        "precision": 4,
+        "answers": []
+    }
+
+    value = calculation_bindingpernucleon(iso)
+
+    qss["answers"].append(
+        {
+            "type": "value",
+            "value": value,
+            "correct": True,
+            "feedback": "Correct!"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "range",
+            "range": [value*0.9, value*1.1],
+            "correct": True,
+            "feedback": "Correct within 10%!"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "range",
+            "range": [-1000000000000, 0],
+            "correct": False,
+            "feedback": "Binding energies are always expressed as positive in MeV"
+        }
+    )
+
+    qss["answers"].append(
+        {
+            "type": "default",
+            "feedback": "Incorrect, check your constants and Np and Nn! Are you getting the double proton seperation?"
+        }
+    )
+
+    allqs.append(qss)
+
+
+with open("phy303-unit2-dynamicquestion-answers.json", "w") as f:
+    json.dump(allqs, f, indent=4)
+
+display_quiz('phy303-unit2-dynamicquestion-answers.json', shuffle_questions=True, num=5)
+
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[2], line 315[0m
+[1;32m    307[0m [38;5;66;03m# SEMF 2p Calculation[39;00m
+[1;32m    308[0m qss [38;5;241m=[39m {
+[1;32m    309[0m     [38;5;124m"[39m[38;5;124mquestion[39m[38;5;124m"[39m: [38;5;124mf[39m[38;5;124m"[39m[38;5;124mDetermine the single proton seperation energy in MeV for [39m[38;5;132;01m{[39;00mnuclei[38;5;132;01m}[39;00m[38;5;124m which has [39m[38;5;132;01m{[39;00mprotons[38;5;132;01m}[39;00m[38;5;124m protons and [39m[38;5;132;01m{[39;00mneutrons[38;5;132;01m}[39;00m[38;5;124m neutrons.[39m[38;5;124m"[39m,
+[1;32m    310[0m     [38;5;124m"[39m[38;5;124mtype[39m[38;5;124m"[39m: [38;5;124m"[39m[38;5;124mnumeric[39m[38;5;124m"[39m,
+[1;32m    311[0m     [38;5;124m"[39m[38;5;124mprecision[39m[38;5;124m"[39m: [38;5;241m4[39m,
+[1;32m    312[0m     [38;5;124m"[39m[38;5;124manswers[39m[38;5;124m"[39m: []
+[1;32m    313[0m }
+[0;32m--> 315[0m value [38;5;241m=[39m [43mcalculation_bindingpernucleon[49m(iso)
+[1;32m    317[0m qss[[38;5;124m"[39m[38;5;124manswers[39m[38;5;124m"[39m][38;5;241m.[39mappend(
+[1;32m    318[0m     {
+[1;32m    319[0m         [38;5;124m"[39m[38;5;124mtype[39m[38;5;124m"[39m: [38;5;124m"[39m[38;5;124mvalue[39m[38;5;124m"[39m,
+[0;32m   (...)[0m
+[1;32m    323[0m     }
+[1;32m    324[0m )
+[1;32m    326[0m qss[[38;5;124m"[39m[38;5;124manswers[39m[38;5;124m"[39m][38;5;241m.[39mappend(
+[1;32m    327[0m     {
+[1;32m    328[0m         [38;5;124m"[39m[38;5;124mtype[39m[38;5;124m"[39m: [38;5;124m"[39m[38;5;124mrange[39m[38;5;124m"[39m,
+[0;32m   (...)[0m
+[1;32m    332[0m     }
+[1;32m    333[0m )
+
+[0;31mNameError[0m: name 'calculation_bindingpernucleon' is not defined
+

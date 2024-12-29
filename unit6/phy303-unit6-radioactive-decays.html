@@ -1,0 +1,1077 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>6. Radioactive Decays &#8212; PHY303 Nuclear Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unit6/phy303-unit6-radioactive-decays';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="7. Nuclear Reactions" href="../unit7/phy303-unit7-reactions.html" />
+    <link rel="prev" title="5. Collective Models" href="../unit5/phy303-unit5-collective-excited.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../phy303-homepage.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="PHY303 Nuclear Physics - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY303 Nuclear Physics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unit1/phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit3/phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit4/phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit5/phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit7/phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit8/phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit9/phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit10/phy303-unit10-medicalapplications.html">10. Nuclear Medicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit11/phy303-unit11-fissionandfusion.html">11. Nuclear Power</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Review Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit1/phy303-unit1-review.html">Unit 1 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-problems.html">Unit 1 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-additionalproblems.html">Unit 1 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-flashcards.html">Unit 1 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-random-quiz.html">Unit 1 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-full-quiz.html">Unit 1 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit2/phy303-unit2-review.html">Unit 2 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-problems.html">Unit 2 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-additionalproblems.html">Unit 2 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-random-quiz.html">Unit 2 : Random Quiz</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-full-quiz.html">Unit 2 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit3/phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-problems.html">Unit 3 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-additionalproblems.html">Unit 3 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-flashcards.html">Unit 3 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-random-quiz.html">Unit 3 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-full-quiz.html">Unit 3 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit4/phy303-unit4-review.html">Unit 4 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-problems.html">Unit 4 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-additionalproblems.html">Unit 4 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-flashcards.html">Unit 4 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-random-quiz.html">Unit 4 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-full-quiz.html">Unit 4 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit5/phy303-unit5-review.html">Unit 5 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-problems.html">Unit 5 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-additionalproblems.html">Unit 5 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-terms.html">Unit 5 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-flashcards.html">Unit 5 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-random-quiz.html">Unit 5 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-full-quiz.html">Unit 5 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="phy303-unit6-review.html">Unit 6 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit6-problems.html">Unit 6 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit6-additionalproblems.html">Unit 6 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit6-terms.html">Unit 6 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit6-flashcards.html">Unit 6 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit6-random-quiz.html">Unit 6 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit6-full-quiz.html">Unit 6 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit7/phy303-unit7-review.html">Unit 7 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-problems.html">Unit 7 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-additionalproblems.html">Unit 7 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-terms.html">Unit 7 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-flashcards.html">Unit 7 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-random-quiz.html">Unit 7 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-full-quiz.html">Unit 7 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit8/phy303-unit8-review.html">Unit 8 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-problems.html">Unit 8 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-additionalproblems.html">Unit 8 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-terms.html">Unit 8 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-flashcards.html">Unit 8 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-random-quiz.html">Unit 8 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-full-quiz.html">Unit 8 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit9/phy303-unit9-review.html">Unit 9 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-problems.html">Unit 9 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-additionalproblems.html">Unit 9 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-terms.html">Unit 9 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-flashcards.html">Unit 9 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-random-quiz.html">Unit 9 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-full-quiz.html">Unit 9 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit10/phy303-unit10-review.html">Unit 10 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-problems.html">Unit 10 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-additionalproblems.html">Unit 10 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-terms.html">Unit 10 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-flashcards.html">Unit 10 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-random-quiz.html">Unit 10 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-full-quiz.html">Unit 10 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit11/phy303-unit11-review.html">Unit 11 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-problems.html">Unit 11 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-additionalproblems.html">Unit 11 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-terms.html">Unit 11 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-flashcards.html">Unit 11 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-random-quiz.html">Unit 11 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/nucleus-shape.html">Nucleus Shape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/janis-viewer.html">JANIS Viewer</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/unit6/phy303-unit6-radioactive-decays.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Radioactive Decays</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">6.1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-decay">6.2. Beta Decay</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-emission-beta-decay">6.2.1. Electron Emission (<span class="math notranslate nohighlight">\(\beta^-\)</span> Decay)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#positron-emission-beta-decay">6.2.2. Positron Emission (<span class="math notranslate nohighlight">\(\beta^+\)</span> Decay)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-capture-ec">6.2.3. Electron Capture (EC)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-considerations-and-occurrence">6.3. Energy Considerations and Occurrence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-decay-matrix-element">6.4. Beta Decay Matrix Element</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transitions">6.5. Transitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selection-rules-summary">6.6. Selection Rules Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-beta-decay-of-nucleus-x-to-y">6.7. Example: Beta Decay of Nucleus X to Y</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#double-beta-decay">6.8. Double Beta Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-decay">6.9. Alpha Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-212-po-example">6.10. Alpha 212-Po Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">6.11. Summary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="radioactive-decays">
+<h1><span class="section-number">6. </span>Radioactive Decays<a class="headerlink" href="#radioactive-decays" title="Link to this heading">#</a></h1>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Quick Links</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="phy303-unit6-problems.html#unit6-problems"><span class="std std-ref">Unit 6 : Worked Problems</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit6-additionalproblems.html#unit6-additionalproblems"><span class="std std-ref">Unit 6 : Additional Problems</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit6-terms.html#unit6-terms"><span class="std std-ref">Unit 6 : Equations &amp; Terms</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit6-flashcards.html#unit6-flashcards"><span class="std std-ref">Unit 6 : Flash Cards</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit6-random-quiz.html#unit6-randomquiz"><span class="std std-ref">Unit 6 : Random Quiz</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit6-full-quiz.html#unit6-fullquiz"><span class="std std-ref">Unit 6 : Full Quiz</span></a></p></li>
+<li><p>From the <a class="reference external" href="https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441">Reading List</a></p>
+<ul>
+<li><p>TBC</p></li>
+<li><p>TBC</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="introduction">
+<h2><span class="section-number">6.1. </span>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>As we saw in the previous unit, nuclei in excited states can emit radiation in the form of gamma rays when nucleons move between different shell levels. This explains one of our three dominant sources of radiation. What about the others, <span class="math notranslate nohighlight">\(\beta\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span> decay?</p>
+<p>These become a bit trickier to solve, as both decays lead to a fundamental change in the nucleon content inside the nucleus itself. As a reminder, in all cases of radioactive decay, we characterize the process in terms of three important numbers:</p>
+<ul class="simple">
+<li><p>The probability of decay per unit time <span class="math notranslate nohighlight">\(\rightarrow \lambda\)</span></p></li>
+<li><p>The average time a nucleus lasts before decay <span class="math notranslate nohighlight">\(\rightarrow \tau = 1/\lambda\)</span></p></li>
+<li><p>The time for half the sample to decay (half-life)</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[T_{1/2} = \tau \textnormal{ln}(2) = 0.693\tau\]</div>
+<p>Radioactive decay itself is a stochastic process. That is why we define it in terms of the average times it takes bulk samples of material to decay. The main thing that governs the rate of this decay in a nucleus is actually whether the process is energetically favorable or not. In gamma radiation we saw it was almost always energetically favorable for an excited nuclear state to drop down some energy levels by emitting radiation.</p>
+<p>What about other forms of radiation? In alpha and beta radiation the nucleus physically changes from one type to another. It turns out that a nucleus is likely to be unstable and decay through these channels if the net energy of the final products <span class="math notranslate nohighlight">\(E_{f}\)</span> is less than that of the starting nucleus <span class="math notranslate nohighlight">\(E_{i}\)</span>. This energy deficit is defined as:</p>
+<div class="math notranslate nohighlight" id="equation-massdeficit">
+<span class="eqno">(6.1)<a class="headerlink" href="#equation-massdeficit" title="Link to this equation">#</a></span>\[\begin{equation}
+Q = M(A,Z)^{2}c^{2} - [M(A-X,Z-Y)c^{2} + M(X,Y)c^{2}] &gt; 0 
+\end{equation}\]</div>
+<p>Decay is possible only if the <span class="math notranslate nohighlight">\(Q\)</span> value is positive, and the decay is not disallowed by any other selection rule or conservation law. The energy released in the decay will come out in the kinetic energy of the release fragments in the decay. Let’s consider both beta decay and alpha decay in turn to see how theoretical concepts of the nucleus help us understand their behavior.</p>
+</section>
+<section id="beta-decay">
+<h2><span class="section-number">6.2. </span>Beta Decay<a class="headerlink" href="#beta-decay" title="Link to this heading">#</a></h2>
+<p>In beta decay we typically see experimentally an emission of an Electron from the nucleus combined with a transmutation of a nucleus from one type into another with a lower neutron number. This is referred to as beta-minus decay and typically occurs in neutron rich nuclei which are trying to lower their energy by rebalancing their proton/neutron ratios.</p>
+<p>In the early years of Beta Decay studies the process observed was highly mysterious and showed very different a behavior to Alpha Decay which was being studied at a similar time. This is illustrated by the Cloud Chamber image shown below.</p>
+<figure class="align-default" id="neutrino-emission">
+<a class="reference internal image-reference" href="../_images/image-137.png"><img alt="Bubble Chamber example of Beta Decay" src="../_images/image-137.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Bubble chamber photo of He-6 decay into Li-6, showing what appears to be non-conservation of momentum.</span><a class="headerlink" href="#neutrino-emission" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We see the decay of <span class="math notranslate nohighlight">\(^6\)</span>He into <span class="math notranslate nohighlight">\(^6\)</span>Li and a charged electron. We see two tracks, curving because there is a magnetic field applied. But from analysis of the plot it looks like energy, momentum and even Total Angular Momentum <span class="math notranslate nohighlight">\(I\)</span> are not conserved if we assume the interaction:</p>
+<div class="math notranslate nohighlight">
+\[
+ ^6\textnormal{He}~\rightarrow~^{6}\textnormal{Li} + e^- 
+\]</div>
+<p>Of course the reason is that there is a Neutrino emitted as well, but this escapes the detector and we don’t see it. There are actually four things we need to consider in beta-minus(-plus) decay not just the neutrino.</p>
+<ol class="arabic simple">
+<li><p>Beta Decay is a Three-body Process, unlike alpha decay (two body). We have to account for the energies and behavior of 3 objects - the nucleus, the beta and neutrino.</p></li>
+<li><p>The electron (positron) and neutrino produced do not exist before the decay, we need to account for their formation.</p></li>
+<li><p>The electron and neutrino are relativistic, unlike the alpha in alpha decay. This makes calculations of the energies and kinematics of the decay more complicated.</p></li>
+<li><p>The energy of the beta emitted by the nucleus in question is not the same in every decay. We get a continuum of energies put to a maximum. In contrast to alpha decay and gamma decays where we get one “Mono energetic” particle depending on the energy levels or <span class="math notranslate nohighlight">\(Q\)</span> value considered. The quark level interaction is given in the figure below. Typically the ‘Matrix Element’ is calculated based on the interacting particles considering the d quark in the initial state and u quark and electron and anti-neutrino in the final state.</p></li>
+</ol>
+<p><img alt="Alt text" src="../_images/image-142.png" /></p>
+<p>An example to illustrate this behavior is:</p>
+<div class="math notranslate nohighlight">
+\[
+\bf
+ _{83}^{210}Bi \rightarrow _{84}^{210}Po + e^- + \bar{\nu}_e 
+\]</div>
+<p>Note how with an electron emitted in beta decay we get an Anti-neutrino (this is Lepton Number conservation in particle physics)</p>
+<p>Beta decay is a common type of radioactive decay that involves the transformation of nucleons within the nucleus, resulting in the emission of beta particles and a change in the nuclear charge. There are three main types of beta decay: electron emission (<span class="math notranslate nohighlight">\(\beta^-\)</span> decay), positron emission (<span class="math notranslate nohighlight">\(\beta^+\)</span> decay), and electron capture (EC). Each of these processes alters the nucleus in distinct ways, driven by the weak nuclear force. Here’s a breakdown of their differences:</p>
+<section id="electron-emission-beta-decay">
+<h3><span class="section-number">6.2.1. </span>Electron Emission (<span class="math notranslate nohighlight">\(\beta^-\)</span> Decay)<a class="headerlink" href="#electron-emission-beta-decay" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Process:</strong> In <span class="math notranslate nohighlight">\(\beta^-\)</span> decay, a neutron inside the nucleus is transformed into a proton, an electron (<span class="math notranslate nohighlight">\(e^-\)</span>), and an electron antineutrino (<span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span>).</p></li>
+<li><p><strong>Equation:</strong> <span class="math notranslate nohighlight">\(n \rightarrow p + e^- + \bar{\nu}_e\)</span></p></li>
+<li><p><strong>Result:</strong> The atomic number (<span class="math notranslate nohighlight">\(Z\)</span>) of the nucleus increases by one, while the mass number (<span class="math notranslate nohighlight">\(A\)</span>) remains unchanged. This process leads to the element changing to its next higher neighbor in the periodic table.</p></li>
+<li><p><strong>Driving Force:</strong> <span class="math notranslate nohighlight">\(\beta^-\)</span> decay occurs in neutron-rich nuclei, where the neutron-to-proton ratio is higher than that for a stable isotope of the element.</p></li>
+</ul>
+</section>
+<section id="positron-emission-beta-decay">
+<h3><span class="section-number">6.2.2. </span>Positron Emission (<span class="math notranslate nohighlight">\(\beta^+\)</span> Decay)<a class="headerlink" href="#positron-emission-beta-decay" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Process:</strong> In <span class="math notranslate nohighlight">\(\beta^+\)</span> decay, a proton is converted into a neutron, a positron (<span class="math notranslate nohighlight">\(e^+\)</span>), and an electron neutrino (<span class="math notranslate nohighlight">\(\nu_e\)</span>).</p></li>
+<li><p><strong>Equation:</strong> <span class="math notranslate nohighlight">\(p \rightarrow n + e^+ + \nu_e\)</span></p></li>
+<li><p><strong>Result:</strong> The atomic number (<span class="math notranslate nohighlight">\(Z\)</span>) decreases by one, but the mass number (<span class="math notranslate nohighlight">\(A\)</span>) remains the same. The element changes to its previous neighbor in the periodic table.</p></li>
+<li><p><strong>Driving Force:</strong> <span class="math notranslate nohighlight">\(\beta^+\)</span> decay is favored in proton-rich nuclei, where the proton-to-neutron ratio is higher than the stable ratio for that element. It requires more energy than <span class="math notranslate nohighlight">\(\beta^-\)</span> decay, as the mass of the nucleus must compensate for the mass of the positron and the difference in mass between protons and neutrons.</p></li>
+</ul>
+</section>
+<section id="electron-capture-ec">
+<h3><span class="section-number">6.2.3. </span>Electron Capture (EC)<a class="headerlink" href="#electron-capture-ec" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Process:</strong> In electron capture, an inner orbital electron is captured by a proton in the nucleus, resulting in the formation of a neutron and the emission of an electron neutrino.</p></li>
+<li><p><strong>Equation:</strong> <span class="math notranslate nohighlight">\(p + e^- \rightarrow n + \nu_e\)</span></p></li>
+<li><p><strong>Result:</strong> Similar to <span class="math notranslate nohighlight">\(\beta^+\)</span> decay, electron capture decreases the atomic number by one without changing the mass number, shifting the element to its previous neighbor in the periodic table.</p></li>
+<li><p><strong>Driving Force:</strong> EC also occurs in proton-rich nuclei and can be thought of as an alternative to <span class="math notranslate nohighlight">\(\beta^+\)</span> decay, especially in cases where the energy difference between the initial and final states does not favor positron emission. It strongly competes with <span class="math notranslate nohighlight">\(e^+\)</span> decay and is the only decay available to nuclei with a Proton Excess if the mass difference between the atoms is less than <span class="math notranslate nohighlight">\(1~\textnormal{MeV}/\textnormal{c}^2\)</span>.</p></li>
+</ul>
+</section>
+</section>
+<section id="energy-considerations-and-occurrence">
+<h2><span class="section-number">6.3. </span>Energy Considerations and Occurrence<a class="headerlink" href="#energy-considerations-and-occurrence" title="Link to this heading">#</a></h2>
+<p>Note we have to be careful in Beta Decay to consider the mass of everything including the Atomic Electrons, not just the nucleons. Hence the mass used are atomic masses, not the nuclear masses. We were less careful earlier when dealing with Binding Energy calculations and the SEMF.</p>
+<ul class="simple">
+<li><p><strong><span class="math notranslate nohighlight">\(\beta^-\)</span> Decay:</strong> This process is energetically favored in neutron-rich nuclei and does not require additional energy to occur since the mass of the neutron is greater than that of the proton. The <span class="math notranslate nohighlight">\(Q\)</span> value for this interaction is calculated based on the atomic masses as</p></li>
+</ul>
+<div class="math notranslate nohighlight" id="equation-betamqvalue">
+<span class="eqno">(6.2)<a class="headerlink" href="#equation-betamqvalue" title="Link to this equation">#</a></span>\[\begin{equation}
+Q_{\beta^{-}} = [ M(A,Z) - M(A,Z-1) ]c^{2}
+\end{equation}\]</div>
+<ul class="simple">
+<li><p><strong><span class="math notranslate nohighlight">\(\beta^+\)</span> Decay and EC:</strong> Both require the nucleus to have excess energy because the mass of a neutron is less than that of a proton (when considering the mass of the positron for <span class="math notranslate nohighlight">\(\beta^+\)</span> decay or the binding energy of the captured electron for EC). These processes are less common than <span class="math notranslate nohighlight">\(\beta^-\)</span> decay due to the energy requirements and occur in proton-rich nuclei.</p></li>
+</ul>
+<p>The Q value for <span class="math notranslate nohighlight">\(\beta^+\)</span> decay based on atomic masses is calculated as</p>
+<div class="math notranslate nohighlight" id="equation-betapqvalue">
+<span class="eqno">(6.3)<a class="headerlink" href="#equation-betapqvalue" title="Link to this equation">#</a></span>\[\begin{equation}
+Q_{\beta^{+}} = [ M(A,Z) - M(A,Z-1) - 2m_{e}]c^{2}
+\end{equation}\]</div>
+<p>In the case for electron capture, the <span class="math notranslate nohighlight">\(Q\)</span> value needs to be calculated based on the energy of the electron that is captured based on which atomic orbital shell it is in (typically an inner shell).</p>
+</section>
+<section id="beta-decay-matrix-element">
+<h2><span class="section-number">6.4. </span>Beta Decay Matrix Element<a class="headerlink" href="#beta-decay-matrix-element" title="Link to this heading">#</a></h2>
+<p>Typically we find that the average Beta decay rate is proportional to <span class="math notranslate nohighlight">\(1/Q^{5}\)</span> of the interaction itself. This is the Sergeant rule that derives from the theory of weak interactions. Note that this <span class="math notranslate nohighlight">\(Q\)</span> value is the total energy available for the decay based on the mass differences, but we expect a continuous spectrum when looking at just the electron energy for example.</p>
+<p>As discussed in Krane, the probability of a beta decay occurring is proportional to the square of the matrix element, <span class="math notranslate nohighlight">\(M\)</span>, which depends on the overlap of the initial and final nuclear wave functions and the operators involved in the transition.</p>
+<div class="math notranslate nohighlight" id="equation-lambdacalc">
+<span class="eqno">(6.4)<a class="headerlink" href="#equation-lambdacalc" title="Link to this equation">#</a></span>\[\begin{equation}
+\lambda = \frac{2\pi}{\hbar} ~| M_{if} |^{2} ~\frac{dn_{f}}{dE_{f}}
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\lambda\)</span> is the rate <span class="math notranslate nohighlight">\(M_{if}\)</span> is the nuclear matrix element, and <span class="math notranslate nohighlight">\(\frac{dn_{f}}{dE_{f}}\)</span> is the ‘density of states’. We expect that as the density of possible states increases so to does the rate of interaction.</p>
+<p>The nuclear matrix element is commonly written based on some interaction Hamiltonian, <span class="math notranslate nohighlight">\(\hat{H}\)</span> that describes the transition,</p>
+<div class="math notranslate nohighlight" id="equation-matrixelement">
+<span class="eqno">(6.5)<a class="headerlink" href="#equation-matrixelement" title="Link to this equation">#</a></span>\[\begin{equation}
+|M_{fi}| = \int \psi^{*} \hat{H} \psi dV.
+\end{equation}\]</div>
+<p>Weak interactions typically follow a <span class="math notranslate nohighlight">\(V-A\)</span> form for the Hamiltonian, where <span class="math notranslate nohighlight">\(V\)</span> corresponds to vector couplings (typically the electromagnetic part in electroweak interactions), and the <span class="math notranslate nohighlight">\(A\)</span> corresponds to axial couplings (which carry the weak force).</p>
+<p>If we consider that the neutrino and electron in <span class="math notranslate nohighlight">\(\beta^{-}\)</span> decay are being produced  some distance <span class="math notranslate nohighlight">\(\vec{r}\)</span> from the centre of the nucleus with momenta <span class="math notranslate nohighlight">\(\vec{p}\)</span> (electron) and <span class="math notranslate nohighlight">\(\vec{q}\)</span> (neutrino), then we can estimate the density of states at that momentum based on the volume of a spherical shell of thickness <span class="math notranslate nohighlight">\(dp\)</span> or <span class="math notranslate nohighlight">\(dq\)</span> as</p>
+<div class="math notranslate nohighlight" id="equation-densitystateselectron">
+<span class="eqno">(6.6)<a class="headerlink" href="#equation-densitystateselectron" title="Link to this equation">#</a></span>\[\begin{equation}
+dn_{e} = \frac{4 \pi p^{2} dp V}{h^{3}}  
+\end{equation}\]</div>
+<div class="math notranslate nohighlight" id="equation-densitystatesneutrino">
+<span class="eqno">(6.7)<a class="headerlink" href="#equation-densitystatesneutrino" title="Link to this equation">#</a></span>\[\begin{equation}
+dn_{v} = \frac{4 \pi q^{2} dq V}{h^{3}}  
+\end{equation}\]</div>
+<p>The combined density of states can then be estimated from</p>
+<div class="math notranslate nohighlight" id="equation-densitystatescombined">
+<span class="eqno">(6.8)<a class="headerlink" href="#equation-densitystatescombined" title="Link to this equation">#</a></span>\[\begin{equation}
+dn_{e}dn_{v} = \frac{ (4 \pi)^{2} ~ V^{2} ~ q^{2} dq ~p^{2} dp}{h^{6}}  
+\end{equation}\]</div>
+<p>If we consider the possible wave functions for our electron and neutrino we can consider free particle solutions in the first case</p>
+<div class="math notranslate nohighlight">
+\[
+\psi_{e}(r) \propto e^{i \frac{\vec{p}\cdot\vec{r}}{\hbar}} ~~~~~~~ \psi_{\nu}(r) \propto e^{i \frac{\vec{q}\cdot\vec{r}}{\hbar}} 
+\]</div>
+<p>If we consider the energy scales of beta decay, the electron is expected to have an energy in the range of around 1 MeV. This corresponds to around <span class="math notranslate nohighlight">\(p/\hbar \sim 0.007~\textnormal{fm}^{-1}\)</span> much smaller than the nucleus itself. As a result we can approximate the wavefunction as</p>
+<div class="math notranslate nohighlight" id="equation-allowedapprox">
+<span class="eqno">(6.9)<a class="headerlink" href="#equation-allowedapprox" title="Link to this equation">#</a></span>\[\begin{equation}
+e^{i \frac{\vec{p}\cdot\vec{r}}{\hbar}}  \approx 1 + i\frac{\vec{p}\cdot\vec{r}}{\hbar} + .... \approx 1
+\end{equation}\]</div>
+<p>This last approximation where we assume the wavefunction is constant means the terms are constant in the matrix element calculations and only way that the rate depends on the momentum is in the density of states.</p>
+<p>When we account for this our density of states can be used to arrive at a form given in Krane for the number of beta particles at a given momentum of</p>
+<div class="math notranslate nohighlight" id="equation-densityfinal">
+<span class="eqno">(6.10)<a class="headerlink" href="#equation-densityfinal" title="Link to this equation">#</a></span>\[\begin{equation}
+N(p) = \frac{C}{c^{2}} p^{2} (Q-T_{e})^{2}
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(C\)</span> is a constant, <span class="math notranslate nohighlight">\(c\)</span> is the speed of light, <span class="math notranslate nohighlight">\(p\)</span> is the momentum of the emitted beta particle, <span class="math notranslate nohighlight">\(Q\)</span> is the mass deficit for the decay, and <span class="math notranslate nohighlight">\(T_{e}\)</span> is the kinetic energy of the beta particle. You can see how this has a zero point both at <span class="math notranslate nohighlight">\(p=0\)</span> and <span class="math notranslate nohighlight">\(Q=T_{e}\)</span> corresponding to our end points of beta decay.</p>
+<p>As shown in the figures below for Cu-64 we expect a continuous distribution as a result. In fact what we find is that additional corrections are needed for <span class="math notranslate nohighlight">\(\beta^{-}\)</span> vs <span class="math notranslate nohighlight">\(\beta^{+}\)</span> decay since positrons typically observe additional coulomb repulsion inside the nucleus.</p>
+<p><img alt="Alt text" src="unit6/image-141.png" /></p>
+<p>One way to understand allowed vs forbidden transitions is by producing what are called “Fermi-Kurie” plots. Based on the form shown above, if we plot the observed number of particles at a fixed momentum divided by <span class="math notranslate nohighlight">\(p^{2}\)</span> and an additional correction due to coulomb repulsion, what we find is a roughly linear fit to the data for many transitions. The point where this line crosses the x-axis determines the end point energy (maximum <span class="math notranslate nohighlight">\(T_{e}\)</span> of the transition). Linearity in this fit ends up only being true when our “allowed transition” assumption are valid. Any deviation from a straight line suggest a degree of “forbidden-ness” in the interaction. Importantly a Fermi-Kurie plot can be used to estimate the neutrino mass as the end point is expected to deviate from a straight line if the neutrino mass is non-zero as shown in the Figure below.</p>
+<figure class="align-default" id="fermi-kurie">
+<a class="reference internal image-reference" href="../_images/image-145.png"><img alt="End point of the Fermi-Kurie Plot" src="../_images/image-145.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.2 </span><span class="caption-text">End point of the Fermi-Kurie plot which plots beta particle kinetic energy vs a scaled estimate of the number of particles observed at that energy. Deviations away from a straight line suggest forbidden transitions. The end point <span class="math notranslate nohighlight">\(T_{0}\)</span> here corresponds to the maximum <span class="math notranslate nohighlight">\(Q\)</span> value for the decay.</span><a class="headerlink" href="#fermi-kurie" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>For allowed transitions, the matrix element involves simpler operators (e.g., Fermi and Gamow-Teller operators), while for forbidden transitions, more complex operators that include higher angular momentum components are required in the calculation. These higher order corrections that include the second term in the exponential expansion above are referred to as ‘forbidden transitions’.</p>
+</section>
+<section id="transitions">
+<h2><span class="section-number">6.5. </span>Transitions<a class="headerlink" href="#transitions" title="Link to this heading">#</a></h2>
+<p>In beta decay, transitions between nuclear states are classified as “allowed” or “forbidden” based on certain selection rules derived from conservation laws and quantum mechanics. These rules are related to the spin (<span class="math notranslate nohighlight">\(I\)</span>) and parity (<span class="math notranslate nohighlight">\(P\)</span>) of the initial and final nuclear states, as well as the angular momentum and parity of the emitted beta particle and neutrino system.</p>
+<p>Allowed transitions are those that require the least change in angular momentum and have no change in parity between the initial and final states. The simplest case is the “superallowed” transition, which involves no change in nuclear spin and parity (<span class="math notranslate nohighlight">\(\Delta I^\pi = 0^+\)</span>) and is the most favorable in terms of transition probability.</p>
+<p>We expect that the spin of the electron and anti-neutrino (both spin half particles) can come out either parrallel or anti-parallel with one another, carrying either <span class="math notranslate nohighlight">\(S=0\)</span> or <span class="math notranslate nohighlight">\(S=1\)</span> respectively. The transitions where they are parallel are referred to as <strong>Gamow-Teller</strong> transitions, whilst those where they are anti-parallel are referred to as <strong>Fermi</strong> transitions.</p>
+<p><strong>Superallowed Transition:</strong></p>
+<div class="math notranslate nohighlight">
+\[
+ \Delta I = 0, \quad \Delta \pi = \textnormal{none}
+ \]</div>
+<p>Here, <span class="math notranslate nohighlight">\(\Delta I\)</span> represents the change in total angular momentum quantum number, and <span class="math notranslate nohighlight">\(\Delta \pi\)</span> represents the change in parity; <span class="math notranslate nohighlight">\(0^+\)</span> indicates no change in either. We typically find that transitions with the shortest corrected half-life (corrections account for differences in the energy distribution and density of states) all correspond to this class of allowed transitions. This is why they are called “super-allowed”.</p>
+<p><strong>Allowed Transition:</strong>
+For “allowed” transitions (not superallowed), the changes are still minimal:</p>
+<div class="math notranslate nohighlight">
+\[
+ \Delta I = 0 \text{ or } \pm 1, \quad \Delta \pi = \textnormal{none}
+ \]</div>
+<p>except for <span class="math notranslate nohighlight">\(0 \rightarrow 0\)</span> transitions, which are forbidden.</p>
+<p>Superallowed and allowed transitions are characterized by a high transition probability because they involve minimal changes in the nuclear state, making them the most common type of beta decay. They correspond to the case where we produced the particle in our density of states at <span class="math notranslate nohighlight">\(\vec{r}=0\)</span> such that the wavefunction does not depend in any way on the momentum for the transition.</p>
+<p><strong>Forbidden Transitions</strong></p>
+<p>Forbidden transitions occur when the change in angular momentum and/or parity does not meet the criteria for allowed transitions. They are less likely to occur due to the need for higher changes in angular momentum between the initial and final states. Forbidden transitions are categorized by the degree of “forbiddenness,” which corresponds to the change in angular momentum of the emitted particles.</p>
+<div class="math notranslate nohighlight">
+\[
+ \Delta I = 0, \pm 1, \pm 2, \quad \Delta \pi = 1 
+ \]</div>
+<p>except for <span class="math notranslate nohighlight">\(0 \rightarrow 0\)</span> transitions, which are still completely forbidden.</p>
+<p>In general, the “n-th forbidden” transition is characterized by:</p>
+<div class="math notranslate nohighlight">
+\[
+ \Delta I = n, n \pm 1, n \pm 2, ..., \quad \Delta \pi = (-1)^{n}
+ \]</div>
+<p>The transition probability decreases significantly with increasing order of forbidden-ness, making higher-order forbidden transitions increasingly rare.</p>
+</section>
+<section id="selection-rules-summary">
+<h2><span class="section-number">6.6. </span>Selection Rules Summary<a class="headerlink" href="#selection-rules-summary" title="Link to this heading">#</a></h2>
+<p>This results in the following complete set of selection rules</p>
+<ul class="simple">
+<li><p><strong>Allowed</strong> <span class="math notranslate nohighlight">\(\Delta I=0,1\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi = \textnormal{no}\)</span></p></li>
+<li><p><strong>1st Forbidden</strong> <span class="math notranslate nohighlight">\(\Delta I=0,1,2\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi = \textnormal{yes}\)</span></p></li>
+<li><p><strong>2st Forbidden</strong> <span class="math notranslate nohighlight">\(\Delta I=2,3\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi = \textnormal{no}\)</span></p></li>
+<li><p><strong>3rd Forbidden</strong> <span class="math notranslate nohighlight">\(\Delta I=3,4\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi = \textnormal{yes}\)</span></p></li>
+</ul>
+<p>Here the 2nd forbidden transitions do actually allow for <span class="math notranslate nohighlight">\(\Delta I=0, 1\)</span> but since these are already covered by the allowed transitions these changes in the nuclear spin are far less likely.</p>
+</section>
+<section id="example-beta-decay-of-nucleus-x-to-y">
+<h2><span class="section-number">6.7. </span>Example: Beta Decay of Nucleus X to Y<a class="headerlink" href="#example-beta-decay-of-nucleus-x-to-y" title="Link to this heading">#</a></h2>
+<p>Suppose we have a beta decay process where nucleus X decays to nucleus Y. Let’s say:</p>
+<ul class="simple">
+<li><p>The initial state of nucleus X has a total angular momentum quantum number <span class="math notranslate nohighlight">\(I_i = 2\)</span> and positive parity (<span class="math notranslate nohighlight">\(\pi_i = +1\)</span>).</p></li>
+<li><p>The final state of nucleus Y has a total angular momentum quantum number <span class="math notranslate nohighlight">\(I_f = 1\)</span> and negative parity (<span class="math notranslate nohighlight">\(\pi_f = -1\)</span>).</p></li>
+</ul>
+<p><strong>Step 1: Calculate the Change in Angular Momentum (<span class="math notranslate nohighlight">\(\Delta I\)</span>)</strong></p>
+<div class="math notranslate nohighlight">
+\[
+ \Delta I = |I_f - I_i| = |1 - 2| = 1 
+ \]</div>
+<p><strong>Step 2: Determine the Change in Parity (<span class="math notranslate nohighlight">\(\Delta \pi\)</span>)</strong></p>
+<p>Since the parity changes from positive to negative, there is a change in parity (<span class="math notranslate nohighlight">\(\Delta \pi = +1~\textnormal{or}~-1\)</span>).</p>
+<p><strong>Step 3: Classify the Transition</strong></p>
+<p>Using the calculated <span class="math notranslate nohighlight">\(\Delta I\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi\)</span>, we can classify the transition. For allowed transitions, we expect <span class="math notranslate nohighlight">\(\Delta I = 0\)</span> or <span class="math notranslate nohighlight">\(\pm 1\)</span> (excluding <span class="math notranslate nohighlight">\(0 \rightarrow 0\)</span> without a change in parity), and <span class="math notranslate nohighlight">\(\Delta \pi = 0\)</span>.</p>
+<ul class="simple">
+<li><p>In our example, <span class="math notranslate nohighlight">\(\Delta I = 1\)</span> fits the criterion for <span class="math notranslate nohighlight">\(\Delta I\)</span> in allowed transitions, but the change in parity (<span class="math notranslate nohighlight">\(\Delta \pi = \textnormal{yes}\)</span>) indicates this is a <strong>forbidden transition</strong>.</p></li>
+<li><p>Specifically, since there’s a change in parity and the <span class="math notranslate nohighlight">\(\Delta I\)</span> value fits within the first forbidden category (considering <span class="math notranslate nohighlight">\(\Delta I = 0, \pm 1, \pm 2\)</span> with a parity change), this would be a <strong>first forbidden transition</strong>.</p></li>
+</ul>
+<p><strong>Example 1</strong>
+For another example of an allowed transition in beta decay, let’s consider the beta-minus decay of tritium (<span class="math notranslate nohighlight">\(^3H\)</span>) to helium-3 (<span class="math notranslate nohighlight">\(^3He\)</span>):</p>
+<ul class="simple">
+<li><p><strong>Tritium (<span class="math notranslate nohighlight">\(^3H\)</span>)</strong> has one proton and two neutrons. Its nuclear spin and parity (<span class="math notranslate nohighlight">\(I^P\)</span>) are <span class="math notranslate nohighlight">\(1/2^+\)</span> in its ground state.</p></li>
+<li><p><strong>Helium-3 (<span class="math notranslate nohighlight">\(^3He\)</span>)</strong> has two protons and one neutron. Its ground state also has a nuclear spin and parity of <span class="math notranslate nohighlight">\(1/2^+\)</span>.</p></li>
+</ul>
+<p>In this decay, one of the neutrons in tritium is converted into a proton, emitting an electron (<span class="math notranslate nohighlight">\(e^-\)</span>) and an electron antineutrino (<span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[
+ ^3H \rightarrow~ ^3He + e^- + \bar{\nu}_e 
+\]</div>
+<p>Given that both the initial and final states have spins of <span class="math notranslate nohighlight">\(1/2\)</span>, the change in angular momentum is:</p>
+<div class="math notranslate nohighlight">
+\[
+ \Delta I = |I_f - I_i| = |1/2 - 1/2| = 0 
+ \]</div>
+<p>In this case we know that the electron and anti-neutrino needed to have taken away either <span class="math notranslate nohighlight">\(S=0\)</span> or <span class="math notranslate nohighlight">\(S=1\)</span>, so we expect this to be Fermi decay.
+Both the initial and final states have positive parity (<span class="math notranslate nohighlight">\(+\)</span>), so there is no change in parity:</p>
+<div class="math notranslate nohighlight">
+\[
+ \Delta \pi = \textnormal{no} 
+ \]</div>
+<p>This means for the transition to be allowed we expect the orbital AM <span class="math notranslate nohighlight">\(l\)</span> to be even. Our transition meets these criteria (<span class="math notranslate nohighlight">\(\Delta I = 0\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi = \textnormal{no}\)</span>), indicating it is an <strong>allowed transition</strong>.</p>
+<p><strong>Example 2</strong>
+Now consider the example of beta decay in <span class="math notranslate nohighlight">\(^{6}\textnormal{He} \rightarrow~^{6}Li\)</span>. In this case we expect a transition from <span class="math notranslate nohighlight">\(0^{+}\)</span> to <span class="math notranslate nohighlight">\(1^{+}\)</span> so we expect a change in one for the nuclear spin, but no change in parity.</p>
+<p>We therefore know that that orbital angular momentum has to be even, requiring that the combined spin is <span class="math notranslate nohighlight">\(S=1\)</span>, so that we get an odd number in <span class="math notranslate nohighlight">\(L+S\)</span>.</p>
+<p>This is therefore a Gamow Teller Transition, which is classified as allowed.</p>
+<p><strong>Example 3</strong>
+Finally let’s consider the beta decay from <span class="math notranslate nohighlight">\(^{17}\textnormal{N} \rightarrow~^{17}O\)</span> where we expect a transition between nuclear spin states <span class="math notranslate nohighlight">\(\frac{1}{2}^{+} \rightarrow \frac{5}{2}^{+}\)</span>. Here we are expecting <span class="math notranslate nohighlight">\(\Delta I=2\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi=\textnormal{yes}\)</span>.</p>
+<p>We know that the orbital angular momentum has to be odd, and therefore we expect again that the spin state must be <span class="math notranslate nohighlight">\(S=1\)</span> to give an even total change in spin.</p>
+<p>This is therefore a 1st forbidden Gamow Teller decay and is significantly less likely than the decays in the previous examples.</p>
+</section>
+<section id="double-beta-decay">
+<h2><span class="section-number">6.8. </span>Double Beta Decay<a class="headerlink" href="#double-beta-decay" title="Link to this heading">#</a></h2>
+<p>In rare cases we find that the <span class="math notranslate nohighlight">\(Q\)</span> value of a decay or the selection rules limit our typical <span class="math notranslate nohighlight">\(\beta\)</span> decay processes. For example in the case of 128-Te, we find that the next nuclei on the beta decay chain would be 128-I, which would give a negative <span class="math notranslate nohighlight">\(Q\)</span> value. However a direct transition to 128-Xe would give a positive <span class="math notranslate nohighlight">\(Q\)</span> value, and is enough to allow the production of two <span class="math notranslate nohighlight">\(\beta\)</span> particles at once. This process whilst extremely rare (order of <span class="math notranslate nohighlight">\(10^{24}\)</span> years) can occur naturally.</p>
+<p><img alt="Alt text" src="../_images/image-143.png" /></p>
+<p>A similar case also happens for the decay of 48-Ca, which we would expect to decay into 48-Sc. Whilst the <span class="math notranslate nohighlight">\(Q\)</span> can be positive in some cases, we find that all the possible transitions are high-order forbidden transitions and are extremely unlikely to occur. Instead it is far more likely that a double beta decay transition will occur (albeit with a very long half-life).</p>
+<p><img alt="Alt text" src="../_images/image-144.png" /></p>
+<p>Double beta decay is of particular importance in some high energy particle physics experiments as there is a long standing debate on whether neutrinos may in fact be their own anti-particles (Majorana neutrinos). Since they have no charge this is allowed in some models, and if so would allow a possible neutrino-less double beta decay transition to also take place in which the two neutrino’s emitted in double-beta decay annihilate with one another, resulting in both beta particles carrying the entire <span class="math notranslate nohighlight">\(Q\)</span> energy for the interaction. Observation of a clear excess in number of particles right at the end of the beta decay spectrum for such nuclei therefore would confirm the true nature of the neutrino.</p>
+</section>
+<section id="alpha-decay">
+<h2><span class="section-number">6.9. </span>Alpha Decay<a class="headerlink" href="#alpha-decay" title="Link to this heading">#</a></h2>
+<p>Finally let’s turn our attention to alpha decay. In the context of the nuclear shell model, alpha decay can be understood in terms of the rearrangement of the nucleons in the daughter nucleus and how this rearrangement affects the nuclear stability. The shell model predicts that nuclei near magic numbers (where shells are either fully filled or empty) are more stable. Thus, alpha decay often moves a nucleus closer to these magic numbers, thereby increasing its stability.</p>
+<p>While the selection rules for alpha decay are not as strictly defined as for beta decay in terms of angular momentum and parity changes, the energy and stability considerations play a crucial role. The key factors influencing alpha decay include:</p>
+<ol class="arabic simple">
+<li><p><strong>Q-Value:</strong> The energy release (<span class="math notranslate nohighlight">\(Q\)</span>-value) in alpha decay is a critical factor. The decay can only occur if the <span class="math notranslate nohighlight">\(Q\)</span>-value is positive, meaning the mass of the parent nucleus is greater than the combined mass of the daughter nucleus and the alpha particle.</p></li>
+<li><p><strong>Nuclear Shell Effects:</strong> The shell model predicts that nuclei with a full shell of protons or neutrons (magic numbers) are particularly stable. Alpha decay is found for mostly higher <span class="math notranslate nohighlight">\(A\)</span> neutron rich nuclei and results in a daughter nucleus that is closer to these magic numbers.</p></li>
+<li><p><strong>Overlap and Tunneling:</strong> The probability of alpha decay is also determined by the quantum mechanical tunneling effect. As we will see alpha particles need to tunnel out of a potential barrier if they are to escape the nucleus.</p></li>
+</ol>
+<p>Based on our understanding of the nucleus there are some important questions we need to ask for the alpha decay process:</p>
+<ul class="simple">
+<li><p>Why are the <span class="math notranslate nohighlight">\(\alpha\)</span> particles emitted and not some other combination of nucleons?</p></li>
+<li><p>Why is there such a range of lifetimes and energies? What is the relationship between the two?</p></li>
+<li><p>What determines the frequency of <span class="math notranslate nohighlight">\(\alpha\)</span> decay?</p></li>
+<li><p>How are the <span class="math notranslate nohighlight">\(\alpha\)</span> particles formed in the nucleus and emitted?</p></li>
+<li><p>Do alphas carry information on nuclear structure?</p></li>
+</ul>
+<p>One plot that begins to answer some of these questions is a comparison of the <span class="math notranslate nohighlight">\(Q\)</span> energy for different alpha-emitting particles separated by different radioactive decay series. This is called the Geiger-Nuttall relation, and it demonstrates that actually for many different series, there is a strong correlation between the radioactive half-life and the energy of the emitted alpha.</p>
+<p><img alt="Alt text" src="../_images/image-103.png" /></p>
+<p>Notice also how steep the relation is in the Geiger-Nuttall plot (it’s a log scale). An alpha emitter that produces 8 MeV alpha particles is likely to have a half-life over 22 orders of magnitude shorter than one which produces alphas of 4 MeV kinetic energy. The Geiger-Nuttall relation is a fit to the observed data of the form:</p>
+<div class="math notranslate nohighlight">
+\[
+\log_{10} t_{1/2} = b_{1} \frac{Z}{Q^{1/2}} + b_{2}
+\]</div>
+<p>where Z is the number of protons, Q is the energy released, <span class="math notranslate nohighlight">\(b_{1}\)</span> and <span class="math notranslate nohighlight">\(b_{2}\)</span> are constants. An equivalent form is:</p>
+<div class="math notranslate nohighlight">
+\[
+\ln\lambda = -a_{1} \frac{Z}{Q^{1/2}} + a_2
+\]</div>
+<p>It turns out that trying to understand why the data follows this shape leads us once again to the need for a quantum mechanical treatment of Alpha Decay. To explain the relation, it turns out we need to consider that the alpha forms inside the nucleus and then escapes by Quantum Mechanical Barrier Penetration.</p>
+<p>The alpha is envisioned as a free-particle wavefunction subject to a combination of the Nuclear Potential binding it to the nucleus, and a coulomb potential that repels it from the other charged particles in the nucleus. Typically we expect a coulomb repulsion to push the charged alpha away from the rest of the nucleus, but in this case we are imagining that the alpha is <strong>inside</strong> the rest of the nucleus, therefore the remaining protons form a charged barrier that the alpha needs to tunnel through to escape. The Coulomb barrier arises because the electrostatic force is repulsive between two positively charged entities—the alpha particle and the rest of the nucleus.</p>
+<ul class="simple">
+<li><p>As the alpha particle gets closer to the nuclear surface (from within), the electrostatic potential energy increases because the repulsive force increases. At the surface of the nucleus, this potential energy reaches a maximum, forming the Coulomb barrier.</p></li>
+<li><p>Inside the Nucleus: While inside the nucleus, the alpha particle is bound by the strong nuclear force, which is attractive and much stronger than the Coulomb force at short distances. This force keeps the nucleons (including those in the alpha particle) together.</p></li>
+<li><p>Escape Requirement: For the alpha particle to escape, it must have enough energy to overcome the maximum potential energy at the surface created by the Coulomb repulsion. Typically, the alpha particle’s kinetic energy (within the nucleus) is insufficient to overcome this barrier due to the energy binding it inside the nucleus.</p></li>
+</ul>
+<p><img alt="Alt text" src="../_images/image-130.png" /></p>
+<p>Of course, in a classical model, if the <strong>Potential Barrier</strong> is too high, the alpha never escapes. In Quantum Mechanics, we allow <strong>Tunneling</strong> with a small probability that the alpha can penetrate the barrier. Calculating the ratio of the wavefunctions inside and outside and squaring gives the probability. We can do a simple calculation of this by considering the diagram of the potential below. We assume the alpha is pre-formed in the nucleus, oscillates around, repeatedly hitting the edge inside the nucleus until at some point it escapes by <strong>Barrier Penetration</strong>. Once formed, the alpha particle finds itself in a potential well created by the nuclear forces. Outside this well, there’s a potential energy barrier formed by the Coulomb repulsion between the positively charged alpha particle and the rest of the nucleus. Classically, the alpha particle would need to have kinetic energy greater than this barrier to escape the nucleus. However, typically, the alpha particle’s kinetic energy is less than the height of this Coulomb barrier</p>
+<p><img alt="Alt text" src="../_images/image-131.png" /></p>
+<p>Notice how the Potential Barrier drops as <span class="math notranslate nohighlight">\(1/r\)</span>. Rather than try to solve this, we can make a simple approximation that the barrier has a fixed height <span class="math notranslate nohighlight">\(U_0\)</span> and fixed length <span class="math notranslate nohighlight">\(L\)</span>, and that the alpha has energy <span class="math notranslate nohighlight">\(E\)</span>, as illustrated below. Also, the potential seen by the alpha particle is spherically symmetric, and so the quantum mechanical problem can be approached by first separating the variables into just a radial component.</p>
+<p><img alt="Alt text" src="../_images/image-135.png" />
+As a particle approaches the barrier, it is described by a Free Particle Wavefunction. When it reaches the barrier, it must satisfy the simplified Schrödinger Equation in the form:</p>
+<div class="math notranslate nohighlight" id="equation-seequation">
+<span class="eqno">(6.11)<a class="headerlink" href="#equation-seequation" title="Link to this equation">#</a></span>\[\begin{split}\begin{equation}
+-\frac{\hbar^2}{2m} \frac{d^{2}}{dr^{2}} \psi(r) = [E - U_0]\psi(r) \\
+\end{equation}\end{split}\]</div>
+<p>Solving this QM equation of simple Barrier Penetration is beyond our scope here. What is important is the result. It gives us a value for <span class="math notranslate nohighlight">\(X\)</span>, the probability of barrier penetration as:</p>
+<div class="math notranslate nohighlight" id="equation-transmissionprob">
+<span class="eqno">(6.12)<a class="headerlink" href="#equation-transmissionprob" title="Link to this equation">#</a></span>\[\begin{equation}
+X = Ae^{-αL}
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(α = \sqrt{(2m(U_0 - E))/\hbar^2}\)</span> is called the Gamow Factor, and <span class="math notranslate nohighlight">\(A\)</span> is a normalization constant we will call 1 for now to make the derivation simpler. Now, if we assume the alpha makes contact with the barrier once every second, then the average probability that the alpha leaves (a decay takes place) and the half-life is just related to the tunneling probability by:</p>
+<div class="math notranslate nohighlight" id="equation-lambdavsx">
+<span class="eqno">(6.13)<a class="headerlink" href="#equation-lambdavsx" title="Link to this equation">#</a></span>\[\begin{equation}
+\lambda = \sqrt{X} 
+\end{equation}\]</div>
+<div class="math notranslate nohighlight" id="equation-t12calcdecay">
+<span class="eqno">(6.14)<a class="headerlink" href="#equation-t12calcdecay" title="Link to this equation">#</a></span>\[\begin{equation}
+T_{1/2} = \ln(2)/\lambda = \ln(2)/\sqrt{X}
+\end{equation}\]</div>
+<p>If the alpha hits the barrier faster than 1 Hz, then we expect the probability that it leaves the nucleus to scale upwards as well. If we can work out the frequency that the alpha hits the barrier, which will be determined by its velocity and the size of the nucleus, and we know the height of the barrier <span class="math notranslate nohighlight">\(U_0\)</span> and the width <span class="math notranslate nohighlight">\(L\)</span> and the energy of the alpha <span class="math notranslate nohighlight">\(E\)</span>, then we can find the half-life <span class="math notranslate nohighlight">\(T_{1/2}\)</span>. We can then see if this agrees with the Geiger-Nuttall observation from data.</p>
+</section>
+<section id="alpha-212-po-example">
+<h2><span class="section-number">6.10. </span>Alpha 212-Po Example<a class="headerlink" href="#alpha-212-po-example" title="Link to this heading">#</a></h2>
+<p>The way to proceed is illustrated below, where we attempt to find the half-life of 212-Po, which emits an 8.78 MeV alpha.  First, we need to find the width of the barrier. For this, we need to know the Nuclear Separation <span class="math notranslate nohighlight">\(R\)</span>, i.e., the distance between the center of the nucleus and the center of the alpha. Be careful that at this point the nucleus we are talking about is not A=212, but A=208, because we have removed the alpha.</p>
+<p><img alt="Alt text" src="../_images/image-134.png" /></p>
+<p>This results in an estimate of the nuclear seperation as</p>
+<div class="math notranslate nohighlight" id="equation-radiuscomp">
+<span class="eqno">(6.15)<a class="headerlink" href="#equation-radiuscomp" title="Link to this equation">#</a></span>\[\begin{equation}
+R= 1.2(A)^{1/3} + 1.2(208)^{1/3} = 9.01~\textnormal{fm}
+\end{equation}\]</div>
+<p>We now find the height of the barrier by applying Coulomb’s Law at the nuclear separation as illustrated here</p>
+<div class="math notranslate nohighlight" id="equation-barrierheight">
+<span class="eqno">(6.16)<a class="headerlink" href="#equation-barrierheight" title="Link to this equation">#</a></span>\[\begin{equation}
+\frac{(k\cdot 2e \cdot (Z - 2)e)}{r} = \frac{(2\cdot (84-2) \cdot 1.44~\textnormal{MeV fm})}{9.01~\textnormal{fm}} = 26.21~\textnormal{MeV}
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(k\)</span> is equal to coulombs constant <span class="math notranslate nohighlight">\(k = 1/(4πε_0) = 8.987552 \times 10^9 N m^2/C^2\)</span>. Now the distance at which the Coulomb Potential drops to the level of energy of the observed alpha is:</p>
+<div class="math notranslate nohighlight" id="equation-rcalculation">
+<span class="eqno">(6.17)<a class="headerlink" href="#equation-rcalculation" title="Link to this equation">#</a></span>\[\begin{equation}
+8.78 MeV = \frac{2(82)1.44~\textnormal{MeV~fm}}{r} \rightarrow r = 26.9 \textnormal{fm}
+\end{equation}\]</div>
+<p>So the barrier width L and Gammow factor is:</p>
+<div class="math notranslate nohighlight" id="equation-barrierwidth-ex1">
+<span class="eqno">(6.18)<a class="headerlink" href="#equation-barrierwidth-ex1" title="Link to this equation">#</a></span>\[\begin{equation}
+L = 26.90 \textnormal{fm} - 9.01~\textnormal{fm} = 17.9~\textnormal{fm}
+\end{equation}\]</div>
+<div class="math notranslate nohighlight" id="equation-alphaestimate">
+<span class="eqno">(6.19)<a class="headerlink" href="#equation-alphaestimate" title="Link to this equation">#</a></span>\[\begin{equation}
+\alpha = \sqrt{\frac{2m(26.2-8.78)}{\hbar^{2}}} = 1.879~\textnormal{fm}^{-1}
+\end{equation}\]</div>
+<p>When assuming a ‘top-hat’ potential barrier this results in a transmission probability of</p>
+<div class="math notranslate nohighlight" id="equation-tophatprobresult">
+<span class="eqno">(6.20)<a class="headerlink" href="#equation-tophatprobresult" title="Link to this equation">#</a></span>\[\begin{equation}
+X = e^{-\alpha L} = e^{- (1.879) \cdot (17.9) } = 2.47 \times 10^{-15}
+\end{equation}\]</div>
+<p>The real frequency of the alpha hitting the barrier can also be estimated by determining how many times an alpha of energy <span class="math notranslate nohighlight">\(8.78~\textnormal{MeV}\)</span> makes contact with the walls.</p>
+<div class="math notranslate nohighlight" id="equation-alphavelocity">
+<span class="eqno">(6.21)<a class="headerlink" href="#equation-alphavelocity" title="Link to this equation">#</a></span>\[\begin{equation}
+8.78MeV = \frac{mv^{2}}{2} \rightarrow v=2.06 \times 10^{7} ~\textnormal{ms}^{-1} 
+\end{equation}\]</div>
+<div class="math notranslate nohighlight" id="equation-alphafrequency">
+<span class="eqno">(6.22)<a class="headerlink" href="#equation-alphafrequency" title="Link to this equation">#</a></span>\[\begin{equation}
+f=\frac{v}{2R}  \rightarrow 1.14 \times 10^{21} s^{-1}
+\end{equation}\]</div>
+<p>For a given alpha, the combined Tunnelling Probability per second for emission is therefore the product of the barrier frequency and the transmission</p>
+<div class="math notranslate nohighlight" id="equation-tunnellingprobfinal-tophat">
+<span class="eqno">(6.23)<a class="headerlink" href="#equation-tunnellingprobfinal-tophat" title="Link to this equation">#</a></span>\[\begin{equation}
+\lambda = f X = (2.47 \times 10^{-15})(1.14 \times 10^{21}~\textnormal{s}^{-1}) = 2.82 \times 10^6~\textnormal{s}^{-1} 
+\end{equation}\]</div>
+<div class="math notranslate nohighlight" id="equation-halflifefinal-tophat">
+<span class="eqno">(6.24)<a class="headerlink" href="#equation-halflifefinal-tophat" title="Link to this equation">#</a></span>\[\begin{equation}
+ T_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{2.82 \times 10^6 s^{-1}} = 2.5 \times 10^{-7}~\textnormal{s} = 0.25~\mu\textnormal{s} 
+\end{equation}\]</div>
+<!-- ![Alt text](image-106.png) -->
+<p>The result is quite good. But note we could do better by modelling the potential as a series of decreasing barriers. As shown in the figure below we consider the decaying barrier as a combination of many fixed height barriers. The transmission probability through the entire set of barriers is simply obtained by multiplying all their individual transmission probabilities together.</p>
+<p><img alt="Alt text" src="../_images/image-132.png" /></p>
+<p>This can be written as:</p>
+<div class="math notranslate nohighlight" id="equation-combinedprob">
+<span class="eqno">(6.25)<a class="headerlink" href="#equation-combinedprob" title="Link to this equation">#</a></span>\[\begin{equation}
+X = X_1 \times X_2 \times X_3 \times ... \times X_n
+\end{equation}\]</div>
+<div class="math notranslate nohighlight" id="equation-combinedprob2">
+<span class="eqno">(6.26)<a class="headerlink" href="#equation-combinedprob2" title="Link to this equation">#</a></span>\[\begin{equation}
+X = A \exp \left( -\frac{1}{\hbar} \sum \left(\sqrt{ 2m(U_{i}-Q) }\right) \cdot \Delta r \right)
+\end{equation}\]</div>
+<p>In the limit as <span class="math notranslate nohighlight">\(\Delta r \rightarrow 0\)</span>, this analysis turns into an integral from R up to <span class="math notranslate nohighlight">\(r_{2}\)</span> based on the known form of <span class="math notranslate nohighlight">\(V(r) \propto r^{-1}\)</span></p>
+<div class="math notranslate nohighlight" id="equation-combinedint">
+<span class="eqno">(6.27)<a class="headerlink" href="#equation-combinedint" title="Link to this equation">#</a></span>\[\begin{equation}
+X = \exp \left( -\frac{1}{\hbar} \int_{R}^{r_{2}} \sqrt{2m(V(r) - Q)} \cdot dr \right)
+\end{equation}\]</div>
+<p>No we can calculate the potential difference in the Gamow factor as based on the potential</p>
+<div class="math notranslate nohighlight" id="equation-newpotential">
+<span class="eqno">(6.28)<a class="headerlink" href="#equation-newpotential" title="Link to this equation">#</a></span>\[\begin{equation}
+V(r) = \frac{2Ze^{2}}{4\pi \epsilon_{0}} \frac{1}{r}
+\end{equation}\]</div>
+<p>We have defined <span class="math notranslate nohighlight">\(r_{c}\)</span> as the point where</p>
+<div class="math notranslate nohighlight" id="equation-newqrelation">
+<span class="eqno">(6.29)<a class="headerlink" href="#equation-newqrelation" title="Link to this equation">#</a></span>\[\begin{equation}
+Q = V(r_{c}) \rightarrow r_{c} = \frac{2Ze^{2}}{4\pi \epsilon_{0}} \frac{1}{Q}
+\end{equation}\]</div>
+<p>Now subbing this back into our potential tells us <span class="math notranslate nohighlight">\(V(r_{c})\)</span> based only on <span class="math notranslate nohighlight">\(Q\)</span>, <span class="math notranslate nohighlight">\(r\)</span>, and <span class="math notranslate nohighlight">\(r_{c}\)</span> results in a potential dependent on <span class="math notranslate nohighlight">\(Q\)</span></p>
+<div class="math notranslate nohighlight" id="equation-potentialvsq">
+<span class="eqno">(6.30)<a class="headerlink" href="#equation-potentialvsq" title="Link to this equation">#</a></span>\[\begin{equation}
+V_{c}(r) = \frac{Q r_{c}}{r}
+\end{equation}\]</div>
+<p>Subbing this into our integral gives us a transmission of the form</p>
+<div class="math notranslate nohighlight" id="equation-newxrelation">
+<span class="eqno">(6.31)<a class="headerlink" href="#equation-newxrelation" title="Link to this equation">#</a></span>\[\begin{split}\begin{equation}
+X = \exp \left( -\frac{1}{\hbar} \int_{R}^{r_{2}} \sqrt{2m\left(\frac{Q r_{c}}{r} - Q\right)} \cdot dr \right) \\
+\end{equation}\end{split}\]</div>
+<p>where we can pull the <span class="math notranslate nohighlight">\(Q\)</span> value out of the integral</p>
+<div class="math notranslate nohighlight" id="equation-xcombinationvsgamow">
+<span class="eqno">(6.32)<a class="headerlink" href="#equation-xcombinationvsgamow" title="Link to this equation">#</a></span>\[\begin{equation}
+X = \exp \left( -\frac{Q^{1/2}}{\hbar} \int_{R}^{r_{2}} \sqrt{2m\left(\frac{ r_{c}}{r} - 1\right)} \cdot dr \right) = \exp(G)
+\end{equation}\]</div>
+<p>Rearranging this ends up in a final form where the Gamow factor in our transmission factor is given by</p>
+<div class="math notranslate nohighlight" id="equation-gamowfactorcombined">
+<span class="eqno">(6.33)<a class="headerlink" href="#equation-gamowfactorcombined" title="Link to this equation">#</a></span>\[\begin{equation}
+G=4 Z \alpha \left( \frac{2m c^{2}}{Q}\right)^{1/2} \left( \cos^{-1}\left( \sqrt{\frac{R}{r_c}} \right) - \sqrt{\frac{R}{r_{c}}\left( 1-\frac{R}{r_{c}}\right)} \right)
+\end{equation}\]</div>
+<p>In this solution</p>
+<div class="math notranslate nohighlight">
+\[
+\textnormal{Last term goes to}~\frac{\pi}{2}~\textnormal{if}~R &lt;&lt; r_{c}
+\]</div>
+<p>and we arrive at a relation for the Gamow factor’s correlation with <span class="math notranslate nohighlight">\(Z\)</span> and <span class="math notranslate nohighlight">\(Q\)</span>,</p>
+<div class="math notranslate nohighlight" id="equation-gamowfactorrelation">
+<span class="eqno">(6.34)<a class="headerlink" href="#equation-gamowfactorrelation" title="Link to this equation">#</a></span>\[\begin{equation}
+G \propto \frac{Z}{\sqrt{Q}}.
+\end{equation}\]</div>
+<p>Based on our calculations before the half-life is still proportional to the frequency that the alpha contacts the barrier and our new more realistic integrated transmission</p>
+<div class="math notranslate nohighlight" id="equation-halflifeform">
+<span class="eqno">(6.35)<a class="headerlink" href="#equation-halflifeform" title="Link to this equation">#</a></span>\[\begin{equation}
+t_{1/2} \propto \lambda = f e^{-G} = f e^{- \frac{D \cdot Z}{\sqrt{Q}}}
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(D\)</span> is a new constant we have introduced based on the full form of Gamow values above. Taking the log of the equation gives us that below which ultimately ends up matching our Geiger Nutall form,</p>
+<div class="math notranslate nohighlight" id="equation-gnformproof">
+<span class="eqno">(6.36)<a class="headerlink" href="#equation-gnformproof" title="Link to this equation">#</a></span>\[\begin{equation}
+\log_{10} t_{1/2} = a + b Q_{\alpha}^{-1/2},
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(a=\ln(f)\)</span> and <span class="math notranslate nohighlight">\(b=D \cdot Z\)</span>. This confirms why we see this behavior in the first place. The exponential drop in half life for alpha emitters is due to every alpha undergoing tunneling through a falling potential barrier at the edge of the nucleus.</p>
+<p>The procedures shown here can be applied to many nuclei to gain an estimate on the half-life and potential barrier properties if a decay process’ <span class="math notranslate nohighlight">\(Q\)</span> value is known. Importantly the free parameters in the Geiger Nutall form are dependent on the specific starting isotope (indicated by the lines in the GN plot), therefore measurements of the half life and <span class="math notranslate nohighlight">\(Q\)</span> value of one specific isotope can be used to estimate the half-life of any other nuclei in the chain provided the <span class="math notranslate nohighlight">\(Q\)</span> value can be calculated to a reasonable estimate (which it can with the SEMF!).</p>
+</section>
+<section id="summary">
+<h2><span class="section-number">6.11. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<p>In this unit we’ve discussed the final dominant radioactive decay channels and the effect these can have on the nucleon content of a nucleus, and the various factors that need to be considered when trying to calculate their probability and daughter product kinetic energies.</p>
+<p>In the next half of this course we’ll start to look at different possible reactions with nuclei in more detail before looking at how knowledge of nuclear structure and decays can be used in applied physics.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./unit6"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../unit5/phy303-unit5-collective-excited.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Collective Models</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../unit7/phy303-unit7-reactions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Nuclear Reactions</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">6.1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-decay">6.2. Beta Decay</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-emission-beta-decay">6.2.1. Electron Emission (<span class="math notranslate nohighlight">\(\beta^-\)</span> Decay)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#positron-emission-beta-decay">6.2.2. Positron Emission (<span class="math notranslate nohighlight">\(\beta^+\)</span> Decay)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-capture-ec">6.2.3. Electron Capture (EC)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-considerations-and-occurrence">6.3. Energy Considerations and Occurrence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-decay-matrix-element">6.4. Beta Decay Matrix Element</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transitions">6.5. Transitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selection-rules-summary">6.6. Selection Rules Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-beta-decay-of-nucleus-x-to-y">6.7. Example: Beta Decay of Nucleus X to Y</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#double-beta-decay">6.8. Double Beta Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-decay">6.9. Alpha Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-212-po-example">6.10. Alpha 212-Po Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">6.11. Summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Liz Kneale, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

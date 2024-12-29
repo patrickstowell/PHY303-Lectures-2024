@@ -1,0 +1,1020 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>4. Nuclear Spin &amp; Moments &#8212; PHY303 Nuclear Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unit4/phy303-unit4-parity-moments';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5. Collective Models" href="../unit5/phy303-unit5-collective-excited.html" />
+    <link rel="prev" title="3. Shell Model" href="../unit3/phy303-unit3-shellmodel-and-spin.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../phy303-homepage.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="PHY303 Nuclear Physics - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY303 Nuclear Physics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../phy303-homepage.html">
+                    Course Info.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unit1/phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit3/phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit5/phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit6/phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit7/phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit8/phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit9/phy303-unit9-neutronphysics.html">9. Neutron Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit10/phy303-unit10-medicalapplications.html">10. Nuclear Medicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit11/phy303-unit11-fissionandfusion.html">11. Nuclear Power</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Review Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit1/phy303-unit1-review.html">Unit 1 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-problems.html">Unit 1 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-additionalproblems.html">Unit 1 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-flashcards.html">Unit 1 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-random-quiz.html">Unit 1 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit1/phy303-unit1-full-quiz.html">Unit 1 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit2/phy303-unit2-review.html">Unit 2 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-problems.html">Unit 2 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-additionalproblems.html">Unit 2 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-random-quiz.html">Unit 2 : Random Quiz</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-full-quiz.html">Unit 2 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit3/phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-problems.html">Unit 3 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-additionalproblems.html">Unit 3 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-flashcards.html">Unit 3 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-random-quiz.html">Unit 3 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-full-quiz.html">Unit 3 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="phy303-unit4-review.html">Unit 4 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit4-problems.html">Unit 4 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit4-additionalproblems.html">Unit 4 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit4-flashcards.html">Unit 4 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit4-random-quiz.html">Unit 4 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phy303-unit4-full-quiz.html">Unit 4 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit5/phy303-unit5-review.html">Unit 5 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-problems.html">Unit 5 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-additionalproblems.html">Unit 5 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-terms.html">Unit 5 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-flashcards.html">Unit 5 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-random-quiz.html">Unit 5 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit5/phy303-unit5-full-quiz.html">Unit 5 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit6/phy303-unit6-review.html">Unit 6 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-problems.html">Unit 6 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-additionalproblems.html">Unit 6 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-terms.html">Unit 6 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-flashcards.html">Unit 6 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-random-quiz.html">Unit 6 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit6/phy303-unit6-full-quiz.html">Unit 6 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit7/phy303-unit7-review.html">Unit 7 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-problems.html">Unit 7 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-additionalproblems.html">Unit 7 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-terms.html">Unit 7 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-flashcards.html">Unit 7 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-random-quiz.html">Unit 7 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit7/phy303-unit7-full-quiz.html">Unit 7 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit8/phy303-unit8-review.html">Unit 8 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-problems.html">Unit 8 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-additionalproblems.html">Unit 8 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-terms.html">Unit 8 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-flashcards.html">Unit 8 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-random-quiz.html">Unit 8 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-full-quiz.html">Unit 8 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit9/phy303-unit9-review.html">Unit 9 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-problems.html">Unit 9 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-additionalproblems.html">Unit 9 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-terms.html">Unit 9 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-flashcards.html">Unit 9 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-random-quiz.html">Unit 9 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-full-quiz.html">Unit 9 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit10/phy303-unit10-review.html">Unit 10 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-problems.html">Unit 10 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-additionalproblems.html">Unit 10 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-terms.html">Unit 10 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-flashcards.html">Unit 10 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-random-quiz.html">Unit 10 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-full-quiz.html">Unit 10 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit11/phy303-unit11-review.html">Unit 11 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-problems.html">Unit 11 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-additionalproblems.html">Unit 11 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-terms.html">Unit 11 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-flashcards.html">Unit 11 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-random-quiz.html">Unit 11 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotopes.html">Isotope Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/legendre-polynomials.html">Legendre Polynomials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/nucleus-shape.html">Nucleus Shape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/janis-viewer.html">JANIS Viewer</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/unit4/phy303-unit4-parity-moments.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Nuclear Spin & Moments</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-properties">4.1. Nuclear Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-spin-example">4.1.1. Nuclear Spin Example</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-parity">4.1.2. Nuclear Parity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-challenges">4.1.3. Shell Challenges</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-model-summary">4.1.4. Shell Model Summary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#towards-collective-nuclear-models">4.1.5. Towards Collective Nuclear Models</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-quadrupole-moments">4.1.6. Electric Quadrupole Moments</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#even-nuclei">4.1.6.1. Even Nuclei</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#odd-protons">4.1.6.2. Odd Protons</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#odd-neutrons">4.1.6.3. Odd Neutrons</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eqm-predictions">4.1.7. EQM Predictions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">4.1.8. Summary</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="nuclear-spin-moments">
+<h1><span class="section-number">4. </span>Nuclear Spin &amp; Moments<a class="headerlink" href="#nuclear-spin-moments" title="Link to this heading">#</a></h1>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Quick Links</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="phy303-unit4-problems.html#unit4-problems"><span class="std std-ref">Unit 4 : Worked Problems</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit4-additionalproblems.html#unit4-additionalproblems"><span class="std std-ref">Unit 4 : Additional Problems</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit4-terms.html#unit4-terms"><span class="std std-ref">Unit 4 : Equations &amp; Terms</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit4-flashcards.html#unit4-flashcards"><span class="std std-ref">Unit 4 : Flash Cards</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit4-random-quiz.html#unit4-randomquiz"><span class="std std-ref">Unit 4 : Random Quiz</span></a></p></li>
+<li><p><a class="reference internal" href="phy303-unit4-full-quiz.html#unit4-fullquiz"><span class="std std-ref">Unit 4 : Full Quiz</span></a></p></li>
+<li><p>From the <a class="reference external" href="https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441">Reading List</a></p>
+<ul>
+<li><p>TBC</p></li>
+<li><p>TBC</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="nuclear-properties">
+<h2><span class="section-number">4.1. </span>Nuclear Properties<a class="headerlink" href="#nuclear-properties" title="Link to this heading">#</a></h2>
+<p>Now that we have our shell model, which describes our observed magic numbers, we can start making predictions for other nuclear properties such as the Nuclear Spin, <span class="math notranslate nohighlight">\(I\)</span>. This quantity comes from the principle of summing up all the individual Total Angular Momentum numbers <span class="math notranslate nohighlight">\(j\)</span> of all the nucleons, doing this separately for neutrons and protons.</p>
+<p>However, we can simplify things hugely because the <span class="math notranslate nohighlight">\(j\)</span> values are half-integer and in any filled shell, all the nucleons there will pair up as positive-negative pairs and so contribute nothing to the overall total. So, we really only need to worry about the nucleons in the outer shell. If this shell is full, then again the total contribution will be zero, and we have <span class="math notranslate nohighlight">\(I=0\)</span>. In fact, in general, if we have even N and even Z, then <span class="math notranslate nohighlight">\(I=0\)</span> as all nucleons will form spin up-down combinations.</p>
+<p>The more interesting case is when we have one unpaired nucleon in the outer shell. Consider the case of a nucleus with the proton energy levels filled up exactly, but where the neutrons in the outer shell have just one neutron. <strong>The nuclear spin takes on the <span class="math notranslate nohighlight">\(j\)</span> value assigned to that nucleon</strong>.</p>
+<p>That is, if we fill up the levels with nucleons but have a leftover nucleon, alone in an unfilled shell, the level spin assignment appropriate to that nucleon will be the same as the Nuclear Spin itself.</p>
+<p>Similarly, consider a case where all the levels are filled perfectly for one class of nucleons (say the protons) but for the other (say neutrons), we are just one nucleon short of filling the last level (like having a nucleon “hole” in that shell). In this case, the Nuclear Spin just takes on the level spin assignment appropriate to that missing nucleon.</p>
+<section id="nuclear-spin-example">
+<h3><span class="section-number">4.1.1. </span>Nuclear Spin Example<a class="headerlink" href="#nuclear-spin-example" title="Link to this heading">#</a></h3>
+<p>Here is an example for <span class="math notranslate nohighlight">\(^{15}_{8}\textnormal{O}\)</span>.</p>
+<p><img alt="Alt text" src="../_images/image-35.png" />
+From the level diagram above, we predict that the nuclear spin of O-15 is <span class="math notranslate nohighlight">\(I=1/2\)</span> due to the unpaired neutron in the outer <span class="math notranslate nohighlight">\(1\textnormal{p}_{1/2}\)</span> level having a <span class="math notranslate nohighlight">\(j=1/2\)</span>. This is indeed what is measured in reality.</p>
+<p>Things get harder if instead we only have a partially filled outer shell but an odd number of nucleons. We can assign <span class="math notranslate nohighlight">\(I=j\)</span> of the unpaired nucleon again, but this does not work for all nuclei, and in some cases, we would need to try to sum up the entire shell structure to get a valid result.</p>
+<p>The main points here are that:</p>
+<ul class="simple">
+<li><p>even-even nuclei have spin zero due to always having the spins of individual nucleons pairing up and canceling out.</p></li>
+<li><p>Odd-even nuclei typically have half-integer spins which can range from 3/2, 5/2, 1/2. In simple cases, the spin of the missing nucleon can give <span class="math notranslate nohighlight">\(I\)</span>.</p></li>
+<li><p>Odd-odd nuclei can achieve spin states much higher such as 1 or 3 but are more complex and typically require a full evaluation of the expectation values of the possible spin states.</p></li>
+</ul>
+</section>
+<section id="nuclear-parity">
+<h3><span class="section-number">4.1.2. </span>Nuclear Parity<a class="headerlink" href="#nuclear-parity" title="Link to this heading">#</a></h3>
+<p>The next thing we can do with our shell model is predict the parity of the nucleus. Parity is a transformation whereby the sign of the coordinate system is changed, as below. The parity transformation changes a right-handed coordinate system into a left-handed coordinate system or vice-versa.</p>
+<p><img alt="Alt text" src="../_images/image-36.png" /></p>
+<p>As shown, the wave function of a nucleon in a stationary state can have either odd or even parity depending on what happens under the transformation. It’s convenient to think of a Parity Operator <span class="math notranslate nohighlight">\(P\)</span> with effect <span class="math notranslate nohighlight">\(P\Psi(r) = \Psi(-r)\)</span>. If <span class="math notranslate nohighlight">\(\Psi\)</span> has a unique parity, then <span class="math notranslate nohighlight">\(P\psi(r) = \pm \Psi(r)\)</span>, and parity <span class="math notranslate nohighlight">\(\pm1\)</span> are the eigenvalues of <span class="math notranslate nohighlight">\(P\)</span>. Parity is often denoted as <span class="math notranslate nohighlight">\(\pi\)</span>, so <span class="math notranslate nohighlight">\(\pi=\pm 1\)</span>.</p>
+<p>It is simple to find the parity of a nucleon; it’s just <span class="math notranslate nohighlight">\(\pi=(-1)^{l}\)</span> where <span class="math notranslate nohighlight">\(l\)</span> is the Orbital Angular Momentum. Again, remember from our notation the letter corresponds to the value of <span class="math notranslate nohighlight">\(l\)</span> (0-s, 1-p, 2-d, 3-f). Parity is a multiplicative quantity. The parity assignment of a nucleus, therefore, comes from the product of the parity of all the nucleons</p>
+<div class="math notranslate nohighlight" id="equation-paritycombination">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-paritycombination" title="Link to this equation">#</a></span>\[\begin{equation}
+\pi_{total}=\pi_{1}\pi_{2}\pi_{3}\pi_{4} = \prod_{A}(-1)^{l} = + (\textnormal{even})~~\textnormal{or}~~-(\textnormal{odd})
+\end{equation}\]</div>
+<p>When considering parity alongside the Nuclear Spin, the nomenclature is to write it as: <span class="math notranslate nohighlight">\(I^{\pi}\)</span>. For example, the state <span class="math notranslate nohighlight">\(0^{+}\)</span> has zero nuclear spin and even parity.</p>
+<p>When trying to estimate parity, we can simplify things in the same way as we did for nuclear spin. If the nucleons all pair up, then we end up with even parity. If we are left with an unpaired nucleon, then the parity comes from the <span class="math notranslate nohighlight">\(l\)</span> value appropriate to the level in which that nucleon sits. So, for instance, returning to our example of O-15 above, the unpaired nucleon sits in the p-level, <span class="math notranslate nohighlight">\(l=1\)</span>, so the parity of the nucleus is <span class="math notranslate nohighlight">\((-1)^{l}=-1\)</span>. This means it has odd parity, and we would write both its spin and parity state as: <span class="math notranslate nohighlight">\(I^{\pi}=\frac{1}{2}^{-}\)</span>.</p>
+</section>
+<section id="shell-challenges">
+<h3><span class="section-number">4.1.3. </span>Shell Challenges<a class="headerlink" href="#shell-challenges" title="Link to this heading">#</a></h3>
+<p>So, the shell model gives us a pretty good description of nuclei based on QM principles. It provides a solid basis for understanding the Magic Numbers, Nuclear Spin, and Parity of Nuclei. However, it’s worth noting a few remaining issues that can cause problems. This leads to several corrections usually being applied to the potential to better fit observed data.</p>
+<p>Most importantly, there are two corrections for protons:</p>
+<ul class="simple">
+<li><p>It turns out that the shell ordering changes a bit as <span class="math notranslate nohighlight">\(A\)</span> increases due to residual interactions between nucleons, but this is not big enough to affect the Magic Numbers.</p></li>
+<li><p>The effective potential well shape, and hence the energy levels, are actually slightly different for protons and neutrons as we should account for the additional proton-proton Coulomb interaction. Nevertheless, the top energy levels containing neutrons will be at nearly the same energy as the top energy levels containing protons for the purposes of most calculations.</p></li>
+<li><p>The effective potential well shape should also be modified for protons to account for their influence of atomic electrons.</p></li>
+</ul>
+<p>This electrostatic repulsion energy between protons implies a decrease in the depth of the potential for protons, due to their interaction with all the other protons, as here:</p>
+<figure class="align-default" id="potentialdifferences">
+<a class="reference internal image-reference" href="../_images/image-96.png"><img alt="Spin orbit corrections" src="../_images/image-96.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Diagram of differences in potential wells for protons and neutrons.</span><a class="headerlink" href="#potentialdifferences" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>If all these final tweaks are taken into account, the shell model becomes a powerful complement to the LDM (Liquid Drop Model) and SEMF (Semi-Empirical Mass Formula) models, based on the idea that the total angular momentum of each single nucleon is the vector sum of its spin and orbital angular momentum.</p>
+</section>
+<section id="shell-model-summary">
+<h3><span class="section-number">4.1.4. </span>Shell Model Summary<a class="headerlink" href="#shell-model-summary" title="Link to this heading">#</a></h3>
+<p>Taking the Shell Model nucleons together leads to nuclear levels. Any level (specified by <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(l\)</span>, <span class="math notranslate nohighlight">\(j\)</span>) which is fully occupied (i.e., has 2j+1 occupants) contributes nothing to the total spin as the total angular momenta <span class="math notranslate nohighlight">\(j\)</span> of the occupants sums to zero. (j+1) is an even number for all single particle levels, i.e., in a model where single particles orbit in the potential of all others. Thus, in nuclei where protons and neutrons separately fully occupy shells (even-even), nuclear spin should be zero, and it is.</p>
+<p>Also, if two neutrons (or protons) occupy a level with the same <span class="math notranslate nohighlight">\(j\)</span> and <span class="math notranslate nohighlight">\(l\)</span>, then their total angular momenta couple to give zero contribution.</p>
+<p>Now, if we add one nucleon to a fully filled shell, this should leave the nucleus with the total angular momentum <span class="math notranslate nohighlight">\(j\)</span> <span class="math notranslate nohighlight">\((=l)\)</span> of that nucleon alone. The prediction of the ground spin state and parity is a great success of the shell model. It predicts that all even-even nuclei will have zero angular momentum and an odd A nucleus will have the angular momentum of the odd nucleon.</p>
+<p>Here is a table showing a few of the successful predictions.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Nuclei</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Z\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(N\)</span></p></th>
+<th class="head"><p>Shell model</p></th>
+<th class="head"><p>Observed State</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>17O</p></td>
+<td><p>8</p></td>
+<td><p>9</p></td>
+<td><p><span class="math notranslate nohighlight">\(l=2, ~ j=5/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\pi=+, I=5/2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>17F</p></td>
+<td><p>9</p></td>
+<td><p>8</p></td>
+<td><p><span class="math notranslate nohighlight">\(l=2, ~ j=5/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\pi=+, I=5/2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>43Se</p></td>
+<td><p>21</p></td>
+<td><p>22</p></td>
+<td><p><span class="math notranslate nohighlight">\(l=3, ~ j=7/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\pi=-, I=7/2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>209Pb</p></td>
+<td><p>82</p></td>
+<td><p>127</p></td>
+<td><p><span class="math notranslate nohighlight">\(l=4, ~ j=9/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\pi=+, I=9/2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>209Bi</p></td>
+<td><p>83</p></td>
+<td><p>126</p></td>
+<td><p><span class="math notranslate nohighlight">\(l=5, ~ j=9/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\pi=-, I=9/2\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In the next section, we will go further to look at “Collective Models” that can go some way to solving these issues.</p>
+</section>
+<section id="towards-collective-nuclear-models">
+<h3><span class="section-number">4.1.5. </span>Towards Collective Nuclear Models<a class="headerlink" href="#towards-collective-nuclear-models" title="Link to this heading">#</a></h3>
+<p>It is now worth exploring the Shell Model a bit more, to see how far we can push predictions with it, to see how and when things break down and how this forces us towards a Collective Model. A first property to examine is the Magnetic Moments of Nuclei.</p>
+<p>We know that nuclei possess Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span>, that can be predicted by the Shell Model. Associated with each Nuclear Spin is the possibility of a Magnetic Dipole Moment - a nuclear magnetic moment, which can produce magnetic interactions within the environment. In the case of our nuclei, it is the flow of charge (a current) around the nucleus that produces a magnetic moment.</p>
+<p>More precisely, the term Magnetic Moment <span class="math notranslate nohighlight">\((\mu)\)</span> refers to the Torque arising when something is placed in a magnetic field, as can happen with more traditional electric currents. So, for nucleons in nuclei, we require net motion of charge, e.g., a finite amount of spin <span class="math notranslate nohighlight">\(s\)</span> and/or angular momentum <span class="math notranslate nohighlight">\(l\)</span>. In the shell model, this is encompassed in the total Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span>. Because of this, we expect that predictions can be made of <span class="math notranslate nohighlight">\(\mu\)</span> based on <span class="math notranslate nohighlight">\(I\)</span>.</p>
+<p>Now both protons and neutrons also have their own Intrinsic Magnetic Moments. They both have spin motion, and although the neutron is nominally neutral, it has an Internal Charge Structure due to the Quarks inside, so there is an effective charge motion inside it, like the proton itself. The magnetic moment of a nucleus can therefore be determined through a combination of the individual magnetic moments of the nucleons and the total associated spin of the nucleus.</p>
+<div class="math notranslate nohighlight" id="equation-giprojection">
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-giprojection" title="Link to this equation">#</a></span>\[\begin{equation}
+\mu = g_{I} \frac{e\hbar}{2m_{p}} I = g_{I} I \mu_{N}
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(g_{I}\)</span> is a nuclear <span class="math notranslate nohighlight">\(g\)</span> factor which accounts for differences in the relative magnetic moments of nucleons, <span class="math notranslate nohighlight">\(e\)</span> is the charge of one electron (quantized charge), <span class="math notranslate nohighlight">\(m_{p}\)</span> is the mass of the proton, and <span class="math notranslate nohighlight">\(\mu_{N}\)</span> is the nuclear magneton.  The parameter <span class="math notranslate nohighlight">\(g\)</span>, is referred to as the <strong>gyromagnetic ratio</strong>, a dimensionless quantity that characterizes the magnetic moment, just a proportionality constant that relates the magnetic moment to the total angular momentum or nuclear spin quantum number.</p>
+<p>The nuclear magneton is a constant used to express magnetic moments, and is equal to</p>
+<div class="math notranslate nohighlight" id="equation-nuclearmagneton">
+<span class="eqno">(4.3)<a class="headerlink" href="#equation-nuclearmagneton" title="Link to this equation">#</a></span>\[\begin{equation}
+\mu_{N} = \frac{e\hbar}{2m_{p}} = 5.05\times 10^{-27}\textnormal{J/T} = 3.25 \times 10^{-8} \textnormal{eV/T}
+\end{equation}\]</div>
+<p>For the case of unpaired nucleons, we can apply the same rules we considered previously to calculate the nuclear magnetic moment. This is simply the nuclear magneton multiplied by the <span class="math notranslate nohighlight">\(j\)</span> value of the unpaired nucleon.</p>
+<div class="math notranslate nohighlight" id="equation-magneticmoment">
+<span class="eqno">(4.4)<a class="headerlink" href="#equation-magneticmoment" title="Link to this equation">#</a></span>\[\begin{equation}
+\mu = g_{j}~j~\mu_{N}
+\end{equation}\]</div>
+<p>Note here that the <span class="math notranslate nohighlight">\(g\)</span> factor has now changed to <span class="math notranslate nohighlight">\(g_{j}\)</span> as it depends on the gyromagnetic ratio needed for the state of the nucleus being considered. For protons and neutrons, the gyromagnetic ratios are given by <span class="math notranslate nohighlight">\(g_{p}=2.793\)</span> and <span class="math notranslate nohighlight">\(g_{n}=-1.913\)</span> respectively, however for a nucleus, it is more complex for us to calculate.</p>
+<p>Note that the <span class="math notranslate nohighlight">\(\mu_N\)</span>, Nuclear Magnetron, yields the energy <span class="math notranslate nohighlight">\(U\)</span> of the Nuclear Magnetic Dipole in a B-field as <span class="math notranslate nohighlight">\(E=\mu_N B\)</span>. The Nuclear Magnetron is analogous to the Bohr Magnetron in atomic physics but with the electron mass replaced by the proton mass. It is much smaller than the Bohr Magnetron.</p>
+<p>In practice, the Observed Magnetic Moment in an external B-field comes from the z-component. That is when the nucleus is put in a magnetic field, it is the vector <span class="math notranslate nohighlight">\(j\)</span> that starts to precess with fixed values along the z-axis. In a full QM treatment (beyond our scope here), the observed Magnetic Moment of the nucleus turns out to be</p>
+<div class="math notranslate nohighlight" id="equation-magneticmoment-obs">
+<span class="eqno">(4.5)<a class="headerlink" href="#equation-magneticmoment-obs" title="Link to this equation">#</a></span>\[\begin{equation}
+\mu_{obs} = g_j j_z \mu_N
+\end{equation}\]</div>
+<p>and we evaluate the magnetic moment from the expectation value of the magnetic moment operator in the state with the maximum possible z projection of the angular momentum.</p>
+<p>Based on the equations above, we can see that if the nuclear spin, <span class="math notranslate nohighlight">\(I\)</span>, or <span class="math notranslate nohighlight">\(j\)</span> value of an unpaired nucleon is equal to zero, then <span class="math notranslate nohighlight">\(\mu=0\)</span>. So, the first basic shell model prediction is simply that all Even-Even <span class="math notranslate nohighlight">\(I=0\)</span> states have no magnetic moment.</p>
+<p>For other combinations of protons and neutrons, it gets more complicated, and we need to account for the gyromagnetic ratio in the equation. There are two components to <span class="math notranslate nohighlight">\(g\)</span>, governing the angular momentum <span class="math notranslate nohighlight">\(g_l\)</span> and spin <span class="math notranslate nohighlight">\(g_s\)</span>, with different values for the proton and neutron. The total <span class="math notranslate nohighlight">\(g\)</span> is calculated according to the coupling of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> and the relation to <span class="math notranslate nohighlight">\(j\)</span>.</p>
+<p>The result, just given here is:</p>
+<div class="math notranslate nohighlight" id="equation-gyromnagneticratio">
+<span class="eqno">(4.6)<a class="headerlink" href="#equation-gyromnagneticratio" title="Link to this equation">#</a></span>\[\begin{equation}
+g = g_{l} \frac{j(j+1)+l(l+1)-s(s+1)}{2j(j+1)} + g_s \frac{j(j+1)+s(s+1)-l(l+1)}{2j(j+1)}
+\end{equation}\]</div>
+<p>However, if we take into account the possible values of each quantum number, that <span class="math notranslate nohighlight">\(s=1/2\)</span> or <span class="math notranslate nohighlight">\(-1/2\)</span> and that <span class="math notranslate nohighlight">\(s\)</span> and <span class="math notranslate nohighlight">\(l\)</span> can combine to give <span class="math notranslate nohighlight">\(j\)</span> by <span class="math notranslate nohighlight">\(l=j+1/2\)</span> (“Stretched”) to <span class="math notranslate nohighlight">\(l=j-1/2\)</span> (“Jackknife”), then we arrive at only two possible scenarios for <span class="math notranslate nohighlight">\(g\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-magnetonestimate">
+<span class="eqno">(4.7)<a class="headerlink" href="#equation-magnetonestimate" title="Link to this equation">#</a></span>\[\begin{equation}
+\frac{\mu}{\mu_N} = (j-\frac{1}{2})g_l + \frac{1}{2}g_s \rightarrow (stretched)
+\end{equation}\]</div>
+<div class="math notranslate nohighlight" id="equation-jackknifeestimate">
+<span class="eqno">(4.8)<a class="headerlink" href="#equation-jackknifeestimate" title="Link to this equation">#</a></span>\[\begin{equation}
+\frac{\mu}{\mu_N} = ((j+\frac{3}{2})g_l - \frac{1}{2}g_s))\frac{j}{j+1} \rightarrow (jackknife)
+\end{equation}\]</div>
+<p>These are called the Schmidt Lines for nuclear magnetic moments where the <span class="math notranslate nohighlight">\(g\)</span> values here are given by:</p>
+<div class="math notranslate nohighlight" id="equation-gyromagneticfactors">
+<span class="eqno">(4.9)<a class="headerlink" href="#equation-gyromagneticfactors" title="Link to this equation">#</a></span>\[\begin{split}\begin{equation}
+g_l = 1~~\textnormal{(proton)} ~~~~~~~ g_l = 0 ~~\textnormal{(neutron)}\\
+g_{s} = 5.85 ~~\textnormal{(proton)} ~~~~~~ g_{s} = -3.826 ~~\textnormal{(neutron)}
+\end{equation}\end{split}\]</div>
+<p>As seen here, the neutron has zero value for <span class="math notranslate nohighlight">\(g_l\)</span> but a finite value for <span class="math notranslate nohighlight">\(g_s\)</span>. Interestingly, the value of <span class="math notranslate nohighlight">\(g_s\)</span> for the proton is much greater than would be expected. This again is indicative of an internal structure, i.e., the quark content.</p>
+<p>So, based on this QM treatment and the Shell Model, we can make predictions of the Nuclear Magnetic Moments of nuclei, simply from working out the Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span> and finding <span class="math notranslate nohighlight">\(j\)</span>. The easiest case is, as usual, when we have a single nucleon in an otherwise unfilled shell.</p>
+<p>Consider <span class="math notranslate nohighlight">\(^{17}O\)</span>: this has a neutron in the <span class="math notranslate nohighlight">\(1\textnormal{d}_{j=5/2}\)</span> level. Using the <span class="math notranslate nohighlight">\(g\)</span> values above, we get <span class="math notranslate nohighlight">\(\mu = -1.91\mu_N\)</span>. The measured value is <span class="math notranslate nohighlight">\(-1.89\mu_N\)</span>.</p>
+<p>Unfortunately, as we can see in the figures below, in general, the calculated values lie within the appropriate maximum range of the Schmidt Lines set by the Odd nucleon but do not sit on the limits. The method can therefore be used to estimate the minimum and maximum magnetic moments for different nuclei but cannot necessarily predict their properties exactly. For instance, if instead, we take K-39, which has an odd proton in <span class="math notranslate nohighlight">\(d_{3/2}\)</span>. The calculation gives 0.09<span class="math notranslate nohighlight">\(\mu_N\)</span> compared to a measured value of 0.39<span class="math notranslate nohighlight">\(\mu_N\)</span>.</p>
+<p>The fact that the majority of nuclei lie between these two lines is indicative of a more complex mixing of states, for instance, such might be caused if the Shell model assumption that nuclei are in a spherically symmetric potential well is not always true.</p>
+<figure class="align-default" id="magmoments">
+<a class="reference internal image-reference" href="../_images/image-97.png"><img alt="Spin orbit corrections" src="../_images/image-97.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Magnetic moments of even-Z odd-N nuclei in terms of Nuclear Magnetons. The lines are calculated and the points are experimental determinations.</span><a class="headerlink" href="#magmoments" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="electric-quadrupole-moments">
+<h3><span class="section-number">4.1.6. </span>Electric Quadrupole Moments<a class="headerlink" href="#electric-quadrupole-moments" title="Link to this heading">#</a></h3>
+<p>We now consider the static distribution of charge, rather than currents, in the nucleus. This leads us to the idea of the nuclear Electric Quadrupole Moment, a parameter which describes the shape of the nuclear charge distribution.</p>
+<p>If we consider the shape of nuclei in the shell model, the simplest case would be when the first shell is full, and we assume a spherical shape. Hence, we would expect a zero Electric Quadrupole Moment (EQM). If we, say, add one extra nucleon in the outer shell, then we would expect a non-spherical charge distribution to form and hence a finite EQM to appear. This is indeed the case, as seen in the plot here previously discussed. In the plot below we see how the EQM varies as a function nucleons and how some predictions of the EQM line up with observations.</p>
+<p><img alt="Alt text" src="../_images/image-43.png" /></p>
+<p>So how can we quantify this, firstly note that there are different types of electric moment. We could have an electric dipole moment, however as we only have positive charges of proton this does not exist in nuclei as there is no opposite charge in the nucleus that could sit on the other end of the dipole. This means only higher order types Quadrupole, Octupole, etc, are allowed. We can think of a quadrupole moment as the sum of two dipoles set antiparallel from one another.</p>
+<p>In the classic form we can describe the EQM for a quadrupole a:</p>
+<div class="math notranslate nohighlight" id="equation-quadrupoleestimate">
+<span class="eqno">(4.10)<a class="headerlink" href="#equation-quadrupoleestimate" title="Link to this equation">#</a></span>\[\begin{equation}
+Q_{EQM} = \frac{1}{e} \int \rho(3z^{2}-r^{2}) dV ~~~\textnormal{units of area, usually barn}
+\end{equation}\]</div>
+<p>where  <span class="math notranslate nohighlight">\(\rho\)</span> is the charge density distirbution. We can see here that if the nucleus is spherical then <span class="math notranslate nohighlight">\(z^{2}=x^{2}=y^{2}=r^{2}/3\)</span> which leads to <span class="math notranslate nohighlight">\(Q=0\)</span>.</p>
+<p>Again with the shell model we can make a few predictions for simple cases, such as when we have a proton in orbit in the outer shell. or a shall that is one proton short of being filled up.</p>
+<p>To do this we need the full Quantum Mechanical version of the equation above which is</p>
+<div class="math notranslate nohighlight" id="equation-quadrupoleoperation">
+<span class="eqno">(4.11)<a class="headerlink" href="#equation-quadrupoleoperation" title="Link to this equation">#</a></span>\[\begin{equation}
+eQ_{EQM} = e\int \psi^{*} (3z^{2} - r^{2})\psi dV
+\end{equation}\]</div>
+<p>Calculations to find the expectation value <span class="math notranslate nohighlight">\(&lt; \psi &gt;^{2}\)</span> end up giving as values for <span class="math notranslate nohighlight">\(Q\)</span> of:</p>
+<div class="math notranslate nohighlight" id="equation-quadrupolecalculation">
+<span class="eqno">(4.12)<a class="headerlink" href="#equation-quadrupolecalculation" title="Link to this equation">#</a></span>\[\begin{equation}
+Q_{EQM} = - &lt; r^{2} &gt; \frac{2j-1}{2(j+1)}
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(j\)</span> is the Angular Momentum Quantum Number of the odd particle (equivalent to the Nuclear Spin) and <span class="math notranslate nohighlight">\(r\)</span> the radius.</p>
+<section id="even-nuclei">
+<h4><span class="section-number">4.1.6.1. </span>Even Nuclei<a class="headerlink" href="#even-nuclei" title="Link to this heading">#</a></h4>
+<p>Based on the equations for EQM we expect that for Even-Even Nuclei <span class="math notranslate nohighlight">\(Q_{EQM}\)</span> should be around zero.</p>
+</section>
+<section id="odd-protons">
+<h4><span class="section-number">4.1.6.2. </span>Odd Protons<a class="headerlink" href="#odd-protons" title="Link to this heading">#</a></h4>
+<p>If we have unpaired protons then we have two possible cases:</p>
+<ol class="arabic simple">
+<li><p>If we have a single odd proton in an outer shell in an orbit of given <span class="math notranslate nohighlight">\(j\)</span>, the maximum projection <span class="math notranslate nohighlight">\(m_j\)</span> will put vector <span class="math notranslate nohighlight">\(j\)</span> close to alignment with the <span class="math notranslate nohighlight">\(z\)</span> axis. In this case the proton will be in orbit int the <span class="math notranslate nohighlight">\(x-y\)</span> plane. This is equivalent to a so called <em>Oblate</em> charge distribution and <span class="math notranslate nohighlight">\(Q_{EQM}&lt;0\)</span>. Note how in this case, with charge concentrated on the <span class="math notranslate nohighlight">\(z-y\)</span> plane <span class="math notranslate nohighlight">\((z=0)\)</span> then <span class="math notranslate nohighlight">\(Q_{EQM} = -&lt;r^{2}&gt;\)</span></p></li>
+<li><p>If the proton is missing from a closed shell (i.e. a kind of proton hole), then we get a <em>Prolate</em> charge distribution and <span class="math notranslate nohighlight">\(Q_{EQM}&gt;0\)</span>.
+In this case charge is more concentrated on the <span class="math notranslate nohighlight">\(z\)</span> plane <span class="math notranslate nohighlight">\((z=r)\)</span> and <span class="math notranslate nohighlight">\(Q_{EQM}=+2&lt;r^{2}&gt;\)</span>.</p></li>
+</ol>
+<figure class="align-default" id="oddprotons">
+<a class="reference internal image-reference" href="../_images/image-98.png"><img alt="Spin orbit corrections" src="../_images/image-98.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Different shape states of nuclei with odd protons.</span><a class="headerlink" href="#oddprotons" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="odd-neutrons">
+<h4><span class="section-number">4.1.6.3. </span>Odd Neutrons<a class="headerlink" href="#odd-neutrons" title="Link to this heading">#</a></h4>
+<p>For neutrons, things start to get a bit stranger. Although the neutron is neutral, one might expect that an odd neutron in the outer shell outside the core would make no difference to <span class="math notranslate nohighlight">\(Q\)</span>. However, due to the nuclear force, the neutron will attract protons in the core and form a <em>ridge</em> or <em>tide</em> of nuclear material. In this case, we expect a small negative <span class="math notranslate nohighlight">\(Q\)</span>, similar to if we had an odd unpaired proton.</p>
+<figure class="align-default" id="oddneutrons">
+<a class="reference internal image-reference" href="../_images/image-99.png"><img alt="Spin orbit corrections" src="../_images/image-99.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.4 </span><span class="caption-text">Different shape state of nuclei with odd neutrons.</span><a class="headerlink" href="#oddneutrons" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Working through the numbers, we find typical values for the Electric Quadrupole Moment (EQM) with odd neutrons in the range of <span class="math notranslate nohighlight">\(0.06-0.6 e\textnormal{b}\)</span> (electron barns).</p>
+<p>But what if we have several nucleons in a partially filled outer shell? As with other predictions in the Shell Model, in general, it is harder to calculate this explicitly because all the nucleons can contribute. However, a basic derivation yields:</p>
+<div class="math notranslate nohighlight" id="equation-quadrupoleunfilled">
+<span class="eqno">(4.13)<a class="headerlink" href="#equation-quadrupoleunfilled" title="Link to this equation">#</a></span>\[\begin{equation}
+&lt; Q_{EQM} &gt; = &lt; Q_{sp} &gt; \left [ 1-2\frac{n-1}{2j-1} \right ]
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(Q_{sp}\)</span> is the Single Particle Value as mentioned above, and <span class="math notranslate nohighlight">\(n\)</span> is the number of nucleons in the partially filled shell. Here, <span class="math notranslate nohighlight">\(n\)</span> can range from <span class="math notranslate nohighlight">\(1\)</span> to <span class="math notranslate nohighlight">\(2j\)</span>. So, when <span class="math notranslate nohighlight">\(n=2j\)</span>, a shell that is only one nucleon from being filled, we get <span class="math notranslate nohighlight">\(Q_{EQM}=-Q_{sp}\)</span>.</p>
+</section>
+</section>
+<section id="eqm-predictions">
+<h3><span class="section-number">4.1.7. </span>EQM Predictions<a class="headerlink" href="#eqm-predictions" title="Link to this heading">#</a></h3>
+<p>Using the results above with <span class="math notranslate nohighlight">\(r=r_{0}A^{1/3}\)</span> etc., we can calculate the <span class="math notranslate nohighlight">\(Q\)</span> values for different nuclei and compare them with the measured values. Some results are shown in the table below. Generally, at least the correct sign is found, but often the real value is larger than expected.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Shell-Model State</p></th>
+<th class="head"><p>Calculated Q</p></th>
+<th class="head"><p>single proton</p></th>
+<th class="head"><p>-</p></th>
+<th class="head"><p>Measured Q</p></th>
+<th class="head"><p>-</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p><strong>p</strong></p></td>
+<td><p><strong>n</strong></p></td>
+<td><p><strong>p</strong></p></td>
+<td><p><strong>n</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(1p_{3/2}\)</span></p></td>
+<td><p>-0.013</p></td>
+<td><p>-0.0366 <em>(7Li)</em></p></td>
+<td><p>-</p></td>
+<td><p>+0.0407 <em>(11B)</em></p></td>
+<td><p>+0.053 <em>(9Be)</em></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(1d_{5/2}\)</span></p></td>
+<td><p>-0.036</p></td>
+<td><p>-0.1 * <em>(19F)</em>*</p></td>
+<td><p>-0.026 <em>(17O)</em></p></td>
+<td><p>+0.140 <em>(27Al)</em></p></td>
+<td><p>+0.201  <em>(25Mg)</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(1d_{3/2}\)</span></p></td>
+<td><p>-0.037</p></td>
+<td><p>-0.08249  <em>(35Cl)</em></p></td>
+<td><p>-0.064 <em>(33S)</em></p></td>
+<td><p>+0.056 <em>(39K)</em></p></td>
+<td><p>+0.45 <em>(35S)</em></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(1f_{7/2}\)</span></p></td>
+<td><p>-0.071</p></td>
+<td><p>-0.26  <em>(43Sc)</em></p></td>
+<td><p>-0.080 <em>(41Ca)</em></p></td>
+<td><p>+0.400 <em>(59Co)</em></p></td>
+<td><p>+0.24 <em>(49Ti)</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(2p_{3/2}\)</span></p></td>
+<td><p>-0.055</p></td>
+<td><p>-0.209 <em>(63Cu)</em></p></td>
+<td><p>-0.0285 <em>(53Cr)</em></p></td>
+<td><p>+0.195 <em>(67Ga)</em></p></td>
+<td><p>+0.20 <em>(57Fe)</em></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(1f_{5/2}\)</span></p></td>
+<td><p>-0.086</p></td>
+<td><p>-</p></td>
+<td><p>-0.20  <em>(61Ni)</em></p></td>
+<td><p>+0.274 <em>(85Rb)</em></p></td>
+<td><p>+0.15 <em>(67Zn)</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(1g_{9/2}\)</span></p></td>
+<td><p>-0.13</p></td>
+<td><p>-0.32  <em>(93Nb)</em></p></td>
+<td><p>-0.17 <em>(73Ge)</em></p></td>
+<td><p>+0.86 <em>(115In)</em></p></td>
+<td><p>+0.45 <em>(85Kr)</em></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(1g_{7/2}\)</span></p></td>
+<td><p>-0.14</p></td>
+<td><p>-0.49  <em>(123Sb)</em></p></td>
+<td><p>-</p></td>
+<td><p>+0.20 <em>(139La)</em></p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(2d_{5/2}\)</span></p></td>
+<td><p>-0.12</p></td>
+<td><p>-0.36 <em>(121Sb)</em></p></td>
+<td><p>-0.236 <em>(91Zr)</em></p></td>
+<td><p>-</p></td>
+<td><p>+0.44 <em>(111Cd)</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Things work best when we consider nuclei close to the magic numbers in most cases. Take for example the following selected nuclei.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Nuclei</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Z\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(N\)</span></p></th>
+<th class="head"><p>Character</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(j\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Q_{obs}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Q_{pred}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Q_{obs}/Q_{pred}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>17O</p></td>
+<td><p>8</p></td>
+<td><p>9</p></td>
+<td><p>doubly magic+1n</p></td>
+<td><p>5/2</p></td>
+<td><p>-2.6</p></td>
+<td><p>-0.1</p></td>
+<td><p>20</p></td>
+</tr>
+<tr class="row-odd"><td><p>39K</p></td>
+<td><p>19</p></td>
+<td><p>20</p></td>
+<td><p>doubly magic-1p</p></td>
+<td><p>3/2</p></td>
+<td><p>+5.5</p></td>
+<td><p>+5</p></td>
+<td><p>1.1</p></td>
+</tr>
+<tr class="row-even"><td><p>175Ku</p></td>
+<td><p>71</p></td>
+<td><p>104</p></td>
+<td><p>between shells</p></td>
+<td><p>7/2</p></td>
+<td><p>+560</p></td>
+<td><p>-25</p></td>
+<td><p>-22.4</p></td>
+</tr>
+<tr class="row-odd"><td><p>209Bi</p></td>
+<td><p>83</p></td>
+<td><p>126</p></td>
+<td><p>double magic+1p</p></td>
+<td><p>9/2</p></td>
+<td><p>-35</p></td>
+<td><p>-30</p></td>
+<td><p>-1.1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We see good agreeement for Double Magic Number nuclei plus or minus one proton but poor agreemenet when odd neutron’s are considered in O-17 and terrible agreement with a big nucleus with a partly filled outer shell such as Lu-175. In general nuclei with atomic mass numbers in the range <span class="math notranslate nohighlight">\(150&lt;A&lt;190\)</span> and <span class="math notranslate nohighlight">\(A&gt;200\)</span> have very large Quadrupole moments (the break here is due to a magic number).</p>
+</section>
+<section id="summary">
+<h3><span class="section-number">4.1.8. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
+<p>Before moving on, let’s summarize the shell model conclusions. The shell model is a powerful, albeit incomplete, complement to the Liquid Drop Model (LDM) and the Semi-Empirical Mass Formula (SEMF) that can:</p>
+<ol class="arabic simple">
+<li><p>Accurately account for ground state spins and parities.</p></li>
+<li><p>Explain why even-even nuclei have zero Nuclear Spin.</p></li>
+<li><p>Account for some excited state spins and parities and explain why the spin of odd-A nuclei is that of the Unpaired Nucleon.</p></li>
+<li><p>Show that if two neutrons (or protons) occupy a level with the same <span class="math notranslate nohighlight">\(j\)</span> and <span class="math notranslate nohighlight">\(I\)</span>, then the Total Angular Momentum couples to give zero contribution to nuclear spin.</p></li>
+<li><p>Account for selected Magnetic Dipole Moments - these near closed shells agree with Schmidt Lines.</p></li>
+<li><p>Account for some observed Quadrupole Moments - at least the correct sign for closed shells + 1 nuclei.</p></li>
+</ol>
+<p>However, unfortunately, the model has some shortcomings:</p>
+<ol class="arabic simple">
+<li><p>The model still makes no robust predictions for Odd-Odd nuclei.</p></li>
+<li><p>Predictions fail for Excited Nuclei above ~2MeV, as large excitations in the core can complicate the energy levels picture.</p></li>
+<li><p>The Shell Model can make predictions of the Nuclear Magnetic Moments and the Electric Quadrupole Moments, but for large nuclei and nuclei away from filled shells, these predictions poorly match the data.</p></li>
+<li><p>It is observed that nuclei have Excitation Levels and states far from what can be explained by the Shell Model. It turns out that these are associated with bulk motions of the nuclear material, notably rotation and vibration states.</p></li>
+</ol>
+<p>These failings, particularly in the magnetic moment and EQM data, indicate a large deviation away from spherical charge distributions, suggesting that in some cases, the nucleus can be grossly distorted in shape. For the EQM, we have to conclude that some nuclei are much further from spherical than the shell model can allow.</p>
+<p>In reality, many nuclei appear to have permanent distortions away from simple spheres. A possible explanation is that interactions occur between the outer nucleons and the closed shells, which leads us into the idea of Collective Models. Here, we need to examine what new energy state might arise from bulk nuclear matter distortions in our model.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./unit4"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../unit3/phy303-unit3-shellmodel-and-spin.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Shell Model</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../unit5/phy303-unit5-collective-excited.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Collective Models</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-properties">4.1. Nuclear Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-spin-example">4.1.1. Nuclear Spin Example</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-parity">4.1.2. Nuclear Parity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-challenges">4.1.3. Shell Challenges</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-model-summary">4.1.4. Shell Model Summary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#towards-collective-nuclear-models">4.1.5. Towards Collective Nuclear Models</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-quadrupole-moments">4.1.6. Electric Quadrupole Moments</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#even-nuclei">4.1.6.1. Even Nuclei</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#odd-protons">4.1.6.2. Odd Protons</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#odd-neutrons">4.1.6.3. Odd Neutrons</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eqm-predictions">4.1.7. EQM Predictions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">4.1.8. Summary</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Liz Kneale, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

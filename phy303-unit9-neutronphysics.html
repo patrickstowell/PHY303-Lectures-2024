@@ -1,78 +1,77 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>9. Neutron Physics &#8212; PHY303 Nuclear Physics 1</title>
+    <title>9. Neutron Physics &#8212; PHY303 Nuclear Physics</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=b4b7a797" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit9-neutronphysics';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="10. Nuclear Power" href="phy303-unit10-fissionandfusion.html" />
     <link rel="prev" title="8. Compound/Photon reactions" href="phy303-unit8-compoundreactions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -80,32 +79,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -113,7 +96,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -121,16 +103,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -145,6 +136,8 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="phy303-homepage.html">
   
@@ -152,11 +145,24 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="PHY303 Nuclear Physics - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY303 Nuclear Physics - Home"/>
   
-    <p class="title logo__title">PHY303 Nuclear Physics 1</p>
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -168,8 +174,8 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit1/phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">3. Shell Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">4. Nuclear Spin Moments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit5-collective-excited.html">5. Collective Excited States</a></li>
@@ -183,7 +189,30 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit10-fissionandfusion.html">10. Nuclear Power</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit11-medicalapplications.html">11. Nuclear Medicine</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Review Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="unit1/phy303-unit1-review.html">Unit 1 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-problems.html">Unit 1 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-flashcards.html">Unit 1 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-random-quiz.html">Unit 1 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit1/phy303-unit1-full-quiz.html">Unit 1 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="unit2/phy303-unit2-review.html">Unit 1 Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit2/phy303-unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit2/phy303-unit2-quiz.html">Unit 2 : Formative Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="unit3/phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit3/phy303-unit3-problems.html">Unit 3 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit3/phy303-unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit3/phy303-unit3-flashcards.html">Unit 3 : Flash Cards</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
 <li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
@@ -192,15 +221,6 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="legendre-polynomials.html">Legendre Polynomials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nucleus-shape.html">Nucleus Shape</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Revision Tools</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unit5-terms.html">Unit 5 : Equations &amp; Terms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unit6-terms.html">Unit 6 : Equations &amp; Terms</a></li>
-</ul>
 
     </div>
 </nav></div>
@@ -208,14 +228,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -224,14 +249,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -241,53 +266,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-source-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
-    <i class="fab fa-github"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
-   class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="btn__text-container">Repository</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fphy303-unit9-neutronphysics.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="btn__text-container">Open issue</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
 
 
 
@@ -354,27 +332,19 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -439,15 +409,15 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="neutron-physics">
-<h1><span class="section-number">9. </span>Neutron Physics<a class="headerlink" href="#neutron-physics" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">9. </span>Neutron Physics<a class="headerlink" href="#neutron-physics" title="Link to this heading">#</a></h1>
 <p>Neutrons are particularly important in nuclear physics because, being uncharged, they see no Coulomb barrier and can be captured by nuclei even at very low energies.  Reactions involving neutrons have many practical applications, most obviously in inducing fission of uranium and plutonium but also in mapping excited states of nuclei, non-destructive assay of materials and production of radionuclides for medical physics and industry.  (These applications are why this section is in Applications of Nuclear Physics, rather than Nuclear Reactions.)</p>
 <section id="neutron-properties">
-<h2><span class="section-number">9.1. </span>Neutron Properties<a class="headerlink" href="#neutron-properties" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">9.1. </span>Neutron Properties<a class="headerlink" href="#neutron-properties" title="Link to this heading">#</a></h2>
 <section id="discovery">
-<h3><span class="section-number">9.1.1. </span>Discovery<a class="headerlink" href="#discovery" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">9.1.1. </span>Discovery<a class="headerlink" href="#discovery" title="Link to this heading">#</a></h3>
 <p>It was clear from the initial discovery of the atomic nucleus that the mass of most nuclei was approximately double that of <span class="math notranslate nohighlight">\(Z\)</span> protons.  The initial model for this was that the nucleus contained <span class="math notranslate nohighlight">\(A\)</span> protons and <span class="math notranslate nohighlight">\(A – Z\)</span> “nuclear electrons”, but this model has a number of problems:</p>
 <ul class="simple">
 <li><p>The Heisenberg uncertainty principle, <span class="math notranslate nohighlight">\(\Delta x \Delta p \geq \hbar/2, \)</span> predicts that an electron confined within a nucleus of diameter <span class="math notranslate nohighlight">\(\sim 10~\textnormal{fm}\)</span> should have a momentum of order <span class="math notranslate nohighlight">\(5\times 10^{−21}\)</span> kg m s−1, which implies an energy of about <span class="math notranslate nohighlight">\(40~\textnormal{MeV}\)</span>.  This is much higher than the observed energies of electrons emitted in <span class="math notranslate nohighlight">\(β\)</span> decay.</p></li>
@@ -459,7 +429,7 @@ document.write(`
 <p>In the context of modern particle physics, we now understand the neutron as a neutral baryon with quark content  (cf.  for the proton) and a mass of <span class="math notranslate nohighlight">\(1.674 927 5\times 10^{−27}\)</span> kg = <span class="math notranslate nohighlight">\(1.008 664 916 u\)</span> = <span class="math notranslate nohighlight">\(939.56542\)</span> MeV/c2.  Because the mass of the neutron is greater than the combined mass of a proton and an electron, the free neutron decays via  with a mean lifetime of <span class="math notranslate nohighlight">\(878.4±0.5\)</span> s.  (There is some mild disagreement about this number, with different methods tending to get results which differ by significantly more than their quoted errors.  This value is the one quoted by the Particle Data Group, and is based on an average of measurements with trapped ultracold neutrons.)</p>
 </section>
 <section id="classification-of-neutrons">
-<h3><span class="section-number">9.1.2. </span>Classification of neutrons<a class="headerlink" href="#classification-of-neutrons" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">9.1.2. </span>Classification of neutrons<a class="headerlink" href="#classification-of-neutrons" title="Link to this heading">#</a></h3>
 <p>Neutrons used in experiments are generally classified according to their energies.  Note that it is not generally possible to make a genuinely monoenergetic neutron source, so these represent typical energies rather than exact values.</p>
 <ul class="simple">
 <li><p><strong>Ultracold neutrons (E &lt; 300 neV, T &lt; 4 mK, 𝑣 &lt; 8 m/s, λ &gt; 50 nm)</strong>	These are produced from thermal neutrons in a variety of ways, either by further moderating the neutrons using a very cold target (e.g. solid deuterium) or selecting the very low velocity tail of the thermal Maxwellian distribution.  The main advantage of ultracold neutrons is that their energies are low enough that they reflect off the nuclear potential of nuclei, and can therefore be trapped in a container.  They are primarily used for measuring the properties of neutrons, e.g. lifetime, electric dipole moment.</p></li>
@@ -472,41 +442,41 @@ document.write(`
 </section>
 </section>
 <section id="neutron-sources">
-<h2><span class="section-number">9.2. </span>Neutron sources<a class="headerlink" href="#neutron-sources" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">9.2. </span>Neutron sources<a class="headerlink" href="#neutron-sources" title="Link to this heading">#</a></h2>
 <p>Since free neutrons decay with a mean lifetime of around 15 minutes, neutrons cannot be stored and must be produced where they will be used (or used where they are produced, for large non-portable sources such as reactors).</p>
 <section id="radioactive-sources">
-<h3><span class="section-number">9.2.1. </span>Radioactive sources<a class="headerlink" href="#radioactive-sources" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">9.2.1. </span>Radioactive sources<a class="headerlink" href="#radioactive-sources" title="Link to this heading">#</a></h3>
 <p>Direct radioactive decay via neutron emission is very rare, but neutrons can be produced either by secondary interactions or as a by-product of spontaneous fission.</p>
 <section id="neutron-sources-ambe">
-<h4><span class="section-number">9.2.1.1. </span>α-neutron sources: AmBe<a class="headerlink" href="#neutron-sources-ambe" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">9.2.1.1. </span>α-neutron sources: AmBe<a class="headerlink" href="#neutron-sources-ambe" title="Link to this heading">#</a></h4>
 <p>The easiest way to generate neutrons using a radioactive source is to mix an α-emitter with a light element such as beryllium.  The neutrons are produced by (α,n) reactions on the light element.  The most common source of this type uses <span class="math notranslate nohighlight">\(^{241}\)</span>Am as the α-emitter and 9Be as the target, and is usually known as an AmBe (pronounced ‘ambi’) source.  These produce a broad spectrum of fast neutrons with an average energy of 4.2 MeV (maximum energy 11 MeV) and a yield of about 60000 neutrons per second per GBq activity of the <span class="math notranslate nohighlight">\(^{241}\)</span>Am.  <span class="math notranslate nohighlight">\(^{241}\)</span>Am has a half-life of 432 years, so AmBe sources are convenient and long-lived laboratory sources.</p>
 <p>PuBe (‘pewbee’) sources, with <span class="math notranslate nohighlight">\(^{238}\)</span>Pu or <span class="math notranslate nohighlight">\(^{239}\)</span>Pu as the α-emitter, were also popular a few decades ago, but have largely been discontinued because of nuclear safeguarding concerns.  PuBe sources have a similar neutron spectrum to AmBe (not surprising since the neutrons are produced by the same reaction) and an even longer half-life (around 24000 years).</p>
 </section>
 <section id="photoneutron-sources">
-<h4><span class="section-number">9.2.1.2. </span>Photoneutron sources<a class="headerlink" href="#photoneutron-sources" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">9.2.1.2. </span>Photoneutron sources<a class="headerlink" href="#photoneutron-sources" title="Link to this heading">#</a></h4>
 <p>Neutron emission can also be induced by (γ,n) reactions.  The main disadvantage of photoneutron sources compared to α-neutron is that, as we saw in the last unit, only a very small minority of the γ-rays interact with nuclei, necessitating a very strong (and potentially hazardous) γ-ray source.  The advantage of photoneutron sources is that the neutrons are nearly monoenergetic.</p>
 <p>The principal photoneutron source uses <span class="math notranslate nohighlight">\(^{124}\)</span>Sb (that’s antimony; not one of the more obvious element symbols!) as the γ-ray source and 9Be as the target.  Antimony-124 is a comparatively short-lived isotope (half-life 60 days) and is produced by irradiating natural antimony (a mixture of <span class="math notranslate nohighlight">\(^{121}\)</span>Sb and <span class="math notranslate nohighlight">\(^{123}\)</span>Sb) with thermal neutrons in a reactor.</p>
 </section>
 <section id="spontaneous-fission-sources">
-<h4><span class="section-number">9.2.1.3. </span>Spontaneous fission sources<a class="headerlink" href="#spontaneous-fission-sources" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">9.2.1.3. </span>Spontaneous fission sources<a class="headerlink" href="#spontaneous-fission-sources" title="Link to this heading">#</a></h4>
 <p>A small number of heavy even-even isotopes decay by spontaneous fission.  Because the ratio of neutrons to protons in stable nuclei increases with atomic number, the parent has “too many” neutrons compared to the fission fragments, so each fission typically produces 2–4 prompt neutrons (see also our later unit on Nuclear Power).  The isotope commonly used as a neutron source is <span class="math notranslate nohighlight">\(^{252}\)</span>Cf, which has a 3% branching fraction to spontaneous fission (the dominant decay mode is α emission).</p>
 <p><span class="math notranslate nohighlight">\(^{252}\)</span>Cf is a popular neutron source because the neutron energy distribution is very similar to that from uranium fission (so it’s useful as a small-scale test for reactor applications), the associated γ yield is small, and the specific activity (neutrons per gram of source material) is high, so sources can be highly portable.  Its main disadvantage is that the half-life of <span class="math notranslate nohighlight">\(^{252}\)</span>Cf is only 2.6 years.</p>
 </section>
 </section>
 <section id="neutron-generators">
-<h3><span class="section-number">9.2.2. </span>Neutron generators<a class="headerlink" href="#neutron-generators" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">9.2.2. </span>Neutron generators<a class="headerlink" href="#neutron-generators" title="Link to this heading">#</a></h3>
 <p>Neutron generators produce neutrons using the reactions <span class="math notranslate nohighlight">\(^{2}\)</span>H(d,n)<span class="math notranslate nohighlight">\(^{3}\)</span>He (d-d generator) and <span class="math notranslate nohighlight">\(^{3}\)</span>H(d,n)<span class="math notranslate nohighlight">\(^{4}\)</span>He (d-t generator), yielding neutrons of energy 2.5 and 14 MeV respectively.  The generator consists of a very low-power accelerator (typically 90 keV) accelerating deuterium ions which then collide with a metal-hydride target.  The output neutron spectrum is not quite monoenergetic, because of kinematic effects and because the neutrons will scatter before exiting the generator, but is quite sharply peaked at the nominal energy.  The neutrons are emitted fairly isotropically, though the yield and energy spectrum do depend on the angle to some extent.</p>
 <p>Neutron generators are small, portable devices available from a number of commercial suppliers.  Typical neutron yields are <span class="math notranslate nohighlight">\(10^8 – 10^9\)</span> per second, though there are a few models with higher outputs.  One major advantage of neutron generators is that they can be switched off, so transporting them for use in the field, e.g. for well logging, is much safer than transporting an AmBe or <span class="math notranslate nohighlight">\(^{252}\)</span>Cf source.  Some models have built-in moderator so that they produce thermal neutrons directly, but most produce the neutrons at 2.5 or 14 MeV and leave the user to moderate them if desired.</p>
 </section>
 <section id="large-scale-facilities">
-<h3><span class="section-number">9.2.3. </span>Large-scale facilities<a class="headerlink" href="#large-scale-facilities" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">9.2.3. </span>Large-scale facilities<a class="headerlink" href="#large-scale-facilities" title="Link to this heading">#</a></h3>
 <p>Radioactive sources and neutron generators are small-scale, portable sources that are commercially available and can be acquired by individual laboratories or companies.  For really high neutron intensities, it is necessary to make use of large-scale static facilities, typically government-run, and take the experiment to the neutrons rather than vice versa.</p>
 <section id="reactors">
-<h4><span class="section-number">9.2.3.1. </span>Reactors<a class="headerlink" href="#reactors" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">9.2.3.1. </span>Reactors<a class="headerlink" href="#reactors" title="Link to this heading">#</a></h4>
 <p>The classic neutron source is the nuclear reactor.  Commercial power reactors are, of course, very carefully shielded to prevent neutrons from escaping, but research reactors used as neutron sources have ports in the shielding to permit neutrons to escape into experimental areas or to allow samples to be inserted into the reactor core for irradiation.  Research reactors can provide neutron fluences of <span class="math notranslate nohighlight">\(10^{12} – 10^{15}\)</span> neutrons cm<span class="math notranslate nohighlight">\(^{−2}\)</span> s<span class="math notranslate nohighlight">\(^{−1}\)</span>.  The energy spectrum depends on the reactor type: “thermal” reactor types as used for power generation (see Unit 5B) use a moderator to produce a spectrum consisting mainly of thermal neutrons, with a high-energy tail of epithermal and fast neutrons, whereas “fast” reactors do not incorporate moderators and produce fast neutrons with energies around 2 MeV.</p>
 </section>
 <section id="spallation-neutron-sources">
-<h4><span class="section-number">9.2.3.2. </span>Spallation neutron sources<a class="headerlink" href="#spallation-neutron-sources" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">9.2.3.2. </span>Spallation neutron sources<a class="headerlink" href="#spallation-neutron-sources" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Spallation neutron sources use a low-energy (~1 GeV kinetic energy) proton beam directed on to a heavy-metal target, for example tungsten or mercury.  As we saw in the last unit, a comparatively high-energy projectile such as this would be expected to produce a direct reaction.  In fact, the result of a 1 GeV proton hitting a heavy target has three distinct stages:</p></li>
 <li><p><strong>Cascade stage</strong>: the incident proton collides with a few nucleons within the nucleus, one or two of which may be ejected as a result.  This is a direct reaction with the usual <span class="math notranslate nohighlight">\(10^{−22}\)</span> s timescale.</p></li>
@@ -518,14 +488,14 @@ document.write(`
 <figure class="align-default" id="isis-stations">
 <a class="reference internal image-reference" href="_images/image-122.png"><img alt="Diagram of a gas proportional chamber showing how charged particles produce a signal." src="_images/image-122.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 9.1 </span><span class="caption-text">layout of the target stations at ISIS, from https://www.isis.stfc.ac.uk/Pages/Instruments.aspx. Target Station 1 has four moderators: two are room-temperature water to provide thermal neutrons, and the other two are liquid methane at 100 K and liquid hydrogen at 20 K, for cold neutrons. Target Station 2 produces cold neutrons at 26 K, using lower proton power than TS1 but more sophisticated target designs (one solid methane, one liquid hydrogen/solid methane)</span><a class="headerlink" href="#isis-stations" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 9.1 </span><span class="caption-text">layout of the target stations at ISIS, from https://www.isis.stfc.ac.uk/Pages/Instruments.aspx. Target Station 1 has four moderators: two are room-temperature water to provide thermal neutrons, and the other two are liquid methane at 100 K and liquid hydrogen at 20 K, for cold neutrons. Target Station 2 produces cold neutrons at 26 K, using lower proton power than TS1 but more sophisticated target designs (one solid methane, one liquid hydrogen/solid methane)</span><a class="headerlink" href="#isis-stations" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The ISIS instruments fall into two broad categories: diffractometers, which make use of elastic scattering to study structures, and spectrometers, which use inelastic (n,n’) reactions to look at excitation and dynamics.  Within these two categories, different instruments are optimised for specific purposes: for example, there are different diffractometers for crystallography, for larger, more extended structures and for disordered (i.e. non-crystalline) materials.</p>
 </section>
 </section>
 <section id="moderation">
-<h3><span class="section-number">9.2.4. </span>Moderation<a class="headerlink" href="#moderation" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">9.2.4. </span>Moderation<a class="headerlink" href="#moderation" title="Link to this heading">#</a></h3>
 <p>Most sources produce fast neutrons, but many applications prefer thermal neutrons, either because their de Broglie wavelengths are appropriate for the structures being studied or simply because the cross sections are higher.  Therefore, we need a means to slow the neutrons down with minimal loss of flux.  Materials which do this are called moderators.
 The plan is that the neutrons scatter elastically off the moderator nuclei until they reach thermal equilibrium.  To obtain thermal neutrons, the moderator is at room temperature; cold neutrons are produced by using a cryogenic moderator.  The choice of moderator is governed by two criteria:</p>
 <ul class="simple">
@@ -536,48 +506,48 @@ The most appropriate elements are hydrogen (best for efficient thermalization) a
 </section>
 </section>
 <section id="neutron-interactions">
-<h2><span class="section-number">9.3. </span>Neutron Interactions<a class="headerlink" href="#neutron-interactions" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">9.3. </span>Neutron Interactions<a class="headerlink" href="#neutron-interactions" title="Link to this heading">#</a></h2>
 <p>Neutron interactions come in all the categories we discussed in the last unit.  For applications, the most important are elastic and inelastic scattering, (n,n) and (n,n’), which can be used for diffraction and spectroscopy as discussed above; various reactions with charged products which can be used for neutron detection; neutron capture, (n,γ), which is the basis of neutron activation analysis (see below) and is also important in the production of medical radioisotopes; and neutron-induced fission, (n,f), which is the basis of nuclear reactors.  Generally, neutron interactions are initiated by low-energy neutrons and are therefore compound-nucleus reactions.</p>
 <section id="neutron-detection">
-<h3><span class="section-number">9.3.1. </span>Neutron detection<a class="headerlink" href="#neutron-detection" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">9.3.1. </span>Neutron detection<a class="headerlink" href="#neutron-detection" title="Link to this heading">#</a></h3>
 <p>Being uncharged makes neutrons difficult to detect directly: they do not interact much with atomic electrons, so they do not ionise or cause scintillation.  Consequently, neutron detectors tend to make use of interactions in which the neutron is absorbed and a charged particle is emitted.  Commonly used reactions are <span class="math notranslate nohighlight">\(^{3}\)</span>He(n,p)<span class="math notranslate nohighlight">\(^{3}\)</span>H, <span class="math notranslate nohighlight">\(^{6}\)</span>Li(n,t)<span class="math notranslate nohighlight">\(^{4}\)</span>He and <span class="math notranslate nohighlight">\(^{10}\)</span>B(n, α)<span class="math notranslate nohighlight">\(^{7}\)</span>Li.  All of these have a common problem: the isotope involved is not the most abundant one (<span class="math notranslate nohighlight">\(^{6}\)</span>Li makes up 7.5% of natural lithium, <span class="math notranslate nohighlight">\(^{10}\)</span>B 20% of natural boron; <span class="math notranslate nohighlight">\(^{3}\)</span>He is very rare indeed).</p>
 <p>The prompt charged particles produced by these reactions can be detected in a number of ways.</p>
 <section id="gas-proportional-counters">
-<h4><span class="section-number">9.3.1.1. </span>Gas proportional counters<a class="headerlink" href="#gas-proportional-counters" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">9.3.1.1. </span>Gas proportional counters<a class="headerlink" href="#gas-proportional-counters" title="Link to this heading">#</a></h4>
 <p>The target material is gaseous and is used to fill a container. The charged product of the neutron interaction creates ionisation, which is then directed on to a sense wire by an electric field (in figure 2, the electric field is radial and the electrons end up on the wire strung along the centre of the cylindrical tube).  These detectors are primarily sensitive to thermal neutrons, because the neutron capture cross section is higher for these than for faster particles; because the Q value of the reaction is much higher than the neutron energy, they are sensitive to the number of neutrons but not to their energy (hence “counter”).  The main background is γ rays, which can be rejected because they typically produce less ionisation than neutrons (the slow protons and α particles produced in the neutron capture reactions are very highly ionising).</p>
 <figure class="align-default" id="gaschamber">
 <a class="reference internal image-reference" href="_images/image-121.png"><img alt="Diagram of a gas proportional chamber showing how charged particles produce a signal." src="_images/image-121.png" style="width: 50%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.2 </span><span class="caption-text">Schematic of a gas proportional counter for neutron detection.
-From Tavernier, Experimental Techniques in Nuclear and Particle Physics pp 209–224 (Springer, 2009)</span><a class="headerlink" href="#gaschamber" title="Permalink to this image">#</a></p>
+From Tavernier, Experimental Techniques in Nuclear and Particle Physics pp 209–224 (Springer, 2009)</span><a class="headerlink" href="#gaschamber" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The gases used in gas proportional counters are <span class="math notranslate nohighlight">\(^3\)</span>He and <span class="math notranslate nohighlight">\(^{10}\)</span>BF<span class="math notranslate nohighlight">\(_{3}\)</span>.  <span class="math notranslate nohighlight">\(^{10}\)</span>BF<span class="math notranslate nohighlight">\(_3\)</span> is easier to obtain, and the high <span class="math notranslate nohighlight">\(Q\)</span> value of the neutron capture reaction makes gamma rejection easier, but boron trifluoride is toxic and corrosive and not a very good working gas for proportional counters.  <span class="math notranslate nohighlight">\(^{3}\)</span>He (with about 5% of a heavier “quenching” gas to reduce secondary ionisation) is a good working gas, but <span class="math notranslate nohighlight">\(^{3}\)</span>He is increasingly difficult to get hold of (its abundance in natural helium, itself rare, is only 0.00014%, and it was historically produced as a by-product of nuclear weapon maintenance, a source which has—fortunately—declined as a result of nuclear weapons limitation treaties).</p>
 <p>Gas proportional counters can also be made sensitive to neutrons by lining the inner wall with a suitable solid material—usually boron.  Boron-lined proportional counters are, however, much less efficient than BF<span class="math notranslate nohighlight">\(_{3}\)</span>-filled counters, because the boron lining has to be very thin to allow the α particles to escape into the counting gas.</p>
 </section>
 <section id="scintillators">
-<h4><span class="section-number">9.3.1.2. </span>Scintillators<a class="headerlink" href="#scintillators" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">9.3.1.2. </span>Scintillators<a class="headerlink" href="#scintillators" title="Link to this heading">#</a></h4>
 <p>Solid neutron-sensitive materials can also be incorporated into scintillators, i.e. materials which respond to the passage of a charged particle by emitting UV or visible light, which is then picked up by photomultiplier tubes.  An example of such a scintillator is europium-doped crystalline LiI (this is very similar to one of the most commonly used scintillating crystals, thallium-doped NaI).  Scintillators are very fast detectors, so particularly useful if a good time resolution is needed for some reason.  Plastic scintillators, which are cheaper but less efficient than crystalline scintillators, can be made neutron-sensitive by doping with boron.</p>
 </section>
 <section id="semiconductor-detectors">
-<h4><span class="section-number">9.3.1.3. </span>Semiconductor detectors<a class="headerlink" href="#semiconductor-detectors" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">9.3.1.3. </span>Semiconductor detectors<a class="headerlink" href="#semiconductor-detectors" title="Link to this heading">#</a></h4>
 <p>Solid-state detectors based on semiconductors are very common in particle physics (e.g. the ATLAS inner tracker).  They can be made neutron-sensitive by coating with a neutron-sensitive material, typically <span class="math notranslate nohighlight">\(^{10}\)</span>B or <span class="math notranslate nohighlight">\(^{6}\)</span>LiF.  Their efficiency is maximised by designing the device so as to maximise the surface area in contact with the sensitive material, as shown in figure 9.3.  The products of the neutron capture escape into the semiconductor, where they create electron-hole pairs, which are then read out.  The main disadvantage of these devices is cost.</p>
 <figure class="align-default" id="sdarray">
 <a class="reference internal image-reference" href="_images/image-120.png"><img alt="Diagram of a semiconductor detector array" src="_images/image-120.png" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 9.3 </span><span class="caption-text">Basic design of a microstructured semiconductor neutron detector (MSND). Figure by Douglas McGregor, CC-BY-SA 4.0.</span><a class="headerlink" href="#sdarray" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 9.3 </span><span class="caption-text">Basic design of a microstructured semiconductor neutron detector (MSND). Figure by Douglas McGregor, CC-BY-SA 4.0.</span><a class="headerlink" href="#sdarray" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="other-techniques">
-<h4><span class="section-number">9.3.1.4. </span>Other techniques<a class="headerlink" href="#other-techniques" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">9.3.1.4. </span>Other techniques<a class="headerlink" href="#other-techniques" title="Link to this heading">#</a></h4>
 <p>Neutron activation, i.e. (n,γ) reactions, can in principle be used for neutron detection but is more often used for materials assay, i.e. identifying the target nucleus by measuring the γ ray energy spectrum—see next section.</p>
 <p>The above detectors are all optimised for thermal neutron detection.  Fast neutrons are usually detected by moderating them down to thermal energies.  A very common detector of this type, widely used for neutron dosimetry, is the Bonner sphere, which consists of a small thermal-neutron detector surrounded by a sphere of hydrogen-rich material (usually paraffin or polyethylene) as a moderator.  Fast neutrons can also be detected directly by detecting the recoil of a light nucleus caused by elastic scattering of the neutron.  The materials of choice for this type of detector are hydrogen, deuterium or carbon, for exactly the same reasons that these are the materials of choice for moderators.</p>
 </section>
 </section>
 </section>
 <section id="neutron-activation-analysis">
-<h2><span class="section-number">9.4. </span>Neutron activation analysis<a class="headerlink" href="#neutron-activation-analysis" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">9.4. </span>Neutron activation analysis<a class="headerlink" href="#neutron-activation-analysis" title="Link to this heading">#</a></h2>
 <p>Neutron activation analysis involves bombarding a sample with neutrons (usually thermal neutrons, but epithermal and even fast neutrons can be used) and looking at the spectrum of the de-excitation γ rays from (n, γ) neutron capture reactions.  Since these map to the excited states of the compound nucleus, this can be used to identify the target nuclei present in the sample, and the relative intensities of the lines can be used to make a quantitative measurement of the sample composition.  To quote the US Geological Survey, “The major advantages of NAA are that: it is a multi-element technique capable of simultaneously determining up to about 70 elements in many materials; it is non-destructive and, therefore, does not suffer from the errors associated with yield determinations; it has very high sensitivities for most of the elements that can be determined by NAA—detection limits range from 0.03 ng to 4 μg; it is highly precise and accurate—overall errors of 2–5% relative standard deviation can be achieved for many elements;
 samples as small as a few micrograms can be analysed by NAA.”</p>
 <p>Neutron activation analysis can use prompt γ-rays produced by immediate de-excitation of very short-lived excited states, but it is more common to expose the sample first (usually by irradiating it in a research reactor) and observe the γ rays a short time later (where “short” can range from minutes to days).</p>
@@ -586,11 +556,11 @@ samples as small as a few micrograms can be analysed by NAA.”</p>
 <a class="reference internal image-reference" href="_images/image-119.png"><img alt="Diagram of a lunar regolith NAA data" src="_images/image-119.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.4 </span><span class="caption-text">Neutron activation analysis of a sample of lunar regolith returned by the Chinese Chang’E-5 mission. The sample was irradiated for 300 s in a 27 kW research reactor with a neutron fluence of 9.0 × 1011 cm<span class="math notranslate nohighlight">\(^{–2}\)</span>·s<span class="math notranslate nohighlight">\(^{–1}\)</span>, and was counted after a decay time of 17.25 minutes.
-From Yao et al., J. Am. Chem. Soc. 144 (2022) 5478–5484.</span><a class="headerlink" href="#regolith" title="Permalink to this image">#</a></p>
+From Yao et al., J. Am. Chem. Soc. 144 (2022) 5478–5484.</span><a class="headerlink" href="#regolith" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="summary">
-<h3><span class="section-number">9.4.1. </span>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">9.4.1. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
 <p>In this unit we discussed the physics of neutrons, which are disproportionately important in nuclear physics because they are exceptionally useful as probes of nuclear structure (since they are not affected by Coulomb repulsion) and because neutron interactions have important practical applications.</p>
 <ul class="simple">
 <li><p>The neutron was discovered by Chadwick in 1932, building on slightly earlier work by Curie and Joliot and by Bother and Becker.  The key insight was that a particle produced by bombarding various light nuclei with α particles produced something that was not electrically charged, but which carried momentum appropriate to a massive particle rather than a photon.  We now understand the neutron as a spin ½ baryon with quark content udd, mass 939.6 MeV/c2 and a mean lifetime of just under 15 minutes.</p></li>
@@ -635,7 +605,7 @@ From Yao et al., J. Am. Chem. Soc. 144 (2022) 5478–5484.</span><a class="heade
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -663,7 +633,9 @@ From Yao et al., J. Am. Chem. Soc. 144 (2022) 5478–5484.</span><a class="heade
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -720,7 +692,7 @@ From Yao et al., J. Am. Chem. Soc. 144 (2022) 5478–5484.</span><a class="heade
   <div class="footer-item">
     
 <p class="component-author">
-By Patrick Stowell, Susan Cartwright
+By Patrick Stowell, Liz Kneale, Susan Cartwright
 </p>
 
   </div>
@@ -754,8 +726,8 @@ By Patrick Stowell, Susan Cartwright
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
