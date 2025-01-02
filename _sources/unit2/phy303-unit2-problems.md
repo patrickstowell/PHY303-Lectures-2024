@@ -39,7 +39,7 @@ $$
 with $b=qR/\hbar$. This standard formula is derived in the Martin textbook. Under this approximation the form factor and the cross-section will be zero for a few values of b. The fact that we do not observe a vanishing cross section means that the uniform density approximation is not exact. We can, however, take the position of the first minimum in the cross section as an indication of where the form factor would go to zero if the distribution was perfectly uniform. The first zero of the form factor correspond to the value $b_{1} = 4.49$.
 
 
-### Step 1
+**Step 1**
 The momentum transfer in a collision can be related to the scattering angle using the formula above
 
 $$
@@ -53,7 +53,7 @@ qc=2×450~\textnormal{MeV}× \sin(12^{◦}) =187~\textnormal{MeV}.
 $$
 
 
-### Step 2
+**Step 2**
 The first zero in the form factor function corresponds to the value of $b = 4.49$, using the definition of b we have
 
 $$

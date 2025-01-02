@@ -77,12 +77,36 @@ V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
 ```
 
 **SHELL MODEL SIMPLE STATES**
+
 $$
 n_{\textnormal{states}} = 2(2l+1)
 $$
 
 
 **SPIN ORBIT COUPLING POTENTIAL OPERATOR**
+
 $$
 V=V(r) \hat{L} \cdot \hat{S}.
 $$
+
+
+## Terms
+
+The following represent the key terms you should be able to explain after reviewing this module.
+
+- SEMF, Binding Energy Equation, Binding Energy Curve
+- Nuclear Spin, Parity, Magnetic Moment, Nuclear Material
+- Collective Body, Energy Levels, Collective Body Model
+- Individual Particle Model, Symmetry Term in SEMF, Pairing Term in SEMF
+- Magic Number Nuclei, Concentric Shells in Shell Model
+- Nuclear Potential Well, Harmonic Oscillator
+- Nuclear Decay, Mirror Nuclei, Relative Abundance
+- Neutron Binding Energy, Neutron Capture Energy, Neutron Seperation Energy
+- Neutron Shielding, Pauli Blocking, Reduced Quadrupole Moment
+- Nuclear Excitation Energy
+- Ground State, First Excited State, Doubly Magic Nuclei
+- Double Closed Shell Nucleus, Decay Chain Sequences
+- Principal Radioactive Series, Decay Chain
+- Total Angular MOmentum, Nuclear Spin, Angular Momentum Substates
+- Spin-Orbit Correction, Spin Up, Spin Down, Degeneracy
+- Unpaired Nucleon, Parity, Parity Operator, Collective Models
