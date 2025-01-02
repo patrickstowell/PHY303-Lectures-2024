@@ -119,3 +119,15 @@ $$
 X = Ae^{-αL}
 \end{equation}
 ```
+
+
+## Terms
+
+- Nuclear Sseperation, Coulomb's Law, Coulomb Potential
+- Beta Decay, Three-body processss, mononergetic, neutrino, anti-neutrino
+- Daughter Nucleus, Weak Interaction, Positron Emission
+- Electron Capture, K or L Capture, Proton Excesss, Positron Annihilation
+- Possitron Emission Tomography, Decay Sequence
+- Energy LEvel Diagramme, Emnergetics, Fermi, Fermi's Golden Rule
+- Phase SPace Factor, Nuclear Matrix Element, Fermi THeory
+- Beta Decay Endpoint, Femri-Kurie Plot
