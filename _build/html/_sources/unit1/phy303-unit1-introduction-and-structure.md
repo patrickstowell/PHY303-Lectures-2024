@@ -228,6 +228,28 @@ For a worked example related to binding energies see : {ref}`unit1:problem:examp
 Since the neutrons and protons have different masses and properties, we expect that the binding energy for neutrons or protons to be very slightly different. These individual binding energies are commonly referred to as **Separation energies**. For example, the neutron separation energy for a Carbon-12 atom is calculated by taking the difference in binding energies between Carbon-12, and Carbon-11 (one less neutron). Similarly the proton separation energy for C-12 is calculated from the difference between C-12 and N-12.
 
 
+```{note}
+**Setting $ c = 1 $ in Nuclear Physics**
+
+In nuclear physics, it is common to set the speed of light ($ c $) equal to 1. This simplifies calculations by expressing mass, energy, and momentum in the same units, typically mega-electronvolts ($ \text{MeV} $). For example, rather than writing mass as $ \text{MeV}/c^2 $, it is simply expressed in $ \text{MeV} $.
+
+**Why This Works**
+If we consistently work in natural units, where $ c = 1 $ and $ \hbar = 1 $, it can make equations easier to manipulate without repeatedly including factors of $ c $ or $ \hbar $.
+
+**Example**
+The rest energy of a proton is $ m_p = 938 \, \text{MeV}/ c^2 $. Setting $ c = 1 $, we directly express the proton's mass as $ m_p = 938 \, \text{MeV} $, simplifying equations like:
+
+$$
+
+E^2 = p^2 + m^2 \quad \text{(instead of $ E^2 = (pc)^2 + (mc^2)^2 $)}.
+
+$$
+
+This convention streamlines calculations without sacrificing accuracy we just have to remember to use MeV/c$^{2}$ for mass and MeV/$c$ for momentum consistently.
+```
+
+
+
 Below in {numref}`binding-energy` is the second most important plot in nuclear physics. It is a plot of the Average Binding Energy per total number of nucleons ($A=Z+N$) for all nuclei. 
 
 
