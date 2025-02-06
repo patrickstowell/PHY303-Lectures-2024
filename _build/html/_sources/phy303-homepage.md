@@ -47,22 +47,19 @@ The module is assessed by two components, homeworks and the end-of-semester exam
 
 The full timetable of the assessments is available in the Assessment tab on blackboard.
 
-
 # Feedback
 
 Comments, suggestions, or required clarifications on the course lectures or these notes are always welcome.
 
-The general module feedback form can be found on the blackboard page [here](https://blackboardlink).
+The general module feedback form can be found on the blackboard page.
 
-There is a also form to raise questions on the jupyter notes specifically [here](https://googleforms).
-
-Alternatively, just send us an [email](mailto:p.stowell@sheffield.ac.uk) or pop by my office (E41, Hicks Building).
+Alternatively, just send us an [email](mailto:p.stowell@sheffield.ac.uk) or pop by my office (E41, Hicks Building). 
 
 
 
 ## Timetable
 
-The 2024/25 version of this course is scheduled on Wednesdays at 10-11AM (Location TBC) and Thursdays at 4-5PM (Location TBC).
+The 2024/25 version of this course is scheduled on Tuesdays and Wednesdays.
 An approximate timeline of the topics we will cover is as follows.
 
 
@@ -80,12 +77,12 @@ An approximate timeline of the topics we will cover is as follows.
 | 5 | 12/03/25 | 10:00-11:00 | LTTBC | Unit 5 | Excited States and Gamma Decay | Patrick 
 | 6 | 18/03/25 | 15:00-16:00 | LTTBC | Unit 6 | Alpha and Beta Decay | Liz 
 | 6 | 19/03/25 | 10:00-11:00 | LTTBC | Unit 6 | Alpha and Beta Decay | Liz 
-| 7 | 25/03/25 | 15:00-16:00 | LTTBC | Unit 7 | Nuclear Reactions | Patrick 
-| 7 | 26/03/25 | 10:00-11:00 | LTTBC | Unit 7 | Nuclear Reactions | Patrick  
-| 8 | 01/04/25 | 15:00-16:00 | LTTBC | Unit 8 | Compound Reactions | Patrick  
-| 8 | 02/04/25 | 10:00-11:00 | LTTBC | Unit 8 | Compound Reactions | Patrick  
-| 9 | 29/04/25 | 15:00-16:00 | LTTBC | Unit 9 | Neutron Physics | Patrick  
-| 9 | 30/04/25 | 10:00-11:00 | LTTBC | Unit 9 | Neutron Physics | Patrick  
+| 7 | 25/03/25 | 15:00-16:00 | LTTBC | Unit 7 | Nuclear Reactions | Patrick/Susan 
+| 7 | 26/03/25 | 10:00-11:00 | LTTBC | Unit 7 | Nuclear Reactions | Patrick/Susan  
+| 8 | 01/04/25 | 15:00-16:00 | LTTBC | Unit 8 | Compound Reactions | Patrick/Susan  
+| 8 | 02/04/25 | 10:00-11:00 | LTTBC | Unit 8 | Compound Reactions | Patrick/Susan  
+| 9 | 29/04/25 | 15:00-16:00 | LTTBC | Unit 9 | Neutron Physics | Patrick/Susan  
+| 9 | 30/04/25 | 10:00-11:00 | LTTBC | Unit 9 | Neutron Physics | Patrick/Susan  
 | 10 | 06/05/25 | 15:00-16:00 | LTTBC | Unit 10 | Nuclear Medicine | Jon  
 | 10 | 07/05/25 | 10:00-11:00 | LTTBC | Unit 10 | Nuclear Medicine | Jon  
 | 11 | 13/05/25 | 15:00-16:00 | LTTBC | Unit 11 | Nuclear Power | Liz 

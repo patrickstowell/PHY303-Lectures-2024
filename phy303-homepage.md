@@ -47,16 +47,13 @@ The module is assessed by two components, homeworks and the end-of-semester exam
 
 The full timetable of the assessments is available in the Assessment tab on blackboard.
 
-
 # Feedback
 
 Comments, suggestions, or required clarifications on the course lectures or these notes are always welcome.
 
-The general module feedback form can be found on the blackboard page [here](https://blackboardlink).
+The general module feedback form can be found on the blackboard page.
 
-There is a also form to raise questions on the jupyter notes specifically [here](https://googleforms).
-
-Alternatively, just send us an [email](mailto:p.stowell@sheffield.ac.uk) or pop by my office (E41, Hicks Building).
+Alternatively, just send us an [email](mailto:p.stowell@sheffield.ac.uk) or pop by my office (E41, Hicks Building). 
 
 
 
