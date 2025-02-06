@@ -1,5 +1,5 @@
 # Collective Models
-
+<!-- 
 ```{admonition} Quick Links
 :class: tip, dropdown
 - {ref}`unit4:problems`
@@ -11,7 +11,8 @@
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
   - TBC
   - TBC
-```
+``` 
+-->
 
 ### Introduction
 We saw in the previous unit that while the simple spherical shell model is capable of describing basic properties of nuclei like magic numbers, it fails to capture all features observed in the chart of all nuclei.

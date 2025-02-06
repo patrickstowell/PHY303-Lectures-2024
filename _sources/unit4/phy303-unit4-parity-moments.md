@@ -1,6 +1,6 @@
 # Nuclear Spin & Moments
 
-```{admonition} Quick Links
+<!-- ```{admonition} Quick Links
 :class: tip, dropdown
 - {ref}`unit4:problems`
 - {ref}`unit4:additionalproblems`
@@ -11,7 +11,8 @@
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
   - TBC
   - TBC
-```
+``` 
+-->
 
 ## Nuclear Properties
 Now that we have our shell model, which describes our observed magic numbers, we can start making predictions for other nuclear properties such as the Nuclear Spin, $I$. This quantity comes from the principle of summing up all the individual Total Angular Momentum numbers $j$ of all the nucleons, doing this separately for neutrons and protons.

@@ -2,13 +2,7 @@
 # Unit 7 : Worked Problems
 
 
-# Nuclear Reactions: Examples and Problems
-
----
-
-## Nuclear Reaction Notation
-
-### Example
+## Worked Example : Reaction Notation
 
 **Write out the following reactions in the form $ a + A \to B + b $:**
 
@@ -19,9 +13,8 @@
 5. $ ^{59}Co(d,2n+d)^{57}Co $
 6. $ ^{19}F(\alpha,n)^{22}Na $
 
----
-
-### Answer (Verbatim)
+```{admonition} Solution
+:class: note, dropdown
 
 This is a straightforward question. All that you have to remember is that anything before the comma inside the brackets is on the left-hand side, and anything after the comma is on the right-hand side.
 
@@ -36,25 +29,24 @@ This is a straightforward question. All that you have to remember is that anythi
 6. $ ^{19}F + \alpha \to ^{22}Na + n $  
    (LHS could be written as $ ^{19}F + ^{4}He $)
 
-*As an exercise, check that all of these reactions are properly balanced, i.e., that they conserve charge and number of nucleons.*
+*As an additional exercise, check that all of these reactions are properly balanced, i.e., that they conserve charge and number of nucleons.*
 
----
+```
 
-## Problems
+## Worked Example : p-p Chain 
 
-### Problem 1
-
-The three reactions that make up the pp chain in the Sun are:
+Write out the the three reactions that make up the pp chain in the Sun in nuclear physics notation:
 
 1. $ p + p \to d + e^+ + \nu_e $
 2. $ d + p \to ^{3}He + \gamma $
 3. $ ^{3}He + ^{3}He \to ^{4}He + 2p $
 
-**Write these out in nuclear physics notation.**
+```{admonition} Solution
+:class: note, dropdown
 
----
+```
 
-### Problem 2
+## Worked Example : Alpha Reactionss
 
 **If an $ (\alpha,n) $ reaction takes place on the following nuclei, what is the final nucleus in each case?**
 
@@ -62,9 +54,11 @@ The three reactions that make up the pp chain in the Sun are:
 2. $ ^{12}C $
 3. $ ^{63}Cu $
 
----
+```{admonition} Solution
+:class: note, dropdown
+```
 
-### Problem 3
+## Worked Example : Particle Physics Notation
 
 **Write out the following reactions in particle physics notation:**
 
@@ -73,14 +67,11 @@ The three reactions that make up the pp chain in the Sun are:
 3. $ ^{34}S(\gamma,p)^{33}P $
 
 
+```{admonition} Solution
+:class: note, dropdown
+```
 
-# Nuclear Reactions: Examples and Problems
-
----
-
-## Q-Values
-
-### Example
+## Worked Example : Q-Values
 
 **Calculate the Q-values for:**
 
@@ -88,15 +79,14 @@ The three reactions that make up the pp chain in the Sun are:
 2. $ ^{112}Cd(d,3n)^{111}In $
 3. $ ^{11}B(d,n)^{12}C $
 
----
-
-### Answer (Verbatim)
+```{admonition} Solution
+:class: note, dropdown
 
 (Note that tables of atomic masses can easily be found online. I used the NIST table for most of these, and Krane for isotopes not listed by NIST.)
 
 Tabulated atomic masses are for the neutral atom. To avoid any risk of mismatched electron numbers, the safest course is to subtract off $ Zm_e $, where $ Z $ is the atomic number of the isotope in question and $ m_e = 0.00054858 \, u $ is the electron mass. This will give you the nuclear mass.
 
-#### 1. $ ^{63}Cu(p,\alpha)^{60}Ni $
+**1. $ ^{63}Cu(p,\alpha)^{60}Ni $**
 
 - Mass of $ ^{63}Cu $: $ 62.929598 - 29m_e = 62.913689 \, u $
 - Mass of proton: $ 1.007276 \, u $
@@ -112,7 +102,7 @@ $$
 
 ---
 
-#### 2. $ ^{112}Cd(d,3n)^{111}In $
+**2. $ ^{112}Cd(d,3n)^{111}In $**
 
 - Mass of $ ^{112}Cd $: $ 111.902763 - 48m_e = 111.876431 \, u $
 - Mass of deuteron: $ 2.013553 \, u $
@@ -128,7 +118,7 @@ $$
 
 ---
 
-#### 3. $ ^{11}B(d,n)^{12}C $
+**3. $ ^{11}B(d,n)^{12}C $**
 
 - Mass of $ ^{11}B $: $ 11.009305 - 5m_e = 11.006562 \, u $
 - Mass of deuteron: $ 2.013553 \, u $
@@ -142,36 +132,16 @@ $$
 Q = 13.020115 - 13.005374 = 0.014741 \, u = 13.73 \, \text{MeV}
 $$
 
+```
 
 
-
-
-
-
-
-
-
-
-
-
-
-# Nuclear Reactions: Examples and Problems
-
----
-
-## Problems
-
-### Problem 4
+## Unworked Example : Additional Q-Values 
 
 **Calculate the Q-values for:**
 
 1. $ ^{63}Cu(p,n)^{63}Zn $
 2. $ ^{59}Co(d,2n+d)^{57}Co $
 3. $ ^{19}F(\alpha,n)^{22}Na $
-
----
-
-### Problem 5
 
 **Calculate the Q-values for:**
 
@@ -182,24 +152,23 @@ $$
 
 **If you took samples of these isotopes ($ ^{22}Na, ^{23}Na, ^{12}C, ^{13}C $) and irradiated them with thermal neutrons ($ \sim 0.025 \, \text{eV} $), which reactions would take place?**
 
----
 
-### Problem 6
+
+### Unworked Problem : Medical Isotope Reactions
 
 **The medical isotopes $ ^{32}P $ and $ ^{89}Sr $ are produced in reactors by $ (n,p) $ processes. In each case:**
 
 1. Identify the target nucleus.
 2. Estimate the minimum neutron energy required to initiate the reaction.
 
----
 
-### Additional Example: Types of Nuclear Reactions
+
+### Worked Example: Types of Nuclear Reactions
 
 **Two common reaction types are $ (d,p) $ and $ (\alpha,n) $. Which of these would you expect to go mainly through a direct interaction and which mainly via a compound nucleus? Justify your answer.**
 
----
-
-### Answer (Verbatim)
+```{admonition} Solution
+:class: note, dropdown
 
 1. You would expect the $ (d,p) $ reaction to be direct, and the $ (\alpha,n) $ to go through a compound nucleus.
 
@@ -209,17 +178,11 @@ $$
 
 4. We could test this reasoning by measuring the angular distribution of the proton and neutron. If the $ (d,p) $ reaction is dominated by a direct component as we expect, we should find that the proton angular distribution is forward peaked, i.e. it tends to be emitted at a small angle to the direction of the incoming deuteron. A compound-nucleus reaction, such as we believe to be responsible for $ (\alpha,n) $, should produce a fairly isotropic angular distribution (it may not be exactly isotropic, because of angular momentum effects, but it should not be forward peaked).
 
----
-
-Let me know if you need additional pages or formatting changes!
+```
 
 
+## Worked Example: Energy Loss in Elastic Scattering
 
-# Nuclear Reactions: Examples and Problems
-
----
-
-## Example: Energy Loss in Elastic Scattering
 
 **A neutron of kinetic energy $ E $ scatters elastically from a target atom at rest. Find the maximum energy lost by the neutron if the target is:**
 
@@ -227,9 +190,8 @@ Let me know if you need additional pages or formatting changes!
 2. $ ^{12}C $
 3. $ ^{238}U $
 
----
-
-### Answer (Verbatim)
+```{admonition} Solution
+:class: note, dropdown
 
 We did not cover reaction kinematics explicitly in the lectures because there is nothing new in it: it’s simply an application of first-year (or A level!) classical mechanics. However, it is obviously necessary to be able to do such calculations to interpret the results of nuclear reaction experiments. Recall that nuclear physics experiments tend to involve MeV energies, so unless the projectile is an electron we can safely treat it as non-relativistic.
 
@@ -267,24 +229,14 @@ To a reasonable approximation, we can take $ M = A m $, where $ A $ is the mass 
 
 The point to note here is that the neutron loses much more energy if it scatters off a target of similar mass (indeed, if it scatters off $ ^{1}H $, i.e. a proton, it can lose all its kinetic energy in one collision). This is important if you wish to moderate neutrons from MeV energies down to thermal energies, e.g., in a reactor: the process will be much more efficient if the neutrons scatter off some light nucleus (the ones commonly used are hydrogen (in the form of water), deuterium (as heavy water, $ D_2O $), and carbon). Scattering off the reactor’s uranium fuel will not have the desired effect.
 
----
+```
 
-Let me know if you need more details or other pages!
-
-
-# Nuclear Reactions: Examples and Problems
-
----
-
-## Problems
-
-### Problem 7
+## Unworked Problem : Thermal Neutrons
 
 **Thermal neutrons have energies of order $ 0.025 \, \text{eV} $. If a target is irradiated by such neutrons, are the resulting reactions likely to be direct or compound-nucleus? Explain your reasoning.**
 
----
 
-### Problem 8
+### Unworked Problem : Independence Hypothesis
 
 **A study of the independence hypothesis compares the reactions $ ^{46}Ti(\alpha, pn)^{48}V $, $ ^{34}S(^{16}O, pn)^{48}V $, and $ ^{28}Si(^{22}Ne, pn)^{48}V $:**
 
@@ -292,9 +244,9 @@ Let me know if you need more details or other pages!
 2. The cross section for $ ^{46}Ti(\alpha, pn)^{48}V $ peaks at an $ \alpha $-kinetic energy of $ 32 \, \text{MeV} $ (in the lab frame). At what $ ^{16}O $ and $ ^{22}Ne $ kinetic energies would you expect the other two cross sections to peak, based on your answer to part (a)?
 3. The magnitude of the cross section for $ ^{46}Ti(\alpha, pn)^{48}V $ is found to be much higher than for $ ^{34}S(^{16}O, pn)^{48}V $. Does this invalidate compound-nucleus theory? Explain your reasoning. (*Hint: consider the charges of the nuclei involved in the reactions.*)
 
----
 
-### Problem 9
+
+### Unworked Problem : Reaction Resonances
 
 **The diagram shows a resonance in the reaction $ ^{13}C(n, \gamma)^{14}C $:**
 
@@ -309,9 +261,9 @@ Let me know if you need more details or other pages!
 - $ n: 1.0086650 \, u $
 - $ 1 \, u = 931.502 \, \text{MeV/c}^2 $
 
----
 
-### Problem 10
+
+### Unworked Problem : Momentum Transfer
 
 **A $ (d, p) $ scattering experiment on a $ ^{40}Ca $ target (i.e. $ ^{40}Ca(d, p)^{41}Ca $) finds a peak in the proton energy spectrum at a proton energy of $ 10.29 \, \text{MeV} $, measured at an angle of $ 67.5^\circ $ (in the lab frame) to the initial deuteron direction. The energy of the deuteron beam is $ 7.00 \, \text{MeV} $:**
 
@@ -331,22 +283,8 @@ Let me know if you need more details or other pages!
 - Deuteron: $ 2.0135532 \, u $
 - Proton: $ 1.0072765 \, u $
 
----
 
-Let me know if you'd like further assistance with these problems or other pages!
-
-
-
-
-
-
-
-
-
-
-# Nuclear Physics - Worked Examples
-
-## Question 1: Resonance in Neutron Cross-Section of $ ^{63}_{29}Cu $
+## Workde Example : Resonance in Neutron Cross-Section of $ ^{63}_{29}Cu $
 
 The plot shows a resonance in the cross-section of neutrons incident on $ ^{63}_{29}Cu $. Calculate:
 
@@ -363,60 +301,9 @@ Atomic masses:
 
 Conversion: $ 1 u = 931.49 \, MeV $.
 
+```{admonition} Solution
+:class: note, dropdown
 
-## Question 2: Neutron-Induced Fission of $ ^{235}U $
-
-A possible reaction for the neutron-induced fission of $ ^{235}U $ is:
-
-
-$$
- ^{235}_{92}U + n \to ^{139}_{52}Te + ^{94}_{40}Zr + X 
- $$
-
-
-1. What is $ X $?
-2. How much energy is released in this process?
-3. Considering that $ ^{94}_{40}Zr $ is stable, but the stable isobar with $ A = 139 $ is $ ^{139}_{57}La $, how much additional energy is released by the decay of $ ^{139}_{52}Te $? If this takes place in a nuclear reactor, is this additional energy a useful contribution to the reactor's power output?
-4. Using the Semi-Empirical Mass Formula (SEMF), which isobar with $ A = 139 $ would you expect to be stable? If it is not $ ^{139}_{57}La $, explain the apparent discrepancy.
-
-Masses:
-- $ ^{235}U $: 235.04393 u
-- $ ^{139}Te $: 138.93473 u
-- $ ^{94}Zr $: 93.90632 u
-- $ ^{139}La $: 138.90635 u
-- $ n $: 1.00866 u
-- $ e^- $: 0.00055 u
-
-SEMF coefficients:
-- $ a_v = 15.5 \, MeV $
-- $ a_s = 16.8 \, MeV $
-- $ a_c = 0.72 \, MeV $
-- $ a_a = 23.0 \, MeV $.
-
----
-
-# Nuclear Physics - Worked Examples
-
----
-
-## Question 1: Resonance in Neutron Cross-Section of $ ^{63}_{29}Cu $
-
-The plot shows a resonance in the cross-section of neutrons incident on $ ^{63}_{29}Cu $. Calculate:
-
-1. The branching fraction of the (n,γ) reaction.
-2. The energy of the excited state.
-3. The lifetime of the excited state.
-
-Why is the line shape for (n, elastic) different from (n,γ)?
-
-Atomic masses:
-- $ ^{63}Cu $: 62.9295975 u
-- $ ^{64}Cu $: 63.9297642 u
-- $ n $: 1.0086649 u
-
-Conversion: $ 1 u = 931.49 \, MeV $.
-
-### Answer
 
 1. **Branching Fraction**: The branching fraction varies with energy. Using a reasonable approximation, the ratio of peak heights is 0.45.
 
@@ -431,9 +318,9 @@ Conversion: $ 1 u = 931.49 \, MeV $.
 
 4. **Line Shape Difference**: The elastic scattering cross-section is affected by interference between direct and compound-nucleus components, while (n,γ) must occur via a compound nucleus.
 
----
+```
 
-## Question 2: Neutron-Induced Fission of $ ^{235}U $
+## Worked Example: Neutron-Induced Fission of $ ^{235}U $
 
 A possible reaction for the neutron-induced fission of $ ^{235}U $ is:
 
@@ -462,7 +349,8 @@ SEMF coefficients:
 - $ a_c = 0.72 \, MeV $
 - $ a_a = 23.0 \, MeV $.
 
-### Answer
+```{admonition} Solution
+:class: note, dropdown
 
 1. **What is $ X $?**  
    The total $ A $ is 236, and the total $ Z $ is 92. Accounting for all protons and neutrons, $ X $ is **3 neutrons**.
@@ -479,9 +367,10 @@ SEMF coefficients:
 4. **Stable Isobar Prediction**:  
    Using SEMF, the isobar predicted is $ Z = 58.3 $. However, the shell model prefers $ Z = 57 $ because $ 139 - 57 = 82 $, a magic number.
 
----
+```
 
-## Question 3: Proton-Boron Fusion Reaction
+
+## Worked Example: Proton-Boron Fusion Reaction
 
 The reaction $ p + ^{11}B \to 3\alpha $ is sometimes considered for commercial fusion. Its advantages include all charged products and $ ^{11}B $ being stable and abundant (80% of natural boron). 
 
@@ -500,7 +389,8 @@ Relevant particle masses:
 - Tritium ($ t $): 3.0155007 u
 - Alpha particle ($ \alpha $): 4.0015062 u.
 
-### Answer
+```{admonition} Solution
+:class: note, dropdown
 
 1. **Q-Value**:  
    Using nuclear masses: $ Q = 11.0065622 + 1.0072765 - 3 \times 4.0015062 = 0.0093201 \, u = 8.68 \, MeV $.
@@ -515,9 +405,9 @@ Relevant particle masses:
 4. **Feasibility**:  
    The required temperature for $ p + ^{11}B $ fusion is about 10× higher than for d-t fusion, making it impractical for current commercial reactors.
 
----
+```
 
-## Question 4: $ ^{125}I $ Brachytherapy for Lung Cancer
+## Worked Example: $ ^{125}I $ Brachytherapy for Lung Cancer
 
 A clinical trial found that $ ^{125}I $ brachytherapy was more effective than conventional radiotherapy for treating inoperable lung cancer. $ ^{125}I $ decays by electron capture with a half-life of 59.4 days, emitting a 35.5 keV X-ray. 
 
@@ -532,7 +422,9 @@ Determine:
 
 State any assumptions made in the calculations.
 
-### Answer
+```{admonition} Solution
+:class: note, dropdown
+
 
 1. **Mass of Tumor**:  
    $ 312.7 \times 0.985 = 308 \, g = 0.308 \, kg $.
@@ -551,11 +443,4 @@ State any assumptions made in the calculations.
 5. **Activity**:  
    $ A = 7.67 \times 10^{15} \times \ln 2 / 5.13 \times 10^6 = 1.0 \, GBq $.
 
-
-
-
-
-
-
-
-
+```
