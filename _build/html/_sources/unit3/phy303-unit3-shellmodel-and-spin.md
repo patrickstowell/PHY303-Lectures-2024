@@ -1,5 +1,5 @@
 # Shell Model
-
+<!-- 
 ```{admonition} Quick Links
 :class: tip, dropdown
 - {ref}`unit3:problems`
@@ -10,7 +10,8 @@
 - {ref}`unit3:fullquiz`
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
   - Shell model. [Martin] Chapter 7.3
-```
+``` 
+-->
 
 ### Introduction
 

@@ -47,85 +47,85 @@ parts:
       - file: unit2/phy303-unit2-flashcards.ipynb
       - file: unit2/phy303-unit2-random-quiz.ipynb
       - file: unit2/phy303-unit2-full-quiz.ipynb
-    - file: unit3/phy303-unit3-review.md
-      sections: 
-      - file: unit3/phy303-unit3-problems.md
-      - file: unit3/phy303-unit3-additionalproblems.md
-      - file: unit3/phy303-unit3-terms.md
-      - file: unit3/phy303-unit3-flashcards.ipynb
-      - file: unit3/phy303-unit3-random-quiz.ipynb
-      - file: unit3/phy303-unit3-full-quiz.ipynb
-    - file: unit4/phy303-unit4-review.md
-      sections: 
-      - file: unit4/phy303-unit4-problems.md
-      - file: unit4/phy303-unit4-additionalproblems.md
-      - file: unit4/phy303-unit4-terms.md
-      - file: unit4/phy303-unit4-flashcards.ipynb
-      - file: unit4/phy303-unit4-random-quiz.ipynb
-      - file: unit4/phy303-unit4-full-quiz.ipynb
-    - file: unit5/phy303-unit5-review.md
-      sections: 
-      - file: unit5/phy303-unit5-problems.md
-      - file: unit5/phy303-unit5-additionalproblems.md
-      - file: unit5/phy303-unit5-terms.md
-      - file: unit5/phy303-unit5-flashcards.ipynb
-      - file: unit5/phy303-unit5-random-quiz.ipynb
-      - file: unit5/phy303-unit5-full-quiz.ipynb
-    - file: unit6/phy303-unit6-review.md
-      sections: 
-      - file: unit6/phy303-unit6-problems.md
-      - file: unit6/phy303-unit6-additionalproblems.md
-      - file: unit6/phy303-unit6-terms.md
-      - file: unit6/phy303-unit6-flashcards.ipynb
-      - file: unit6/phy303-unit6-random-quiz.ipynb
-      - file: unit6/phy303-unit6-full-quiz.ipynb
-    - file: unit7/phy303-unit7-review.md
-      sections: 
-      - file: unit7/phy303-unit7-problems.md
-      - file: unit7/phy303-unit7-additionalproblems.md
-      - file: unit7/phy303-unit7-terms.md
-      - file: unit7/phy303-unit7-flashcards.ipynb
-      - file: unit7/phy303-unit7-random-quiz.ipynb
-      - file: unit7/phy303-unit7-full-quiz.ipynb
-    - file: unit8/phy303-unit8-review.md
-      sections: 
-      - file: unit8/phy303-unit8-problems.md
-      - file: unit8/phy303-unit8-additionalproblems.md
-      - file: unit8/phy303-unit8-terms.md
-      - file: unit8/phy303-unit8-flashcards.ipynb
-      - file: unit8/phy303-unit8-random-quiz.ipynb
-      - file: unit8/phy303-unit8-full-quiz.ipynb
-    - file: unit9/phy303-unit9-review.md
-      sections: 
-      - file: unit9/phy303-unit9-problems.md
-      - file: unit9/phy303-unit9-additionalproblems.md
-      - file: unit9/phy303-unit9-terms.md
-      - file: unit9/phy303-unit9-flashcards.ipynb
-      - file: unit9/phy303-unit9-random-quiz.ipynb
-      - file: unit9/phy303-unit9-full-quiz.ipynb
-    - file: unit10/phy303-unit10-review.md
-      sections: 
-      - file: unit10/phy303-unit10-problems.md
-      - file: unit10/phy303-unit10-additionalproblems.md
-      - file: unit10/phy303-unit10-terms.md
-      - file: unit10/phy303-unit10-flashcards.ipynb
-      - file: unit10/phy303-unit10-random-quiz.ipynb
-      - file: unit10/phy303-unit10-full-quiz.ipynb
-    - file: unit11/phy303-unit11-review.md
-      sections: 
-      - file: unit11/phy303-unit11-problems.md
-      - file: unit11/phy303-unit11-additionalproblems.md
-      - file: unit11/phy303-unit11-terms.md
-      - file: unit11/phy303-unit11-flashcards.ipynb
-      - file: unit11/phy303-unit11-random-quiz.ipynb
-      - file: unit11/phy303-unit11-full-quiz.ipynb
+    # - file: unit3/phy303-unit3-review.md
+    #   sections: 
+    #   - file: unit3/phy303-unit3-problems.md
+    #   - file: unit3/phy303-unit3-additionalproblems.md
+    #   - file: unit3/phy303-unit3-terms.md
+    #   - file: unit3/phy303-unit3-flashcards.ipynb
+    #   - file: unit3/phy303-unit3-random-quiz.ipynb
+    #   - file: unit3/phy303-unit3-full-quiz.ipynb
+    # - file: unit4/phy303-unit4-review.md
+    #   sections: 
+    #   - file: unit4/phy303-unit4-problems.md
+    #   - file: unit4/phy303-unit4-additionalproblems.md
+    #   - file: unit4/phy303-unit4-terms.md
+    #   - file: unit4/phy303-unit4-flashcards.ipynb
+    #   - file: unit4/phy303-unit4-random-quiz.ipynb
+    #   - file: unit4/phy303-unit4-full-quiz.ipynb
+    # - file: unit5/phy303-unit5-review.md
+    #   sections: 
+    #   - file: unit5/phy303-unit5-problems.md
+    #   - file: unit5/phy303-unit5-additionalproblems.md
+    #   - file: unit5/phy303-unit5-terms.md
+    #   - file: unit5/phy303-unit5-flashcards.ipynb
+    #   - file: unit5/phy303-unit5-random-quiz.ipynb
+    #   - file: unit5/phy303-unit5-full-quiz.ipynb
+    # - file: unit6/phy303-unit6-review.md
+    #   sections: 
+    #   - file: unit6/phy303-unit6-problems.md
+    #   - file: unit6/phy303-unit6-additionalproblems.md
+    #   - file: unit6/phy303-unit6-terms.md
+    #   - file: unit6/phy303-unit6-flashcards.ipynb
+    #   - file: unit6/phy303-unit6-random-quiz.ipynb
+    #   - file: unit6/phy303-unit6-full-quiz.ipynb
+    # - file: unit7/phy303-unit7-review.md
+    #   sections: 
+    #   - file: unit7/phy303-unit7-problems.md
+    #   - file: unit7/phy303-unit7-additionalproblems.md
+    #   - file: unit7/phy303-unit7-terms.md
+    #   - file: unit7/phy303-unit7-flashcards.ipynb
+    #   - file: unit7/phy303-unit7-random-quiz.ipynb
+    #   - file: unit7/phy303-unit7-full-quiz.ipynb
+    # - file: unit8/phy303-unit8-review.md
+    #   sections: 
+    #   - file: unit8/phy303-unit8-problems.md
+    #   - file: unit8/phy303-unit8-additionalproblems.md
+    #   - file: unit8/phy303-unit8-terms.md
+    #   - file: unit8/phy303-unit8-flashcards.ipynb
+    #   - file: unit8/phy303-unit8-random-quiz.ipynb
+    #   - file: unit8/phy303-unit8-full-quiz.ipynb
+    # - file: unit9/phy303-unit9-review.md
+    #   sections: 
+    #   - file: unit9/phy303-unit9-problems.md
+    #   - file: unit9/phy303-unit9-additionalproblems.md
+    #   - file: unit9/phy303-unit9-terms.md
+    #   - file: unit9/phy303-unit9-flashcards.ipynb
+    #   - file: unit9/phy303-unit9-random-quiz.ipynb
+    #   - file: unit9/phy303-unit9-full-quiz.ipynb
+    # - file: unit10/phy303-unit10-review.md
+    #   sections: 
+    #   - file: unit10/phy303-unit10-problems.md
+    #   - file: unit10/phy303-unit10-additionalproblems.md
+    #   - file: unit10/phy303-unit10-terms.md
+    #   - file: unit10/phy303-unit10-flashcards.ipynb
+    #   - file: unit10/phy303-unit10-random-quiz.ipynb
+    #   - file: unit10/phy303-unit10-full-quiz.ipynb
+    # - file: unit11/phy303-unit11-review.md
+    #   sections: 
+    #   - file: unit11/phy303-unit11-problems.md
+    #   - file: unit11/phy303-unit11-additionalproblems.md
+    #   - file: unit11/phy303-unit11-terms.md
+    #   - file: unit11/phy303-unit11-flashcards.ipynb
+    #   - file: unit11/phy303-unit11-random-quiz.ipynb
+    #   - file: unit11/phy303-unit11-full-quiz.ipynb
 - caption: Interactive Visualizations
   numbered: False
   chapters:
     - file: visualisation/iaea-chart-of-nuclides.ipynb
       title: Chart of Nuclides
-    - file: visualisation/iaea-chart-of-binding.ipynb
-      title: Chart of Binding Energy
+    # - file: visualisation/iaea-chart-of-binding.ipynb
+      # title: Chart of Binding Energy
     - file: visualisation/iaea-chart-of-isotones.ipynb
       title: Isotone Curves
     - file: visualisation/iaea-chart-of-isotopes.ipynb

@@ -1,6 +1,6 @@
 (unit5:problems)=
 # Unit 5 : Worked Problems
-
+<!-- 
 (unit5:problem:example1)=
 #### Example 4.1 : Carbon Mass Calculation
 Given the mass of a carbon-12 atom is $12u$, estimate the binding energy of the carbon nucleus.
@@ -9,4 +9,4 @@ Given the mass of a carbon-12 atom is $12u$, estimate the binding energy of the 
 
 First we start with the mass of the proton, neutron, and electrons in the atomic mass units. Since the mass if that of a carbon-12 atom, we include the electrons in our 
 calculation.
-```
+``` -->

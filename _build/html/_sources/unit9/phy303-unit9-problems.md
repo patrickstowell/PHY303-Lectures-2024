@@ -2,31 +2,15 @@
 # Unit 9 : Worked Problems
 
 (unit9:problem:example1)=
-#### Example 4.1 : Carbon Mass Calculation
-Given the mass of a carbon-12 atom is $12u$, estimate the binding energy of the carbon nucleus.
-```{admonition} Solution
-:class: note, dropdown
-
-First we start with the mass of the proton, neutron, and electrons in the atomic mass units. Since the mass if that of a carbon-12 atom, we include the electrons in our 
-calculation.
-```
-
-
-
-
-# Unit 5A: Neutron Physics - Examples and Problems
-
----
-
-## Neutron Sources
-
-### Example
+## Worked Example : AmBe Sources
 
 **Calculate the energy of the $ \alpha $ particle emitted in the decay of $ ^{241}Am $. Hence calculate the total energy released when that $ \alpha $-particle collides with a stationary nucleus of $ ^{9}Be $. Compare this with the neutron energy spectrum in the notes, and comment.**
 
 ---
 
-### Answer (Verbatim)
+```{admonition} Solution
+:class: note, dropdown
+
 
 The $ \alpha $-decay is:
 $$
@@ -54,37 +38,31 @@ If we compare this with the AmBe neutron energy spectrum from the notes, we see 
 - Similarly, the neutrons may lose energy through scattering before they emerge from the AmBe source.
 - The neutron emission may leave the $ ^{9}Be $ nucleus in an excited state rather than the ground state.
 
----
+```
 
-## Problems
+### Unworked Problem : Neutron Sources
 
-### Problem 1
+The two common laboratory-scale (as opposed to national facility scale) neutron sources are AmBe (as discussed in the example) and d-t fusion generators. Compare and contrast these two source types.
 
-**The two common laboratory-scale (as opposed to national facility scale) neutron sources are AmBe (as discussed in the example) and d-t fusion generators. Compare and contrast these two source types.**
 
----
 
-### Problem 2
+### Unworked Problem : Reactor Spectra
 
-**There are two "reactor neutron" energy spectra shown in the lecture, one (from the IPEN/MB01 research reactor) on slide 7 and one (comparing reactor and spallation neutrons) on slide 8. They do not look the same. Both come from reputable sources, so we can reasonably assume that both are in some sense "right". What do you think causes the difference?**
+There are two "reactor neutron" energy spectra shown in the lecture, one (from the IPEN/MB01 research reactor) on slide 7 and one (comparing reactor and spallation neutrons) on slide 8. They do not look the same. Both come from reputable sources, so we can reasonably assume that both are in some sense "right". What do you think causes the difference?
 
----
 
-### Problem 3
+### Unworked Problem : 14 MeV Neutrons
 
-**Verify the statement in the notes that the energy of the neutrons emitted in the $ ^{3}H(d,n)^{4}He $ reaction is 14 MeV, stating any assumptions that you make.**
+Verify the statement in the notes that the energy of the neutrons emitted in the $ ^{3}H(d,n)^{4}He $ reaction is 14 MeV, stating any assumptions that you make.
 
----
 
-## Neutron Interactions
-
-### Example
-
+## Worked Example : Uranium Fission
 **Neutrons from uranium fission are emitted with typical energies of 2 MeV or so. In nuclear reactors, it is desirable to moderate these to thermal energies (0.025 eV), because thermal neutrons are much more efficient at inducing further fissions. If a reactor uses graphite ($ ^{12}C $) as a moderator, estimate how many times a neutron needs to scatter off a graphite nucleus in order to thermalize.**
 
----
 
-### Answer (Verbatim)
+```{admonition} Solution
+:class: note, dropdown
+
 
 This is elastic scattering, so $ Q = 0 $. We can assume non-relativistic speeds since $ K_n \ll m_n c^2 $ (where $ K_n $ is the initial neutron kinetic energy).
 
@@ -127,22 +105,20 @@ $$
 N = \frac{\ln(1.25 \times 10^{-8})}{\ln(0.86)} = 120.
 $$
 
----
+```
 
-## Problems
+## Unworked Problem : Alternative Yield
 
-### Problem 4
-
-**Repeat the above calculation for (i) $ ^{1}H $, (ii) $ ^{2}H $, and (iii) $ ^{238}U $, and comment on your results.**
+Repeat the above calculation for (i) $ ^{1}H $, (ii) $ ^{2}H $, and (iii) $ ^{238}U $, and comment on your results.
 
 ---
 
-### Problem 5
+## Unworked Problem : Excited States
 
-**In thermal neutron capture by $ ^{55}Mn $, the following $ \gamma $-ray energies (in MeV) are observed: 7.2703, 7.2438, 7.1597, 7.0578, 6.9287. Deduce the energies of the corresponding $ ^{56}Mn $ excited states.**
+In thermal neutron capture by $ ^{55}Mn $, the following $ \gamma $-ray energies (in MeV) are observed: 7.2703, 7.2438, 7.1597, 7.0578, 6.9287. Deduce the energies of the corresponding $ ^{56}Mn $ excited states.
 
 ---
 
-### Problem 6
+## Unworked Problem : He3 Detectors
 
-**Helium-3 gas proportional chambers are widely used as thermal neutron detectors. The reaction is $ ^{3}He(n,p)^{3}H $. What is the Q-value of this reaction? Estimate the energy of the produced proton, stating any assumptions that you make.**
+Helium-3 gas proportional chambers are widely used as thermal neutron detectors. The reaction is $ ^{3}He(n,p)^{3}H $. What is the Q-value of this reaction? Estimate the energy of the produced proton, stating any assumptions that you make.

@@ -1,5 +1,5 @@
 # Compound/Photon reactions
-
+<!-- 
 ```{admonition} Quick Links
 :class: tip, dropdown
 - {ref}`unit8:problems`
@@ -11,7 +11,8 @@
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
   - TBC
   - TBC
-```
+``` 
+-->
 
 ### Introduction
 

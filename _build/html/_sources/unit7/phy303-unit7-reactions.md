@@ -1,5 +1,5 @@
 # Nuclear Reactions
-
+<!-- 
 ```{admonition} Quick Links
 :class: tip, dropdown
 - {ref}`unit7:problems`
@@ -11,7 +11,8 @@
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
   - TBC
   - TBC
-```
+``` 
+-->
 
 ### Reaction Kinematics
 So far we have concentrated on the properties of individual nuclei. However, in order to determine those properties, we must make use of nuclear reactions. Indeed, in order to have nuclei to study, and to exist to study them in the first place, we must have nuclear reactions: nuclear reactions build up the elements in stars, and the results of nuclear reactions tell us about nuclear structure.
