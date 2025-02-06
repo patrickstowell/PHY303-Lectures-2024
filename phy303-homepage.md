@@ -62,7 +62,7 @@ Alternatively, just send us an [email](mailto:p.stowell@sheffield.ac.uk) or pop 
 
 ## Timetable
 
-The 2024/25 version of this course is scheduled on Wednesdays at 10-11AM (Location TBC) and Thursdays at 4-5PM (Location TBC).
+The 2024/25 version of this course is scheduled on Tuesdays and Wednesdays.
 An approximate timeline of the topics we will cover is as follows.
 
 
