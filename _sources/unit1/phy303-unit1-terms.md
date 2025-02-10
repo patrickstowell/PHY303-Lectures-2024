@@ -87,16 +87,17 @@ C=N_0-N=N_0(1-e^{-x/\lambda}).
 ```
 
 ## Terms
+For the following terms you should have a basic understanding of what they are for the course.
 - Nuclear Reactions, Radioactive Isotope, Half-Life, Geiger Counter
 - Electron Avalanche, Nuclear Material, Dark Energy, Dark Matter
 - Big Band Nucleosynthesis, Quarks, Leptons, Deuteron
-- Alpha, Beta, Gamma, Fission, Fusion, Alder Hall, ITER
+- Alpha, Beta, Gamma, Fission, Fusion, ITER
 - Marie Curie, Radium, Ion Beams, Boron Neutron Capture Therapy
 - Magnetic Resonance Imaging, Positron Emission Tomography
 - X-ray Imaging, Carbon Dating, Argon Dating, Dalton, Becquerel
 - Radium, Radon Gas, Natural Background, Gray, Sievert, Q-Value
-- Ununoctium, Line of Stability, Binding Energy, Nuclear Masss
-- Atomic Mass, Nucleons, Unified Mass Constant,Mass Deficit
+- Ununoctium, Line of Stability, Binding Energy, Nuclear Mass
+- Atomic Mass, Nucleons, Unified Mass Constant, Mass Deficit
 - Nuclear Internal Structure, Magnetic Moment, Fixed Target
 - Scattering Experiments, Interaction Cross-section
 - Cross-section Area, Fermis, Mean Free Path, Thin Target
