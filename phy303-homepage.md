@@ -20,7 +20,7 @@ The course is organised in to 11 units with a rough aim to cover one unit each w
 Note that some of the more complex units later in the course (e.g. reactions) may be taught over multiple weeks.
 
 ## Course Organisation
-The course consists of 5 units, each corresponding to about two weeks of learning. 
+The course consists of eleven units, each corresponding to about two weeks of learning. 
 There will be two lectures per week with the relevant materal released each week following the timetable above.
 The final week (week 12) will be dedicated to a revision of the material. 
 

@@ -29,7 +29,7 @@ $$
 B/A = 92.16~\textnormal{MeV} / 12 = 7.42~\textnormal{MeV/nucleon}\\
 $$
 
-**Additional Clarification (04/2024)** : A key thing to remember is that the electron mass does contribute if we are working in **atomic** mass values, whilst if we have been given 
+A key thing to remember is that the electron mass does contribute if we are working in **atomic** mass values, whilst if we have been given 
 a **nuclear** mass value it does not. For heavy mass nuclei including the electrons  has a smaller effect as the number of protons relative to neutrons drop. 
 
 Given that the mass of an electron is around $0.511~\textnormal{MeV/c}^{2}$ we can expect shifts in the total binding energy on the order of several MeV depending on the nuclei. 
@@ -87,7 +87,6 @@ reduce the dose rate to 1mSv/hr.
 
 ```{admonition} Solution
 :class: note, dropdown
-The Heisenberg principle states that 
 
 To calculte the thickness of lead first we need to know the attenuation rate of our gamma rays in the lead shielding. We can estimate this based on the cross-section and the 
 density of lead itself, $\rho$.

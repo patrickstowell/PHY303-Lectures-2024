@@ -88,7 +88,7 @@ Radiation in general is quantified in various units. For experimental physics th
 
 - The Sievert is a Gray multiplied by a dimensionless quantity $Q$ with value depending in the type of particle. $Q$ represents the different levels of damage that different particles can do to human cells. An alpha has a high $Q$ Value because it does more damage to tissue than say electrons of the same energy.
 
-Whilst a measurement in Becquerel's tells us how active a source is, the most important measure throughout applied nuclear physics is the Sievert. **A dose of one Sievert is lethal**. The allowed dose for workers in the UK is 20 millisieverts per year.
+Whilst a measurement in Becquerel's tells us how active a source is, the most important measure throughout applied nuclear physics is the Sievert. **A dose of one Sievert is lethal**. The allowed dose for workers in the UK is 20 millisieverts per year. This is governed by UK [IRR2017 regulations](https://www.hse.gov.uk/pubns/books/l121.htm).
 
 Here is a summary of various units used throughout the nuclear physics field:
 
@@ -136,7 +136,7 @@ Remember : Unstable nuclei want to head towards more stable states - **towards**
 ```
 
 
-The international atomic energy agency (IAEA) has gone to great lengths to catalogue information on nuclear physics and radioactive decays. They provide a full library of the properties of each known nuclei in this plot. A link to the IAEA's interactive nuclei viewer can be found [HERE](https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html).
+The international atomic energy agency (IAEA) has gone to great lengths to catalogue information on nuclear physics and radioactive decays. They provide a full library of the properties of each known nuclei in this plot. A link to the IAEA's interactive nuclei viewer can be found [here](https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html).
 
 
 ## Nuclear Decay 
