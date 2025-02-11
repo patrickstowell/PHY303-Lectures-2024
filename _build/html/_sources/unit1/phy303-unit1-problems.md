@@ -62,7 +62,7 @@ pc \approx \frac{200~\textnormal{MeV}~\textnormal{fm}}{2 \times 5~\textnormal{fm
 $$
 
 This 20 MeV momentum is considerable, however it is much smaller than the nucleons mass, which means that albeit fast, they will not be in the relativistic regime. Therefore the 
-moomentum can be written as 
+momentum can be written as 
 
 $$
 p = m v
