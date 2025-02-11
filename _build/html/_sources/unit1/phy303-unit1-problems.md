@@ -48,7 +48,7 @@ $$
 \Delta x \Delta p \geq \frac{\hbar}{2}
 $$
 
-in the case of a solid sphere we can emasure the nucleoonos position with an uncertainty similar to the nuclear radius, hence
+in the case of a solid sphere we can measure the nucleons position with an uncertainty similar to the nuclear radius, hence
 
 $$
 c\Delta p \approx \frac{\hbar c}{2\Delta x}

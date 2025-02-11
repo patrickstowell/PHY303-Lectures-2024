@@ -294,7 +294,7 @@ Given that Nuclei have mass and charge then there is obviously going to be a den
 \end{equation}
 ```
 
-where $m_{n}$ is mass of neutron. For charge a similar approach can be taken but we have to include the fact that neutrons are negative, and it is only every proton that contributes a single charge $e$ to the total charge $Q$ of the nucleus.
+where $m_{n}$ is mass of neutron. For charge a similar approach can be taken but we have to include the fact that neutrons have no charge, and it is only every proton that contributes a single charge $e$ to the total charge $Q$ of the nucleus.
 
 ```{math}
 :label: chargedensity
