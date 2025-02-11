@@ -385,13 +385,13 @@
 <p>The quiz below is a formative assessment of the topics in unit 1. Questions are randomly shuffled and only twenty are shown at any one time so refreshing the page can generate a new set of questions. These are <strong>not exam style questions</strong>, but should cover learning the basic understanding of terms used in the course.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="IKtNaMmKyMZW" data-shufflequestions="True"
+<div class="output text_html"><div id="ZJjhxjPWzQsW" data-shufflequestions="True"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="20"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#IKtNaMmKyMZW {
+#ZJjhxjPWzQsW {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -592,7 +592,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsIKtNaMmKyMZW=[
+</style></div><script type="application/javascript">var questionsZJjhxjPWzQsW=[
     {
         "question": "What unit definition is one decay per second of a radioactive material?",
         "type": "multiple_choice",
@@ -927,7 +927,7 @@
             {
                 "answer": "Elemental symbol",
                 "correct": false,
-                "feedback": "Incorrect. The elemental symbol refers to the chemical element, not the number of protons."
+                "feedback": "Incorrect. The elemental symbol refers to the chemical element, not the number of protons, but it can be used to look up the number."
             }
         ]
     },
@@ -1312,7 +1312,7 @@
             {
                 "answer": "It emits an electron and turns into a neutron",
                 "correct": false,
-                "feedback": "Incorrect. Emitting an electron and turning into a neutron describes beta decay, not electron capture."
+                "feedback": "Incorrect. Emitting an electron and a neutron turning into a proton describes beta decay, not electron capture."
             },
             {
                 "answer": "It remains unchanged",
@@ -1353,14 +1353,14 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "Because binding energy affects the total mass of the nucleus",
+                "answer": "Because binding energy affects the total mass per nucleus",
                 "correct": true,
                 "feedback": "Correct. The binding energy of a nucleus means that the total mass of the nucleus is less than the sum of the individual nucleon masses."
             },
             {
                 "answer": "Because nucleons change their masses inside the nucleus",
                 "correct": false,
-                "feedback": "Incorrect. Nucleons do not change their intrinsic masses inside the nucleus; the mass difference is due to binding energy."
+                "feedback": "Incorrect. Nucleons do not change their intrinsic masses inside the nucleus; the mass difference is due to an overall change in nuclear mass due to binding energy."
             },
             {
                 "answer": "Because nucleons lose mass due to relativistic effects",
@@ -1370,7 +1370,7 @@
             {
                 "answer": "Because electrons contribute significantly to nuclear mass",
                 "correct": false,
-                "feedback": "Incorrect. Electrons have negligible mass compared to nucleons and do not significantly affect nuclear mass calculations."
+                "feedback": "Incorrect. The electron masses make up a small fraction of total atomic mass. Nuclear mass values are typically without electrons included."
             }
         ]
     },
@@ -1412,7 +1412,7 @@
             {
                 "answer": "Because nucleons lose mass when they bind together",
                 "correct": false,
-                "feedback": "Incorrect. Nucleons do not lose mass; the mass difference is due to the binding energy."
+                "feedback": "Incorrect. Nucleons do not lose mass; the mass difference is due to a total nucleus binding energy."
             },
             {
                 "answer": "Because electrons contribute to the mass deficit",
@@ -1628,9 +1628,9 @@
                 "feedback": "Incorrect. A neutron is composed of three quarks: up, down, down."
             },
             {
-                "answer": "It is composed of three electrons",
+                "answer": "It is composed of three quarks: up, up, down",
                 "correct": false,
-                "feedback": "Incorrect. Neutrons are not composed of electrons; they are composed of quarks."
+                "feedback": "Incorrect. This is the composition of a proton."
             }
         ]
     },
@@ -1765,7 +1765,7 @@
         ]
     },
     {
-        "question": "What is the purpose of scattering experiments in nuclear physics?",
+        "question": "What is the common purpose of scattering experiments in nuclear physics?",
         "type": "multiple_choice",
         "answers": [
             {
@@ -1813,32 +1813,6 @@
                 "answer": "The charge of the probing beam of particles",
                 "correct": false,
                 "feedback": "Incorrect. The de Broglie wavelength is related to the momentum, not the charge."
-            }
-        ]
-    },
-    {
-        "question": "What is the purpose of scattering experiments in nuclear physics?",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "To determine the size, charge, and matter distribution of nuclei",
-                "correct": true,
-                "feedback": "Correct. Scattering experiments help physicists understand the size, charge, and matter distribution of nuclei."
-            },
-            {
-                "answer": "To measure the speed of light in different media",
-                "correct": false,
-                "feedback": "Incorrect. Scattering experiments are used to study nuclei, not the speed of light."
-            },
-            {
-                "answer": "To create new elements",
-                "correct": false,
-                "feedback": "Incorrect. Scattering experiments aim to study existing nuclei, not create new elements."
-            },
-            {
-                "answer": "To measure gravitational waves",
-                "correct": false,
-                "feedback": "Incorrect. Scattering experiments are not used to measure gravitational waves."
             }
         ]
     },
@@ -2701,8 +2675,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("IKtNaMmKyMZW")) {
-            show_questions(questionsIKtNaMmKyMZW,  IKtNaMmKyMZW); 
+          if(document.getElementById("ZJjhxjPWzQsW")) {
+            show_questions(questionsZJjhxjPWzQsW,  ZJjhxjPWzQsW); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2711,8 +2685,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("IKtNaMmKyMZW");
-        // console.log(document.getElementById("IKtNaMmKyMZW"));
+        //console.log("ZJjhxjPWzQsW");
+        // console.log(document.getElementById("ZJjhxjPWzQsW"));
 
         try_show();
         }

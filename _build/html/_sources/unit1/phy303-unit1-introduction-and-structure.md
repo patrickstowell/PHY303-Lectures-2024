@@ -203,7 +203,7 @@ This nuclear mass deficit can be calculated as the difference between the nuclea
 ```{math}
 :label: nuclearmassdeficit
 \begin{equation}
-\Delta M(A,Z) = M(A,Z) - ZM_{p} + NM_{n}.
+\Delta M(A,Z) = M(A,Z) - (ZM_{p} + NM_{n}).
 \end{equation}
 ```
 
