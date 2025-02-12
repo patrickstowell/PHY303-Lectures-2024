@@ -94,7 +94,7 @@ density of lead itself, $\rho$.
 Given the density, $\rho=11.36 \textnormal{g/cm}^{3}$, and the mass of a lead atom to be $m_{Pb} = 207.293u$ we can estimate $n$ as 
 
 $$
-n = \frac{11.36 \textnormal{g/cm}^{3}}{207.293u \times 1.66056\times 10^{-24} \textnormal{g/u} } = 3.3 \times 10 ^{23} \textnormal{cm}^{-3}
+n = \frac{11.36 \textnormal{g/cm}^{3}}{207.293u \times 1.66056\times 10^{-24} \textnormal{g/u} } = 3.3 \times 10 ^{22} \textnormal{cm}^{-3}
 $$
 
 This leads to a mean free path of
@@ -118,11 +118,11 @@ $$
 Now if we consider our known attenuation and drop required we get
 
 $$
-x = -0.704 ~\textnormal{ln} \left( \frac{1~\textnormal{Smv/hr}}{1.073~\textnormal{Sv/hr}}\right) = 4.91~\textnormal{cm}
+x = -0.704 ~\textnormal{ln} \left( \frac{1~\textnormal{mSv/hr}}{1.073~\textnormal{Sv/hr}}\right) = 4.91~\textnormal{cm}
 $$
 
 Note that this is an estimate based on just the 662keV peak, and neglects the $r^{2}$ fall-off for point radioactive sources, but it highlights how the cross-section has an effect 
-on the result. If the cross-section's for gamma radiation were higher, we would expect much thicker shielding requirements.
+on the result. If the cross-section's for gamma radiation were lower, we would expect much thicker shielding requirements.
 
 ```
 

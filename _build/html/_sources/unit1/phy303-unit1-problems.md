@@ -122,7 +122,7 @@ x = -0.704 ~\textnormal{ln} \left( \frac{1~\textnormal{Smv/hr}}{1.073~\textnorma
 $$
 
 Note that this is an estimate based on just the 662keV peak, and neglects the $r^{2}$ fall-off for point radioactive sources, but it highlights how the cross-section has an effect 
-on the result. If the cross-section's for gamma radiation were higher, we would expect much thicker shielding requirements.
+on the result. If the cross-section's for gamma radiation were lower, we would expect much thicker shielding requirements.
 
 ```
 
