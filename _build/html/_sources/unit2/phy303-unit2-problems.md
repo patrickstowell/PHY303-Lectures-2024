@@ -30,7 +30,7 @@ $$
 qc = 2pc \sin(\theta/2)
 $$
 
-The shape of the nucleus is approximated as a solid sphere with uniform density. Using thi approximation the form factor $F(q)$ is written as
+The shape of the nucleus is approximated as a solid sphere with uniform density. Using this approximation the form factor $F(q)$ is written as
 
 $$
 F(q) = 3(\sin b - b\cos b) b^{-3}
@@ -71,7 +71,7 @@ which is remarkably close.
 
 (unit2:problem:example2)=
 ### Example 2.2 : Nuclear Charge Distributions
-Considering measurements of the charge distrtibution of nucleons for several nuclei shown in the lecture notes, determine an estimate of the mean nucleon denisty in nuclei.
+Considering measurements of the charge distribution of nucleons for several nuclei shown in the lecture notes, determine an estimate of the mean nucleon density in nuclei.
 
 ```{admonition} Solution
 :class: note, dropdown
@@ -96,11 +96,11 @@ $$
 For 208-Pb we have $ρ_{ch} ≈ 0.06~e$ which gives
 
 $$
-\rho_{nucl} = \frac{208}{82e} \times 0.08~e = 0.15~ \textnormal{nucleon/fm}^{3}
+\rho_{nucl} = \frac{208}{82e} \times 0.06~e = 0.15~ \textnormal{nucleon/fm}^{3}
 $$
 
 
-The average value is roughly constant throughtout the $A$ spectrum and is
+The average value is roughly constant throughout the $A$ spectrum and is
 
 $$
 \rho_{nucl} = 0.17~\textnormal{nucleon/fm}^{3}
@@ -109,11 +109,11 @@ $$
 
 (unit2:problem:example3)=
 ### Example 2.3 : Nuclear Radius
-Based on the idea of a hard nuclear cutoff derive an expression that relates the radius of the nucleus with the total nucle number
+Based on the idea of a hard nuclear cutoff derive an expression that relates the radius of the nucleus with the total nucleon number
 
 ```{admonition} Solution
 :class: note, dropdown
-The graph presented in the lecture of the root-mean-square (RMS) of the nuclear matter as a function of the atomic mass number $A^{1/3}$ shows a fit to the data gives a parametrisation
+The graph presented in the lecture of the root-mean-square (RMS) of the nuclear matter as a function of the atomic mass number $A^{1/3}$ shows a fit to the data gives a parameterization
 
 $$
 \sqrt{<r>}=0.94 A^{1/3} \textnormal{fm}
@@ -122,13 +122,13 @@ $$
 Under the assumption that the nucleus is a sphere or radius $R$ and uniform density, the density would be
 
 $$
-ρM(r)=M \frac{3}{4\pi R^{3}}~~\textnormal{for}~~r<R \\ 
+ρ(r)=M \frac{3}{4\pi R^{3}}~~\textnormal{for}~~r<R \\ 
 $$
 
 and
 
 $$
-ρM(r)=0~~\textnormal{for}~~r>R
+ρ(r)=0~~\textnormal{for}~~r>R
 $$
 
 The quantity $< r^{2} >$ is calculated as
@@ -159,7 +159,7 @@ Consider the nuclei 15-O and 15-N. Evaluate the difference in mass energy betwee
 :class: note, dropdown
 We note that for each nuclei we have $A=15$, it is just the number of protons or neutrons that are swapped as Oxygen has 8 protons, and Nitrogen has 7. These are therefore **Mirror Nuclei**.
 
-If we want to evlauate the difference in mass energy between the two nuclei we can simply subtract the mass calculated for each one using the SEMF. Before we do this however it's worth evaluating which termss in the liquid drop model for binding energy actually contribute. The volume term and surface tension term only depend on $A$ so both these terms cancel out if we take the difference as $A$ is constant. Both nuclei are also Even-Odd (as $A$ is odd) so that means the delta term also goes to zero. Therefore only the Assymmetry and Coulomb correction term contribute. 
+If we want to evaluate the difference in mass energy between the two nuclei we can simply subtract the mass calculated for each one using the SEMF. Before we do this however it's worth evaluating which terms in the liquid drop model for binding energy actually contribute. The volume term and surface tension term only depend on $A$ so both these terms cancel out if we take the difference as $A$ is constant. Both nuclei are also Even-Odd (as $A$ is odd) so that means the delta term also goes to zero. Therefore only the Asymmetry and Coulomb correction term contribute. 
 
 We can take this one step further because a quick evaluation of the Asymmetry term gives us 
 - 15-O : $a_{a} (15 - 2 \times 8)^{2} = a_{a} (-1)^{2} = a_{a}$
@@ -192,7 +192,7 @@ $$
 \Delta M = \left[ -1.29 \textnormal{MeV} \right] + \left[  4.08 \textnormal{MeV} \right] = 2.79 \textnormal{MeV}
 $$
 
-So we find that actually there is an increase in overall mass energy (so a lower binding energy) for oxygen compared to nitrogen despite the fact that there are more protons (which are lighter than neutrons). This is because our Coulomb repulsion term contributes much more than the masss difference of a proton and neutron reducing the overall stability of the nucleus as we add protons.
+So we find that actually there is an increase in overall mass energy (so a lower binding energy) for oxygen compared to nitrogen despite the fact that there are more protons (which are lighter than neutrons). This is because our Coulomb repulsion term contributes much more than the mass difference of a proton and neutron reducing the overall stability of the nucleus as we add protons.
 
 Note that its also possible to do this assuming the $Z^{2}$ instead of $Z(Z-1)$ Coulomb term that is sometimes considered in the literature instead. If you do so you'll end up with a different energy (by around 7%) but the conclusions are still the same.
 ```

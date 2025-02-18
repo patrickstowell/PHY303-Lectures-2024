@@ -133,8 +133,8 @@ B_{A} = -a_{a} (A-2Z)^{2}A^{-1}
 - Saxon-Woods, Form Factor, Surface Thickness, Liquid Drop Model
 - Form Factor, Surface Thickness, Liquid Drop Model
 - Binding Energy Curve, Surface Tension Energy, Volume Term
-- Surface Term, Coulomb Term, Asymetry and Pairing Term
-- Charge Density, Asymetric Wave Functions, Spin-up, Spin-down
+- Surface Term, Coulomb Term, Asymmetry and Pairing Term
+- Charge Density, Asymmetric Wave Functions, Spin-up, Spin-down
 - Odd-Odd, Odd-Even, Even-Even Nuclei, Infinite 3D Potential Well
 - Parent, Daughter Nuclei, Semi-Empirical Mass Formula
 - Nuclear Spin, Parity, Magnetic Moment
