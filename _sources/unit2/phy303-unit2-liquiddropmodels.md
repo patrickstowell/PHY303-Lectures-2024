@@ -86,7 +86,7 @@ Saxon Woods charge distribution shape vs Distance from the center of the nucleus
 ```{math}
 :label: chargedist
 \begin{equation}
-\rho_{\textnormal{charge}}^{0} = \frac{\rho^0_{\textnormal{charge}}}{1+\textnormal{exp}[\frac{r-a}{d}]}
+\rho_{\textnormal{charge}}(r) = \frac{\rho^0_{\textnormal{charge}}}{1+\textnormal{exp}[\frac{r-a}{d}]}
 \end{equation}
 ```
 
@@ -107,7 +107,7 @@ Saxon Woods charge distribution shape vs Distance from the center of the nucleus
 
 - $a = 1.2 A^{1/3} ~\textnormal{fm}~~\textnormal{(radius)}$ 
 - $d = 0.75~\textnormal{fm}~\textnormal{ (skin thickness)}$ 
-- $\rho^{0} = 0.17~e~\textnormal{fm}^{-3}~\textnormal{ (average charge density)}$
+- $\rho^{0} = 0.17~\textnormal{nucleons fm}^{-3}~\textnormal{ (average charge density)}$
 
   <p> <br> </p>
 
