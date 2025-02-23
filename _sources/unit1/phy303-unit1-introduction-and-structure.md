@@ -418,6 +418,18 @@ Scattering angle cone used to define $\Delta \Omega$ in beam scattering experime
 
 Here we have considered a differential cross-section in terms of a solid angle, but in practice this can be given in terms of any kinematic variables derived from the interaction. For example the differential cross-section for electron scattering calculated in terms of the beam energy may be expressed as $d\sigma/dE$, and a double differential cross-section in terms of beam energy and scattering angle may be expressed as $d^{2}\sigma/(dEd\theta)$.
 
+**Addition Notation Clarification (18/02/2024)**
+Below is an additional example of different notations used for reaction cross-sections when scattering a beam of particles, $a$, into a target $X$, resulting in a secondary observed beam of scattered particles, $b$, and the production of a new radio-isotope $Y$.
+
+| Cross Sections       | Symbol          | Technique                                            | Possible Application                                  |
+|----------------------|----------------|------------------------------------------------------|------------------------------------------------------|
+| Total               | σₜ              | Attenuation of beam                                 | Shielding                                           |
+| Reaction            | σ               | Integrate over all angles and all energies of b    | Production of radioisotope Y in a nuclear reaction |
+| Differential (Angular) | dσ/dΩ        | Observe b at (θ, φ) but integrate over all energies | Formation of beam of b particles in a certain direction (or recoil of Y in a certain direction) |
+| Differential (Energy) | dσ/dE         | Don’t observe b, but observe excitation of Y by subsequent γ emission | Study of decay of excited states of Y               |
+| Doubly differential | d²σ/dEₓ dΩ     | Observe b at (θ, φ) at a specific energy            | Information on excited states of Y by angular distribution of b |
+
+
 
 
 

@@ -1,5 +1,5 @@
 # Shell Model
-<!-- 
+
 ```{admonition} Quick Links
 :class: tip, dropdown
 - {ref}`unit3:problems`
@@ -10,8 +10,10 @@
 - {ref}`unit3:fullquiz`
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
   - Shell model. [Martin] Chapter 7.3
+  - Nuclear properties [Krane] Chapter 5
+  - Summary of models [Martin] Chapter 7.5
 ``` 
--->
+
 
 ### Introduction
 
@@ -61,7 +63,7 @@ Ratio of the predictions of the liquid drop model against observations as a func
 
 
 ##### Odd-Even Parabolas
-A closer look at the chart of Nuclides shows that nuclei with N and Z away from the major numbers are more likely to be unstable. If we plot nuclei that lie on a line of a constant A, for example A=121 we find that odd and even A nuclei sit on two seperate parabola. Whilst our delta term in the SEMF can account for some of this it cannot account for the difference across all nuclei.
+A closer look at the chart of Nuclides shows that nuclei with N and Z away from the major numbers are more likely to be unstable. If we plot nuclei that lie on a line of a constant A, for example A=121 we find that odd and even A nuclei sit on two separate parabola. Whilst our delta term in the SEMF can account for some of this it cannot account for the difference across all nuclei.
 
 :::{figure-md} bindingforisobars
 <img src='figure-unit3-isobar-binding.png' width="70%" alt="Binding curves for different isobars showing drop to point of stability">
@@ -259,7 +261,7 @@ In the shell model now since we are assuming spherical symmetry in our potential
 We will avoid fully deriving this for now as the focus on this course is the implications that a full QM approach has on the behavior of our nucleons.
 
 
-A major point is to realise that although nuclei are composed of nucleons they largely act as an isolated single entity. In particular they have a well defined Total Angular Momentum called Nuclear Spin, $I$. Nucleons themselves also have Angular Momentum ($l$) and Intrinsic Spin ($s$). The vital point in our QM shell model is that the $l$ and $s$ of all the nucleons together determines the Total Nuclear Spin $I$ of a nucleus.
+A major point is to realize that although nuclei are composed of nucleons they largely act as an isolated single entity. In particular they have a well defined Total Angular Momentum called Nuclear Spin, $I$. Nucleons themselves also have Angular Momentum ($l$) and Intrinsic Spin ($s$). The vital point in our QM shell model is that the $l$ and $s$ of all the nucleons together determines the Total Nuclear Spin $I$ of a nucleus.
 
 The result of treating the nucleus in this way we will see is the ability to now predict
 - Nuclear Magic Numbers
@@ -371,7 +373,7 @@ $$
 n_{\textnormal{states}} = 2(2l+1)
 $$
 
-It is importtant to remember when calculating these state that protons and neutrons are counted seperately here. So for intance the $l=2$ level can have up to 10 protons **AND** 10 neutrons inside the shell.
+It is important to remember when calculating these state that protons and neutrons are counted separately here. So for instance the $l=2$ level can have up to 10 protons **AND** 10 neutrons inside the shell.
 
 ### Nucleon and Level Notation
 

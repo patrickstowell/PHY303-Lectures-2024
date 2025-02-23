@@ -2,181 +2,122 @@
 # Unit 4 : Worked Problems
 
 (unit4:problem:example1)=
-#### Example 4.1 : Carbon Mass Calculation
-Given the mass of a carbon-12 atom is $12u$, estimate the binding energy of the carbon nucleus.
-```{admonition} Solution
-:class: note, dropdown
+## 4.1 Example. Spin and parity of ground states
 
-First we start with the mass of the proton, neutron, and electrons in the atomic mass units. Since the mass if that of a carbon-12 atom, we include the electrons in our 
-calculation.
-```
+Evaluate the spin and parity of the ground states of the following isotopes:  
+$ ^{16}_{8}O $, $ ^{17}_{8}O $, $ ^{15}_{8}O $, $ ^{33}_{16}S $, $ ^{39}_{20}Ca $, $ ^{14}_{7}N $  
 
+We use the energy levels diagram to fill the levels independently for protons and neutrons (example 6).
 
-# PHY303: Nuclear Physics - Examples from Unit 2
+### 4.1.1 **Oxygen** $ ^{16}_{8}O $
+
+This isotope of oxygen has 8 protons ($ Z = 8 $) and 8 neutrons ($ N = 8 $). Following the pairing hypothesis, the total spin of the nucleus is $ I = 0 $ and the parity is $ + $,  
+e.g. this is $ 0^+ $.
 
 ---
 
-## 2.1 Example: Binding energy of $ ^{48}Ca $
+### 4.1.2 **Oxygen** $ ^{17}_{8}O $
 
-In this example, we evaluate the binding energy of $ ^{48}Ca $ using the SEMF and compare with the measured value.
+This isotope of oxygen has 8 protons ($ Z = 8 $) and 9 neutrons ($ N = 9 $). Following the pairing hypothesis, the protons will pair up and have a total spin of 0 and a positive parity.  
+Therefore, we only need to consider the spin and parity of the unpaired neutron to identify the spin and parity of the nucleus.
 
-(The mass of $ ^{48}Ca $ is $ 47.9525229 \, u $.)
+The shell configuration of the neutrons is:
 
-$ ^{48}Ca $ is made of 20 protons and 28 neutrons and is an isotope with a very long lifetime of about $ 6.4 \times 10^{19} $ years. It is unusually neutron-rich for such a light nucleus. It is a double-magic isotope, having a magic number of both protons and neutrons and hence a large binding energy.
-
-The measured binding energy is given by the mass difference between its constituents and the mass of the isotope:
 $$
-B(48, 20) = 20 \times (m_p + m_e) + 28 \times m_n - M(48, 20) = 416.00 \, \text{MeV}.
+(1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^2 (1d_{5/2})^1
 $$
 
-The SEMF can be used to calculate the binding energy value as $ 413.28 \, \text{MeV} $. Therefore, the SEMF underestimates the binding energy by $ 2.72 \, \text{MeV} $. For example, the nucleus is more "bound" than the model would tell us due to the fact that all the shells are complete.
-
-We can repeat the same calculation for other calcium isotopes and plot the difference between the measured (experimental) value of the binding energy and the value calculated using the SEMF as a function of the atomic number $ A $. We observe how the double-magic number affects the results.
-
-**Figure: Calcium Binding Energy Measured - SEMF** (See the graph on page 2 of the document.)
+Therefore, the unpaired neutron has spin $ 5/2 $ and the parity $ (-1)^2 = +1 $ (the $ d $ shell corresponds to $ \ell = 2 $).  
+E.g. this is $ (5/2)^+ $.
 
 ---
 
-## 2.2 Example: Spectroscopic Notation
+### 4.1.3 **Oxygen** $ ^{15}_{8}O $
 
-In nuclear physics, we use the same spectroscopic notation used in atomic physics.
+This isotope of oxygen has 8 protons ($ Z = 8 $) and 7 neutrons ($ N = 7 $). Following the pairing hypothesis, the protons will pair up and have a total spin of 0 and a positive parity.  
+Therefore, we only need to consider the spin and parity of the unpaired neutron to identify the spin and parity of the nucleus.
 
-In atomic physics, electrons are placed in shells identified by:
+The shell configuration of the neutrons is:
 
-| Quantum Number | Symbol                   | Value                                  |
-|----------------|--------------------------|----------------------------------------|
-| Principal      | $ n $                 | Any integer $ n > 0 $               |
-| Orbital        | $ \ell $              | Integer up to $ n-1 $ (atomic physics) |
-| Magnetic       | $ m_\ell $            | Integer from $ -\ell $ to $ \ell $ |
-| Spin           | $ m_s $               | $ \pm \frac{1}{2} $                 |
-
-In the spectroscopic notation, rather than the number $ \ell $, we use a "name" for the orbital corresponding to the orbital quantum number, as shown below:
-
-| Orbital | $ \ell $ | $ m $ Values          |
-|---------|------------|-------------------------|
-| $ s $ | 0          | 0                       |
-| $ p $ | 1          | $ -1, 0, 1 $          |
-| $ d $ | 2          | $ -2, -1, 0, 1, 2 $   |
-| $ f $ | 3          | $ -3, -2, -1, 0, 1, 2, 3 $ |
-
-As an example in atomic physics, the electron configuration of $ Na $ ($ Z=11 $) is written as:
-$ 1s^2 2s^2 2p^6 3s^1 $, indicating how many electrons are present in each of the shells.
-
-In nuclear physics, the same convention is used with two major differences:
-- The limitation for $ \ell < n-1 $ is no longer in place. Such limitation derives from the solution of the Schrödinger equation for a central potential.
-- The interaction between spin and angular momenta breaks the degeneracy between levels and further complicates the model.
-
----
-
-## 2.3 Example: Adding Spin and Orbit Angular Momenta
-
-Let us consider the angular momentum operator $ \vec{L} $ and the spin operator $ \vec{S} $. Any given quantum state can be expressed as a sum of eigenstates of the two operators.
-
-For simplicity, let us consider the case when the orbital quantum number is $ \ell = 1 $ and the spin is $ \frac{1}{2} $. We can generalize later for different values of $ \ell $.
-
-Since the operators $ \vec{L} $ and $ \vec{S} $ are independent, there will be 6 different eigenstates for different combinations of $ m_\ell $ and $ m_s $, e.g., there are 6 states indicated by $ |m_\ell, m_s \rangle $:
-
-- $ | +1, +\frac{1}{2} \rangle, | +1, -\frac{1}{2} \rangle $
-- $ | 0, +\frac{1}{2} \rangle, | 0, -\frac{1}{2} \rangle $
-- $ | -1, +\frac{1}{2} \rangle, | -1, -\frac{1}{2} \rangle $
-
-A quantum state can also be written as a sum of eigenstates of the combined operator $ \vec{J} = \vec{L} + \vec{S} $. Quantum mechanics rules tell us that the total angular momentum quantum numbers will be in the range:
 $$
-|\ell - s| \leq j \leq \ell + s.
+(1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^1
 $$
 
-In this case, there will be two different angular momentum quantum states:
-- $ j_1 = \frac{3}{2} $
-- $ j_2 = \frac{1}{2} $
-
-**Implications in Spectroscopic Notation:**
-- $ 6p $: Split into $ 2p_{1/2} $ (2 levels) and $ 4p_{3/2} $ (4 levels).
-- $ 10d $: Split into $ 4d_{3/2} $ and $ 6d_{5/2} $.
-- etc.
+Therefore, the unpaired neutron has spin $ 1/2 $ and the parity $ (-1)^1 = -1 $ (the $ p $ shell corresponds to $ \ell = 1 $).  
+E.g. this is $ (1/2)^- $.
 
 ---
 
-For the remaining examples and problems, let me know if you want me to continue formatting the rest of the text into markdown or stop here!
+### 4.1.4 **Sulfur** $ ^{33}_{16}S $
 
+This isotope of sulfur has 16 protons ($ Z = 16 $) and 17 neutrons ($ N = 17 $). Following the pairing hypothesis, the protons will pair up and have a total spin of 0 and a positive parity.  
+Therefore, we only need to consider the spin and parity of the ...
 
-# PHY303: Nuclear Physics - Examples from Unit 2
+### 4.1.5 **Calcium** $ ^{39}_{20}Ca $
 
----
+This isotope of calcium has 20 protons ($ Z = 20 $) and 19 neutrons ($ N = 19 $). Following the pairing hypothesis, the protons will pair up and have a total spin of 0 and a positive parity.  
+Therefore, we only need to consider the spin and parity of the unpaired neutron to identify the spin and parity of the nucleus.
 
-## 2.4 Example: Spin-Orbit Coupling
+The shell configuration of the neutrons is:
 
-The spin-orbit potential can be expressed as:
 $$
-V_{\ell s}(r) \propto \vec{L} \cdot \vec{S}.
+(1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^2 (1d_{5/2})^6 (2s_{1/2})^2 (1d_{3/2})^3
 $$
 
-The value of $ \vec{L} \cdot \vec{S} $ depends on the total angular momentum $ j $, which can take on two values:
-- $ j = \ell + 1/2 $
-- $ j = \ell - 1/2 $
+Therefore, the unpaired neutron has spin $ 3/2 $ and the parity $ (-1)^2 = -1 $ (the $ d $ shell corresponds to $ \ell = 2 $).  
+E.g. this is $ I = (3/2)^+ $.
 
-The expectation value of $ \vec{L} \cdot \vec{S} $ for each case is given by:
+---
+
+### 4.1.6 **Nitrogen** $ ^{14}_{7}N $
+
+This isotope of nitrogen has 7 protons ($ Z = 7 $) and 7 neutrons ($ N = 7 $). We use the diagram to establish the level for both the protons and neutrons:
+
 $$
-\langle \vec{L} \cdot \vec{S} \rangle = 
-\begin{cases} 
-\frac{\hbar^2}{2} (\ell + 1), & \text{if } j = \ell + 1/2, \\
--\frac{\hbar^2}{2} \ell, & \text{if } j = \ell - 1/2.
-\end{cases}
+(1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^1
 $$
 
-Thus, the spin-orbit interaction splits a single energy level into two:
-1. $ j = \ell + 1/2 $: Lower energy.
-2. $ j = \ell - 1/2 $: Higher energy.
+Since we have both an unpaired proton and an unpaired neutron, we cannot determine the sign of the nucleus. We can only say that this will be either 0 or 1, since it is a combination of two spin 1/2.  
+Experimentally, we observe spin $ I = 1 $.
 
-This explains the splitting observed in nuclear energy levels. The magnitude of the splitting increases with larger $ \ell $.
-
----
-
-## 2.5 Example: Magic Numbers in Nuclear Shell Model
-
-Using the energy levels derived from the shell model, we find that the number of nucleons required to completely fill a shell corresponds to the so-called "magic numbers":
-- $ 2, 8, 20, 28, 50, 82, 126 $.
-
-These magic numbers correspond to nuclei with exceptional stability.
-
----
-
-## Problems
-
-### Problem 1
-
-Determine the spin and parity of the ground states of the following nuclei, assuming the pairing hypothesis holds:
-1. $ ^{16}_8O $
-2. $ ^{17}_8O $
-3. $ ^{33}_{16}S $
-4. $ ^{39}_{20}Ca $
-
----
-
-### Problem 2
-
-**For $ ^{17}_9F $:**
-1. Sketch the configuration of protons and neutrons in the ground state.
-2. Use this configuration to predict the spin and parity of the ground state.
-3. Explain the spin and parity of the $ (1/2)^+ $ and $ (1/2)^- $ excited states.
-
----
-
-### Problem 3
-
-Calculate the root-mean-square radius $ R $ of $ ^{16}O $, assuming:
-1. A uniform sphere of radius $ R $ contains the entire nuclear charge density.
-2. The RMS radius is related to $ R $ by $ R = \sqrt{\frac{5}{3} \langle r^2 \rangle} $.
-
----
-
-### Problem 4
-
-The binding energy per nucleon for $ ^{12}C $ is $ 7.68 \, \text{MeV/nucleon} $. Calculate the total binding energy of $ ^{12}C $. Compare this with the value calculated using the semi-empirical mass formula (SEMF).
-
----
-
-### Problem 5
-
-Consider $ ^{208}Pb $, a doubly magic nucleus with 82 protons and 126 neutrons.
+The parity of the nucleus is the product of the parity of the unpaired proton $ (-1)^1 = -1 $ and that of the unpaired neutron, also $ -1 $.  
+Hence, the overall parity is positive, and we have a $ I = 1^+ $ state.
 
 
+## 4.2 Example. Spin and parity of fluorine excited states
+
+The ground state of the radio-isotope $ ^{17}_{9}F $ has spin-parity $ (5/2)^+ $. A list of excited states can be found at:
+
+[https://www.nndc.bnl.gov/nudat3/getdataset.jsp?nucleus=17F&unc=nds](https://www.nndc.bnl.gov/nudat3/getdataset.jsp?nucleus=17F&unc=nds)
+
+Two excited states are present with spin 1/2 and opposite parity at the energy levels of 495 KeV and 3104 KeV. Suggest possible configurations for these states.
+
+This isotope of fluorine has 9 protons ($ Z = 9 $) and 8 neutrons ($ N = 8 $). In the ground state, the shell configuration of the neutrons is:
+
+$$
+(1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^2
+$$
+
+And that of the protons is:
+
+$$
+(1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^2 (1d_{5/2})^1
+$$
+
+So it is clear that the ground state has to have spin 5/2 and positive parity $ (-1)^2 $,  
+since the $ d $ shell corresponds to $ \ell = 2 $.
+
+- The spare proton can be excited from the level $ 1d_{5/2} $ to the $ 2s $ level,  
+  resulting in an overall spin 1/2 and positive parity, since that is an $ s $ orbital.
+
+- One proton on the $ 1p_{1/2} $ shell can be excited to the level $ 1d_{5/2} $.  
+  This leads to two protons on $ 1d_{5/2} $ which, following the pairing hypothesis,  
+  create a state of overall spin $ 0^+ $. One proton will then be left unpaired on  
+  the $ (1p_{1/2}) $ level, leading to an overall spin-parity of $ (1/2)^- $.
+
+The first excited level is moving a proton within the same shell, so it would result in  
+a lower excitation energy than the second level, where a neutron is moved from one shell to the consecutive one.
+
+A diagram of the excited states of $ ^{17}_{8}O $ and $ ^{17}_{9}F $ is presented in Krane and is reported here showing the energy levels and possible shell configurations.
+
+![Alt text](image-1.png)
