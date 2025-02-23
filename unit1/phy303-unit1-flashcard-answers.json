@@ -116,7 +116,7 @@
         "front": "What is binding energy in the context of nuclear physics?"
     },
     {
-        "back": "Because binding energy affects the total mass of the nucleus",
+        "back": "Because binding energy affects the total mass per nucleus",
         "front": "Why can't we simply add the masses of nucleons to determine the nuclear mass?"
     },
     {
@@ -181,15 +181,11 @@
     },
     {
         "back": "To determine the size, charge, and matter distribution of nuclei",
-        "front": "What is the purpose of scattering experiments in nuclear physics?"
+        "front": "What is the common purpose of scattering experiments in nuclear physics?"
     },
     {
         "back": "The wavelength of the probing beam of particles, calculated from the momentum",
         "front": "What is the de Broglie wavelength and how is it related to scattering experiments?"
-    },
-    {
-        "back": "To determine the size, charge, and matter distribution of nuclei",
-        "front": "What is the purpose of scattering experiments in nuclear physics?"
     },
     {
         "back": "The wavelength of the probing beam of particles, calculated from the momentum",

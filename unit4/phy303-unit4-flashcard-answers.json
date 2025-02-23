@@ -1,202 +1,126 @@
 [
     {
-        "back": "Becquerel",
-        "front": "What unit definition is one decay per second of a radioactive material?"
+        "back": "The total angular momentum (j) of the unpaired nucleon in the outer shell.",
+        "front": "What primarily determines the Nuclear Spin (I) in the shell model?"
     },
     {
-        "back": "Gray",
-        "front": "Which unit measures the absorbed dose of radiation?"
+        "back": "I = 0",
+        "front": "What is the expected nuclear spin (I) of an even-even nucleus?"
     },
     {
-        "back": "Sievert",
-        "front": "Which of the following units is used to measure the biological effect of ionizing radiation?"
+        "back": "I = 0",
+        "front": "What is the expected nuclear spin (I) of an even-even nucleus?"
     },
     {
-        "back": "Becquerel",
-        "front": "What unit represents the number of disintegrations per second of a radioactive sample?"
+        "back": "The j value of the unpaired neutron",
+        "front": "If a nucleus has a single unpaired neutron in an otherwise full proton shell, what determines its nuclear spin?"
     },
     {
-        "back": "Roentgen",
-        "front": "Which unit is used to express the exposure of ionizing radiation to air?"
+        "back": "I = 1/2",
+        "front": "What is the predicted nuclear spin (I) of Oxygen-15 (O-15) based on the shell model?"
     },
     {
-        "back": "1 Joule of energy absorbed per kilogram of material",
-        "front": "How is the unit 'Gray' defined in terms of radiation dose?"
+        "back": "1/2",
+        "front": "Which of the following is a typical nuclear spin value for an odd-even nucleus?"
     },
     {
-        "back": "Biological effect of radiation",
-        "front": "What does the unit 'Sievert' measure?"
+        "back": "The $j$ value of the missing neutron",
+        "front": "If a nucleus has one missing neutron from a completely filled shell, what is its predicted nuclear spin?"
     },
     {
-        "back": "1 rad = 0.01 Gy",
-        "front": "What is the relation between the units 'rad' and 'Gray'?"
+        "back": "The $j$ value of the missing neutron",
+        "front": "If a nucleus has one missing neutron from a completely filled shell, what is its predicted nuclear spin?"
     },
     {
-        "back": "Curie",
-        "front": "Which unit of radioactivity is commonly used in the medical field to express the quantity of radioisotopes used?"
+        "back": "Their spins can be relatively high, like 1 or 3.",
+        "front": "What is unique about the nuclear spin of odd-odd nuclei?"
     },
     {
-        "back": "Exposure to ionizing radiation in air",
-        "front": "What is the definition of the unit 'Roentgen'?"
+        "back": "It changes a right-handed coordinate system into a left-handed one, or vice-versa.",
+        "front": "What happens when a parity transformation is applied to a coordinate system?"
     },
     {
-        "back": "Isotope",
-        "front": "What is the term used to refer to nuclei of a given element with a specific number of nucleons?"
+        "back": "By the orbital angular momentum quantum number, $l$, using the formula $\u03c0 = (-1)^l$.",
+        "front": "How is the parity of an individual nucleon determined?"
     },
     {
-        "back": "U-235",
-        "front": "Which of the following is the correct shorthand notation for an isotope of uranium with 235 nucleons?"
+        "back": "Even parity ($\u03c0 = +1$).",
+        "front": "What is the parity of a nucleus when all its nucleons pair up?"
     },
     {
-        "back": "Atomic number",
-        "front": "In shorthand notation, which number typically indicates the number of protons in an isotope?"
+        "back": "The product of the parities of all nucleons in the nucleus.",
+        "front": "What determines the total parity of a nucleus?"
     },
     {
-        "back": "The number of neutrons can be determined from the atomic mass number.",
-        "front": "Why do we typically ignore the number of neutrons when writing isotopic shorthand notation?"
+        "back": "By the orbital angular momentum ($l$) of the unpaired nucleon.",
+        "front": "If a nucleus has one unpaired nucleon, how is its parity determined?"
     },
     {
-        "back": "Radioactive decay",
-        "front": "What is the process called when one isotope decays into another, releasing some form of radiation?"
+        "back": "$I^\u03c0$ (e.g., $1/2^-$)",
+        "front": "How is nuclear spin and parity commonly represented?"
     },
     {
-        "back": "Decay chains",
-        "front": "In a radioactive decay chain, what are the nuclei that result from a decay but may also decay again called?"
+        "back": "Odd parity ($\u03c0 = -1$)",
+        "front": "Oxygen-15 (O-15) has an unpaired nucleon in the p-shell. What is its parity?"
     },
     {
-        "back": "Half-life",
-        "front": "What is the term used for the amount of time it takes for half of a given amount of radioactive material to decay?"
+        "back": "The torque experienced by a nucleus when placed in a magnetic field.",
+        "front": "What is the nuclear magnetic moment ($\u03bc$) associated with?"
     },
     {
-        "back": "It can cause major damage to cells in the lungs",
-        "front": "Why is radon gas, an alpha emitter, particularly harmful when inhaled?"
+        "back": "The nuclear magnetic moment is proportional to the total nuclear spin (I).",
+        "front": "How does nuclear spin (I) affect the nuclear magnetic moment (\u03bc)?"
     },
     {
-        "back": "Source activity (radioactive decays per second)",
-        "front": "What does the unit Becquerel (Bq) measure?"
+        "back": "Zero",
+        "front": "What is the expected nuclear magnetic moment for even-even nuclei?"
     },
     {
-        "back": "Deposited energy per unit mass",
-        "front": "What does the Gray (Gy) measure in the context of radiation?"
+        "back": "It has an internal charge structure due to its quark composition.",
+        "front": "Why does the neutron have a nonzero intrinsic magnetic moment?"
     },
     {
-        "back": "It includes a dimensionless factor to account for different types of radiation",
-        "front": "How does the Sievert (Sv) differ from the Gray (Gy)?"
+        "back": "A unit of magnetic moment used for nuclei, analogous to the Bohr magneton.",
+        "front": "What is the nuclear magneton ($\u03bc_N$) and what does it represent?"
     },
     {
-        "back": "20 millisieverts",
-        "front": "What is the maximum allowed dose for radiation workers in the UK, in terms of Sieverts per year?"
+        "back": "It relates the nuclear magnetic moment to the total angular momentum of the nucleus.",
+        "front": "What is the gyromagnetic ratio (g) used for?"
     },
     {
-        "back": "An alpha particle",
-        "front": "What particle is emitted during alpha decay?"
+        "back": "$\u03bc = g_j j \u03bc_N$",
+        "front": "How is the magnetic moment of an unpaired nucleon in the shell model estimated?"
     },
     {
-        "back": "A neutron decays into a proton and an electron",
-        "front": "What occurs during beta decay?"
+        "back": "The shape of the nuclear charge distribution.",
+        "front": "What does the Electric Quadrupole Moment (EQM) describe in a nucleus?"
     },
     {
-        "back": "Neutron emission",
-        "front": "Which type of decay involves the spontaneous ejection of a neutron from the nucleus?"
+        "back": "When the nucleus has a perfectly spherical charge distribution.",
+        "front": "Under what condition does a nucleus have a zero Electric Quadrupole Moment (EQM)?"
     },
     {
-        "back": "A proton is ejected from the nucleus",
-        "front": "What happens during proton emission?"
+        "back": "Because the nucleus consists only of positively charged protons.",
+        "front": "Why does the nucleus not have an Electric Dipole Moment?"
     },
     {
-        "back": "A positron",
-        "front": "What is emitted during positron emission?"
+        "back": "The nucleus has an oblate shape (flattened at the poles).",
+        "front": "If a nucleus has an Electric Quadrupole Moment Q < 0, what does this indicate about its shape?"
     },
     {
-        "back": "It captures an electron and turns into a neutron",
-        "front": "During electron capture, what happens to the proton in the nucleus?"
+        "back": "The nucleus has an oblate shape (flattened at the poles).",
+        "front": "If a nucleus has an Electric Quadrupole Moment Q < 0, what does this indicate about its shape?"
     },
     {
-        "back": "The energy required to pull a nucleus apart",
-        "front": "What is binding energy in the context of nuclear physics?"
+        "back": "The nucleus develops an oblate charge distribution ($Q < 0$).",
+        "front": "What happens to the EQM when there is a single unpaired proton in an otherwise full nuclear shell?"
     },
     {
-        "back": "Because binding energy affects the total mass of the nucleus",
-        "front": "Why can't we simply add the masses of nucleons to determine the nuclear mass?"
+        "back": "It creates a small negative EQM due to nuclear forces attracting protons.",
+        "front": "How does an unpaired neutron affect the Electric Quadrupole Moment?"
     },
     {
-        "back": "The mass of a C-12 atom divided by its number of nucleons",
-        "front": "What is the unified mass constant (u) based on?"
-    },
-    {
-        "back": "Because of the nuclear binding energy",
-        "front": "Why is the mass of a given nucleus always less than the sum of its individual nucleons?"
-    },
-    {
-        "back": "MeV (Mega electron Volts)",
-        "front": "In nuclear physics, what units are typically used to measure energies (masses)?"
-    },
-    {
-        "back": "The total energy required to split the nucleus into free nucleons",
-        "front": "What does the binding energy of a nucleus represent?"
-    },
-    {
-        "back": "Because the binding energy reduces the overall mass of the nucleus",
-        "front": "Why is the change in mass due to binding energy negative?"
-    },
-    {
-        "back": "The difference in binding energies between a nucleus and the nucleus with one less neutron",
-        "front": "What is neutron separation energy?"
-    },
-    {
-        "back": "Fe-56",
-        "front": "Which nucleus has the highest average binding energy per nucleon?"
-    },
-    {
-        "back": "The binding energy per nucleon decreases",
-        "front": "What trend is observed in the binding energy per nucleon as the number of nucleons increases beyond Fe-56?"
-    },
-    {
-        "back": "They indicate particularly stable nuclei",
-        "front": "What is the importance of local peaks in the plot of binding energy per nucleon versus number of nucleons?"
-    },
-    {
-        "back": "It is composed of three quarks: up, down, down",
-        "front": "What is the internal structure of a neutron?"
-    },
-    {
-        "back": "Virtual pions",
-        "front": "What mediates the nuclear force that binds nucleons together?"
-    },
-    {
-        "back": "Because of the sum of the proton charges",
-        "front": "Why do nuclei have a net charge?"
-    },
-    {
-        "back": "Assuming nucleons are packed together as hard spheres",
-        "front": "What is the average mass density of nuclear material estimated by?"
-    },
-    {
-        "back": "It binds nucleons together as a result of strong interactions",
-        "front": "What is the role of the nuclear force in the formation of nuclei?"
-    },
-    {
-        "back": "Nuclei are much smaller than atoms",
-        "front": "How does the nuclear size compare to the atomic size?"
-    },
-    {
-        "back": "To determine the size, charge, and matter distribution of nuclei",
-        "front": "What is the purpose of scattering experiments in nuclear physics?"
-    },
-    {
-        "back": "The wavelength of the probing beam of particles, calculated from the momentum",
-        "front": "What is the de Broglie wavelength and how is it related to scattering experiments?"
-    },
-    {
-        "back": "To determine the size, charge, and matter distribution of nuclei",
-        "front": "What is the purpose of scattering experiments in nuclear physics?"
-    },
-    {
-        "back": "The wavelength of the probing beam of particles, calculated from the momentum",
-        "front": "What is the de Broglie wavelength and how is it related to scattering experiments?"
-    },
-    {
-        "back": "Fermi squared (fm\u00b2), barns (b), or pico-barns (pb)",
-        "front": "What units are typically used to express the interaction cross-section in nuclear physics?"
+        "back": "By scaling the single-particle EQM using the number of nucleons in the shell.",
+        "front": "If a nuclear shell is partially filled, how is the total EQM calculated?"
     }
 ]

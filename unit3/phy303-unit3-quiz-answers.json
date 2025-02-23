@@ -359,9 +359,7 @@
             {
                 "answer": "Abundance is independent of nuclear structure.",
                 "correct": false,
-                "feedback
-
-": "Incorrect. Abundance is strongly influenced by nuclear structure and magic numbers."
+                "feedback": "Incorrect. Abundance is strongly influenced by nuclear structure and magic numbers."
             }
         ]
     },
@@ -496,9 +494,7 @@
         ]
     },
     {
-        "question": "How do decay
-
-chain endpoints provide evidence for the shell model?",
+        "question": "How do decay chain endpoints provide evidence for the shell model?",
         "type": "multiple_choice",
         "answers": [
             {
@@ -522,5 +518,239 @@ chain endpoints provide evidence for the shell model?",
                 "feedback": "Incorrect. Endpoints have high binding energy due to magic number stability."
             }
         ]
-    }
+    },
+    {
+        "question": "What is the highest occupied neutron shell for a nucleus with 50 neutrons?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "1g9/2",
+                "correct": true,
+                "feedback": "Correct! For N = 50, the highest filled shell is 1g9/2."
+            },
+            {
+                "answer": "2d5/2",
+                "correct": false,
+                "feedback": "Incorrect. The 2d5/2 shell is occupied beyond N = 50."
+            },
+            {
+                "answer": "1h11/2",
+                "correct": false,
+                "feedback": "Incorrect. The 1h11/2 shell is occupied at higher neutron numbers."
+            },
+            {
+                "answer": "1p3/2",
+                "correct": false,
+                "feedback": "Incorrect. The 1p3/2 shell is occupied in lighter nuclei."
+            }
+        ]
+    },
+    {
+        "question": "What is the highest occupied neutron shell for a nucleus with 50 neutrons?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "1g9/2",
+                "correct": true,
+                "feedback": "Correct! For N = 50, the highest filled shell is 1g9/2."
+            },
+            {
+                "answer": "2d5/2",
+                "correct": false,
+                "feedback": "Incorrect. The 2d5/2 shell is occupied beyond N = 50."
+            },
+            {
+                "answer": "1h11/2",
+                "correct": false,
+                "feedback": "Incorrect. The 1h11/2 shell is occupied at higher neutron numbers."
+            },
+            {
+                "answer": "1p3/2",
+                "correct": false,
+                "feedback": "Incorrect. The 1p3/2 shell is occupied in lighter nuclei."
+            }
+        ]
+    },
+    {
+        "question": "A nucleus with Z = 82 is particularly stable. Why?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Z = 82 is a magic number, meaning the proton shell is completely filled.",
+                "correct": true,
+                "feedback": "Correct! A filled proton shell (magic number 82) enhances nuclear stability."
+            },
+            {
+                "answer": "Z = 82 nuclei always have a neutron magic number as well.",
+                "correct": false,
+                "feedback": "Incorrect. While some stable nuclei have both magic numbers, it is not always the case."
+            },
+            {
+                "answer": "Nuclei with Z = 82 are unstable and decay quickly.",
+                "correct": false,
+                "feedback": "Incorrect. Lead (Z = 82) is one of the most stable heavy elements."
+            },
+            {
+                "answer": "The magic number applies only to light nuclei.",
+                "correct": false,
+                "feedback": "Incorrect. Magic numbers apply to both light and heavy nuclei."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following neutron numbers would likely correspond to a particularly stable isotope?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "126",
+                "correct": true,
+                "feedback": "Correct! N = 126 is a magic number associated with increased stability."
+            },
+            {
+                "answer": "88",
+                "correct": false,
+                "feedback": "Incorrect. N = 88 is not a magic number."
+            },
+            {
+                "answer": "102",
+                "correct": false,
+                "feedback": "Incorrect. N = 102 is not a recognized magic number."
+            },
+            {
+                "answer": "140",
+                "correct": false,
+                "feedback": "Incorrect. N = 140 does not correspond to a known magic number."
+            }
+        ]
+    },
+    {
+        "question": "For a nucleus with N = 28 and Z = 20, what can you infer about its stability?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It is highly stable because both N and Z are magic numbers.",
+                "correct": true,
+                "feedback": "Correct! N = 28 and Z = 20 are both magic numbers, leading to enhanced stability."
+            },
+            {
+                "answer": "It is unstable and will likely undergo rapid beta decay.",
+                "correct": false,
+                "feedback": "Incorrect. The presence of two magic numbers makes it highly stable."
+            },
+            {
+                "answer": "Its stability is independent of shell structure.",
+                "correct": false,
+                "feedback": "Incorrect. The nuclear shell model strongly influences stability."
+            },
+            {
+                "answer": "Only the proton number affects nuclear stability.",
+                "correct": false,
+                "feedback": "Incorrect. Both proton and neutron numbers play a role in nuclear stability."
+            }
+        ]
+    },
+    {
+        "question": "What is the highest fully occupied shell for both protons and neutrons in Carbon-12 (C-12) according to the nuclear shell model?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "1p3/2",
+                "correct": true,
+                "feedback": "Correct! In C-12, both protons and neutrons fill up to the 1p3/2 shell."
+            },
+            {
+                "answer": "1s1/2",
+                "correct": false,
+                "feedback": "Incorrect. The 1s1/2 shell is filled first, but it is not the highest occupied shell in C-12."
+            },
+            {
+                "answer": "2s1/2",
+                "correct": false,
+                "feedback": "Incorrect. The 2s1/2 shell is not fully occupied in C-12."
+            },
+            {
+                "answer": "1d5/2",
+                "correct": false,
+                "feedback": "Incorrect. The 1d5/2 shell is occupied at higher nucleon numbers, not in C-12."
+            }
+        ]
+    },
+    {
+        "question": "What is the highest fully occupied shell for both protons and neutrons in Oxygen-16 (O-16) according to the nuclear shell model?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "1p1/2",
+                "correct": true,
+                "feedback": "Correct! In O-16, both protons and neutrons fill up to the 1p1/2 shell."
+            },
+            {
+                "answer": "1p3/2",
+                "correct": false,
+                "feedback": "Incorrect. The 1p3/2 shell is filled, but the next highest filled shell in O-16 is 1p1/2."
+            },
+            {
+                "answer": "1d5/2",
+                "correct": false,
+                "feedback": "Incorrect. The 1d5/2 shell is not fully occupied in O-16."
+            },
+            {
+                "answer": "2s1/2",
+                "correct": false,
+                "feedback": "Incorrect. While 2s1/2 is relevant for heavier nuclei, it is not the highest filled shell in O-16."
+            }
+        ]
+    },
+    {
+        "question": "What is the highest fully occupied shell for protons and neutrons in Boron-10 (B-10) according to the nuclear shell model?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "1p3/2",
+                "correct": true,
+                "feedback": "Correct! In B-10, both protons and neutrons fill up to the 1p3/2 shell."
+            },
+            {
+                "answer": "1s1/2",
+                "correct": false,
+                "feedback": "Incorrect. The 1s1/2 shell is filled first, but it is not the highest occupied shell in B-10."
+            },
+            {
+                "answer": "1p1/2",
+                "correct": false,
+                "feedback": "Incorrect. The 1p1/2 shell is not fully occupied in B-10."
+            },
+            {
+                "answer": "2s1/2",
+                "correct": false,
+                "feedback": "Incorrect. The 2s1/2 shell is not occupied in B-10."
+            }
+        ]
+    },
+    {
+        "question": "What is the highest fully occupied shell for protons and neutrons in Helium-3 (He-3) according to the nuclear shell model?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "1s1/2",
+                "correct": true,
+                "feedback": "Correct! In He-3, both protons and the single neutron occupy the 1s1/2 shell."
+            },
+            {
+                "answer": "1p3/2",
+                "correct": false,
+                "feedback": "Incorrect. The 1p3/2 shell is not occupied in He-3."
+            },
+            {
+                "answer": "1p1/2",
+                "correct": false,
+                "feedback": "Incorrect. The 1p1/2 shell is not reached in He-3."
+            },
+            {
+                "answer": "2s1/2",
+                "correct": false,
+                "feedback": "Incorrect. The 2s1/2 shell is not occupied in He-3."
+            }
+        ]
+    }        
 ]

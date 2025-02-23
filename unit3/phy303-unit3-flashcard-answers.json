@@ -1,202 +1,118 @@
 [
     {
-        "back": "Becquerel",
-        "front": "What unit definition is one decay per second of a radioactive material?"
+        "back": "They indicate highly stable nuclei due to closed energy shells.",
+        "front": "What is the primary significance of 'magic numbers' in the shell model of the nucleus?"
     },
     {
-        "back": "Gray",
-        "front": "Which unit measures the absorbed dose of radiation?"
+        "back": "$2, 8, 20, 28, 50, 82, 126$",
+        "front": "Which of the following sequences represents the nuclear magic numbers?"
     },
     {
-        "back": "Sievert",
-        "front": "Which of the following units is used to measure the biological effect of ionizing radiation?"
+        "back": "A harmonic oscillator potential.",
+        "front": "What type of potential is used as a starting point to model the nucleus in the shell model?"
     },
     {
-        "back": "Becquerel",
-        "front": "What unit represents the number of disintegrations per second of a radioactive sample?"
+        "back": "Peaks in the relative abundance of nuclei with magic numbers.",
+        "front": "What evidence supports the concept of nuclear shells?"
     },
     {
-        "back": "Roentgen",
-        "front": "Which unit is used to express the exposure of ionizing radiation to air?"
+        "back": "It increases.",
+        "front": "What happens to the neutron separation energy as a magic number is approached?"
     },
     {
-        "back": "1 Joule of energy absorbed per kilogram of material",
-        "front": "How is the unit 'Gray' defined in terms of radiation dose?"
+        "back": "A nucleus with both proton and neutron numbers equal to magic numbers.",
+        "front": "What is a 'double magic' nucleus?"
     },
     {
-        "back": "Biological effect of radiation",
-        "front": "What does the unit 'Sievert' measure?"
+        "back": "It splits energy levels based on the alignment of spin and angular momentum.",
+        "front": "What role does the spin-orbit coupling term play in the shell model?"
     },
     {
-        "back": "1 rad = 0.01 Gy",
-        "front": "What is the relation between the units 'rad' and 'Gray'?"
+        "back": "Their charge distribution is symmetric due to filled shells.",
+        "front": "Why are closed-shell nuclei spherical?"
     },
     {
-        "back": "Curie",
-        "front": "Which unit of radioactivity is commonly used in the medical field to express the quantity of radioisotopes used?"
+        "back": "The Schr\u00f6dinger equation.",
+        "front": "Which mathematical equation is fundamental to determining energy levels in the shell model?"
     },
     {
-        "back": "Exposure to ionizing radiation in air",
-        "front": "What is the definition of the unit 'Roentgen'?"
+        "back": "To explain the stability and properties of nuclei.",
+        "front": "What is the primary goal of the shell model in nuclear physics?"
     },
     {
-        "back": "Isotope",
-        "front": "What is the term used to refer to nuclei of a given element with a specific number of nucleons?"
+        "back": "Peaks at nuclei with magic numbers.",
+        "front": "What feature in the binding energy curve supports the shell model?"
     },
     {
-        "back": "U-235",
-        "front": "Which of the following is the correct shorthand notation for an isotope of uranium with 235 nucleons?"
+        "back": "Energy differences due to nucleon pairing.",
+        "front": "What do odd-even parabolas in the chart of nuclides indicate?"
     },
     {
-        "back": "Atomic number",
-        "front": "In shorthand notation, which number typically indicates the number of protons in an isotope?"
+        "back": "They have similar nuclear properties despite reversed $N$ and $Z$.",
+        "front": "How do mirror nuclei provide evidence for the shell model?"
     },
     {
-        "back": "The number of neutrons can be determined from the atomic mass number.",
-        "front": "Why do we typically ignore the number of neutrons when writing isotopic shorthand notation?"
+        "back": "Magic numbers correspond to enhanced stability and abundance.",
+        "front": "What does the relative abundance of nuclei with magic numbers suggest?"
     },
     {
-        "back": "Radioactive decay",
-        "front": "What is the process called when one isotope decays into another, releasing some form of radiation?"
+        "back": "It increases significantly.",
+        "front": "What trend is observed in neutron separation energy near magic numbers?"
     },
     {
-        "back": "Decay chains",
-        "front": "In a radioactive decay chain, what are the nuclei that result from a decay but may also decay again called?"
+        "back": "They are lower, indicating filled shells are less likely to absorb neutrons.",
+        "front": "What is the significance of neutron capture cross-sections near magic numbers?"
     },
     {
-        "back": "Half-life",
-        "front": "What is the term used for the amount of time it takes for half of a given amount of radioactive material to decay?"
+        "back": "Closed-shell nuclei have zero quadrupole moments, indicating spherical symmetry.",
+        "front": "How do electric quadrupole moments support the shell model?"
     },
     {
-        "back": "It can cause major damage to cells in the lungs",
-        "front": "Why is radon gas, an alpha emitter, particularly harmful when inhaled?"
+        "back": "Excitation energies are much higher for magic number nuclei.",
+        "front": "What evidence is provided by nuclear excitation energies near magic numbers?"
     },
     {
-        "back": "Source activity (radioactive decays per second)",
-        "front": "What does the unit Becquerel (Bq) measure?"
+        "back": "Both proton and neutron shells are completely filled.",
+        "front": "Why are double magic nuclei considered particularly stable?"
     },
     {
-        "back": "Deposited energy per unit mass",
-        "front": "What does the Gray (Gy) measure in the context of radiation?"
+        "back": "Decay chains end at nuclei with magic numbers, indicating enhanced stability.",
+        "front": "How do decay chain endpoints provide evidence for the shell model?"
     },
     {
-        "back": "It includes a dimensionless factor to account for different types of radiation",
-        "front": "How does the Sievert (Sv) differ from the Gray (Gy)?"
+        "back": "1g9/2",
+        "front": "What is the highest occupied neutron shell for a nucleus with 50 neutrons?"
     },
     {
-        "back": "20 millisieverts",
-        "front": "What is the maximum allowed dose for radiation workers in the UK, in terms of Sieverts per year?"
+        "back": "1g9/2",
+        "front": "What is the highest occupied neutron shell for a nucleus with 50 neutrons?"
     },
     {
-        "back": "An alpha particle",
-        "front": "What particle is emitted during alpha decay?"
+        "back": "Z = 82 is a magic number, meaning the proton shell is completely filled.",
+        "front": "A nucleus with Z = 82 is particularly stable. Why?"
     },
     {
-        "back": "A neutron decays into a proton and an electron",
-        "front": "What occurs during beta decay?"
+        "back": "126",
+        "front": "Which of the following neutron numbers would likely correspond to a particularly stable isotope?"
     },
     {
-        "back": "Neutron emission",
-        "front": "Which type of decay involves the spontaneous ejection of a neutron from the nucleus?"
+        "back": "It is highly stable because both N and Z are magic numbers.",
+        "front": "For a nucleus with N = 28 and Z = 20, what can you infer about its stability?"
     },
     {
-        "back": "A proton is ejected from the nucleus",
-        "front": "What happens during proton emission?"
+        "back": "1p3/2",
+        "front": "What is the highest fully occupied shell for both protons and neutrons in Carbon-12 (C-12) according to the nuclear shell model?"
     },
     {
-        "back": "A positron",
-        "front": "What is emitted during positron emission?"
+        "back": "1p1/2",
+        "front": "What is the highest fully occupied shell for both protons and neutrons in Oxygen-16 (O-16) according to the nuclear shell model?"
     },
     {
-        "back": "It captures an electron and turns into a neutron",
-        "front": "During electron capture, what happens to the proton in the nucleus?"
+        "back": "1p3/2",
+        "front": "What is the highest fully occupied shell for protons and neutrons in Boron-10 (B-10) according to the nuclear shell model?"
     },
     {
-        "back": "The energy required to pull a nucleus apart",
-        "front": "What is binding energy in the context of nuclear physics?"
-    },
-    {
-        "back": "Because binding energy affects the total mass of the nucleus",
-        "front": "Why can't we simply add the masses of nucleons to determine the nuclear mass?"
-    },
-    {
-        "back": "The mass of a C-12 atom divided by its number of nucleons",
-        "front": "What is the unified mass constant (u) based on?"
-    },
-    {
-        "back": "Because of the nuclear binding energy",
-        "front": "Why is the mass of a given nucleus always less than the sum of its individual nucleons?"
-    },
-    {
-        "back": "MeV (Mega electron Volts)",
-        "front": "In nuclear physics, what units are typically used to measure energies (masses)?"
-    },
-    {
-        "back": "The total energy required to split the nucleus into free nucleons",
-        "front": "What does the binding energy of a nucleus represent?"
-    },
-    {
-        "back": "Because the binding energy reduces the overall mass of the nucleus",
-        "front": "Why is the change in mass due to binding energy negative?"
-    },
-    {
-        "back": "The difference in binding energies between a nucleus and the nucleus with one less neutron",
-        "front": "What is neutron separation energy?"
-    },
-    {
-        "back": "Fe-56",
-        "front": "Which nucleus has the highest average binding energy per nucleon?"
-    },
-    {
-        "back": "The binding energy per nucleon decreases",
-        "front": "What trend is observed in the binding energy per nucleon as the number of nucleons increases beyond Fe-56?"
-    },
-    {
-        "back": "They indicate particularly stable nuclei",
-        "front": "What is the importance of local peaks in the plot of binding energy per nucleon versus number of nucleons?"
-    },
-    {
-        "back": "It is composed of three quarks: up, down, down",
-        "front": "What is the internal structure of a neutron?"
-    },
-    {
-        "back": "Virtual pions",
-        "front": "What mediates the nuclear force that binds nucleons together?"
-    },
-    {
-        "back": "Because of the sum of the proton charges",
-        "front": "Why do nuclei have a net charge?"
-    },
-    {
-        "back": "Assuming nucleons are packed together as hard spheres",
-        "front": "What is the average mass density of nuclear material estimated by?"
-    },
-    {
-        "back": "It binds nucleons together as a result of strong interactions",
-        "front": "What is the role of the nuclear force in the formation of nuclei?"
-    },
-    {
-        "back": "Nuclei are much smaller than atoms",
-        "front": "How does the nuclear size compare to the atomic size?"
-    },
-    {
-        "back": "To determine the size, charge, and matter distribution of nuclei",
-        "front": "What is the purpose of scattering experiments in nuclear physics?"
-    },
-    {
-        "back": "The wavelength of the probing beam of particles, calculated from the momentum",
-        "front": "What is the de Broglie wavelength and how is it related to scattering experiments?"
-    },
-    {
-        "back": "To determine the size, charge, and matter distribution of nuclei",
-        "front": "What is the purpose of scattering experiments in nuclear physics?"
-    },
-    {
-        "back": "The wavelength of the probing beam of particles, calculated from the momentum",
-        "front": "What is the de Broglie wavelength and how is it related to scattering experiments?"
-    },
-    {
-        "back": "Fermi squared (fm\u00b2), barns (b), or pico-barns (pb)",
-        "front": "What units are typically used to express the interaction cross-section in nuclear physics?"
+        "back": "1s1/2",
+        "front": "What is the highest fully occupied shell for protons and neutrons in Helium-3 (He-3) according to the nuclear shell model?"
     }
 ]

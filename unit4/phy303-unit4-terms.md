@@ -127,7 +127,7 @@ The following represent the key terms you should be able to explain after review
 - Conserved Quantum Number
 - Electric Quadrupole Moment
 - Nuclear Magnetic Moments
-- Unparied Nucleons, Nucleon Degeneracy
+- Unpaired Nucleons, Nucleon Degeneracy
 - Spherical Shell Model, Zero Moment
 - Nucleus Odd Parity, Nucleus Even Parity
 - Pairing Term, Volume Term, Bulk Nucleus, Collective Treatment
@@ -136,15 +136,15 @@ The following represent the key terms you should be able to explain after review
 - Internal Charge Structure, g Factor, Unpaired Nucleon
 - Nuclear Magneton, Bohr Magneton, Intrinsic Magnetic Moment
 - Observed Magnetic Moment, Expectation Value
-- Magnetic Moment Operator, Gyromegnetic Ratio, Stretched, Jacknife
+- Magnetic Moment Operator, Gyromagnetic Ratio, Stretched, Jack-nife
 - Schmidt Lines, Monopole, Dipole, Quadrupole
 - Angular Momentum Quantum  Number, Oblate, Prolate, Nuclear Force
-- Tide of Nuclear Material, Electron-Barn, Signle Particle Value
+- Tide of Nuclear Material, Electron-Barn, Single Particle Value
 - Permanent Distortions, Ground State Spins, Bulk Deformations
 - Excited States, Central Nuclear Potential, Core Potential
 - Collective Mode of Excitation, Shell Theory Potential, Core Potential
 - Collective Mode of Excitation, Shell Theory Potential, Saxon-Woods
 - Average Potential, Schrodinger Equation, Top-Hat Potential
 - Centrifugal Potential, Laplace SPherical Harmonics, Rigid Rotation
-- Eigenvalues, Eigenfunctions, First Excited State, Incrompressible
+- Eigenvalues, Eigen-functions, First Excited State, Incompressible
 - Standing Waves, First Harmonic, Phonon Couplings

@@ -47,22 +47,22 @@ parts:
       - file: unit2/phy303-unit2-flashcards.ipynb
       - file: unit2/phy303-unit2-random-quiz.ipynb
       - file: unit2/phy303-unit2-full-quiz.ipynb
-    # - file: unit3/phy303-unit3-review.md
-    #   sections: 
-    #   - file: unit3/phy303-unit3-problems.md
-    #   - file: unit3/phy303-unit3-additionalproblems.md
-    #   - file: unit3/phy303-unit3-terms.md
-    #   - file: unit3/phy303-unit3-flashcards.ipynb
-    #   - file: unit3/phy303-unit3-random-quiz.ipynb
-    #   - file: unit3/phy303-unit3-full-quiz.ipynb
-    # - file: unit4/phy303-unit4-review.md
-    #   sections: 
-    #   - file: unit4/phy303-unit4-problems.md
-    #   - file: unit4/phy303-unit4-additionalproblems.md
-    #   - file: unit4/phy303-unit4-terms.md
-    #   - file: unit4/phy303-unit4-flashcards.ipynb
-    #   - file: unit4/phy303-unit4-random-quiz.ipynb
-    #   - file: unit4/phy303-unit4-full-quiz.ipynb
+    - file: unit3/phy303-unit3-review.md
+      sections: 
+      - file: unit3/phy303-unit3-problems.md
+      - file: unit3/phy303-unit3-additionalproblems.md
+      - file: unit3/phy303-unit3-terms.md
+      - file: unit3/phy303-unit3-flashcards.ipynb
+      - file: unit3/phy303-unit3-random-quiz.ipynb
+      - file: unit3/phy303-unit3-full-quiz.ipynb
+    - file: unit4/phy303-unit4-review.md
+      sections: 
+      - file: unit4/phy303-unit4-problems.md
+      - file: unit4/phy303-unit4-additionalproblems.md
+      - file: unit4/phy303-unit4-terms.md
+      - file: unit4/phy303-unit4-flashcards.ipynb
+      - file: unit4/phy303-unit4-random-quiz.ipynb
+      - file: unit4/phy303-unit4-full-quiz.ipynb
     # - file: unit5/phy303-unit5-review.md
     #   sections: 
     #   - file: unit5/phy303-unit5-problems.md

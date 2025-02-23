@@ -2,184 +2,200 @@
 # Unit 3 : Worked Problems
 
 (unit3:problem:example1)=
-## Example 3.1 : Carbon Mass Calculation
-Given the mass of a carbon-12 atom is $12u$, estimate the binding energy of the carbon nucleus.
-```{admonition} Solution
-:class: note, dropdown
+## 3.1 Example. Binding energy of 48-Ca
 
-First we start with the mass of the proton, neutron, and electrons in the atomic mass units. Since the mass if that of a carbon-12 atom, we include the electrons in our 
-calculation.
-```
+In this example we evaluate the binding energy of 48-Ca using the SEMF and compare with the measured value.  
+(The mass of 48-Ca is 47.9525229 u)
+
+48-Ca is made of 20 protons and 28 neutrons and is an isotope with a very long lifetime of about 6.4×10$^{19}$ years.  
+It is unusually neutron-rich for such a light nucleus. It is a double-magic isotope, having a magic number of both protons and neutrons and hence a large binding energy.
+
+The measured binding energy is given by the mass difference between its constituents and the mass of the isotope:
+
+$$
+B(48, 20) = 20 \times (m_p + m_e) + 28 \times m_n - M(48, 20) = 416.00 \text{ MeV}
+$$
+
+The SEMF can be used to calculate the binding energy value as 413.28 MeV.  
+Therefore, the SEMF underestimates the binding energy by 2.72 MeV.  
+E.g. the nucleus is more "bound" than the model would tell us due to the fact that all the shells are complete.
+
+We can repeat the same calculation for other Calcium isotopes and plot the difference between the measured (experimental) value of the binding energy and the value calculated using the SEMF as a function of the atomic number $ A $.  We observe how the double magic number affects the results.
+
+![BEtext](image-1.png)
+
+
+## 3.2 Example Spectroscopic notation
+
+In nuclear physics, we use the same spectroscopic notation used in atomic physics.  
+In atomic physics, electrons are placed in shells identified by:
+
+| Quantum number | Symbol | Value |
+|---------------|--------|-------|
+| $ n $  | Principal quantum number | Any integer $ n > 0 $ |
+| $ \ell $ | Orbital quantum number | Integer up to $ n - 1 $ (in atomic physics) |
+| $ m_{\ell} $ | Magnetic quantum number | Integer from $ -\ell $ and $ \ell $ |
+| $ m_s $ | Spin quantum number | $ \pm 1/2 $ |
+
+In the spectroscopic notation, rather than the number $ \ell $, we use a "name" for orbital corresponding to the orbital quantum number, as:
+
+| Orbital | $ \ell $ | $ m $ values |
+|---------|----------|----------------|
+| s (sharp) | 0 | 0 |
+| p (principal) | 1 | -1, 0, 1 |
+| d (diffuse) | 2 | -2, -1, 0, 1, 2 |
+| f (fundamental) | 3 | -3, -2, -1, 0, 1, 2, 3 |
+| g | 4 | -4, ... 4 |
+| h | 5 | -5, ... 5 |
+
+As an example in atomic physics, the electron configuration of $ Na $ ($ Z = 11 $) is written as:
+
+$$
+1s^2 2s^2 2p^6 3s^1
+$$
+
+to indicate how many electrons are present in each of the shells.
+
+In nuclear physics, the same convention is used with two major differences:
+
+- The limitation for $ \ell < n - 1 $ is no longer in place. Such limitation derives from the solution of the Schrödinger equation for a central potential.
+- As we will see later, the interaction between the spin and angular momenta break the degeneracy between levels and further complicates the model.
+
+
+## 3.3 Example : Adding spin and orbit angular momenta
+
+Let us consider the angular momentum operator $ \vec{L} $ and the spin operator $ \vec{S} $. Any given quantum state can be expressed as a sum of eigenstates of the two operators.  
+
+For simplicity, let us consider the case when the orbital quantum number is $ \ell = 1 $ and the spin is $ 1/2 $. We can generalize later for different values of $ \ell $.
+
+Since the operators $ \vec{L} $ and $ \vec{S} $ are independent, there will be 6 different eigenstates for different combinations of $ m_{\ell} $ and $ m_s $, e.g. there are 6 states indicated by $ |m_{\ell}, m_s \rangle $:
+
+$$
+|+1, +1/2 \rangle \quad |+1, -1/2 \rangle
+$$
+
+$$
+|0, +1/2 \rangle \quad |0, -1/2 \rangle
+$$
+
+$$
+|-1, +1/2 \rangle \quad |-1, -1/2 \rangle
+$$
+
+A quantum state can also be written as a sum of eigenstates of the combined operator $ \vec{J} = \vec{L} + \vec{S} $. Quantum mechanics rules tell us that the total angular momentum quantum numbers will be in the range:
+
+$$
+|\ell - s| < j < \ell + s,
+$$
+
+which in this case means there will be states with two different angular momentum quantum states:
+
+$$
+j_1 = 3/2 \quad \text{and} \quad j_2 = 1/2,
+$$
+
+leading again to 6 different eigenstates of the operator $ \vec{J} $ written as $ |j, m_j \rangle $:
+
+$$
+|3/2, 3/2 \rangle \quad |3/2, 1/2 \rangle \quad |3/2, -1/2 \rangle \quad |3/2, -3/2 \rangle
+$$
+
+$$
+|1/2, 1/2 \rangle \quad |1/2, -1/2 \rangle
+$$
+
+Due to the spin-orbit interaction term in the nuclear potential (see later), these states correspond to different energy levels.
+
+Returning to the spectroscopic notation, this implies that the 6 $ p $ levels will split into 4 $ p_{3/2} $ levels and 2 $ p_{1/2} $ levels. Similarly:
+
+- 2 $ s $ levels corresponding to $ \ell = 0 $ will give 2 $ s_{1/2} $ levels.
+- 6 $ p $ levels corresponding to $ \ell = 1 $ will give 2 $ p_{1/2} $ levels and 4 $ p_{3/2} $ levels.
+- 10 $ d $ levels corresponding to $ \ell = 2 $ will give 4 $ d_{3/2} $ levels and 6 $ d_{5/2} $ levels.
+- etc...
+
+## 3.4 Example : Spin-orbit potential
+
+We evaluate the spin-orbit term of the nuclear potential for states with different quantum number $ j $.
+
+The spin-orbit potential is written as:
+
+$$
+V_{\ell s}(r) \vec{L} \cdot \vec{S}
+$$
+
+To evaluate it we write $ |\vec{J}|^2 $:
+
+$$
+|\vec{J}|^2 = |\vec{L} + \vec{S}|^2 = |\vec{L}|^2 + |\vec{S}|^2 + 2\vec{L} \cdot \vec{S}
+$$
+
+Hence,
+
+$$
+\vec{L} \cdot \vec{S} = \frac{1}{2} \left[ |\vec{J}|^2 - |\vec{L}|^2 - |\vec{S}|^2 \right]
+$$
+
+If we combine eigenstates with orbital momentum $ \ell $ with a spin $ 1/2 $, we obtain eigenstates of $ \vec{J} $ with quantum numbers $ \ell - 1/2 $ and $ \ell + 1/2 $ (or only $ 1/2 $ if $ \ell = 0 $).
+
+Therefore, the expectation value of $ \vec{L} \cdot \vec{S} $ is:
+
+$$
+\langle \ell s \rangle = \frac{1}{2} \left[ \langle |\vec{J}|^2 \rangle - \langle |\vec{L}|^2 \rangle - \langle |\vec{S}|^2 \rangle \right]
+$$
+
+$$
+\langle \ell s \rangle = \frac{\hbar^2}{2} \left[ j(j + 1) - \ell(\ell + 1) - s(s + 1) \right]
+$$
+
+- **For $ j = \ell + 1/2 $ we have:**
+
+$$
+\langle \ell s \rangle = \frac{\hbar^2}{2} \left[ \left( \ell + \frac{1}{2} \right) \left( \ell + \frac{3}{2} \right) - \ell(\ell + 1) - \frac{3}{4} \right] = \hbar^2 \frac{\ell}{2}
+$$
+
+- **For $ j = \ell - 1/2 $ we have:**
+
+$$
+\langle \ell s \rangle = \frac{\hbar^2}{2} \left[ \left( \ell - \frac{1}{2} \right) \left( \ell + \frac{1}{2} \right) - \ell(\ell + 1) - \frac{3}{4} \right] = -\hbar^2 \frac{\ell + 1}{2}
+$$
+
+Experimentally, we observe the term $ V_{\ell s}(r) $ to be negative, which means that the level corresponding to $ j = \ell - 1/2 $ has a higher energy than the one corresponding to $ j = \ell + 1/2 $, as seen in the next example.
 
 
 
+## 3.5 Example. Nuclear levels of 93-Nb and 33-S
+What are the configurations of the ground states of the nuclei 93-Nb and 33-S?
+We use the energy level diagram to fill the levels independently for protons and neutrons.
 
-# PHY303: Nuclear Physics - Examples
+![LevelDiagram](image.png)
+
+### 3.5.1 **Sulfur** $^{33}_{16}S$
+
+This isotope of sulfur has 16 protons ($Z = 16$) and 17 neutrons ($N = 17$). We use the diagram to establish the level for the **protons** as:
+
+$$
+(1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^2 (1d_{5/2})^6 (2s_{1/2})^2
+$$
+
+and for the **neutrons**:
+
+$$
+(1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^2 (1d_{5/2})^6 (2s_{1/2})^2 (1d_{3/2})^1
+$$
 
 ---
 
-## 1.1 Example: Nickel Radius
+### 3.5.2 **Niobium** $^{93}_{41}S$
 
-In this example, we use Figure 2.4 of the textbook by *Martin* to estimate the radius of the \( ^{58}Ni \) nucleus.
+This isotope of Niobium has 41 protons ($Z = 41$) and 52 neutrons ($N = 52$). We use the diagram to establish the level for the **protons**:
 
-### Assumptions
-
-- The scattering is elastic, i.e., the energy of the outgoing electron equals the energy of the incoming electron. This is justified because the electron energy (\( 450 \, \text{MeV} \)) is much smaller than the rest mass of the nucleus (around \( 55 \, \text{GeV} \)).
-- The momentum transfer \( q \) is given as:
-  $$
-  |q|^2 = |p_i - p_f|^2 = 4p^2 \sin^2 \frac{\theta}{2},
-  $$
-  where \( p_i \) and \( p_f \) are the initial and final momenta of the electron.
-
-- The nucleus is approximated as a solid sphere with uniform density. The form factor \( F(q) \) is:
-  $$
-  F(q) = 3 \frac{\sin b - b \cos b}{b^3}, \quad b = \frac{qR}{\hbar}.
-  $$
-
-### Steps
-
-1. **Determine the Momentum Transfer \( q_c \):**
-
-   Using the first minimum in the cross-section (\( \theta_1 \approx 24^\circ \)):
-   $$
-   q_c = 2p \sin \frac{\theta}{2} = 2 \times 450 \, \text{MeV} \times \sin 12^\circ = 187 \, \text{MeV}.
-   $$
-
-2. **Calculate the Nuclear Radius \( R \):**
-
-   The first zero of the form factor corresponds to \( b_1 = 4.49 \). Using:
-   $$
-   R = \frac{b_1 \hbar c}{q_c} = \frac{4.49 \times 197 \, \text{MeV} \cdot \text{fm}}{187 \, \text{MeV}} = 4.8 \, \text{fm}.
-   $$
-
-   Using the empirical formula \( R = 1.21 A^{1/3} \), we find \( R \approx 4.7 \, \text{fm} \), which is remarkably close.
-
----
-
-## 1.2 Example: Nuclear Radius and Root-Mean-Square
-
-The root-mean-square (RMS) of the nuclear matter radius is parameterized as:
 $$
-\sqrt{\langle r^2 \rangle} = 0.94 A^{1/3} \, \text{fm}.
+(1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^2 (1d_{5/2})^6 (2s_{1/2})^2 (1d_{3/2})^4 (1f_{7/2})^8 (2p_{3/2})^4 (1f_{5/2})^6 (2p_{1/2})^2 (1g_{9/2})^1
 $$
 
-Under the approximation of a uniform sphere:
+and for the **neutrons**:
+
 $$
-\rho_M(r) = 
-\begin{cases} 
-\frac{M}{\frac{4}{3} \pi R^3}, & \text{if } r < R, \\
-0, & \text{otherwise.}
-\end{cases}
+(1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^2 (1d_{5/2})^6 (2s_{1/2})^2 (1d_{3/2})^4 (1f_{7/2})^8 (2p_{3/2})^4 (1f_{5/2})^6 (2p_{1/2})^2 (1g_{9/2})^{10} (2d_{5/2})^2
 $$
 
-The RMS is calculated as:
-$$
-\langle r^2 \rangle = \frac{3}{5} R^2, \quad \text{thus } R = \sqrt{\frac{5}{3} \langle r^2 \rangle}.
-$$
-
-Substituting, we derive:
-$$
-R = 1.21 A^{1/3} \, \text{fm}.
-$$
-
----
-
-## 1.3 Example: Nucleons Momentum
-
-Using the Heisenberg uncertainty principle:
-$$
-\Delta x \Delta p \gtrsim \frac{\hbar}{2}.
-$$
-
-With \( \Delta x \approx 5 \, \text{fm} \), the momentum is estimated as:
-$$
-p c \approx \frac{\hbar c}{2 \Delta x} \approx \frac{200 \, \text{MeV} \cdot \text{fm}}{2 \times 5 \, \text{fm}} = 20 \, \text{MeV}.
-$$
-
-The speed is:
-$$
-\beta = \frac{v}{c} \approx 0.02,
-$$
-indicating that nucleons are non-relativistic.
-
----
-
-## 1.4 Example: Nuclear Matter Density
-
-Using the charge density \( \rho_\text{ch} \) from the Saxton-Woods distribution, the nucleon density is:
-$$
-\rho_\text{nucl} = \frac{A}{Z e} \rho_\text{ch}.
-$$
-
-For \( ^{12}C \):
-$$
-\rho_\text{nucl} = \frac{12}{6 e} \times 0.08 e = 0.16 \, \text{nucleons/fm}^3.
-$$
-
-For \( ^{208}Pb \):
-$$
-\rho_\text{nucl} = \frac{208}{82 e} \times 0.06 e = 0.15 \, \text{nucleons/fm}^3.
-$$
-
----
-
-## 1.5 Example: Carbon Binding Energy
-
-Binding energy of \( ^{12}C \):
-$$
-B = 6 m_p + 6 m_n - M(^6_6C).
-$$
-
-Numerical calculation:
-$$
-B = 0.09894 \, u \cdot 931.5 \, \text{MeV/u} = 92.16 \, \text{MeV}.
-$$
-
-Binding energy per nucleon:
-$$
-\frac{B}{A} = \frac{92.16}{12} = 7.42 \, \text{MeV/nucleon}.
-$$
-
----
-
-## 1.6 Example: Coulomb Term in the SEMF
-
-Electrostatic energy of a uniformly charged sphere:
-$$
-E = \frac{3}{5} \frac{Z^2 e^2}{4 \pi \epsilon_0 R}.
-$$
-
-Substituting \( R = 1.2 A^{1/3} \, \text{fm} \):
-$$
-E = 0.72 \frac{Z^2}{A^{1/3}} \, \text{MeV}.
-$$
-
----
-
-## 1.7 Example: SEMF Calculations
-
-Python code snippet to calculate SEMF terms for various isotopes:
-
-```python
-# Constants
-p_av = 15.56
-p_as = 17.23
-p_ac = 0.697
-p_aa = 93.14
-p_ap = 12.0
-
-# Binding energy terms
-B_v = p_av * A
-B_s = -p_as * A**(2/3)
-B_c = -p_ac * Z**2 * A**(-1/3)
-B_a = -p_aa * (Z - A/2)**2 / A
-B_p = -p_ap / A**(1/2)
-
-# Pairing term
-if (Z % 2 + (A - Z) % 2) == 0:
-    B_p = -B_p
-elif (Z % 2 + (A - Z) % 2) == 1:
-    B_p = 0
-
-# Total binding energy
-B = B_v + B_s + B_c + B_a + B_p
