@@ -71,18 +71,18 @@ An approximate timeline of the topics we will cover is as follows.
 | 2 | 19/02/25 | 10:00-11:00 | LTTBC | Unit 2 | Liquid Drop Model & SEMF | Patrick 
 | 3 | 25/02/25 | 15:00-16:00 | LTTBC | Unit 3 | The Shell Model | Patrick 
 | 3 | 26/02/25 | 10:00-11:00 | LTTBC | Unit 3 | The Shell Model | Patrick 
-| 4 | 04/03/25 | 15:00-16:00 | LTTBC | Unit 4 | Properties of Nuclei | Patrick 
-| 4 | 05/03/25 | 10:00-11:00 | LTTBC | Unit 4 | Properties of Nuclei | Patrick 
-| 5 | 11/03/25 | 15:00-16:00 | LTTBC | Unit 5 | Excited States and Gamma Decay | Patrick  
-| 5 | 12/03/25 | 10:00-11:00 | LTTBC | Unit 5 | Excited States and Gamma Decay | Patrick 
+| 4 | 04/03/25 | 15:00-16:00 | LTTBC | Unit 4 | Properties of Nuclei | Davide 
+| 4 | 05/03/25 | 10:00-11:00 | LTTBC | Unit 4 | Properties of Nuclei | Davide 
+| 5 | 11/03/25 | 15:00-16:00 | LTTBC | Unit 5 | Excited States and Gamma Decay | Davide  
+| 5 | 12/03/25 | 10:00-11:00 | LTTBC | Unit 5 | Excited States and Gamma Decay | Davide 
 | 6 | 18/03/25 | 15:00-16:00 | LTTBC | Unit 6 | Alpha and Beta Decay | Liz 
 | 6 | 19/03/25 | 10:00-11:00 | LTTBC | Unit 6 | Alpha and Beta Decay | Liz 
-| 7 | 25/03/25 | 15:00-16:00 | LTTBC | Unit 7 | Nuclear Reactions | Patrick/Susan 
-| 7 | 26/03/25 | 10:00-11:00 | LTTBC | Unit 7 | Nuclear Reactions | Patrick/Susan  
-| 8 | 01/04/25 | 15:00-16:00 | LTTBC | Unit 8 | Compound Reactions | Patrick/Susan  
-| 8 | 02/04/25 | 10:00-11:00 | LTTBC | Unit 8 | Compound Reactions | Patrick/Susan  
-| 9 | 29/04/25 | 15:00-16:00 | LTTBC | Unit 9 | Neutron Physics | Patrick/Susan  
-| 9 | 30/04/25 | 10:00-11:00 | LTTBC | Unit 9 | Neutron Physics | Patrick/Susan  
+| 7 | 25/03/25 | 15:00-16:00 | LTTBC | Unit 7 | Nuclear Reactions | Davide 
+| 7 | 26/03/25 | 10:00-11:00 | LTTBC | Unit 7 | Nuclear Reactions | Davide  
+| 8 | 01/04/25 | 15:00-16:00 | LTTBC | Unit 8 | Compound Reactions | Patrick  
+| 8 | 02/04/25 | 10:00-11:00 | LTTBC | Unit 8 | Compound Reactions | Patrick  
+| 9 | 29/04/25 | 15:00-16:00 | LTTBC | Unit 9 | Neutron Physics | Patrick  
+| 9 | 30/04/25 | 10:00-11:00 | LTTBC | Unit 9 | Neutron Physics | Patrick  
 | 10 | 06/05/25 | 15:00-16:00 | LTTBC | Unit 10 | Nuclear Medicine | Jon  
 | 10 | 07/05/25 | 10:00-11:00 | LTTBC | Unit 10 | Nuclear Medicine | Jon  
 | 11 | 13/05/25 | 15:00-16:00 | LTTBC | Unit 11 | Nuclear Power | Liz 

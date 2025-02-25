@@ -393,9 +393,11 @@ Note that we just state here a further label $n$ for the basic energy level whic
 ### First Model Predictions
 
 We can now attempt a first prediction with this model, i.e. can we account for the Magic Numbers? We expect for the $n=1$ state we would start to fill our shells up based on:
-- For $l=0$ we expect $2(2\times 0 + 1)=2$ states. 
-- For $l=1$ we expect $2(2\times 1 + 1)=6$ states. 
-- For $l=1$ we expect $2(2\times 3 + 1)=10$ states. 
+- For $l=0$ we expect $2(2\times 0 + 1)=2$ states [2 total]. 
+- For $l=1$ we expect $2(2\times 1 + 1)=6$ states [8 total]. 
+- For $l=2$ we expect $2(2\times 2 + 1)=10$ states [18 total]. 
+- For $l=3$ we expect $2(2\times 3 + 1)=14$ states [32 total]. 
+
 
 We expect to fill up our shells in terms of increasing energy. So based on this very simple model we would expect the first shell to close after 2 nucleons, and the second after 8. It gets a little bit more complex after that as the energy gaps of the principal quantum states $n$ start to overlap with the angular momentum splittings.
 
