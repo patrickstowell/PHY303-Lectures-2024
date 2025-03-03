@@ -7,7 +7,11 @@
 Evaluate the spin and parity of the ground states of the following isotopes:  
 $ ^{16}_{8}O $, $ ^{17}_{8}O $, $ ^{15}_{8}O $, $ ^{33}_{16}S $, $ ^{39}_{20}Ca $, $ ^{14}_{7}N $  
 
-We use the energy levels diagram to fill the levels independently for protons and neutrons (example 6).
+
+```{admonition} Solution
+:class: note, dropdown
+
+We use the energy levels diagram to fill the levels independently for protons and neutrons.
 
 ### 4.1.1 **Oxygen** $ ^{16}_{8}O $
 
@@ -83,6 +87,8 @@ Experimentally, we observe spin $ I = 1 $.
 The parity of the nucleus is the product of the parity of the unpaired proton $ (-1)^1 = -1 $ and that of the unpaired neutron, also $ -1 $.  
 Hence, the overall parity is positive, and we have a $ I = 1^+ $ state.
 
+```
+
 
 ## 4.2 Example. Spin and parity of fluorine excited states
 
@@ -91,6 +97,10 @@ The ground state of the radio-isotope $ ^{17}_{9}F $ has spin-parity $ (5/2)^+ $
 [https://www.nndc.bnl.gov/nudat3/getdataset.jsp?nucleus=17F&unc=nds](https://www.nndc.bnl.gov/nudat3/getdataset.jsp?nucleus=17F&unc=nds)
 
 Two excited states are present with spin 1/2 and opposite parity at the energy levels of 495 KeV and 3104 KeV. Suggest possible configurations for these states.
+
+
+```{admonition} Solution
+:class: note, dropdown
 
 This isotope of fluorine has 9 protons ($ Z = 9 $) and 8 neutrons ($ N = 8 $). In the ground state, the shell configuration of the neutrons is:
 
@@ -121,3 +131,47 @@ a lower excitation energy than the second level, where a neutron is moved from o
 A diagram of the excited states of $ ^{17}_{8}O $ and $ ^{17}_{9}F $ is presented in Krane and is reported here showing the energy levels and possible shell configurations.
 
 ![Alt text](image-1.png)
+
+```
+
+
+
+### 4.3 Example : Magnetic Moment Estimation
+
+Using the equations in this topic estimate the magnetic moment of 7-Li
+
+```{admonition} Solution
+:class: note, dropdown
+
+
+7-Li has one unpaired proton in the 2p$_{3/2}$ state. It therefore has spin $I=\frac{3}{2}^{-}$.
+
+This is a stretched state, since $j=3/2$ and $l=1$.
+
+The equation we should use is therefore 
+
+$$
+\left(j-\frac{1}{2}\right )g_l + \frac{1}{2}g_s
+$$
+
+Since it is an unpaired **proton** we care about the proton $g$ values below
+
+$$
+g_l = 1~~\textnormal{(proton)}
+g_{s} = 5.85 ~~\textnormal{(proton)}
+$$
+
+Plugging it in we get
+$$
+\frac{\mu}{\mu_{N}} = \left((3/2)-\frac{1}{2}\right )1 + \frac{1}{2}\cdot 5.85 = 3.925
+$$
+
+$$
+\mu =  3.925 \mu_{N}
+$$
+
+The real value +3.265 $\mu_{N}$ so we are in the right ballpark as an estimate, but still off by a large factor.
+```
+
+
+

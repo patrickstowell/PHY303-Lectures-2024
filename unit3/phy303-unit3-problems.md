@@ -4,9 +4,11 @@
 (unit3:problem:example1)=
 ## 3.1 Example. Binding energy of 48-Ca
 
-In this example we evaluate the binding energy of 48-Ca using the SEMF and compare with the measured value.  
+Evaluate the binding energy of 48-Ca using the SEMF and compare with the measured value.  
 (The mass of 48-Ca is 47.9525229 u)
 
+```{admonition} Solution
+:class: note, dropdown
 48-Ca is made of 20 protons and 28 neutrons and is an isotope with a very long lifetime of about 6.4×10$^{19}$ years.  
 It is unusually neutron-rich for such a light nucleus. It is a double-magic isotope, having a magic number of both protons and neutrons and hence a large binding energy.
 
@@ -16,7 +18,7 @@ $$
 B(48, 20) = 20 \times (m_p + m_e) + 28 \times m_n - M(48, 20) = 416.00 \text{ MeV}
 $$
 
-The SEMF can be used to calculate the binding energy value as 413.28 MeV.  
+The SEMF can be used to calculate the binding energy value as $\approx 413.28$ MeV.  
 Therefore, the SEMF underestimates the binding energy by 2.72 MeV.  
 E.g. the nucleus is more "bound" than the model would tell us due to the fact that all the shells are complete.
 
@@ -24,6 +26,7 @@ We can repeat the same calculation for other Calcium isotopes and plot the diffe
 
 ![BEtext](image-1.png)
 
+```
 
 ## 3.2 Example Spectroscopic notation
 
@@ -64,6 +67,10 @@ In nuclear physics, the same convention is used with two major differences:
 
 ## 3.3 Example : Adding spin and orbit angular momenta
 
+Explain how spin and orbital angular momenta add together to form the range of spin states $J$ in the nucleus.
+
+```{admonition} Solution
+:class: note, dropdown
 Let us consider the angular momentum operator $ \vec{L} $ and the spin operator $ \vec{S} $. Any given quantum state can be expressed as a sum of eigenstates of the two operators.  
 
 For simplicity, let us consider the case when the orbital quantum number is $ \ell = 1 $ and the spin is $ 1/2 $. We can generalize later for different values of $ \ell $.
@@ -113,8 +120,14 @@ Returning to the spectroscopic notation, this implies that the 6 $ p $ levels wi
 - 10 $ d $ levels corresponding to $ \ell = 2 $ will give 4 $ d_{3/2} $ levels and 6 $ d_{5/2} $ levels.
 - etc...
 
+```
+
 ## 3.4 Example : Spin-orbit potential
 
+By considering the spin orbit potential $V_{\ell s}(r) \vec{L} \cdot \vec{S}$, derive the energy shift expected for stretched and jackknife states.
+
+```{admonition} Solution
+:class: note, dropdown
 We evaluate the spin-orbit term of the nuclear potential for states with different quantum number $ j $.
 
 The spin-orbit potential is written as:
@@ -161,7 +174,7 @@ $$
 
 Experimentally, we observe the term $ V_{\ell s}(r) $ to be negative, which means that the level corresponding to $ j = \ell - 1/2 $ has a higher energy than the one corresponding to $ j = \ell + 1/2 $, as seen in the next example.
 
-
+```
 
 ## 3.5 Example. Nuclear levels of 93-Nb and 33-S
 What are the configurations of the ground states of the nuclei 93-Nb and 33-S?
@@ -169,7 +182,9 @@ We use the energy level diagram to fill the levels independently for protons and
 
 ![LevelDiagram](image.png)
 
-### 3.5.1 **Sulfur** $^{33}_{16}S$
+```{admonition} Solution
+:class: note, dropdown
+**Sulfur** $^{33}_{16}S$
 
 This isotope of sulfur has 16 protons ($Z = 16$) and 17 neutrons ($N = 17$). We use the diagram to establish the level for the **protons** as:
 
@@ -185,7 +200,8 @@ $$
 
 ---
 
-### 3.5.2 **Niobium** $^{93}_{41}S$
+
+**Niobium** $^{93}_{41}S$
 
 This isotope of Niobium has 41 protons ($Z = 41$) and 52 neutrons ($N = 52$). We use the diagram to establish the level for the **protons**:
 
@@ -199,3 +215,4 @@ $$
 (1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^2 (1d_{5/2})^6 (2s_{1/2})^2 (1d_{3/2})^4 (1f_{7/2})^8 (2p_{3/2})^4 (1f_{5/2})^6 (2p_{1/2})^2 (1g_{9/2})^{10} (2d_{5/2})^2
 $$
 
+```

@@ -17,7 +17,7 @@ To aid with exam revision below is a list of all equations that you should learn
 - if two neutrons (or protons) occupy a level with the same $j$ and $l$, then their total angular momenta couple to give zero contribution.
 
 
-**Magnetic Moment**
+**Magnetic Moment Free Nucleon**
 ```{math}
 :label: giprojection
 \begin{equation}
