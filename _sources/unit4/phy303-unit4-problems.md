@@ -7,7 +7,11 @@
 Evaluate the spin and parity of the ground states of the following isotopes:  
 $ ^{16}_{8}O $, $ ^{17}_{8}O $, $ ^{15}_{8}O $, $ ^{33}_{16}S $, $ ^{39}_{20}Ca $, $ ^{14}_{7}N $  
 
-We use the energy levels diagram to fill the levels independently for protons and neutrons (example 6).
+
+```{admonition} Solution
+:class: note, dropdown
+
+We use the energy levels diagram to fill the levels independently for protons and neutrons.
 
 ### 4.1.1 **Oxygen** $ ^{16}_{8}O $
 
@@ -83,6 +87,8 @@ Experimentally, we observe spin $ I = 1 $.
 The parity of the nucleus is the product of the parity of the unpaired proton $ (-1)^1 = -1 $ and that of the unpaired neutron, also $ -1 $.  
 Hence, the overall parity is positive, and we have a $ I = 1^+ $ state.
 
+```
+
 
 ## 4.2 Example. Spin and parity of fluorine excited states
 
@@ -91,6 +97,10 @@ The ground state of the radio-isotope $ ^{17}_{9}F $ has spin-parity $ (5/2)^+ $
 [https://www.nndc.bnl.gov/nudat3/getdataset.jsp?nucleus=17F&unc=nds](https://www.nndc.bnl.gov/nudat3/getdataset.jsp?nucleus=17F&unc=nds)
 
 Two excited states are present with spin 1/2 and opposite parity at the energy levels of 495 KeV and 3104 KeV. Suggest possible configurations for these states.
+
+
+```{admonition} Solution
+:class: note, dropdown
 
 This isotope of fluorine has 9 protons ($ Z = 9 $) and 8 neutrons ($ N = 8 $). In the ground state, the shell configuration of the neutrons is:
 
@@ -121,3 +131,5 @@ a lower excitation energy than the second level, where a neutron is moved from o
 A diagram of the excited states of $ ^{17}_{8}O $ and $ ^{17}_{9}F $ is presented in Krane and is reported here showing the energy levels and possible shell configurations.
 
 ![Alt text](image-1.png)
+
+```

@@ -194,7 +194,7 @@ All these observations strongly point to a shell like arrangement of nucleons in
 
 $$
 \bf
-2,8,(14),20,28,50,82,128.
+2,8,(14),20,28,50,82,126.
 $$
 
 :::{figure-md} shellrequirement

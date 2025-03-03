@@ -232,7 +232,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-binding.html">Isotone Curves</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotopes.html">Isotope Curves</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../visualisation/legendre-polynomials.html">Legendre Polynomials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../visualisation/nucleus-shape.html">Nucleus Shape</a></li>
@@ -401,11 +401,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-spectroscopic-notation">3.2 Example Spectroscopic notation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-adding-spin-and-orbit-angular-momenta">3.3 Example : Adding spin and orbit angular momenta</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-spin-orbit-potential">3.4 Example : Spin-orbit potential</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-nuclear-levels-of-93-nb-and-33-s">3.5 Example. Nuclear levels of 93-Nb and 33-S</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sulfur-33-16-s">3.5.1 <strong>Sulfur</strong> <span class="math notranslate nohighlight">\(^{33}_{16}S\)</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#niobium-93-41-s">3.5.2 <strong>Niobium</strong> <span class="math notranslate nohighlight">\(^{93}_{41}S\)</span></a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-nuclear-levels-of-93-nb-and-33-s">3.5 Example. Nuclear levels of 93-Nb and 33-S</a></li>
 </ul>
             </nav>
         </div>
@@ -421,8 +417,10 @@
 <span id="unit3-problems"></span><h1>Unit 3 : Worked Problems<a class="headerlink" href="#unit-3-worked-problems" title="Link to this heading">#</a></h1>
 <section id="example-binding-energy-of-48-ca">
 <span id="unit3-problem-example1"></span><h2>3.1 Example. Binding energy of 48-Ca<a class="headerlink" href="#example-binding-energy-of-48-ca" title="Link to this heading">#</a></h2>
-<p>In this example we evaluate the binding energy of 48-Ca using the SEMF and compare with the measured value.<br />
+<p>Evaluate the binding energy of 48-Ca using the SEMF and compare with the measured value.<br />
 (The mass of 48-Ca is 47.9525229 u)</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
 <p>48-Ca is made of 20 protons and 28 neutrons and is an isotope with a very long lifetime of about 6.4×10<span class="math notranslate nohighlight">\(^{19}\)</span> years.<br />
 It is unusually neutron-rich for such a light nucleus. It is a double-magic isotope, having a magic number of both protons and neutrons and hence a large binding energy.</p>
 <p>The measured binding energy is given by the mass difference between its constituents and the mass of the isotope:</p>
@@ -430,11 +428,12 @@ It is unusually neutron-rich for such a light nucleus. It is a double-magic isot
 \[
 B(48, 20) = 20 \times (m_p + m_e) + 28 \times m_n - M(48, 20) = 416.00 \text{ MeV}
 \]</div>
-<p>The SEMF can be used to calculate the binding energy value as 413.28 MeV.<br />
+<p>The SEMF can be used to calculate the binding energy value as <span class="math notranslate nohighlight">\(\approx 413.28\)</span> MeV.<br />
 Therefore, the SEMF underestimates the binding energy by 2.72 MeV.<br />
 E.g. the nucleus is more “bound” than the model would tell us due to the fact that all the shells are complete.</p>
 <p>We can repeat the same calculation for other Calcium isotopes and plot the difference between the measured (experimental) value of the binding energy and the value calculated using the SEMF as a function of the atomic number <span class="math notranslate nohighlight">\( A \)</span>.  We observe how the double magic number affects the results.</p>
 <p><img alt="BEtext" src="../_images/image-1.png" /></p>
+</div>
 </section>
 <section id="example-spectroscopic-notation">
 <h2>3.2 Example Spectroscopic notation<a class="headerlink" href="#example-spectroscopic-notation" title="Link to this heading">#</a></h2>
@@ -517,6 +516,9 @@ In atomic physics, electrons are placed in shells identified by:</p>
 </section>
 <section id="example-adding-spin-and-orbit-angular-momenta">
 <h2>3.3 Example : Adding spin and orbit angular momenta<a class="headerlink" href="#example-adding-spin-and-orbit-angular-momenta" title="Link to this heading">#</a></h2>
+<p>Explain how spin and orbital angular momenta add together to form the range of spin states <span class="math notranslate nohighlight">\(J\)</span> in the nucleus.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
 <p>Let us consider the angular momentum operator <span class="math notranslate nohighlight">\( \vec{L} \)</span> and the spin operator <span class="math notranslate nohighlight">\( \vec{S} \)</span>. Any given quantum state can be expressed as a sum of eigenstates of the two operators.</p>
 <p>For simplicity, let us consider the case when the orbital quantum number is <span class="math notranslate nohighlight">\( \ell = 1 \)</span> and the spin is <span class="math notranslate nohighlight">\( 1/2 \)</span>. We can generalize later for different values of <span class="math notranslate nohighlight">\( \ell \)</span>.</p>
 <p>Since the operators <span class="math notranslate nohighlight">\( \vec{L} \)</span> and <span class="math notranslate nohighlight">\( \vec{S} \)</span> are independent, there will be 6 different eigenstates for different combinations of <span class="math notranslate nohighlight">\( m_{\ell} \)</span> and <span class="math notranslate nohighlight">\( m_s \)</span>, e.g. there are 6 states indicated by <span class="math notranslate nohighlight">\( |m_{\ell}, m_s \rangle \)</span>:</p>
@@ -559,9 +561,13 @@ j_1 = 3/2 \quad \text{and} \quad j_2 = 1/2,
 <li><p>10 <span class="math notranslate nohighlight">\( d \)</span> levels corresponding to <span class="math notranslate nohighlight">\( \ell = 2 \)</span> will give 4 <span class="math notranslate nohighlight">\( d_{3/2} \)</span> levels and 6 <span class="math notranslate nohighlight">\( d_{5/2} \)</span> levels.</p></li>
 <li><p>etc…</p></li>
 </ul>
+</div>
 </section>
 <section id="example-spin-orbit-potential">
 <h2>3.4 Example : Spin-orbit potential<a class="headerlink" href="#example-spin-orbit-potential" title="Link to this heading">#</a></h2>
+<p>By considering the spin orbit potential <span class="math notranslate nohighlight">\(V_{\ell s}(r) \vec{L} \cdot \vec{S}\)</span>, derive the energy shift expected for stretched and jackknife states.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
 <p>We evaluate the spin-orbit term of the nuclear potential for states with different quantum number <span class="math notranslate nohighlight">\( j \)</span>.</p>
 <p>The spin-orbit potential is written as:</p>
 <div class="math notranslate nohighlight">
@@ -603,14 +609,16 @@ V_{\ell s}(r) \vec{L} \cdot \vec{S}
 \langle \ell s \rangle = \frac{\hbar^2}{2} \left[ \left( \ell - \frac{1}{2} \right) \left( \ell + \frac{1}{2} \right) - \ell(\ell + 1) - \frac{3}{4} \right] = -\hbar^2 \frac{\ell + 1}{2}
 \]</div>
 <p>Experimentally, we observe the term <span class="math notranslate nohighlight">\( V_{\ell s}(r) \)</span> to be negative, which means that the level corresponding to <span class="math notranslate nohighlight">\( j = \ell - 1/2 \)</span> has a higher energy than the one corresponding to <span class="math notranslate nohighlight">\( j = \ell + 1/2 \)</span>, as seen in the next example.</p>
+</div>
 </section>
 <section id="example-nuclear-levels-of-93-nb-and-33-s">
 <h2>3.5 Example. Nuclear levels of 93-Nb and 33-S<a class="headerlink" href="#example-nuclear-levels-of-93-nb-and-33-s" title="Link to this heading">#</a></h2>
 <p>What are the configurations of the ground states of the nuclei 93-Nb and 33-S?
 We use the energy level diagram to fill the levels independently for protons and neutrons.</p>
 <p><img alt="LevelDiagram" src="../_images/image.png" /></p>
-<section id="sulfur-33-16-s">
-<h3>3.5.1 <strong>Sulfur</strong> <span class="math notranslate nohighlight">\(^{33}_{16}S\)</span><a class="headerlink" href="#sulfur-33-16-s" title="Link to this heading">#</a></h3>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p><strong>Sulfur</strong> <span class="math notranslate nohighlight">\(^{33}_{16}S\)</span></p>
 <p>This isotope of sulfur has 16 protons (<span class="math notranslate nohighlight">\(Z = 16\)</span>) and 17 neutrons (<span class="math notranslate nohighlight">\(N = 17\)</span>). We use the diagram to establish the level for the <strong>protons</strong> as:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -621,10 +629,8 @@ We use the energy level diagram to fill the levels independently for protons and
 \[
 (1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^2 (1d_{5/2})^6 (2s_{1/2})^2 (1d_{3/2})^1
 \]</div>
-</section>
 <hr class="docutils" />
-<section id="niobium-93-41-s">
-<h3>3.5.2 <strong>Niobium</strong> <span class="math notranslate nohighlight">\(^{93}_{41}S\)</span><a class="headerlink" href="#niobium-93-41-s" title="Link to this heading">#</a></h3>
+<p><strong>Niobium</strong> <span class="math notranslate nohighlight">\(^{93}_{41}S\)</span></p>
 <p>This isotope of Niobium has 41 protons (<span class="math notranslate nohighlight">\(Z = 41\)</span>) and 52 neutrons (<span class="math notranslate nohighlight">\(N = 52\)</span>). We use the diagram to establish the level for the <strong>protons</strong>:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -635,7 +641,7 @@ We use the energy level diagram to fill the levels independently for protons and
 \[
 (1s_{1/2})^2 (1p_{3/2})^4 (1p_{1/2})^2 (1d_{5/2})^6 (2s_{1/2})^2 (1d_{3/2})^4 (1f_{7/2})^8 (2p_{3/2})^4 (1f_{5/2})^6 (2p_{1/2})^2 (1g_{9/2})^{10} (2d_{5/2})^2
 \]</div>
-</section>
+</div>
 </section>
 </section>
 
@@ -708,11 +714,7 @@ We use the energy level diagram to fill the levels independently for protons and
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-spectroscopic-notation">3.2 Example Spectroscopic notation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-adding-spin-and-orbit-angular-momenta">3.3 Example : Adding spin and orbit angular momenta</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-spin-orbit-potential">3.4 Example : Spin-orbit potential</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-nuclear-levels-of-93-nb-and-33-s">3.5 Example. Nuclear levels of 93-Nb and 33-S</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sulfur-33-16-s">3.5.1 <strong>Sulfur</strong> <span class="math notranslate nohighlight">\(^{33}_{16}S\)</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#niobium-93-41-s">3.5.2 <strong>Niobium</strong> <span class="math notranslate nohighlight">\(^{93}_{41}S\)</span></a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-nuclear-levels-of-93-nb-and-33-s">3.5 Example. Nuclear levels of 93-Nb and 33-S</a></li>
 </ul>
   </nav></div>
 
