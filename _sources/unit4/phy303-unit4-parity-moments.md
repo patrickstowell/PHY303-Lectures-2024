@@ -280,7 +280,7 @@ Calculations to find the expectation value $< \psi >^{2}$ end up giving as value
 ```{math}
 :label: quadrupolecalculation
 \begin{equation}
-Q_{EQM} = - < r^{2} > \frac{2j-1}{2(j+1)}
+Q_{EQM} \approx - \langle r^{2} \rangle \frac{2j-1}{2(j+1)}
 \end{equation}
 ```
 
@@ -342,9 +342,9 @@ where $Q_{sp}$ is the Single Particle Value as mentioned above, and $n_{c}$ is t
 Using the results above with $R=r_{0}A^{1/3}$, and $\sqrt{\langle r^{2}\rangle} = 0.94 A^{1/3}$ we can calculate the $Q$ values for different nuclei and compare them with the measured values. Some results are shown in the table below. Generally, at least the correct sign is found, but often the real value is larger than expected.
 
 
-| Shell-Model State    |   Calculated Q (b) | Single Particle (b) | - |  Measured Q (b)  | - |
+| Shell-Model State    |   Calculated Q (b) | Single Particle (b) | Single Particle (b) |  Single Hole (b)  | Single Hole (b) |
 | ---------------------|----------------|--------|---------|---------|-------| 
-|                      |                |    **p**   |      **n** |    **p**   |     **n** |
+|                      |                |    **p Particle**   |      **n Particle** |    **p Hole**   |     **n Hole** |
 | $1p_{3/2}$                |    -0.013      |      -0.0366 *(7Li)*   | - | +0.0407 *(11B)* | +0.053 *(9Be)*
 | $1d_{5/2}$                |    -0.036      |      -0.1 * *(19F)**   |    -0.026 *(17O)*  |  +0.140 *(27Al)* |  +0.201  *(25Mg)*
 | $1d_{3/2}$                |    -0.037      |      -0.08249  *(35Cl)* | -0.064 *(33S)*    | +0.056 *(39K)*   | +0.45 *(35S)*
