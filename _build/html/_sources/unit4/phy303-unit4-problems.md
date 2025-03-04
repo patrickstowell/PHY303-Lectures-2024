@@ -133,3 +133,45 @@ A diagram of the excited states of $ ^{17}_{8}O $ and $ ^{17}_{9}F $ is presente
 ![Alt text](image-1.png)
 
 ```
+
+
+
+### 4.3 Example : Magnetic Moment Estimation
+
+Using the equations in this topic estimate the magnetic moment of 7-Li
+
+```{admonition} Solution
+:class: note, dropdown
+
+
+7-Li has one unpaired proton in the 2p$_{3/2}$ state. It therefore has spin $I=\frac{3}{2}^{-}$.
+
+This is a stretched state, since $j=3/2$ and $l=1$.
+
+The equation we should use is therefore 
+
+$$
+\left(j-\frac{1}{2}\right )g_l + \frac{1}{2}g_s
+$$
+
+Since it is an unpaired **proton** we care about the proton $g$ values below
+
+$$
+g_l = 1~~\textnormal{(proton)}
+g_{s} = 5.85 ~~\textnormal{(proton)}
+$$
+
+Plugging it in we get
+$$
+\frac{\mu}{\mu_{N}} = \left((3/2)-\frac{1}{2}\right )1 + \frac{1}{2}\cdot 5.85 = 3.925
+$$
+
+$$
+\mu =  3.925 \mu_{N}
+$$
+
+The real value +3.265 $\mu_{N}$ so we are in the right ballpark as an estimate, but still off by a large factor.
+```
+
+
+
