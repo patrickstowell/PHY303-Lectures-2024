@@ -364,6 +364,12 @@ Diagram shell filling in a simple spherical model for the lowest energy shell.
 :::
 
 
+```{admonition} Clarification.
+:class: warning, dropdown
+The parallel (stretched) states above are always the ones with maximum $j$ value equal to $j=|l+s|$. The anti-parallel (jack-knife) states are always the ones with maximum $j$ value equal to $j=|l-s|$.
+```
+
+
 Each nucleon must have its own allowed state of $m_z$ and $m_s$ when considering possible values of $j$. As shown in the figure  this results in six possible states $3/2, 1/2, -1/2, -3/2$ for $j=3/2$, and $1/2, -1/2$ for $j=1/2$. The cases where the angular momentum is parallel or anti-parallel are sometimes referred to as *stretched* and *jacknife* states respectively.
 
 
@@ -442,6 +448,11 @@ So the former degeneracy in which we had to consider all these 6 nucleons in one
 
 Diagram of shell state splitting when spin-orbit coupling is included.
 :::
+
+```{admonition} Clarification.
+:class: warning, dropdown
+The parallel (stretched) states above are always the ones with maximum $j$ value equal to $j=|l+s|$. The anti-parallel (jack-knife) states are always the ones with maximum $j$ value equal to $j=|l-s|$.
+```
 
 This effect applies for all the $l$ levels, they all get split into two levels, except for $l$=0 (the $\textnormal{s}$ sharp) one because that only has one $j$ assignment, $j=1/2$ $($with values $1/2, -1/2$$)$.
 
