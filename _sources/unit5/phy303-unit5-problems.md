@@ -90,35 +90,40 @@ $$
 $$
 
 **Transition 1**
+
 $$
 \frac{3}{2}^{+} \rightarrow \frac{5}{2}^{+}
 $$
 
 To evaluate this first we need to look at the range of nuclear spins. We expect
+
 $$
 \left|\frac{3}{2} - \frac{5}{2}\right | \leq L \leq \left|\frac{3}{2} + \frac{5}{2}\right |
 $$
 
-So we know $L$ can be $1, 2, 3, 4$. We also know this has no change in parity $\delta \pi = \textnormal{no}$.
+So we know $L$ can be $1, 2, 3, 4$. We also know this has no change in parity $\Delta \pi = \textnormal{no}$.
 
 The available transitions are therefore M1, E2, M3, E4. The M1 is the most likely.
 
 
 **Transition 2**
+
 $$
 \frac{3}{2}^{+} \rightarrow \frac{5}{2}^{-}
 $$
 
-This is the same as above but now there is a change in parity $\delta \pi = \textnormal{yes}$.
+This is the same as above but now there is a change in parity $\Delta \pi = \textnormal{yes}$.
 
 The available transitions are therefore flipped E1, M2, E3, M4. The E1 is the most likely. This is because an E1 transition is parity changing, whilst an M1 transition is not.
 
 **Transition 3**
+
 $$
 0^{+} \rightarrow 0^{+}
 $$
 
 Again we need to look at the range of nuclear spins. We expect
+
 $$
 |0 - 0| \leq L \leq |0 + 0|
 $$
@@ -127,11 +132,13 @@ The one exception we have for $L$ is we cannot have $L=0$, as the gamma needs to
 
 
 **Transition 4**
+
 $$
 \frac{3}{2}^{-} \rightarrow \frac{1}{2}^{+}, ~~~~
 $$
 
 Again we need to look at the range of nuclear spins. We expect
+
 $$
 \left |\frac{1}{2} - \frac{3}{2}\right | \leq L \leq \left|\frac{3}{2} + \frac{1}{2}\right |
 $$
