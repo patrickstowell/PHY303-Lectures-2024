@@ -1,22 +1,730 @@
 [
     {
-        "question": "Has this unit quiz/flashcards been setup?",
+        "question": "What is the main motivation behind the Collective Model?",
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "No",
+                "answer": "To refine the Semi-Empirical Mass Formula.",
+                "correct": false,
+                "feedback": "Incorrect. The Semi-Empirical Mass Formula is already a type of collective model, but the Collective Model extends beyond it."
+            },
+            {
+                "answer": "To merge individual nucleon behavior from the Shell Model with collective behavior of the nucleus as a whole.",
                 "correct": true,
-                "feedback": "This will be done before the course starts."
+                "feedback": "Correct! The Collective Model combines single-particle interactions with bulk nuclear behavior."
             },
             {
-                "answer": "Yes",
+                "answer": "To completely replace the Shell Model with a more accurate theory.",
                 "correct": false,
-                "feedback": "Incorrect. This will be done before the course starts."
+                "feedback": "Incorrect. The Collective Model extends the Shell Model rather than replacing it."
             },
             {
-                "answer": "Never",
+                "answer": "To focus only on proton interactions within the nucleus.",
                 "correct": false,
-                "feedback": "Incorrect. This will be done before the course starts."
+                "feedback": "Incorrect. The Collective Model considers both protons and neutrons in a deformed nucleus."
+            }
+        ]
+    },
+    {
+        "question": "How does nuclear deformation affect the Shell Model?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It does not affect the Shell Model at all.",
+                "correct": false,
+                "feedback": "Incorrect. Nuclear deformation changes energy levels in the Shell Model."
+            },
+            {
+                "answer": "It alters the Nuclear Potential Well shape, leading to modified energy levels.",
+                "correct": true,
+                "feedback": "Correct! Deformation changes the potential well, impacting the energy levels of nucleons."
+            },
+            {
+                "answer": "It makes the magic numbers disappear completely.",
+                "correct": false,
+                "feedback": "Incorrect. While deformation affects the energy levels, magic numbers still play a role."
+            },
+            {
+                "answer": "It forces nucleons to always occupy higher energy states.",
+                "correct": false,
+                "feedback": "Incorrect. Deformation changes energy levels but does not always force nucleons to higher states."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following are considered collective modes of excitation in deformed nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Vibrational states",
+                "correct": true,
+                "feedback": "Correct! Vibrational states occur when the nucleus oscillates around an equilibrium shape."
+            },
+            {
+                "answer": "Rotational states",
+                "correct": true,
+                "feedback": "Correct! Rotational states arise due to the rotation of a deformed nucleus."
+            },
+            {
+                "answer": "Spin-orbit coupling",
+                "correct": false,
+                "feedback": "Incorrect. Spin-orbit coupling is an intrinsic property of nucleons, not a collective excitation."
+            },
+            {
+                "answer": "Nuclear fission",
+                "correct": false,
+                "feedback": "Incorrect. Fission is a separate nuclear process, not a mode of excitation."
+            }
+        ]
+    },
+    {
+        "question": "What mathematical functions describe the possible discrete energy levels of a deformed nucleus?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Fourier series",
+                "correct": false,
+                "feedback": "Incorrect. Fourier series describe periodic functions, but not nuclear energy levels."
+            },
+            {
+                "answer": "Laplace spherical harmonics",
+                "correct": true,
+                "feedback": "Correct! Spherical harmonics describe energy levels in deformed nuclei."
+            },
+            {
+                "answer": "Taylor expansions",
+                "correct": false,
+                "feedback": "Incorrect. Taylor expansions approximate functions but do not describe nuclear energy levels."
+            },
+            {
+                "answer": "Gaussian functions",
+                "correct": false,
+                "feedback": "Incorrect. Gaussian functions describe probability distributions, not energy levels."
+            }
+        ]
+    },
+    {
+        "question": "In the equation describing nuclear deformation, what role does the parameter β play?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It determines the total nuclear charge.",
+                "correct": false,
+                "feedback": "Incorrect. β is not related to nuclear charge."
+            },
+            {
+                "answer": "It represents the strength of the nuclear force.",
+                "correct": false,
+                "feedback": "Incorrect. β is a deformation parameter, not a measure of nuclear force."
+            },
+            {
+                "answer": "It is a deformation parameter controlling the transition between spherical and deformed states.",
+                "correct": true,
+                "feedback": "Correct! β determines how much the nucleus deviates from a spherical shape."
+            },
+            {
+                "answer": "It is a probability function for nucleon interactions.",
+                "correct": false,
+                "feedback": "Incorrect. β does not describe probabilities but rather deformation."
+            }
+        ]
+    },
+    {
+        "question": "What does the deformation parameter \\( \\beta \\) describe?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The total nuclear charge.",
+                "correct": false,
+                "feedback": "Incorrect. The nuclear charge is determined by the number of protons, not \\( \\beta \\)."
+            },
+            {
+                "answer": "The deviation of the nucleus from a spherical shape.",
+                "correct": true,
+                "feedback": "Correct! \\( \\beta \\) determines how much the nucleus deviates from a spherical shape."
+            },
+            {
+                "answer": "The binding energy of the nucleus.",
+                "correct": false,
+                "feedback": "Incorrect. Binding energy is a different nuclear property."
+            },
+            {
+                "answer": "The interaction strength between nucleons.",
+                "correct": false,
+                "feedback": "Incorrect. \\( \\beta \\) relates to shape deformation, not nucleon interactions."
+            }
+        ]
+    },
+    {
+        "question": "What happens when \\( \\beta = 0 \\)?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The nucleus takes a spherical shape.",
+                "correct": true,
+                "feedback": "Correct! When \\( \\beta = 0 \\), the nucleus is perfectly spherical."
+            },
+            {
+                "answer": "The nucleus becomes more elongated.",
+                "correct": false,
+                "feedback": "Incorrect. A positive \\( \\beta \\) value would result in elongation (prolate shape)."
+            },
+            {
+                "answer": "The nucleus undergoes fission.",
+                "correct": false,
+                "feedback": "Incorrect. Fission occurs due to different nuclear instabilities, not directly from \\( \\beta = 0 \\)."
+            },
+            {
+                "answer": "The nucleus collapses.",
+                "correct": false,
+                "feedback": "Incorrect. A spherical nucleus remains stable."
+            }
+        ]
+    },
+    {
+        "question": "How is the intrinsic Electric Quadrupole Moment \\( Q_0 \\) related to nuclear deformation?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It depends on the number of protons, nuclear radius, and deformation parameter \\( \\beta \\).",
+                "correct": true,
+                "feedback": "Correct! The intrinsic quadrupole moment \\( Q_0 \\) is directly related to these factors."
+            },
+            {
+                "answer": "It is independent of nuclear shape and always zero.",
+                "correct": false,
+                "feedback": "Incorrect. A spherical nucleus has \\( Q_0 = 0 \\), but deformed nuclei have nonzero values."
+            },
+            {
+                "answer": "It only depends on the number of neutrons.",
+                "correct": false,
+                "feedback": "Incorrect. Neutrons do not directly contribute to the Electric Quadrupole Moment, which is a property of the charge distribution."
+            },
+            {
+                "answer": "It is determined solely by the mass number \\( A \\).",
+                "correct": false,
+                "feedback": "Incorrect. While mass influences nuclear properties, \\( Q_0 \\) is more directly influenced by deformation."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following describes the allowed rotational energy states in deformed nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Only odd J values are allowed.",
+                "correct": false,
+                "feedback": "Incorrect. Due to reflection symmetry, only even J values are allowed."
+            },
+            {
+                "answer": "Energy levels follow a sequence based on \\( J(J+1) \\).",
+                "correct": true,
+                "feedback": "Correct! The rotational energy levels follow the formula \\( E_J = \\frac{\\hbar^2}{2I} J(J+1) \\)."
+            },
+            {
+                "answer": "All values of J are equally likely.",
+                "correct": false,
+                "feedback": "Incorrect. Only even J values (0, 2, 4,...) are allowed."
+            },
+            {
+                "answer": "Energy levels increase linearly with J.",
+                "correct": false,
+                "feedback": "Incorrect. The energy levels increase as \\( J(J+1) \\), not linearly."
+            }
+        ]
+    },
+    {
+        "question": "If the first rotational energy level of \\( ^{164}Er \\) is measured as 91.4 keV, what is the expected energy of the \\( E(4^+) \\) state?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "182.8 keV",
+                "correct": false,
+                "feedback": "Incorrect. The energy does not increase linearly."
+            },
+            {
+                "answer": "304.7 keV",
+                "correct": true,
+                "feedback": "Correct! The rotational energy levels follow the sequence \\( E_J = \\frac{1}{6} J(J+1) E_2 \\), leading to \\( E(4^+) = 20 E_2 / 6 \\)."
+            },
+            {
+                "answer": "91.4 keV",
+                "correct": false,
+                "feedback": "Incorrect. This is the energy of the first excited state \\( E(2^+) \\), not \\( E(4^+) \\)."
+            },
+            {
+                "answer": "42 keV",
+                "correct": false,
+                "feedback": "Incorrect. The energy increases according to the \\( J(J+1) \\) rule."
+            }
+        ]
+    },
+    {
+        "question": "What are vibrational states in nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Permanent deformations of the nucleus.",
+                "correct": false,
+                "feedback": "Incorrect. Vibrational states are time-dependent shape oscillations, not permanent deformations."
+            },
+            {
+                "answer": "Time-variable changes in surface shape that create quantized standing waves.",
+                "correct": true,
+                "feedback": "Correct! Vibrational states involve standing wave oscillations in the nuclear surface shape."
+            },
+            {
+                "answer": "Fluctuations in nuclear density.",
+                "correct": false,
+                "feedback": "Incorrect. The nucleus is incompressible, so its density remains constant during vibrations."
+            },
+            {
+                "answer": "Random movements of nucleons inside the nucleus.",
+                "correct": false,
+                "feedback": "Incorrect. Vibrational states are quantized and follow specific standing wave patterns."
+            }
+        ]
+    },
+    {
+        "question": "Why is the monopole vibration mode (\\(\\lambda=0\\)) forbidden?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It would result in fluctuations in nuclear density, which is forbidden.",
+                "correct": true,
+                "feedback": "Correct! The nucleus is incompressible, so monopole oscillations cannot occur."
+            },
+            {
+                "answer": "It causes a shift in the center of mass.",
+                "correct": false,
+                "feedback": "Incorrect. The dipole mode (\\(\\lambda=1\\)) is the one that shifts the center of mass."
+            },
+            {
+                "answer": "It only occurs in very heavy nuclei.",
+                "correct": false,
+                "feedback": "Incorrect. Monopole vibrations are forbidden in all nuclei due to density conservation."
+            },
+            {
+                "answer": "It leads to spontaneous nuclear fission.",
+                "correct": false,
+                "feedback": "Incorrect. While deformation can contribute to fission, monopole vibrations do not directly cause it."
+            }
+        ]
+    },
+    {
+        "question": "What is the first allowed vibrational state in nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Dipole (\\(\\lambda=1\\))",
+                "correct": false,
+                "feedback": "Incorrect. Dipole vibrations shift the center of mass and are not considered in this model."
+            },
+            {
+                "answer": "Quadrupole (\\(\\lambda=2\\))",
+                "correct": true,
+                "feedback": "Correct! Quadrupole vibrations (\\(\\lambda=2\\)) are the first important vibrational mode in nuclei."
+            },
+            {
+                "answer": "Octupole (\\(\\lambda=3\\))",
+                "correct": false,
+                "feedback": "Incorrect. Octupole vibrations occur but are not the first allowed mode."
+            },
+            {
+                "answer": "Hexadecapole (\\(\\lambda=4\\))",
+                "correct": false,
+                "feedback": "Incorrect. Hexadecapole vibrations are higher-order and not the first allowed mode."
+            }
+        ]
+    },
+    {
+        "question": "What is a phonon in the context of nuclear vibrations?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "A unit of quantized nuclear vibration energy.",
+                "correct": true,
+                "feedback": "Correct! A phonon represents a discrete unit of vibrational energy in the nucleus."
+            },
+            {
+                "answer": "A type of nucleon inside the nucleus.",
+                "correct": false,
+                "feedback": "Incorrect. Phonons are not nucleons but rather quantized energy excitations."
+            },
+            {
+                "answer": "A particle responsible for nuclear fission.",
+                "correct": false,
+                "feedback": "Incorrect. Phonons do not cause fission directly."
+            },
+            {
+                "answer": "An external force acting on the nucleus.",
+                "correct": false,
+                "feedback": "Incorrect. Phonons are internal energy excitations."
+            }
+        ]
+    },
+    {
+        "question": "How do vibrational energy levels compare to rotational energy levels?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Vibrational energy levels are evenly spaced, while rotational levels increase as \\(J(J+1)\\).",
+                "correct": true,
+                "feedback": "Correct! Vibrational states are evenly spaced, unlike rotational levels, which follow a \\(J(J+1)\\) pattern."
+            },
+            {
+                "answer": "Both vibrational and rotational levels follow the same energy spacing.",
+                "correct": false,
+                "feedback": "Incorrect. Vibrational levels are evenly spaced, while rotational levels follow \\(J(J+1)\\)."
+            },
+            {
+                "answer": "Vibrational levels decrease with increasing excitation energy.",
+                "correct": false,
+                "feedback": "Incorrect. Vibrational levels increase evenly in energy."
+            },
+            {
+                "answer": "Rotational levels are always lower in energy than vibrational levels.",
+                "correct": false,
+                "feedback": "Incorrect. Rotational levels can reach higher energies than vibrational levels."
+            }
+        ]
+    },
+    {
+        "question": "What happens to vibrational and rotational states as a nucleus moves away from a closed shell?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Excitation energies decrease, making vibrations and rotations more likely.",
+                "correct": true,
+                "feedback": "Correct! Moving away from a closed shell makes nuclei easier to excite into vibrational and rotational states."
+            },
+            {
+                "answer": "The nucleus becomes more stable and less likely to deform.",
+                "correct": false,
+                "feedback": "Incorrect. As a nucleus moves away from a closed shell, it becomes more deformed and easier to excite."
+            },
+            {
+                "answer": "Only vibrational states become more frequent, while rotations remain unchanged.",
+                "correct": false,
+                "feedback": "Incorrect. Both vibrational and rotational states become more prominent."
+            },
+            {
+                "answer": "The nucleus loses all collective behavior.",
+                "correct": false,
+                "feedback": "Incorrect. Collective effects become stronger away from closed shells."
+            }
+        ]
+    },
+    {
+        "question": "What are vibrational states in nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Permanent deformations of the nucleus.",
+                "correct": false,
+                "feedback": "Incorrect. Vibrational states are time-dependent shape oscillations, not permanent deformations."
+            },
+            {
+                "answer": "Time-variable changes in surface shape that create quantized standing waves.",
+                "correct": true,
+                "feedback": "Correct! Vibrational states involve standing wave oscillations in the nuclear surface shape."
+            },
+            {
+                "answer": "Fluctuations in nuclear density.",
+                "correct": false,
+                "feedback": "Incorrect. The nucleus is incompressible, so its density remains constant during vibrations."
+            },
+            {
+                "answer": "Random movements of nucleons inside the nucleus.",
+                "correct": false,
+                "feedback": "Incorrect. Vibrational states are quantized and follow specific standing wave patterns."
+            }
+        ]
+    },
+    {
+        "question": "Why is the monopole vibration mode (\\(\\lambda=0\\)) forbidden?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It would result in fluctuations in nuclear density, which is forbidden.",
+                "correct": true,
+                "feedback": "Correct! The nucleus is incompressible, so monopole oscillations cannot occur."
+            },
+            {
+                "answer": "It causes a shift in the center of mass.",
+                "correct": false,
+                "feedback": "Incorrect. The dipole mode (\\(\\lambda=1\\)) is the one that shifts the center of mass."
+            },
+            {
+                "answer": "It only occurs in very heavy nuclei.",
+                "correct": false,
+                "feedback": "Incorrect. Monopole vibrations are forbidden in all nuclei due to density conservation."
+            },
+            {
+                "answer": "It leads to spontaneous nuclear fission.",
+                "correct": false,
+                "feedback": "Incorrect. While deformation can contribute to fission, monopole vibrations do not directly cause it."
+            }
+        ]
+    },
+    {
+        "question": "What is the first allowed vibrational state in nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Dipole (\\(\\lambda=1\\))",
+                "correct": false,
+                "feedback": "Incorrect. Dipole vibrations shift the center of mass and are not considered in this model."
+            },
+            {
+                "answer": "Quadrupole (\\(\\lambda=2\\))",
+                "correct": true,
+                "feedback": "Correct! Quadrupole vibrations (\\(\\lambda=2\\)) are the first important vibrational mode in nuclei."
+            },
+            {
+                "answer": "Octupole (\\(\\lambda=3\\))",
+                "correct": false,
+                "feedback": "Incorrect. Octupole vibrations occur but are not the first allowed mode."
+            },
+            {
+                "answer": "Hexadecapole (\\(\\lambda=4\\))",
+                "correct": false,
+                "feedback": "Incorrect. Hexadecapole vibrations are higher-order and not the first allowed mode."
+            }
+        ]
+    },
+    {
+        "question": "What is a phonon in the context of nuclear vibrations?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "A unit of quantized nuclear vibration energy.",
+                "correct": true,
+                "feedback": "Correct! A phonon represents a discrete unit of vibrational energy in the nucleus."
+            },
+            {
+                "answer": "A type of nucleon inside the nucleus.",
+                "correct": false,
+                "feedback": "Incorrect. Phonons are not nucleons but rather quantized energy excitations."
+            },
+            {
+                "answer": "A particle responsible for nuclear fission.",
+                "correct": false,
+                "feedback": "Incorrect. Phonons do not cause fission directly."
+            },
+            {
+                "answer": "An external force acting on the nucleus.",
+                "correct": false,
+                "feedback": "Incorrect. Phonons are internal energy excitations."
+            }
+        ]
+    },
+    {
+        "question": "How do vibrational energy levels compare to rotational energy levels?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Vibrational energy levels are evenly spaced, while rotational levels increase as \\(J(J+1)\\).",
+                "correct": true,
+                "feedback": "Correct! Vibrational states are evenly spaced, unlike rotational levels, which follow a \\(J(J+1)\\) pattern."
+            },
+            {
+                "answer": "Both vibrational and rotational levels follow the same energy spacing.",
+                "correct": false,
+                "feedback": "Incorrect. Vibrational levels are evenly spaced, while rotational levels follow \\(J(J+1)\\)."
+            },
+            {
+                "answer": "Vibrational levels decrease with increasing excitation energy.",
+                "correct": false,
+                "feedback": "Incorrect. Vibrational levels increase evenly in energy."
+            },
+            {
+                "answer": "Rotational levels are always lower in energy than vibrational levels.",
+                "correct": false,
+                "feedback": "Incorrect. Rotational levels can reach higher energies than vibrational levels."
+            }
+        ]
+    },
+    {
+        "question": "What happens to vibrational and rotational states as a nucleus moves away from a closed shell?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Excitation energies decrease, making vibrations and rotations more likely.",
+                "correct": true,
+                "feedback": "Correct! Moving away from a closed shell makes nuclei easier to excite into vibrational and rotational states."
+            },
+            {
+                "answer": "The nucleus becomes more stable and less likely to deform.",
+                "correct": false,
+                "feedback": "Incorrect. As a nucleus moves away from a closed shell, it becomes more deformed and easier to excite."
+            },
+            {
+                "answer": "Only vibrational states become more frequent, while rotations remain unchanged.",
+                "correct": false,
+                "feedback": "Incorrect. Both vibrational and rotational states become more prominent."
+            },
+            {
+                "answer": "The nucleus loses all collective behavior.",
+                "correct": false,
+                "feedback": "Incorrect. Collective effects become stronger away from closed shells."
+            }
+        ]
+    },
+
+    {
+        "question": "What causes gamma decay in the nucleus?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "A nucleon is ejected from the nucleus.",
+                "correct": false,
+                "feedback": "Incorrect. Gamma decay does not involve the ejection of a nucleon but rather the release of a photon."
+            },
+            {
+                "answer": "A nucleon transitions from a higher to a lower energy level, emitting a photon.",
+                "correct": true,
+                "feedback": "Correct! Gamma decay occurs when a nucleon moves from an excited state to a lower energy state, releasing a gamma photon."
+            },
+            {
+                "answer": "The nucleus undergoes fission.",
+                "correct": false,
+                "feedback": "Incorrect. Fission involves the splitting of the nucleus, while gamma decay is an electromagnetic process."
+            },
+            {
+                "answer": "A neutron turns into a proton inside the nucleus.",
+                "correct": false,
+                "feedback": "Incorrect. This describes beta decay, not gamma decay."
+            }
+        ]
+    },
+    {
+        "question": "How does the angular momentum of a nucleus change during gamma decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The nucleus must undergo a change in angular momentum of at least 1.",
+                "correct": true,
+                "feedback": "Correct! Gamma transitions require a change in angular momentum of at least 1."
+            },
+            {
+                "answer": "The angular momentum remains unchanged.",
+                "correct": false,
+                "feedback": "Incorrect. A transition with no angular momentum change is forbidden in gamma decay."
+            },
+            {
+                "answer": "The angular momentum always decreases to zero.",
+                "correct": false,
+                "feedback": "Incorrect. The final angular momentum depends on the nuclear states involved."
+            },
+            {
+                "answer": "The angular momentum must always increase.",
+                "correct": false,
+                "feedback": "Incorrect. The nucleus releases energy and typically transitions to a lower spin state."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following gamma transitions is most probable?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "L = 1 (Dipole transition).",
+                "correct": true,
+                "feedback": "Correct! Dipole (L=1) transitions are the most probable compared to higher-order transitions."
+            },
+            {
+                "answer": "L = 2 (Quadrupole transition).",
+                "correct": false,
+                "feedback": "Incorrect. Quadrupole transitions are possible but less probable than dipole transitions."
+            },
+            {
+                "answer": "L = 3 (Octupole transition).",
+                "correct": false,
+                "feedback": "Incorrect. Octupole transitions are even less probable."
+            },
+            {
+                "answer": "L = 0 (No change in angular momentum).",
+                "correct": false,
+                "feedback": "Incorrect. Transitions with L = 0 are forbidden in gamma decay."
+            }
+        ]
+    },
+    {
+        "question": "What role does parity conservation play in gamma decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The parity of the nucleus must remain the same before and after the transition, depending on the radiation type.",
+                "correct": true,
+                "feedback": "Correct! Parity conservation dictates that electric and magnetic multipole transitions follow specific parity rules."
+            },
+            {
+                "answer": "Parity must always change in gamma decay.",
+                "correct": false,
+                "feedback": "Incorrect. Some transitions, like E2 or M1, preserve parity."
+            },
+            {
+                "answer": "Parity is not relevant to gamma decay.",
+                "correct": false,
+                "feedback": "Incorrect. Parity is an important selection rule in gamma transitions."
+            },
+            {
+                "answer": "Gamma decay always leads to a negative parity state.",
+                "correct": false,
+                "feedback": "Incorrect. The parity change depends on the type of transition."
+            }
+        ]
+    },
+    {
+        "question": "Which type of transition results in a parity change?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Electric Dipole (E1).",
+                "correct": true,
+                "feedback": "Correct! E1 transitions involve a parity change of (-1)^1 = -1."
+            },
+            {
+                "answer": "Magnetic Dipole (M1).",
+                "correct": false,
+                "feedback": "Incorrect. M1 transitions preserve parity."
+            },
+            {
+                "answer": "Electric Quadrupole (E2).",
+                "correct": false,
+                "feedback": "Incorrect. E2 transitions do not change parity."
+            },
+            {
+                "answer": "No gamma transition changes parity.",
+                "correct": false,
+                "feedback": "Incorrect. Some transitions, like E1, do change parity."
+            }
+        ]
+    },
+    {
+        "question": "Why does Ni-60 emit two gamma rays after Co-60 beta decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The 4+ state prefers to decay to the 2+ state before reaching the 0+ ground state.",
+                "correct": true,
+                "feedback": "Correct! The L=4 transition to 0+ is unlikely, so Ni-60 emits two gamma rays instead."
+            },
+            {
+                "answer": "The nucleus is unstable and splits into two separate gamma-emitting isotopes.",
+                "correct": false,
+                "feedback": "Incorrect. Ni-60 remains intact, but it de-excites through two separate gamma emissions."
+            },
+            {
+                "answer": "Gamma decay occurs simultaneously with beta decay.",
+                "correct": false,
+                "feedback": "Incorrect. Beta decay happens first, then the nucleus de-excites via gamma decay."
+            },
+            {
+                "answer": "The first gamma ray excites the nucleus again, causing a second emission.",
+                "correct": false,
+                "feedback": "Incorrect. The two gamma rays are from sequential de-excitations, not re-excitation."
             }
         ]
     }

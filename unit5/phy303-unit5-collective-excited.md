@@ -1,18 +1,18 @@
 # Collective Models
-<!-- 
+
 ```{admonition} Quick Links
 :class: tip, dropdown
-- {ref}`unit4:problems`
-- {ref}`unit4:additionalproblems`
-- {ref}`unit4:terms`
-- {ref}`unit4:flashcards`
-- {ref}`unit4:randomquiz`
-- {ref}`unit4:fullquiz`
+- {ref}`unit5:problems`
+- {ref}`unit5:additionalproblems`
+- {ref}`unit5:terms`
+- {ref}`unit5:flashcards`
+- {ref}`unit5:randomquiz`
+- {ref}`unit5:fullquiz`
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
-  - TBC
-  - TBC
+  - [Martin] Sections 7.6, 7.7 and 7.8
+  - Collective models [Krane] Chapter 5
 ``` 
--->
+
 
 ### Introduction
 We saw in the previous unit that while the simple spherical shell model is capable of describing basic properties of nuclei like magic numbers, it fails to capture all features observed in the chart of all nuclei.
@@ -275,6 +275,6 @@ Cobalt-60 (Co-60) undergoes beta decay, resulting in the formation of Nickel-60 
    Note that because of the larger energy jump the $4+$ state is far more likely to decay into the lower $2+$ state than the higher one resulting in 1.1732 MeV being one of the dominant gamma rays emitted. Both of these emissions are E2 transitions. 
 
 
-In the next few lectures, we'll probe further into the behavior of excited states of the nucleus and how this can lead to different forms of spontaneous radioactive decay. Before we do that however lets understand what else our simple shell model can say about one form of radiation, 
+In the next few lectures, we'll probe further into the behavior of excited states of the nucleus and how this can lead to different forms of spontaneous radioactive decay. Before we do that however lets understand what else our simple shell model can say about one form of radiation, beta and alpha decay.
 
 

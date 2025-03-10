@@ -63,19 +63,19 @@ parts:
       - file: unit4/phy303-unit4-flashcards.ipynb
       - file: unit4/phy303-unit4-random-quiz.ipynb
       - file: unit4/phy303-unit4-full-quiz.ipynb
-    # - file: unit5/phy303-unit5-review.md
-    #   sections: 
-    #   - file: unit5/phy303-unit5-problems.md
-    #   - file: unit5/phy303-unit5-additionalproblems.md
-    #   - file: unit5/phy303-unit5-terms.md
-    #   - file: unit5/phy303-unit5-flashcards.ipynb
-    #   - file: unit5/phy303-unit5-random-quiz.ipynb
-    #   - file: unit5/phy303-unit5-full-quiz.ipynb
-    # - file: unit6/phy303-unit6-review.md
-    #   sections: 
-    #   - file: unit6/phy303-unit6-problems.md
-    #   - file: unit6/phy303-unit6-additionalproblems.md
-    #   - file: unit6/phy303-unit6-terms.md
+    - file: unit5/phy303-unit5-review.md
+      sections: 
+      - file: unit5/phy303-unit5-problems.md
+      - file: unit5/phy303-unit5-additionalproblems.md
+      - file: unit5/phy303-unit5-terms.md
+    #  - file: unit5/phy303-unit5-flashcards.ipynb
+    #  - file: unit5/phy303-unit5-random-quiz.ipynb
+    #  - file: unit5/phy303-unit5-full-quiz.ipynb
+    - file: unit6/phy303-unit6-review.md
+      sections: 
+      - file: unit6/phy303-unit6-problems.md
+      - file: unit6/phy303-unit6-additionalproblems.md
+      - file: unit6/phy303-unit6-terms.md
     #   - file: unit6/phy303-unit6-flashcards.ipynb
     #   - file: unit6/phy303-unit6-random-quiz.ipynb
     #   - file: unit6/phy303-unit6-full-quiz.ipynb
