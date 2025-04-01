@@ -1,6 +1,166 @@
 [
     {
-        "back": "No",
-        "front": "Has this unit quiz/flashcards been setup?"
+        "back": "An electron and an antineutrino",
+        "front": "What is emitted during beta minus (\u03b2\u207b) decay?"
+    },
+    {
+        "back": "It increases by 1",
+        "front": "What happens to the atomic number of a nucleus after beta minus (\u03b2\u207b) decay?"
+    },
+    {
+        "back": "A positron and a neutrino",
+        "front": "Which particle is emitted during beta plus (\u03b2\u207a) decay?"
+    },
+    {
+        "back": "-1",
+        "front": "What is the charge of a beta minus (\u03b2\u207b) particle?"
+    },
+    {
+        "back": "Positron",
+        "front": "What is the name of the antiparticle of the electron emitted during beta plus decay?"
+    },
+    {
+        "back": "A neutron turns into a proton",
+        "front": "What is the main change inside the nucleus during beta minus (\u03b2\u207b) decay?"
+    },
+    {
+        "back": "Carry away excess energy and momentum",
+        "front": "In beta decay, what is the role of the neutrino or antineutrino?"
+    },
+    {
+        "back": "Weak nuclear force",
+        "front": "Which force is responsible for beta decay?"
+    },
+    {
+        "back": "It stays the same",
+        "front": "After beta minus decay, how does the mass number of the nucleus change?"
+    },
+    {
+        "back": "A proton is converted into a neutron",
+        "front": "Which of the following is true about beta plus decay?"
+    },
+    {
+        "back": "A beta particle and a (anti)neutrino",
+        "front": "Which particles are always involved in beta decay processes?"
+    },
+    {
+        "back": "No change in nuclear spin and no change in parity",
+        "front": "What is the main criterion for a 'superallowed' beta transition?"
+    },
+    {
+        "back": "The electron and antineutrino spins are parallel (S=1)",
+        "front": "What defines a Gamow-Teller transition in beta decay?"
+    },
+    {
+        "back": "S=0",
+        "front": "In a Fermi transition, what is the combined spin (S) of the emitted electron and antineutrino system?"
+    },
+    {
+        "back": "\u0394I=0 or \u00b11 with no change in parity",
+        "front": "Which of the following is true for allowed transitions (but not superallowed)?"
+    },
+    {
+        "back": "\u0394I=0,1,2 and parity change",
+        "front": "What is the selection rule for a first forbidden transition?"
+    },
+    {
+        "back": "Superallowed Fermi transition",
+        "front": "In the example $^{3}H \\rightarrow ^3He$ beta decay, what type of transition occurs?"
+    },
+    {
+        "back": "Allowed Gamow-Teller transition",
+        "front": "In $^{6}He \\rightarrow ^{6}Li$ beta decay, what type of transition occurs?"
+    },
+    {
+        "back": "First forbidden Gamow-Teller transition",
+        "front": "What transition type is involved in the beta decay of $^{17}N \\rightarrow ^{17}O$?"
+    },
+    {
+        "back": "They require larger changes in angular momentum and/or parity",
+        "front": "Why are higher-order forbidden transitions rare?"
+    },
+    {
+        "back": "The combined two beta decays can result in a positive Q-value and satisfy selection rules",
+        "front": "What makes double beta decay possible even when single beta decay is forbidden or energetically unfavored?"
+    },
+    {
+        "back": "The Q-value must be positive",
+        "front": "What condition must be met for alpha decay to be energetically possible?"
+    },
+    {
+        "back": "Quantum mechanical tunneling",
+        "front": "What is the main mechanism that allows an alpha particle to escape the nucleus despite insufficient kinetic energy to overcome the Coulomb barrier?"
+    },
+    {
+        "back": "Alpha particle energy and half-life",
+        "front": "What does the Geiger-Nuttall relation connect?"
+    },
+    {
+        "back": "They are tightly bound and energetically favorable",
+        "front": "Why are alpha particles commonly emitted instead of other nucleon combinations?"
+    },
+    {
+        "back": "The exponential suppression of tunneling probability",
+        "front": "What is the Gamow Factor related to in alpha decay?"
+    },
+    {
+        "back": "It tends to move the nucleus toward magic numbers, increasing stability",
+        "front": "According to the shell model, why is alpha decay often observed?"
+    },
+    {
+        "back": "The tunneling probability is extremely sensitive to alpha particle energy",
+        "front": "Why does the Geiger-Nuttall relation plot show such a steep slope?"
+    },
+    {
+        "back": "The repulsive electrostatic potential between the alpha and the nucleus",
+        "front": "Which of the following best describes the Coulomb barrier in alpha decay?"
+    },
+    {
+        "back": "The half-life decreases sharply",
+        "front": "In the simple barrier penetration model, what happens to the half-life if the alpha particle's energy increases?"
+    },
+    {
+        "back": "$1/r$ potential",
+        "front": "Which potential shape is typically used to approximate the Coulomb barrier in alpha decay?"
+    },
+    {
+        "back": "208-Pb",
+        "front": "In the 212-Po example, what is the parent nucleus after alpha emission?"
+    },
+    {
+        "back": "26.21 MeV",
+        "front": "What is the barrier height calculated for the 212-Po example?"
+    },
+    {
+        "back": "By subtracting the nuclear separation R from the radius where the Coulomb potential equals the alpha energy",
+        "front": "How is the barrier width (L) determined in the 212-Po example?"
+    },
+    {
+        "back": "17.9 fm",
+        "front": "What is the calculated barrier width (L) for 212-Po decay?"
+    },
+    {
+        "back": "2.47 \u00d7 10\u207b\u00b9\u2075",
+        "front": "What is the calculated tunneling probability (X) for 212-Po?"
+    },
+    {
+        "back": "By dividing the alpha velocity by twice the nuclear separation",
+        "front": "How is the alpha particle's frequency of hitting the barrier estimated?"
+    },
+    {
+        "back": "0.25 microseconds",
+        "front": "What is the approximate calculated half-life of 212-Po using the top-hat barrier model?"
+    },
+    {
+        "back": "It accounts for the realistic variation of the Coulomb potential",
+        "front": "What is the main advantage of improving the barrier model from a top-hat to a smooth Coulomb potential?"
+    },
+    {
+        "back": "Half-life is proportional to exp(-Z/\u221aQ)",
+        "front": "What does the improved model predict about the relationship between Z, Q, and half-life?"
+    },
+    {
+        "back": "It represents the exponential suppression factor for tunneling probability",
+        "front": "What is the physical meaning of the Gamow factor G in the context of alpha decay?"
     }
 ]

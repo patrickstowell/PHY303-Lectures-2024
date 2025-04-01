@@ -1,18 +1,18 @@
 # Radioactive Decays
-<!-- 
+
 ```{admonition} Quick Links
 :class: tip, dropdown
-- {ref}`unit6:problems`
+<!-- - {ref}`unit6:problems` -->
 - {ref}`unit6:additionalproblems`
 - {ref}`unit6:terms`
 - {ref}`unit6:flashcards`
 - {ref}`unit6:randomquiz`
 - {ref}`unit6:fullquiz`
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
-  - TBC
-  - TBC
+  - [Martin] Sections 7.6, 7.7 and 7.8
+  - Collective models [Krane] Chapter 5
 ``` 
--->
+
 
 ### Introduction 
 As we saw in the previous unit, nuclei in excited states can emit radiation in the form of gamma rays when nucleons move between different shell levels. This explains one of our three dominant sources of radiation. What about the others, $\beta$ and $\alpha$ decay?

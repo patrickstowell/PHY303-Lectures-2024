@@ -8,8 +8,8 @@
         "front": "How does nuclear deformation affect the Shell Model?"
     },
     {
-        "back": "Rotational or Vibrational states",
-        "front": "What is the a common source of collective modes of excitation in deformed nuclei?"
+        "back": "Rotational states",
+        "front": "Which of the following are considered collective modes of excitation in deformed nuclei?"
     },
     {
         "back": "Laplace spherical harmonics",
@@ -30,6 +30,10 @@
     {
         "back": "It depends on the number of protons, nuclear radius, and deformation parameter \\( \\beta \\).",
         "front": "How is the intrinsic Electric Quadrupole Moment \\( Q_0 \\) related to nuclear deformation?"
+    },
+    {
+        "back": "Energy levels follow a sequence based on \\( J(J+1) \\).",
+        "front": "Which of the following describes the allowed rotational energy states in deformed nuclei?"
     },
     {
         "back": "304.7 keV",
@@ -93,7 +97,7 @@
     },
     {
         "back": "L = 1 (Dipole transition).",
-        "front": "What gamma transition (dipole, quadrupole, etc) is most probable?"
+        "front": "Which of the following gamma transitions is most probable?"
     },
     {
         "back": "The parity of the nucleus must remain the same before and after the transition, depending on the radiation type.",
@@ -101,7 +105,7 @@
     },
     {
         "back": "Electric Dipole (E1).",
-        "front": "Give an example of a type of gamma transition results in a parity change?"
+        "front": "Which type of transition results in a parity change?"
     },
     {
         "back": "The 4+ state prefers to decay to the 2+ state before reaching the 0+ ground state.",

@@ -1,23 +1,785 @@
 [
     {
-        "question": "Has this unit quiz/flashcards been setup?",
+        "question": "In a compound-nucleus reaction, what happens after the projectile strikes the target?",
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "No",
+                "answer": "They form a single excited system that later decays",
                 "correct": true,
-                "feedback": "This will be done before the course starts."
+                "feedback": "Correct! The projectile and target combine to form a compound nucleus."
             },
             {
-                "answer": "Yes",
+                "answer": "The projectile immediately scatters elastically",
                 "correct": false,
-                "feedback": "Incorrect. This will be done before the course starts."
+                "feedback": "Incorrect. This would be elastic scattering, not compound formation."
             },
             {
-                "answer": "Never",
+                "answer": "The projectile transfers charge and exits",
                 "correct": false,
-                "feedback": "Incorrect. This will be done before the course starts."
+                "feedback": "Incorrect. That's a direct charge-exchange reaction."
+            },
+            {
+                "answer": "The target undergoes spontaneous fission",
+                "correct": false,
+                "feedback": "Incorrect. Fission is not implied here."
+            }
+        ]
+    },
+    {
+        "question": "Typical timescales for compound-nucleus reactions are on the order of:",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "$10^{-18} - 10^{-16}~\\textnormal{s}$",
+                "correct": true,
+                "feedback": "Correct! These are much longer than direct reaction timescales."
+            },
+            {
+                "answer": "$10^{-22} - 10^{-20}~\\textnormal{s}$",
+                "correct": false,
+                "feedback": "Incorrect. That is typical for direct reactions."
+            },
+            {
+                "answer": "$10^{-12} - 10^{-10}~\\textnormal{s}$",
+                "correct": false,
+                "feedback": "Incorrect. These timescales are too long."
+            },
+            {
+                "answer": "$1~\\textnormal{s}$",
+                "correct": false,
+                "feedback": "Incorrect. Nuclear reactions happen on sub-picosecond scales."
+            }
+        ]
+    },
+    {
+        "question": "What does the Bohr independence hypothesis state?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The formation and decay of the compound nucleus are independent",
+                "correct": true,
+                "feedback": "Correct! This is the core of the Bohr independence hypothesis."
+            },
+            {
+                "answer": "All nuclear reactions conserve spin",
+                "correct": false,
+                "feedback": "Incorrect. Spin conservation is not part of the Bohr hypothesis."
+            },
+            {
+                "answer": "All compound nuclei decay via neutron emission",
+                "correct": false,
+                "feedback": "Incorrect. Compound nuclei can decay via various channels."
+            },
+            {
+                "answer": "The projectile always leaves the nucleus elastically",
+                "correct": false,
+                "feedback": "Incorrect. That's elastic scattering, not compound reactions."
+            }
+        ]
+    },
+    {
+        "question": "What experimental method has been used to directly measure compound-nucleus lifetimes?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Crystal blocking",
+                "correct": true,
+                "feedback": "Correct! Crystal blocking effects provide information about the lifetime."
+            },
+            {
+                "answer": "Beta decay spectroscopy",
+                "correct": false,
+                "feedback": "Incorrect. Beta decay measures nuclear structure, not reaction lifetimes."
+            },
+            {
+                "answer": "Rutherford scattering",
+                "correct": false,
+                "feedback": "Incorrect. Rutherford scattering measures charge distribution."
+            },
+            {
+                "answer": "Neutron activation",
+                "correct": false,
+                "feedback": "Incorrect. This identifies reaction products, not lifetimes."
+            }
+        ]
+    },
+    {
+        "question": "What is a resonance in the context of compound-nucleus reactions?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "An enhancement of the cross section when projectile energy matches an excited state",
+                "correct": true,
+                "feedback": "Correct! Resonances occur when $E_{cm} = E_R$."
+            },
+            {
+                "answer": "A condition where no reaction occurs",
+                "correct": false,
+                "feedback": "Incorrect. Resonances enhance, not suppress, reactions."
+            },
+            {
+                "answer": "A direct transfer of a nucleon",
+                "correct": false,
+                "feedback": "Incorrect. That's a direct reaction."
+            },
+            {
+                "answer": "A pure elastic scattering process",
+                "correct": false,
+                "feedback": "Incorrect. Resonances involve excitation."
+            }
+        ]
+    },
+    {
+        "question": "The shape of a resonance is described by which distribution?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Breit-Wigner distribution",
+                "correct": true,
+                "feedback": "Correct! Resonances follow the Breit-Wigner form."
+            },
+            {
+                "answer": "Gaussian distribution",
+                "correct": false,
+                "feedback": "Incorrect. Gaussian does not apply here."
+            },
+            {
+                "answer": "Lorentzian distribution",
+                "correct": false,
+                "feedback": "Incorrect. While related, the correct name is Breit-Wigner."
+            },
+            {
+                "answer": "Poisson distribution",
+                "correct": false,
+                "feedback": "Incorrect. Poisson is not related to resonance shapes."
+            }
+        ]
+    },
+    {
+        "question": "What determines the width $\\Gamma$ of the resonance peak?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The lifetime of the compound nucleus",
+                "correct": true,
+                "feedback": "Correct! Shorter lifetime = broader width via $\\Gamma = h/\\tau$."
+            },
+            {
+                "answer": "The kinetic energy of the projectile",
+                "correct": false,
+                "feedback": "Incorrect. The projectile energy determines resonance location, not width."
+            },
+            {
+                "answer": "The spin of the target",
+                "correct": false,
+                "feedback": "Incorrect. Spin affects the height, not the width."
+            },
+            {
+                "answer": "The parity of the compound nucleus",
+                "correct": false,
+                "feedback": "Incorrect. Parity influences selection rules, not width."
+            }
+        ]
+    },
+    {
+        "question": "What is the physical meaning of $\\Gamma_b$ in the Breit-Wigner formula?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The partial width associated with decay into channel $b$",
+                "correct": true,
+                "feedback": "Correct! $\\Gamma_b$ reflects the branching to a specific decay channel."
+            },
+            {
+                "answer": "The total width of the resonance",
+                "correct": false,
+                "feedback": "Incorrect. That's $\\Gamma$, not $\\Gamma_b$."
+            },
+            {
+                "answer": "The total kinetic energy in the final state",
+                "correct": false,
+                "feedback": "Incorrect. Kinetic energy does not enter as $\\Gamma_b$."
+            },
+            {
+                "answer": "The width of the projectile wave packet",
+                "correct": false,
+                "feedback": "Incorrect. $\\Gamma_b$ is about the decay, not the projectile."
+            }
+        ]
+    },
+    {
+        "question": "How does the spin $J$ of the excited state influence the resonance peak?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The peak height is proportional to $2J + 1$",
+                "correct": true,
+                "feedback": "Correct! This is clearly seen in the Breit-Wigner formula."
+            },
+            {
+                "answer": "The width is proportional to $2J + 1$",
+                "correct": false,
+                "feedback": "Incorrect. The width is determined by the lifetime, not the spin."
+            },
+            {
+                "answer": "The position of the peak shifts by $J$ MeV",
+                "correct": false,
+                "feedback": "Incorrect. The spin does not shift the energy position."
+            },
+            {
+                "answer": "The resonance disappears for $J=0$",
+                "correct": false,
+                "feedback": "Incorrect. Resonances can occur for any $J$, including $J=0$."
+            }
+        ]
+    },
+    {
+        "question": "Why are resonance peaks often asymmetric in real data?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Interference with non-resonant scattering",
+                "correct": true,
+                "feedback": "Correct! The asymmetry is due to interference effects."
+            },
+            {
+                "answer": "Measurement errors",
+                "correct": false,
+                "feedback": "Incorrect. The asymmetry is a physical effect."
+            },
+            {
+                "answer": "Incorrect energy calibration",
+                "correct": false,
+                "feedback": "Incorrect. Experimental asymmetry persists even with good calibration."
+            },
+            {
+                "answer": "Finite detector resolution",
+                "correct": false,
+                "feedback": "Incorrect. Resolution broadens peaks, but doesn't cause asymmetry."
+            }
+        ]
+    },
+    {
+        "question": "What is the typical timescale of a direct nuclear reaction?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "$\\sim 10^{-22}$ seconds",
+                "correct": true,
+                "feedback": "Correct! Direct reactions happen on very short timescales."
+            },
+            {
+                "answer": "$\\sim 10^{-16}$ seconds",
+                "correct": false,
+                "feedback": "Incorrect. This is closer to compound-nucleus reaction timescales."
+            },
+            {
+                "answer": "$\\sim 10^{-18}$ seconds",
+                "correct": false,
+                "feedback": "Incorrect. Still too slow for direct reactions."
+            },
+            {
+                "answer": "$\\sim 10^{-12}$ seconds",
+                "correct": false,
+                "feedback": "Incorrect. Nuclear reactions are much faster than this."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following is a characteristic of compound-nucleus reactions?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Isotropic angular distribution of ejectiles",
+                "correct": true,
+                "feedback": "Correct! Compound-nucleus decays are generally isotropic."
+            },
+            {
+                "answer": "Forward-peaked angular distribution",
+                "correct": false,
+                "feedback": "Incorrect. This is typical of direct reactions."
+            },
+            {
+                "answer": "Short reaction time (~$10^{-22}$ s)",
+                "correct": false,
+                "feedback": "Incorrect. Compound-nucleus reactions are much slower."
+            },
+            {
+                "answer": "Always emits gamma rays",
+                "correct": false,
+                "feedback": "Incorrect. Compound nuclei may decay via many channels."
+            }
+        ]
+    },
+    {
+        "question": "Photonuclear reactions use:",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Photons as projectiles",
+                "correct": true,
+                "feedback": "Correct! They use photons instead of nucleons."
+            },
+            {
+                "answer": "Alpha particles only",
+                "correct": false,
+                "feedback": "Incorrect. Alpha particles are used in other types of reactions."
+            },
+            {
+                "answer": "Thermal neutrons",
+                "correct": false,
+                "feedback": "Incorrect. Neutrons are used in other nuclear reactions."
+            },
+            {
+                "answer": "Electrons exclusively",
+                "correct": false,
+                "feedback": "Incorrect. Electrons produce photons but aren't projectiles in photonuclear reactions."
+            }
+        ]
+    },
+    {
+        "question": "What is a key experimental challenge when using photonuclear reactions?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Photons are more likely to interact with electrons than nuclei",
+                "correct": true,
+                "feedback": "Correct! Competing processes like the photoelectric effect dominate."
+            },
+            {
+                "answer": "Photon beams cannot exceed 1 MeV",
+                "correct": false,
+                "feedback": "Incorrect. Photon beams routinely exceed 1 MeV."
+            },
+            {
+                "answer": "Photons cannot cause nuclear reactions",
+                "correct": false,
+                "feedback": "Incorrect. They can, but with lower probability."
+            },
+            {
+                "answer": "Photonuclear reactions violate energy conservation",
+                "correct": false,
+                "feedback": "Incorrect. They fully respect conservation laws."
+            }
+        ]
+    },
+    {
+        "question": "What happens if the photon energy is below the separation energy in a photonuclear reaction?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The nucleus is excited but no nucleons are ejected",
+                "correct": true,
+                "feedback": "Correct! This leads to nuclear resonance fluorescence."
+            },
+            {
+                "answer": "The nucleus undergoes photodisintegration",
+                "correct": false,
+                "feedback": "Incorrect. Photodisintegration requires photon energy above the separation energy."
+            },
+            {
+                "answer": "No interaction with the nucleus can occur",
+                "correct": false,
+                "feedback": "Incorrect. Excitation is still possible via resonance."
+            },
+            {
+                "answer": "The photon creates a positron-electron pair",
+                "correct": false,
+                "feedback": "Incorrect. This is a different process (pair production)."
+            }
+        ]
+    },
+    {
+        "question": "Which nuclear property is **not** directly accessible via photonuclear reactions?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Atomic electron binding energies",
+                "correct": true,
+                "feedback": "Correct! Photonuclear reactions probe nuclear properties, not atomic binding energies."
+            },
+            {
+                "answer": "Nuclear spin and parity",
+                "correct": false,
+                "feedback": "Incorrect. Photonuclear reactions can give information on spin and parity."
+            },
+            {
+                "answer": "Multipolarity of gamma transitions",
+                "correct": false,
+                "feedback": "Incorrect. These can be measured."
+            },
+            {
+                "answer": "Gamma-ray branching ratios",
+                "correct": false,
+                "feedback": "Incorrect. These are measurable through photonuclear methods."
+            }
+        ]
+    },
+    {
+        "question": "Which reaction is called photodisintegration?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "When photon energy is above the nucleon separation energy and nucleons are ejected",
+                "correct": true,
+                "feedback": "Correct! Photodisintegration knocks out nucleons."
+            },
+            {
+                "answer": "When the nucleus emits photons without ejecting particles",
+                "correct": false,
+                "feedback": "Incorrect. That is nuclear resonance fluorescence."
+            },
+            {
+                "answer": "When the photon is absorbed but causes no nuclear excitation",
+                "correct": false,
+                "feedback": "Incorrect. Absorption without excitation is not photodisintegration."
+            },
+            {
+                "answer": "When the photon undergoes Compton scattering",
+                "correct": false,
+                "feedback": "Incorrect. Compton scattering involves electrons, not nuclei."
+            }
+        ]
+    },
+    {
+        "question": "Why are forward-peaked angular distributions associated with direct reactions?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Only a small amount of momentum is transferred to the nucleus",
+                "correct": true,
+                "feedback": "Correct! This leads to ejectiles continuing mostly in the forward direction."
+            },
+            {
+                "answer": "Compound-nucleus decay is involved",
+                "correct": false,
+                "feedback": "Incorrect. Compound reactions typically have isotropic distributions."
+            },
+            {
+                "answer": "All projectile energy goes into nuclear recoil",
+                "correct": false,
+                "feedback": "Incorrect. Only part of the energy is transferred."
+            },
+            {
+                "answer": "The projectile always has zero spin",
+                "correct": false,
+                "feedback": "Incorrect. Spin is not directly responsible for the forward peak."
+            }
+        ]
+    },
+    {
+        "question": "What is the typical energy scale for nucleon separation energies in nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Around 8 MeV",
+                "correct": true,
+                "feedback": "Correct! Separation energies are typically around 8 MeV."
+            },
+            {
+                "answer": "Less than 1 keV",
+                "correct": false,
+                "feedback": "Incorrect. This is too small."
+            },
+            {
+                "answer": "Greater than 1 GeV",
+                "correct": false,
+                "feedback": "Incorrect. This is too large for nucleon separation energies."
+            },
+            {
+                "answer": "About 0.25 keV",
+                "correct": false,
+                "feedback": "Incorrect. This is the typical recoil energy, not the separation energy."
+            }
+        ]
+    },
+    {
+        "question": "What is one applied use of nuclear resonance fluorescence?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Non-destructive scanning for nuclear materials",
+                "correct": true,
+                "feedback": "Correct! NRF can be used to detect materials based on gamma-ray signatures."
+            },
+            {
+                "answer": "Producing radioactive isotopes for medicine",
+                "correct": false,
+                "feedback": "Incorrect. This is done via other nuclear reactions."
+            },
+            {
+                "answer": "Detecting cosmic rays",
+                "correct": false,
+                "feedback": "Incorrect. NRF is not used in cosmic ray detection."
+            },
+            {
+                "answer": "Studying electron shells of heavy atoms",
+                "correct": false,
+                "feedback": "Incorrect. NRF probes nuclear, not electronic, properties."
+            }
+        ]
+    },
+    {
+        "question": "What is the giant dipole resonance best described as?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "A collective oscillation of protons against neutrons in the nucleus",
+                "correct": true,
+                "feedback": "Correct! It is a bulk oscillation of protons relative to neutrons."
+            },
+            {
+                "answer": "A direct reaction involving proton transfer",
+                "correct": false,
+                "feedback": "Incorrect. This is not related to the giant dipole resonance."
+            },
+            {
+                "answer": "A resonance due to individual nucleon excitations",
+                "correct": false,
+                "feedback": "Incorrect. The giant dipole resonance is a collective effect."
+            },
+            {
+                "answer": "A gamma decay transition within the nucleus",
+                "correct": false,
+                "feedback": "Incorrect. Gamma decay can follow the resonance but is not the resonance itself."
+            }
+        ]
+    },
+    {
+        "question": "According to the Migdal model, the giant dipole resonance energy scales as:",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "$75 A^{-1/3}$",
+                "correct": true,
+                "feedback": "Correct! The resonance energy decreases with increasing mass number as $A^{-1/3}$."
+            },
+            {
+                "answer": "$A^{1/2}$",
+                "correct": false,
+                "feedback": "Incorrect. This would increase with $A$, which is not observed."
+            },
+            {
+                "answer": "$25 A^{-1/2}$",
+                "correct": false,
+                "feedback": "Incorrect. The model uses $A^{-1/3}$, not $A^{-1/2}$."
+            },
+            {
+                "answer": "$50 A^{-1/4}$",
+                "correct": false,
+                "feedback": "Incorrect. This is not the correct scaling."
+            }
+        ]
+    },
+    {
+        "question": "What is an observable feature if a nucleus is deformed (non-spherical) in a giant dipole resonance?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The resonance splits into two peaks",
+                "correct": true,
+                "feedback": "Correct! Deformation leads to splitting into multiple resonances."
+            },
+            {
+                "answer": "The resonance disappears",
+                "correct": false,
+                "feedback": "Incorrect. It does not vanish, it broadens or splits."
+            },
+            {
+                "answer": "The resonance becomes sharper",
+                "correct": false,
+                "feedback": "Incorrect. It typically becomes broader."
+            },
+            {
+                "answer": "The resonance shifts to higher energies",
+                "correct": false,
+                "feedback": "Incorrect. It mainly splits, not shifts higher."
+            }
+        ]
+    },
+    {
+        "question": "What is the typical energy range of the giant dipole resonance in heavy nuclei?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "~13 MeV",
+                "correct": true,
+                "feedback": "Correct! It decreases to ~13 MeV in heavy nuclei."
+            },
+            {
+                "answer": "~50 MeV",
+                "correct": false,
+                "feedback": "Incorrect. This would be too high for the GDR."
+            },
+            {
+                "answer": "~5 MeV",
+                "correct": false,
+                "feedback": "Incorrect. This is too low for the GDR."
+            },
+            {
+                "answer": "~100 MeV",
+                "correct": false,
+                "feedback": "Incorrect. This is much higher than observed."
+            }
+        ]
+    },
+    {
+        "question": "Which type of excitation is most favored in photonuclear reactions due to the photon's spin?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Electric dipole",
+                "correct": true,
+                "feedback": "Correct! Photons favor dipole transitions because of their spin-1 nature."
+            },
+            {
+                "answer": "Magnetic monopole",
+                "correct": false,
+                "feedback": "Incorrect. Monopole transitions are forbidden."
+            },
+            {
+                "answer": "Electric quadrupole",
+                "correct": false,
+                "feedback": "Incorrect. Quadrupole transitions can occur but are less likely."
+            },
+            {
+                "answer": "Magnetic quadrupole",
+                "correct": false,
+                "feedback": "Incorrect. Dipole transitions dominate."
+            }
+        ]
+    },
+    {
+        "question": "What role do photonuclear reactions play in astrophysics?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "They contribute to supernova nucleosynthesis and density fluctuations",
+                "correct": true,
+                "feedback": "Correct! They are involved in element production and cosmic structure formation."
+            },
+            {
+                "answer": "They are responsible for beta decay in stars",
+                "correct": false,
+                "feedback": "Incorrect. Beta decay is a weak interaction process."
+            },
+            {
+                "answer": "They prevent the formation of heavy elements",
+                "correct": false,
+                "feedback": "Incorrect. They contribute, not prevent."
+            },
+            {
+                "answer": "They are only relevant to Earth's atmosphere",
+                "correct": false,
+                "feedback": "Incorrect. They are key in stellar and cosmological contexts."
+            }
+        ]
+    },
+    {
+        "question": "What is the Q-value of a nuclear reaction defined as?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "$Q = m_i - m_f$",
+                "correct": true,
+                "feedback": "Correct! It's the mass difference between initial and final states."
+            },
+            {
+                "answer": "$Q = m_i + m_f$",
+                "correct": false,
+                "feedback": "Incorrect. It is the difference, not the sum."
+            },
+            {
+                "answer": "$Q = \\sqrt{m_i m_f}$",
+                "correct": false,
+                "feedback": "Incorrect. No square root relation is used."
+            },
+            {
+                "answer": "$Q = m_f - m_i$",
+                "correct": false,
+                "feedback": "Incorrect. The sign would be wrong."
+            }
+        ]
+    },
+    {
+        "question": "What does a negative Q-value imply for a nuclear reaction?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "There is a threshold energy required",
+                "correct": true,
+                "feedback": "Correct! A negative Q-value means kinetic energy is needed to initiate the reaction."
+            },
+            {
+                "answer": "The reaction is impossible",
+                "correct": false,
+                "feedback": "Incorrect. It is still possible if enough energy is supplied."
+            },
+            {
+                "answer": "The reaction will always occur",
+                "correct": false,
+                "feedback": "Incorrect. It requires sufficient projectile energy."
+            },
+            {
+                "answer": "The reaction produces a gamma ray",
+                "correct": false,
+                "feedback": "Incorrect. The Q-value doesn't directly imply gamma emission."
+            }
+        ]
+    },
+    {
+        "question": "What distinguishes nuclear resonance fluorescence from photodisintegration?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "NRF emits photons; photodisintegration emits nucleons",
+                "correct": true,
+                "feedback": "Correct! NRF results in gamma emission, photodisintegration ejects nucleons."
+            },
+            {
+                "answer": "NRF is only possible with heavy nuclei",
+                "correct": false,
+                "feedback": "Incorrect. NRF is not limited to heavy nuclei."
+            },
+            {
+                "answer": "Photodisintegration only happens with spherical nuclei",
+                "correct": false,
+                "feedback": "Incorrect. Shape does not prevent photodisintegration."
+            },
+            {
+                "answer": "NRF requires Q<0",
+                "correct": false,
+                "feedback": "Incorrect. NRF does not require negative Q."
+            }
+        ]
+    },
+    {
+        "question": "Why has the giant dipole resonance been important beyond nuclear physics?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It inspired techniques used in atomic and condensed matter systems",
+                "correct": true,
+                "feedback": "Correct! It led to models applicable in other fields like cluster physics."
+            },
+            {
+                "answer": "It explains all gamma-ray bursts",
+                "correct": false,
+                "feedback": "Incorrect. Gamma-ray bursts have different astrophysical origins."
+            },
+            {
+                "answer": "It proved the existence of neutrons",
+                "correct": false,
+                "feedback": "Incorrect. Neutron discovery predates and is independent of the GDR."
+            },
+            {
+                "answer": "It allows determination of atomic electron configurations",
+                "correct": false,
+                "feedback": "Incorrect. The GDR is a nuclear, not atomic, phenomenon."
             }
         ]
     }
 ]
+
+
+

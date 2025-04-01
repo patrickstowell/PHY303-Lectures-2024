@@ -1,6 +1,122 @@
 [
     {
-        "back": "No",
-        "front": "Has this unit quiz/flashcards been setup?"
+        "back": "The projectile",
+        "front": "In the notation A(a,b)B used in nuclear physics, what does 'a' represent?"
+    },
+    {
+        "back": "4",
+        "front": "In the reaction  $ ^{27}\\text{Al}(p,3pn)^{22}\\text{Na} $ , how many nucleons are ejected?"
+    },
+    {
+        "back": " $ (p,spall) $ ",
+        "front": "Which of the following is a correct example of a spallation reaction?"
+    },
+    {
+        "back": "Impact parameter (b)",
+        "front": "In Rutherford scattering, which parameter is defined as the perpendicular distance between the particle's initial trajectory and the nucleus?"
+    },
+    {
+        "back": " $ \\sin(\u03b8/2) $ ",
+        "front": "According to Rutherford\u2019s derivation, the change in momentum of the scattered particle is proportional to:"
+    },
+    {
+        "back": " $ 1 / \\sin^4(\u03b8/2) $ ",
+        "front": "Which of the following does the Rutherford scattering formula predict the scattering rate is proportional to?"
+    },
+    {
+        "back": " $ \\epsilon_0 $  (vacuum permittivity)",
+        "front": "What physical constant appears in the Coulomb force expression in Rutherford scattering?"
+    },
+    {
+        "back": " $ \\mu b $ ",
+        "front": "In Rutherford scattering, the angular momentum of the projectile is given by:"
+    },
+    {
+        "back": "Atoms have a small, dense, positively charged nucleus",
+        "front": "What was one of the critical conclusions from Rutherford\u2019s scattering experiments?"
+    },
+    {
+        "back": "Increasing the kinetic energy of the alpha particles",
+        "front": "Which factor does NOT increase the number of alpha particles scattered at angle \u03b8?"
+    },
+    {
+        "back": "5.62 MeV",
+        "front": "In the elastic scattering example, what is the kinetic energy of the proton scattered at 90\u00b0 if the collision is elastic?"
+    },
+    {
+        "back": "5.20 MeV",
+        "front": "In example 1, if the  $ ^7 $ Li is left in its first excited state, what is the scattered proton energy at 90\u00b0?"
+    },
+    {
+        "back": "The net energy released or absorbed by the reaction",
+        "front": "What does the Q-value represent in a nuclear reaction?"
+    },
+    {
+        "back": "-18.353 MeV",
+        "front": "What is the Q-value of the reaction  $ p + ^4\\text{He} \\to ^1\\text{H} + ^3\\text{He} $ ?"
+    },
+    {
+        "back": "22.95 MeV",
+        "front": "What is the threshold energy for protons incident on helium in the reaction  $ p + ^4He \\rightarrow ^1H + ^3He $ ?"
+    },
+    {
+        "back": "More of the initial kinetic energy is needed to conserve momentum",
+        "front": "Why is the threshold energy higher when  $  \\alpha  $  particles are incident on hydrogen compared to protons on helium in Example 2?"
+    },
+    {
+        "back": "5.701 MeV",
+        "front": "In Example 3, what is the Q-value for the reaction  $ ^9Be(\\alpha,n)^{12}C $ ?"
+    },
+    {
+        "back": "12.4 MeV",
+        "front": "What is the maximum neutron energy in Example 3 when the incident alpha energy is 7.0 MeV?"
+    },
+    {
+        "back": "It decreases",
+        "front": "What happens to the range between maximum and minimum neutron energies when the alpha particle energy is reduced from 7.0 MeV to 1.0 MeV in Example 3?"
+    },
+    {
+        "back": "It allows comparison between different projectiles",
+        "front": "Why is it useful to specify projectile energies as energy per nucleon in nuclear reaction experiments?"
+    },
+    {
+        "back": "Two",
+        "front": "What is the minimal number of particles in the final state assumed in the basic reaction kinematics examples?"
+    },
+    {
+        "back": "Projectile velocities are small compared to the speed of light",
+        "front": "Why are non-relativistic kinematics usually sufficient in nuclear reaction calculations?"
+    },
+    {
+        "back": "Compound nucleus reaction",
+        "front": "Which type of reaction forms an excited intermediate system that later decays into products?"
+    },
+    {
+        "back": "Forward-peaked angular distribution",
+        "front": "What is a key signature of a direct reaction when looking at angular distributions?"
+    },
+    {
+        "back": " $ 10^{-22}~\\\\textnormal{s} $ ",
+        "front": "What is the typical timescale for a direct reaction?"
+    },
+    {
+        "back": "High-energy nucleons (e.g., 100 MeV protons)",
+        "front": "Which type of projectile is more likely to undergo a direct reaction?"
+    },
+    {
+        "back": " $ (d,p) $ ",
+        "front": "Which of the following is a transfer reaction?"
+    },
+    {
+        "back": "Isotropic distribution",
+        "front": "What is a key feature of compound-nucleus reaction angular distributions?"
+    },
+    {
+        "back": "Size, shape, and spin of the target nucleus",
+        "front": "What information can optical model fits to elastic scattering data provide?"
+    },
+    {
+        "back": " $ (d,p) $  stripping reaction",
+        "front": "What type of experiment often reveals excited states via peaks in ejectile energy spectra in direct reactions?"
     }
 ]

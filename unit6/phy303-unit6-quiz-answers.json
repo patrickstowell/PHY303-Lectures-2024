@@ -1,22 +1,862 @@
 [
     {
-        "question": "Has this unit quiz/flashcards been setup?",
+        "question": "What is emitted during beta minus (β⁻) decay?",
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "No",
+                "answer": "An electron and an antineutrino",
                 "correct": true,
-                "feedback": "This will be done before the course starts."
+                "feedback": "Correct! Beta minus decay emits an electron and an antineutrino."
             },
             {
-                "answer": "Yes",
+                "answer": "A positron and a neutrino",
                 "correct": false,
-                "feedback": "Incorrect. This will be done before the course starts."
+                "feedback": "Incorrect. That is beta plus decay."
             },
             {
-                "answer": "Never",
+                "answer": "An alpha particle",
                 "correct": false,
-                "feedback": "Incorrect. This will be done before the course starts."
+                "feedback": "Incorrect. Alpha particles are emitted during alpha decay, not beta decay."
+            }
+        ]
+    },
+    {
+        "question": "What happens to the atomic number of a nucleus after beta minus (β⁻) decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It increases by 1",
+                "correct": true,
+                "feedback": "Correct! The atomic number increases by 1 due to the conversion of a neutron into a proton."
+            },
+            {
+                "answer": "It decreases by 1",
+                "correct": false,
+                "feedback": "Incorrect. That would happen in beta plus decay."
+            },
+            {
+                "answer": "It stays the same",
+                "correct": false,
+                "feedback": "Incorrect. The atomic number changes in beta decay."
+            }
+        ]
+    },
+    {
+        "question": "Which particle is emitted during beta plus (β⁺) decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "A positron and a neutrino",
+                "correct": true,
+                "feedback": "Correct! Beta plus decay emits a positron and a neutrino."
+            },
+            {
+                "answer": "An electron and an antineutrino",
+                "correct": false,
+                "feedback": "Incorrect. That's beta minus decay."
+            },
+            {
+                "answer": "An alpha particle",
+                "correct": false,
+                "feedback": "Incorrect. Alpha particles are not involved in beta decay."
+            }
+        ]
+    },
+    {
+        "question": "What is the charge of a beta minus (β⁻) particle?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "-1",
+                "correct": true,
+                "feedback": "Correct! A beta minus particle is an electron, which has a charge of -1."
+            },
+            {
+                "answer": "+1",
+                "correct": false,
+                "feedback": "Incorrect. A positron has a +1 charge, not an electron."
+            },
+            {
+                "answer": "0",
+                "correct": false,
+                "feedback": "Incorrect. Neutrinos have no charge, but beta particles do."
+            }
+        ]
+    },
+    {
+        "question": "What is the name of the antiparticle of the electron emitted during beta plus decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Positron",
+                "correct": true,
+                "feedback": "Correct! A positron is the antiparticle of the electron."
+            },
+            {
+                "answer": "Neutron",
+                "correct": false,
+                "feedback": "Incorrect. Neutrons are neutral particles inside the nucleus."
+            },
+            {
+                "answer": "Photon",
+                "correct": false,
+                "feedback": "Incorrect. Photons are particles of light."
+            }
+        ]
+    },
+    {
+        "question": "What is the main change inside the nucleus during beta minus (β⁻) decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "A neutron turns into a proton",
+                "correct": true,
+                "feedback": "Correct! A neutron converts into a proton, emitting a beta particle and an antineutrino."
+            },
+            {
+                "answer": "A proton turns into a neutron",
+                "correct": false,
+                "feedback": "Incorrect. This happens in beta plus decay."
+            },
+            {
+                "answer": "An alpha particle is emitted",
+                "correct": false,
+                "feedback": "Incorrect. Alpha decay is a different process."
+            }
+        ]
+    },
+    {
+        "question": "In beta decay, what is the role of the neutrino or antineutrino?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Carry away excess energy and momentum",
+                "correct": true,
+                "feedback": "Correct! Neutrinos or antineutrinos balance the energy and momentum in the decay."
+            },
+            {
+                "answer": "Balance electric charge",
+                "correct": false,
+                "feedback": "Incorrect. Electric charge is balanced by the beta particle."
+            },
+            {
+                "answer": "Trigger the decay process",
+                "correct": false,
+                "feedback": "Incorrect. The decay is a spontaneous process."
+            }
+        ]
+    },
+    {
+        "question": "Which force is responsible for beta decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Weak nuclear force",
+                "correct": true,
+                "feedback": "Correct! The weak nuclear force governs beta decay."
+            },
+            {
+                "answer": "Strong nuclear force",
+                "correct": false,
+                "feedback": "Incorrect. The strong force holds the nucleus together."
+            },
+            {
+                "answer": "Electromagnetic force",
+                "correct": false,
+                "feedback": "Incorrect. The electromagnetic force acts on charged particles, but does not cause beta decay."
+            }
+        ]
+    },
+    {
+        "question": "After beta minus decay, how does the mass number of the nucleus change?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It stays the same",
+                "correct": true,
+                "feedback": "Correct! Only the atomic number changes, not the mass number."
+            },
+            {
+                "answer": "It increases by 1",
+                "correct": false,
+                "feedback": "Incorrect. Mass number does not increase in beta decay."
+            },
+            {
+                "answer": "It decreases by 1",
+                "correct": false,
+                "feedback": "Incorrect. Mass number is unchanged."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following is true about beta plus decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "A proton is converted into a neutron",
+                "correct": true,
+                "feedback": "Correct! Beta plus decay turns a proton into a neutron."
+            },
+            {
+                "answer": "A neutron is converted into a proton",
+                "correct": false,
+                "feedback": "Incorrect. That is beta minus decay."
+            },
+            {
+                "answer": "Two protons are emitted",
+                "correct": false,
+                "feedback": "Incorrect. That's not a beta decay process."
+            }
+        ]
+    },
+    {
+        "question": "Which particles are always involved in beta decay processes?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "A beta particle and a (anti)neutrino",
+                "correct": true,
+                "feedback": "Correct! Both are emitted to conserve energy, momentum, and other quantities."
+            },
+            {
+                "answer": "An alpha particle and a neutrino",
+                "correct": false,
+                "feedback": "Incorrect. Alpha particles are not involved in beta decay."
+            },
+            {
+                "answer": "A gamma photon and a positron",
+                "correct": false,
+                "feedback": "Incorrect. This combination does not describe beta decay."
+            }
+        ]
+    },
+    {
+        "question": "What is the main criterion for a 'superallowed' beta transition?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "No change in nuclear spin and no change in parity",
+                "correct": true,
+                "feedback": "Correct! Superallowed transitions have ΔI=0 and Δπ=no change."
+            },
+            {
+                "answer": "Change in parity only",
+                "correct": false,
+                "feedback": "Incorrect. Superallowed transitions have no change in parity."
+            },
+            {
+                "answer": "Change in spin and parity",
+                "correct": false,
+                "feedback": "Incorrect. Superallowed transitions avoid changes in both spin and parity."
+            }
+        ]
+    },
+    {
+        "question": "What defines a Gamow-Teller transition in beta decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The electron and antineutrino spins are parallel (S=1)",
+                "correct": true,
+                "feedback": "Correct! Gamow-Teller transitions involve parallel spins giving S=1."
+            },
+            {
+                "answer": "The electron and antineutrino spins are anti-parallel (S=0)",
+                "correct": false,
+                "feedback": "Incorrect. That describes Fermi transitions."
+            },
+            {
+                "answer": "There is a change in parity",
+                "correct": false,
+                "feedback": "Incorrect. Gamow-Teller is about spin alignment, not parity change."
+            }
+        ]
+    },
+    {
+        "question": "In a Fermi transition, what is the combined spin (S) of the emitted electron and antineutrino system?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "S=0",
+                "correct": true,
+                "feedback": "Correct! Fermi transitions have S=0 with anti-parallel spins."
+            },
+            {
+                "answer": "S=1",
+                "correct": false,
+                "feedback": "Incorrect. S=1 is characteristic of Gamow-Teller transitions."
+            },
+            {
+                "answer": "S=2",
+                "correct": false,
+                "feedback": "Incorrect. S=2 is not possible for two spin-1/2 particles."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following is true for allowed transitions (but not superallowed)?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "ΔI=0 or ±1 with no change in parity",
+                "correct": true,
+                "feedback": "Correct! Allowed transitions have ΔI=0 or ±1 and no parity change."
+            },
+            {
+                "answer": "ΔI=0, ±1, or ±2 with parity change",
+                "correct": false,
+                "feedback": "Incorrect. This describes first forbidden transitions."
+            },
+            {
+                "answer": "ΔI ≥ 2 and parity change",
+                "correct": false,
+                "feedback": "Incorrect. That is characteristic of forbidden transitions."
+            }
+        ]
+    },
+    {
+        "question": "What is the selection rule for a first forbidden transition?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "ΔI=0,1,2 and parity change",
+                "correct": true,
+                "feedback": "Correct! First forbidden transitions involve ΔI up to 2 and a change in parity."
+            },
+            {
+                "answer": "ΔI=0 or ±1 with no parity change",
+                "correct": false,
+                "feedback": "Incorrect. That is for allowed transitions."
+            },
+            {
+                "answer": "ΔI=3,4 with parity change",
+                "correct": false,
+                "feedback": "Incorrect. That is third forbidden."
+            }
+        ]
+    },
+    {
+        "question": "In the example $^{3}H \\rightarrow ^3He$ beta decay, what type of transition occurs?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Superallowed Fermi transition",
+                "correct": true,
+                "feedback": "Correct! ΔI=0 and no parity change classify it as superallowed."
+            },
+            {
+                "answer": "First forbidden Gamow-Teller transition",
+                "correct": false,
+                "feedback": "Incorrect. There's no parity change or ΔI=2."
+            },
+            {
+                "answer": "Second forbidden transition",
+                "correct": false,
+                "feedback": "Incorrect. ΔI=0 transitions are allowed, not second forbidden."
+            }
+        ]
+    },
+    {
+        "question": "In $^{6}He \\rightarrow ^{6}Li$ beta decay, what type of transition occurs?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Allowed Gamow-Teller transition",
+                "correct": true,
+                "feedback": "Correct! ΔI=1 with no parity change and S=1 is Gamow-Teller and allowed."
+            },
+            {
+                "answer": "Forbidden Fermi transition",
+                "correct": false,
+                "feedback": "Incorrect. There's no parity change and ΔI=1 is allowed."
+            },
+            {
+                "answer": "Third forbidden transition",
+                "correct": false,
+                "feedback": "Incorrect. This is an allowed transition."
+            }
+        ]
+    },
+    {
+        "question": "What transition type is involved in the beta decay of $^{17}N \\rightarrow ^{17}O$?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "First forbidden Gamow-Teller transition",
+                "correct": true,
+                "feedback": "Correct! ΔI=2 with parity change qualifies as first forbidden."
+            },
+            {
+                "answer": "Allowed Fermi transition",
+                "correct": false,
+                "feedback": "Incorrect. Allowed transitions do not have parity change with ΔI=2."
+            },
+            {
+                "answer": "Second forbidden transition",
+                "correct": false,
+                "feedback": "Incorrect. The selection rules fit the first forbidden case."
+            }
+        ]
+    },
+    {
+        "question": "Why are higher-order forbidden transitions rare?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "They require larger changes in angular momentum and/or parity",
+                "correct": true,
+                "feedback": "Correct! The more forbidden, the lower the transition probability."
+            },
+            {
+                "answer": "They always violate conservation of energy",
+                "correct": false,
+                "feedback": "Incorrect. They are allowed but just less probable."
+            },
+            {
+                "answer": "They involve emission of alpha particles",
+                "correct": false,
+                "feedback": "Incorrect. Forbidden beta transitions do not involve alpha particles."
+            }
+        ]
+    },
+    {
+        "question": "What makes double beta decay possible even when single beta decay is forbidden or energetically unfavored?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The combined two beta decays can result in a positive Q-value and satisfy selection rules",
+                "correct": true,
+                "feedback": "Correct! This is why double beta decay can occur in certain nuclei."
+            },
+            {
+                "answer": "It does not emit neutrinos",
+                "correct": false,
+                "feedback": "Incorrect. Standard double beta decay does emit neutrinos."
+            },
+            {
+                "answer": "It involves gamma emission instead of beta particles",
+                "correct": false,
+                "feedback": "Incorrect. Double beta decay emits beta particles, not gamma rays."
+            }
+        ]
+    },
+    {
+        "question": "What condition must be met for alpha decay to be energetically possible?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The Q-value must be positive",
+                "correct": true,
+                "feedback": "Correct! A positive Q-value is required for alpha decay to release energy."
+            },
+            {
+                "answer": "The nucleus must have an even number of neutrons",
+                "correct": false,
+                "feedback": "Incorrect. Parity of neutron number does not directly determine possibility."
+            },
+            {
+                "answer": "The daughter nucleus must be magic",
+                "correct": false,
+                "feedback": "Incorrect. Being near magic numbers helps stability, but is not required."
+            }
+        ]
+    },
+    {
+        "question": "What is the main mechanism that allows an alpha particle to escape the nucleus despite insufficient kinetic energy to overcome the Coulomb barrier?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Quantum mechanical tunneling",
+                "correct": true,
+                "feedback": "Correct! Tunneling allows the alpha particle to escape even if E < U."
+            },
+            {
+                "answer": "Alpha particle scattering",
+                "correct": false,
+                "feedback": "Incorrect. Scattering does not lead to decay."
+            },
+            {
+                "answer": "Thermal excitation",
+                "correct": false,
+                "feedback": "Incorrect. Thermal energies are far too low to explain alpha decay."
+            }
+        ]
+    },
+    {
+        "question": "What does the Geiger-Nuttall relation connect?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Alpha particle energy and half-life",
+                "correct": true,
+                "feedback": "Correct! The relation links alpha energy to the logarithm of the half-life."
+            },
+            {
+                "answer": "Alpha particle mass and nuclear spin",
+                "correct": false,
+                "feedback": "Incorrect. Spin is not directly involved in the Geiger-Nuttall relation."
+            },
+            {
+                "answer": "Nuclear parity and alpha charge",
+                "correct": false,
+                "feedback": "Incorrect. Parity is not related in this context."
+            }
+        ]
+    },
+    {
+        "question": "Why are alpha particles commonly emitted instead of other nucleon combinations?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "They are tightly bound and energetically favorable",
+                "correct": true,
+                "feedback": "Correct! Alpha particles are energetically stable due to their strong binding."
+            },
+            {
+                "answer": "They carry zero charge",
+                "correct": false,
+                "feedback": "Incorrect. Alpha particles have a +2 charge."
+            },
+            {
+                "answer": "They are the only particles small enough to tunnel",
+                "correct": false,
+                "feedback": "Incorrect. Size alone doesn't restrict tunneling."
+            }
+        ]
+    },
+    {
+        "question": "What is the Gamow Factor related to in alpha decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The exponential suppression of tunneling probability",
+                "correct": true,
+                "feedback": "Correct! The Gamow factor controls how small the tunneling probability is."
+            },
+            {
+                "answer": "The total mass of the nucleus",
+                "correct": false,
+                "feedback": "Incorrect. The mass affects energies but not directly the Gamow factor."
+            },
+            {
+                "answer": "The magic number of the nucleus",
+                "correct": false,
+                "feedback": "Incorrect. Magic numbers relate to stability but not directly to the Gamow factor."
+            }
+        ]
+    },
+    {
+        "question": "According to the shell model, why is alpha decay often observed?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It tends to move the nucleus toward magic numbers, increasing stability",
+                "correct": true,
+                "feedback": "Correct! Alpha decay often improves nuclear stability."
+            },
+            {
+                "answer": "It always results in superallowed transitions",
+                "correct": false,
+                "feedback": "Incorrect. The concept of allowed transitions applies mainly to beta decay."
+            },
+            {
+                "answer": "It is the only decay mode for light nuclei",
+                "correct": false,
+                "feedback": "Incorrect. Alpha decay primarily occurs in heavier nuclei."
+            }
+        ]
+    },
+    {
+        "question": "Why does the Geiger-Nuttall relation plot show such a steep slope?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The tunneling probability is extremely sensitive to alpha particle energy",
+                "correct": true,
+                "feedback": "Correct! A small increase in energy can reduce the half-life by many orders of magnitude."
+            },
+            {
+                "answer": "It shows an experimental error in measuring half-lives",
+                "correct": false,
+                "feedback": "Incorrect. The relation is a real physical trend, not an error."
+            },
+            {
+                "answer": "The nuclear binding energy fluctuates randomly",
+                "correct": false,
+                "feedback": "Incorrect. The binding energies are systematic and predictable."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following best describes the Coulomb barrier in alpha decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The repulsive electrostatic potential between the alpha and the nucleus",
+                "correct": true,
+                "feedback": "Correct! The Coulomb barrier arises from the positive charges repelling."
+            },
+            {
+                "answer": "An attractive potential holding the alpha in the nucleus",
+                "correct": false,
+                "feedback": "Incorrect. That describes the strong nuclear force."
+            },
+            {
+                "answer": "A potential barrier caused by neutrons only",
+                "correct": false,
+                "feedback": "Incorrect. The Coulomb barrier involves protons (charges), not neutrons."
+            }
+        ]
+    },
+    {
+        "question": "In the simple barrier penetration model, what happens to the half-life if the alpha particle's energy increases?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The half-life decreases sharply",
+                "correct": true,
+                "feedback": "Correct! Higher energy increases tunneling probability, reducing the half-life."
+            },
+            {
+                "answer": "The half-life stays constant",
+                "correct": false,
+                "feedback": "Incorrect. The half-life is strongly energy-dependent."
+            },
+            {
+                "answer": "The half-life increases",
+                "correct": false,
+                "feedback": "Incorrect. A higher energy shortens the half-life."
+            }
+        ]
+    },
+    {
+        "question": "Which potential shape is typically used to approximate the Coulomb barrier in alpha decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "$1/r$ potential",
+                "correct": true,
+                "feedback": "Correct! The Coulomb barrier falls off as $1/r$ outside the nucleus."
+            },
+            {
+                "answer": "Linear potential",
+                "correct": false,
+                "feedback": "Incorrect. The Coulomb barrier is not linear."
+            },
+            {
+                "answer": "Harmonic oscillator potential",
+                "correct": false,
+                "feedback": "Incorrect. This is used in other models, not for the Coulomb barrier."
+            }
+        ]
+    },
+    {
+        "question": "In the 212-Po example, what is the parent nucleus after alpha emission?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "208-Pb",
+                "correct": true,
+                "feedback": "Correct! The daughter nucleus is 208-Pb after the emission of the alpha particle."
+            },
+            {
+                "answer": "212-Pb",
+                "correct": false,
+                "feedback": "Incorrect. The mass number decreases by 4."
+            },
+            {
+                "answer": "210-Po",
+                "correct": false,
+                "feedback": "Incorrect. Check the change in mass number."
+            }
+        ]
+    },
+    {
+        "question": "What is the barrier height calculated for the 212-Po example?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "26.21 MeV",
+                "correct": true,
+                "feedback": "Correct! The Coulomb barrier height is around 26.21 MeV."
+            },
+            {
+                "answer": "8.78 MeV",
+                "correct": false,
+                "feedback": "Incorrect. This is the energy of the emitted alpha."
+            },
+            {
+                "answer": "17.9 MeV",
+                "correct": false,
+                "feedback": "Incorrect. This is related to the barrier width, not the height."
+            }
+        ]
+    },
+    {
+        "question": "How is the barrier width (L) determined in the 212-Po example?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "By subtracting the nuclear separation R from the radius where the Coulomb potential equals the alpha energy",
+                "correct": true,
+                "feedback": "Correct! L = r - R, where r is where V(r) = E_alpha."
+            },
+            {
+                "answer": "By dividing the barrier height by the alpha energy",
+                "correct": false,
+                "feedback": "Incorrect. It is a spatial quantity, not an energy ratio."
+            },
+            {
+                "answer": "By measuring the nuclear charge radius",
+                "correct": false,
+                "feedback": "Incorrect. The charge radius is not directly used to define L."
+            }
+        ]
+    },
+    {
+        "question": "What is the calculated barrier width (L) for 212-Po decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "17.9 fm",
+                "correct": true,
+                "feedback": "Correct! L = 26.9 fm - 9.01 fm = 17.9 fm."
+            },
+            {
+                "answer": "9.01 fm",
+                "correct": false,
+                "feedback": "Incorrect. This is the nuclear separation R."
+            },
+            {
+                "answer": "26.9 fm",
+                "correct": false,
+                "feedback": "Incorrect. This is the outer classical turning point."
+            }
+        ]
+    },
+    {
+        "question": "What is the calculated tunneling probability (X) for 212-Po?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "2.47 × 10⁻¹⁵",
+                "correct": true,
+                "feedback": "Correct! This small probability explains the long half-life."
+            },
+            {
+                "answer": "1.14 × 10²¹",
+                "correct": false,
+                "feedback": "Incorrect. This is the estimated frequency, not the probability."
+            },
+            {
+                "answer": "0.25",
+                "correct": false,
+                "feedback": "Incorrect. This is closer to the half-life in microseconds."
+            }
+        ]
+    },
+    {
+        "question": "How is the alpha particle's frequency of hitting the barrier estimated?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "By dividing the alpha velocity by twice the nuclear separation",
+                "correct": true,
+                "feedback": "Correct! f = v / (2R) based on alpha oscillation."
+            },
+            {
+                "answer": "By multiplying the alpha energy by the barrier width",
+                "correct": false,
+                "feedback": "Incorrect. The frequency depends on velocity and radius."
+            },
+            {
+                "answer": "By the Coulomb barrier height",
+                "correct": false,
+                "feedback": "Incorrect. The barrier height is unrelated to oscillation frequency."
+            }
+        ]
+    },
+    {
+        "question": "What is the approximate calculated half-life of 212-Po using the top-hat barrier model?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "0.25 microseconds",
+                "correct": true,
+                "feedback": "Correct! The calculated value is 0.25 μs."
+            },
+            {
+                "answer": "1 second",
+                "correct": false,
+                "feedback": "Incorrect. This is too large."
+            },
+            {
+                "answer": "2.5 nanoseconds",
+                "correct": false,
+                "feedback": "Incorrect. Check your decimal places."
+            }
+        ]
+    },
+    {
+        "question": "What is the main advantage of improving the barrier model from a top-hat to a smooth Coulomb potential?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It accounts for the realistic variation of the Coulomb potential",
+                "correct": true,
+                "feedback": "Correct! The Coulomb potential varies smoothly as 1/r."
+            },
+            {
+                "answer": "It introduces relativistic corrections",
+                "correct": false,
+                "feedback": "Incorrect. Relativity is not part of this improvement."
+            },
+            {
+                "answer": "It eliminates the need for quantum tunneling",
+                "correct": false,
+                "feedback": "Incorrect. Tunneling is still essential."
+            }
+        ]
+    },
+    {
+        "question": "What does the improved model predict about the relationship between Z, Q, and half-life?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Half-life is proportional to exp(-Z/√Q)",
+                "correct": true,
+                "feedback": "Correct! This is the basis for the Geiger-Nuttall relation."
+            },
+            {
+                "answer": "Half-life is proportional to ZQ",
+                "correct": false,
+                "feedback": "Incorrect. This would not fit the observed data."
+            },
+            {
+                "answer": "Half-life is independent of Z",
+                "correct": false,
+                "feedback": "Incorrect. Z plays a major role via the Coulomb barrier."
+            }
+        ]
+    },
+    {
+        "question": "What is the physical meaning of the Gamow factor G in the context of alpha decay?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It represents the exponential suppression factor for tunneling probability",
+                "correct": true,
+                "feedback": "Correct! The probability of decay is roughly e^{-G}."
+            },
+            {
+                "answer": "It is the kinetic energy of the alpha particle",
+                "correct": false,
+                "feedback": "Incorrect. The alpha energy is separate from G."
+            },
+            {
+                "answer": "It is the number of collisions the alpha makes per second",
+                "correct": false,
+                "feedback": "Incorrect. That is the frequency, not the Gamow factor."
             }
         ]
     }

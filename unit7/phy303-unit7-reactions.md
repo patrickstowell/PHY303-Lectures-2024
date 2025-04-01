@@ -1,5 +1,5 @@
 # Nuclear Reactions
-<!-- 
+
 ```{admonition} Quick Links
 :class: tip, dropdown
 - {ref}`unit7:problems`
@@ -9,10 +9,10 @@
 - {ref}`unit7:randomquiz`
 - {ref}`unit7:fullquiz`
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
-  - TBC
-  - TBC
+- - Nuclear reactions [Martin] Chapter 2.9
+- - Nuclear reactions [Krane] Chapter 11
 ``` 
--->
+
 
 ### Reaction Kinematics
 So far we have concentrated on the properties of individual nuclei. However, in order to determine those properties, we must make use of nuclear reactions. Indeed, in order to have nuclei to study, and to exist to study them in the first place, we must have nuclear reactions: nuclear reactions build up the elements in stars, and the results of nuclear reactions tell us about nuclear structure.
@@ -241,7 +241,7 @@ Equating these expressions gives
 ```{math}
 :label: scattering_kb_equating
 \begin{equation}
-m_bK_a - m_bK_b + m_bQ = m_aK_a + m_bK_b - 2 \cos \theta \sqrt{m_am_bK_aK_b} 
+m_BK_a - m_BK_b + m_BQ = m_aK_a + m_bK_b - 2 \cos \theta \sqrt{m_am_bK_aK_b} 
 \end{equation} 
 ```
 
@@ -250,7 +250,7 @@ Collecting terms,
 ```{math}
 :label: scattering_collecting_terms
 \begin{equation}
-(m_b + m_B)K_b - (2 \cos \theta \sqrt{m_am_bK_a})K_b^{1/2} - ((m_b - m_a)K_a + m_bQ) = 0 
+(m_b + m_B)K_b - (2 \cos \theta \sqrt{m_am_bK_a})K_b^{1/2} - ((m_B - m_a)K_a + m_bQ) = 0 
 \end{equation} 
 ```
 
@@ -259,14 +259,14 @@ This is a quadratic in the unknown $ K_b $. Applying the usual quadratic formula
 ```{math}
 :label: scattering_kbcancellation
 \begin{equation}
-K_b^{1/2} = \frac{\cos \theta \sqrt{m_am_bK_a} \pm [m_am_bK_a \cos^2 \theta + (m_b + m_B)((m_b - m_a)K_a + m_bQ)]^{1/2}}{m_b + m_B} 
+K_b^{1/2} = \frac{\cos \theta \sqrt{m_am_bK_a} \pm [m_am_bK_a \cos^2 \theta + (m_b + m_B)((m_B - m_a)K_a + m_BQ)]^{1/2}}{m_b + m_B} 
 \end{equation} 
 ```
 
 This looks hideous, but the key point is that everything on the right-hand side is known, so what it tells us is that a given angle $ \theta $ almost always corresponds to a specific ejectile kinetic energy $ K_b $, or — perhaps more usefully — that a given combination of $ K_b $ and $ \theta $ corresponds to a specific value of $ Q $. Therefore we can use scattering processes to explore the excited states of the nucleus B, even though we do not observe $B$ itself.
 
 ```{note}
-If $ Q < 0 $, for small $ K_a $ it is possible for the value of $ (m_b + m_B)((m_b - m_a)K_a + m_bQ) $ to be less than zero. In this case there will be two possible values of $ K_b^{1/2} $ corresponding to the two signs of the square root. This is normally relevant only for energies close to threshold—see Krane, figures 11.2(a) and (b).
+If $ Q < 0 $, for small $ K_a $ it is possible for the value of $ (m_b + m_B)((m_b - m_a)K_a + m_BQ) $ to be less than zero. In this case there will be two possible values of $ K_b^{1/2} $ corresponding to the two signs of the square root. This is normally relevant only for energies close to threshold—see Krane, figures 11.2(a) and (b).
 ```
 
 
@@ -324,11 +324,11 @@ where $ \Delta E = 0.477 \textnormal{MeV}$ is the excitation energy.
 Therefore we have
 
 $$ 
-\frac{p_p^2}{2m} ( \frac{1}{m} + \frac{1}{M} ) = p^2 ( \frac{1}{m} - \frac{1}{M} ) - 2\Delta E 
+\frac{p_p^2}{2m} \left( \frac{1}{m} + \frac{1}{M} \right) = p^2 \left( \frac{1}{m} - \frac{1}{M} \right) - 2\Delta E 
 $$
 
 $$ 
-\Rightarrow \frac{p_p^2}{2m} = \frac{p^2}{2m} ( \frac{m^{-1} - M^{-1}}{m^{-1} + M^{-1}} ) - \frac{\Delta E}{1 + (m/M)} . 
+\Rightarrow \frac{p_p^2}{2m} = \frac{p^2}{2m} \left( \frac{m^{-1} - M^{-1}}{m^{-1} + M^{-1}} \right) - \frac{\Delta E}{1 + (m/M)} . 
 $$
 
 Putting in the numbers gives

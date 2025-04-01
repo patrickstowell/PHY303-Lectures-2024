@@ -71,30 +71,30 @@ parts:
       - file: unit5/phy303-unit5-flashcards.ipynb
       - file: unit5/phy303-unit5-random-quiz.ipynb
       - file: unit5/phy303-unit5-full-quiz.ipynb
-    #- file: unit6/phy303-unit6-review.md
-    #  sections: 
-    #  - file: unit6/phy303-unit6-problems.md
-    #  - file: unit6/phy303-unit6-additionalproblems.md
-    #  - file: unit6/phy303-unit6-terms.md
-    #   - file: unit6/phy303-unit6-flashcards.ipynb
-    #   - file: unit6/phy303-unit6-random-quiz.ipynb
-    #   - file: unit6/phy303-unit6-full-quiz.ipynb
-    # - file: unit7/phy303-unit7-review.md
-    #   sections: 
-    #   - file: unit7/phy303-unit7-problems.md
-    #   - file: unit7/phy303-unit7-additionalproblems.md
-    #   - file: unit7/phy303-unit7-terms.md
-    #   - file: unit7/phy303-unit7-flashcards.ipynb
-    #   - file: unit7/phy303-unit7-random-quiz.ipynb
-    #   - file: unit7/phy303-unit7-full-quiz.ipynb
-    # - file: unit8/phy303-unit8-review.md
-    #   sections: 
-    #   - file: unit8/phy303-unit8-problems.md
-    #   - file: unit8/phy303-unit8-additionalproblems.md
-    #   - file: unit8/phy303-unit8-terms.md
-    #   - file: unit8/phy303-unit8-flashcards.ipynb
-    #   - file: unit8/phy303-unit8-random-quiz.ipynb
-    #   - file: unit8/phy303-unit8-full-quiz.ipynb
+    - file: unit6/phy303-unit6-review.md
+      sections: 
+      # - file: unit6/phy303-unit6-problems.md
+      - file: unit6/phy303-unit6-additionalproblems.md
+      - file: unit6/phy303-unit6-terms.md
+      - file: unit6/phy303-unit6-flashcards.ipynb
+      - file: unit6/phy303-unit6-random-quiz.ipynb
+      - file: unit6/phy303-unit6-full-quiz.ipynb
+    - file: unit7/phy303-unit7-review.md
+      sections: 
+      - file: unit7/phy303-unit7-problems.md
+      - file: unit7/phy303-unit7-additionalproblems.md
+      - file: unit7/phy303-unit7-terms.md
+      - file: unit7/phy303-unit7-flashcards.ipynb
+      - file: unit7/phy303-unit7-random-quiz.ipynb
+      - file: unit7/phy303-unit7-full-quiz.ipynb
+    - file: unit8/phy303-unit8-review.md
+      sections: 
+      # - file: unit8/phy303-unit8-problems.md
+      - file: unit8/phy303-unit8-additionalproblems.md
+      - file: unit8/phy303-unit8-terms.md
+      - file: unit8/phy303-unit8-flashcards.ipynb
+      - file: unit8/phy303-unit8-random-quiz.ipynb
+      - file: unit8/phy303-unit8-full-quiz.ipynb
     # - file: unit9/phy303-unit9-review.md
     #   sections: 
     #   - file: unit9/phy303-unit9-problems.md
