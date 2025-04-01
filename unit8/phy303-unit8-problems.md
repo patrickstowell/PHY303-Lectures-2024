@@ -62,7 +62,7 @@ To estimate the average number of neutrons we need to first determine the number
 We then simply multiply each one by the branching ratios to estimate the average number of neutrons we would see.
 
 $$
-49.4% \cdot 1 + 20.0% \cdot 1 + 24.6% \cdot 2 + 0.1% \cdot 1 + 2.3% \cdot 1
+49.4 \cdot 1 + 20.0 \cdot 1 + 24.6 \cdot 2 + 0.1 \cdot 1 + 2.3 \cdot 1 = 121
 $$
 
 This gives an average of approximately 1.21 neutrons per reaction. If we didn't have the 2n reaction you would see this would instead be only 0.78 neutrons per reaction, but because around 25% of the time a reaction produces two neutrons, the average ends up being greater than one.
