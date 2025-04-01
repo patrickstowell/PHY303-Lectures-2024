@@ -1,18 +1,18 @@
 # Compound/Photon reactions
-<!-- 
+
 ```{admonition} Quick Links
 :class: tip, dropdown
-- {ref}`unit8:problems`
+<!-- - {ref}`unit8:problems` -->
 - {ref}`unit8:additionalproblems`
 - {ref}`unit8:terms`
 - {ref}`unit8:flashcards`
 - {ref}`unit8:randomquiz`
 - {ref}`unit8:fullquiz`
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
-  - TBC
-  - TBC
+- - Nuclear reactions [Martin] Chapter 2.9
+- - Nuclear reactions [Krane] Chapter 11
 ``` 
--->
+
 
 ### Introduction
 
@@ -100,14 +100,15 @@ To summarise:
 1. Direct reactions are fast $(\sim10^{-22}~\textnormal{s})$ reactions in which the projectile interacts with a small number of nucleons near the surface of the target nucleus. They are characterised by a forward peaked angular distribution of the ejectile(s) and are more likely with high-energy projectiles ($>10~\textnormal{MeV}$ or so). The important observables in direct reactions are the ejectile angular distribution (for optical model calculations) and energy spectrum at fixed angle (to map excited states of the daughter nucleus).
 2. Compound-nucleus reactions are slower ($~10^{-18} - 10^{-16} s$) reactions in which the projectile merges with the target nucleus. They are characterised by a fairly isotropic ejectile angular distribution and are more likely with low-energy projectiles. The decay mode of the compound nucleus is expected to be independent of the way it was formed. The important observable for compound-nucleus reactions is the cross section as a function of projectile energy, which should exhibit narrow resonances corresponding to excited states of the compound nucleus.
 
-3. Photonuclear reactions
+
+## Photo-nuclear reactions
 The nuclear reactions considered above all assume nuclear projectiles (typically small objects such as protons, neutrons, deuterons and alpha particles, but heavier ions are also used). It is, however, also possible to use photons as probes of nuclear structure.
 
 
-The problem with using photons is that they are much more likely to interact with the electrons in the target, or with the electric field of the nucleus, than with the nucleus itself. By far the dominant contributions to the cross section for photon absorption in solid targets are the photoelectric effect (i.e. liberation of electrons) below 1 MeV photon energy and pair-production in the electric field of the nucleus above 1 MeV. However, high-intensity sources of MeV-energy photons are available (see below), so photonuclear reactions can be studied and do have some practical applications.
+The problem with using photons is that they are much more likely to interact with the electrons in the target, or with the electric field of the nucleus, than with the nucleus itself. By far the dominant contributions to the cross section for photon absorption in solid targets are the photoelectric effect (i.e. liberation of electrons) below 1 MeV photon energy and pair-production in the electric field of the nucleus above 1 MeV. However, high-intensity sources of MeV-energy photons are available (see below), so photo-nuclear reactions can be studied and do have some practical applications.
 
 
-#### Photon sources
+### Photon sources
 Very high-energy photons are produced using electron beams. There are two main methods, shown schematically in figure 9.
 
 
@@ -123,15 +124,15 @@ align: center
 These methods are complementary rather than competitive: bremsstrahlung beams have a wide energy range and can therefore be used to study the energy dependence of the reaction (especially in “tagged” beams where the momentum of the scattered electron is measured by inserting a strong magnetic field immediately after the radiator), while laser backscattered beams can be tuned to a particular energy to investigate a specific excited state.
 
 
-#### Photon absorption by a nucleus
+### Photon absorption by a nucleus
 As with compound-nucleus reactions, photon absorption will be much more probable if the centre-of-mass energy matches an excited state of the nucleus (in this case, since the photon does not change the numbers of protons and neutrons, an excited state of the target nucleus). Excited states that can be reached by electric dipole transitions, $ \Delta l = \pm 1 $, are preferred because the photon has spin 1. The photon carries momentum $ p = E_\gamma / c $, and this momentum must be transferred to the target, so the target kinetic energy (assuming $ E_\gamma \ll M_nc^2 $) is $ E_{rec} = p^2 /2M_n = E^2_\gamma /2M_nc^2 $. This energy is not available to excite the nucleus, so the excitation energy is $ E_\gamma - E_{rec} $.
 
 For a typical mid-table nucleus with a mass of $50 \textnormal{GeV/c}² ~(≈ 54 u)$ and a $5~\textnormal{MeV}$ photon, the recoil kinetic energy is $0.25~\textnormal{keV}$. This is less than the width of most resonances, so in general the de-excitation photon will not be able to re-excite another nucleus to the same excited state.
 
-The final state of a photonuclear reaction depends on whether the photon energy is above or below the separation energy, i.e. the energy required to remove a proton or a neutron from the target nucleus (typically this is of order 8 MeV) as shown in figure 10. If the photon energy is below the separation energy, the result of the interaction will be an excited state of the target, which will de-excite by emitting one or more photons (depending on whether it returns directly to the ground state or cascades down through intermediate states): this is known as nuclear resonance fluorescence. If the photon energy is above the separation energy, it can knock out one or more nucleons, a process known as photodisintegration (Zilges et al. call it photodissociation, which is probably a better name, but less commonly used).
+The final state of a photo-nuclear reaction depends on whether the photon energy is above or below the separation energy, i.e. the energy required to remove a proton or a neutron from the target nucleus (typically this is of order 8 MeV) as shown in figure 10. If the photon energy is below the separation energy, the result of the interaction will be an excited state of the target, which will de-excite by emitting one or more photons (depending on whether it returns directly to the ground state or cascades down through intermediate states): this is known as nuclear resonance fluorescence. If the photon energy is above the separation energy, it can knock out one or more nucleons, a process known as photodisintegration (Zilges et al. call it photodissociation, which is probably a better name, but less commonly used).
 
-#### Nuclear resonance fluorescence
-Nuclear resonance fluorescence is a useful technique for studying excited states of nuclei. Because the incoming photon beam and be polarised, and the polarisation of the outgoing photons can be measured, the spin and parity assignments of excited states can be investigated using the angular distribution of the scattered photons. Zilges et al. (Prog. Nucl. Part. Phys. 122 (2022) 103903) list the properties that can be explored by photonuclear reactions as:
+### Nuclear resonance fluorescence
+Nuclear resonance fluorescence is a useful technique for studying excited states of nuclei. Because the incoming photon beam and be polarised, and the polarisation of the outgoing photons can be measured, the spin and parity assignments of excited states can be investigated using the angular distribution of the scattered photons. Zilges et al. (Prog. Nucl. Part. Phys. 122 (2022) 103903) list the properties that can be explored by photo-nuclear reactions as:
 - γ-ray transition energies $E_\gamma$
 - level energies $E_x$ and placements of γ-ray transitions in the nuclear level scheme
 - multipolarities $l$L of γ-ray transitions (i.e. dipole, quadrupole etc.)
@@ -140,7 +141,7 @@ Nuclear resonance fluorescence is a useful technique for studying excited states
 - γ-decay branching ratios $\Gamma_f/\Gamma_i$
 - $K$-quantum numbers of nuclear levels
 - multipole-mixing ratios $\delta$ of γ-ray transitions
-- integrated photonuclear resonance cross sections $\sigma(\theta)$
+- integrated photo-nuclear resonance cross sections $\sigma(\theta)$
 - partial decay widths $\Gamma_{f, mL}$
 - total level widths $\Gamma$
 - level lifetimes $\tau$
@@ -153,8 +154,8 @@ In addition to this, nuclear resonance fluorescence can be used for non-destruct
 
 
 
-#### The giant dipole resonance
-The most obvious feature seen in photonuclear reactions above the nucleon separation energy is the giant dipole resonance, which is a broad peak in the cross section at photon energies of ~25 MeV in light nuclei, decreasing to ~13 MeV for heavy nuclei. For mass numbers above 50 or so, the peak energy is reasonably well described by the Migdal model, in which the proton and neutron populations are interpenetrating liquids; this gives $E_m = 75A^{-1/3}$ for the energy of the resonance maximum.
+### The giant dipole resonance
+The most obvious feature seen in photo-nuclear reactions above the nucleon separation energy is the giant dipole resonance, which is a broad peak in the cross section at photon energies of ~25 MeV in light nuclei, decreasing to ~13 MeV for heavy nuclei. For mass numbers above 50 or so, the peak energy is reasonably well described by the Migdal model, in which the proton and neutron populations are interpenetrating liquids; this gives $E_m = 75A^{-1/3}$ for the energy of the resonance maximum.
 
 In the liquid-drop model, the giant dipole resonance can be seen as a collective excitation in which the whole population of protons in the nucleus oscillates with respect to the whole population of neutrons. More detailed calculations involve summing up contributions from dipoles formed by a nucleon excited from a filled shell and the “hole” it leaves behind (similar to the concept of electrons and holes in semiconductors).
 
@@ -164,8 +165,8 @@ An interesting feature of the giant dipole resonance is that if the nucleus is n
 
 The giant dipole resonance proved quite difficult to describe theoretically, and doing so drove the development of advanced techniques in nuclear theory. Analogues of the giant dipole resonance have since been studied in other systems, such as atoms, metallic clusters (small bound clusters of metal atoms with a conduction band of nearly-free electrons) and fullerenes, and the theoretical descriptions of these systems make use of the techniques developed in nuclear physics. The giant dipole resonance has therefore been a very fruitful phenomenon in terms of advancing theoretical physics.
 
-### Photonuclear reactions in astrophysics
-It is worth briefly mentioning that photonuclear reactions play an important role in astrophysics. Interactions between photons and charged particles in general (both nuclei and electrons) contribute to the pattern of density fluctuations that we see in the anisotropies of the cosmic microwave background and the large-scale distribution of galaxies. Photodisintegration of iron nuclei is a key stage in the collapse of an evolved massive star that gives rise to a core-collapse supernova (and seeds the universe with many different elements, including oxygen. Photonuclear reactions are also probably involved in the production of rare proton-rich isotopes such as $^{106}Cd$, which cannot be made by the usual stellar/supernova nucleosynthesis pathways that rely on adding neutrons.
+### Photo-nuclear reactions in astrophysics
+It is worth briefly mentioning that photo-nuclear reactions play an important role in astrophysics. Interactions between photons and charged particles in general (both nuclei and electrons) contribute to the pattern of density fluctuations that we see in the anisotropies of the cosmic microwave background and the large-scale distribution of galaxies. Photodisintegration of iron nuclei is a key stage in the collapse of an evolved massive star that gives rise to a core-collapse supernova (and seeds the universe with many different elements, including oxygen. Photo-nuclear reactions are also probably involved in the production of rare proton-rich isotopes such as $^{106}Cd$, which cannot be made by the usual stellar/supernova nucleosynthesis pathways that rely on adding neutrons.
 
 
 ```{figure} image-123.png
@@ -182,7 +183,7 @@ To summarise, nuclear reactions are critical to the understanding of nuclear str
 
 We have seen that nuclear reactions can proceed either directly, with the projectile interacting with a small number of nucleons on the surface of the target nucleus, or by the formation of an intermediate compound nucleus. Direct reactions are fast, transfer only a small amount of momentum and energy to the target, and produce forward-peaked ejectiles. The observables of interest are the energy and angular distribution of the ejectile, which can be used to probe the size, shape and excited states of the target and/or daughter nucleus. Compound-nucleus reactions, in contrast, are much slower, and involve the merger of the projectile with the target and the distribution of the projectile kinetic energy among all the nucleons in the system. The decay of the compound nucleus is assumed to be independent of it formation mechanism, and produces ejectiles with a roughly isotropic angular distribution. The principal observable of interest is the cross section, which will display resonances corresponding to excited states of the compound nucleus. The underlying form of the resonance is the Breit-Wigner distribution, whose shape depends primarily on the width of the resonance (governed by its lifetime, through the uncertainty principle) and the spins of the resonance, projectile and target. The pure Breit-Wigner shape may be modified by interference with a non-resonant contribution to the process.
 
-Finally, we considered photonuclear reactions, i.e. reactions that result from the absorption of a pho- ton by the target nucleus. This results in excitation of the target, which may de-excite by emitting one or more photons (nuclear resonance fluorescence) or, for higher-energy photons, by emitting one or more nucleons (photodisintegration). Nuclear resonance fluorescence is very useful in mapping excited states, and also has potential applications in non-destructive assay of materials. Above the nucle- on separation energy, a major feature is the giant dipole resonance at energies ranging from ~25 MeV to ~13 MeV depending on the mass of the target. The giant dipole resonance can be understood as a collective oscillation of the proton content of the nucleus with respect to the neutron component; achieving a more detailed understanding using the shell model has driven significant advances in theoretical techniques. Photonuclear reactions are also of importance in astrophysical contexts, from the early universe to supernovae.
+Finally, we considered photo-nuclear reactions, i.e. reactions that result from the absorption of a pho- ton by the target nucleus. This results in excitation of the target, which may de-excite by emitting one or more photons (nuclear resonance fluorescence) or, for higher-energy photons, by emitting one or more nucleons (photodisintegration). Nuclear resonance fluorescence is very useful in mapping excited states, and also has potential applications in non-destructive assay of materials. Above the nuclei on separation energy, a major feature is the giant dipole resonance at energies ranging from ~25 MeV to ~13 MeV depending on the mass of the target. The giant dipole resonance can be understood as a collective oscillation of the proton content of the nucleus with respect to the neutron component; achieving a more detailed understanding using the shell model has driven significant advances in theoretical techniques. Photo-nuclear reactions are also of importance in astrophysical contexts, from the early universe to supernovae.
 
 
 ```{figure} image-64.png
