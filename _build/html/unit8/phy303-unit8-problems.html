@@ -62,6 +62,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'unit8/phy303-unit8-problems';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -431,12 +433,9 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-branching-ratios-for-compound-nucleus-reactions-on-12-text-c">Problem: Branching Ratios for Compound Nucleus Reactions on (^{12}\text{C})</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-outline">Solution Outline:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-problem-resonance-contribution-via-breit-wigner-formula">Extended Problem: Resonance Contribution via Breit-Wigner Formula</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-questions">New Questions:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Solution Outline:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-co-59-neutron-cross-sections">Problem: Co-59 neutron cross-sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-branching-ratios-for-compound-nucleus-reactions-on-12-textnormal-c">Problem: Branching Ratios for Compound Nucleus Reactions on <span class="math notranslate nohighlight">\( ^{12}\textnormal{C} \)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-resonance-contribution-via-breit-wigner-formula">Problem: Resonance Contribution via Breit-Wigner Formula</a></li>
 </ul>
             </nav>
         </div>
@@ -450,131 +449,283 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="unit-8-worked-problems">
 <span id="unit8-problems"></span><h1>Unit 8 : Worked Problems<a class="headerlink" href="#unit-8-worked-problems" title="Link to this heading">#</a></h1>
-<p id="unit8-problem-example1">Great choice — (^{12}\text{C}) compound nucleus reactions have classic branching problems because they have multiple competing channels after neutron capture.</p>
-<p>Here’s a <strong>realistic problem</strong> based on actual known cross-sections for neutron-induced reactions on (^{12}\text{C}):</p>
-<hr class="docutils" />
-<section id="problem-branching-ratios-for-compound-nucleus-reactions-on-12-text-c">
-<h2>Problem: Branching Ratios for Compound Nucleus Reactions on (^{12}\text{C})<a class="headerlink" href="#problem-branching-ratios-for-compound-nucleus-reactions-on-12-text-c" title="Link to this heading">#</a></h2>
-<p>Consider neutron-induced reactions on carbon-12 at a neutron energy of ( E_n = 14 , \text{MeV} ), where the compound nucleus formed is (^{13}\text{C}^*) in an excited state.</p>
+<section id="problem-co-59-neutron-cross-sections">
+<span id="unit8-problem-example1"></span><h2>Problem: Co-59 neutron cross-sections<a class="headerlink" href="#problem-co-59-neutron-cross-sections" title="Link to this heading">#</a></h2>
+<p>Co-59 is a stable nucleus. The total neutron cross-section for Co-59 is <span class="math notranslate nohighlight">\(\textnormal{Co}_{59}\)</span> for 14 MeV neutrons is <span class="math notranslate nohighlight">\(2699 \, \textnormal{mb}\)</span>. The dominant branching ratios for individual reactions contributing to the total cross-section are given below.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Reaction</p></th>
+<th class="head"><p>Branching Ratio</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>(n,total)</p></td>
+<td><p>100%</p></td>
+</tr>
+<tr class="row-odd"><td><p>(n,elastic)</p></td>
+<td><p>49.4%</p></td>
+</tr>
+<tr class="row-even"><td><p>(n,inelastic)</p></td>
+<td><p>20.0%</p></td>
+</tr>
+<tr class="row-odd"><td><p>(n,2n)</p></td>
+<td><p>24.6%</p></td>
+</tr>
+<tr class="row-even"><td><p>(n,na)</p></td>
+<td><p>0.1%</p></td>
+</tr>
+<tr class="row-odd"><td><p>(n,np)</p></td>
+<td><p>2.3%</p></td>
+</tr>
+<tr class="row-even"><td><p>(n,p)</p></td>
+<td><p>1.9%</p></td>
+</tr>
+<tr class="row-odd"><td><p>(n,d)</p></td>
+<td><p>0.2%</p></td>
+</tr>
+<tr class="row-even"><td><p>(n,a)</p></td>
+<td><p>1.2%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple">
+<li><p>Determine the cross-sections of each individual reaction.</p></li>
+<li><p>Determine the average number of final state neutrons per event that would be observed over all reactions.</p></li>
+<li><p>Determine the cross-section for producing a 1-proton final state.</p></li>
+</ol>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p><strong>Total Cross-sections</strong>
+To obtain the individual cross-sections we simply multiply the total cross-section by the branching ratio.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Reaction</p></th>
+<th class="head"><p>Branching Ratio</p></th>
+<th class="head"><p>Cross-section [mb]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>(n,total)</p></td>
+<td><p>100%</p></td>
+<td><p>2699</p></td>
+</tr>
+<tr class="row-odd"><td><p>(n,elastic)</p></td>
+<td><p>49.4%</p></td>
+<td><p>1333.3</p></td>
+</tr>
+<tr class="row-even"><td><p>(n,inelastic)</p></td>
+<td><p>20.0%</p></td>
+<td><p>539.8</p></td>
+</tr>
+<tr class="row-odd"><td><p>(n,2n)</p></td>
+<td><p>24.6%</p></td>
+<td><p>663.6</p></td>
+</tr>
+<tr class="row-even"><td><p>(n,na)</p></td>
+<td><p>0.1%</p></td>
+<td><p>2.7</p></td>
+</tr>
+<tr class="row-odd"><td><p>(n,np)</p></td>
+<td><p>2.3%</p></td>
+<td><p>62.1</p></td>
+</tr>
+<tr class="row-even"><td><p>(n,p)</p></td>
+<td><p>1.9%</p></td>
+<td><p>51.3</p></td>
+</tr>
+<tr class="row-odd"><td><p>(n,d)</p></td>
+<td><p>0.2%</p></td>
+<td><p>5.4</p></td>
+</tr>
+<tr class="row-even"><td><p>(n,a)</p></td>
+<td><p>1.2%</p></td>
+<td><p>32.4</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Average Neutrons</strong>
+To estimate the average number of neutrons we need to first determine the number of neutrons in each final state.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Reaction</p></th>
+<th class="head"><p>Branching Ratio</p></th>
+<th class="head"><p>N Neutrons</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>(n,elastic)</p></td>
+<td><p>49.4%</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>(n,inelastic)</p></td>
+<td><p>20.0%</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>(n,2n)</p></td>
+<td><p>24.6%</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>(n,na)</p></td>
+<td><p>0.1%</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>(n,np)</p></td>
+<td><p>2.3%</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>(n,p)</p></td>
+<td><p>1.9%</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>(n,d)</p></td>
+<td><p>0.2%</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>(n,a)</p></td>
+<td><p>1.2%</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We then simply multiply each one by the branching ratios to estimate the average number of neutrons we would see.</p>
+<div class="math notranslate nohighlight">
+\[
+49.4% \cdot 1 + 20.0% \cdot 1 + 24.6% \cdot 2 + 0.1% \cdot 1 + 2.3% \cdot 1
+\]</div>
+<p>This gives an average of approximately 1.21 neutrons per reaction. If we didn’t have the 2n reaction you would see this would instead be only 0.78 neutrons per reaction, but because around 25% of the time a reaction produces two neutrons, the average ends up being greater than one.</p>
+<p><strong>Proton Final State Cross-section</strong></p>
+<p>The only reactions contributing to the proton final state are (n,np) and (n,p). We therefore simply add both cross-sections together.</p>
+<div class="math notranslate nohighlight">
+\[
+51.3\,\textnormal{mb} + 62.1\,\textnormal{mb} = 113.4\,\textnormal{mb}
+\]</div>
+</div>
+</section>
+<section id="problem-branching-ratios-for-compound-nucleus-reactions-on-12-textnormal-c">
+<h2>Problem: Branching Ratios for Compound Nucleus Reactions on <span class="math notranslate nohighlight">\( ^{12}\textnormal{C} \)</span><a class="headerlink" href="#problem-branching-ratios-for-compound-nucleus-reactions-on-12-textnormal-c" title="Link to this heading">#</a></h2>
+<p>Consider neutron-induced reactions on carbon-12 at a neutron energy of <span class="math notranslate nohighlight">\(  E_n = 14 \, \textnormal{MeV}  \)</span>, where the compound nucleus formed is <span class="math notranslate nohighlight">\( ^{13}\textnormal{C}^* \)</span> in an excited state.</p>
 <p>At this energy, the dominant reactions and their measured cross-sections are approximately:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Reaction Channel</p></th>
 <th class="head"><p>Reaction</p></th>
-<th class="head"><p>Cross-section (( \sigma )) [mb]</p></th>
+<th class="head"><p>Cross-section (<span class="math notranslate nohighlight">\(  \sigma  \)</span>) [mb]</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Elastic scattering</p></td>
-<td><p>(^{12}\text{C}(n,n)^{12}\text{C})</p></td>
+<td><p><span class="math notranslate nohighlight">\( ^{12}\textnormal{C}(n,n)^{12}\textnormal{C} \)</span></p></td>
 <td><p>850</p></td>
 </tr>
 <tr class="row-odd"><td><p>Inelastic scattering</p></td>
-<td><p>(^{12}\text{C}(n,n’)^{12}\text{C}^*)</p></td>
+<td><p><span class="math notranslate nohighlight">\( ^{12}\textnormal{C}(n,n')^{12}\textnormal{C}^* \)</span></p></td>
 <td><p>200</p></td>
 </tr>
 <tr class="row-even"><td><p>Neutron emission</p></td>
-<td><p>(^{12}\text{C}(n,2n)^{11}\text{C})</p></td>
+<td><p><span class="math notranslate nohighlight">\( ^{12}\textnormal{C}(n,2n)^{11}\textnormal{C} \)</span></p></td>
 <td><p>70</p></td>
 </tr>
 <tr class="row-odd"><td><p>Proton emission</p></td>
-<td><p>(^{12}\text{C}(n,np)^{11}\text{B})</p></td>
+<td><p><span class="math notranslate nohighlight">\( ^{12}\textnormal{C}(n,np)^{11}\textnormal{B} \)</span></p></td>
 <td><p>20</p></td>
 </tr>
 <tr class="row-even"><td><p>Alpha emission</p></td>
-<td><p>(^{12}\text{C}(n,n\alpha)^{8}\text{Be})</p></td>
+<td><p><span class="math notranslate nohighlight">\( ^{12}\textnormal{C}(n,n\alpha)^{8}\textnormal{Be} \)</span></p></td>
 <td><p>10</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <hr class="docutils" />
-</section>
-<section id="questions">
-<h2>Questions:<a class="headerlink" href="#questions" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Calculate the total reaction cross-section ( \sigma_\text{total} ) by summing all the reaction cross-sections.</p></li>
-<li><p>Compute the <strong>branching ratio</strong> for each reaction channel, defined as:
-[
-B_i = \frac{\sigma_i}{\sigma_\text{total}}
-]
-Express your answer in percentages.</p></li>
+<ol class="arabic">
+<li><p>Calculate the total reaction cross-section <span class="math notranslate nohighlight">\(  \sigma_\textnormal{total}  \)</span> by summing all the reaction cross-sections.</p></li>
+<li><p>Compute the <strong>branching ratio</strong> for each reaction channel, defined as:</p>
+<div class="math notranslate nohighlight">
+\[
+   B_i = \frac{\sigma_i}{\sigma_\textnormal{total}}
+   \]</div>
+<p>Express your answer in percentages.</p>
+</li>
 <li><p>Which decay channel is dominant, and what is the probability (%) that the compound nucleus will de-excite via proton emission?</p></li>
 </ol>
 <hr class="docutils" />
-</section>
-<section id="solution-outline">
-<h2>Solution Outline:<a class="headerlink" href="#solution-outline" title="Link to this heading">#</a></h2>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
 <ol class="arabic">
-<li><p><strong>Total cross-section</strong>:
-[
-\sigma_\text{total} = 850 + 200 + 70 + 20 + 10 = 1150 , \text{mb}
-]</p></li>
+<li><p><strong>Total cross-section</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+   \sigma_\textnormal{total} = 850 + 200 + 70 + 20 + 10 = 1150 \, \textnormal{mb}
+   \]</div>
+</li>
 <li><p><strong>Branching Ratios</strong>:</p>
 <ul class="simple">
-<li><p>Elastic: ( B = \frac{850}{1150} \approx 73.9% )</p></li>
-<li><p>Inelastic: ( B = \frac{200}{1150} \approx 17.4% )</p></li>
-<li><p>( (n,2n) ): ( B = \frac{70}{1150} \approx 6.1% )</p></li>
-<li><p>( (np) ): ( B = \frac{20}{1150} \approx 1.7% )</p></li>
-<li><p>( (n\alpha) ): ( B = \frac{10}{1150} \approx 0.9% )</p></li>
+<li><p>Elastic: <span class="math notranslate nohighlight">\(  B = \frac{850}{1150} \approx 73.9\%  \)</span></p></li>
+<li><p>Inelastic: <span class="math notranslate nohighlight">\(  B = \frac{200}{1150} \approx 17.4\%  \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(  (n,2n)  \)</span>: <span class="math notranslate nohighlight">\(  B = \frac{70}{1150} \approx 6.1\%  \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(  (np)  \)</span>: <span class="math notranslate nohighlight">\(  B = \frac{20}{1150} \approx 1.7\%  \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(  (n\alpha)  \)</span>: <span class="math notranslate nohighlight">\(  B = \frac{10}{1150} \approx 0.9\%  \)</span></p></li>
 </ul>
 </li>
 <li><p><strong>Dominant channel</strong>: Elastic scattering dominates with ~74%.</p>
-<p><strong>Probability of proton emission</strong>:
-[
-1.7%
-]</p>
+<p><strong>Probability of proton emission</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+   1.7\%
+   \]</div>
 </li>
 </ol>
-<p>Perfect — here’s a natural extension to your problem that introduces the <strong>Breit-Wigner resonance formula</strong>, like you would see in advanced nuclear reaction problems.</p>
-<hr class="docutils" />
+</div>
 </section>
-<section id="extended-problem-resonance-contribution-via-breit-wigner-formula">
-<h2>Extended Problem: Resonance Contribution via Breit-Wigner Formula<a class="headerlink" href="#extended-problem-resonance-contribution-via-breit-wigner-formula" title="Link to this heading">#</a></h2>
-<p>In addition to the direct reaction channels, suppose that near ( E_n = 2.0,\text{MeV} ), the (^{12}\text{C}(n,n)) elastic cross-section shows a prominent isolated resonance due to a (^{13}\text{C}^*) compound nucleus state.</p>
+<section id="problem-resonance-contribution-via-breit-wigner-formula">
+<h2>Problem: Resonance Contribution via Breit-Wigner Formula<a class="headerlink" href="#problem-resonance-contribution-via-breit-wigner-formula" title="Link to this heading">#</a></h2>
+<p>In addition to the direct reaction channels, suppose that near <span class="math notranslate nohighlight">\(  E_n = 2.0\,\textnormal{MeV}  \)</span>, the <span class="math notranslate nohighlight">\( ^{12}\textnormal{C}(n,n) \)</span> elastic cross-section shows a prominent isolated resonance due to a <span class="math notranslate nohighlight">\( ^{13}\textnormal{C}^* \)</span> compound nucleus state.</p>
+<p><img alt="Alt text" src="../_images/image-19.png" /></p>
 <p>You are given:</p>
 <ul class="simple">
-<li><p>Resonance energy: ( E_r = 2.0,\text{MeV} )</p></li>
-<li><p>Neutron width: ( \Gamma_n = 0.050,\text{MeV} )</p></li>
-<li><p>Total width: ( \Gamma = 0.10,\text{MeV} )</p></li>
-<li><p>Resonance peak cross-section: ( \sigma_{\text{max}} = 500,\text{mb} )</p></li>
+<li><p>Resonance energy: <span class="math notranslate nohighlight">\(  E_r = 2.0\,\textnormal{MeV}  \)</span></p></li>
+<li><p>Neutron width: <span class="math notranslate nohighlight">\(  \Gamma_n = 0.050\,\textnormal{MeV}  \)</span></p></li>
+<li><p>Total width: <span class="math notranslate nohighlight">\(  \Gamma = 0.10\,\textnormal{MeV}  \)</span></p></li>
+<li><p>Resonance peak cross-section: <span class="math notranslate nohighlight">\(  \sigma_{\textnormal{max}} = 500\,\textnormal{mb}  \)</span></p></li>
 </ul>
 <p>The cross-section for elastic scattering near the resonance is described by the <strong>single-level Breit-Wigner formula</strong>:</p>
-<p>[
-\sigma(E) = \sigma_{\text{max}} \cdot \frac{\Gamma_n^2}{(E - E_r)^2 + \left( \frac{\Gamma}{2} \right)^2}
-]</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma(E) = \sigma_{\textnormal{max}} \cdot \frac{\Gamma_n^2}{(E - E_r)^2 + \left( \frac{\Gamma}{2} \right)^2}
+\]</div>
 <hr class="docutils" />
-</section>
-<section id="new-questions">
-<h2>New Questions:<a class="headerlink" href="#new-questions" title="Link to this heading">#</a></h2>
-<ol class="arabic simple" start="4">
-<li><p><strong>Calculate</strong> the elastic scattering cross-section at ( E = 2.1,\text{MeV} ) using the Breit-Wigner formula.</p></li>
-<li><p><strong>Discuss</strong> how this resonance affects the elastic scattering branching ratio if the neutron energy is close to ( 2.0,\text{MeV} ) instead of (14,\text{MeV}) as in the first part.</p></li>
+<ol class="arabic simple">
+<li><p><strong>Calculate</strong> the elastic scattering cross-section at <span class="math notranslate nohighlight">\(  E = 2.1\,\textnormal{MeV}  \)</span> using the Breit-Wigner formula.</p></li>
+<li><p><strong>Discuss</strong> how this resonance affects the elastic scattering branching ratio if the neutron energy is close to <span class="math notranslate nohighlight">\(  2.0\,\textnormal{MeV}  \)</span> instead of <span class="math notranslate nohighlight">\( 14\,\textnormal{MeV} \)</span> as in the first part.</p></li>
 </ol>
 <hr class="docutils" />
-</section>
-<section id="id1">
-<h2>Solution Outline:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<ol class="arabic simple" start="4">
-<li><p><strong>Breit-Wigner cross-section at ( E = 2.1,\text{MeV} ):</strong></p></li>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<ol class="arabic simple">
+<li><p><strong>Breit-Wigner cross-section at <span class="math notranslate nohighlight">\(  E = 2.1\,\textnormal{MeV}  \)</span>:</strong></p></li>
 </ol>
-<p>[
-\sigma(2.1) = 500 \cdot \frac{(0.050)^2}{(2.1 - 2.0)^2 + (0.05)^2} , \text{mb}
-]</p>
-<p>[
+<div class="math notranslate nohighlight">
+\[
+\sigma(2.1) = 500 \cdot \frac{(0.050)^2}{(2.1 - 2.0)^2 + (0.05)^2} \, \textnormal{mb}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
 = 500 \cdot \frac{0.0025}{0.01 + 0.0025}
-]</p>
-<p>[
-= 500 \cdot \frac{0.0025}{0.0125} = 500 \cdot 0.2 = 100,\text{mb}
-]</p>
-<p>So, at (2.1,\text{MeV}) the cross-section is reduced to <strong>100 mb</strong> due to being off-resonance.</p>
-<hr class="docutils" />
-<ol class="arabic simple" start="5">
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= 500 \cdot \frac{0.0025}{0.0125} = 500 \cdot 0.2 = 100\,\textnormal{mb}
+\]</div>
+<p>So, at <span class="math notranslate nohighlight">\( 2.1\,\textnormal{MeV} \)</span> the cross-section is reduced to <strong>100 mb</strong> due to being off-resonance.</p>
+<ol class="arabic simple" start="2">
 <li><p><strong>Discussion</strong>:</p></li>
 </ol>
-<p>When the neutron energy is near ( E_r = 2.0,\text{MeV} ), the elastic scattering cross-section is strongly enhanced due to the resonance (up to 500 mb instead of ~100 mb off-resonance).</p>
-<p>As a result, the <strong>branching ratio</strong> for elastic scattering would increase significantly at ( E_n \approx 2,\text{MeV} ) because the resonance enhances ( \sigma_{(n,n)} ) while other channels (( (n,n’) ), ( (n,2n) ), etc.) do not exhibit such a strong resonance at this energy.</p>
-<p><img alt="Alt text" src="../_images/image-19.png" /></p>
+<p>When the neutron energy is near <span class="math notranslate nohighlight">\(  E_r = 2.0\,\textnormal{MeV}  \)</span>, the elastic scattering cross-section is strongly enhanced due to the resonance (up to 500 mb instead of ~100 mb off-resonance).</p>
+<p>As a result, the <strong>branching ratio</strong> for elastic scattering would increase significantly at <span class="math notranslate nohighlight">\(  E_n \approx 2\,\textnormal{MeV}  \)</span> because the resonance enhances <span class="math notranslate nohighlight">\(  \sigma_{(n,n)}  \)</span> while other channels (<span class="math notranslate nohighlight">\(  (n,n')  \)</span>, <span class="math notranslate nohighlight">\(  (n,2n)  \)</span>, etc.) do not exhibit such a strong resonance at this energy.</p>
+</div>
 <!-- 
 ## Worked Example: Neutron-Induced Fission of $ ^{235}U $
 
@@ -767,12 +918,9 @@ Conversion: $ 1 u = 931.49 \, MeV $.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-branching-ratios-for-compound-nucleus-reactions-on-12-text-c">Problem: Branching Ratios for Compound Nucleus Reactions on (^{12}\text{C})</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-outline">Solution Outline:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-problem-resonance-contribution-via-breit-wigner-formula">Extended Problem: Resonance Contribution via Breit-Wigner Formula</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-questions">New Questions:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Solution Outline:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-co-59-neutron-cross-sections">Problem: Co-59 neutron cross-sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-branching-ratios-for-compound-nucleus-reactions-on-12-textnormal-c">Problem: Branching Ratios for Compound Nucleus Reactions on <span class="math notranslate nohighlight">\( ^{12}\textnormal{C} \)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-resonance-contribution-via-breit-wigner-formula">Problem: Resonance Contribution via Breit-Wigner Formula</a></li>
 </ul>
   </nav></div>
 

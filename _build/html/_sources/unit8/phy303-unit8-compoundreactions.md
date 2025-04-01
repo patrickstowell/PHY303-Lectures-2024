@@ -2,7 +2,7 @@
 
 ```{admonition} Quick Links
 :class: tip, dropdown
-<!-- - {ref}`unit8:problems` -->
+- {ref}`unit8:problems`
 - {ref}`unit8:additionalproblems`
 - {ref}`unit8:terms`
 - {ref}`unit8:flashcards`

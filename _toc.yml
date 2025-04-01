@@ -89,7 +89,7 @@ parts:
       - file: unit7/phy303-unit7-full-quiz.ipynb
     - file: unit8/phy303-unit8-review.md
       sections: 
-      # - file: unit8/phy303-unit8-problems.md
+      - file: unit8/phy303-unit8-problems.md
       - file: unit8/phy303-unit8-additionalproblems.md
       - file: unit8/phy303-unit8-terms.md
       - file: unit8/phy303-unit8-flashcards.ipynb

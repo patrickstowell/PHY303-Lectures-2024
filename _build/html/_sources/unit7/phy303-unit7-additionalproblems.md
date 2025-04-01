@@ -50,3 +50,11 @@ Write out the the three reactions that make up the pp chain in the Sun in nuclea
 
 **If you took samples of these isotopes ($ ^{22}Na, ^{23}Na, ^{12}C, ^{13}C $) and irradiated them with thermal neutrons ($ \sim 0.025 \, \text{eV} $), which reactions would take place?**
 
+
+### Unworked Problem : Medical Isotope Reactions
+
+**The medical isotopes $ ^{32}P $ and $ ^{89}Sr $ are produced in reactors by $ (n,p) $ processes. In each case:**
+
+1. Identify the target nucleus.
+2. Estimate the minimum neutron energy required to initiate the reaction.
+

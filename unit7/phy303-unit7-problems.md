@@ -98,14 +98,6 @@ $$
 
 
 
-### Unworked Problem : Medical Isotope Reactions
-
-**The medical isotopes $ ^{32}P $ and $ ^{89}Sr $ are produced in reactors by $ (n,p) $ processes. In each case:**
-
-1. Identify the target nucleus.
-2. Estimate the minimum neutron energy required to initiate the reaction.
-
-
 
 ### Worked Example: Types of Nuclear Reactions
 
