@@ -219,6 +219,11 @@ When the nucleon undergoes an energy transition, it emits a photon (gamma ray) t
 
 - If $\vec{J_i}$ (initial spin vector) is equal to $\vec{J_f}$ (final spin vector), the transition is forbidden. This means that gamma-ray transitions typically involve changes in angular momentum. Lower values of $L$ make the transition more probable, with $L=1$ transitions being the most common.
 
+```{admonition} Clarification.
+:class: warning, dropdown
+When we say that the an equal $\vec{J}_{i}$ and $\vec{J}_{f}$ state mean that the transition can not take place we mean it in terms of the vector components since $\vec{J}_{i} = \vec{J}_{f} + \vec{L}$. 
+```
+
 - Depending on the value of L, different types of radiation are possible:
   - L=1 corresponds to dipole radiation.
   - L=2 corresponds to quadrupole radiation.

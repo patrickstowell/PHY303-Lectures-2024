@@ -428,6 +428,12 @@ where
 - $a_{a} = 23.0 \textnormal{MeV}$, 
 - $a_{p} = 12.0 \textnormal{MeV}$.
 
+```{admonition} Clarification.
+:class: warning, dropdown
+In several definitions you will find online and in text books the definition of the delta term and whether it is plus or minus in the top level equation will change. As we discussed in the lecture even here it is swapped relative to what was above. The key thing we need to remember is that EVEN-EVEN nuclei are more stable and therefore they should always increase the binding energy.
+```
+
+
 Whilst emperical in its form this is an amazing useful equation as it allows us to make estimates of the energies of radiative emissions. For example, let's say we consider a nuclear reaction such as alpha decay
 
 $$
