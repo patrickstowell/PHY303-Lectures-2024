@@ -1,5 +1,5 @@
 # Nuclear Power
-<!-- 
+
 ```{admonition} Quick Links
 :class: tip, dropdown
 - {ref}`unit11:problems`
@@ -9,14 +9,16 @@
 - {ref}`unit11:randomquiz`
 - {ref}`unit11:fullquiz`
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
-  - TBC
-  - TBC
+  - Nuclear fission [Martin] Chapter 2.7, 8.1
+  - Nuclear fusion [Martin] Chapter 8.2
+  - Nuclear fission [Krane] Chapter 13
+  - Nuclear fusion [Krane] Chapter 14
 ``` 
--->
+
 
 ## Introduction
 ### Basic energetics of nuclear power
-If we plot the binding energy per nucleon against the mass number (Figure 10.1), we find a broad maximum around iron.  This implies that, in principle, it is energetically favourable for elements lighter than iron to fuse and for elements heavier than iron to split into smaller nuclei (by fission or, for nuclei not much heavier than iron, by $α$ decay).  If the elements formed in thermodynamic equilibrium, we would expect the elements around iron to be most abundant, but in nature the temperatures needed for this only occur in the interior of supernova explosions (producing a pronounced “iron peak” in the elemental abundances, see right panel of Figure 10.1).  
+If we plot the binding energy per nucleon against the mass number (Figure 11.1), we find a broad maximum around iron.  This implies that, in principle, it is energetically favourable for elements lighter than iron to fuse and for elements heavier than iron to split into smaller nuclei (by fission or, for nuclei not much heavier than iron, by $α$ decay).  If the elements formed in thermodynamic equilibrium, we would expect the elements around iron to be most abundant, but in nature the temperatures needed for this only occur in the interior of supernova explosions (producing a pronounced “iron peak” in the elemental abundances, see right panel of Figure 11.1).  
 
 :::{figure-md} spontfission
 <img src='image-74.png' width="100%" alt="Graphs of spontaneous fission">
@@ -34,16 +36,33 @@ In fact, most of the elements up to bismuth $(Z = 83)$ have at least one stable 
 #### Spontaneous fission
 In the liquid drop model, a nucleus will decay by spontaneous fission if it is unstable to small changes in its shape.  If we start with a spherical nucleus, a small elongation along one axis (pulling it into a rugby-ball shape, technically known as a prolate spheroid) will decrease the Coulomb term in the semi-empirical mass formula (the protons are a bit further apart) but increase the surface term (the surface area is increased).  If we assume that the nucleons remain closely packed together, so that the volume stays the same, a small shape change of this type corresponds to changing the long axis to $a=R(1+\epsilon)$ while reducing the short axes to $b=R\sqrt{1+\epsilon}$, where $\epsilon \ll 1$.  
 
-Martin nor Krane proves this, so I'm not going to either!) that in this case $ E_c = a_c Z^2 A^{-1/3} \left(1 - \frac{1}{5} \epsilon^2\right) $
-and $ E_s = a_s A^{2/3} \left(1 + \frac{2}{5} \epsilon^2\right) $, so $ \Delta E = \frac{1}{5} \epsilon^2 \left(2a_s A^{2/3} - a_c Z^2 A^{-1/3}\right) $. The nucleus will be unstable to spontaneous fission if this releases energy, so the condition from spontaneous fission is
+It turns out (Martin nor Krane proves this, so I'm not going to either!) that in this case 
 
-$$ 2a_s A^{2/3}\leq a_{C} \frac{Z^2}{A^{1/3}} \quad \Rightarrow \quad \left(\frac{Z^2}{A}\right)_{\text{crit}} \geq \frac{2a_s}{a_c} \approx 49 $$
+$$ E_c = a_c Z^2 A^{-1/3} \left(1 - \frac{1}{5} \epsilon^2\right) $$
+
+and 
+
+$$ 
+E_s = a_s A^{2/3} \left(1 + \frac{2}{5} \epsilon^2\right), 
+$$
+
+so 
+
+$$ 
+\Delta E = \frac{1}{5} \epsilon^2 \left(2a_s A^{2/3} - a_c Z^2 A^{-1/3}\right). 
+$$ 
+
+The nucleus will be unstable to spontaneous fission if this releases energy, so the condition from spontaneous fission is
+
+$$ 
+2a_s A^{2/3}\leq a_{C} \frac{Z^2}{A^{1/3}} \quad \Rightarrow \quad \left(\frac{Z^2}{A}\right)_{\text{crit}} \geq \frac{2a_s}{a_c} \approx 49 
+$$
 
 (the exact number depends on the coefficients you adopt for the semi-empirical mass formula: Martin’s coefficients give 49, Krane’s give 47).  
 
 This condition is not met until well into the transuranic region, somewhere around $A = 300$.  However, it is an unduly pessimistic estimate, because it does not take into account quantum tunnelling: nuclei that have small fission barriers may be able to decay by spontaneous fission even though this does not look possible in the classical liquid drop model.  In addition, some heavy nuclei are not spherical in the ground state, and we should also consider the effects of nuclear structure as described by the shell model.  One effect of this is to make fission much more likely for even-even than for even-odd nuclei: for example, $^{256}_{100}\textnormal{Fm}$ has a spontaneous fission half-life of 2.8 hours, whereas $^{257}_{100}\textnormal{Fm}$ (which decays primarily by α emission) has a spontaneous fission half-life of 131 years.  This appears to be related to the effect of the spin of the unpaired neutron.  This feature is also seen in induced fission: neutron capture by $^{235}\textnormal{U}$, producing the even-even nucleus $^{236}\textnormal{U}$, is much more likely to induce fission than neutron capture by $^{238}\textnormal{U}$.
 
-The effects of quantum tunnelling, non-spherical nuclei and shell corrections can be seen in Figure 10.2.Spontaneous fission becomes a viable decay mode for $ Z^2 / A \geq 0.75\left(Z^{2}/A\right)_{\text{crit}} $ (though it should be noted that the dominant decay mode for nearly all these very heavy nuclei remains α-decay).  
+The effects of quantum tunnelling, non-spherical nuclei and shell corrections can be seen in Figure 11.2.Spontaneous fission becomes a viable decay mode for $ Z^2 / A \geq 0.75\left(Z^{2}/A\right)_{\text{crit}} $ (though it should be noted that the dominant decay mode for nearly all these very heavy nuclei remains α-decay).  
 
 
 :::{figure-md} spontfission2
@@ -54,7 +73,7 @@ Spontaneous fission, plotted against fissility parameter  (which in this paper i
 
 
 #### Induced fission
-Even with the corrections for shell model effects and quantum tunnelling, it remains true that only very heavy nuclei decay by spontaneous fission.  The heaviest naturally occurring isotope is $^{238}\textnormal{U}$, and its half-life to spontaneous fission is $8.4\times10^{15}$ years $($or, to put it another way, its branching fraction for spontaneous fission is $5.4\times 10^{−5}~\%$$)$.  The only way to use fission to generate energy is to induce it by neutron capture.  If the result of neutron capture is an excited state above the fission barrier, which as we can see from Figure 10.2 can be taken as 6 MeV for all relevant isotopes, then we have a good chance of inducing fission.
+Even with the corrections for shell model effects and quantum tunnelling, it remains true that only very heavy nuclei decay by spontaneous fission.  The heaviest naturally occurring isotope is $^{238}\textnormal{U}$, and its half-life to spontaneous fission is $8.4\times10^{15}$ years $($or, to put it another way, its branching fraction for spontaneous fission is $5.4\times 10^{−5}~\%$$)$.  The only way to use fission to generate energy is to induce it by neutron capture.  If the result of neutron capture is an excited state above the fission barrier, which as we can see from Figure 11.2 can be taken as 6 MeV for all relevant isotopes, then we have a good chance of inducing fission.
 
 For example, the atomic mass of $^{235}\textnormal{U}$ is $235.043924~u$.  If we add a thermal neutron to this, we get $236.052589~u$ (we can neglect the tiny kinetic energy of a thermal neutron).  The atomic mass of the ground state of $^{236}\textnormal{U}$ is $236.045563~u$, so the level of excitation of the compound nucleus formed in the neutron capture is $0.007026~u = 6.54~\textnormal{MeV}$.  This is higher than the fission barrier, so this nucleus should decay by spontaneous fission.
 
@@ -66,7 +85,7 @@ In contrast, if we add a thermal neutron to $^{23}\textnormal{U}$, the resulting
 
 
 #### Characteristics of fission products
-Fission generally produces two fission fragments, one with atomic mass around $A=139$ and the other with whatever is left over (so the mass of the lighter fragment increases linearly with the mass of the fission parent), plus around 1–4 prompt neutrons.  The mean number of neutrons increases with the mass of the parent, as shown in figure 10.3.
+Fission generally produces two fission fragments, one with atomic mass around $A=139$ and the other with whatever is left over (so the mass of the lighter fragment increases linearly with the mass of the fission parent), plus around 1–4 prompt neutrons.  The mean number of neutrons increases with the mass of the parent, as shown in figure 11.3.
 
 
 :::{figure-md} neutronyield
@@ -93,7 +112,11 @@ $$
 In each case, the β decay also produces an electron and an antineutrino: thus this particular fission would produce an average of 6.8 antineutrinos.  It would also produce an average of 0.087 delayed neutrons (delayed in this case by an average of 0.55 s, as the half-life of $^{95}_{37}\textnormal{Rb}$ is 0.38 s).  All the isotopes of rubidium with mass numbers between 92 and 102 have decay modes that involve the emission of a neutron, as do isotopes of strontium with mass numbers between 98 and 102 and several relevant isotopes of krypton.  The consequence of this is that about 0.0162 delayed neutrons are emitted per fission of $^{235}\textnormal{U}$.  This has important implications for the control of fission reactors.
 
 #### Energetics of fission
-The binding energy of $^{236}\textnormal{U}$ is $7.587~\textnormal{MeV/nucleon}$.  The average binding energy of nuclides with masses in the range $A=87–103$ is about $8.648~\textnormal{MeV/nucleon}$, and of those with masses $A=130–145$ is $8.384~\textnormal{MeV/nucleon}$.  Again allowing for two prompt neutrons, and taking typical fragment masses of $95~u$ and $139~u$, we deduce that the energy release is $95 \times 8.648) + (139 \times 8.384) - (236 \times 7.587) = 196.4~\textnormal{MeV}$.  This agrees well with the standard figure of $\sim 200~\textnormal{MeV/fission}$.  The breakdown of this 200 MeV is, on average:
+The binding energy of $^{236}\textnormal{U}$ is $7.587~\textnormal{MeV/nucleon}$.  The average binding energy of nuclides with masses in the range $A=87–103$ is about $8.648~\textnormal{MeV/nucleon}$, and of those with masses $A=130–145$ is $8.384~\textnormal{MeV/nucleon}$.  
+
+Again allowing for two prompt neutrons, and taking typical fragment masses of $95~u$ and $139~u$, we deduce that the energy release is $95 \times 8.648) + (139 \times 8.384) - (236 \times 7.587) = 196.4~\textnormal{MeV}$.  This agrees well with the standard figure of $\sim 200~\textnormal{MeV/fission}$.  
+
+The breakdown of this 200 MeV is, on average:
 - the two fission fragments have kinetic energies of about 98 and 66 MeV respectively;
 - the average neutron energy is about 2 MeV, so about 5 MeV is carried away by the neutrons;
 - about 8 MeV is emitted as prompt γ-rays;
@@ -126,7 +149,12 @@ The design goal of a nuclear reactor is to maintain a precisely critical, and th
 - **p** is the probability that the neutron avoids being captured by $^{238}\textnormal{U}$ during thermalization, as it passes through the energy range where there are resonances in the cross section;
 - **f** is the fraction of thermal neutrons actually available for capture by $^{235}\textnormal{U}$ or $^{238}\textnormal{U}$, i.e. not captured by the moderator or some other component of the reactor.
   
-The combination of these, *k=ηϵpf*, is unsurprisingly known as the four-factor formula.
+The combination of these is unsurprisingly known as the four-factor formula.
+
+$$
+k=ηϵpf
+$$
+
 Natural uranium does not spontaneously initiate chain reactions (fortunately), so we can conclude that under natural conditions $k<1$.  The aim of reactor designers is therefore to enhance $𝑘$ to achieve criticality, while maintaining control.
 
 #### Reactor design strategies
@@ -198,11 +226,11 @@ BWRs are better at load-following than PWRs, which makes them a good design for 
 schematic diagram of a PHWR, showing main components.  From https://world-nuclear.org.
 :::
 
-In principle, the design of a PWHR is exactly the same as a PWR, except for using heavy water instead of ordinary water in the primary cooling circuit.  The CANDU design in Figure 10.6 looks different from Figure 10.4 because it uses pressure tubes instead of a monolithic pressure vessel.  The advantage of this design is that the reactor can be refuelled on-load, without shutting down, by isolating one pressure tube from the cooling circuit.
+In principle, the design of a PWHR is exactly the same as a PWR, except for using heavy water instead of ordinary water in the primary cooling circuit.  The CANDU design in Figure 11.6 looks different from Figure 11.4 because it uses pressure tubes instead of a monolithic pressure vessel.  The advantage of this design is that the reactor can be refuelled on-load, without shutting down, by isolating one pressure tube from the cooling circuit.
 
 CANDU reactors use natural uranium, and can accept a variety of other fuels, including spent fuel from light-water reactors.  They run slightly less hot than a standard PWR, with the heavy water at a pressure of around 100 bar and a temperature of 290 °C.  
 
-The features of the CANDU design are not so much deliberate choices as a consequence of the desire to build the reactors entirely in Canada.  In the 1960s Canada had no uranium enrichment capability, hence the choice of a design that could use natural uranium, and there were doubts that Canadian industry could build the large monolithic pressure vessel shown in Figure 10.4, hence the choice of pressure tubes.  Nevertheless the CANDU is a successful and flexible design that has been exported to several other countries, notably India.
+The features of the CANDU design are not so much deliberate choices as a consequence of the desire to build the reactors entirely in Canada.  In the 1960s Canada had no uranium enrichment capability, hence the choice of a design that could use natural uranium, and there were doubts that Canadian industry could build the large monolithic pressure vessel shown in Figure 11.4, hence the choice of pressure tubes.  Nevertheless the CANDU is a successful and flexible design that has been exported to several other countries, notably India.
 
 
 
@@ -278,7 +306,7 @@ Nuclear reactor power output is quantified in three ways: the thermal power outp
 
 ## Fusion
 ### Energetics of fusion
-Fusion is the combination of two nuclei into one. As can be seen from figure 10.1, it should release energy if the fusing nuclei are lighter than iron.
+Fusion is the combination of two nuclei into one. As can be seen from figure 11.1, it should release energy if the fusing nuclei are lighter than iron.
 
 Nuclear fusion is the power source of stars, nearly all of which generate energy by fusing hydrogen into helium^2. Fusion energy is an attractive prospect for us too, because it is clean—no CO2 and no long-lived radioactive waste—and highly efficient. While uranium fission releases 200 MeV per fission of one nucleus of $^{236}U$, corresponding to the conversion of 0.09% of the initial mass into energy, hydrogen fusion, $4p \rightarrow ^{4}He + 2e^+ + 2\nu_e$, releases 24.7 MeV, plus another 2.0 MeV when the two positrons annihilate with electrons—a net efficiency of 0.7%, or eight times better than uranium fission. However, fusion is far more challenging to achieve than fission, because it requires two positively charged nuclei to approach very close to one another, against their mutual Coulomb repulsion.
 
@@ -371,9 +399,9 @@ $$
 
 This means that for a given temperature, the particles that fuse actually come from a fairly restricted energy range in the tail of the Maxwell-Boltzmann distribution.
 
-Calculating $ \langle \sigma v \rangle $ for the candidate fusion reactions listed in the previous section gives the results shown in figure 10.9. There is a clear winner: d-t fusion has the highest peak reactivity and turns on at the lowest temperature. The effect of the higher Coulomb barrier for the two aneutronic reactions is clearly seen: $\textnormal{p-}^{11}\textnormal{B}$ fusion in particular requires temperatures about ten times higher than d-t fusion.
+Calculating $ \langle \sigma v \rangle $ for the candidate fusion reactions listed in the previous section gives the results shown in figure 11.9. There is a clear winner: d-t fusion has the highest peak reactivity and turns on at the lowest temperature. The effect of the higher Coulomb barrier for the two aneutronic reactions is clearly seen: $\textnormal{p-}^{11}\textnormal{B}$ fusion in particular requires temperatures about ten times higher than d-t fusion.
 
-The temperatures in figure 10.9 are shown in keV. The conversion uses $ E = k_B T $, so $1$ keV = $11.6\times 10^6$ K (the temperature of the core of the Sun is therefore of order 1 keV). For a viable fusion reactor we will need to achieve temperatures of at least 10 keV; 20 or 30 keV would be better.
+The temperatures in figure 11.9 are shown in keV. The conversion uses $ E = k_B T $, so $1$ keV = $11.6\times 10^6$ K (the temperature of the core of the Sun is therefore of order 1 keV). For a viable fusion reactor we will need to achieve temperatures of at least 10 keV; 20 or 30 keV would be better.
 
     
 :::{figure-md} naturalfission2
@@ -398,7 +426,13 @@ $$
 L = \textnormal{energy output} / \textnormal{energy input}
 $$
 
-(there are actually several definitions of the Lawson criterion, but this is the simplest). The minimum energy we need to input is the energy required to heat the plasma to the required temperature: assuming that the plasma consists of equal amounts of deuterium and tritium, equipartition of energy gives us $E_{in} = 4 × \frac{3}{2} n_d k_B T~$ (for each deuterium nucleus, there is a tritium nucleus and two electrons, so four particles in all), and the output energy is the Q value times the number of reactions, $E_{out} = n_d^2 ⟨σ_{dt}v⟩ Q t_c$, where $t_c$ is the confinement time. 
+(there are actually several definitions of the Lawson criterion, but this is the simplest). The minimum energy we need to input is the energy required to heat the plasma to the required temperature: assuming that the plasma consists of equal amounts of deuterium and tritium, equipartition of energy gives us $E_{in} = 4 × \frac{3}{2} n_d k_B T~$ (for each deuterium nucleus, there is a tritium nucleus and two electrons, so four particles in all), and the output energy is the Q value times the number of reactions, 
+
+$$
+E_{out} = n_d^2 ⟨σ_{dt}v⟩ Q t_c,
+$$
+
+where $t_c$ is the confinement time. 
 
 Putting in numerical values gives, for a temperature of $20$ keV, $n_d t_c = 7 × 10^{19}$m$^{-3}$ s. Therefore we need a very high plasma density, a very long confinement time, or (ideally) both.
 
@@ -412,13 +446,15 @@ Both techniques are close to achieving breakeven, i.e. $L = 1$, but both are far
 ### Magnetic confinement fusion (MCF)
 The principle of magnetic confinement fusion is that a complex magnetic field is used to keep the plasma away from the walls of the container. There are various magnetic geometries, but the most widely used and studied is the tokamak (a name derived from a Russian acronym, as this design was first developed in Russia). The aim of all magnetic confinement devices is to maintain the confinement of the plasma for an indefinitely long time, thereby increasing $t_{c}$ to a very large value; the challenge is maintaining stability over long periods. Hot plasmas moving at high speeds are subject to a number of dynamic instabilities, and controlling these is the principal design challenge in tokamak research.
 
-The principle of the tokamak design is that the magnetic field is helical (similar to the stripes on a traditional barber’s pole). This is required to main- tain stable confinement in a toroidal geometry; if the field simply went round the toroid, the geometry dictates that it would be stronger on the inside of the torus than the outside (if you think of bending a coil into a closed loop, there are clearly more turns per metre on the inside of the loop than the outside), and this caused the confined particles to drift sideways and eventually hit the wall. A helical field is more symmetrical and therefore the confined plasma is more stable. Achieving this requires a complex geometry of field coils, as shown in figure 10.10.
+The principle of the tokamak design is that the magnetic field is helical (similar to the stripes on a traditional barber’s pole). This is required to main- tain stable confinement in a toroidal geometry; if the field simply went round the toroid, the geometry dictates that it would be stronger on the inside of the torus than the outside (if you think of bending a coil into a closed loop, there are clearly more turns per metre on the inside of the loop than the outside), and this caused the confined particles to drift sideways and eventually hit the wall. A helical field is more symmetrical and therefore the confined plasma is more stable. Achieving this requires a complex geometry of field coils, as shown in figure 11.10.
 
 :::{figure-md} tokamak
-<img src='image-146.png' width="70%" alt="Tokamak reactor diagram">
+<img src='image-146.png' width="80%" alt="Tokamak reactor diagram">
 
 magnetic field configuration in a tokamak. Figure from Li et al., Abtr. App. Anal. 2014 940965.
 :::
+
+
 
 Numerous tokamaks are currently operating around the world. One of the most successful is the Joint European Torus, JET, located at Culham, Oxfordshire. Two next-generation designs, the International Thermonuclear Reactor (ITER), under construction in Cardarche, France, and the MIT-led SPARC in Massachusetts, aim to achieve 𝐿 ∼ 10 within the next decade or so. A South Korean project, K-DEMO, aims to achieve stable energy generation of around 500 MWe some time in the 2040s.
 
@@ -428,7 +464,7 @@ Inertial confinement systems achieve fusion by compressing and heating a small p
 
 The heat is provided by a battery of powerful lasers. There are two basic strategies, direct drive, in which the lasers heat the fuel pellet directly, and indirect drive, in which the fuel pellet is contained inside a small metal cylinder (known as a hohlraum), which the lasers heat up to a level at which it emits intense X-rays, which heat the fuel pellet. The direct-drive method is much more efficient, but requires very tightly focused laser beams, because the fuel pellet has to be very small to limit the effects of instabilities in the produced plasma. The combination of high power and small diameter in the laser beam array is a serious technical challenge. Conversely, indirect-drive systems are much easier to build, because the laser beam size is defined by the size of the hohlraum rather than the fuel pellet, but are much less efficient because the X-ray emission of the hohlraum is not focused on the target, so a great deal of the input laser energy is wasted.
 
-The most advanced inertial confinement system is the National Ignition Facility (NIF) at the Lawrence Livermore National Laboratory in California. NIF is an indirect-drive system using 192 laser beams (from 48 lasers) which deposit about 2 MJ of energy on the hohlraum. A schematic of the NIF target region is shown in figure 10.11. NIF achieved breakeven in one shot in December 2022, when 2.05 MJ of energy deposited on the hohlraum produced 3.15 MJ of fusion energy. (However, note that actually charging the lasers to produce that 2.05 MJ required a lot more than 2.05 MJ of energy input, so this is breakeven only in a technical sense.)
+The most advanced inertial confinement system is the National Ignition Facility (NIF) at the Lawrence Livermore National Laboratory in California. NIF is an indirect-drive system using 192 laser beams (from 48 lasers) which deposit about 2 MJ of energy on the hohlraum. A schematic of the NIF target region is shown in figure 11.11. NIF achieved breakeven in one shot in December 2022, when 2.05 MJ of energy deposited on the hohlraum produced 3.15 MJ of fusion energy. (However, note that actually charging the lasers to produce that 2.05 MJ required a lot more than 2.05 MJ of energy input, so this is breakeven only in a technical sense.)
 
 
 :::{figure-md} niftargetdiagram
@@ -437,11 +473,12 @@ The most advanced inertial confinement system is the National Ignition Facility 
 NIF hohlraum and target, from Zylstra et al., Nature 601 (2022) 542.
 :::
 
+
 ### Steps towards practical fusion
 
 The key to achieving consistent energy generation in fusion reactors is self-heating. The α particle produced in the fusion reaction carries 20% of the fusion energy and has a very short range in matter, so it will deposit its energy in the plasma, helping it to maintain its temperature. A plasma that main- tains its temperature through α-particle heating, without needing further external input, is said to have achieved ignition. Self-heating was demonstrated in the NIF breakeven shot.
 
-Practical fusion is proverbially “always 20 years in the future”, but figure 10.12 shows that in fact the perfor- mance of experimental fusion reactors has improved by orders of magnitude since work started in the 1950s. In this plot $T_{i}$ is the ion temperature (averaged over the fuel pellet for ICF), $τ$ is the pulse duration for ICF, and $τE$ is the energy confinement time, i.e. the time it takes for energy equal to the plasma thermal energy (= the input energy) to leak away from the plasma (appropriate for long confinement times in MCF). The coloured curves represent the given values of what the authors call $Q_{sci}$, which is the same as what we have called $L$; the black curve is the hot-spot ignition threshold for ICF.
+Practical fusion is proverbially “always 20 years in the future”, but figure 11.12 shows that in fact the perfor- mance of experimental fusion reactors has improved by orders of magnitude since work started in the 1950s. In this plot $T_{i}$ is the ion temperature (averaged over the fuel pellet for ICF), $τ$ is the pulse duration for ICF, and $τE$ is the energy confinement time, i.e. the time it takes for energy equal to the plasma thermal energy (= the input energy) to leak away from the plasma (appropriate for long confinement times in MCF). The coloured curves represent the given values of what the authors call $Q_{sci}$, which is the same as what we have called $L$; the black curve is the hot-spot ignition threshold for ICF.
 
 :::{figure-md} fusiontarget
 <img src='image-148.png' width="70%" alt="Diagram of Fusion Experiments">
@@ -462,7 +499,7 @@ Furthermore, if the blanket were made of lithium, the neutron capture reactions 
 
 ITER plans to test both heat extraction (with an actively cooled blanket designed to extract up to 736 MW of thermal power) and tritium breeding (although the blanket will initially be made of beryllium, installation of test modules containing lithium is planned at a later stage).
 
-Practical fusion must also address the issue of radioactive waste, which has been a sticking point for fission reactors. Although in principle the fusion process does not generate radioactive products, some neutrons will inevitably be captured on materials other than the blanket, and in some cases this will lead to a radioactive isotope. This has been studied for the K-DEMO project, and the results are shown in figure 10.13. Although radioactive isotopes will be pro- duced, most have short half-lives, and fall below the Korean upper limit for “low-level waste” within at most 10 years after the reactor stops operating. This does not pre- sent a major technical challenge.
+Practical fusion must also address the issue of radioactive waste, which has been a sticking point for fission reactors. Although in principle the fusion process does not generate radioactive products, some neutrons will inevitably be captured on materials other than the blanket, and in some cases this will lead to a radioactive isotope. This has been studied for the K-DEMO project, and the results are shown in figure 11.13. Although radioactive isotopes will be pro- duced, most have short half-lives, and fall below the Korean upper limit for “low-level waste” within at most 10 years after the reactor stops operating. This does not pre- sent a major technical challenge.
 
 
 :::{figure-md} fusionradioactivity
@@ -470,6 +507,7 @@ Practical fusion must also address the issue of radioactive waste, which has bee
 
 Radioactivity of components of the K-DEMO fusion reactor, compared with legal limits for low-level waste. From Kim, Hong and Kim, Scientific Reports 12 (2022) 8276.
 :::
+
 
 
 ### Summary (fusion)

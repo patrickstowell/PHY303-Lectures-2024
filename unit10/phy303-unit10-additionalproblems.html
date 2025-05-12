@@ -62,6 +62,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'unit10/phy303-unit10-additionalproblems';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -171,7 +173,7 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Notes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../unit1/phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
@@ -203,13 +205,11 @@
 
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-flashcards.html">Unit 2 : Flash Cards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-random-quiz.html">Unit 2 : Random Quiz</a></li>
-
 <li class="toctree-l2"><a class="reference internal" href="../unit2/phy303-unit2-full-quiz.html">Unit 2 : Full Quiz</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../unit3/phy303-unit3-review.html">Unit 3 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-problems.html">Unit 3 : Worked Problems</a></li>
-
 <li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-additionalproblems.html">Unit 3 : Additional Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit3/phy303-unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
 
@@ -220,8 +220,6 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../unit4/phy303-unit4-review.html">Unit 4 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-problems.html">Unit 4 : Worked Problems</a></li>
-
-
 <li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-additionalproblems.html">Unit 4 : Additional Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit4/phy303-unit4-terms.html">Unit 4 : Equations &amp; Terms</a></li>
 
@@ -280,7 +278,6 @@
 <li class="toctree-l2"><a class="reference internal" href="phy303-unit10-problems.html">Unit 10 : Worked Problems</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Unit 10 : Additional Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phy303-unit10-terms.html">Unit 10 : Equations &amp; Terms</a></li>
-
 <li class="toctree-l2"><a class="reference internal" href="phy303-unit10-flashcards.html">Unit 10 : Flash Cards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phy303-unit10-random-quiz.html">Unit 10 : Random Quiz</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phy303-unit10-full-quiz.html">Unit 10 : Full Quiz</a></li>
@@ -290,7 +287,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-problems.html">Unit 11 : Worked Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-additionalproblems.html">Unit 11 : Additional Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-terms.html">Unit 11 : Equations &amp; Terms</a></li>
-
 <li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-flashcards.html">Unit 11 : Flash Cards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-random-quiz.html">Unit 11 : Random Quiz</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
@@ -300,8 +296,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactive Visualizations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-binding.html">Chart of Binding Energy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotones.html">Isotone Curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-binding.html">Isotone Curves</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../visualisation/iaea-chart-of-isotopes.html">Isotope Curves</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../visualisation/legendre-polynomials.html">Legendre Polynomials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../visualisation/nucleus-shape.html">Nucleus Shape</a></li>
@@ -466,7 +461,12 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#terms">Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unworked-problem-cardiac-collimation">Unworked Problem : Cardiac Collimation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unworked-problem-collimator-shielding">Unworked Problem : Collimator Shielding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unworked-problem-collimated-gamma-count-rates">Unworked Problem : Collimated Gamma Count Rates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unworked-example-brachytherapy-for-lung-cancer">Unworked Example: Brachytherapy for Lung Cancer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-questions-to-consider">Additional questions to consider</a></li>
 </ul>
             </nav>
         </div>
@@ -481,13 +481,53 @@
   <section class="tex2jax_ignore mathjax_ignore" id="unit-10-additional-problems">
 <span id="unit10-additionalproblems"></span><h1>Unit 10 : Additional Problems<a class="headerlink" href="#unit-10-additional-problems" title="Link to this heading">#</a></h1>
 <p>For those looking for additional problems outside of past exam questions and the worked problems in the lectures please consider the following in the reading list.</p>
-<section id="terms">
-<h2>Terms<a class="headerlink" href="#terms" title="Link to this heading">#</a></h2>
+<section id="unworked-problem-cardiac-collimation">
+<h2>Unworked Problem : Cardiac Collimation<a class="headerlink" href="#unworked-problem-cardiac-collimation" title="Link to this heading">#</a></h2>
+<p>Calculate the efficiency and resolution for the “Cardiac High Resolution” collimator (<span class="math notranslate nohighlight">\( d = 2.03 \, \text{mm} \)</span>, <span class="math notranslate nohighlight">\( t = 0.15 \, \text{mm} \)</span>, <span class="math notranslate nohighlight">\( l = 48 \, \text{mm} \)</span>).</p>
+</section>
+<section id="unworked-problem-collimator-shielding">
+<h2>Unworked Problem : Collimator Shielding<a class="headerlink" href="#unworked-problem-collimator-shielding" title="Link to this heading">#</a></h2>
+<p>For <span class="math notranslate nohighlight">\( ^{99m}Tc \)</span> gamma rays in soft tissue (<span class="math notranslate nohighlight">\( a = 0.15 \, \text{cm}^{-1} \)</span>), what fraction of <span class="math notranslate nohighlight">\( \gamma \)</span>-rays will be observed for a tumor at <span class="math notranslate nohighlight">\( x = 4 \, \text{cm} \)</span> and a collimator half-angle of <span class="math notranslate nohighlight">\( 0.18 \, \text{radians} \)</span>? Assume efficiency <span class="math notranslate nohighlight">\( \eta = 2.1 \times 10^{-4} \)</span>.</p>
+</section>
+<section id="unworked-problem-collimated-gamma-count-rates">
+<h2>Unworked Problem : Collimated Gamma Count Rates<a class="headerlink" href="#unworked-problem-collimated-gamma-count-rates" title="Link to this heading">#</a></h2>
+<p>Cardiac perfusion imaging typically uses <span class="math notranslate nohighlight">\( 550-1100 \, \text{MBq} \)</span> of <span class="math notranslate nohighlight">\( ^{99m}Tc \)</span>. What is the count rate observed with the “Cardiac High Resolution” collimator? State any assumptions.</p>
+</section>
+<section id="unworked-example-brachytherapy-for-lung-cancer">
+<h2>Unworked Example: Brachytherapy for Lung Cancer<a class="headerlink" href="#unworked-example-brachytherapy-for-lung-cancer" title="Link to this heading">#</a></h2>
+<p>A clinical trial found that <span class="math notranslate nohighlight">\( ^{125}I \)</span> brachytherapy was more effective than conventional radiotherapy for treating inoperable lung cancer. <span class="math notranslate nohighlight">\( ^{125}I \)</span> decays by electron capture with a half-life of 59.4 days, emitting a 35.5 keV X-ray.</p>
+<p>Given that:</p>
+<ul class="simple">
+<li><p>Mean tumor volume = 312.7 cm³</p></li>
+<li><p>Mean radiation dose = 141.6 Gy</p></li>
+<li><p>Mean density of the human body = 985 g/cm³</p></li>
+</ul>
+<p>Determine:</p>
+<ol class="arabic simple">
+<li><p>The average mass of <span class="math notranslate nohighlight">\( ^{125}I \)</span> implanted.</p></li>
+<li><p>The activity of <span class="math notranslate nohighlight">\( ^{125}I \)</span> at the time of implantation.</p></li>
+</ol>
+<p>State any assumptions made in the calculations.</p>
+</section>
+<section id="problems">
+<h2>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Calculate the Q-value for the reaction <span class="math notranslate nohighlight">\( ^{14}N(p, \alpha)^{11}C \)</span> used to produce the PET isotope <span class="math notranslate nohighlight">\( ^{11}C \)</span>. Consulting the JANIS database, we see that the threshold for this reaction is approximately 4 MeV proton kinetic energy. Is this what you would expect? Briefly justify your answer.</strong></p></li>
+<li><p><strong>Calculate the Q-value for the reaction <span class="math notranslate nohighlight">\( ^{88}Sr(n, \gamma)^{89}Sr \)</span> used to produce the therapeutic isotope <span class="math notranslate nohighlight">\( ^{89}Sr \)</span>. Is it possible to produce this isotope using thermal neutron capture? If so, what is the expected photon energy?</strong></p></li>
+<li><p><strong>The recommended dose of <span class="math notranslate nohighlight">\( ^{131}I \)</span> for treatment of hyperthyroidism is 550 MBq. If this is administered in the form of Na<span class="math notranslate nohighlight">\( ^{131}I \)</span>, what mass of Na<span class="math notranslate nohighlight">\( ^{131}I \)</span> should the patient be given?</strong></p>
+<ul class="simple">
+<li><p><em>The half-life of <span class="math notranslate nohighlight">\( ^{131}I \)</span> is 8.0 days. The mean atomic mass of sodium is 23.0 u.</em></p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="additional-questions-to-consider">
+<h2>Additional questions to consider<a class="headerlink" href="#additional-questions-to-consider" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Why do neutrons have a higher weighting factors than gammas in dosimetry?</p></li>
 <li><p>What does a collimator do in PET detector?</p></li>
 <li><p>What is the energy of the gammas used in PET and why?</p></li>
-<li><p>Why is there Tl in a sodium ioodide scintillator?</p></li>
+<li><p>Why is there Tl in a sodium iodide scintillator?</p></li>
 <li><p>Why is the decay time of the scintillator important in PET scanners?</p></li>
 <li><p>Explain why Hadron Therapy can be safer patients than gamma therapy?</p></li>
 </ul>
@@ -559,7 +599,12 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#terms">Terms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unworked-problem-cardiac-collimation">Unworked Problem : Cardiac Collimation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unworked-problem-collimator-shielding">Unworked Problem : Collimator Shielding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unworked-problem-collimated-gamma-count-rates">Unworked Problem : Collimated Gamma Count Rates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unworked-example-brachytherapy-for-lung-cancer">Unworked Example: Brachytherapy for Lung Cancer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-questions-to-consider">Additional questions to consider</a></li>
 </ul>
   </nav></div>
 
