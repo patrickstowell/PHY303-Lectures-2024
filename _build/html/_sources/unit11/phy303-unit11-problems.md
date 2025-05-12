@@ -35,24 +35,6 @@ For enriched uranium, the corresponding numbers are $ 23.4 \, b $, $ 6.5 \, b $,
 
 ```
 
-### Problems
-
-1. Fill in the blanks in these fission reactions and calculate their Q-values:
-   a. $ ^{235}U + n \to ^{90}Kr + ^{144}Ba + ? $;
-   b. $ ^{239}Pu + \gamma \to ^{92}Sr + ? + 3n $;
-   c. $ ^{252}Cf \to ^{106}Nb + ? + 4n $.
-
-2. $ ^{252}Cf $ has a half-life of $ 2.64 \, \text{years} $ and a branching ratio for spontaneous fission of $ 3.09\% $. On average, each fission produces $ 3.76 \, \text{neutrons} $. How many neutrons per second are emitted by $ 1 \, \text{mg} $ of $ ^{252}Cf $?
-
-3. The distribution of the actual number of neutrons emitted per fission is remarkably Gaussian (see Krane, figure 13.7) with a standard deviation of $ 1.08 $. If the mean number of neutrons produced in the fission of $ ^{235}U $ is $ 2.42 $, what is the probability that a fission of $ ^{235}U $ will produce no neutrons?
-
-4. Which of the following heavy nuclei would you expect to have large thermal neutron cross sections? Justify your answers:
-   a. $ ^{251}Cf $;
-   b. $ ^{253}Es $;
-   c. $ ^{255}Fm $;
-   d. $ ^{250}Bk $.
-
----
 
 ## Worked Example : CNO Fusion Q-Values
 
@@ -98,9 +80,9 @@ The total is $ 24.7 \, \text{MeV} $, as expected.
 ```
 ---
 
-### Problems
+### Extended Problems
 
-5. Repeat the above calculation for the pp-III chain, which is a minor branch of the pp chain consisting of the following reactions:
+3. Repeat the above calculation for the pp-III chain, which is a minor branch of the pp chain consisting of the following reactions:
    a. $ p + p \to d + e^+ + \nu_e $;
    b. $ d + p \to ^{3}He + \gamma $;
    c. $ ^{3}He + \alpha \to ^{7}Be + \gamma $;
@@ -109,33 +91,7 @@ The total is $ 24.7 \, \text{MeV} $, as expected.
 
    This is a very minor branch of the pp chain in the Sun, accounting for only about 0.0015% of the helium produced, but is very important in solar physics. Suggest why this might be true.
 
-6. Calculate the Q-values for the two d-d reactions, $ ^{2}H(d,n)^{3}He $ and $ ^{2}H(d,p)^{3}H $, and deduce the kinetic energies of the produced particles.
+4. Calculate the Q-values for the two d-d reactions, $ ^{2}H(d,n)^{3}He $ and $ ^{2}H(d,p)^{3}H $, and deduce the kinetic energies of the produced particles.
 
-7. It was noted above that the CNO cycle dominates helium production in stars heavier than the Sun (more precisely, in stars heavier than about 1.1 solar masses, though this does depend on the star’s carbon content), whereas the pp chain dominates in lower-mass stars. Suggest a reason why this might be the case.
-
-
-
-## Unworked Example : Proton-Boron Fusion Reaction
-
-The reaction $ p + ^{11}B \to 3\alpha $ is sometimes considered for commercial fusion. Its advantages include all charged products and $ ^{11}B $ being stable and abundant (80% of natural boron). 
-
-1. What is the $ Q $-value of this reaction?
-2. What is the Gamow energy for this reaction?
-3. Compare the Gamow energy for this reaction with that of d-t fusion.
-4. Explain, as quantitatively as possible, why this reaction is unlikely to be used in commercial fusion reactors in the foreseeable future.
-
-Relevant atomic mass:
-- $ ^{11}B $: 11.0093052 u
-
-Relevant particle masses:
-- Proton ($ p $): 1.0072765 u
-- Neutron ($ n $): 1.0086649 u
-- Deuterium ($ d $): 2.0135532 u
-- Tritium ($ t $): 3.0155007 u
-- Alpha particle ($ \alpha $): 4.0015062 u.
-
-
-
-
-
+5. It was noted above that the CNO cycle dominates helium production in stars heavier than the Sun (more precisely, in stars heavier than about 1.1 solar masses, though this does depend on the star’s carbon content), whereas the pp chain dominates in lower-mass stars. Suggest a reason why this might be the case.
 

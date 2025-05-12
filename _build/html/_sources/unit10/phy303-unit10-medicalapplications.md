@@ -1,6 +1,5 @@
 # Nuclear Medicine
 
-<!-- 
 ```{admonition} Quick Links
 :class: tip, dropdown
 - {ref}`unit10:problems`
@@ -10,10 +9,9 @@
 - {ref}`unit10:randomquiz`
 - {ref}`unit10:fullquiz`
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
-  - TBC
-  - TBC
+  - Biomedical applications [Martin] Chapter 8.3
+  - Nuclear medicine [Krane] Chapters 20.4, 20.5
 ``` 
--->
 
 ### Radiation in the body
 This part of the course is about the application of radioactivity to medicine, both for imaging (**diagnostic nuclear medicine**) and for treatment (**therapeutic nuclear medicine**).  Radioactivity is also a natural feature of the environment: uranium, thorium and potassium-40 are present in many minerals, and cosmogenic carbon-14 is a natural feature of the atmosphere (albeit somewhat augmented since 1945 by carbon-14 from nuclear bomb tests).  However, there is no doubt that ionising radiation in excess is not good for you, so we should start by reviewing the measurement of radiation exposure (known as **dosimetry**).

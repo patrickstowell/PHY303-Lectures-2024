@@ -62,6 +62,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'unit6/phy303-unit6-problems';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -171,7 +173,7 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Theory</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Notes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../unit1/phy303-unit1-introduction-and-structure.html">1. Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unit2/phy303-unit2-liquiddropmodels.html">2. Liquid Drop</a></li>
@@ -261,6 +263,35 @@
 <li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-flashcards.html">Unit 8 : Flash Cards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-random-quiz.html">Unit 8 : Random Quiz</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit8/phy303-unit8-full-quiz.html">Unit 8 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit9/phy303-unit9-review.html">Unit 9 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-problems.html">Unit 9 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-additionalproblems.html">Unit 9 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-terms.html">Unit 9 : Equations &amp; Terms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-flashcards.html">Unit 9 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-random-quiz.html">Unit 9 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit9/phy303-unit9-full-quiz.html">Unit 9 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit10/phy303-unit10-review.html">Unit 10 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-problems.html">Unit 10 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-additionalproblems.html">Unit 10 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-terms.html">Unit 10 : Equations &amp; Terms</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-flashcards.html">Unit 10 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-random-quiz.html">Unit 10 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-full-quiz.html">Unit 10 : Full Quiz</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../unit11/phy303-unit11-review.html">Unit 11 : Review Material</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-problems.html">Unit 11 : Worked Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-additionalproblems.html">Unit 11 : Additional Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-terms.html">Unit 11 : Equations &amp; Terms</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-flashcards.html">Unit 11 : Flash Cards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-random-quiz.html">Unit 11 : Random Quiz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit11/phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
 </ul>
 </details></li>
 </ul>
@@ -409,7 +440,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -425,6 +458,23 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-1-alpha-decay-separation-energy">Example 6.1.1 : Alpha decay separation energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-2-nuclear-separation-distance-in-alpha-decay">Example 6.1.2 : Nuclear separation distance in alpha decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-3-height-of-the-coulomb-barrier-to-alpha-decay">Example 6.1.3 : Height of the Coulomb barrier to alpha decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-4-outer-extent-of-the-coulomb-barrier-to-alpha-decay">Example 6.1.4 : Outer extent of the Coulomb barrier to alpha decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-5-alpha-coulomb-barrier-collision-frequency">Example 6.1.5 : Alpha-Coulomb barrier collision frequency</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-6-alpha-tunnelling-probability">Example 6.1.6 : Alpha tunnelling probability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-7-alpha-decay-constant-and-half-life">Example 6.1.7 : Alpha decay constant and half life</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-8-differences-between-calcualated-and-measured-half-life">Example 6.1.8 : Differences between calcualated and measured half-life</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-2-1-beta-decay-selection-rules">Example 6.2.1 : Beta decay selection rules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-2-2-beta-decay-endpoint-value">Example 6.2.2 : Beta decay endpoint value</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -436,16 +486,212 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="unit-6-worked-problems">
 <span id="unit6-problems"></span><h1>Unit 6 : Worked Problems<a class="headerlink" href="#unit-6-worked-problems" title="Link to this heading">#</a></h1>
-<!-- 
-(unit6:problem:example1)=
-#### Example 4.1 : Carbon Mass Calculation
-Given the mass of a carbon-12 atom is $12u$, estimate the binding energy of the carbon nucleus.
-```{admonition} Solution
-:class: note, dropdown
-
-First we start with the mass of the proton, neutron, and electrons in the atomic mass units. Since the mass if that of a carbon-12 atom, we include the electrons in our 
-calculation.
-``` --></section>
+<section id="example-6-1-1-alpha-decay-separation-energy">
+<span id="unit6-problem-example1"></span><h2>Example 6.1.1 : Alpha decay separation energy<a class="headerlink" href="#example-6-1-1-alpha-decay-separation-energy" title="Link to this heading">#</a></h2>
+<p>Calculate the separation energy for the alpha decay of <span class="math notranslate nohighlight">\(^{238}\)</span>U.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>For <span class="math notranslate nohighlight">\(\rm ^{238}U \rightarrow ^{234}Th + \alpha\)</span>, the separation energy is given by:</p>
+<div class="math notranslate nohighlight">
+\[
+Q = m(238,92) - m(234,90) - m(4,2),
+\]</div>
+<p>where m is the nuclear or atomic mass (interchangeable in this calculation since the mass of the electrons cancels out in the atomic mass).</p>
+<p>So</p>
+<div class="math notranslate nohighlight">
+\[
+Q = ( 238.050788 ~\textnormal{u} - 234.04359 ~\textnormal{u} - 4.002603~\textnormal{u} ) \times 931.5~\textnormal{MeV~u}^{-1} = 4.28~\textnormal{MeV}
+\]</div>
+</div>
+</section>
+<section id="example-6-1-2-nuclear-separation-distance-in-alpha-decay">
+<span id="unit6-problem-example2"></span><h2>Example 6.1.2 : Nuclear separation distance in alpha decay<a class="headerlink" href="#example-6-1-2-nuclear-separation-distance-in-alpha-decay" title="Link to this heading">#</a></h2>
+<p>Using the separation energy calculated in 6.1.1, calculate the nuclear separation distance of the <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(^{234}\)</span>Th daughter nucleus.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>Nuclear separation <span class="math notranslate nohighlight">\(\rm R = r_0 (A_{\alpha}^{1/3}+A_d^{1/3})\)</span> where <span class="math notranslate nohighlight">\(A_{\alpha}\)</span> and <span class="math notranslate nohighlight">\(\rm A_d\)</span> are the atomic masses of the alpha and daughter nucleus respectively, and <span class="math notranslate nohighlight">\(\rm r_0 = 1.2\)</span> is a constant of proportionality. Therefore:</p>
+<div class="math notranslate nohighlight">
+\[ 
+R = 1.2(4^{1/3}+234^{1/3}) = 9.30~ \textnormal{fm}
+\]</div>
+</div>
+</section>
+<section id="example-6-1-3-height-of-the-coulomb-barrier-to-alpha-decay">
+<span id="unit6-problem-example3"></span><h2>Example 6.1.3 : Height of the Coulomb barrier to alpha decay<a class="headerlink" href="#example-6-1-3-height-of-the-coulomb-barrier-to-alpha-decay" title="Link to this heading">#</a></h2>
+<p>Calculate the height of the Coulomb barrier to the alpha decay of <span class="math notranslate nohighlight">\(\rm ^{238}U\)</span> at the nuclear separation distance R calculated in 6.1.2.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>The height of the barrier at nuclear separation distance R is calculated as the Coulomb potential of point charges Z<span class="math notranslate nohighlight">\(_{\alpha}\)</span>e and Z<span class="math notranslate nohighlight">\(_d\)</span>e, where Z<span class="math notranslate nohighlight">\(_\alpha\)</span> and Z<span class="math notranslate nohighlight">\(_d\)</span> are the atomic numbers of the alpha particle and daughter nucleus. The height of the barrier is therefore:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+V(R) &amp;= \frac{2Z_dke^2}{R} \\
+     &amp;= \frac{2(90)1.44~\textnormal{MeV~fm}}{9.30~\textnormal{fm}} \\
+     &amp;= 27.9~\textnormal{MeV},
+\end{align*}
+\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(ke^2=\frac{e^2}{4\pi\epsilon_0}\)</span>.</p>
+</div>
+</section>
+<section id="example-6-1-4-outer-extent-of-the-coulomb-barrier-to-alpha-decay">
+<span id="unit6-problem-example4"></span><h2>Example 6.1.4 : Outer extent of the Coulomb barrier to alpha decay<a class="headerlink" href="#example-6-1-4-outer-extent-of-the-coulomb-barrier-to-alpha-decay" title="Link to this heading">#</a></h2>
+<p>Calculate the distance at which the Coulomb potential drops to the energy of the <span class="math notranslate nohighlight">\(\alpha\)</span> particle and, from this, the width of the Coulomb barrier in the alpha decay of <span class="math notranslate nohighlight">\(^{238}\)</span>U using your answers from earlier steps.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>The energy of the alpha particle is <span class="math notranslate nohighlight">\(T_e \approx Q = 4.28~\textnormal{MeV}\)</span> (from Example 6.1.1). The distance at which the Coulomb potential R<span class="math notranslate nohighlight">\(_Q\)</span> is equal to Q is given by rearranging the equation for the Coulomb potential:</p>
+<div class="math notranslate nohighlight">
+\[
+R_Q = \frac{2Z_dke^2}{Q} = \frac{2(90)1.44~\textnormal{MeV~fm}}{4.28~\textnormal{MeV}} = 60.6~\textnormal{fm}
+\]</div>
+<p>The width of the Coulomb barrier is therefore <span class="math notranslate nohighlight">\(w = R_Q - R = 60.6~\textnormal{fm} - 9.30~\textnormal{fm} = 51.3~ \textnormal{fm} \)</span>.</p>
+</div>
+</section>
+<section id="example-6-1-5-alpha-coulomb-barrier-collision-frequency">
+<span id="unit6-problem-example5"></span><h2>Example 6.1.5 : Alpha-Coulomb barrier collision frequency<a class="headerlink" href="#example-6-1-5-alpha-coulomb-barrier-collision-frequency" title="Link to this heading">#</a></h2>
+<p>Now find the frequency at which the <span class="math notranslate nohighlight">\(\alpha\)</span> particle collides with the Coulomb barrier in the alpha decay of <span class="math notranslate nohighlight">\(^{238}\)</span>U using your earlier answers.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>Since the alpha particle at this energy is non-relativistic, the velocity of the alpha can be calculated from its kinetic energy <span class="math notranslate nohighlight">\(T_e \approx Q = 4.28~\textnormal{MeV}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+T_e &amp;= \frac{mv^2}{2} \approx Q\\
+\textnormal{Therefore}\\
+\frac{v}{c} &amp;= sqrt{\frac{2Q}{m}} \\
+            &amp;= sqrt{\frac{2(4.28)}{4.002603~u (931.5 \textnormal{MeV u}^{-1})}} \\
+            &amp;= 0.0479~\textnormal{m~s}^{-1}c^{-1}\\
+\textnormal{and}\\
+v &amp;= 1.44 \times 10^7~\textnormal{m~s}^{-1} 
+\end{align*}
+\end{split}\]</div>
+<p>The frequency of collisions of an alpha particle with this velocity is given by:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+f &amp;= \frac{v}{2R} \\
+  &amp;= \frac{1.88 \times 10^6~\textnormal{m~s}^{-1}}{2(9.30~\textnormal{fm})(10^{-15}~\textnormal{m~fm}^{-1}} \\
+  &amp;= 0.772 \times 10^{21}~\textnormal{s}{-1}
+\end{align*}
+\end{split}\]</div>
+</div>
+</section>
+<section id="example-6-1-6-alpha-tunnelling-probability">
+<span id="unit6-problem-example6"></span><h2>Example 6.1.6 : Alpha tunnelling probability<a class="headerlink" href="#example-6-1-6-alpha-tunnelling-probability" title="Link to this heading">#</a></h2>
+<p>Now calculate the tunnelling probability of the alpha particle in the decay of <span class="math notranslate nohighlight">\(^{238}\)</span>U by integrating over the Gamow factor.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>The tunnelling probability is given by <span class="math notranslate nohighlight">\(P = e^{-2G}\)</span>, where G is the Gamow factor:</p>
+<div class="math notranslate nohighlight">
+\[
+G = \sqrt{\frac{2m}{\hbar^2}}\int_R^{R_Q} \sqrt{V(r) - Q}~dr
+\]</div>
+<p>Evaluating this integral gives us:</p>
+<div class="math notranslate nohighlight">
+\[
+G = \sqrt{\frac{2m}{\hbar^2Q}}2Z_d ke^2[arccos\sqrt{x}-\sqrt{x(1-x)}]
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(x = R/R_Q = Q/V(R)\)</span>.</p>
+<p>Putting in the numbers, this gives a tunnelling probability of</p>
+<div class="math notranslate nohighlight">
+\[
+P = e^{-2G} = 0.352 \times 10^{-38}
+\]</div>
+</div>
+</section>
+<section id="example-6-1-7-alpha-decay-constant-and-half-life">
+<span id="unit6-problem-example7"></span><h2>Example 6.1.7 : Alpha decay constant and half life<a class="headerlink" href="#example-6-1-7-alpha-decay-constant-and-half-life" title="Link to this heading">#</a></h2>
+<p>Assuming that the preformation probability <span class="math notranslate nohighlight">\(P_\alpha\)</span> of the alpha particle is equal to 1, calculate the decay constant, and therefore half-life of <span class="math notranslate nohighlight">\(^{238}\)</span>U.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>The decay constant is given by:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda = fP_\alpha P = f P = 2.72 \times 10^{-18}
+\]</div>
+<p>And so the half-life of <span class="math notranslate nohighlight">\(^{238}\)</span>U is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+T_{1/2} &amp;= \frac{ln(2)}{\lambda} \\
+        &amp;= 2.55 \times 10^{17}~\textnormal{s} \\
+        &amp;= 8.07 \times 10^9~\textnormal{years}
+\end{align*}
+\end{split}\]</div>
+</div>
+</section>
+<section id="example-6-1-8-differences-between-calcualated-and-measured-half-life">
+<span id="unit6-problem-example8"></span><h2>Example 6.1.8 : Differences between calcualated and measured half-life<a class="headerlink" href="#example-6-1-8-differences-between-calcualated-and-measured-half-life" title="Link to this heading">#</a></h2>
+<p>The measured half-life of <span class="math notranslate nohighlight">\(^{238}\)</span>U is approximately <span class="math notranslate nohighlight">\(4.468 \times 10^9\)</span> years. Comment on the difference between this value and the half-life we have calculated.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>The half-life calculated assumed a spherical nucleus and does not take into consideration:</p>
+<ol class="arabic simple">
+<li><p>The non-spherical nature of heavy nuclei.</p></li>
+<li><p>The effects of nuclear angular momentum.</p></li>
+</ol>
+<p>A 4% change in radius can give a factor of 5 difference in half-life, and in fact the measured half-life can be used to infer information about the radius.</p>
+</div>
+</section>
+<section id="example-6-2-1-beta-decay-selection-rules">
+<span id="unit6-problem-example9"></span><h2>Example 6.2.1 : Beta decay selection rules<a class="headerlink" href="#example-6-2-1-beta-decay-selection-rules" title="Link to this heading">#</a></h2>
+<p>Use the beta decay selection rules to classify the following transitions:</p>
+<ol class="arabic">
+<li><p><span class="math notranslate nohighlight">\(^{76}\)</span>Br(1-) to <span class="math notranslate nohighlight">\(^{76}\)</span>Se(0+)</p>
+<div class="admonition-solution admonition">
+<p class="admonition-title">Solution</p>
+<p><span class="math notranslate nohighlight">\(\Delta \pi = -\)</span>, so L is odd, since <span class="math notranslate nohighlight">\(\Delta \pi = (-1)^L\)</span>.</p>
+<p>Since <span class="math notranslate nohighlight">\(\Delta J = L + S = 1\)</span>, and L is odd, L = 1 and S = 0 is the only possible combination.</p>
+<p>This transition is therefore a 1st forbidden Fermi decay.</p>
+</div>
+</li>
+<li><p><span class="math notranslate nohighlight">\(^{22}\)</span>Na(3+) to <span class="math notranslate nohighlight">\(^{22}\)</span>Na(0+)</p>
+<div class="admonition-solution admonition">
+<p class="admonition-title">Solution</p>
+<p>There is no change in parity and <span class="math notranslate nohighlight">\(\Delta \pi = +\)</span>, so L is even and can be 0, 2, etc.</p>
+<p><span class="math notranslate nohighlight">\(\Delta J = L + S = 3\)</span>, so L = 2 and S = 1.</p>
+<p>This transition is therefore a 2nd forbidden Gamow-Teller decay.</p>
+</div>
+</li>
+<li><p><span class="math notranslate nohighlight">\(^{40}\)</span>K(4-) to <span class="math notranslate nohighlight">\(^{40}\)</span>Ca(0+)</p>
+<div class="admonition-solution admonition">
+<p class="admonition-title">Solution</p>
+<p>There is a change in parity and <span class="math notranslate nohighlight">\(\Delta \pi = -\)</span>, so L is odd.</p>
+<p><span class="math notranslate nohighlight">\(\Delta J = L + S = 4\)</span>, so L = 3 and S = 1.</p>
+<p>Therefore this is a 3rd forbidden Gamow-Teller decay</p>
+</div>
+</li>
+</ol>
+</section>
+<section id="example-6-2-2-beta-decay-endpoint-value">
+<span id="unit6-problem-example10"></span><h2>Example 6.2.2 : Beta decay endpoint value<a class="headerlink" href="#example-6-2-2-beta-decay-endpoint-value" title="Link to this heading">#</a></h2>
+<p>Calculate the endpoint value for the decay of <span class="math notranslate nohighlight">\(^{81}\)</span>Kr by beta minus, beta plus and electron capture, and therefore demonstrate which form of beta decay the isotope undergoes.</p>
+<div class="admonition-solution admonition">
+<p class="admonition-title">Solution</p>
+<ol class="arabic simple">
+<li><p>Beta minus decay <span class="math notranslate nohighlight">\( ^{81}_{36}Kr \rightarrow ^{81}_{37}Rb + \beta^- + \bar{\nu}_e\)</span>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+Q = M_{Kr} - M_{Rb} - m_e = 80.916593~\textnormal{u} - 80.918994~\textnormal{u} - 5.4858 \times 10^{-4}~\textnormal{u} &lt; 0
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Beta plus decay <span class="math notranslate nohighlight">\( ^{81}_{36}Kr \rightarrow ^{81}_{35}Br + \beta^+ + \nu_e\)</span>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+Q = M_{Kr} - M_{Br} - 2m_e = 80.916593~\textnormal{u} - 80.916291~\textnormal{u} - 2(5.4858) \times 10^{-4}~\textnormal{u} &lt; 0
+\]</div>
+<ol class="arabic simple" start="3">
+<li><p>Electron capture <span class="math notranslate nohighlight">\( ^{81}_{36}Kr + e^- \rightarrow ^{81}_{35}Br + \nu_e\)</span></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+Q = M_{Kr} - M_{Br} = 80.916593~\textnormal{u} - 80.916291~\textnormal{u} = 0.281~\textnormal{MeV}
+\]</div>
+<p>Therefore, electron capture is the only form of beta decay that <span class="math notranslate nohighlight">\(^{81}\)</span>Kr can undergo.</p>
+</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -501,6 +747,31 @@ calculation.
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-1-alpha-decay-separation-energy">Example 6.1.1 : Alpha decay separation energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-2-nuclear-separation-distance-in-alpha-decay">Example 6.1.2 : Nuclear separation distance in alpha decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-3-height-of-the-coulomb-barrier-to-alpha-decay">Example 6.1.3 : Height of the Coulomb barrier to alpha decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-4-outer-extent-of-the-coulomb-barrier-to-alpha-decay">Example 6.1.4 : Outer extent of the Coulomb barrier to alpha decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-5-alpha-coulomb-barrier-collision-frequency">Example 6.1.5 : Alpha-Coulomb barrier collision frequency</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-6-alpha-tunnelling-probability">Example 6.1.6 : Alpha tunnelling probability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-7-alpha-decay-constant-and-half-life">Example 6.1.7 : Alpha decay constant and half life</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-1-8-differences-between-calcualated-and-measured-half-life">Example 6.1.8 : Differences between calcualated and measured half-life</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-2-1-beta-decay-selection-rules">Example 6.2.1 : Beta decay selection rules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-2-2-beta-decay-endpoint-value">Example 6.2.2 : Beta decay endpoint value</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

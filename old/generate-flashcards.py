@@ -1,7 +1,7 @@
 import json
 import sys
 
-for i in [7]:
+for i in [10]:
   unit = "unit" + str(i+1)
 
   with open(f"{unit}/phy303-{unit}-quiz-answers.json") as f:

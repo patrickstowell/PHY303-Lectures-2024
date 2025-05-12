@@ -1,0 +1,208 @@
+Traceback (most recent call last):
+  File "/Users/stowell/.envs/phy303book/lib/python3.13/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+    ~~~~~~~~~^
+        nb,
+        ^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/stowell/.envs/phy303book/lib/python3.13/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/stowell/.envs/phy303book/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/stowell/.envs/phy303book/lib/python3.13/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+        cell, index, execution_count=self.code_cells_executed + 1
+    )
+  File "/Users/stowell/.envs/phy303book/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/stowell/.envs/phy303book/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+from IPython.display import display, HTML
+# display(HTML("<style>.container { width:100% !important; }</style>"))
+# the service URL
+livechart = "https://nds.iaea.org/relnsd/v0/data?"
+import urllib.request
+def lc_pd_dataframe(url):
+    req = urllib.request.Request(url)
+    req.add_header('User-Agent', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0')
+    return pd.read_csv(urllib.request.urlopen(req))
+df = lc_pd_dataframe(livechart + "fields=ground_states&nuclides=all")
+df["a"]=df["z"] + df["n"]
+df["b_over_a"] = df["binding"]
+
+
+import plotly.express as px
+df["symbol"] = 3
+
+df["Proton Number [Z]"] = df["z"]
+df["Neutron Number [N]"] = df["n"]
+df["Deficit [MeV]"] = -df["binding"]/1000.0
+df["Odd Neutron"] = df["n"] % 2 == 1
+df.loc[np.invert((df["decay_1"]).notna()), "decay_1"] = "STABLE"
+
+df["Atomic Number [A]"] = df["z"]  + df["n"]
+df["Proton Number [Z]"] = df["z"]
+df["Neutron Number [N]"] = df["n"]
+df["Binding Energy [MeV]"] = df["binding"] / 1000.0
+df["Symbol"] = df["symbol"] 
+df["Dominant Decay"] = df["decay_1"] 
+df["Neutron Seperation"] = df["sn"]
+df["Proton Seperation"] = df["sp"]
+df["Isospin"] = df["isospin"]
+df["Magnetic Dipole"] = df["magnetic_dipole"]
+df["Electric Quadrupole"] = df["electric_quadrupole"]
+df["Mass Excess"] = df["massexcess"]/1000.0
+df["Atomic Mass"] = df["atomic_mass"]/1000.0
+df["Half Life"] = df["half_life"]
+df["Half Life Unit"] = df["unit_hl"]
+
+
+# df = df[df.z==27]
+# df["amu"] = df["atomic_mass"] / 1E6
+# df = df[ ["symbol", "a", "z", "n", "amu", "Half Life", "Half Life Unit"]]
+# print(df)
+
+
+
+
+
+fig = px.scatter(df, x="Neutron Number [N]",y="Proton Number [Z]", color="Dominant Decay", 
+                 hover_data=["symbol", "Symbol","Neutron Number [N]","Proton Number [Z]",
+                             "Binding Energy [MeV]", "Dominant Decay",
+                             "Neutron Seperation", "Proton Seperation",
+                             "Isospin","Magnetic Dipole",
+                             "Electric Quadrupole", "Mass Excess",
+                             "Atomic Mass", "Half Life"])
+fig.show()
+
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mgaierror[0m                                  Traceback (most recent call last)
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py:1319[0m, in [0;36mAbstractHTTPHandler.do_open[0;34m(self, http_class, req, **http_conn_args)[0m
+[1;32m   1318[0m [38;5;28;01mtry[39;00m:
+[0;32m-> 1319[0m     [43mh[49m[38;5;241;43m.[39;49m[43mrequest[49m[43m([49m[43mreq[49m[38;5;241;43m.[39;49m[43mget_method[49m[43m([49m[43m)[49m[43m,[49m[43m [49m[43mreq[49m[38;5;241;43m.[39;49m[43mselector[49m[43m,[49m[43m [49m[43mreq[49m[38;5;241;43m.[39;49m[43mdata[49m[43m,[49m[43m [49m[43mheaders[49m[43m,[49m
+[1;32m   1320[0m [43m              [49m[43mencode_chunked[49m[38;5;241;43m=[39;49m[43mreq[49m[38;5;241;43m.[39;49m[43mhas_header[49m[43m([49m[38;5;124;43m'[39;49m[38;5;124;43mTransfer-encoding[39;49m[38;5;124;43m'[39;49m[43m)[49m[43m)[49m
+[1;32m   1321[0m [38;5;28;01mexcept[39;00m [38;5;167;01mOSError[39;00m [38;5;28;01mas[39;00m err: [38;5;66;03m# timeout error[39;00m
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py:1336[0m, in [0;36mHTTPConnection.request[0;34m(self, method, url, body, headers, encode_chunked)[0m
+[1;32m   1335[0m [38;5;250m[39m[38;5;124;03m"""Send a complete request to the server."""[39;00m
+[0;32m-> 1336[0m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_send_request[49m[43m([49m[43mmethod[49m[43m,[49m[43m [49m[43murl[49m[43m,[49m[43m [49m[43mbody[49m[43m,[49m[43m [49m[43mheaders[49m[43m,[49m[43m [49m[43mencode_chunked[49m[43m)[49m
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py:1382[0m, in [0;36mHTTPConnection._send_request[0;34m(self, method, url, body, headers, encode_chunked)[0m
+[1;32m   1381[0m     body [38;5;241m=[39m _encode(body, [38;5;124m'[39m[38;5;124mbody[39m[38;5;124m'[39m)
+[0;32m-> 1382[0m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mendheaders[49m[43m([49m[43mbody[49m[43m,[49m[43m [49m[43mencode_chunked[49m[38;5;241;43m=[39;49m[43mencode_chunked[49m[43m)[49m
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py:1331[0m, in [0;36mHTTPConnection.endheaders[0;34m(self, message_body, encode_chunked)[0m
+[1;32m   1330[0m     [38;5;28;01mraise[39;00m CannotSendHeader()
+[0;32m-> 1331[0m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_send_output[49m[43m([49m[43mmessage_body[49m[43m,[49m[43m [49m[43mencode_chunked[49m[38;5;241;43m=[39;49m[43mencode_chunked[49m[43m)[49m
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py:1091[0m, in [0;36mHTTPConnection._send_output[0;34m(self, message_body, encode_chunked)[0m
+[1;32m   1090[0m [38;5;28;01mdel[39;00m [38;5;28mself[39m[38;5;241m.[39m_buffer[:]
+[0;32m-> 1091[0m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43msend[49m[43m([49m[43mmsg[49m[43m)[49m
+[1;32m   1093[0m [38;5;28;01mif[39;00m message_body [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m:
+[1;32m   1094[0m 
+[1;32m   1095[0m     [38;5;66;03m# create a consistent interface to message_body[39;00m
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py:1035[0m, in [0;36mHTTPConnection.send[0;34m(self, data)[0m
+[1;32m   1034[0m [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mauto_open:
+[0;32m-> 1035[0m     [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mconnect[49m[43m([49m[43m)[49m
+[1;32m   1036[0m [38;5;28;01melse[39;00m:
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py:1470[0m, in [0;36mHTTPSConnection.connect[0;34m(self)[0m
+[1;32m   1468[0m [38;5;124m"[39m[38;5;124mConnect to a host on a given (SSL) port.[39m[38;5;124m"[39m
+[0;32m-> 1470[0m [38;5;28;43msuper[39;49m[43m([49m[43m)[49m[38;5;241;43m.[39;49m[43mconnect[49m[43m([49m[43m)[49m
+[1;32m   1472[0m [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39m_tunnel_host:
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py:1001[0m, in [0;36mHTTPConnection.connect[0;34m(self)[0m
+[1;32m   1000[0m sys[38;5;241m.[39maudit([38;5;124m"[39m[38;5;124mhttp.client.connect[39m[38;5;124m"[39m, [38;5;28mself[39m, [38;5;28mself[39m[38;5;241m.[39mhost, [38;5;28mself[39m[38;5;241m.[39mport)
+[0;32m-> 1001[0m [38;5;28mself[39m[38;5;241m.[39msock [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_create_connection[49m[43m([49m
+[1;32m   1002[0m [43m    [49m[43m([49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mhost[49m[43m,[49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mport[49m[43m)[49m[43m,[49m[43m [49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mtimeout[49m[43m,[49m[43m [49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43msource_address[49m[43m)[49m
+[1;32m   1003[0m [38;5;66;03m# Might fail in OSs that don't implement TCP_NODELAY[39;00m
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py:840[0m, in [0;36mcreate_connection[0;34m(address, timeout, source_address, all_errors)[0m
+[1;32m    839[0m exceptions [38;5;241m=[39m []
+[0;32m--> 840[0m [38;5;28;01mfor[39;00m res [38;5;129;01min[39;00m [43mgetaddrinfo[49m[43m([49m[43mhost[49m[43m,[49m[43m [49m[43mport[49m[43m,[49m[43m [49m[38;5;241;43m0[39;49m[43m,[49m[43m [49m[43mSOCK_STREAM[49m[43m)[49m:
+[1;32m    841[0m     af, socktype, proto, canonname, sa [38;5;241m=[39m res
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py:975[0m, in [0;36mgetaddrinfo[0;34m(host, port, family, type, proto, flags)[0m
+[1;32m    974[0m addrlist [38;5;241m=[39m []
+[0;32m--> 975[0m [38;5;28;01mfor[39;00m res [38;5;129;01min[39;00m [43m_socket[49m[38;5;241;43m.[39;49m[43mgetaddrinfo[49m[43m([49m[43mhost[49m[43m,[49m[43m [49m[43mport[49m[43m,[49m[43m [49m[43mfamily[49m[43m,[49m[43m [49m[38;5;28;43mtype[39;49m[43m,[49m[43m [49m[43mproto[49m[43m,[49m[43m [49m[43mflags[49m[43m)[49m:
+[1;32m    976[0m     af, socktype, proto, canonname, sa [38;5;241m=[39m res
+
+[0;31mgaierror[0m: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+[0;31mURLError[0m                                  Traceback (most recent call last)
+Cell [0;32mIn[1], line 15[0m
+[1;32m     13[0m     req[38;5;241m.[39madd_header([38;5;124m'[39m[38;5;124mUser-Agent[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mMozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0[39m[38;5;124m'[39m)
+[1;32m     14[0m     [38;5;28;01mreturn[39;00m pd[38;5;241m.[39mread_csv(urllib[38;5;241m.[39mrequest[38;5;241m.[39murlopen(req))
+[0;32m---> 15[0m df [38;5;241m=[39m [43mlc_pd_dataframe[49m[43m([49m[43mlivechart[49m[43m [49m[38;5;241;43m+[39;49m[43m [49m[38;5;124;43m"[39;49m[38;5;124;43mfields=ground_states&nuclides=all[39;49m[38;5;124;43m"[39;49m[43m)[49m
+[1;32m     16[0m df[[38;5;124m"[39m[38;5;124ma[39m[38;5;124m"[39m][38;5;241m=[39mdf[[38;5;124m"[39m[38;5;124mz[39m[38;5;124m"[39m] [38;5;241m+[39m df[[38;5;124m"[39m[38;5;124mn[39m[38;5;124m"[39m]
+[1;32m     17[0m df[[38;5;124m"[39m[38;5;124mb_over_a[39m[38;5;124m"[39m] [38;5;241m=[39m df[[38;5;124m"[39m[38;5;124mbinding[39m[38;5;124m"[39m]
+
+Cell [0;32mIn[1], line 14[0m, in [0;36mlc_pd_dataframe[0;34m(url)[0m
+[1;32m     12[0m req [38;5;241m=[39m urllib[38;5;241m.[39mrequest[38;5;241m.[39mRequest(url)
+[1;32m     13[0m req[38;5;241m.[39madd_header([38;5;124m'[39m[38;5;124mUser-Agent[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mMozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0[39m[38;5;124m'[39m)
+[0;32m---> 14[0m [38;5;28;01mreturn[39;00m pd[38;5;241m.[39mread_csv([43murllib[49m[38;5;241;43m.[39;49m[43mrequest[49m[38;5;241;43m.[39;49m[43murlopen[49m[43m([49m[43mreq[49m[43m)[49m)
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py:189[0m, in [0;36murlopen[0;34m(url, data, timeout, context)[0m
+[1;32m    187[0m [38;5;28;01melse[39;00m:
+[1;32m    188[0m     opener [38;5;241m=[39m _opener
+[0;32m--> 189[0m [38;5;28;01mreturn[39;00m [43mopener[49m[38;5;241;43m.[39;49m[43mopen[49m[43m([49m[43murl[49m[43m,[49m[43m [49m[43mdata[49m[43m,[49m[43m [49m[43mtimeout[49m[43m)[49m
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py:489[0m, in [0;36mOpenerDirector.open[0;34m(self, fullurl, data, timeout)[0m
+[1;32m    486[0m     req [38;5;241m=[39m meth(req)
+[1;32m    488[0m sys[38;5;241m.[39maudit([38;5;124m'[39m[38;5;124murllib.Request[39m[38;5;124m'[39m, req[38;5;241m.[39mfull_url, req[38;5;241m.[39mdata, req[38;5;241m.[39mheaders, req[38;5;241m.[39mget_method())
+[0;32m--> 489[0m response [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_open[49m[43m([49m[43mreq[49m[43m,[49m[43m [49m[43mdata[49m[43m)[49m
+[1;32m    491[0m [38;5;66;03m# post-process response[39;00m
+[1;32m    492[0m meth_name [38;5;241m=[39m protocol[38;5;241m+[39m[38;5;124m"[39m[38;5;124m_response[39m[38;5;124m"[39m
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py:506[0m, in [0;36mOpenerDirector._open[0;34m(self, req, data)[0m
+[1;32m    503[0m     [38;5;28;01mreturn[39;00m result
+[1;32m    505[0m protocol [38;5;241m=[39m req[38;5;241m.[39mtype
+[0;32m--> 506[0m result [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_call_chain[49m[43m([49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mhandle_open[49m[43m,[49m[43m [49m[43mprotocol[49m[43m,[49m[43m [49m[43mprotocol[49m[43m [49m[38;5;241;43m+[39;49m
+[1;32m    507[0m [43m                          [49m[38;5;124;43m'[39;49m[38;5;124;43m_open[39;49m[38;5;124;43m'[39;49m[43m,[49m[43m [49m[43mreq[49m[43m)[49m
+[1;32m    508[0m [38;5;28;01mif[39;00m result:
+[1;32m    509[0m     [38;5;28;01mreturn[39;00m result
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py:466[0m, in [0;36mOpenerDirector._call_chain[0;34m(self, chain, kind, meth_name, *args)[0m
+[1;32m    464[0m [38;5;28;01mfor[39;00m handler [38;5;129;01min[39;00m handlers:
+[1;32m    465[0m     func [38;5;241m=[39m [38;5;28mgetattr[39m(handler, meth_name)
+[0;32m--> 466[0m     result [38;5;241m=[39m [43mfunc[49m[43m([49m[38;5;241;43m*[39;49m[43margs[49m[43m)[49m
+[1;32m    467[0m     [38;5;28;01mif[39;00m result [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m:
+[1;32m    468[0m         [38;5;28;01mreturn[39;00m result
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py:1367[0m, in [0;36mHTTPSHandler.https_open[0;34m(self, req)[0m
+[1;32m   1366[0m [38;5;28;01mdef[39;00m [38;5;21mhttps_open[39m([38;5;28mself[39m, req):
+[0;32m-> 1367[0m     [38;5;28;01mreturn[39;00m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mdo_open[49m[43m([49m[43mhttp[49m[38;5;241;43m.[39;49m[43mclient[49m[38;5;241;43m.[39;49m[43mHTTPSConnection[49m[43m,[49m[43m [49m[43mreq[49m[43m,[49m
+[1;32m   1368[0m [43m                        [49m[43mcontext[49m[38;5;241;43m=[39;49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_context[49m[43m)[49m
+
+File [0;32m/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py:1322[0m, in [0;36mAbstractHTTPHandler.do_open[0;34m(self, http_class, req, **http_conn_args)[0m
+[1;32m   1319[0m         h[38;5;241m.[39mrequest(req[38;5;241m.[39mget_method(), req[38;5;241m.[39mselector, req[38;5;241m.[39mdata, headers,
+[1;32m   1320[0m                   encode_chunked[38;5;241m=[39mreq[38;5;241m.[39mhas_header([38;5;124m'[39m[38;5;124mTransfer-encoding[39m[38;5;124m'[39m))
+[1;32m   1321[0m     [38;5;28;01mexcept[39;00m [38;5;167;01mOSError[39;00m [38;5;28;01mas[39;00m err: [38;5;66;03m# timeout error[39;00m
+[0;32m-> 1322[0m         [38;5;28;01mraise[39;00m URLError(err)
+[1;32m   1323[0m     r [38;5;241m=[39m h[38;5;241m.[39mgetresponse()
+[1;32m   1324[0m [38;5;28;01mexcept[39;00m:
+
+[0;31mURLError[0m: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+

@@ -1,5 +1,5 @@
 # Nuclear Power
-<!-- 
+
 ```{admonition} Quick Links
 :class: tip, dropdown
 - {ref}`unit11:problems`
@@ -9,10 +9,12 @@
 - {ref}`unit11:randomquiz`
 - {ref}`unit11:fullquiz`
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
-  - TBC
-  - TBC
+  - Nuclear fission [Martin] Chapter 2.7, 8.1
+  - Nuclear fusion [Martin] Chapter 8.2
+  - Nuclear fission [Krane] Chapter 13
+  - Nuclear fusion [Krane] Chapter 14
 ``` 
--->
+
 
 ## Introduction
 ### Basic energetics of nuclear power

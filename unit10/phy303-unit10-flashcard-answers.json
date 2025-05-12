@@ -1,6 +1,122 @@
 [
     {
-        "back": "No",
-        "front": "Has this unit quiz/flashcards been setup?"
+        "back": "Gray (Gy)",
+        "front": "What is the SI unit of absorbed radiation dose?"
+    },
+    {
+        "back": "Quality factor",
+        "front": "Which factor is used to convert absorbed dose to dose equivalent?"
+    },
+    {
+        "back": "MRI",
+        "front": "Which medical imaging technique uses proton spin alignment but is not discussed further here?"
+    },
+    {
+        "back": "\u03b3 or \u03b2\u207a emission, biological targeting, non-toxicity, short half-life",
+        "front": "What are the key features required of diagnostic medical radioisotopes?"
+    },
+    {
+        "back": "Cyclotrons",
+        "front": "What is the primary method of producing proton-rich medical isotopes like $^{18}$F or $^{11}$C?"
+    },
+    {
+        "back": "To produce short-lived daughter isotopes from long-lived parents",
+        "front": "What is the function of a radioisotope generator, such as a $^{99m}$Tc generator?"
+    },
+    {
+        "back": "$^{99m}$Tc",
+        "front": "Which diagnostic radioisotope is most widely used in nuclear medicine?"
+    },
+    {
+        "back": "It is obtained from a long-lived $^{68}$Ge generator",
+        "front": "Why is $^{68}$Ga useful for PET imaging far from a cyclotron?"
+    },
+    {
+        "back": "Sealed sources are physically implanted; unsealed are metabolized by the body",
+        "front": "What is the key difference between sealed and unsealed therapeutic sources?"
+    },
+    {
+        "back": "It is taken up by metabolically active cells like cancer cells",
+        "front": "Why is $^{18}$F-fluorodeoxyglucose (FDG) widely used in PET imaging?"
+    },
+    {
+        "back": "To deposit radiation dose locally at the treatment site",
+        "front": "What is the main goal when selecting isotopes for therapeutic nuclear medicine?"
+    },
+    {
+        "back": "$^{125}$I",
+        "front": "Which of the following is a brachytherapy isotope?"
+    },
+    {
+        "back": "They are neutron-rich \u03b2\u207b emitters",
+        "front": "Why are most therapeutic radioisotopes produced in reactors?"
+    },
+    {
+        "back": "Scintillator crystal with photomultiplier tubes",
+        "front": "What is the key component of a gamma camera used in scintigraphy?"
+    },
+    {
+        "back": "SPECT",
+        "front": "Which imaging technique uses rotating detectors to create 3D reconstructions from \u03b3-ray emissions?"
+    },
+    {
+        "back": "Better detection efficiency and faster response for 511 keV photons",
+        "front": "What is the primary reason PET scanners use scintillators like LSO:Ce instead of NaI(Tl)?"
+    },
+    {
+        "back": "They detect photon pairs in coincidence, defining lines of response",
+        "front": "Why are PET scanners generally higher resolution than SPECT?"
+    },
+    {
+        "back": "It can be produced on-site from a $^{68}$Ge generator",
+        "front": "What is a major advantage of $^{68}$Ga in PET imaging?"
+    },
+    {
+        "back": "They combine anatomical and functional imaging for better localisation",
+        "front": "What makes SPECT/CT systems advantageous over standalone SPECT?"
+    },
+    {
+        "back": "\u03b2\u207b particles for therapy, \u03b3 rays for imaging",
+        "front": "What type of emission does $^{177}$Lu use for both therapy and imaging?"
+    },
+    {
+        "back": "To destroy diseased cells while sparing healthy tissue",
+        "front": "What is the key goal of therapeutic nuclear medicine?"
+    },
+    {
+        "back": "It can target metastatic disease throughout the body",
+        "front": "Which of the following is a major advantage of radionuclide therapy over brachytherapy?"
+    },
+    {
+        "back": "Their short half-lives require proximity to a cyclotron",
+        "front": "What is the most significant limitation of using PET isotopes like $^{18}$F in routine clinical settings?"
+    },
+    {
+        "back": "One is used for imaging, the other for therapy, using the same tracer molecule",
+        "front": "What characterizes a theranostic pair of radioisotopes?"
+    },
+    {
+        "back": "Prostate cancer",
+        "front": "What type of cancer is typically treated with permanently implanted low-dose-rate brachytherapy sources?"
+    },
+    {
+        "back": "Alpha particles",
+        "front": "Which particle type is increasingly studied for targeted therapy due to its short range and high damage?"
+    },
+    {
+        "back": "They guide radioisotopes to cancer cells via molecular recognition",
+        "front": "What is the role of monoclonal antibodies in radionuclide therapy?"
+    },
+    {
+        "back": "PET",
+        "front": "Which imaging method provides the highest spatial resolution?"
+    },
+    {
+        "back": "$^{68}$Ga and $^{177}$Lu",
+        "front": "Which isotopes form a commonly used theranostic pair?"
+    },
+    {
+        "back": "To improve localisation and correct for \u03b3-ray attenuation",
+        "front": "Why are most SPECT and PET scanners combined with CT in modern clinical setups?"
     }
 ]

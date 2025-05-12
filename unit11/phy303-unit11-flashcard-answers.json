@@ -1,6 +1,122 @@
 [
     {
-        "back": "No",
-        "front": "Has this unit quiz/flashcards been setup?"
+        "back": "The fission products have higher binding energy per nucleon than the original nucleus",
+        "front": "Why does fission of heavy elements release energy?"
+    },
+    {
+        "back": "The ratio Z\u00b2/A exceeds a critical value",
+        "front": "What condition makes a nucleus unstable to spontaneous fission in the liquid drop model?"
+    },
+    {
+        "back": "Even-even nuclei are more stable and more likely to reach configurations favorable for fission",
+        "front": "Why is fission more likely for even-even nuclei compared to odd-A nuclei?"
+    },
+    {
+        "back": "Neutron capture in $^{238}$U results in a compound nucleus with excitation energy below the fission barrier",
+        "front": "Why is $^{238}$U not easily fissioned by thermal neutrons?"
+    },
+    {
+        "back": "It corresponds to magic numbers of protons and neutrons",
+        "front": "What best explains the near-constant mass of one fission fragment around A=139?"
+    },
+    {
+        "back": "Kinetic energy of the fission fragments",
+        "front": "Which component contributes the most to the energy released in a typical fission reaction?"
+    },
+    {
+        "back": "They slow the response time of the chain reaction, enabling control",
+        "front": "Why are delayed neutrons critical for reactor control?"
+    },
+    {
+        "back": "To initiate a chain reaction in a subcritical core",
+        "front": "What is the role of a startup source in a reactor?"
+    },
+    {
+        "back": "To calculate the neutron multiplication factor, k",
+        "front": "What is the purpose of the four-factor formula in reactor design?"
+    },
+    {
+        "back": "They are expensive and complex to operate safely",
+        "front": "Why are fast breeder reactors not widely used commercially?"
+    },
+    {
+        "back": "To slow down neutrons to thermal energies",
+        "front": "What is the primary function of the moderator in a nuclear reactor?"
+    },
+    {
+        "back": "Pressurised water reactor (PWR)",
+        "front": "Which reactor type uses ordinary water for both moderation and cooling?"
+    },
+    {
+        "back": "Boiling of the coolant reduces moderation, lowering the fission rate",
+        "front": "What is a key safety feature of a PWR in the event of overheating?"
+    },
+    {
+        "back": "Boiling water reactor (BWR)",
+        "front": "Which reactor type uses steam from the reactor core directly to drive the turbines?"
+    },
+    {
+        "back": "Use of heavy water as moderator and coolant",
+        "front": "What allows CANDU (PHWR) reactors to use natural uranium fuel?"
+    },
+    {
+        "back": "Radioactive steam goes directly to turbines",
+        "front": "What is a disadvantage of BWRs compared to PWRs?"
+    },
+    {
+        "back": "They use a gas (CO\u2082) coolant which allows for higher operating temperatures",
+        "front": "Why do AGRs operate at higher temperatures than PWRs?"
+    },
+    {
+        "back": "Steam turbine",
+        "front": "Which component of a nuclear power plant converts thermal energy into electrical energy?"
+    },
+    {
+        "back": "Net power subtracts internal plant usage from gross power",
+        "front": "What distinguishes the net electrical power from the gross electrical power of a reactor?"
+    },
+    {
+        "back": "Natural uranium then had a higher proportion of $^{235}$U",
+        "front": "What allowed natural nuclear reactors to operate at Oklo two billion years ago?"
+    },
+    {
+        "back": "It converts a larger percentage of mass into energy",
+        "front": "Why is nuclear fusion considered more efficient than nuclear fission?"
+    },
+    {
+        "back": "Quantum tunnelling",
+        "front": "What physical phenomenon allows fusion to occur at temperatures lower than the classical Coulomb barrier?"
+    },
+    {
+        "back": "It has a higher Q value and lower ignition temperature",
+        "front": "Why is the d-t fusion reaction preferred over d-d fusion for terrestrial fusion power?"
+    },
+    {
+        "back": "To determine the minimum confinement conditions for net energy gain in fusion",
+        "front": "What is the Lawson criterion used for?"
+    },
+    {
+        "back": "Its energy must be captured to generate power",
+        "front": "What challenge arises from the neutron produced in d-t fusion?"
+    },
+    {
+        "back": "Magnetic confinement fusion (MCF)",
+        "front": "Which fusion strategy aims to achieve long confinement times using magnetic fields?"
+    },
+    {
+        "back": "Tritium does not naturally occur and must be produced for sustained fusion",
+        "front": "Why is tritium breeding important for fusion power reactors?"
+    },
+    {
+        "back": "They produce only charged particles, which can be converted to electricity directly",
+        "front": "What is a major advantage of aneutronic fusion reactions?"
+    },
+    {
+        "back": "National Ignition Facility (NIF)",
+        "front": "Which facility first demonstrated breakeven in a fusion shot using inertial confinement?"
+    },
+    {
+        "back": "The plasma maintains its temperature through \u03b1-particle heating alone",
+        "front": "What condition defines ignition in a fusion plasma?"
     }
 ]

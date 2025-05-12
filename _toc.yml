@@ -3,7 +3,7 @@ root: phy303-homepage
 options:
   numbered: True
 parts:
-- caption: Theory
+- caption: Course Notes
   numbered: True
   chapters:
     - file: unit1/phy303-unit1-introduction-and-structure
@@ -73,7 +73,7 @@ parts:
       - file: unit5/phy303-unit5-full-quiz.ipynb
     - file: unit6/phy303-unit6-review.md
       sections: 
-      # - file: unit6/phy303-unit6-problems.md
+      - file: unit6/phy303-unit6-problems.md
       - file: unit6/phy303-unit6-additionalproblems.md
       - file: unit6/phy303-unit6-terms.md
       - file: unit6/phy303-unit6-flashcards.ipynb
@@ -95,30 +95,31 @@ parts:
       - file: unit8/phy303-unit8-flashcards.ipynb
       - file: unit8/phy303-unit8-random-quiz.ipynb
       - file: unit8/phy303-unit8-full-quiz.ipynb
-    # - file: unit9/phy303-unit9-review.md
-    #   sections: 
-    #   - file: unit9/phy303-unit9-problems.md
-    #   - file: unit9/phy303-unit9-additionalproblems.md
-    #   - file: unit9/phy303-unit9-terms.md
-    #   - file: unit9/phy303-unit9-flashcards.ipynb
-    #   - file: unit9/phy303-unit9-random-quiz.ipynb
-    #   - file: unit9/phy303-unit9-full-quiz.ipynb
-    # - file: unit10/phy303-unit10-review.md
-    #   sections: 
-    #   - file: unit10/phy303-unit10-problems.md
-    #   - file: unit10/phy303-unit10-additionalproblems.md
-    #   - file: unit10/phy303-unit10-terms.md
-    #   - file: unit10/phy303-unit10-flashcards.ipynb
-    #   - file: unit10/phy303-unit10-random-quiz.ipynb
-    #   - file: unit10/phy303-unit10-full-quiz.ipynb
-    # - file: unit11/phy303-unit11-review.md
-    #   sections: 
-    #   - file: unit11/phy303-unit11-problems.md
-    #   - file: unit11/phy303-unit11-additionalproblems.md
-    #   - file: unit11/phy303-unit11-terms.md
-    #   - file: unit11/phy303-unit11-flashcards.ipynb
-    #   - file: unit11/phy303-unit11-random-quiz.ipynb
-    #   - file: unit11/phy303-unit11-full-quiz.ipynb
+    - file: unit9/phy303-unit9-review.md
+      sections: 
+      - file: unit9/phy303-unit9-problems.md
+      - file: unit9/phy303-unit9-additionalproblems.md
+      - file: unit9/phy303-unit9-terms.md
+      - file: unit9/phy303-unit9-flashcards.ipynb
+      - file: unit9/phy303-unit9-random-quiz.ipynb
+      - file: unit9/phy303-unit9-full-quiz.ipynb
+    - file: unit10/phy303-unit10-review.md
+      sections: 
+      - file: unit10/phy303-unit10-problems.md
+      - file: unit10/phy303-unit10-additionalproblems.md
+      - file: unit10/phy303-unit10-terms.md
+      - file: unit10/phy303-unit10-flashcards.ipynb
+      - file: unit10/phy303-unit10-random-quiz.ipynb
+      - file: unit10/phy303-unit10-full-quiz.ipynb
+    - file: unit11/phy303-unit11-review.md
+      sections: 
+      - file: unit11/phy303-unit11-problems.md
+      - file: unit11/phy303-unit11-additionalproblems.md
+      - file: unit11/phy303-unit11-terms.md
+      - file: unit11/phy303-unit11-flashcards.ipynb
+      - file: unit11/phy303-unit11-random-quiz.ipynb
+      - file: unit11/phy303-unit11-full-quiz.ipynb
+    # -file: terms_sheet.md
 - caption: Interactive Visualizations
   numbered: False
   chapters:

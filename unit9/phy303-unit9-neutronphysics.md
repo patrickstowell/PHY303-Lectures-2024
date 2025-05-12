@@ -1,18 +1,16 @@
 # Neutron Physics
-<!-- 
+
 ```{admonition} Quick Links
 :class: tip, dropdown
 - {ref}`unit9:problems`
-- {ref}`unit9:additionalproblems`
 - {ref}`unit9:terms`
 - {ref}`unit9:flashcards`
 - {ref}`unit9:randomquiz`
 - {ref}`unit9:fullquiz`
 - From the [Reading List](https://eu.alma.exlibrisgroup.com/leganto/nui/lists/20999441660001441)
-  - TBC
-  - TBC
+  - Neutron physics [Krane] Chapter 12 (Martin does not have much on this topic)
 ``` 
--->
+
 
 ### Introduction
 Neutrons are particularly important in nuclear physics because, being uncharged, they see no Coulomb barrier and can be captured by nuclei even at very low energies.  Reactions involving neutrons have many practical applications, most obviously in inducing fission of uranium and plutonium but also in mapping excited states of nuclei, non-destructive assay of materials and production of radionuclides for medical physics and industry.  (These applications are why this section is in Applications of Nuclear Physics, rather than Nuclear Reactions.)
