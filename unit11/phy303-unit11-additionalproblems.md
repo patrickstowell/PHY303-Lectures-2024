@@ -6,19 +6,19 @@ For those looking for additional problems outside of past exam questions and the
 ### Quick Problems
 
 1. Fill in the blanks in these fission reactions and calculate their Q-values:
-   a. $ ^{235}U + n \to ^{90}Kr + ^{144}Ba + ? $;
-   b. $ ^{239}Pu + \gamma \to ^{92}Sr + ? + 3n $;
-   c. $ ^{252}Cf \to ^{106}Nb + ? + 4n $.
+- $ ^{235}U + n \to ^{90}Kr + ^{144}Ba + ? $;
+- $ ^{239}Pu + \gamma \to ^{92}Sr + ? + 3n $;
+- $ ^{252}Cf \to ^{106}Nb + ? + 4n $.
 
 2. $ ^{252}Cf $ has a half-life of $ 2.64 \, \text{years} $ and a branching ratio for spontaneous fission of $ 3.09\% $. On average, each fission produces $ 3.76 \, \text{neutrons} $. How many neutrons per second are emitted by $ 1 \, \text{mg} $ of $ ^{252}Cf $?
 
 3. The distribution of the actual number of neutrons emitted per fission is remarkably Gaussian (see Krane, figure 13.7) with a standard deviation of $ 1.08 $. If the mean number of neutrons produced in the fission of $ ^{235}U $ is $ 2.42 $, what is the probability that a fission of $ ^{235}U $ will produce no neutrons?
 
 4. Which of the following heavy nuclei would you expect to have large thermal neutron cross sections? Justify your answers:
-   a. $ ^{251}Cf $;
-   b. $ ^{253}Es $;
-   c. $ ^{255}Fm $;
-   d. $ ^{250}Bk $.
+- $ ^{251}Cf $;
+- $ ^{253}Es $;
+- $ ^{255}Fm $;
+- $ ^{250}Bk $.
 
 
 

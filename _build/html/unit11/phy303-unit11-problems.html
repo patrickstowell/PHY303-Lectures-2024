@@ -278,7 +278,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-problems.html">Unit 10 : Worked Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-additionalproblems.html">Unit 10 : Additional Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-terms.html">Unit 10 : Equations &amp; Terms</a></li>
-
 <li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-flashcards.html">Unit 10 : Flash Cards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-random-quiz.html">Unit 10 : Random Quiz</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unit10/phy303-unit10-full-quiz.html">Unit 10 : Full Quiz</a></li>
@@ -288,7 +287,6 @@
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Unit 11 : Worked Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phy303-unit11-additionalproblems.html">Unit 11 : Additional Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phy303-unit11-terms.html">Unit 11 : Equations &amp; Terms</a></li>
-
 <li class="toctree-l2"><a class="reference internal" href="phy303-unit11-flashcards.html">Unit 11 : Flash Cards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phy303-unit11-random-quiz.html">Unit 11 : Random Quiz</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phy303-unit11-full-quiz.html">Unit 11 : Full Quiz</a></li>
@@ -487,37 +485,33 @@
 <hr class="docutils" />
 <div class="note dropdown admonition">
 <p class="admonition-title">Solution</p>
-<p>The fraction of incoming neutrons that will cause fission is:
-$<span class="math notranslate nohighlight">\(
-f_f = \frac{\sigma_f}{\sigma_a + \sigma_f},
-\)</span><span class="math notranslate nohighlight">\(
-where \)</span> \sigma_f <span class="math notranslate nohighlight">\( is the fission cross section and \)</span> \sigma_a $ is the absorption cross section.</p>
-<p>For natural uranium:
-$<span class="math notranslate nohighlight">\(
-\sigma_f = 0.0072 \times 584 = 4.20 \, b,
-\)</span><span class="math notranslate nohighlight">\(
-and
-\)</span><span class="math notranslate nohighlight">\(
-\sigma_a = 0.0072 \times 97 + 0.9928 \times 2.75 = 3.43 \, b.
-\)</span>$</p>
-<p>Therefore, the number of fast neutrons per thermal neutron, assuming 2.4 neutrons per fission, is:
-$<span class="math notranslate nohighlight">\(
-\eta = 2.4 \times \frac{4.20}{4.20 + 3.43} = 1.3.
-\)</span>$</p>
+<p>The fraction of incoming neutrons that will cause fission is:</p>
+<div class="math notranslate nohighlight">
+\[f_f = \frac{\sigma_f}{\sigma_a + \sigma_f},\]</div>
+<p>where <span class="math notranslate nohighlight">\( \sigma_f \)</span> is the fission cross section and <span class="math notranslate nohighlight">\( \sigma_a \)</span> is the absorption cross section.</p>
+<p>For natural uranium:</p>
+<div class="math notranslate nohighlight">
+\[\sigma_f = 0.0072 \times 584 = 4.20 \, b,\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\sigma_a = 0.0072 \times 97 + 0.9928 \times 2.75 = 3.43 \, b.\]</div>
+<p>Therefore, the number of fast neutrons per thermal neutron, assuming 2.4 neutrons per fission, is:</p>
+<div class="math notranslate nohighlight">
+\[\eta = 2.4 \times \frac{4.20}{4.20 + 3.43} = 1.3.\]</div>
 <p>For enriched uranium, the corresponding numbers are <span class="math notranslate nohighlight">\( 23.4 \, b \)</span>, <span class="math notranslate nohighlight">\( 6.5 \, b \)</span>, and <span class="math notranslate nohighlight">\( 1.9 \)</span>. This demonstrates the advantage that we gain from enriching the fuel in fission reactors.</p>
 </div>
 </section>
 <section id="worked-example-cno-fusion-q-values">
 <h2>Worked Example : CNO Fusion Q-Values<a class="headerlink" href="#worked-example-cno-fusion-q-values" title="Link to this heading">#</a></h2>
 <p>In stars heavier than the Sun, hydrogen fusion proceeds via the CNO cycle, which consists of the following six reactions:</p>
-<ol class="arabic simple">
+<ul class="simple">
 <li><p><span class="math notranslate nohighlight">\( ^{12}C + p \to ^{13}N + \gamma \)</span>;</p></li>
 <li><p><span class="math notranslate nohighlight">\( ^{13}N \to ^{13}C + e^+ + \nu_e \)</span>;</p></li>
 <li><p><span class="math notranslate nohighlight">\( ^{13}C + p \to ^{14}N + \gamma \)</span>;</p></li>
 <li><p><span class="math notranslate nohighlight">\( ^{14}N + p \to ^{15}O + \gamma \)</span>;</p></li>
 <li><p><span class="math notranslate nohighlight">\( ^{15}O \to ^{15}N + e^+ + \nu_e \)</span>;</p></li>
 <li><p><span class="math notranslate nohighlight">\( ^{15}N + p \to ^{12}C + \alpha \)</span> (note that this last step regenerates the original <span class="math notranslate nohighlight">\( ^{12}C \)</span>).</p></li>
-</ol>
+</ul>
 <p>Calculate the Q-values of each of these reactions, and show that they add up to <span class="math notranslate nohighlight">\( 24.7 \, \text{MeV} \)</span> (or <span class="math notranslate nohighlight">\( 26.7 \, \text{MeV} \)</span> including positron annihilations).</p>
 <hr class="docutils" />
 <div class="note dropdown admonition">
@@ -544,22 +538,27 @@ $<span class="math notranslate nohighlight">\(
 <li><p><span class="math notranslate nohighlight">\( 13.000064 + 1.00727647 - 13.999234 = 0.008106 \, u = 7.55 \, \text{MeV} \)</span>;</p></li>
 <li><p><span class="math notranslate nohighlight">\( 13.999234 + 1.00727647 - 14.998676 = 0.007834 \, u = 7.30 \, \text{MeV} \)</span>;</p></li>
 <li><p><span class="math notranslate nohighlight">\( 14.998676 - (14.996269 + 0.00054858) = 0.001858 \, u = 1.73 \, \text{MeV} \)</span>;</p></li>
-<li><p><span class="math notranslate nohighlight">\( 14.996269 + 1.00727647 - (11.996709 + 4.00150618) = 0.005330 \, u = 4.97 \, \text{MeV} \)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\( 14.996269 + 1.00727647 - (11.996709 + 4.00150618) = 0.005330 \, u\)</span>;
+<span class="math notranslate nohighlight">\(0.005330 \, u= 4.97 \, \text{MeV} \)</span>.</p></li>
 </ol>
 <p>The total is <span class="math notranslate nohighlight">\( 24.7 \, \text{MeV} \)</span>, as expected.</p>
 </div>
 <hr class="docutils" />
 <section id="extended-problems">
 <h3>Extended Problems<a class="headerlink" href="#extended-problems" title="Link to this heading">#</a></h3>
-<ol class="arabic" start="3">
-<li><p>Repeat the above calculation for the pp-III chain, which is a minor branch of the pp chain consisting of the following reactions:
-a. <span class="math notranslate nohighlight">\( p + p \to d + e^+ + \nu_e \)</span>;
-b. <span class="math notranslate nohighlight">\( d + p \to ^{3}He + \gamma \)</span>;
-c. <span class="math notranslate nohighlight">\( ^{3}He + \alpha \to ^{7}Be + \gamma \)</span>;
-d. <span class="math notranslate nohighlight">\( ^{7}Be + p \to ^{8}Be + e^+ + \nu_e \)</span>;
-e. <span class="math notranslate nohighlight">\( ^{8}Be \to 2\alpha \)</span>.</p>
+<ol class="arabic simple" start="3">
+<li><p>Repeat the above calculation for the pp-III chain, which is a minor branch of the pp chain consisting of the following reactions:</p></li>
+</ol>
+<ul>
+<li><p><span class="math notranslate nohighlight">\( p + p \to d + e^+ + \nu_e \)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\( d + p \to ^{3}He + \gamma \)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\( ^{3}He + \alpha \to ^{7}Be + \gamma \)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\( ^{7}Be + p \to ^{8}Be + e^+ + \nu_e \)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\( ^{8}Be \to 2\alpha \)</span>.</p>
 <p>This is a very minor branch of the pp chain in the Sun, accounting for only about 0.0015% of the helium produced, but is very important in solar physics. Suggest why this might be true.</p>
 </li>
+</ul>
+<ol class="arabic simple" start="4">
 <li><p>Calculate the Q-values for the two d-d reactions, <span class="math notranslate nohighlight">\( ^{2}H(d,n)^{3}He \)</span> and <span class="math notranslate nohighlight">\( ^{2}H(d,p)^{3}H \)</span>, and deduce the kinetic energies of the produced particles.</p></li>
 <li><p>It was noted above that the CNO cycle dominates helium production in stars heavier than the Sun (more precisely, in stars heavier than about 1.1 solar masses, though this does depend on the star’s carbon content), whereas the pp chain dominates in lower-mass stars. Suggest a reason why this might be the case.</p></li>
 </ol>
