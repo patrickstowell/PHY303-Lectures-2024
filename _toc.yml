@@ -119,7 +119,7 @@ parts:
       - file: unit11/phy303-unit11-flashcards.ipynb
       - file: unit11/phy303-unit11-random-quiz.ipynb
       - file: unit11/phy303-unit11-full-quiz.ipynb
-    # -file: terms_sheet.md
+    - file: terms_sheet.md
 - caption: Interactive Visualizations
   numbered: False
   chapters:

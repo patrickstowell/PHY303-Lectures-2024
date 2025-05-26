@@ -402,7 +402,7 @@ The maximum neutron energy will occur when $θ = 0$ (the neutron is emitted in t
 
 The simplest way to do this is to apply the equation for $ K_{b}^{1/2} $. For $\cos\theta = 1$ we have
 
-$$ K_{n,max}^{1/2} = \left[ \frac{m_a m_n K_a \pm (m_a m_n K_a + (m_n + m_c)((m_c - m_a)K_a + m_c Q))}{m_n + m_c} \right]^{1/2} 
+$$ K_{n,max}^{1/2} = \frac{m_a m_n K_a \pm \left[(m_a m_n K_a + (m_n + m_c)((m_c - m_a)K_a + m_c Q))\right]^{1/2} }{m_n + m_c} 
 $$
 
 Notice that the argument of the square root is always larger than $ m_a m_n K_a $, so only the positive sign is relevant (kinetic energies cannot be negative).

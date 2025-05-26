@@ -10,7 +10,7 @@ u = 1.66056\times 10^{-27}~\textnormal{kg} = 931.5 \textnormal{MeV/c}^2.
 **Nuclear Mass Deficit**
 ```{math}
 \begin{equation}
-\Delta M(A,Z) = M(A,Z) - ZM_{p} + NM_{n}.
+\Delta M(A,Z) = M(A,Z) - (ZM_{p} + NM_{n}).
 \end{equation}
 ```
 
@@ -69,11 +69,6 @@ C=N_0-N=N_0(1-e^{-x/\lambda}).
 \frac{d\sigma}{d\Omega_{R}} = \frac{z^{2}Z^{2}\alpha^{2}\hbar^{2}c^{2}}{4E^{2}} \frac{1}{sin^{4}(\theta/2)} \\
 \end{equation}
 ```
-- $z$ is the charge of the projectile.
-- $Z$ is the charge of the scatterer.
-- $E$ is kinetic energy of the particle
-- $\theta$ is the scattering angle
-- $\alpha$ is the **fine structure constant**
 
 **Mott Scattering Form**
 ```{math}
@@ -122,19 +117,6 @@ F(q) = \int_{-\infty}^{\infty} e^{i~{\bf q} \cdot {\bf r} / \hbar} ~\rho({\bf r}
 \end{equation}
 ```
 
-**Liquid Drop Model Binding Energy Estimate per Nucleon**
-```{math}
-:label: simpledropcombined_totalequationperA
-\begin{align}
-B(A,Z)/A = a_{v} - a_{s}A^{-1/3} - a_{c} Z(Z-1) A^{-4/3} - a_{a}(A-2Z)^{2}A^{-2} \pm \delta A^{-1}
-\end{align}
-```
-- $a_{v} = 15.5 \textnormal{MeV}$, 
-- $a_{s} = 16.8 \textnormal{MeV}$, 
-- $a_{c} = 0.72 \textnormal{MeV}$, 
-- $a_{a} = 23.0 \textnormal{MeV}$, 
-- $a_{p} = 12.0 \textnormal{MeV}$.
-
 **Coulomb Energy Estimate**
 ```{math}
 :label: simpledropmodel_energyintegralafter
@@ -179,15 +161,6 @@ B_{A} = -a_{a} (A-2Z)^{2}A^{-1}
 ```
 
 
-**BINDING ENERGY SOLVING**
-
-```{math}
-:label: BindingEnergyParabolaDif
-\begin{equation}
-\frac{dM(A,Z)}{dZ} \rightarrow 0\\
-\end{equation}
-```
-
 **SHELL MODEL POTENTIAL**
 ```{math}
 :label: simpledropcombined_extraterms2
@@ -227,10 +200,10 @@ V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
 \end{equation}
 ```
 
-**SHELL MODEL SIMPLE STATES**
+**SHELL MODEL NUMBER OF STATES**
 
 $$
-n_{\textnormal{states}} = 2(2l+1)
+n_{\textnormal{states}} = (2j+1)
 $$
 
 
@@ -301,7 +274,7 @@ g = g_{l} \frac{j(j+1)+l(l+1)-s(s+1)}{2j(j+1)} + g_s \frac{j(j+1)+s(s+1)-l(l+1)}
 ```{math}
 :label: jackknifeestimate
 \begin{equation}
-\frac{\mu}{\mu_N} = ((j+\frac{3}{2})g_l - \frac{1}{2}g_s))\frac{j}{j+1} \rightarrow (jackknife)
+\frac{\mu}{\mu_N} = ((j+\frac{3}{2})g_l - \frac{1}{2}g_s)\frac{j}{j+1} \rightarrow (jackknife)
 \end{equation}
 ```
 
@@ -310,11 +283,16 @@ g = g_{l} \frac{j(j+1)+l(l+1)-s(s+1)}{2j(j+1)} + g_s \frac{j(j+1)+s(s+1)-l(l+1)}
 ```{math}
 :label: gyromagneticfactors
 \begin{equation}
-g_l = 1~~\textnormal{(proton)} ~~~~~~~ g_l = 0 ~~\textnormal{(neutron)}\\
 g_{s} = 5.85 ~~\textnormal{(proton)} ~~~~~~ g_{s} = -3.826 ~~\textnormal{(neutron)}
 \end{equation}
 ```
 
+```{math}
+:label: gyromagneticfactors2
+\begin{equation}
+g_l = 1~~\textnormal{(proton)} ~~~~~~~ g_l = 0 ~~\textnormal{(neutron)}
+\end{equation}
+```
 
 **Quadrupole Operations**
 
@@ -325,22 +303,17 @@ eQ_{EQM} = e\int \psi^{*} (3z^{2} - r^{2})\psi dV
 \end{equation}
 ```
 
-Calculations to find the expectation value $< \psi >^{2}$ end up giving as values for $Q$ for single particle missing/addition states of:
-
 ```{math}
 :label: quadrupolecalculation
 \begin{equation}
-Q_{EQM} = - < r^{2} > \frac{2j-1}{2(j+1)}
+Q_{EQM,sp} = - < r^{2} > \frac{2j-1}{2(j+1)}
 \end{equation}
 ```
-
-
-For unfilled shells with more than one particle missing:
 
 ```{math}
 :label: quadrupoleunfilled
 \begin{equation}
-< Q_{EQM} > = < Q_{sp} > \left [ 1-2\frac{n-1}{2j-1} \right ]
+< Q_{EQM, \textnormal{unfilled}} > = < Q_{EQM,sp} > \left [ 1-2\frac{n-1}{2j-1} \right ]
 \end{equation}
 ```
 
@@ -376,7 +349,6 @@ $$
 E_{J} = \frac{\hbar^{2}}{2I}J(J+1)~~~~~J=0,2,4,\ldots
 $$
 
-Note that $I$ here is the moment of inertia of the perturbed nucleus.
 
 **ENERGY PREDICTION USING E2 State**
 
@@ -396,29 +368,17 @@ $$
 E_{N} = \hbar \omega_{l} \left(\frac{2l+1}{2} +N \right)
 $$
 
-Here $N$ is the number of oscillator quanta, and $l$ is the quantized oscillator state (0-monopole, 1-dipole, etc). 
 
 **GAMMA RULES**
-
-- If $\vec{J_i}$ (initial spin vector) is equal to $\vec{J_f}$ (final spin vector) then the transition can't take place. Here the $J$ terms correspond to the vector components of the nuclear spin. When we say that the an equal $\vec{J}_{i}$ and $\vec{J}_{f}$ state mean that the transition can not take place we mean it in terms of the vector components since $\vec{J}_{i} = \vec{J}_{f} + \vec{L}$. We can however have cases where the overall nuclear spin $I$ is identical before and afterwards, in this case we expect the allow magnitude of $\vec{L}$ to be
 
 $$
 | I_{f} - I_{i} | \leq L \leq|I_{f} + I_{i}|
 $$
 
-- Parity is conserved. Electric multipole radiation has parity $(-1)^l$, while magnetic multipole radiation has parity $(-1)^{(L+1)}$.
+- Electric multipole radiation $\pi=(-1)^l$.
+- Magnetic multipole radiation $\pi(-1)^{(l+1)}$.
 
-
-**GAMMA TRANSITIONS**
-
-- **Electric Dipole (E1) Transitions:** These transitions involve $ΔL = 1$ and result in a parity change of π = $(-1)^1$ = -1 (parity-changing). Electric dipole transitions are more common than other multipole transitions and have relatively higher probabilities. 
-
- - **Magnetic Dipole (M1) Transitions:** These transitions involve $ΔL = 1$ and result in a parity change of π = $(-1)^{1+1}$ = 1 (parity-preserving). Magnetic dipole transitions are less common than E1 transitions but still occur in certain nuclear decays.
-
- - **Quadrupole (E2) Transitions:** Quadrupole transitions involve $ΔL = 2$ and result in a parity change of π = $(-1)^2$ = 1 (parity-preserving). Quadrupole transitions are less probable than E1 and M1 transitions and are associated with higher-order nuclear excitations.
-
-
-**The time for half the sample to decay (half-life)**
+**Half Life**
 
 $$T_{1/2} = \tau \textnormal{ln}(2) = 0.693\tau$$
 
@@ -431,7 +391,7 @@ Q = M(A,Z)^{2}c^{2} - [M(A-X,Z-Y)c^{2} + M(X,Y)c^{2}] > 0
 \end{equation}
 ```
 
-**Q Value Beta- Decay**
+**Q Value Beta- Decay in AMU**
 
 ```{math}
 :label: betamqvalue
@@ -440,7 +400,7 @@ Q_{\beta^{-}} = [ M(A,Z) - M(A,Z-1) ]c^{2}
 \end{equation}
 ```
 
-**Q Value Beta+ Decay or EC**
+**Q Value Beta+ Decay or EC in AMU**
 
 ```{math}
 :label: betapqvalue
@@ -449,7 +409,7 @@ Q_{\beta^{+}} = [ M(A,Z) - M(A,Z-1) - 2m_{e}]c^{2}
 \end{equation}
 ```
 
-**Lambda and Matrix Element**
+**Lambda and Matrix Element Relation**
 
 ```{math}
 :label: lambdacalc
@@ -465,7 +425,7 @@ Q_{\beta^{+}} = [ M(A,Z) - M(A,Z-1) - 2m_{e}]c^{2}
 \end{equation}
 ```
 
-**Beta Flux**
+**Beta Flux Relation**
 
 ```{math}
 :label: densityfinal
@@ -473,35 +433,6 @@ Q_{\beta^{+}} = [ M(A,Z) - M(A,Z-1) - 2m_{e}]c^{2}
 N(p) = \frac{C}{c^{2}} p^{2} (Q-T_{e})^{2}
 \end{equation}
 ```
-
-
-**Beta Superallowed Transition**
-
-$$
- \Delta I = 0, \quad \Delta \pi = \textnormal{none}
- $$
-
-**Beta Allowed Transition**
-
-$$
- \Delta I = 0 \text{ or } \pm 1, \quad \Delta \pi = \textnormal{none}
- $$
- except for $0 \rightarrow 0$ transitions, which are forbidden.
-
-**Beta Forbidden Transitions**
-
-$$
- \Delta I = 0, \pm 1, \pm 2, \quad \Delta \pi = 1 
- $$
- 
-except for $0 \rightarrow 0$ transitions, which are still completely forbidden.
-
-In general, the "n-th forbidden" transition is characterized by:
-
-$$
- \Delta I = n, n \pm 1, n \pm 2, ..., \quad \Delta \pi = (-1)^{n}
- $$
- 
 
 
 **Alpha Decay Geiger Nutall**
@@ -526,14 +457,12 @@ X = Ae^{-αL}
 \end{equation}
 ```
 
-
-
-**Breit Wigner Form**
+**Reaction Kinetic Energy Calculation**
 ```{math}
-:label: cross_section_compound
+:label: scattering_kbcancellation
 \begin{equation}
- \sigma_{(a,b)}B = \sigma_{a+A→C*} \times BR(C* → B + b), 
-\end{equation}
+K_b^{1/2} = \frac{\cos \theta \sqrt{m_am_bK_a} \pm [m_am_bK_a \cos^2 \theta + (m_b + m_B)((m_B - m_a)K_a + m_BQ)]^{1/2}}{m_b + m_B} 
+\end{equation} 
 ```
 
 **Breit Wigner Form**
@@ -551,6 +480,49 @@ X = Ae^{-αL}
 \end{equation}
 ```
 
-**Difference in timescales**
-- Direct reactions are fast $(\sim10^{-22}~\textnormal{s})$ 
-- Compound-nucleus reactions are slower ($~10^{-18} - 10^{-16} s$) 
+
+**Fission Requirement**
+
+$$ 
+2a_s A^{2/3}\leq a_{C} \frac{Z^2}{A^{1/3}} \quad \Rightarrow \quad \left(\frac{Z^2}{A}\right)_{\text{crit}} \geq \frac{2a_s}{a_c} \approx 49 
+$$
+
+**Fission Four Factor Formula**
+
+$$
+k=ηϵpf
+$$
+
+
+**Fusion Coulomb Barrier Limit**
+
+$$
+ \frac{Z_1Z_2e^2}{4\pi\epsilon_0(R_1 + R_2)} = 1.44 \frac{Z_1Z_2}{R_1 + R_2} \text{ MeV}, 
+$$
+
+
+**Fusion Reaction Rate**
+
+$$ 
+R_{12} = n_1 n_2 ⟨σv⟩. 
+$$
+
+**Fusion Maxwell Boltzmann**
+
+$$
+ P(v)dv = \sqrt{\frac{2}{\pi}} \left( \frac{m}{k_B T} \right)^{3/2} \exp\left( -\frac{mv^2}{2k_B T} \right) v^2 dv, 
+ $$
+
+
+**Fusion Lawson Criteria**
+
+$$
+L = \textnormal{energy output} / \textnormal{energy input}
+$$
+
+
+**Fusion Energy Out**
+
+$$
+E_{out} = n_d^2 ⟨σ_{dt}v⟩ Q t_c
+$$
