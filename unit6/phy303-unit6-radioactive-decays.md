@@ -136,6 +136,36 @@ Q_{\beta^{+}} = [ M(A,Z) - M(A,Z-1) - 2m_{e}]c^{2}
 In the case for electron capture, the $Q$ value needs to be calculated based on the energy of the electron that is captured based on which atomic orbital shell it is in (typically an inner shell).
 
 
+```{admonition} Clarification
+:class: note, dropdown
+Note that we have grouped $\beta^+$ and EC as these both occur in proton rich nuclei. The $Q$ value calculation for electron capture is however slightly different than the $\beta^{+}$ case as the electron mass sits on the 'initial state' side of the equation this time, which overcomes the energy requirements that limit standard $\beta^{+}$ decay. As a result this can take place but is most common in proton rich nuclei where there is an increased chance of proton-electron that leads to a capture.
+
+If we consider converting everything to nuclear masses explicitly in the calculation the difference becomes more clear.
+
+**$\beta^+$ decay**
+
+$$
+M_{i} = M(A,Z) - Zm_{e}
+$$
+
+$$
+M_{f} = (M(A,Z-1) - (Z-1)m_{e}) + m_{e}
+$$
+
+
+**Electron Capture**
+
+$$
+M_{i} = M(A,Z) - Zm_{e} + m_{e}
+$$
+
+$$
+M_{f} = (M(A,Z-1) - (Z-1)m_{e}) 
+$$
+
+
+``` 
+
 
 ### Beta Decay Matrix Element
 
